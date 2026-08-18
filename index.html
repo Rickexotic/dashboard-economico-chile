@@ -286,7 +286,7 @@ body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--whit
 ══════════════════════════════════════════════════════ -->
 <!-- FAB -->
 <div id="siwa-fab" onclick="siwaToggle()" title="Hablar con Siwa">
-<img alt="Siwa" onerror="this.style.display='none';document.getElementById('siwa-fab-fallback').style.display='flex'" src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Siwa.png?expires=1789603446&amp;signature=f643ef31825644c65c5f29106c912e20acfe50a345850e09fde0a44acb4421fe&amp;kid=prod-250922"/>
+<img alt="Siwa" onerror="this.style.display='none';document.getElementById('siwa-fab-fallback').style.display='flex'" src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Designer.png?expires=1789603446&amp;signature=f643ef31825644c65c5f29106c912e20acfe50a345850e09fde0a44acb4421fe&amp;kid=prod-250922"/>
 <div id="siwa-fab-fallback">🧑‍💼</div>
 <div id="siwa-notif">1</div>
 </div>
@@ -295,7 +295,7 @@ body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--whit
 <!-- Header -->
 <div id="siwa-header">
 <div id="siwa-av">
-<img alt="Siwa" onerror="this.parentNode.innerHTML='🧑‍💼'" src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Siwa.png?expires=1789603446&amp;signature=f643ef31825644c65c5f29106c912e20acfe50a345850e09fde0a44acb4421fe&amp;kid=prod-250922"/>
+<img alt="Siwa" onerror="this.parentNode.innerHTML='🧑‍💼'" src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Designer.png?expires=1789603446&amp;signature=f643ef31825644c65c5f29106c912e20acfe50a345850e09fde0a44acb4421fe&amp;kid=prod-250922"/>
 </div>
 <div id="siwa-header-info">
 <h4>Siwa — Analista Económica</h4>
@@ -610,7 +610,7 @@ function hora() { return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',m
 function siwaAddBot(html) {
   var msgs = document.getElementById('siwa-msgs');
   var d = document.createElement('div'); d.className = 'sw-msg bot';
-  d.innerHTML = '<div class="sw-av-sm"><img src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Siwa.png" alt="Siwa" onerror="this.parentNode.innerHTML=\'🧑‍💼\'"></div>' +
+  d.innerHTML = '<div class="sw-av-sm"><img src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Designer.png" alt="Siwa" onerror="this.parentNode.innerHTML=\'🧑‍💼\'"></div>' +
     '<div><div class="sw-bubble">' + html + '</div><div class="sw-time">' + hora() + '</div></div>';
   msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight;
 }
@@ -629,7 +629,7 @@ function siwaAddSugs(sugs) {
   var opts = sugs.map(function(s) {
     return '<span class="sw-sug" onclick="siwaEnviarTexto(\'' + s.replace(/'/g,"\\'") + '\')">' + s + '</span>';
   }).join('');
-  d.innerHTML = '<div class="sw-av-sm"><img src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Siwa.png" alt="Siwa" onerror="this.parentNode.innerHTML=\'🧑‍💼\'"></div>' +
+  d.innerHTML = '<div class="sw-av-sm"><img src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Designer.png" alt="Siwa" onerror="this.parentNode.innerHTML=\'🧑‍💼\'"></div>' +
     '<div><div class="sw-sugs">' + opts + '</div></div>';
   msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight;
 }
@@ -637,7 +637,7 @@ function siwaAddSugs(sugs) {
 function siwaShowTyping() {
   var msgs = document.getElementById('siwa-msgs');
   var d = document.createElement('div'); d.className = 'sw-msg bot'; d.id = 'sw-typing';
-  d.innerHTML = '<div class="sw-av-sm"><img src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Siwa.png" alt="Siwa" onerror="this.parentNode.innerHTML=\'🧑‍💼\'"></div>' +
+  d.innerHTML = '<div class="sw-av-sm"><img src="https://raw.githubusercontent.com/Rickexotic/dashboard-economico-chile/main/Designer.png" alt="Siwa" onerror="this.parentNode.innerHTML=\'🧑‍💼\'"></div>' +
     '<div class="sw-bubble"><div class="sw-typing"><span></span><span></span><span></span></div></div>';
   msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight;
 }
