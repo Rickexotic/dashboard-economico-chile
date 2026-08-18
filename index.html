@@ -18,7 +18,18 @@
     }
     body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--white); min-height:100vh; }
 
-    .top-bar { background:rgba(15,23,42,.96); border-bottom:1px solid rgba(59,130,246,.25); padding:0 20px; min-height:44px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; backdrop-filter:blur(10px); }
+    .top-bar {
+      background:rgba(15,23,42,.96);
+      border-bottom:1px solid rgba(59,130,246,.25);
+      padding:0 20px;
+      min-height:44px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
     .top-bar-left { display:flex; align-items:center; gap:8px; }
     .top-bar-bar { width:3px; height:18px; background:var(--blue); border-radius:999px; }
     .top-bar-title { font-size:1rem; font-weight:700; color:var(--white); }
@@ -27,7 +38,15 @@
 
     .main { padding:16px 24px 100px; }
     .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin-bottom:14px; }
-    .kpi-card { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; border-left:3px solid var(--blue); transition:transform .2s,border-color .2s,box-shadow .2s,background .2s; width:100%; text-align:left; color:var(--white); }
+    .kpi-card {
+      background:var(--bg2);
+      border:1px solid rgba(255,255,255,.07);
+      border-radius:10px;
+      padding:12px 14px;
+      border-left:3px solid var(--blue);
+      transition:transform .2s,border-color .2s,box-shadow .2s;
+      text-align:left;
+    }
     .kpi-card:hover { transform:translateY(-2px); }
     .kpi-card-btn { cursor:pointer; font:inherit; }
     .kpi-card.active { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.45); box-shadow:0 0 0 1px rgba(59,130,246,.18); }
@@ -54,7 +73,12 @@
     .chart-sub { font-size:.53rem; color:var(--muted); margin-left:auto; text-transform:none; }
     .chart-wrap { height:170px; position:relative; }
     .chart-ranges { display:flex; gap:5px; margin-bottom:8px; }
-    .range-btn { font-size:.6rem; font-weight:700; padding:4px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.05); color:var(--muted); cursor:pointer; text-transform:uppercase; }
+    .range-btn {
+      font-size:.6rem; font-weight:700; padding:4px 8px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.05); color:var(--muted); cursor:pointer;
+      transition:all .2s;
+    }
     .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
 
     .news-panel { background:rgba(59,130,246,.07); border:1px solid rgba(59,130,246,.2); border-radius:10px; padding:12px 16px; }
@@ -117,7 +141,11 @@
     #siwa-menu { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.06); }
     #siwa-menu-title { font-size:.65rem; color:var(--muted); font-weight:600; text-transform:uppercase; margin-bottom:10px; }
     .siwa-menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
-    .siwa-menu-btn { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); color:var(--white); padding:9px 12px; border-radius:10px; font-size:.75rem; font-weight:600; cursor:pointer; transition:all .2s; }
+    .siwa-menu-btn {
+      background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+      color:var(--white); padding:9px 12px; border-radius:10px;
+      font-size:.75rem; font-weight:600; cursor:pointer;
+    }
     .siwa-menu-btn:hover { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.35); }
     .siwa-menu-btn.active { background:rgba(59,130,246,.2); border-color:rgba(59,130,246,.45); box-shadow:0 0 0 1px rgba(59,130,246,.16); }
     .siwa-menu-btn.pregunta { grid-column:1/-1; background:rgba(167,139,250,.1); border-color:rgba(167,139,250,.3); color:var(--purple); }
@@ -145,18 +173,36 @@
     #siwa-panel:not(.chat-mode) #siwa-msgs,
     #siwa-panel:not(.chat-mode) #siwa-input-area { display:none; }
 
+    /* Back button behavior: only in chat mode */
+    #siwa-panel.chat-mode #siwa-back { display:inline-flex; align-items:center; gap:6px; }
+    #siwa-panel:not(.chat-mode) #siwa-back { display:none; }
+
     @media(max-width:900px) {
       .news-list { grid-template-columns:1fr; }
       .main { padding:12px 14px 100px; }
     }
+
     @media(max-width:640px) {
       .top-bar { padding:10px 14px; min-height:auto; align-items:flex-start; gap:8px; flex-direction:column; }
       .top-bar-date { font-size:.68rem; }
-      .kpi-grid { grid-template-columns:1fr; }
+
+      /* 4 KPI columns on mobile */
+      .kpi-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
+      .kpi-card { padding:8px 7px; border-radius:8px; border-left-width:2px; }
+      .kpi-label { font-size:.5rem; letter-spacing:.02em; }
+      .kpi-value { font-size:.78rem; margin-bottom:3px; line-height:1.2; }
+      .dv { font-size:.52rem; }
+      .dp { font-size:.5rem; padding:1px 4px; }
+      .kpi-sub { font-size:.48rem; margin-left:0; width:100%; }
     }
+
     @media(max-width:480px) {
       #siwa-panel { width:calc(100vw - 32px); right:16px; bottom:90px; }
       #siwa-fab { bottom:16px; right:16px; }
+
+      .kpi-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:5px; }
+      .kpi-card { padding:7px 6px; }
+      .kpi-value { font-size:.72rem; }
     }
   </style>
 </head>
@@ -328,8 +374,8 @@
     };
 
     var SECTOR_KB = {
-      mineria:{impacto:'Para minería, cobre alto mejora ingresos y caja operativa.',perspectiva:'Perspectiva: positiva mientras se sostenga demanda global.',riesgo:'Riesgos: caída del cobre y costos operacionales al alza.'},
-      inmobiliario:{impacto:'Para inmobiliario, TPM/UF condicionan costo del crédito.',perspectiva:'Perspectiva: gradual recuperación de demanda.',riesgo:'Riesgo principal: deterioro de tasas reales y menor empleo.'},
+      mineria:{impacto:'Para minería, cobre alto mejora ingresos y caja operativa.',perspectiva:'Perspectiva: positiva mientras se sostenga demanda global.',riesgo:'Riesgos: caída del cobre y costos energéticos elevados.'},
+      inmobiliario:{impacto:'Para inmobiliario, TPM/UF condicionan costo del crédito.',perspectiva:'Perspectiva: gradual recuperación de demanda.',riesgo:'Riesgo principal: deterioro de tasas reales y empleo.'},
       financiero:{impacto:'Para financiero, EMBI bajo mejora acceso a fondeo.',perspectiva:'Perspectiva: estabilidad de márgenes si inflación contenida.',riesgo:'Riesgo: volatilidad externa y tipo de cambio.'},
       retail:{impacto:'Para retail, IPC bajo ayuda consumo real.',perspectiva:'Perspectiva: mejora gradual de ventas.',riesgo:'Riesgo: depreciación cambiaria en importaciones.'},
       energia:{impacto:'Para energía, petróleo y dólar presionan costos.',perspectiva:'Perspectiva: más inversión en renovables.',riesgo:'Riesgo: shocks geopolíticos de oferta.'}
@@ -452,19 +498,32 @@
         var mesesCortos=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
         var mLabels=[];
         var baseMes=new Date();
-        for(var i=11;i>=0;i--){ var md=new Date(baseMes); md.setDate(1); md.setMonth(baseMes.getMonth()-i); mLabels.push(mesesCortos[md.getMonth()]); }
+        for(var i=11;i>=0;i--){
+          var md=new Date(baseMes);
+          md.setDate(1);
+          md.setMonth(baseMes.getMonth()-i);
+          mLabels.push(mesesCortos[md.getMonth()]);
+        }
         return mLabels;
       }
       if(range==='5d'){
         var days=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
         var labels=[];
         var baseDia=new Date();
-        for(var i=4;i>=0;i--){ var d=new Date(baseDia); d.setDate(baseDia.getDate()-i); labels.push(days[d.getDay()]); }
+        for(var j=4;j>=0;j--){
+          var d=new Date(baseDia);
+          d.setDate(baseDia.getDate()-j);
+          labels.push(days[d.getDay()]);
+        }
         return labels;
       }
       var m=[];
       var baseMesDia=new Date();
-      for(var j=5;j>=0;j--){ var dm=new Date(baseMesDia); dm.setDate(baseMesDia.getDate()-(j*6)); m.push(dm.getDate()+'/'+(dm.getMonth()+1)); }
+      for(var k=5;k>=0;k--){
+        var dm=new Date(baseMesDia);
+        dm.setDate(baseMesDia.getDate()-(k*6));
+        m.push(dm.getDate()+'/'+(dm.getMonth()+1));
+      }
       return m;
     }
 
@@ -510,20 +569,33 @@
     function renderCharts(sector,preserveIndex){
       var defs=SECTOR_CHARTS[sector] || SECTOR_CHARTS.general;
       if(!defs.length) defs=SECTOR_CHARTS.general;
+
       var track=document.getElementById('chartsTrack');
       destroyCharts();
+
       if(!preserveIndex || CHART_ACTIVE_INDEX>defs.length-1) CHART_ACTIVE_INDEX=0;
+
       var def=defs[CHART_ACTIVE_INDEX] || defs[0];
       var safeColor=getSafeColor(def.color);
+
       var btns=['5d','1m','12m'].map(function(r){
         var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
         return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
       }).join('');
-      track.innerHTML='<div class="chart-title"><div class="chart-accent" style="background:'+safeColor+'"></div>'+escapeHtml(def.title)+'<span class="chart-sub">'+escapeHtml(def.sub)+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>';
+
+      track.innerHTML =
+        '<div class="chart-title">' +
+          '<div class="chart-accent" style="background:'+safeColor+'"></div>' +
+          escapeHtml(def.title) +
+          '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' +
+        '</div>' +
+        '<div class="chart-ranges">'+btns+'</div>' +
+        '<div class="chart-wrap"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>';
 
       var labels=getRangeLabels(CHART_RANGE);
       var data=buildSeries(def.base,def.drift,def.amp,labels.length);
       var canvas=document.getElementById('chart-'+sector+'-'+CHART_ACTIVE_INDEX);
+
       CHART_INSTANCES.push(new Chart(canvas,{
         type:'line',
         data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:safeColor+'33',tension:.35,fill:true,borderWidth:2,pointRadius:2}]},
@@ -576,15 +648,30 @@
 
     async function preguntarAgenteCopilot(userText){
       var ctx=getSectorContextPayload();
-      var payload={question:userText,sector:ctx.sector,sector_label:ctx.sector_label,sector_desc:ctx.sector_desc,kpis:ctx.kpis,ui_date:new Date().toLocaleDateString('es-CL')};
-      var res=await fetch(SIWA_AGENT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-      if(!res.ok){ var e=await res.text().catch(function(){return 'agent_error';}); throw new Error(e); }
+      var payload={
+        question:userText,
+        sector:ctx.sector,
+        sector_label:ctx.sector_label,
+        sector_desc:ctx.sector_desc,
+        kpis:ctx.kpis,
+        ui_date:new Date().toLocaleDateString('es-CL')
+      };
+      var res=await fetch(SIWA_AGENT_ENDPOINT,{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(payload)
+      });
+      if(!res.ok){
+        var e=await res.text().catch(function(){return 'agent_error';});
+        throw new Error(e);
+      }
       var data=await res.json();
-      if(!data||!data.answer) throw new Error('invalid agent response');
+      if(!data || !data.answer) throw new Error('invalid agent response');
       return data.answer;
     }
 
     function hora(){ return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'}); }
+
     function siwaAddBot(html){
       var msgs=document.getElementById('siwa-msgs');
       var d=document.createElement('div');
@@ -593,6 +680,7 @@
       msgs.appendChild(d);
       msgs.scrollTop=msgs.scrollHeight;
     }
+
     function siwaAddUser(text){
       var msgs=document.getElementById('siwa-msgs');
       var d=document.createElement('div');
@@ -601,6 +689,7 @@
       msgs.appendChild(d);
       msgs.scrollTop=msgs.scrollHeight;
     }
+
     function siwaAddSugs(sugs){
       var msgs=document.getElementById('siwa-msgs');
       var d=document.createElement('div');
@@ -609,6 +698,7 @@
       msgs.appendChild(d);
       msgs.scrollTop=msgs.scrollHeight;
     }
+
     function siwaShowTyping(){
       var msgs=document.getElementById('siwa-msgs');
       var d=document.createElement('div');
@@ -618,16 +708,39 @@
       msgs.appendChild(d);
       msgs.scrollTop=msgs.scrollHeight;
     }
-    function siwaHideTyping(){ var t=document.getElementById('sw-typing'); if(t) t.remove(); }
+
+    function siwaHideTyping(){
+      var t=document.getElementById('sw-typing');
+      if(t) t.remove();
+    }
+
+    function siwaShowMenu(){
+      siwaChatMode=false;
+      var panel=document.getElementById('siwa-panel');
+      panel.classList.remove('chat-mode');
+      document.getElementById('siwa-msgs').innerHTML='';
+    }
 
     function siwaToggle(){
       siwaOpen=!siwaOpen;
       var p=document.getElementById('siwa-panel');
-      if(siwaOpen){ p.classList.add('open'); document.getElementById('siwa-notif').style.display='none'; }
-      else p.classList.remove('open');
+      if(siwaOpen){
+        p.classList.add('open');
+        siwaShowMenu(); // always start in sectors filter
+        document.getElementById('siwa-notif').style.display='none';
+      } else {
+        p.classList.remove('open');
+      }
     }
-    function siwaClose(){ siwaOpen=false; document.getElementById('siwa-panel').classList.remove('open'); }
-    function siwaVolverMenu(){ siwaChatMode=false; document.getElementById('siwa-panel').classList.remove('chat-mode'); document.getElementById('siwa-msgs').innerHTML=''; }
+
+    function siwaClose(){
+      siwaOpen=false;
+      document.getElementById('siwa-panel').classList.remove('open');
+    }
+
+    function siwaVolverMenu(){
+      siwaShowMenu();
+    }
 
     function siwaModoPregunta(){
       siwaChatMode=true;
@@ -635,33 +748,58 @@
       document.getElementById('siwa-sector-name').textContent=SECTORES[SECTOR_ACTUAL].label;
       document.getElementById('siwa-msgs').innerHTML='';
       siwaAddBot('¡Hola! Soy <strong>Siwa</strong>. Mantengo el contexto del sector seleccionado y puedo consultar el agente Copilot para preguntas abiertas.');
-      setTimeout(function(){ siwaAddSugs(['¿Cómo está el dólar?','¿Qué es el EMBI?','Analiza riesgos del sector actual','Perspectiva 6 meses']); },300);
-      setTimeout(function(){ document.getElementById('siwa-input').focus(); },150);
+      setTimeout(function(){
+        siwaAddSugs(['¿Cómo está el dólar?','¿Qué es el EMBI?','Analiza riesgos del sector actual','Perspectiva 6 meses']);
+      },300);
+      // Intentionally no autofocus here
     }
 
     function siwaSelSector(sector){
-      SECTOR_ACTUAL=sector; setSector(sector);
+      SECTOR_ACTUAL=sector;
+      setSector(sector);
+
       siwaChatMode=true;
       document.getElementById('siwa-panel').classList.add('chat-mode');
       document.getElementById('siwa-sector-name').textContent=SECTORES[sector].label;
       document.getElementById('siwa-msgs').innerHTML='';
+
       var s=SECTORES[sector];
-      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
-      setTimeout(function(){ siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']); },350);
-      setTimeout(function(){ document.getElementById('siwa-input').focus(); },150);
+      siwaAddBot(
+        'Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+
+        '<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot cuando corresponda.</small>'
+      );
+
+      setTimeout(function(){
+        siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
+      },350);
+
+      setTimeout(function(){
+        document.getElementById('siwa-input').focus();
+      },150);
     }
 
     async function siwaEnviarTexto(texto){
-      if(!siwaChatMode){ siwaModoPregunta(); setTimeout(function(){siwaEnviarTexto(texto);},250); return; }
+      if(!siwaChatMode){
+        siwaModoPregunta();
+        setTimeout(function(){ siwaEnviarTexto(texto); },250);
+        return;
+      }
+
       siwaAddUser(texto);
       siwaShowTyping();
+
       try{
         var intencion=detectarIntencion(texto);
         var usarAgente=SIWA_USE_AGENT_FOR_OPEN && isOpenQuestion(texto);
         var resp=usarAgente ? await preguntarAgenteCopilot(texto) : generarRespuesta(intencion,texto);
+
         siwaHideTyping();
         siwaAddBot(resp);
-        var sugs=SECTOR_ACTUAL!=='general' ? ['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras'] : ['¿Cómo está el cobre?','¿Qué es el EMBI?','Resumen del día'];
+
+        var sugs=SECTOR_ACTUAL!=='general'
+          ? ['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras']
+          : ['¿Cómo está el cobre?','¿Qué es el EMBI?','Resumen del día'];
+
         setTimeout(function(){ siwaAddSugs(sugs); },300);
       }catch(e){
         siwaHideTyping();
@@ -679,7 +817,9 @@
     }
 
     setSector('general');
-    setTimeout(function(){ if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex'; },2000);
+    setTimeout(function(){
+      if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex';
+    },2000);
   </script>
 </body>
 </html>
