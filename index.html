@@ -18,25 +18,19 @@
     }
     body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--white); min-height:100vh; }
 
-    .top-bar { background:var(--bg2); border-bottom:2px solid var(--blue); padding:0 24px; height:50px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
-    .top-bar-left { display:flex; align-items:center; gap:10px; }
-    .top-bar-bar { width:4px; height:24px; background:var(--blue); border-radius:2px; }
-    .top-bar-title { font-size:1.1rem; font-weight:700; color:var(--white); }
+    .top-bar { background:rgba(15,23,42,.96); border-bottom:1px solid rgba(59,130,246,.25); padding:0 20px; min-height:44px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; backdrop-filter:blur(10px); }
+    .top-bar-left { display:flex; align-items:center; gap:8px; }
+    .top-bar-bar { width:3px; height:18px; background:var(--blue); border-radius:999px; }
+    .top-bar-title { font-size:1rem; font-weight:700; color:var(--white); }
     .top-bar-title span { color:var(--blue); }
-    .top-bar-date { font-size:.78rem; color:var(--muted); display:flex; align-items:center; gap:5px; }
-
-    .sector-bar { background:var(--bg3); border-bottom:1px solid rgba(255,255,255,.06); padding:8px 24px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-    .sector-bar-label { font-size:.68rem; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.06em; margin-right:4px; }
-    .sec-btn { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); color:var(--muted); padding:5px 14px; border-radius:20px; font-size:.75rem; font-weight:600; cursor:pointer; transition:all .2s; }
-    .sec-btn:hover { background:rgba(59,130,246,.15); border-color:var(--blue); color:var(--white); }
-    .sec-btn.active { background:var(--blue); border-color:var(--blue); color:var(--white); }
+    .top-bar-date { font-size:.72rem; color:var(--muted); white-space:nowrap; }
 
     .main { padding:16px 24px 100px; }
-    .kpi-grid { display:flex; gap:10px; margin-bottom:14px; overflow-x:auto; padding-bottom:4px; scroll-snap-type:x proximity; }
-    .kpi-grid::-webkit-scrollbar { height:7px; }
-    .kpi-grid::-webkit-scrollbar-thumb { background:rgba(148,163,184,.35); border-radius:999px; }
-    .kpi-card { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; border-left:3px solid var(--blue); transition:transform .2s; min-width:220px; flex:0 0 220px; scroll-snap-align:start; }
+    .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin-bottom:14px; }
+    .kpi-card { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; border-left:3px solid var(--blue); transition:transform .2s,border-color .2s,box-shadow .2s,background .2s; width:100%; text-align:left; color:var(--white); }
     .kpi-card:hover { transform:translateY(-2px); }
+    .kpi-card-btn { cursor:pointer; font:inherit; }
+    .kpi-card.active { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.45); box-shadow:0 0 0 1px rgba(59,130,246,.18); }
     .kpi-card.green { border-left-color:var(--green); }
     .kpi-card.orange { border-left-color:var(--orange); }
     .kpi-card.purple { border-left-color:var(--purple); }
@@ -52,16 +46,9 @@
     .dp.fl { background:rgba(176,184,200,.12); color:var(--muted); }
     .kpi-sub { font-size:.57rem; color:var(--muted); margin-left:auto; }
 
-    .charts-carousel { margin-bottom:14px; }
-    .carousel-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px; }
-    .carousel-title { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); }
-    .carousel-nav { display:flex; align-items:center; gap:6px; }
-    .carousel-btn { width:28px; height:28px; border-radius:8px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.05); color:var(--white); cursor:pointer; }
-    .carousel-btn:disabled { opacity:.35; cursor:not-allowed; }
-    .charts-track-wrap { overflow:hidden; border-radius:10px; }
-    .charts-track { display:flex; transition:transform .25s ease; touch-action:pan-y; }
-    .chart-slide { flex:0 0 100%; min-width:100%; }
+    .charts-panel-wrap { margin-bottom:14px; }
     .chart-panel { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; }
+    .chart-overline { font-size:.63rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin-bottom:8px; }
     .chart-title { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin-bottom:8px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
     .chart-accent { width:10px; height:3px; border-radius:2px; background:var(--blue); }
     .chart-sub { font-size:.53rem; color:var(--muted); margin-left:auto; text-transform:none; }
@@ -132,6 +119,7 @@
     .siwa-menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
     .siwa-menu-btn { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); color:var(--white); padding:9px 12px; border-radius:10px; font-size:.75rem; font-weight:600; cursor:pointer; transition:all .2s; }
     .siwa-menu-btn:hover { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.35); }
+    .siwa-menu-btn.active { background:rgba(59,130,246,.2); border-color:rgba(59,130,246,.45); box-shadow:0 0 0 1px rgba(59,130,246,.16); }
     .siwa-menu-btn.pregunta { grid-column:1/-1; background:rgba(167,139,250,.1); border-color:rgba(167,139,250,.3); color:var(--purple); }
 
     #siwa-sector-label { padding:6px 16px; background:rgba(59,130,246,.08); border-bottom:1px solid rgba(255,255,255,.05); font-size:.63rem; display:none; }
@@ -161,6 +149,11 @@
       .news-list { grid-template-columns:1fr; }
       .main { padding:12px 14px 100px; }
     }
+    @media(max-width:640px) {
+      .top-bar { padding:10px 14px; min-height:auto; align-items:flex-start; gap:8px; flex-direction:column; }
+      .top-bar-date { font-size:.68rem; }
+      .kpi-grid { grid-template-columns:1fr; }
+    }
     @media(max-width:480px) {
       #siwa-panel { width:calc(100vw - 32px); right:16px; bottom:90px; }
       #siwa-fab { bottom:16px; right:16px; }
@@ -173,32 +166,16 @@
       <div class="top-bar-bar"></div>
       <div class="top-bar-title" id="dashTitle">Dashboard Económico — <span>Chile</span></div>
     </div>
-    <div class="top-bar-date"><i class="fas fa-calendar-alt"></i><span id="fechaHoy"></span></div>
-  </div>
-
-  <div class="sector-bar">
-    <div class="sector-bar-label">Sectores</div>
-    <button id="btn-general" class="sec-btn active" onclick="setSector('general')">General</button>
-    <button id="btn-mineria" class="sec-btn" onclick="setSector('mineria')">Minería</button>
-    <button id="btn-inmobiliario" class="sec-btn" onclick="setSector('inmobiliario')">Inmobiliario</button>
-    <button id="btn-financiero" class="sec-btn" onclick="setSector('financiero')">Financiero</button>
-    <button id="btn-retail" class="sec-btn" onclick="setSector('retail')">Retail</button>
-    <button id="btn-energia" class="sec-btn" onclick="setSector('energia')">Energía</button>
+    <div class="top-bar-date" id="fechaHoy"></div>
   </div>
 
   <div class="main">
     <div class="kpi-grid"></div>
 
-    <div class="charts-carousel">
-      <div class="carousel-head">
-        <div class="carousel-title">Indicadores en carrusel</div>
-        <div class="carousel-nav">
-          <button class="carousel-btn" id="chartPrevBtn" onclick="moveChartSlide(-1)" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-          <button class="carousel-btn" id="chartNextBtn" onclick="moveChartSlide(1)" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
-        </div>
-      </div>
-      <div class="charts-track-wrap">
-        <div class="charts-track" id="chartsTrack"></div>
+    <div class="charts-panel-wrap">
+      <div class="chart-panel">
+        <div class="chart-overline">Indicador seleccionado</div>
+        <div id="chartsTrack"></div>
       </div>
     </div>
 
@@ -231,12 +208,12 @@
     <div id="siwa-menu">
       <div id="siwa-menu-title">¿Qué necesitas?</div>
       <div class="siwa-menu-grid">
-        <button class="siwa-menu-btn" onclick="siwaSelSector('mineria')">⛏️ Minería</button>
-        <button class="siwa-menu-btn" onclick="siwaSelSector('inmobiliario')">🏠 Inmobiliario</button>
-        <button class="siwa-menu-btn" onclick="siwaSelSector('financiero')">🏦 Financiero</button>
-        <button class="siwa-menu-btn" onclick="siwaSelSector('retail')">🛒 Retail</button>
-        <button class="siwa-menu-btn" onclick="siwaSelSector('energia')">⚡ Energía</button>
-        <button class="siwa-menu-btn" onclick="siwaSelSector('general')">🌐 General</button>
+        <button id="btn-mineria" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('mineria')">⛏️ Minería</button>
+        <button id="btn-inmobiliario" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('inmobiliario')">🏠 Inmobiliario</button>
+        <button id="btn-financiero" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('financiero')">🏦 Financiero</button>
+        <button id="btn-retail" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('retail')">🛒 Retail</button>
+        <button id="btn-energia" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('energia')">⚡ Energía</button>
+        <button id="btn-general" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('general')">🌐 General</button>
         <button class="siwa-menu-btn pregunta" onclick="siwaModoPregunta()"><i class="fas fa-comment-dots"></i> ¿Quieres hacer una pregunta?</button>
       </div>
     </div>
@@ -362,11 +339,12 @@
       var kpis = SECTOR_KPIS[sector] || SECTOR_KPIS.general;
       var grid = document.querySelector('.kpi-grid');
       grid.innerHTML = '';
-      kpis.forEach(function(k){
+      kpis.forEach(function(k,idx){
         var arrow = k.dv==='up' ? 'arrow-up' : k.dv==='dn' ? 'arrow-down' : 'minus';
         var valCls = k.color==='green' ? ' green' : '';
         var cardCls = k.color ? ' '+k.color : '';
-        grid.innerHTML += '<div class="kpi-card'+cardCls+'"><div class="kpi-label"><i class="fas fa-'+k.ico+'"></i> '+k.label+'</div><div class="kpi-value'+valCls+'">'+k.val+'</div><div class="kpi-diff"><span class="dv '+k.dv+'"><i class="fas fa-'+arrow+'"></i> '+k.dvt+'</span><span class="dp '+k.dp+'">'+k.dpt+'</span><span class="kpi-sub">'+k.sub+'</span></div></div>';
+        var activeCls = idx===CHART_ACTIVE_INDEX ? ' active' : '';
+        grid.innerHTML += '<button type="button" class="kpi-card kpi-card-btn'+cardCls+activeCls+'" onclick="setActiveChart('+idx+')" aria-pressed="'+(idx===CHART_ACTIVE_INDEX?'true':'false')+'"><div class="kpi-label"><i class="fas fa-'+k.ico+'"></i> '+k.label+'</div><div class="kpi-value'+valCls+'">'+k.val+'</div><div class="kpi-diff"><span class="dv '+k.dv+'"><i class="fas fa-'+arrow+'"></i> '+k.dvt+'</span><span class="dp '+k.dp+'">'+k.dpt+'</span><span class="kpi-sub">'+k.sub+'</span></div></button>';
       });
     }
 
@@ -382,17 +360,18 @@
 
     function setSector(sector){
       SECTOR_ACTUAL = sector;
+      CHART_ACTIVE_INDEX = 0;
       var nombres = {general:'Chile',mineria:'Chile | Minería',inmobiliario:'Chile | Inmobiliario',financiero:'Chile | Financiero',retail:'Chile | Retail',energia:'Chile | Energía'};
       var t = document.getElementById('dashTitle');
       t.innerHTML = 'Dashboard Económico — <span>' + (nombres[sector]||'Chile') + '</span>';
-      document.querySelectorAll('.sec-btn').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.siwa-sector-btn').forEach(function(b){ b.classList.remove('active'); });
       var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
       renderKPIs(sector); renderNoticias(sector); renderCharts(sector);
     }
 
     var baseOpts = { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}} };
     var CHART_RANGE = '1m';
-    var CHART_SLIDE_INDEX = 0;
+    var CHART_ACTIVE_INDEX = 0;
     var CHART_INSTANCES = [];
     var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
     var SECTOR_CHARTS = {
@@ -494,23 +473,14 @@
       CHART_INSTANCES=[];
     }
 
-    function updateCarouselPosition(){
-      var track=document.getElementById('chartsTrack');
-      track.style.transform='translateX(-'+(CHART_SLIDE_INDEX*100)+'%)';
-      var max=Math.max(track.children.length-1,0);
-      document.getElementById('chartPrevBtn').disabled=CHART_SLIDE_INDEX<=0;
-      document.getElementById('chartNextBtn').disabled=CHART_SLIDE_INDEX>=max;
-    }
-
-    function moveChartSlide(step){
-      var track=document.getElementById('chartsTrack');
-      var max=Math.max(track.children.length-1,0);
-      CHART_SLIDE_INDEX=Math.max(0,Math.min(max,CHART_SLIDE_INDEX+step));
-      updateCarouselPosition();
-    }
-
     function setChartRange(range){
       CHART_RANGE=range;
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function setActiveChart(index){
+      CHART_ACTIVE_INDEX=index;
+      renderKPIs(SECTOR_ACTUAL);
       renderCharts(SECTOR_ACTUAL,true);
     }
 
@@ -528,39 +498,23 @@
       if(!defs.length) defs=SECTOR_CHARTS.general;
       var track=document.getElementById('chartsTrack');
       destroyCharts();
-      if(!preserveIndex || CHART_SLIDE_INDEX>defs.length-1) CHART_SLIDE_INDEX=0;
-      track.innerHTML=defs.map(function(def,idx){
-        var btns=['5d','1m','12m'].map(function(r){
-          var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
-          return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
-        }).join('');
-        return '<div class="chart-slide"><div class="chart-panel"><div class="chart-title"><div class="chart-accent" style="background:'+def.color+'"></div>'+escapeHtml(def.title)+'<span class="chart-sub">'+escapeHtml(def.sub)+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+idx+'"></canvas></div></div></div>';
+      if(!preserveIndex || CHART_ACTIVE_INDEX>defs.length-1) CHART_ACTIVE_INDEX=0;
+      var def=defs[CHART_ACTIVE_INDEX] || defs[0];
+      var btns=['5d','1m','12m'].map(function(r){
+        var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
+        return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
       }).join('');
+      track.innerHTML='<div class="chart-title"><div class="chart-accent" style="background:'+def.color+'"></div>'+escapeHtml(def.title)+'<span class="chart-sub">'+escapeHtml(def.sub)+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>';
 
-      defs.forEach(function(def,idx){
-        var labels=getRangeLabels(CHART_RANGE);
-        var data=buildSeries(def.base,def.drift,def.amp,labels.length);
-        var canvas=document.getElementById('chart-'+sector+'-'+idx);
-        var type='line';
-        CHART_INSTANCES.push(new Chart(canvas,{
-          type:type,
-          data:{labels:labels,datasets:[{data:data,borderColor:def.color,backgroundColor:type==='bar'?def.color+'99':def.color+'33',tension:.35,fill:type!=='bar',borderWidth:2,pointRadius:2}]},
-          options:baseOpts
-        }));
-      });
-
-      updateCarouselPosition();
-    }
-
-    function initCarouselSwipe(){
-      var wrap=document.querySelector('.charts-track-wrap');
-      var startX=0;
-      wrap.addEventListener('touchstart',function(e){ startX=e.changedTouches[0].clientX; },{passive:true});
-      wrap.addEventListener('touchend',function(e){
-        var delta=e.changedTouches[0].clientX-startX;
-        if(Math.abs(delta)<40) return;
-        moveChartSlide(delta<0 ? 1 : -1);
-      },{passive:true});
+      var labels=getRangeLabels(CHART_RANGE);
+      var data=buildSeries(def.base,def.drift,def.amp,labels.length);
+      var canvas=document.getElementById('chart-'+sector+'-'+CHART_ACTIVE_INDEX);
+      var type='line';
+      CHART_INSTANCES.push(new Chart(canvas,{
+        type:type,
+        data:{labels:labels,datasets:[{data:data,borderColor:def.color,backgroundColor:type==='bar'?def.color+'99':def.color+'33',tension:.35,fill:type!=='bar',borderWidth:2,pointRadius:2}]},
+        options:baseOpts
+      }));
     }
 
     var siwaOpen=false, siwaChatMode=false;
@@ -710,7 +664,6 @@
       siwaEnviarTexto(text);
     }
 
-    initCarouselSwipe();
     setSector('general');
     setTimeout(function(){ if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex'; },2000);
   </script>
