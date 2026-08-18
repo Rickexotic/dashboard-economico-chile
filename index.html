@@ -335,6 +335,12 @@
       energia:{impacto:'Para energía, petróleo y dólar presionan costos.',perspectiva:'Perspectiva: más inversión en renovables.',riesgo:'Riesgo: shocks geopolíticos de oferta.'}
     };
 
+    var DEFAULT_CHART_COLOR = '#3b82f6';
+    var CHART_RANGE = '1m';
+    var CHART_ACTIVE_INDEX = 0;
+    var CHART_INSTANCES = [];
+    var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
+
     function renderKPIs(sector){
       var kpis = SECTOR_KPIS[sector] || SECTOR_KPIS.general;
       var grid = document.querySelector('.kpi-grid');
@@ -378,10 +384,6 @@
     }
 
     var baseOpts = { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}} };
-    var CHART_RANGE = '1m';
-    var CHART_ACTIVE_INDEX = 0;
-    var CHART_INSTANCES = [];
-    var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
     var SECTOR_CHARTS = {
       general:[
         {title:'USD/CLP observado',sub:'nivel y variación',color:'#3b82f6',base:913,drift:0.6,amp:1.6},
@@ -502,7 +504,7 @@
     }
 
     function getSafeColor(color){
-      return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : '#3b82f6';
+      return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : DEFAULT_CHART_COLOR;
     }
 
     function renderCharts(sector,preserveIndex){
@@ -522,10 +524,9 @@
       var labels=getRangeLabels(CHART_RANGE);
       var data=buildSeries(def.base,def.drift,def.amp,labels.length);
       var canvas=document.getElementById('chart-'+sector+'-'+CHART_ACTIVE_INDEX);
-      var type='line';
       CHART_INSTANCES.push(new Chart(canvas,{
-        type:type,
-        data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:type==='bar'?safeColor+'99':safeColor+'33',tension:.35,fill:type!=='bar',borderWidth:2,pointRadius:2}]},
+        type:'line',
+        data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:safeColor+'33',tension:.35,fill:true,borderWidth:2,pointRadius:2}]},
         options:baseOpts
       }));
     }
