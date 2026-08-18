@@ -459,14 +459,24 @@
     };
 
     function getRangeLabels(range){
-      if(range==='12m') return ['Sep','Oct','Nov','Dic','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago'];
+      if(range==='12m'){
+        var mesesCortos=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+        var mLabels=[];
+        var baseMes=new Date();
+        for(var i=11;i>=0;i--){ var md=new Date(baseMes); md.setDate(1); md.setMonth(baseMes.getMonth()-i); mLabels.push(mesesCortos[md.getMonth()]); }
+        return mLabels;
+      }
       if(range==='5d'){
         var days=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
         var labels=[];
-        for(var i=4;i>=0;i--){ var d=new Date(); d.setDate(d.getDate()-i); labels.push(days[d.getDay()]); }
+        var baseDia=new Date();
+        for(var i=4;i>=0;i--){ var d=new Date(baseDia); d.setDate(baseDia.getDate()-i); labels.push(days[d.getDay()]); }
         return labels;
       }
-      return ['S1','S2','S3','S4','S5','S6'];
+      var m=[];
+      var baseMesDia=new Date();
+      for(var j=5;j>=0;j--){ var dm=new Date(baseMesDia); dm.setDate(baseMesDia.getDate()-(j*6)); m.push(dm.getDate()+'/'+(dm.getMonth()+1)); }
+      return m;
     }
 
     function buildSeries(base,drift,amp,points){
@@ -501,27 +511,37 @@
 
     function setChartRange(range){
       CHART_RANGE=range;
-      renderCharts(SECTOR_ACTUAL);
+      renderCharts(SECTOR_ACTUAL,true);
     }
 
-    function renderCharts(sector){
+    function escapeHtml(text){
+      return String(text)
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;')
+        .replace(/'/g,'&#39;');
+    }
+
+    function renderCharts(sector,preserveIndex){
       var defs=SECTOR_CHARTS[sector] || SECTOR_CHARTS.general;
+      if(!defs.length) defs=SECTOR_CHARTS.general;
       var track=document.getElementById('chartsTrack');
       destroyCharts();
-      if(CHART_SLIDE_INDEX>defs.length-1) CHART_SLIDE_INDEX=0;
+      if(!preserveIndex || CHART_SLIDE_INDEX>defs.length-1) CHART_SLIDE_INDEX=0;
       track.innerHTML=defs.map(function(def,idx){
         var btns=['5d','1m','12m'].map(function(r){
           var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
           return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
         }).join('');
-        return '<div class="chart-slide"><div class="chart-panel"><div class="chart-title"><div class="chart-accent" style="background:'+def.color+'"></div>'+def.title+'<span class="chart-sub">'+def.sub+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+idx+'"></canvas></div></div></div>';
+        return '<div class="chart-slide"><div class="chart-panel"><div class="chart-title"><div class="chart-accent" style="background:'+def.color+'"></div>'+escapeHtml(def.title)+'<span class="chart-sub">'+escapeHtml(def.sub)+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+idx+'"></canvas></div></div></div>';
       }).join('');
 
       defs.forEach(function(def,idx){
         var labels=getRangeLabels(CHART_RANGE);
         var data=buildSeries(def.base,def.drift,def.amp,labels.length);
         var canvas=document.getElementById('chart-'+sector+'-'+idx);
-        var type=(idx%5===0) ? 'bar' : 'line';
+        var type='line';
         CHART_INSTANCES.push(new Chart(canvas,{
           type:type,
           data:{labels:labels,datasets:[{data:data,borderColor:def.color,backgroundColor:type==='bar'?def.color+'99':def.color+'33',tension:.35,fill:type!=='bar',borderWidth:2,pointRadius:2}]},
