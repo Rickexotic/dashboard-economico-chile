@@ -493,6 +493,10 @@
         .replace(/'/g,'&#39;');
     }
 
+    function getSafeColor(color){
+      return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : '#3b82f6';
+    }
+
     function renderCharts(sector,preserveIndex){
       var defs=SECTOR_CHARTS[sector] || SECTOR_CHARTS.general;
       if(!defs.length) defs=SECTOR_CHARTS.general;
@@ -500,11 +504,12 @@
       destroyCharts();
       if(!preserveIndex || CHART_ACTIVE_INDEX>defs.length-1) CHART_ACTIVE_INDEX=0;
       var def=defs[CHART_ACTIVE_INDEX] || defs[0];
+      var safeColor=getSafeColor(def.color);
       var btns=['5d','1m','12m'].map(function(r){
         var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
         return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
       }).join('');
-      track.innerHTML='<div class="chart-title"><div class="chart-accent" style="background:'+def.color+'"></div>'+escapeHtml(def.title)+'<span class="chart-sub">'+escapeHtml(def.sub)+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>';
+      track.innerHTML='<div class="chart-title"><div class="chart-accent" style="background:'+safeColor+'"></div>'+escapeHtml(def.title)+'<span class="chart-sub">'+escapeHtml(def.sub)+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>';
 
       var labels=getRangeLabels(CHART_RANGE);
       var data=buildSeries(def.base,def.drift,def.amp,labels.length);
@@ -512,7 +517,7 @@
       var type='line';
       CHART_INSTANCES.push(new Chart(canvas,{
         type:type,
-        data:{labels:labels,datasets:[{data:data,borderColor:def.color,backgroundColor:type==='bar'?def.color+'99':def.color+'33',tension:.35,fill:type!=='bar',borderWidth:2,pointRadius:2}]},
+        data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:type==='bar'?safeColor+'99':safeColor+'33',tension:.35,fill:type!=='bar',borderWidth:2,pointRadius:2}]},
         options:baseOpts
       }));
     }
