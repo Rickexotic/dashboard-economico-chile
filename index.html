@@ -28,7 +28,11 @@ body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--whit
 .top-bar-left { display:flex; align-items:center; gap:10px; }
 .top-bar-bar { width:4px; height:24px; background:var(--blue); border-radius:2px; }
 .top-bar-title { font-size:1.1rem; font-weight:700; color:var(--white); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:calc(100vw - 80px); }
-@media(max-width:600px) { .top-bar-title { font-size:.85rem; } .top-bar { padding:0 12px; } }
+@media(max-width:600px) {
+  .top-bar { padding:0 12px; height:auto; min-height:50px; flex-wrap:wrap; gap:2px; padding-top:6px; padding-bottom:6px; }
+  .top-bar-title { font-size:.88rem; white-space:normal; overflow:visible; text-overflow:unset; max-width:100%; line-height:1.3; }
+  .top-bar-left { flex:1; min-width:0; }
+}
 .top-bar-title span { color:var(--blue); }
 .top-bar-right { display:flex; align-items:center; gap:14px; }
 .top-bar-date { font-size:.78rem; color:var(--muted); display:flex; align-items:center; gap:5px; }
