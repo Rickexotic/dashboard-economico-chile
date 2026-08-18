@@ -348,6 +348,14 @@
       });
     }
 
+    function syncActiveKPIState(){
+      document.querySelectorAll('.kpi-card-btn').forEach(function(card,idx){
+        var isActive = idx===CHART_ACTIVE_INDEX;
+        card.classList.toggle('active',isActive);
+        card.setAttribute('aria-pressed',isActive ? 'true' : 'false');
+      });
+    }
+
     function renderNoticias(sector){
       var nots = SECTOR_NOTICIAS[sector] || SECTOR_NOTICIAS.general;
       var list = document.querySelector('.news-list');
@@ -480,7 +488,7 @@
 
     function setActiveChart(index){
       CHART_ACTIVE_INDEX=index;
-      renderKPIs(SECTOR_ACTUAL);
+      syncActiveKPIState();
       renderCharts(SECTOR_ACTUAL,true);
     }
 
