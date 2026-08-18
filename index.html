@@ -32,6 +32,7 @@ body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--whit
 .top-bar-title span { color:var(--blue); }
 .top-bar-right { display:flex; align-items:center; gap:14px; }
 .top-bar-date { font-size:.78rem; color:var(--muted); display:flex; align-items:center; gap:5px; }
+@media(max-width:500px){ .top-bar-date { display:none; } }
 .top-bar-date i { color:var(--blue); }
 
 
@@ -248,7 +249,6 @@ body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--whit
 </div>
 <div class="top-bar-right">
 <div class="top-bar-date"><i class="fas fa-calendar-alt"></i><span id="fechaHoy"></span></div>
-Semáforo: Todo Verde</div>
 </div>
 </div>
 <!-- MAIN -->
