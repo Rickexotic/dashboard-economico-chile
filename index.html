@@ -27,13 +27,14 @@ body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--whit
 .top-bar { background:var(--bg2); border-bottom:2px solid var(--blue); padding:0 24px; height:50px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
 .top-bar-left { display:flex; align-items:center; gap:10px; }
 .top-bar-bar { width:4px; height:24px; background:var(--blue); border-radius:2px; }
-.top-bar-title { font-size:1.1rem; font-weight:700; color:var(--white); }
+.top-bar-title { font-size:1.1rem; font-weight:700; color:var(--white); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:calc(100vw - 80px); }
+@media(max-width:600px) { .top-bar-title { font-size:.85rem; } .top-bar { padding:0 12px; } }
 .top-bar-title span { color:var(--blue); }
 .top-bar-right { display:flex; align-items:center; gap:14px; }
 .top-bar-date { font-size:.78rem; color:var(--muted); display:flex; align-items:center; gap:5px; }
 .top-bar-date i { color:var(--blue); }
-.badge-verde { background:rgba(34,197,94,.15); border:1px solid rgba(34,197,94,.4); color:var(--green); font-size:.65rem; font-weight:700; padding:2px 9px; border-radius:20px; text-transform:uppercase; display:flex; align-items:center; gap:4px; }
-.bdot { width:5px; height:5px; background:var(--green); border-radius:50%; }
+
+
 
 /* ── SECTOR BAR ── */
 .sector-bar { background:var(--bg3); border-bottom:1px solid rgba(255,255,255,.06); padding:8px 24px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
@@ -247,7 +248,7 @@ body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--whit
 </div>
 <div class="top-bar-right">
 <div class="top-bar-date"><i class="fas fa-calendar-alt"></i><span id="fechaHoy"></span></div>
-<div class="badge-verde"><div class="bdot"></div>Semáforo: Todo Verde</div>
+Semáforo: Todo Verde</div>
 </div>
 </div>
 <!-- MAIN -->
