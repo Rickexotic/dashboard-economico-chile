@@ -74,6 +74,14 @@
       border:3px solid rgba(59,130,246,.6); box-shadow:0 4px 20px rgba(59,130,246,.4);
       display:flex; align-items:center; justify-content:center;
       background:linear-gradient(135deg,#1d4ed8,#3b82f6); font-size:2rem;
+      overflow:hidden;
+    }
+    #siwa-avatar-fab{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
     }
     #siwa-notif {
       position:absolute; top:-3px; right:-3px; width:18px; height:18px; border-radius:50%;
@@ -94,6 +102,14 @@
       border-bottom:2px solid var(--blue);
       padding:12px 16px; display:flex; align-items:center; gap:10px;
     }
+    #siwa-header-avatar{
+      width:38px;
+      height:38px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid rgba(59,130,246,.6);
+      flex-shrink:0;
+    }
     #siwa-header-info h4 { font-size:.88rem; font-weight:700; margin:0; }
     #siwa-header-info p { font-size:.65rem; color:var(--green); margin:0; }
     #siwa-close,#siwa-back { background:none; border:none; color:var(--muted); cursor:pointer; }
@@ -101,7 +117,8 @@
     #siwa-menu { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.06); }
     #siwa-menu-title { font-size:.65rem; color:var(--muted); font-weight:600; text-transform:uppercase; margin-bottom:10px; }
     .siwa-menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
-    .siwa-menu-btn { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); color:var(--white); padding:9px 12px; border-radius:10px; font-size:.75rem; font-weight:600; cursor:pointer; }
+    .siwa-menu-btn { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); color:var(--white); padding:9px 12px; border-radius:10px; font-size:.75rem; font-weight:600; cursor:pointer; transition:all .2s; }
+    .siwa-menu-btn:hover { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.35); }
     .siwa-menu-btn.pregunta { grid-column:1/-1; background:rgba(167,139,250,.1); border-color:rgba(167,139,250,.3); color:var(--purple); }
 
     #siwa-sector-label { padding:6px 16px; background:rgba(59,130,246,.08); border-bottom:1px solid rgba(255,255,255,.05); font-size:.63rem; display:none; }
@@ -187,12 +204,13 @@
   </div>
 
   <div id="siwa-fab" onclick="siwaToggle()" title="Hablar con Siwa">
-    🧑‍💼
+    <img src="Siwa.png" alt="Siwa" id="siwa-avatar-fab" />
     <div id="siwa-notif">1</div>
   </div>
 
   <div id="siwa-panel">
     <div id="siwa-header">
+      <img src="Siwa.png" alt="Siwa" id="siwa-header-avatar" />
       <div id="siwa-header-info">
         <h4>Siwa — Analista Económica</h4>
         <p>En línea · Chile</p>
@@ -300,8 +318,8 @@
     };
 
     var SECTOR_KB = {
-      mineria:{impacto:'Para minería, cobre alto mejora ingresos y caja operativa.',perspectiva:'Perspectiva: positiva mientras se sostenga demanda global.',riesgo:'Riesgos: caída del cobre y costos energéticos.'},
-      inmobiliario:{impacto:'Para inmobiliario, TPM/UF condicionan costo del crédito.',perspectiva:'Perspectiva: gradual recuperación de demanda.',riesgo:'Riesgo principal: deterioro de tasas reales.'},
+      mineria:{impacto:'Para minería, cobre alto mejora ingresos y caja operativa.',perspectiva:'Perspectiva: positiva mientras se sostenga demanda global.',riesgo:'Riesgos: caída del cobre y costos operacionales al alza.'},
+      inmobiliario:{impacto:'Para inmobiliario, TPM/UF condicionan costo del crédito.',perspectiva:'Perspectiva: gradual recuperación de demanda.',riesgo:'Riesgo principal: deterioro de tasas reales y menor empleo.'},
       financiero:{impacto:'Para financiero, EMBI bajo mejora acceso a fondeo.',perspectiva:'Perspectiva: estabilidad de márgenes si inflación contenida.',riesgo:'Riesgo: volatilidad externa y tipo de cambio.'},
       retail:{impacto:'Para retail, IPC bajo ayuda consumo real.',perspectiva:'Perspectiva: mejora gradual de ventas.',riesgo:'Riesgo: depreciación cambiaria en importaciones.'},
       energia:{impacto:'Para energía, petróleo y dólar presionan costos.',perspectiva:'Perspectiva: más inversión en renovables.',riesgo:'Riesgo: shocks geopolíticos de oferta.'}
@@ -340,9 +358,9 @@
     }
 
     var baseOpts = { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}} };
-    new Chart(document.getElementById('cobreChart'), { type:'line', data:{ labels:['23 Jul','30 Jul','6 Ago','11 Ago','13 Ago','14 Ago'], datasets:[{data:[6.28,6.35,6.44,6.51,6.51,6.48],borderColor:'#f97316',backgroundColor:'rgba(249,115,22,.1)',borderWidth:2,tension:.4,fill:true}]}, options:baseOpts });
-    new Chart(document.getElementById('dolarChart'), { type:'line', data:{ labels:['23 Jul','30 Jul','6 Ago','11 Ago','13 Ago','14 Ago'], datasets:[{data:[919,916,914,912,912,913.2],borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.1)',borderWidth:2,tension:.4,fill:true}]}, options:baseOpts });
-    new Chart(document.getElementById('embiChart'), { type:'bar', data:{ labels:['Chile','Brasil','Colombia','México','Argentina'], datasets:[{data:[0.88,1.73,1.90,1.96,4.69],backgroundColor:['rgba(59,130,246,.9)','rgba(59,130,246,.6)','rgba(59,130,246,.6)','rgba(59,130,246,.6)','rgba(239,68,68,.7)']}]}, options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}}} });
+    new Chart(document.getElementById('cobreChart'), { type:'line', data:{ labels:['23 Jul','30 Jul','6 Ago','11 Ago','13 Ago','14 Ago'], datasets:[{data:[6.28,6.35,6.44,6.51,6.51,6.48],borderColor:'#f97316',backgroundColor:'rgba(249,115,22,.2)',tension:.35,fill:true,borderWidth:2,pointRadius:2}]}, options:baseOpts });
+    new Chart(document.getElementById('dolarChart'), { type:'line', data:{ labels:['23 Jul','30 Jul','6 Ago','11 Ago','13 Ago','14 Ago'], datasets:[{data:[919,916,914,912,912,913.2],borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.2)',tension:.35,fill:true,borderWidth:2,pointRadius:2}]}, options:baseOpts });
+    new Chart(document.getElementById('embiChart'), { type:'bar', data:{ labels:['Chile','Brasil','Colombia','México','Argentina'], datasets:[{data:[0.88,1.73,1.90,1.96,4.69],backgroundColor:['rgba(34,197,94,.8)','rgba(59,130,246,.7)','rgba(249,115,22,.7)','rgba(167,139,250,.7)','rgba(239,68,68,.75)']}]}, options:baseOpts });
 
     var siwaOpen=false, siwaChatMode=false;
     var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
@@ -398,13 +416,47 @@
     }
 
     function hora(){ return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'}); }
-    function siwaAddBot(html){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg bot'; d.innerHTML='<div><div class="sw-bubble">'+html+'</div><div class="sw-time">'+hora()+'</div></div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
-    function siwaAddUser(text){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg user'; d.innerHTML='<div><div class="sw-bubble">'+text+'</div><div class="sw-time">'+hora()+'</div></div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
-    function siwaAddSugs(sugs){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg bot'; d.innerHTML='<div class="sw-sugs">'+sugs.map(function(s){return '<span class="sw-sug" onclick="siwaEnviarTexto(\''+s.replace(/'/g,"\\'")+'\')">'+s+'</span>';}).join('')+'</div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
-    function siwaShowTyping(){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg bot'; d.id='sw-typing'; d.innerHTML='<div class="sw-bubble">Escribiendo...</div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
+    function siwaAddBot(html){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div><div class="sw-bubble">'+html+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+    function siwaAddUser(text){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg user';
+      d.innerHTML='<div><div class="sw-bubble">'+text+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+    function siwaAddSugs(sugs){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div class="sw-sugs">'+sugs.map(function(s){return '<button class="sw-sug" onclick="siwaEnviarTexto(\''+s.replace(/'/g,"\\'")+'\')">'+s+'</button>';}).join('')+'</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+    function siwaShowTyping(){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.id='sw-typing';
+      d.innerHTML='<div class="sw-bubble">Escribiendo...</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
     function siwaHideTyping(){ var t=document.getElementById('sw-typing'); if(t) t.remove(); }
 
-    function siwaToggle(){ siwaOpen=!siwaOpen; var p=document.getElementById('siwa-panel'); if(siwaOpen){p.classList.add('open'); document.getElementById('siwa-notif').style.display='none';} else p.classList.remove('open'); }
+    function siwaToggle(){
+      siwaOpen=!siwaOpen;
+      var p=document.getElementById('siwa-panel');
+      if(siwaOpen){ p.classList.add('open'); document.getElementById('siwa-notif').style.display='none'; }
+      else p.classList.remove('open');
+    }
     function siwaClose(){ siwaOpen=false; document.getElementById('siwa-panel').classList.remove('open'); }
     function siwaVolverMenu(){ siwaChatMode=false; document.getElementById('siwa-panel').classList.remove('chat-mode'); document.getElementById('siwa-msgs').innerHTML=''; }
 
@@ -425,7 +477,7 @@
       document.getElementById('siwa-sector-name').textContent=SECTORES[sector].label;
       document.getElementById('siwa-msgs').innerHTML='';
       var s=SECTORES[sector];
-      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot usando este sector como contexto.</small>');
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
       setTimeout(function(){ siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']); },350);
       setTimeout(function(){ document.getElementById('siwa-input').focus(); },150);
     }
