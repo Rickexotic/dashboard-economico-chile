@@ -32,8 +32,10 @@
     .sec-btn.active { background:var(--blue); border-color:var(--blue); color:var(--white); }
 
     .main { padding:16px 24px 100px; }
-    .kpi-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:14px; }
-    .kpi-card { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; border-left:3px solid var(--blue); transition:transform .2s; }
+    .kpi-grid { display:flex; gap:10px; margin-bottom:14px; overflow-x:auto; padding-bottom:4px; scroll-snap-type:x proximity; }
+    .kpi-grid::-webkit-scrollbar { height:7px; }
+    .kpi-grid::-webkit-scrollbar-thumb { background:rgba(148,163,184,.35); border-radius:999px; }
+    .kpi-card { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; border-left:3px solid var(--blue); transition:transform .2s; min-width:220px; flex:0 0 220px; scroll-snap-align:start; }
     .kpi-card:hover { transform:translateY(-2px); }
     .kpi-card.green { border-left-color:var(--green); }
     .kpi-card.orange { border-left-color:var(--orange); }
@@ -50,12 +52,23 @@
     .dp.fl { background:rgba(176,184,200,.12); color:var(--muted); }
     .kpi-sub { font-size:.57rem; color:var(--muted); margin-left:auto; }
 
-    .charts-grid { display:grid; grid-template-columns:1fr 1fr 280px; gap:12px; margin-bottom:14px; }
+    .charts-carousel { margin-bottom:14px; }
+    .carousel-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px; }
+    .carousel-title { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); }
+    .carousel-nav { display:flex; align-items:center; gap:6px; }
+    .carousel-btn { width:28px; height:28px; border-radius:8px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.05); color:var(--white); cursor:pointer; }
+    .carousel-btn:disabled { opacity:.35; cursor:not-allowed; }
+    .charts-track-wrap { overflow:hidden; border-radius:10px; }
+    .charts-track { display:flex; transition:transform .25s ease; touch-action:pan-y; }
+    .chart-slide { flex:0 0 100%; min-width:100%; }
     .chart-panel { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; }
-    .chart-title { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin-bottom:8px; display:flex; align-items:center; gap:6px; }
+    .chart-title { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin-bottom:8px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
     .chart-accent { width:10px; height:3px; border-radius:2px; background:var(--blue); }
     .chart-sub { font-size:.53rem; color:var(--muted); margin-left:auto; text-transform:none; }
-    .chart-wrap { height:150px; position:relative; }
+    .chart-wrap { height:170px; position:relative; }
+    .chart-ranges { display:flex; gap:5px; margin-bottom:8px; }
+    .range-btn { font-size:.6rem; font-weight:700; padding:4px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.05); color:var(--muted); cursor:pointer; text-transform:uppercase; }
+    .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
 
     .news-panel { background:rgba(59,130,246,.07); border:1px solid rgba(59,130,246,.2); border-radius:10px; padding:12px 16px; }
     .news-title { font-size:.65rem; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.07em; margin-bottom:10px; display:flex; align-items:center; gap:6px; }
@@ -145,8 +158,6 @@
     #siwa-panel:not(.chat-mode) #siwa-input-area { display:none; }
 
     @media(max-width:900px) {
-      .kpi-grid { grid-template-columns:repeat(2,1fr); }
-      .charts-grid { grid-template-columns:1fr; }
       .news-list { grid-template-columns:1fr; }
       .main { padding:12px 14px 100px; }
     }
@@ -178,18 +189,16 @@
   <div class="main">
     <div class="kpi-grid"></div>
 
-    <div class="charts-grid">
-      <div class="chart-panel">
-        <div class="chart-title"><div class="chart-accent" style="background:var(--orange)"></div>Tendencia Cobre (US$/lb)<span class="chart-sub">últimas semanas</span></div>
-        <div class="chart-wrap"><canvas id="cobreChart"></canvas></div>
+    <div class="charts-carousel">
+      <div class="carousel-head">
+        <div class="carousel-title">Indicadores en carrusel</div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="chartPrevBtn" onclick="moveChartSlide(-1)" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn" id="chartNextBtn" onclick="moveChartSlide(1)" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+        </div>
       </div>
-      <div class="chart-panel">
-        <div class="chart-title"><div class="chart-accent"></div>Tendencia Dólar USD/CLP<span class="chart-sub">últimas semanas</span></div>
-        <div class="chart-wrap"><canvas id="dolarChart"></canvas></div>
-      </div>
-      <div class="chart-panel">
-        <div class="chart-title"><div class="chart-accent"></div>EMBI Latam (%)</div>
-        <div class="chart-wrap"><canvas id="embiChart"></canvas></div>
+      <div class="charts-track-wrap">
+        <div class="charts-track" id="chartsTrack"></div>
       </div>
     </div>
 
@@ -261,40 +270,64 @@
 
     var SECTOR_KPIS = {
       general:[
-        {label:'Dólar USD/CLP',ico:'dollar-sign',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'vs ayer'},
-        {label:'IPC Mensual',ico:'percent',val:'-0,2%',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Positivo',sub:'vs mes ant.',color:'green'},
-        {label:'Cobre LME',ico:'industry',val:'US$6,48/lb',dv:'dn',dvt:'-$0,03',dp:'dn',dpt:'-0,46%',sub:'vs ayer',color:'orange'},
-        {label:'EMBI Chile',ico:'shield-alt',val:'88 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'Sin cambio',sub:'Más bajo Latam',color:'green'}
+        {label:'USD/CLP observado',ico:'dollar-sign',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'YTD +3,2% · 12m +5,6%'},
+        {label:'IPC',ico:'percent',val:'-0,2% m/m',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Acum +2,1%',sub:'12m +3,8%',color:'green'},
+        {label:'UF',ico:'chart-line',val:'$40.851,38',dv:'up',dvt:'+$1,32',dp:'up',dpt:'+0,38%',sub:'variación mensual',color:'orange'},
+        {label:'IMACEC',ico:'industry',val:'+1,8% a/a',dv:'up',dvt:'+0,3 pp',dp:'up',dpt:'Desest. +0,2%',sub:'serie desestacionalizada'},
+        {label:'Desempleo nacional',ico:'users',val:'8,6%',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'Mejora',sub:'trimestre móvil',color:'green'},
+        {label:'Riesgo país Chile',ico:'shield-alt',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'EMBI',sub:'CDS 5Y: 63 pb'},
+        {label:'TPM',ico:'university',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'expectativa mercado'},
+        {label:'PIB real',ico:'chart-bar',val:'+0,7% t/t',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'+1,9% a/a',sub:'crecimiento trimestral',color:'green'}
       ],
       mineria:[
-        {label:'Cobre LME',ico:'industry',val:'US$6,48/lb',dv:'dn',dvt:'-$0,03',dp:'dn',dpt:'-0,46%',sub:'vs ayer',color:'orange'},
-        {label:'Dólar USD/CLP',ico:'dollar-sign',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'vs ayer'},
-        {label:'Litio',ico:'bolt',val:'US$12.400/t',dv:'up',dvt:'+$200',dp:'up',dpt:'+1,64%',sub:'vs semana'},
-        {label:'EMBI Chile',ico:'shield-alt',val:'88 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'Sin cambio',sub:'Riesgo país'}
+        {label:'Cobre contado',ico:'industry',val:'US$4,16/lb',dv:'up',dvt:'+$0,02',dp:'up',dpt:'Futuro 3m: 4,19',sub:'contado y futuro',color:'orange'},
+        {label:'Carbonato de litio',ico:'bolt',val:'US$12.400/t',dv:'up',dvt:'+$200',dp:'up',dpt:'+1,64%',sub:'US$/tonelada'},
+        {label:'Oro',ico:'coins',val:'US$2.456/oz',dv:'up',dvt:'+$18',dp:'up',dpt:'+0,74%',sub:'onza troy',color:'green'},
+        {label:'Producción cobre Chile',ico:'industry',val:'442 mil ton',dv:'up',dvt:'+2,1% a/a',dp:'up',dpt:'anual',sub:'toneladas mensuales'},
+        {label:'Producción litio Chile',ico:'bolt',val:'24,8 mil ton LCE',dv:'up',dvt:'+4,2% a/a',dp:'up',dpt:'expansión',sub:'toneladas LCE'},
+        {label:'Exportaciones mineras',ico:'ship',val:'US$5,9 bn',dv:'up',dvt:'+6,3% a/a',dp:'fl',dpt:'57% del total',sub:'participación exportaciones'},
+        {label:'Inventarios cobre global',ico:'boxes',val:'364 mil ton',dv:'dn',dvt:'-3,8% m/m',dp:'up',dpt:'BML/COMEX/SHFE',sub:'inventarios mundiales',color:'green'},
+        {label:'Costo cobre C1',ico:'money-bill-wave',val:'US$1,72/lb',dv:'up',dvt:'+$0,04',dp:'dn',dpt:'presión costos',sub:'cash cost promedio'}
       ],
       inmobiliario:[
-        {label:'UF',ico:'chart-line',val:'$40.851,38',dv:'up',dvt:'+$1,32',dp:'up',dpt:'+0,003%',sub:'vs ayer',color:'orange'},
-        {label:'TPM',ico:'university',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'Neutral',sub:'BCCh'},
-        {label:'IPC',ico:'percent',val:'-0,2%',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Positivo',sub:'mensual',color:'green'},
-        {label:'Tasa Hipotecaria',ico:'home',val:'4,85%',dv:'dn',dvt:'-0,05%',dp:'up',dpt:'Baja',sub:'promedio'}
+        {label:'Tasa hipotecaria UF',ico:'home',val:'4,85%',dv:'dn',dvt:'-0,05 pp',dp:'up',dpt:'promedio',sub:'operaciones en UF',color:'green'},
+        {label:'Permisos de edificación',ico:'building',val:'1,21 MM m²',dv:'up',dvt:'+3,4% a/a',dp:'up',dpt:'superficie',sub:'m² autorizados'},
+        {label:'Índice precio vivienda',ico:'chart-line',val:'126,8',dv:'up',dvt:'+0,6% t/t',dp:'up',dpt:'Norte +0,8%',sub:'nacional y por zona',color:'orange'},
+        {label:'Ventas viviendas nuevas',ico:'shopping-cart',val:'3.120 unid.',dv:'up',dvt:'+5,1% a/a',dp:'up',dpt:'mensual',sub:'casas y deptos'},
+        {label:'Meses para agotar stock',ico:'hourglass-half',val:'20,4 meses',dv:'dn',dvt:'-0,8',dp:'up',dpt:'casas 16,2',sub:'deptos 22,1',color:'green'},
+        {label:'Stock disponible',ico:'warehouse',val:'89.500 unid.',dv:'dn',dvt:'-1,6% a/a',dp:'up',dpt:'normalizando',sub:'viviendas disponibles'},
+        {label:'Costo de construcción',ico:'hammer',val:'Índice 142,3',dv:'up',dvt:'+4,4% a/a',dp:'dn',dpt:'aún alto',sub:'variación anual'},
+        {label:'Colocaciones hipotecarias',ico:'university',val:'UF 1.290 MM',dv:'up',dvt:'+2,7% a/a',dp:'up',dpt:'saldo',sub:'crecimiento anual'}
       ],
       financiero:[
-        {label:'TPM',ico:'university',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'Neutral',sub:'BCCh'},
-        {label:'EMBI Chile',ico:'shield-alt',val:'88 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'Sin cambio',sub:'Latam',color:'green'},
-        {label:'Dólar USD/CLP',ico:'dollar-sign',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'vs ayer'},
-        {label:'IPSA',ico:'chart-bar',val:'11.000 pts',dv:'up',dvt:'+17 pts',dp:'up',dpt:'+0,16%',sub:'vs ayer',color:'green'}
+        {label:'USD/CLP',ico:'dollar-sign',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'YTD +3,2%',sub:'12m +5,6%'},
+        {label:'EUR/CLP',ico:'euro-sign',val:'$992,10',dv:'dn',dvt:'-$0,90',dp:'up',dpt:'YTD +1,8%',sub:'12m +4,9%'},
+        {label:'Bitcoin/USD',ico:'bitcoin',val:'US$64.800',dv:'up',dvt:'+1,9%',dp:'dn',dpt:'Vol 30d: 42%',sub:'precio y volatilidad',color:'orange'},
+        {label:'TPM',ico:'university',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'trayectoria 4,25%',sub:'esperada 12m'},
+        {label:'Tasa interbancaria',ico:'percent',val:'4,44%',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'overnight',sub:'TIB diaria'},
+        {label:'IPSA',ico:'chart-bar',val:'11.000 pts',dv:'up',dvt:'+17 pts',dp:'up',dpt:'YTD +8,7%',sub:'rendimiento acumulado',color:'green'},
+        {label:'Depósitos y créditos',ico:'piggy-bank',val:'Dep 4,2% / Cred 11,8%',dv:'fl',dvt:'0,1 pp',dp:'dn',dpt:'por plazo',sub:'tasas promedio'},
+        {label:'Mora bancaria',ico:'exclamation-triangle',val:'2,23%',dv:'up',dvt:'+0,05 pp',dp:'dn',dpt:'cartera vencida',sub:'sobre colocaciones'}
       ],
       retail:[
-        {label:'IPC',ico:'percent',val:'-0,2%',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Positivo',sub:'mensual',color:'green'},
-        {label:'UTM',ico:'landmark',val:'$71.649',dv:'fl',dvt:'$0',dp:'fl',dpt:'0,00%',sub:'mensual'},
-        {label:'Dólar USD/CLP',ico:'dollar-sign',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'vs ayer'},
-        {label:'Ventas Retail',ico:'shopping-cart',val:'+3,1%',dv:'up',dvt:'+3,1%',dp:'up',dpt:'Anual',sub:'INE'}
+        {label:'Ventas comercio minorista',ico:'shopping-cart',val:'+3,1% a/a',dv:'up',dvt:'+0,4 pp',dp:'up',dpt:'real anual',sub:'índice retail',color:'green'},
+        {label:'Ventas online minoristas',ico:'laptop',val:'Índice 118,2',dv:'up',dvt:'+8,3% a/a',dp:'up',dpt:'20% participación',sub:'estimada'},
+        {label:'Ventas supermercados',ico:'store',val:'+1,9% a/a',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'real anual',sub:'variación real'},
+        {label:'Inventarios comercio',ico:'boxes',val:'Índice 104,5',dv:'dn',dvt:'-1,1% m/m',dp:'up',dpt:'ajuste stock',sub:'nivel y variación',color:'green'},
+        {label:'Confianza consumidor',ico:'smile',val:'46,8 pts',dv:'up',dvt:'+1,5',dp:'up',dpt:'tendencia mejora',sub:'índice confianza'},
+        {label:'IPC bienes transables',ico:'tags',val:'0,1% m/m',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'2,6% a/a',sub:'mensual y anual'},
+        {label:'Empleo en comercio',ico:'user-tie',val:'1,56 MM',dv:'up',dvt:'+2,0% a/a',dp:'up',dpt:'ocupación',sub:'variación anual'},
+        {label:'Import. bienes consumo',ico:'ship',val:'US$2,1 bn',dv:'up',dvt:'+4,9% a/a',dp:'up',dpt:'volumen +3,6%',sub:'US$ y volumen'}
       ],
       energia:[
-        {label:'WTI',ico:'tint',val:'US$81,17/bbl',dv:'up',dvt:'+$0,45',dp:'up',dpt:'+0,56%',sub:'vs ayer',color:'orange'},
-        {label:'Brent',ico:'tint',val:'US$86,96/bbl',dv:'up',dvt:'+$0,38',dp:'up',dpt:'+0,44%',sub:'vs ayer',color:'orange'},
-        {label:'Dólar USD/CLP',ico:'dollar-sign',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'vs ayer'},
-        {label:'Precio Energía',ico:'bolt',val:'$98,4/MWh',dv:'dn',dvt:'-$2,1',dp:'up',dpt:'Baja',sub:'SIC',color:'green'}
+        {label:'Petróleo Brent',ico:'tint',val:'US$86,96/bbl',dv:'up',dvt:'+$0,38',dp:'up',dpt:'+0,44%',sub:'US$/barril',color:'orange'},
+        {label:'Petróleo WTI',ico:'oil-can',val:'US$81,17/bbl',dv:'up',dvt:'+$0,45',dp:'up',dpt:'+0,56%',sub:'US$/barril',color:'orange'},
+        {label:'Gas natural',ico:'fire',val:'HH US$2,7/MMBtu',dv:'up',dvt:'+0,09',dp:'up',dpt:'GNL: 11,3',sub:'Henry Hub + GNL'},
+        {label:'Costo marginal electricidad',ico:'bolt',val:'US$94,2/MWh',dv:'dn',dvt:'-2,8',dp:'up',dpt:'SEN',sub:'por barra',color:'green'},
+        {label:'Precio medio mercado',ico:'plug',val:'US$98,4/MWh',dv:'dn',dvt:'-2,1',dp:'up',dpt:'mensual',sub:'mercado eléctrico'},
+        {label:'Generación eléctrica total',ico:'charging-station',val:'7.320 GWh',dv:'up',dvt:'+2,4% a/a',dp:'up',dpt:'mensual',sub:'generación total'},
+        {label:'Participación renovable',ico:'leaf',val:'41,8%',dv:'up',dvt:'+1,2 pp',dp:'up',dpt:'de la generación',sub:'ERNC + hidro',color:'green'},
+        {label:'Demanda eléctrica nacional',ico:'chart-area',val:'6.980 GWh',dv:'up',dvt:'+1,6% a/a',dp:'up',dpt:'punta 11,2 GW',sub:'GWh y punta'}
       ]
     };
 
@@ -354,13 +387,161 @@
       t.innerHTML = 'Dashboard Económico — <span>' + (nombres[sector]||'Chile') + '</span>';
       document.querySelectorAll('.sec-btn').forEach(function(b){ b.classList.remove('active'); });
       var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
-      renderKPIs(sector); renderNoticias(sector);
+      renderKPIs(sector); renderNoticias(sector); renderCharts(sector);
     }
 
     var baseOpts = { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}} };
-    new Chart(document.getElementById('cobreChart'), { type:'line', data:{ labels:['23 Jul','30 Jul','6 Ago','11 Ago','13 Ago','14 Ago'], datasets:[{data:[6.28,6.35,6.44,6.51,6.51,6.48],borderColor:'#f97316',backgroundColor:'rgba(249,115,22,.2)',tension:.35,fill:true,borderWidth:2,pointRadius:2}]}, options:baseOpts });
-    new Chart(document.getElementById('dolarChart'), { type:'line', data:{ labels:['23 Jul','30 Jul','6 Ago','11 Ago','13 Ago','14 Ago'], datasets:[{data:[919,916,914,912,912,913.2],borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.2)',tension:.35,fill:true,borderWidth:2,pointRadius:2}]}, options:baseOpts });
-    new Chart(document.getElementById('embiChart'), { type:'bar', data:{ labels:['Chile','Brasil','Colombia','México','Argentina'], datasets:[{data:[0.88,1.73,1.90,1.96,4.69],backgroundColor:['rgba(34,197,94,.8)','rgba(59,130,246,.7)','rgba(249,115,22,.7)','rgba(167,139,250,.7)','rgba(239,68,68,.75)']}]}, options:baseOpts });
+    var CHART_RANGE = '1m';
+    var CHART_SLIDE_INDEX = 0;
+    var CHART_INSTANCES = [];
+    var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
+    var SECTOR_CHARTS = {
+      general:[
+        {title:'USD/CLP observado',sub:'nivel y variación',color:'#3b82f6',base:913,drift:0.6,amp:1.6},
+        {title:'IPC',sub:'variación mensual/anual',color:'#22c55e',base:3.8,drift:-0.03,amp:0.2},
+        {title:'UF',sub:'valor diario',color:'#f97316',base:40850,drift:3.2,amp:6},
+        {title:'IMACEC',sub:'variación interanual',color:'#a78bfa',base:1.8,drift:0.05,amp:0.18},
+        {title:'Desempleo nacional',sub:'trimestre móvil',color:'#ef4444',base:8.6,drift:-0.02,amp:0.1},
+        {title:'Riesgo país Chile',sub:'EMBI / CDS 5Y',color:'#3b82f6',base:89,drift:-0.4,amp:1.8},
+        {title:'TPM',sub:'nivel y expectativa 12m',color:'#22c55e',base:4.5,drift:-0.02,amp:0.06},
+        {title:'PIB real',sub:'trimestral e interanual',color:'#f97316',base:1.9,drift:0.02,amp:0.15}
+      ],
+      mineria:[
+        {title:'Precio cobre contado/futuro',sub:'US$/lb',color:'#f97316',base:4.16,drift:0.02,amp:0.06},
+        {title:'Carbonato de litio',sub:'US$/tonelada',color:'#3b82f6',base:12400,drift:12,amp:120},
+        {title:'Precio del oro',sub:'US$/onza troy',color:'#22c55e',base:2456,drift:2,amp:12},
+        {title:'Producción cobre Chile',sub:'toneladas',color:'#a78bfa',base:442000,drift:950,amp:3200},
+        {title:'Producción litio Chile',sub:'toneladas LCE',color:'#3b82f6',base:24800,drift:80,amp:260},
+        {title:'Exportaciones mineras',sub:'US$ y participación',color:'#22c55e',base:5900,drift:30,amp:70},
+        {title:'Inventarios cobre global',sub:'BML/COMEX/SHFE',color:'#ef4444',base:364,drift:-0.5,amp:4.2},
+        {title:'Costo producción cobre C1',sub:'cash cost US$/lb',color:'#f97316',base:1.72,drift:0.003,amp:0.02}
+      ],
+      inmobiliario:[
+        {title:'Tasa hipotecaria UF',sub:'promedio',color:'#22c55e',base:4.85,drift:-0.02,amp:0.05},
+        {title:'Permisos de edificación',sub:'m² autorizados',color:'#3b82f6',base:1210,drift:10,amp:35},
+        {title:'Índice de precios vivienda',sub:'nacional y por zona',color:'#f97316',base:126.8,drift:0.15,amp:0.4},
+        {title:'Ventas viviendas nuevas',sub:'unidades mensuales',color:'#a78bfa',base:3120,drift:20,amp:80},
+        {title:'Meses para agotar stock',sub:'casas y deptos',color:'#22c55e',base:20.4,drift:-0.08,amp:0.2},
+        {title:'Stock disponible',sub:'unidades',color:'#ef4444',base:89500,drift:-90,amp:320},
+        {title:'Costo de construcción',sub:'índice y variación anual',color:'#f97316',base:142.3,drift:0.2,amp:0.5},
+        {title:'Colocaciones hipotecarias',sub:'saldo',color:'#3b82f6',base:1290,drift:5,amp:12}
+      ],
+      financiero:[
+        {title:'USD/CLP',sub:'spot y retornos',color:'#3b82f6',base:913,drift:0.6,amp:1.5},
+        {title:'EUR/CLP',sub:'spot y retornos',color:'#22c55e',base:992,drift:0.5,amp:1.6},
+        {title:'Bitcoin/USD',sub:'precio y vol. 30d',color:'#f97316',base:64800,drift:55,amp:220},
+        {title:'TPM esperada',sub:'trayectoria',color:'#a78bfa',base:4.5,drift:-0.02,amp:0.05},
+        {title:'Tasa interbancaria',sub:'overnight (TIB)',color:'#22c55e',base:4.44,drift:-0.01,amp:0.04},
+        {title:'IPSA',sub:'nivel y acumulado',color:'#3b82f6',base:11000,drift:22,amp:60},
+        {title:'Tasas depósitos/créditos',sub:'por plazo y producto',color:'#ef4444',base:8.0,drift:0.02,amp:0.15},
+        {title:'Mora bancaria',sub:'vencida/colocaciones',color:'#f97316',base:2.23,drift:0.01,amp:0.03}
+      ],
+      retail:[
+        {title:'Índice ventas minoristas',sub:'variación real anual',color:'#22c55e',base:103.1,drift:0.3,amp:0.7},
+        {title:'Ventas online minoristas',sub:'índice y participación',color:'#3b82f6',base:118.2,drift:0.5,amp:1.2},
+        {title:'Ventas supermercados',sub:'variación real anual',color:'#22c55e',base:101.9,drift:0.2,amp:0.6},
+        {title:'Inventarios comercio',sub:'nivel y variación',color:'#f97316',base:104.5,drift:-0.1,amp:0.7},
+        {title:'Confianza consumidor',sub:'nivel y tendencia',color:'#a78bfa',base:46.8,drift:0.2,amp:0.5},
+        {title:'IPC bienes transables',sub:'mensual y anual',color:'#3b82f6',base:2.6,drift:-0.02,amp:0.1},
+        {title:'Empleo en comercio',sub:'ocupación y variación',color:'#22c55e',base:1560,drift:1.5,amp:3.2},
+        {title:'Importaciones consumo',sub:'US$ y volumen',color:'#ef4444',base:2100,drift:5,amp:14}
+      ],
+      energia:[
+        {title:'Petróleo Brent',sub:'US$/barril',color:'#f97316',base:86.96,drift:0.1,amp:0.5},
+        {title:'Petróleo WTI',sub:'US$/barril',color:'#f97316',base:81.17,drift:0.1,amp:0.5},
+        {title:'Gas natural',sub:'Henry Hub / GNL',color:'#3b82f6',base:2.7,drift:0.01,amp:0.08},
+        {title:'Costo marginal electricidad',sub:'US$/MWh',color:'#22c55e',base:94.2,drift:-0.1,amp:0.6},
+        {title:'Precio medio mercado',sub:'US$/MWh',color:'#a78bfa',base:98.4,drift:-0.08,amp:0.5},
+        {title:'Generación eléctrica total',sub:'GWh mensual',color:'#3b82f6',base:7320,drift:8,amp:24},
+        {title:'Participación renovable',sub:'% generación total',color:'#22c55e',base:41.8,drift:0.07,amp:0.2},
+        {title:'Demanda eléctrica nacional',sub:'GWh y punta',color:'#ef4444',base:6980,drift:7,amp:22}
+      ]
+    };
+
+    function getRangeLabels(range){
+      if(range==='12m') return ['Sep','Oct','Nov','Dic','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago'];
+      if(range==='5d'){
+        var days=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
+        var labels=[];
+        for(var i=4;i>=0;i--){ var d=new Date(); d.setDate(d.getDate()-i); labels.push(days[d.getDay()]); }
+        return labels;
+      }
+      return ['S1','S2','S3','S4','S5','S6'];
+    }
+
+    function buildSeries(base,drift,amp,points){
+      var out=[];
+      for(var i=0;i<points;i++){
+        var val=base + (drift*i) + (Math.sin(i*1.4)*amp);
+        var digits=base>=100 ? 1 : base>=10 ? 2 : 3;
+        out.push(Number(val.toFixed(digits)));
+      }
+      return out;
+    }
+
+    function destroyCharts(){
+      CHART_INSTANCES.forEach(function(c){ if(c&&c.destroy) c.destroy(); });
+      CHART_INSTANCES=[];
+    }
+
+    function updateCarouselPosition(){
+      var track=document.getElementById('chartsTrack');
+      track.style.transform='translateX(-'+(CHART_SLIDE_INDEX*100)+'%)';
+      var max=Math.max(track.children.length-1,0);
+      document.getElementById('chartPrevBtn').disabled=CHART_SLIDE_INDEX<=0;
+      document.getElementById('chartNextBtn').disabled=CHART_SLIDE_INDEX>=max;
+    }
+
+    function moveChartSlide(step){
+      var track=document.getElementById('chartsTrack');
+      var max=Math.max(track.children.length-1,0);
+      CHART_SLIDE_INDEX=Math.max(0,Math.min(max,CHART_SLIDE_INDEX+step));
+      updateCarouselPosition();
+    }
+
+    function setChartRange(range){
+      CHART_RANGE=range;
+      renderCharts(SECTOR_ACTUAL);
+    }
+
+    function renderCharts(sector){
+      var defs=SECTOR_CHARTS[sector] || SECTOR_CHARTS.general;
+      var track=document.getElementById('chartsTrack');
+      destroyCharts();
+      if(CHART_SLIDE_INDEX>defs.length-1) CHART_SLIDE_INDEX=0;
+      track.innerHTML=defs.map(function(def,idx){
+        var btns=['5d','1m','12m'].map(function(r){
+          var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
+          return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
+        }).join('');
+        return '<div class="chart-slide"><div class="chart-panel"><div class="chart-title"><div class="chart-accent" style="background:'+def.color+'"></div>'+def.title+'<span class="chart-sub">'+def.sub+'</span></div><div class="chart-ranges">'+btns+'</div><div class="chart-wrap"><canvas id="chart-'+sector+'-'+idx+'"></canvas></div></div></div>';
+      }).join('');
+
+      defs.forEach(function(def,idx){
+        var labels=getRangeLabels(CHART_RANGE);
+        var data=buildSeries(def.base,def.drift,def.amp,labels.length);
+        var canvas=document.getElementById('chart-'+sector+'-'+idx);
+        var type=(idx%5===0) ? 'bar' : 'line';
+        CHART_INSTANCES.push(new Chart(canvas,{
+          type:type,
+          data:{labels:labels,datasets:[{data:data,borderColor:def.color,backgroundColor:type==='bar'?def.color+'99':def.color+'33',tension:.35,fill:type!=='bar',borderWidth:2,pointRadius:2}]},
+          options:baseOpts
+        }));
+      });
+
+      updateCarouselPosition();
+    }
+
+    function initCarouselSwipe(){
+      var wrap=document.querySelector('.charts-track-wrap');
+      var startX=0;
+      wrap.addEventListener('touchstart',function(e){ startX=e.changedTouches[0].clientX; },{passive:true});
+      wrap.addEventListener('touchend',function(e){
+        var delta=e.changedTouches[0].clientX-startX;
+        if(Math.abs(delta)<40) return;
+        moveChartSlide(delta<0 ? 1 : -1);
+      },{passive:true});
+    }
 
     var siwaOpen=false, siwaChatMode=false;
     var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
@@ -509,8 +690,8 @@
       siwaEnviarTexto(text);
     }
 
-    renderKPIs('general');
-    renderNoticias('general');
+    initCarouselSwipe();
+    setSector('general');
     setTimeout(function(){ if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex'; },2000);
   </script>
 </body>
