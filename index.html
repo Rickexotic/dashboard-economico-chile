@@ -39,7 +39,6 @@
     .main { padding:16px 24px 100px; }
     .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin-bottom:14px; }
 
-    /* KPI cards cleaner: no accent bar, no icons, smaller fonts */
     .kpi-card {
       background:var(--bg2);
       border:1px solid rgba(255,255,255,.07);
@@ -83,17 +82,46 @@
     .kpi-sub { font-size:.5rem; color:var(--muted); margin-left:auto; }
 
     .charts-panel-wrap { margin-bottom:14px; }
-    .chart-panel { background:var(--bg2); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px 14px; }
-    .chart-overline { font-size:.63rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin-bottom:8px; }
+    .chart-panel {
+      background:var(--bg2);
+      border:1px solid rgba(255,255,255,.07);
+      border-radius:10px;
+      padding:8px 12px 10px; /* tighter and graph sits higher */
+    }
 
-    .chart-head { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
-    .chart-title { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+    /* title removed per request */
+    .chart-overline { display:none; }
+
+    .chart-head {
+      display:flex; align-items:center; justify-content:flex-start; gap:8px; margin-bottom:6px;
+    }
+    .chart-title {
+      font-size:.62rem; font-weight:700; text-transform:uppercase;
+      letter-spacing:.07em; display:flex; align-items:center; gap:6px; flex-wrap:wrap;
+    }
     .chart-accent { width:10px; height:3px; border-radius:2px; background:var(--blue); }
-    .chart-sub { font-size:.53rem; color:var(--muted); margin-left:auto; text-transform:none; }
+    .chart-sub { font-size:.51rem; color:var(--muted); margin-left:auto; text-transform:none; }
 
-    .chart-nav { display:flex; align-items:center; gap:6px; }
+    .chart-wrap { height:148px; position:relative; touch-action:pan-y; } /* smaller card/graph area */
+    .chart-ranges { display:flex; gap:5px; margin-bottom:6px; }
+
+    .range-btn {
+      font-size:.58rem; font-weight:700; padding:3px 8px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.05); color:var(--muted); cursor:pointer;
+      transition:all .2s;
+    }
+    .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
+
+    /* arrows moved to bottom */
+    .chart-nav-bottom{
+      margin-top:8px;
+      display:flex;
+      justify-content:flex-end;
+      gap:6px;
+    }
     .chart-nav-btn{
-      width:28px; height:28px; border-radius:999px;
+      width:26px; height:26px; border-radius:999px;
       border:1px solid rgba(255,255,255,.16);
       background:rgba(255,255,255,.05);
       color:var(--white); cursor:pointer;
@@ -101,21 +129,11 @@
     }
     .chart-nav-btn:hover{ background:rgba(59,130,246,.2); border-color:var(--blue); }
 
-    .chart-wrap { height:170px; position:relative; touch-action:pan-y; }
-    .chart-ranges { display:flex; gap:5px; margin-bottom:8px; }
-    .range-btn {
-      font-size:.6rem; font-weight:700; padding:4px 8px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.16);
-      background:rgba(255,255,255,.05); color:var(--muted); cursor:pointer;
-      transition:all .2s;
-    }
-    .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
-
     .news-panel { background:rgba(59,130,246,.07); border:1px solid rgba(59,130,246,.2); border-radius:10px; padding:12px 16px; }
     .news-title { font-size:.65rem; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.07em; margin-bottom:10px; display:flex; align-items:center; gap:6px; }
     .news-list { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
     .ni { display:flex; align-items:flex-start; gap:7px; padding:7px 9px; border-radius:7px; background:rgba(255,255,255,.04); border-left:2px solid var(--blue); }
-    .ni.o { border-left-color:var(--blue); } .ni.g { border-left-color:var(--blue); } .ni.p { border-left-color:var(--blue); }
+    .ni.o, .ni.g, .ni.p { border-left-color:var(--blue); }
     .ni-ico { font-size:.68rem; margin-top:2px; }
     .ni-txt { font-size:.7rem; line-height:1.4; }
     .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; }
@@ -221,6 +239,8 @@
       .dv { font-size:.5rem; }
       .dp { font-size:.46rem; padding:1px 3px; }
       .kpi-sub { font-size:.44rem; margin-left:0; width:100%; }
+
+      .chart-wrap { height:136px; }
     }
 
     @media(max-width:480px) {
@@ -230,6 +250,9 @@
       .kpi-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:5px; }
       .kpi-card { padding:6px 6px; }
       .kpi-value { font-size:.68rem; }
+
+      .chart-wrap { height:128px; }
+      .chart-nav-btn{ width:24px; height:24px; }
     }
   </style>
 </head>
@@ -655,13 +678,13 @@
             escapeHtml(def.title) +
             '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' +
           '</div>' +
-          '<div class="chart-nav">' +
-            '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
-            '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
-          '</div>' +
         '</div>' +
         '<div class="chart-ranges">'+btns+'</div>' +
-        '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>';
+        '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>' +
+        '<div class="chart-nav-bottom">' +
+          '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
+          '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
+        '</div>';
 
       var labels=getRangeLabels(CHART_RANGE);
       var data=buildSeries(def.base,def.drift,def.amp,labels.length);
@@ -851,8 +874,6 @@
       setTimeout(function(){
         siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
       },350);
-
-      /* no autofocus */
     }
 
     async function siwaEnviarTexto(texto){
