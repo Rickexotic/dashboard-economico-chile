@@ -154,7 +154,6 @@
     .chart-sub { font-size:.51rem; color:var(--muted); margin-left:auto; text-transform:none; }
 
     .chart-wrap { height:152px; position:relative; touch-action:pan-y; margin-top:10px; }
-    .chart-ranges { display:flex; gap:6px; margin-bottom:10px; }
 
     .range-btn {
       font-size:.58rem; font-weight:700; padding:4px 9px; border-radius:999px;
@@ -167,9 +166,25 @@
     .chart-nav-bottom{
       margin-top:10px;
       display:flex;
-      justify-content:flex-end;
-      gap:6px;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
     }
+
+    .chart-range-bottom{
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+      justify-content:flex-start;
+    }
+
+    .chart-nav-right{
+      display:flex;
+      gap:6px;
+      justify-content:flex-end;
+      flex-shrink:0;
+    }
+
     .chart-nav-btn{
       width:26px; height:26px; border-radius:999px;
       border:1px solid rgba(255,255,255,.16);
@@ -567,7 +582,7 @@
       var html = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'')+'</div></div>';
+        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'Sistema')+'</div></div>';
         var href = n.url ? safeUrl(n.url) : null;
         if(href){
           html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>';
@@ -755,7 +770,7 @@
       var def=defs[CHART_ACTIVE_INDEX] || defs[0];
       var safeColor=getSafeColor(def.color);
 
-      var btns=['5d','1m','12m'].map(function(r){
+      var rangeBtns=['5d','1m','12m'].map(function(r){
         var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
         return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
       }).join('');
@@ -768,11 +783,13 @@
             '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' +
           '</div>' +
         '</div>' +
-        '<div class="chart-ranges">'+btns+'</div>' +
         '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>' +
         '<div class="chart-nav-bottom">' +
-          '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
-          '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
+          '<div class="chart-range-bottom">'+rangeBtns+'</div>' +
+          '<div class="chart-nav-right">' +
+            '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
+            '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
+          '</div>' +
         '</div>';
 
       var labels=getRangeLabels(CHART_RANGE);
@@ -938,7 +955,7 @@
       document.getElementById('siwa-msgs').innerHTML='';
 
       var s=SECTORES[sector];
-      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot cuando corresponda.</small>');
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
       setTimeout(function(){
         siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
       },350);
