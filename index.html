@@ -92,49 +92,109 @@
     }
 
     .main { padding:16px 24px 100px; }
-    .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin-bottom:14px; }
 
-    .kpi-card {
-      background:var(--bg2);
-      border:1px solid rgba(255,255,255,.07);
-      border-radius:10px;
-      padding:10px 10px;
-      border-left:none;
-      transition:transform .2s,border-color .2s,box-shadow .2s;
-      text-align:left;
-    }
-    .kpi-card:hover { transform:translateY(-2px); }
-    .kpi-card-btn { cursor:pointer; font:inherit; }
-    .kpi-card.active {
-      background:rgba(59,130,246,.10);
-      border-color:rgba(59,130,246,.40);
-      box-shadow:0 0 0 1px rgba(59,130,246,.14);
-    }
+/* KPI GRID */
+.kpi-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+  margin-bottom:14px;
+  align-items:stretch;
+}
 
-    .kpi-label {
-      font-size:.52rem;
-      color:var(--muted);
-      text-transform:uppercase;
-      letter-spacing:.03em;
-      font-weight:600;
-      margin-bottom:3px;
-      line-height:1.2;
-    }
-    .kpi-value {
-      font-size:.98rem;
-      font-weight:700;
-      color:var(--white);
-      margin-bottom:3px;
-      line-height:1.2;
-    }
-    .kpi-diff { display:flex; align-items:center; gap:5px; flex-wrap:wrap; }
-    .dv { font-size:.56rem; font-weight:600; }
-    .dv.up { color:var(--green); } .dv.dn { color:var(--red); } .dv.fl { color:var(--muted); }
-    .dp { font-size:.52rem; font-weight:600; padding:1px 4px; border-radius:7px; }
-    .dp.up { background:rgba(34,197,94,.15); color:var(--green); }
-    .dp.dn { background:rgba(239,68,68,.15); color:var(--red); }
-    .dp.fl { background:rgba(176,184,200,.12); color:var(--muted); }
-    .kpi-sub { font-size:.5rem; color:var(--muted); margin-left:auto; }
+/* KPI CARD */
+.kpi-card {
+  background:var(--bg2);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:10px;
+  padding:10px;
+  border-left:none;
+  transition:transform .2s,border-color .2s,box-shadow .2s;
+  text-align:left;
+
+  min-height:112px;
+  height:100%;
+  display:grid;
+  grid-template-rows:2.4em 2.2em auto;
+  row-gap:4px;
+}
+
+.kpi-card:hover { transform:translateY(-2px); }
+.kpi-card-btn { cursor:pointer; font:inherit; width:100%; }
+.kpi-card.active {
+  background:rgba(59,130,246,.10);
+  border-color:rgba(59,130,246,.40);
+  box-shadow:0 0 0 1px rgba(59,130,246,.14);
+}
+
+/* LABEL */
+.kpi-label {
+  font-size:.52rem;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  font-weight:600;
+  line-height:1.2;
+  margin:0;
+
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+/* VALUE */
+.kpi-value {
+  font-size:.98rem;
+  font-weight:700;
+  color:var(--white);
+  line-height:1.2;
+  margin:0;
+
+  display:flex;
+  align-items:flex-end;
+  min-height:1.2em;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* BOTTOM ROW */
+.kpi-diff {
+  display:grid;
+  grid-template-columns:auto auto 1fr;
+  align-items:center;
+  gap:5px;
+  margin-top:auto;
+  min-height:1.1em;
+}
+
+.dv { font-size:.56rem; font-weight:600; white-space:nowrap; }
+.dv.up { color:var(--green); }
+.dv.dn { color:var(--red); }
+.dv.fl { color:var(--muted); }
+
+.dp {
+  font-size:.52rem;
+  font-weight:600;
+  padding:1px 4px;
+  border-radius:7px;
+  white-space:nowrap;
+}
+.dp.up { background:rgba(34,197,94,.15); color:var(--green); }
+.dp.dn { background:rgba(239,68,68,.15); color:var(--red); }
+.dp.fl { background:rgba(176,184,200,.12); color:var(--muted); }
+
+.kpi-sub {
+  font-size:.5rem;
+  color:var(--muted);
+  margin-left:6px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  justify-self:end;
+  text-align:right;
+}
 
     .charts-panel-wrap { margin-bottom:14px; }
     .chart-panel {
@@ -449,7 +509,6 @@
       energia:{label:'Energía',icon:'⚡',desc:'Energía: petróleo, dólar, IPC y costos marginales.'},
       salud:{label:'Salud',icon:'🩺',desc:'Sector salud: presión regulatoria, siniestralidad y capacidad del sistema.'}
     };
-    var SECTOR_KEYS = Object.keys(SECTORES);
     var SECTOR_ACTUAL = 'general';
 
     var SECTOR_KPIS = {
@@ -462,56 +521,6 @@
         {label:'Riesgo país Chile',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'EMBI',sub:'CDS 5Y: 63 pb'},
         {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'expectativa mercado'},
         {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'+1,9% a/a',sub:'crecimiento trimestral'}
-      ],
-      mineria:[
-        {label:'Cobre LME',val:'US$ 4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'-0,73%',sub:'demanda China y oferta global'},
-        {label:'Producción cobre Chile',val:'472 mil ton',dv:'up',dvt:'+1,6% a/a',dp:'up',dpt:'mejora operativa',sub:'último mes disponible'},
-        {label:'USD/CLP minero',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'impacto en ingresos exportadores'},
-        {label:'Costo C1',val:'US$ 1,86/lb',dv:'up',dvt:'+0,04',dp:'dn',dpt:'presión de costos',sub:'energía y servicios'},
-        {label:'Inventarios LME',val:'145,2 mil ton',dv:'up',dvt:'+2,1%',dp:'dn',dpt:'mayor stock',sub:'señal de holgura'},
-        {label:'Capex minero',val:'US$ 8,4 bn',dv:'up',dvt:'+4,2% a/a',dp:'up',dpt:'nuevos proyectos',sub:'cartera 12m'},
-        {label:'TCRC cobre',val:'US$ 24,8/t',dv:'dn',dvt:'-1,1',dp:'up',dpt:'menor tratamiento',sub:'mercado concentrados'},
-        {label:'Precio molibdeno',val:'US$ 20,4/lb',dv:'up',dvt:'+0,6',dp:'up',dpt:'+3,0%',sub:'subproducto relevante'}
-      ],
-      inmobiliario:[
-        {label:'UF',val:'$40.851,38',dv:'up',dvt:'+$1,32',dp:'up',dpt:'+0,38%',sub:'base de precios inmobiliarios'},
-        {label:'Tasa hipotecaria',val:'4,46%',dv:'dn',dvt:'-0,05 pp',dp:'up',dpt:'alivio financiero',sub:'promedio sistema'},
-        {label:'Permisos de edificación',val:'1,28 MM m²',dv:'up',dvt:'+3,8% a/a',dp:'up',dpt:'más actividad',sub:'últimos 12 meses'},
-        {label:'Ventas de viviendas',val:'12,4 mil',dv:'up',dvt:'+6,1% a/a',dp:'up',dpt:'recuperación gradual',sub:'Gran Santiago'},
-        {label:'Stock sin vender',val:'29,8 meses',dv:'dn',dvt:'-1,4 meses',dp:'up',dpt:'absorción mejora',sub:'mercado primario'},
-        {label:'Índice costo construcción',val:'+2,9% a/a',dv:'dn',dvt:'-0,3 pp',dp:'up',dpt:'menos presión',sub:'materiales y mano de obra'},
-        {label:'Morosidad hipotecaria',val:'1,62%',dv:'up',dvt:'+0,08 pp',dp:'dn',dpt:'riesgo crediticio',sub:'cartera bancos'},
-        {label:'Confianza inmobiliaria',val:'47,5 pts',dv:'up',dvt:'+1,2 pts',dp:'up',dpt:'mejor percepción',sub:'bajo 50 aún débil'}
-      ],
-      financiero:[
-        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'referencia monetaria'},
-        {label:'Riesgo país Chile',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'EMBI',sub:'spread soberano'},
-        {label:'Tipo de cambio',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'impacto en márgenes y tesorería'},
-        {label:'Tasa swap 5Y',val:'5,12%',dv:'up',dvt:'+0,04 pp',dp:'dn',dpt:'curva más alta',sub:'mercado local'},
-        {label:'Colocaciones comerciales',val:'+4,1% a/a',dv:'up',dvt:'+0,4 pp',dp:'up',dpt:'mejor dinamismo',sub:'banca empresas'},
-        {label:'Mora >90 días',val:'2,14%',dv:'up',dvt:'+0,06 pp',dp:'dn',dpt:'deterioro acotado',sub:'cartera total'},
-        {label:'Índice bancario',val:'+1,7% m/m',dv:'up',dvt:'+0,5 pp',dp:'up',dpt:'mejor valorización',sub:'acciones locales'},
-        {label:'Liquidez sistémica',val:'128%',dv:'dn',dvt:'-3 pp',dp:'up',dpt:'aún holgada',sub:'LCR agregado'}
-      ],
-      retail:[
-        {label:'Ventas minoristas',val:'+3,4% a/a',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'recuperación consumo',sub:'serie real'},
-        {label:'IPC bienes',val:'2,8% a/a',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'menos presión',sub:'inflación transable'},
-        {label:'Desempleo urbano',val:'8,9%',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'empleo mejora',sub:'principales ciudades'},
-        {label:'Confianza consumidor',val:'43,2 pts',dv:'up',dvt:'+1,5 pts',dp:'up',dpt:'mejor ánimo',sub:'índice mensual'},
-        {label:'Importaciones consumo',val:'US$ 6,2 bn',dv:'up',dvt:'+4,8% a/a',dp:'up',dpt:'reposición inventarios',sub:'últimos 12 meses'},
-        {label:'Morosidad consumo',val:'3,18%',dv:'up',dvt:'+0,09 pp',dp:'dn',dpt:'presión crediticia',sub:'hogares'},
-        {label:'Tráfico en malls',val:'+5,1% a/a',dv:'up',dvt:'+0,7 pp',dp:'up',dpt:'mayor afluencia',sub:'operadores principales'},
-        {label:'Margen bruto retail',val:'31,6%',dv:'up',dvt:'+0,4 pp',dp:'up',dpt:'mejor mezcla',sub:'promedio sectorial'}
-      ],
-      energia:[
-        {label:'Petróleo Brent',val:'US$ 82,6',dv:'up',dvt:'+0,8',dp:'up',dpt:'+0,98%',sub:'referencia combustibles'},
-        {label:'Costo marginal SIC',val:'US$ 78/MWh',dv:'dn',dvt:'-3',dp:'up',dpt:'mejor hidrología',sub:'promedio diario'},
-        {label:'Dólar energía',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'impacto en contratos e insumos'},
-        {label:'Generación renovable',val:'38,4%',dv:'up',dvt:'+1,9 pp',dp:'up',dpt:'mayor participación',sub:'matriz eléctrica'},
-        {label:'Demanda eléctrica',val:'+2,2% a/a',dv:'up',dvt:'+0,3 pp',dp:'up',dpt:'actividad repunta',sub:'SEN'},
-        {label:'Paridad gasolina',val:'$1.041/l',dv:'up',dvt:'+$12',dp:'dn',dpt:'presión en costos',sub:'referencia mayorista'},
-        {label:'Inventarios diésel',val:'22,6 días',dv:'dn',dvt:'-0,8 días',dp:'dn',dpt:'menor cobertura',sub:'terminales locales'},
-        {label:'Emisiones CO₂ spot',val:'US$ 11,8/t',dv:'up',dvt:'+0,4',dp:'dn',dpt:'costo regulatorio',sub:'mercado regional'}
       ],
       internacional:[
         {label:'DXY (Índice dólar)',val:'104,2',dv:'up',dvt:'+0,4',dp:'up',dpt:'+0,38%',sub:'sesión global'},
@@ -535,10 +544,11 @@
       ]
     };
 
-    var SECTOR_NOTICIAS = SECTOR_KEYS.reduce(function(acc, sector){
-      acc[sector] = [];
-      return acc;
-    }, {});
+    var SECTOR_NOTICIAS = {
+      general: [],
+      internacional: [],
+      salud: []
+    };
     var NEWS_LOAD_FAILED = false;
 
     function noticiaFallback(mensaje, titulo){
@@ -559,17 +569,17 @@
         if(!data || typeof data!=='object' || Array.isArray(data)){
           throw new Error('Formato inválido de news.json');
         }
-        SECTOR_KEYS.forEach(function(sector){
-          SECTOR_NOTICIAS[sector] = Array.isArray(data[sector]) ? data[sector] : [];
-        });
+        SECTOR_NOTICIAS.general = Array.isArray(data.general) ? data.general : [];
+        SECTOR_NOTICIAS.internacional = Array.isArray(data.internacional) ? data.internacional : [];
+        SECTOR_NOTICIAS.salud = Array.isArray(data.salud) ? data.salud : [];
         NEWS_LOAD_FAILED = false;
         renderNoticias(SECTOR_ACTUAL);
       }catch(e){
         console.warn('No se pudieron cargar noticias dinámicas:', e);
         NEWS_LOAD_FAILED = true;
-        SECTOR_KEYS.forEach(function(sector){
-          SECTOR_NOTICIAS[sector] = [];
-        });
+        SECTOR_NOTICIAS.general = [];
+        SECTOR_NOTICIAS.internacional = [];
+        SECTOR_NOTICIAS.salud = [];
         renderNoticias(SECTOR_ACTUAL);
       }
     }
@@ -677,56 +687,6 @@
         {title:'Riesgo país Chile',sub:'EMBI / CDS 5Y',color:'#3b82f6',base:89,drift:-0.4,amp:1.8},
         {title:'TPM',sub:'nivel y expectativa 12m',color:'#3b82f6',base:4.5,drift:-0.02,amp:0.06},
         {title:'PIB real',sub:'trimestral e interanual',color:'#3b82f6',base:1.9,drift:0.02,amp:0.15}
-      ],
-      mineria:[
-        {title:'Cobre LME',sub:'precio internacional',color:'#3b82f6',base:4.08,drift:-0.002,amp:0.03},
-        {title:'Producción cobre Chile',sub:'miles de toneladas',color:'#3b82f6',base:472,drift:0.5,amp:3.2},
-        {title:'USD/CLP minero',sub:'tipo de cambio exportador',color:'#3b82f6',base:913,drift:0.6,amp:1.5},
-        {title:'Costo C1',sub:'US$/lb',color:'#3b82f6',base:1.86,drift:0.002,amp:0.02},
-        {title:'Inventarios LME',sub:'miles de toneladas',color:'#3b82f6',base:145.2,drift:0.3,amp:2.1},
-        {title:'Capex minero',sub:'US$ bn',color:'#3b82f6',base:8.4,drift:0.03,amp:0.08},
-        {title:'TCRC cobre',sub:'US$/tonelada',color:'#3b82f6',base:24.8,drift:-0.04,amp:0.3},
-        {title:'Precio molibdeno',sub:'US$/lb',color:'#3b82f6',base:20.4,drift:0.05,amp:0.25}
-      ],
-      inmobiliario:[
-        {title:'UF',sub:'valor diario',color:'#3b82f6',base:40850,drift:3.2,amp:6},
-        {title:'Tasa hipotecaria',sub:'promedio sistema',color:'#3b82f6',base:4.46,drift:-0.01,amp:0.04},
-        {title:'Permisos de edificación',sub:'miles de m²',color:'#3b82f6',base:1280,drift:1.8,amp:8},
-        {title:'Ventas de viviendas',sub:'miles de unidades',color:'#3b82f6',base:12.4,drift:0.05,amp:0.14},
-        {title:'Stock sin vender',sub:'meses de oferta',color:'#3b82f6',base:29.8,drift:-0.08,amp:0.4},
-        {title:'Índice costo construcción',sub:'variación anual',color:'#3b82f6',base:2.9,drift:-0.01,amp:0.08},
-        {title:'Morosidad hipotecaria',sub:'porcentaje cartera',color:'#3b82f6',base:1.62,drift:0.004,amp:0.02},
-        {title:'Confianza inmobiliaria',sub:'índice mensual',color:'#3b82f6',base:47.5,drift:0.04,amp:0.25}
-      ],
-      financiero:[
-        {title:'TPM',sub:'nivel y expectativas',color:'#3b82f6',base:4.5,drift:-0.02,amp:0.06},
-        {title:'Riesgo país Chile',sub:'spread soberano',color:'#3b82f6',base:89,drift:-0.4,amp:1.6},
-        {title:'Tipo de cambio',sub:'cierre observado',color:'#3b82f6',base:913,drift:0.6,amp:1.4},
-        {title:'Tasa swap 5Y',sub:'curva local',color:'#3b82f6',base:5.12,drift:0.005,amp:0.03},
-        {title:'Colocaciones comerciales',sub:'variación anual',color:'#3b82f6',base:4.1,drift:0.02,amp:0.08},
-        {title:'Mora >90 días',sub:'cartera total',color:'#3b82f6',base:2.14,drift:0.004,amp:0.02},
-        {title:'Índice bancario',sub:'desempeño bursátil',color:'#3b82f6',base:101.7,drift:0.25,amp:0.9},
-        {title:'Liquidez sistémica',sub:'LCR agregado',color:'#3b82f6',base:128,drift:-0.12,amp:0.8}
-      ],
-      retail:[
-        {title:'Ventas minoristas',sub:'variación anual',color:'#3b82f6',base:3.4,drift:0.03,amp:0.12},
-        {title:'IPC bienes',sub:'inflación transable',color:'#3b82f6',base:2.8,drift:-0.02,amp:0.08},
-        {title:'Desempleo urbano',sub:'mercado laboral',color:'#3b82f6',base:8.9,drift:-0.02,amp:0.08},
-        {title:'Confianza consumidor',sub:'índice mensual',color:'#3b82f6',base:43.2,drift:0.08,amp:0.35},
-        {title:'Importaciones consumo',sub:'US$ bn',color:'#3b82f6',base:6.2,drift:0.03,amp:0.09},
-        {title:'Morosidad consumo',sub:'porcentaje hogares',color:'#3b82f6',base:3.18,drift:0.01,amp:0.03},
-        {title:'Tráfico en malls',sub:'variación anual',color:'#3b82f6',base:5.1,drift:0.04,amp:0.14},
-        {title:'Margen bruto retail',sub:'promedio sectorial',color:'#3b82f6',base:31.6,drift:0.03,amp:0.15}
-      ],
-      energia:[
-        {title:'Petróleo Brent',sub:'US$/barril',color:'#3b82f6',base:82.6,drift:0.05,amp:0.7},
-        {title:'Costo marginal SIC',sub:'US$/MWh',color:'#3b82f6',base:78,drift:-0.1,amp:1.2},
-        {title:'Dólar energía',sub:'tipo de cambio de referencia',color:'#3b82f6',base:913,drift:0.6,amp:1.5},
-        {title:'Generación renovable',sub:'participación matriz',color:'#3b82f6',base:38.4,drift:0.06,amp:0.2},
-        {title:'Demanda eléctrica',sub:'variación anual',color:'#3b82f6',base:2.2,drift:0.03,amp:0.08},
-        {title:'Paridad gasolina',sub:'pesos por litro',color:'#3b82f6',base:1041,drift:1.5,amp:6},
-        {title:'Inventarios diésel',sub:'días de cobertura',color:'#3b82f6',base:22.6,drift:-0.05,amp:0.3},
-        {title:'Emisiones CO₂ spot',sub:'US$/tonelada',color:'#3b82f6',base:11.8,drift:0.03,amp:0.14}
       ],
       internacional:[
         {title:'DXY (Índice dólar)',sub:'fortaleza global del USD',color:'#3b82f6',base:104.2,drift:0.04,amp:0.25},
