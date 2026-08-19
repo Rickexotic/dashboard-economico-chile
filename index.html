@@ -90,7 +90,6 @@
     }
     .chart-overline { display:none; }
 
-    /* More vertical spacing requested */
     .chart-head { display:flex; align-items:center; justify-content:flex-start; gap:8px; margin-bottom:12px; }
     .chart-title {
       font-size:.62rem; font-weight:700; text-transform:uppercase;
@@ -143,7 +142,6 @@
       justify-content:space-between;
       gap:10px;
     }
-    /* 40% bigger than previous 20px => 28px */
     .footer-logo{
       height:28px;
       width:auto;
@@ -341,6 +339,7 @@
         <button id="btn-energia" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('energia')">⚡ Energía</button>
         <button id="btn-salud" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('salud')">🩺 Salud</button>
         <button id="btn-general" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('general')">🌐 General</button>
+        <button id="btn-internacional" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('internacional')">🌍 Internacional</button>
         <button class="siwa-menu-btn pregunta" onclick="siwaModoPregunta()"><i class="fas fa-comment-dots"></i> ¿Quieres hacer una pregunta?</button>
       </div>
     </div>
@@ -369,7 +368,8 @@
       financiero:{label:'Financiero',icon:'🏦',desc:'Sector financiero: TPM, EMBI, tipo de cambio y tasas.'},
       retail:{label:'Retail/Consumo',icon:'🛒',desc:'Retail: IPC, empleo, importaciones y confianza consumidor.'},
       energia:{label:'Energía',icon:'⚡',desc:'Energía: petróleo, dólar, IPC y costos marginales.'},
-      salud:{label:'Salud',icon:'🩺',desc:'Sector salud: presión regulatoria, siniestralidad y capacidad del sistema.'}
+      salud:{label:'Salud',icon:'🩺',desc:'Sector salud: presión regulatoria, siniestralidad y capacidad del sistema.'},
+      internacional:{label:'Internacional',icon:'🌍',desc:'Panorama macro global: tasas de EE.UU., inflación, dólar global, renta variable y actividad en China.'}
     };
     var SECTOR_ACTUAL = 'general';
 
@@ -393,6 +393,16 @@
         {label:'Beneficiarios Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,1% a/a',dp:'up',dpt:'mayor cobertura',sub:'beneficiarios'},
         {label:'Espera sistema público',val:'2,35 MM',dv:'up',dvt:'+2,7% a/a',dp:'dn',dpt:'presión red',sub:'listas de espera'},
         {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'mejora',sub:'garantías cumplidas'}
+      ],
+      internacional:[
+        {label:'Treasury USA 10 años 🇺🇸',val:'4,18%',dv:'up',dvt:'+4 pb',dp:'up',dpt:'YTD +31 pb',sub:'rendimiento soberano'},
+        {label:'Inflación de Estados Unidos (CPI) 🇺🇸',val:'+2,9% a/a',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'núcleo +3,2%',sub:'variación interanual'},
+        {label:'Fed Funds Rate 🇺🇸',val:'5,25% - 5,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'recortes esperados',sub:'rango objetivo FED'},
+        {label:'Crecimiento de China (PIB/actividad)',val:'+4,8% a/a',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'prod. ind. +5,1%',sub:'PIB y actividad industrial'},
+        {label:'Índice Dólar (DXY)',val:'103,4',dv:'up',dvt:'+0,5',dp:'up',dpt:'+0,7%',sub:'fortaleza global del USD'},
+        {label:'S&P 500 🇺🇸',val:'5.420',dv:'up',dvt:'+48',dp:'up',dpt:'+0,9%',sub:'índice accionario'},
+        {label:'Índice de Volatilidad (VIX)',val:'15,8',dv:'dn',dvt:'-0,9',dp:'up',dpt:'riesgo contenido',sub:'volatilidad implícita'},
+        {label:'PMI Manufacturero China',val:'50,6',dv:'up',dvt:'+0,4',dp:'up',dpt:'zona expansiva',sub:'>50 expansión'}
       ]
     };
 
@@ -404,6 +414,10 @@
       salud:[
         {cls:'g',ico:'heartbeat',tit:'Aumentan licencias médicas en 12 meses',desc:'Autoridades anuncian nuevas medidas de control.',fte:'Salud - Hoy'},
         {cls:'o',ico:'gavel',tit:'Mayor judicialización en aseguramiento',desc:'Se discuten ajustes regulatorios para el sector.',fte:'Regulación - Hoy'}
+      ],
+      internacional:[
+        {cls:'o',ico:'landmark',tit:'Mercado ajusta expectativas de la FED',desc:'Bonos del Tesoro reaccionan a datos de inflación en EE.UU.',fte:'Mercados globales - Hoy'},
+        {cls:'g',ico:'industry',tit:'China muestra mejora en manufactura',desc:'PMI se mantiene en zona expansiva y apoya materias primas.',fte:'Asia - Hoy'}
       ]
     };
 
@@ -447,7 +461,8 @@
       CHART_ACTIVE_INDEX = 0;
       var nombres = {
         general:'Chile',
-        salud:'Chile | Salud'
+        salud:'Chile | Salud',
+        internacional:'Chile | Internacional'
       };
       var t = document.getElementById('dashTitle');
       t.innerHTML = 'Dashboard Económico — <span>' + (nombres[sector]||('Chile | ' + (SECTORES[sector] ? SECTORES[sector].label : 'General'))) + '</span>';
@@ -482,6 +497,16 @@
         {title:'Beneficiarios Fonasa',sub:'millones',color:'#3b82f6',base:16.4,drift:0.003,amp:0.01},
         {title:'Espera sistema público',sub:'millones de casos',color:'#3b82f6',base:2.35,drift:0.003,amp:0.02},
         {title:'Cumplimiento GES',sub:'porcentaje',color:'#3b82f6',base:92.1,drift:0.02,amp:0.08}
+      ],
+      internacional:[
+        {title:'Treasury USA 10 años 🇺🇸',sub:'rendimiento benchmark',color:'#3b82f6',base:4.18,drift:0.01,amp:0.05},
+        {title:'Inflación de Estados Unidos (CPI) 🇺🇸',sub:'variación interanual',color:'#3b82f6',base:2.9,drift:-0.01,amp:0.04},
+        {title:'Fed Funds Rate 🇺🇸',sub:'rango objetivo',color:'#3b82f6',base:5.38,drift:0.00,amp:0.01},
+        {title:'Crecimiento de China (PIB/actividad)',sub:'PIB / producción industrial',color:'#3b82f6',base:4.8,drift:0.01,amp:0.06},
+        {title:'Índice Dólar (DXY)',sub:'fortaleza global del USD',color:'#3b82f6',base:103.4,drift:0.03,amp:0.25},
+        {title:'S&P 500 🇺🇸',sub:'índice accionario',color:'#3b82f6',base:5420,drift:6,amp:18},
+        {title:'Índice de Volatilidad (VIX)',sub:'volatilidad implícita',color:'#3b82f6',base:15.8,drift:-0.02,amp:0.35},
+        {title:'PMI Manufacturero China',sub:'umbral 50 expansión/contracción',color:'#3b82f6',base:50.6,drift:0.01,amp:0.12}
       ]
     };
 
@@ -788,7 +813,7 @@
       document.getElementById('siwa-msgs').innerHTML='';
 
       var s=SECTORES[sector];
-      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot cuando corresponda.</small>');
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
       setTimeout(function(){
         siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
       },350);
