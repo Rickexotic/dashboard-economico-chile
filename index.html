@@ -134,13 +134,22 @@
     .chart-nav-btn:hover{ background:rgba(59,130,246,.2); border-color:var(--blue); }
 
     .news-panel { background:rgba(59,130,246,.07); border:1px solid rgba(59,130,246,.2); border-radius:10px; padding:12px 16px; }
-    .news-title { font-size:.65rem; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.07em; margin-bottom:10px; display:flex; align-items:center; gap:6px; }
+    .news-title { font-size:.65rem; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.07em; margin-bottom:10px; display:flex; align-items:center; gap:8px; justify-content:space-between; }
+    .news-title-left { display:flex; align-items:center; gap:6px; }
+    .news-refresh { font-size:.58rem; color:var(--muted); font-weight:600; text-transform:none; letter-spacing:normal; }
     .news-list { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-    .ni { display:flex; align-items:flex-start; gap:7px; padding:7px 9px; border-radius:7px; background:rgba(255,255,255,.04); border-left:2px solid var(--blue); }
+    .ni {
+      display:flex; align-items:flex-start; gap:7px; padding:7px 9px; border-radius:7px;
+      background:rgba(255,255,255,.04); border-left:2px solid var(--blue);
+      text-decoration:none; color:inherit;
+    }
+    .ni:hover { background:rgba(255,255,255,.08); }
     .ni.o, .ni.g, .ni.p { border-left-color:var(--blue); }
     .ni-ico { font-size:.68rem; margin-top:2px; }
     .ni-txt { font-size:.7rem; line-height:1.4; }
-    .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; }
+    .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+    .ni-time { color:#7dd3fc; }
+    .ni-open { color:#93c5fd; text-decoration:underline; }
 
     .dash-footer {
       background:rgba(255,255,255,.02);
@@ -313,7 +322,10 @@
     </div>
 
     <div class="news-panel">
-      <div class="news-title"><i class="fas fa-newspaper"></i>Noticias Económicas del Día</div>
+      <div class="news-title">
+        <div class="news-title-left"><i class="fas fa-newspaper"></i>Noticias Económicas del Día</div>
+        <div class="news-refresh" id="newsUpdatedAt">Actualizando...</div>
+      </div>
       <div class="news-list"></div>
     </div>
   </div>
@@ -416,19 +428,25 @@
       ]
     };
 
+    /* fallback local news (used if remote feed fails) */
     var SECTOR_NOTICIAS = {
       general:[
-        {cls:'o',ico:'globe',tit:'EE.UU. incluye a Chile en lista comercial',desc:'Autoridades reaccionan al reporte.',fte:'Prensa - Hoy'},
-        {cls:'g',ico:'home',tit:'Fogaes reactiva hipotecarios',desc:'Mayor cobertura y cupos para vivienda.',fte:'Economía - Hoy'}
+        {cls:'o',ico:'globe',tit:'EE.UU. incluye a Chile en lista comercial',desc:'Autoridades reaccionan al reporte.',fte:'Prensa - Hoy',url:'#'},
+        {cls:'g',ico:'home',tit:'Fogaes reactiva hipotecarios',desc:'Mayor cobertura y cupos para vivienda.',fte:'Economía - Hoy',url:'#'}
       ],
       salud:[
-        {cls:'g',ico:'heartbeat',tit:'Aumentan licencias médicas en 12 meses',desc:'Autoridades anuncian nuevas medidas de control.',fte:'Salud - Hoy'},
-        {cls:'o',ico:'gavel',tit:'Mayor judicialización en aseguramiento',desc:'Se discuten ajustes regulatorios para el sector.',fte:'Regulación - Hoy'}
+        {cls:'g',ico:'heartbeat',tit:'Aumentan licencias médicas en 12 meses',desc:'Autoridades anuncian nuevas medidas de control.',fte:'Salud - Hoy',url:'#'},
+        {cls:'o',ico:'gavel',tit:'Mayor judicialización en aseguramiento',desc:'Se discuten ajustes regulatorios para el sector.',fte:'Regulación - Hoy',url:'#'}
       ],
       internacional:[
-        {cls:'o',ico:'landmark',tit:'Mercado ajusta expectativas de la FED',desc:'Bonos del Tesoro reaccionan a datos de inflación en EE.UU.',fte:'Mercados globales - Hoy'},
-        {cls:'g',ico:'industry',tit:'China muestra mejora en manufactura',desc:'PMI se mantiene en zona expansiva y apoya materias primas.',fte:'Asia - Hoy'}
-      ]
+        {cls:'o',ico:'landmark',tit:'Mercado ajusta expectativas de la FED',desc:'Bonos del Tesoro reaccionan a datos de inflación en EE.UU.',fte:'Mercados globales - Hoy',url:'#'},
+        {cls:'g',ico:'industry',tit:'China muestra mejora en manufactura',desc:'PMI se mantiene en zona expansiva y apoya materias primas.',fte:'Asia - Hoy',url:'#'}
+      ],
+      mineria:[],
+      inmobiliario:[],
+      financiero:[],
+      retail:[],
+      energia:[]
     };
 
     var DEFAULT_CHART_COLOR = '#3b82f6';
@@ -436,6 +454,132 @@
     var CHART_ACTIVE_INDEX = 0;
     var CHART_INSTANCES = [];
     var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
+
+    /* NEWS CONFIG */
+    var NEWS_REFRESH_MS = 5 * 60 * 1000;
+    var NEWS_CACHE = {};
+    var NEWS_UPDATED_AT = null;
+    var NEWS_PROXY = 'https://api.allorigins.win/raw?url=';
+
+    var SECTOR_NEWS_QUERY = {
+      general: 'Chile economy inflation central bank peso IPC IMACEC',
+      mineria: 'Chile copper mining Codelco LME copper prices',
+      inmobiliario: 'Chile housing mortgage rates UF real estate',
+      financiero: 'Chile banking rates bond yields EMBI central bank',
+      retail: 'Chile retail consumer spending inflation employment',
+      energia: 'Chile energy oil prices electricity gas renewables',
+      salud: 'Chile healthcare Isapres Fonasa GES regulation',
+      internacional: 'US inflation CPI Fed rates Treasury yields DXY S&P 500 VIX China PMI GDP'
+    };
+
+    function formatNowShort(){
+      var d = new Date();
+      return d.toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'});
+    }
+
+    function updateNewsStamp(text){
+      var el = document.getElementById('newsUpdatedAt');
+      if(!el) return;
+      el.textContent = text || ('Actualizado: ' + formatNowShort());
+    }
+
+    function getDomain(url){
+      try { return new URL(url).hostname.replace('www.',''); }
+      catch(e){ return 'fuente'; }
+    }
+
+    function hoursAgo(pubDate){
+      var now = Date.now();
+      var t = new Date(pubDate).getTime();
+      if(!t || isNaN(t)) return '';
+      var h = Math.max(0, Math.round((now - t)/3600000));
+      if(h < 1) return 'hace <1h';
+      if(h < 24) return 'hace ' + h + 'h';
+      var d = Math.round(h/24);
+      return 'hace ' + d + 'd';
+    }
+
+    function mapIconBySector(sector){
+      var m = {
+        general:'globe',
+        mineria:'industry',
+        inmobiliario:'home',
+        financiero:'landmark',
+        retail:'shopping-cart',
+        energia:'bolt',
+        salud:'heartbeat',
+        internacional:'earth-americas'
+      };
+      return m[sector] || 'newspaper';
+    }
+
+    function pickClsByTitle(title){
+      var t = (title||'').toLowerCase();
+      if(/sube|alza|expansi|crece|mejora|rally|gain|up/.test(t)) return 'g';
+      if(/cae|baja|riesgo|crisis|down|fall|drop|volatil/.test(t)) return 'o';
+      return 'p';
+    }
+
+    function buildGoogleRssUrl(query){
+      var q = encodeURIComponent(query);
+      return 'https://news.google.com/rss/search?q=' + q + '&hl=es-419&gl=CL&ceid=CL:es-419';
+    }
+
+    function parseRssItems(xmlText, sector){
+      var parser = new DOMParser();
+      var xml = parser.parseFromString(xmlText, 'text/xml');
+      var items = Array.prototype.slice.call(xml.querySelectorAll('item'));
+      var out = [];
+      var seen = {};
+      items.forEach(function(item){
+        if(out.length >= 6) return;
+        var title = (item.querySelector('title') || {}).textContent || '';
+        var link = (item.querySelector('link') || {}).textContent || '';
+        var pubDate = (item.querySelector('pubDate') || {}).textContent || '';
+        if(!title || !link) return;
+        var key = title.trim().toLowerCase();
+        if(seen[key]) return;
+        seen[key] = true;
+
+        var sourceDomain = getDomain(link);
+        var relTime = hoursAgo(pubDate);
+        out.push({
+          cls: pickClsByTitle(title),
+          ico: mapIconBySector(sector),
+          tit: title.replace(/\s-\s[^-]+$/, ''),
+          desc: 'Abrir noticia original en ' + sourceDomain + '.',
+          fte: sourceDomain + (relTime ? ' · ' + relTime : ''),
+          url: link
+        });
+      });
+      return out;
+    }
+
+    async function fetchSectorNews(sector){
+      var q = SECTOR_NEWS_QUERY[sector] || SECTOR_NEWS_QUERY.general;
+      var rssUrl = buildGoogleRssUrl(q);
+      var proxied = NEWS_PROXY + encodeURIComponent(rssUrl);
+      var res = await fetch(proxied, {cache:'no-store'});
+      if(!res.ok) throw new Error('news fetch failed');
+      var txt = await res.text();
+      var parsed = parseRssItems(txt, sector);
+      if(!parsed.length) throw new Error('no rss items');
+      return parsed;
+    }
+
+    async function refreshNewsForSector(sector){
+      updateNewsStamp('Actualizando...');
+      try{
+        var news = await fetchSectorNews(sector);
+        NEWS_CACHE[sector] = news;
+        NEWS_UPDATED_AT = new Date();
+        renderNoticias(sector);
+        updateNewsStamp('Actualizado: ' + formatNowShort());
+      }catch(e){
+        renderNoticias(sector);
+        updateNewsStamp('Sincronización parcial · ' + formatNowShort());
+      }
+    }
 
     function renderKPIs(sector){
       var kpis = SECTOR_KPIS[sector] || SECTOR_KPIS.general;
@@ -457,12 +601,14 @@
     }
 
     function renderNoticias(sector){
-      var nots = SECTOR_NOTICIAS[sector] || SECTOR_NOTICIAS.general;
+      var nots = (NEWS_CACHE[sector] && NEWS_CACHE[sector].length) ? NEWS_CACHE[sector] : (SECTOR_NOTICIAS[sector] || SECTOR_NOTICIAS.general);
       var list = document.querySelector('.news-list');
       list.innerHTML = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        list.innerHTML += '<div class="ni'+cls+'"><i class="fas fa-'+n.ico+' ni-ico"></i><div class="ni-txt"><strong>'+n.tit+'</strong> — '+n.desc+'<div class="ni-src">'+n.fte+'</div></div></div>';
+        var safeUrl = n.url && n.url !== '#' ? n.url : '#';
+        var rel = safeUrl === '#' ? '' : ' target="_blank" rel="noopener noreferrer" ';
+        list.innerHTML += '<a class="ni'+cls+'" href="'+safeUrl+'"'+rel+'><i class="fas fa-'+n.ico+' ni-ico"></i><div class="ni-txt"><strong>'+n.tit+'</strong> — '+n.desc+'<div class="ni-src"><span>'+n.fte+'</span>'+(safeUrl!=='#' ? '<span class="ni-open">Abrir fuente</span>' : '')+'</div></div></a>';
       });
     }
 
@@ -479,6 +625,7 @@
       document.querySelectorAll('.siwa-sector-btn').forEach(function(b){ b.classList.remove('active'); });
       var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
       renderKPIs(sector); renderNoticias(sector); renderCharts(sector);
+      refreshNewsForSector(sector);
     }
 
     var baseOpts = {
@@ -866,6 +1013,11 @@
     }
 
     setSector('general');
+
+    setInterval(function(){
+      refreshNewsForSector(SECTOR_ACTUAL);
+    }, NEWS_REFRESH_MS);
+
     setTimeout(function(){
       if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex';
     },2000);
