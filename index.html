@@ -86,11 +86,12 @@
       background:var(--bg2);
       border:1px solid rgba(255,255,255,.07);
       border-radius:10px;
-      padding:8px 12px 10px;
+      padding:10px 12px 10px;
     }
     .chart-overline { display:none; }
 
-    .chart-head { display:flex; align-items:center; justify-content:flex-start; gap:8px; margin-bottom:6px; }
+    /* More vertical spacing requested */
+    .chart-head { display:flex; align-items:center; justify-content:flex-start; gap:8px; margin-bottom:12px; }
     .chart-title {
       font-size:.62rem; font-weight:700; text-transform:uppercase;
       letter-spacing:.07em; display:flex; align-items:center; gap:6px; flex-wrap:wrap;
@@ -98,11 +99,11 @@
     .chart-accent { width:10px; height:3px; border-radius:2px; background:var(--blue); }
     .chart-sub { font-size:.51rem; color:var(--muted); margin-left:auto; text-transform:none; }
 
-    .chart-wrap { height:148px; position:relative; touch-action:pan-y; }
-    .chart-ranges { display:flex; gap:5px; margin-bottom:6px; }
+    .chart-wrap { height:152px; position:relative; touch-action:pan-y; margin-top:10px; }
+    .chart-ranges { display:flex; gap:6px; margin-bottom:10px; }
 
     .range-btn {
-      font-size:.58rem; font-weight:700; padding:3px 8px; border-radius:999px;
+      font-size:.58rem; font-weight:700; padding:4px 9px; border-radius:999px;
       border:1px solid rgba(255,255,255,.16);
       background:rgba(255,255,255,.05); color:var(--muted); cursor:pointer;
       transition:all .2s;
@@ -110,7 +111,7 @@
     .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
 
     .chart-nav-bottom{
-      margin-top:8px;
+      margin-top:10px;
       display:flex;
       justify-content:flex-end;
       gap:6px;
@@ -133,7 +134,6 @@
     .ni-txt { font-size:.7rem; line-height:1.4; }
     .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; }
 
-    /* Footer with logo left + sources right */
     .dash-footer {
       background:rgba(255,255,255,.02);
       border-top:1px solid rgba(255,255,255,.05);
@@ -143,8 +143,9 @@
       justify-content:space-between;
       gap:10px;
     }
+    /* 40% bigger than previous 20px => 28px */
     .footer-logo{
-      height:20px;
+      height:28px;
       width:auto;
       display:block;
       opacity:.95;
@@ -155,7 +156,6 @@
       text-align:right;
     }
 
-    /* Siwa FAB: 30% smaller by default */
     #siwa-fab {
       position:fixed; bottom:24px; right:24px; z-index:9999;
       width:66px; height:66px; border-radius:50%; cursor:pointer;
@@ -169,7 +169,6 @@
       transform-origin:bottom right;
       transition:transform .2s ease, box-shadow .2s ease;
     }
-    /* back to actual/original size when open */
     #siwa-fab.expanded{
       transform:scale(1);
       box-shadow:0 6px 24px rgba(59,130,246,.55);
@@ -281,7 +280,7 @@
       .chart-wrap { height:128px; }
       .chart-nav-btn{ width:24px; height:24px; }
 
-      .footer-logo{ height:18px; }
+      .footer-logo{ height:24px; }
       .footer-text{ font-size:.52rem; }
     }
   </style>
@@ -312,7 +311,7 @@
   </div>
 
   <div class="dash-footer">
-    <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
+    <img src="logo blanco alternativo.png" alt="Logo" class="footer-logo">
     <div class="footer-text">Fuentes: Banco Central de Chile · mindicador.cl · prensa económica</div>
   </div>
 
@@ -340,6 +339,7 @@
         <button id="btn-financiero" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('financiero')">🏦 Financiero</button>
         <button id="btn-retail" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('retail')">🛒 Retail</button>
         <button id="btn-energia" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('energia')">⚡ Energía</button>
+        <button id="btn-salud" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('salud')">🩺 Salud</button>
         <button id="btn-general" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('general')">🌐 General</button>
         <button class="siwa-menu-btn pregunta" onclick="siwaModoPregunta()"><i class="fas fa-comment-dots"></i> ¿Quieres hacer una pregunta?</button>
       </div>
@@ -368,7 +368,8 @@
       inmobiliario:{label:'Inmobiliario',icon:'🏠',desc:'Sector inmobiliario: UF, TPM, inflación y crédito.'},
       financiero:{label:'Financiero',icon:'🏦',desc:'Sector financiero: TPM, EMBI, tipo de cambio y tasas.'},
       retail:{label:'Retail/Consumo',icon:'🛒',desc:'Retail: IPC, empleo, importaciones y confianza consumidor.'},
-      energia:{label:'Energía',icon:'⚡',desc:'Energía: petróleo, dólar, IPC y costos marginales.'}
+      energia:{label:'Energía',icon:'⚡',desc:'Energía: petróleo, dólar, IPC y costos marginales.'},
+      salud:{label:'Salud',icon:'🩺',desc:'Sector salud: presión regulatoria, siniestralidad y capacidad del sistema.'}
     };
     var SECTOR_ACTUAL = 'general';
 
@@ -382,6 +383,16 @@
         {label:'Riesgo país Chile',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'EMBI',sub:'CDS 5Y: 63 pb'},
         {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'expectativa mercado'},
         {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'+1,9% a/a',sub:'crecimiento trimestral'}
+      ],
+      salud:[
+        {label:'Judicialización',val:'Índice 114,2',dv:'up',dvt:'+1,8% a/a',dp:'dn',dpt:'presión legal',sub:'causas y fallos'},
+        {label:'Reclamos regulatorios',val:'42,3 mil',dv:'up',dvt:'+3,1% a/a',dp:'dn',dpt:'SERNAC/SIS',sub:'acumulado 12m'},
+        {label:'Siniestralidad',val:'86,4%',dv:'up',dvt:'+0,9 pp',dp:'dn',dpt:'costos al alza',sub:'prestaciones/ingresos'},
+        {label:'Licencias médicas',val:'7,2 MM',dv:'up',dvt:'+2,4% a/a',dp:'dn',dpt:'fiscalización',sub:'emitidas 12m'},
+        {label:'Beneficiarios Isapre',val:'3,18 MM',dv:'dn',dvt:'-1,2% a/a',dp:'dn',dpt:'menor base',sub:'afiliados vigentes'},
+        {label:'Beneficiarios Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,1% a/a',dp:'up',dpt:'mayor cobertura',sub:'beneficiarios'},
+        {label:'Espera sistema público',val:'2,35 MM',dv:'up',dvt:'+2,7% a/a',dp:'dn',dpt:'presión red',sub:'listas de espera'},
+        {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'mejora',sub:'garantías cumplidas'}
       ]
     };
 
@@ -389,6 +400,10 @@
       general:[
         {cls:'o',ico:'globe',tit:'EE.UU. incluye a Chile en lista comercial',desc:'Autoridades reaccionan al reporte.',fte:'Prensa - Hoy'},
         {cls:'g',ico:'home',tit:'Fogaes reactiva hipotecarios',desc:'Mayor cobertura y cupos para vivienda.',fte:'Economía - Hoy'}
+      ],
+      salud:[
+        {cls:'g',ico:'heartbeat',tit:'Aumentan licencias médicas en 12 meses',desc:'Autoridades anuncian nuevas medidas de control.',fte:'Salud - Hoy'},
+        {cls:'o',ico:'gavel',tit:'Mayor judicialización en aseguramiento',desc:'Se discuten ajustes regulatorios para el sector.',fte:'Regulación - Hoy'}
       ]
     };
 
@@ -430,9 +445,14 @@
     function setSector(sector){
       SECTOR_ACTUAL = sector;
       CHART_ACTIVE_INDEX = 0;
-      var nombres = {general:'Chile'};
+      var nombres = {
+        general:'Chile',
+        salud:'Chile | Salud'
+      };
       var t = document.getElementById('dashTitle');
-      t.innerHTML = 'Dashboard Económico — <span>' + (nombres[sector]||'Chile') + '</span>';
+      t.innerHTML = 'Dashboard Económico — <span>' + (nombres[sector]||('Chile | ' + (SECTORES[sector] ? SECTORES[sector].label : 'General'))) + '</span>';
+      document.querySelectorAll('.siwa-sector-btn').forEach(function(b){ b.classList.remove('active'); });
+      var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
       renderKPIs(sector); renderNoticias(sector); renderCharts(sector);
     }
 
@@ -452,6 +472,16 @@
         {title:'Riesgo país Chile',sub:'EMBI / CDS 5Y',color:'#3b82f6',base:89,drift:-0.4,amp:1.8},
         {title:'TPM',sub:'nivel y expectativa 12m',color:'#3b82f6',base:4.5,drift:-0.02,amp:0.06},
         {title:'PIB real',sub:'trimestral e interanual',color:'#3b82f6',base:1.9,drift:0.02,amp:0.15}
+      ],
+      salud:[
+        {title:'Judicialización',sub:'índice de causas/fallos',color:'#3b82f6',base:114.2,drift:0.4,amp:1.2},
+        {title:'Reclamos regulatorios',sub:'miles de casos',color:'#3b82f6',base:42.3,drift:0.08,amp:0.5},
+        {title:'Siniestralidad',sub:'porcentaje',color:'#3b82f6',base:86.4,drift:0.05,amp:0.3},
+        {title:'Licencias médicas',sub:'millones',color:'#3b82f6',base:7.2,drift:0.01,amp:0.04},
+        {title:'Beneficiarios Isapre',sub:'millones',color:'#3b82f6',base:3.18,drift:-0.002,amp:0.01},
+        {title:'Beneficiarios Fonasa',sub:'millones',color:'#3b82f6',base:16.4,drift:0.003,amp:0.01},
+        {title:'Espera sistema público',sub:'millones de casos',color:'#3b82f6',base:2.35,drift:0.003,amp:0.02},
+        {title:'Cumplimiento GES',sub:'porcentaje',color:'#3b82f6',base:92.1,drift:0.02,amp:0.08}
       ]
     };
 
@@ -612,6 +642,91 @@
     var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
     var SIWA_USE_AGENT_FOR_OPEN=true;
 
+    function detectarIntencion(t){
+      t=t.toLowerCase();
+      if(t.match(/d[oó]lar|usd|clp/)) return 'dolar';
+      if(t.match(/cobre|lme/)) return 'cobre';
+      if(t.match(/embi|riesgo pa[ií]s/)) return 'embi';
+      if(t.match(/impacto|afecta|sector/)) return 'sector_impacto';
+      if(t.match(/perspectiva|proyecci[oó]n|futuro/)) return 'sector_perspectiva';
+      if(t.match(/riesgo|amenaza/)) return 'sector_riesgo';
+      return 'general';
+    }
+
+    function generarRespuesta(intencion,texto){
+      return 'Panorama general: inflación moderada, riesgo país bajo y sector externo estable.';
+    }
+
+    function isOpenQuestion(text){
+      var t=(text||'').toLowerCase().trim();
+      if(!t) return false;
+      if(t.length>70) return true;
+      if(t.match(/por qu[eé]|porque|explica|analiza|impacto|escenario|riesgo|proyecci[oó]n|expectativa|recomienda|estrategia|opini[oó]n|conviene/)) return true;
+      if(t.includes('?')) return true;
+      return false;
+    }
+
+    function getSectorContextPayload(){
+      var sec=SECTOR_ACTUAL||'general';
+      var secObj=SECTORES[sec]||SECTORES.general;
+      var kpis=(SECTOR_KPIS[sec]||SECTOR_KPIS.general).slice(0,8);
+      return {sector:sec,sector_label:secObj.label||'General',sector_desc:secObj.desc||'',kpis:kpis};
+    }
+
+    async function preguntarAgenteCopilot(userText){
+      var ctx=getSectorContextPayload();
+      var payload={question:userText,sector:ctx.sector,sector_label:ctx.sector_label,sector_desc:ctx.sector_desc,kpis:ctx.kpis,ui_date:new Date().toLocaleDateString('es-CL')};
+      var res=await fetch(SIWA_AGENT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      if(!res.ok){ var e=await res.text().catch(function(){return 'agent_error';}); throw new Error(e); }
+      var data=await res.json();
+      if(!data||!data.answer) throw new Error('invalid agent response');
+      return data.answer;
+    }
+
+    function hora(){ return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'}); }
+
+    function siwaAddBot(html){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div><div class="sw-bubble">'+html+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaAddUser(text){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg user';
+      d.innerHTML='<div><div class="sw-bubble">'+text+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaAddSugs(sugs){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div class="sw-sugs">'+sugs.map(function(s){return '<button class="sw-sug" onclick="siwaEnviarTexto(\''+s.replace(/'/g,"\\'")+'\')">'+s+'</button>';}).join('')+'</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaShowTyping(){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.id='sw-typing';
+      d.innerHTML='<div class="sw-bubble">Escribiendo...</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaHideTyping(){
+      var t=document.getElementById('sw-typing');
+      if(t) t.remove();
+    }
+
     function siwaShowMenu(){
       siwaChatMode=false;
       var panel=document.getElementById('siwa-panel');
@@ -679,25 +794,39 @@
       },350);
     }
 
-    function siwaAddBot(html){
-      var msgs=document.getElementById('siwa-msgs');
-      var d=document.createElement('div');
-      d.className='sw-msg bot';
-      d.innerHTML='<div><div class="sw-bubble">'+html+'</div><div class="sw-time">'+new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'})+'</div></div>';
-      msgs.appendChild(d);
-      msgs.scrollTop=msgs.scrollHeight;
+    async function siwaEnviarTexto(texto){
+      if(!siwaChatMode){
+        siwaModoPregunta();
+        setTimeout(function(){ siwaEnviarTexto(texto); },250);
+        return;
+      }
+
+      siwaAddUser(texto);
+      siwaShowTyping();
+
+      try{
+        var intencion=detectarIntencion(texto);
+        var usarAgente=SIWA_USE_AGENT_FOR_OPEN && isOpenQuestion(texto);
+        var resp=usarAgente ? await preguntarAgenteCopilot(texto) : generarRespuesta(intencion,texto);
+
+        siwaHideTyping();
+        siwaAddBot(resp);
+
+        var sugs=['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras'];
+        setTimeout(function(){ siwaAddSugs(sugs); },300);
+      }catch(e){
+        siwaHideTyping();
+        siwaAddBot('No pude conectar con el agente. Respuesta en modo local.');
+      }
     }
 
-    function siwaAddSugs(sugs){
-      var msgs=document.getElementById('siwa-msgs');
-      var d=document.createElement('div');
-      d.className='sw-msg bot';
-      d.innerHTML='<div class="sw-sugs">'+sugs.map(function(s){return '<button class="sw-sug">'+s+'</button>';}).join('')+'</div>';
-      msgs.appendChild(d);
-      msgs.scrollTop=msgs.scrollHeight;
+    function siwaEnviar(){
+      var input=document.getElementById('siwa-input');
+      var text=input.value.trim();
+      if(!text) return;
+      input.value='';
+      siwaEnviarTexto(text);
     }
-
-    function siwaEnviar(){}
 
     setSector('general');
     setTimeout(function(){
