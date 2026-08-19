@@ -474,22 +474,38 @@
       internacional: [],
       salud: []
     };
+    var NEWS_LOAD_FAILED = false;
+
+    function noticiaFallback(mensaje, titulo){
+      return [{
+        cls:'o',
+        ico:'circle-info',
+        tit: titulo || 'Sin novedades sectoriales',
+        desc: mensaje || 'No hay noticias disponibles para este sector por ahora.',
+        fte:'Sistema'
+      }];
+    }
 
     async function cargarNoticias(){
       try{
         var res = await fetch('./data/news.json', { cache: 'no-store' });
         if(!res.ok) throw new Error('news.json HTTP ' + res.status);
         var data = await res.json();
+        if(!data || typeof data!=='object' || Array.isArray(data)){
+          throw new Error('Formato inválido de news.json');
+        }
         SECTOR_NOTICIAS.general = Array.isArray(data.general) ? data.general : [];
         SECTOR_NOTICIAS.internacional = Array.isArray(data.internacional) ? data.internacional : [];
         SECTOR_NOTICIAS.salud = Array.isArray(data.salud) ? data.salud : [];
+        NEWS_LOAD_FAILED = false;
         renderNoticias(SECTOR_ACTUAL);
       }catch(e){
         console.warn('No se pudieron cargar noticias dinámicas:', e);
-        var list = document.querySelector('.news-list');
-        if(list && !list.innerHTML.trim()){
-          list.innerHTML = '<div class="ni o"><i class="fas fa-circle-info ni-ico"></i><div class="ni-txt"><strong>Noticias no disponibles</strong> — No fue posible cargar las noticias en este momento.<div class="ni-src">Sistema</div></div></div>';
-        }
+        NEWS_LOAD_FAILED = true;
+        SECTOR_NOTICIAS.general = [];
+        SECTOR_NOTICIAS.internacional = [];
+        SECTOR_NOTICIAS.salud = [];
+        renderNoticias(SECTOR_ACTUAL);
       }
     }
 
@@ -538,14 +554,16 @@
     }
 
     function renderNoticias(sector){
+      var list = document.querySelector('.news-list');
+      if(!list) return;
+
       var nots = SECTOR_NOTICIAS[sector];
       if(!Array.isArray(nots) || !nots.length){
-        nots = [
-          {cls:'o',ico:'circle-info',tit:'Sin novedades sectoriales',desc:'No hay noticias disponibles para este sector por ahora.',fte:'Sistema'}
-        ];
+        nots = NEWS_LOAD_FAILED
+          ? noticiaFallback('No fue posible cargar las noticias en este momento.', 'Noticias no disponibles')
+          : noticiaFallback();
       }
 
-      var list = document.querySelector('.news-list');
       var html = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
