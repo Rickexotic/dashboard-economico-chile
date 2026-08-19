@@ -75,8 +75,8 @@
     }
 
     .top-bar-sector{
-      font-size:.78rem;
-      font-weight:700;
+      font-size:1rem;
+      font-weight:800;
       color:var(--blue);
       white-space:nowrap;
       overflow:hidden;
@@ -93,95 +93,103 @@
 
     .main { padding:16px 24px 100px; }
 
-    .kpi-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-      gap:10px;
-      margin-bottom:14px;
-      align-items:stretch;
-    }
+/* KPI GRID */
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+  margin-bottom:14px;
+  align-items:stretch;
+}
 
-    .kpi-card{
-      background:var(--bg2);
-      border:1px solid rgba(255,255,255,.07);
-      border-radius:10px;
-      padding:10px;
-      border-left:none;
-      transition:transform .2s,border-color .2s,box-shadow .2s;
-      text-align:left;
-      height:100%;
-      min-height:118px;
-      display:flex;
-      flex-direction:column;
-    }
-    .kpi-card:hover{ transform:translateY(-2px); }
-    .kpi-card-btn{ cursor:pointer; font:inherit; width:100%; }
-    .kpi-card.active{
-      background:rgba(59,130,246,.10);
-      border-color:rgba(59,130,246,.40);
-      box-shadow:0 0 0 1px rgba(59,130,246,.14);
-    }
+/* KPI CARD */
+.kpi-card{
+  background:var(--bg2);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:10px;
+  padding:10px;
+  border-left:none;
+  transition:transform .2s,border-color .2s,box-shadow .2s;
+  text-align:left;
 
-    .kpi-label{
-      font-size:.52rem;
-      color:var(--muted);
-      text-transform:uppercase;
-      letter-spacing:.03em;
-      font-weight:600;
-      line-height:1.2;
-      margin-bottom:6px;
-      min-height:2.4em;
-      display:flex;
-      align-items:flex-start;
-    }
+  height:100%;
+  min-height:118px;
+  display:flex;
+  flex-direction:column;
+}
+.kpi-card:hover{ transform:translateY(-2px); }
+.kpi-card-btn{ cursor:pointer; font:inherit; width:100%; }
 
-    .kpi-value{
-      font-size:.98rem;
-      font-weight:700;
-      color:var(--white);
-      line-height:1.2;
-      margin-bottom:6px;
-      min-height:1.25em;
-      display:flex;
-      align-items:flex-end;
-    }
+.kpi-card.active{
+  background:rgba(59,130,246,.10);
+  border-color:rgba(59,130,246,.40);
+  box-shadow:0 0 0 1px rgba(59,130,246,.14);
+}
 
-    .kpi-diff{
-      display:flex;
-      align-items:center;
-      gap:5px;
-      flex-wrap:nowrap;
-      margin-top:auto;
-      min-height:1.2em;
-    }
+/* LABEL */
+.kpi-label{
+  font-size:.52rem;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  font-weight:600;
+  line-height:1.2;
+  margin-bottom:6px;
 
-    .dv{ font-size:.56rem; font-weight:600; white-space:nowrap; }
-    .dv.up{ color:var(--green); }
-    .dv.dn{ color:var(--red); }
-    .dv.fl{ color:var(--muted); }
+  min-height:2.4em;               /* same title block height */
+  display:flex;
+  align-items:flex-start;
+}
 
-    .dp{
-      font-size:.52rem;
-      font-weight:600;
-      padding:1px 4px;
-      border-radius:7px;
-      white-space:nowrap;
-    }
-    .dp.up{ background:rgba(34,197,94,.15); color:var(--green); }
-    .dp.dn{ background:rgba(239,68,68,.15); color:var(--red); }
-    .dp.fl{ background:rgba(176,184,200,.12); color:var(--muted); }
+/* VALUE */
+.kpi-value{
+  font-size:.98rem;
+  font-weight:700;
+  color:var(--white);
+  line-height:1.2;
+  margin-bottom:6px;
 
-    .kpi-sub{
-      font-size:.5rem;
-      color:var(--muted);
-      margin-left:auto;
-      text-align:right;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      max-width:55%;
-    }
+  min-height:1.25em;              /* align value baseline across cards */
+  display:flex;
+  align-items:flex-end;
+}
 
+/* DIFF ROW */
+.kpi-diff{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  flex-wrap:nowrap;
+  margin-top:auto;                /* pins row to bottom */
+  min-height:1.2em;
+}
+
+.dv{ font-size:.56rem; font-weight:600; white-space:nowrap; }
+.dv.up{ color:var(--green); }
+.dv.dn{ color:var(--red); }
+.dv.fl{ color:var(--muted); }
+
+.dp{
+  font-size:.52rem;
+  font-weight:600;
+  padding:1px 4px;
+  border-radius:7px;
+  white-space:nowrap;
+}
+.dp.up{ background:rgba(34,197,94,.15); color:var(--green); }
+.dp.dn{ background:rgba(239,68,68,.15); color:var(--red); }
+.dp.fl{ background:rgba(176,184,200,.12); color:var(--muted); }
+
+.kpi-sub{
+  font-size:.5rem;
+  color:var(--muted);
+  margin-left:auto;
+  text-align:right;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  max-width:55%;
+}
     .charts-panel-wrap { margin-bottom:14px; }
     .chart-panel {
       background:var(--bg2);
@@ -190,6 +198,7 @@
       padding:10px 12px 10px;
     }
     .chart-overline { display:none; }
+
     .chart-head { display:flex; align-items:center; justify-content:flex-start; gap:8px; margin-bottom:12px; }
     .chart-title {
       font-size:.62rem; font-weight:700; text-transform:uppercase;
@@ -197,7 +206,9 @@
     }
     .chart-accent { width:10px; height:3px; border-radius:2px; background:var(--blue); }
     .chart-sub { font-size:.51rem; color:var(--muted); margin-left:auto; text-transform:none; }
+
     .chart-wrap { height:152px; position:relative; touch-action:pan-y; margin-top:10px; }
+
     .range-btn {
       font-size:.58rem; font-weight:700; padding:4px 9px; border-radius:999px;
       border:1px solid rgba(255,255,255,.16);
@@ -205,6 +216,7 @@
       transition:all .2s;
     }
     .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
+
     .chart-nav-bottom{
       margin-top:10px;
       display:flex;
@@ -212,18 +224,21 @@
       align-items:center;
       gap:10px;
     }
+
     .chart-range-bottom{
       display:flex;
       gap:6px;
       flex-wrap:wrap;
       justify-content:flex-start;
     }
+
     .chart-nav-right{
       display:flex;
       gap:6px;
       justify-content:flex-end;
       flex-shrink:0;
     }
+
     .chart-nav-btn{
       width:26px; height:26px; border-radius:999px;
       border:1px solid rgba(255,255,255,.16);
@@ -251,7 +266,12 @@
       justify-content:flex-start;
       gap:10px;
     }
-    .footer-logo{ height:33.6px; width:auto; display:block; opacity:.95; }
+    .footer-logo{
+      height:33.6px;
+      width:auto;
+      display:block;
+      opacity:.95;
+    }
 
     #siwa-fab {
       position:fixed; bottom:24px; right:24px; z-index:9999;
@@ -266,7 +286,11 @@
       transform-origin:bottom right;
       transition:transform .2s ease, box-shadow .2s ease;
     }
-    #siwa-fab.expanded{ transform:scale(1); box-shadow:0 6px 24px rgba(59,130,246,.55); }
+    #siwa-fab.expanded{
+      transform:scale(1);
+      box-shadow:0 6px 24px rgba(59,130,246,.55);
+    }
+
     #siwa-avatar-fab{ width:100%; height:100%; object-fit:cover; border-radius:50%; display:block; }
     #siwa-notif {
       position:absolute; top:-3px; right:-3px; width:18px; height:18px; border-radius:50%;
@@ -276,11 +300,12 @@
 
     #siwa-panel {
       position:fixed; bottom:100px; right:24px; z-index:9998;
-      width:min(320px, calc(100vw - 48px)); background:var(--bg2); border:1px solid rgba(59,130,246,.25);
+      width:340px; background:var(--bg2); border:1px solid rgba(59,130,246,.25);
       border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,.6);
       display:none; flex-direction:column; overflow:hidden;
     }
     #siwa-panel.open { display:flex; }
+
     #siwa-panel.menu-visible {
       box-shadow:0 0 0 1px rgba(59,130,246,.2), 0 0 36px rgba(59,130,246,.25), 0 20px 60px rgba(0,0,0,.6);
       border-color:rgba(59,130,246,.45);
@@ -289,6 +314,7 @@
       box-shadow:0 20px 60px rgba(0,0,0,.6);
       border-color:rgba(59,130,246,.25);
     }
+
     #siwa-header {
       background:linear-gradient(135deg,#1a1a2e,#16213e);
       border-bottom:2px solid var(--blue);
@@ -302,13 +328,13 @@
     #siwa-header-info p { font-size:.65rem; color:var(--green); margin:0; }
     #siwa-close,#siwa-back { background:none; border:none; color:var(--muted); cursor:pointer; }
 
-    #siwa-menu { padding:10px 12px; border-bottom:1px solid rgba(255,255,255,.06); }
-    #siwa-menu-title { font-size:.65rem; color:var(--muted); font-weight:600; text-transform:uppercase; margin-bottom:8px; }
-    .siwa-menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+    #siwa-menu { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.06); }
+    #siwa-menu-title { font-size:.65rem; color:var(--muted); font-weight:600; text-transform:uppercase; margin-bottom:10px; }
+    .siwa-menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
     .siwa-menu-btn {
       background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
-      color:var(--white); padding:8px 10px; border-radius:10px;
-      font-size:.72rem; font-weight:600; cursor:pointer;
+      color:var(--white); padding:9px 12px; border-radius:10px;
+      font-size:.75rem; font-weight:600; cursor:pointer;
     }
     .siwa-menu-btn:hover { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.35); }
     .siwa-menu-btn.active { background:rgba(59,130,246,.2); border-color:rgba(59,130,246,.45); box-shadow:0 0 0 1px rgba(59,130,246,.16); }
@@ -316,6 +342,7 @@
 
     #siwa-sector-label { padding:6px 16px; background:rgba(59,130,246,.08); border-bottom:1px solid rgba(255,255,255,.05); font-size:.63rem; display:none; }
     #siwa-sector-label span { color:var(--blue); font-weight:700; }
+
     #siwa-msgs { flex:1; padding:12px 14px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; min-height:180px; max-height:260px; }
     .sw-msg { display:flex; gap:8px; }
     .sw-msg.user { flex-direction:row-reverse; }
@@ -325,14 +352,17 @@
     .sw-time { font-size:.57rem; color:#475569; margin-top:2px; }
     .sw-sugs { display:flex; flex-wrap:wrap; gap:5px; }
     .sw-sug { background:rgba(59,130,246,.1); border:1px solid rgba(59,130,246,.25); color:var(--blue); padding:4px 9px; border-radius:14px; font-size:.68rem; cursor:pointer; }
+
     #siwa-input-area { padding:10px 14px; border-top:1px solid rgba(255,255,255,.06); display:flex; gap:8px; }
     #siwa-input { flex:1; background:var(--bg3); border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:8px 12px; color:var(--white); }
     #siwa-send { width:34px; height:34px; border-radius:10px; background:var(--blue); border:none; color:var(--white); cursor:pointer; }
+
     #siwa-panel.chat-mode #siwa-menu { display:none; }
     #siwa-panel.chat-mode #siwa-sector-label { display:flex; }
     #siwa-panel:not(.chat-mode) #siwa-sector-label,
     #siwa-panel:not(.chat-mode) #siwa-msgs,
     #siwa-panel:not(.chat-mode) #siwa-input-area { display:none; }
+
     #siwa-panel.chat-mode #siwa-back { display:inline-flex; align-items:center; gap:6px; }
     #siwa-panel:not(.chat-mode) #siwa-back { display:none; }
 
@@ -340,24 +370,28 @@
       .news-list { grid-template-columns:1fr; }
       .main { padding:12px 14px 100px; }
     }
-    @media(max-width:640px){
-      .kpi-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
-      .kpi-card{ padding:7px; border-radius:8px; min-height:100px; }
-      .kpi-label{ font-size:.46rem; line-height:1.15; min-height:2.3em; margin-bottom:4px; }
-      .kpi-value{ font-size:.72rem; margin-bottom:4px; min-height:1.2em; }
-      .dv{ font-size:.5rem; }
-      .dp{ font-size:.46rem; padding:1px 3px; }
-      .kpi-sub{ font-size:.44rem; max-width:100%; margin-left:0; }
-      .kpi-diff{ flex-wrap:wrap; gap:4px; }
-      .chart-wrap { height:128px; }
-      .chart-nav-btn{ width:24px; height:24px; }
-      .footer-logo{ height:28.8px; }
-      #siwa-panel{ width:min(300px, calc(100vw - 24px)); right:12px; }
-    }
-    @media(max-width:480px){
-      .kpi-card{ min-height:94px; padding:6px; }
-      .kpi-value{ font-size:.68rem; }
-    }
+
+ @media(max-width:640px){
+  .kpi-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
+  .kpi-card{ padding:7px; border-radius:8px; min-height:100px; }
+  .kpi-label{ font-size:.46rem; line-height:1.15; min-height:2.3em; margin-bottom:4px; }
+  .kpi-value{ font-size:.72rem; margin-bottom:4px; min-height:1.2em; }
+  .dv{ font-size:.5rem; }
+  .dp{ font-size:.46rem; padding:1px 3px; }
+  .kpi-sub{ font-size:.44rem; max-width:100%; margin-left:0; }
+  .kpi-diff{ flex-wrap:wrap; gap:4px; }
+}
+
+@media(max-width:480px){
+  .kpi-card{ min-height:94px; padding:6px; }
+  .kpi-value{ font-size:.68rem; }
+}
+
+  .chart-wrap { height:128px; }
+  .chart-nav-btn{ width:24px; height:24px; }
+
+  .footer-logo{ height:28.8px; }
+}
   </style>
 </head>
 <body>
@@ -484,68 +518,34 @@
         {label:'Beneficiarios Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,1% a/a',dp:'up',dpt:'mayor cobertura',sub:'beneficiarios'},
         {label:'Espera sistema público',val:'2,35 MM',dv:'up',dvt:'+2,7% a/a',dp:'dn',dpt:'presión red',sub:'listas de espera'},
         {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'mejora',sub:'garantías cumplidas'}
-      ],
-      mineria:[
-        {label:'USD/CLP observado',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'costo/ingresos'},
-        {label:'Cobre LME',val:'US$ 4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'-0,73%',sub:'precio clave'},
-        {label:'Producción cobre',val:'+2,1% a/a',dv:'up',dvt:'+0,4 pp',dp:'up',dpt:'fuerte',sub:'toneladas finas'},
-        {label:'Costo C1',val:'US$ 2,12/lb',dv:'dn',dvt:'-0,02',dp:'up',dpt:'mejora',sub:'eficiencia'},
-        {label:'Precio energía',val:'+0,8% m/m',dv:'up',dvt:'+0,8%',dp:'dn',dpt:'presión costos',sub:'electricidad y diésel'},
-        {label:'Capex minero',val:'US$ 14,2bn',dv:'up',dvt:'+3,4%',dp:'up',dpt:'expansión',sub:'inversión anual'},
-        {label:'Empleo sectorial',val:'271 mil',dv:'fl',dvt:'0,0%',dp:'fl',dpt:'estable',sub:'dotación'},
-        {label:'Margen operacional',val:'34,5%',dv:'up',dvt:'+1,2 pp',dp:'up',dpt:'sólido',sub:'EBITDA'}
-      ],
-      inmobiliario:[
-        {label:'UF',val:'$40.851,38',dv:'up',dvt:'+1,32',dp:'up',dpt:'+0,38%',sub:'unidad clave'},
-        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'costo crédito'},
-        {label:'Crédito hipotecario',val:'4,9%',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'mejor acceso',sub:'tasa promedio'},
-        {label:'Ventas vivienda',val:'-7,8% a/a',dv:'dn',dvt:'-1,1 pp',dp:'dn',dpt:'menor demanda',sub:'unidades'},
-        {label:'Vacancia oficinas',val:'10,6%',dv:'up',dvt:'+0,3 pp',dp:'dn',dpt:'presión',sub:'mercado oficinas'},
-        {label:'Permisos edificación',val:'-12,4% a/a',dv:'dn',dvt:'-0,8 pp',dp:'dn',dpt:'rezago',sub:'m2 aprobados'},
-        {label:'Stock disponible',val:'18,3 meses',dv:'up',dvt:'+0,4',dp:'dn',dpt:'sobreoferta',sub:'absorción'},
-        {label:'Mora hipotecaria',val:'2,1%',dv:'up',dvt:'+0,1 pp',dp:'dn',dpt:'alerta',sub:'cartera'}
-      ],
-      financiero:[
-        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'tasa base'},
-        {label:'EMBI Chile',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'CDS 5Y: 63 pb',sub:'riesgo país'},
-        {label:'USD/CLP observado',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'mercado FX'},
-        {label:'Spread bancario',val:'2,3 pp',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'compresión',sub:'margen tasas'},
-        {label:'Morosidad',val:'2,4%',dv:'up',dvt:'+0,1 pp',dp:'dn',dpt:'alerta',sub:'cartera total'},
-        {label:'Colocaciones',val:'+4,2% a/a',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'crédito',sub:'crecimiento'},
-        {label:'ROE sistema',val:'14,1%',dv:'up',dvt:'+0,4 pp',dp:'up',dpt:'rentabilidad',sub:'12m'},
-        {label:'Liquidez',val:'19,8%',dv:'fl',dvt:'0,0 pp',dp:'fl',dpt:'estable',sub:'ratio'}
-      ],
-      retail:[
-        {label:'IPC',val:'-0,2% m/m',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Acum +2,1%',sub:'consumo'},
-        {label:'Ventas comercio',val:'+1,7% a/a',dv:'up',dvt:'+0,5 pp',dp:'up',dpt:'mejoría',sub:'retail total'},
-        {label:'Desempleo nacional',val:'8,6%',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'mejora',sub:'demanda'},
-        {label:'Confianza consumidor',val:'-18,2',dv:'up',dvt:'+1,4',dp:'dn',dpt:'todavía baja',sub:'índice'},
-        {label:'Importaciones consumo',val:'+3,8% a/a',dv:'up',dvt:'+0,9 pp',dp:'up',dpt:'sostiene',sub:'bienes'},
-        {label:'Crédito consumo',val:'+5,1% a/a',dv:'up',dvt:'+0,7 pp',dp:'up',dpt:'expansión',sub:'bancarización'},
-        {label:'Inventarios',val:'normalizados',dv:'fl',dvt:'0,0',dp:'fl',dpt:'control',sub:'días de stock'},
-        {label:'Márgenes',val:'12,8%',dv:'dn',dvt:'-0,3 pp',dp:'dn',dpt:'presión',sub:'EBITDA'}
-      ],
-      energia:[
-        {label:'Petróleo Brent',val:'US$ 82,6',dv:'up',dvt:'+0,8',dp:'up',dpt:'+0,98%',sub:'referencia'},
-        {label:'USD/CLP observado',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'input principal'},
-        {label:'IPC',val:'-0,2% m/m',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Acum +2,1%',sub:'presión tarifas'},
-        {label:'Costo marginal',val:'US$ 67/MWh',dv:'up',dvt:'+1,8',dp:'dn',dpt:'alza',sub:'sistema eléctrico'},
-        {label:'Demanda eléctrica',val:'+2,9% a/a',dv:'up',dvt:'+0,4 pp',dp:'up',dpt:'crece',sub:'consumo'},
-        {label:'Capacidad renovable',val:'44,1%',dv:'up',dvt:'+0,8 pp',dp:'up',dpt:'avance',sub:'matriz'},
-        {label:'Precio diésel',val:'+1,1% m/m',dv:'up',dvt:'+1,1%',dp:'dn',dpt:'costos',sub:'combustible'},
-        {label:'Margen sectorial',val:'9,6%',dv:'fl',dvt:'0,0 pp',dp:'fl',dpt:'estable',sub:'EBITDA'}
       ]
     };
 
-    var SECTOR_NOTICIAS = { general: [], internacional: [], salud: [] };
+    var SECTOR_NOTICIAS = {
+      general: [],
+      internacional: [],
+      salud: []
+    };
     var NEWS_LOAD_FAILED = false;
-    function noticiaFallback(mensaje, titulo){ return [{ cls:'o', ico:'circle-info', tit: titulo || 'Sin novedades sectoriales', desc: mensaje || 'No hay noticias disponibles para este sector por ahora.', fte:'Sistema' }]; }
+
+    function noticiaFallback(mensaje, titulo){
+      return [{
+        cls:'o',
+        ico:'circle-info',
+        tit: titulo || 'Sin novedades sectoriales',
+        desc: mensaje || 'No hay noticias disponibles para este sector por ahora.',
+        fte:'Sistema'
+      }];
+    }
+
     async function cargarNoticias(){
       try{
         var res = await fetch('./data/news.json', { cache: 'no-store' });
         if(!res.ok) throw new Error('news.json HTTP ' + res.status);
         var data = await res.json();
-        if(!data || typeof data!=='object' || Array.isArray(data)) throw new Error('Formato inválido de news.json');
+        if(!data || typeof data!=='object' || Array.isArray(data)){
+          throw new Error('Formato inválido de news.json');
+        }
         SECTOR_NOTICIAS.general = Array.isArray(data.general) ? data.general : [];
         SECTOR_NOTICIAS.internacional = Array.isArray(data.internacional) ? data.internacional : [];
         SECTOR_NOTICIAS.salud = Array.isArray(data.salud) ? data.salud : [];
@@ -566,10 +566,12 @@
     var CHART_ACTIVE_INDEX = 0;
     var CHART_INSTANCES = [];
     var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
+
     function renderKPIs(sector){
       var kpis = SECTOR_KPIS[sector] || SECTOR_KPIS.general;
       var grid = document.querySelector('.kpi-grid');
       grid.innerHTML = '';
+
       kpis.forEach(function(k,idx){
         var arrow = k.dv==='up' ? 'arrow-up' : k.dv==='dn' ? 'arrow-down' : 'minus';
         var activeCls = idx===CHART_ACTIVE_INDEX ? ' active' : '';
@@ -584,39 +586,74 @@
             '</div>' +
           '</button>';
       });
+
       syncActiveKPIState();
     }
-    function syncActiveKPIState(){ document.querySelectorAll('.kpi-card-btn').forEach(function(card,idx){ var isActive = idx===CHART_ACTIVE_INDEX; card.classList.toggle('active',isActive); card.setAttribute('aria-pressed',isActive ? 'true' : 'false'); }); }
-    function safeUrl(url){ try{ var u = new URL(url); return (u.protocol === 'https:' || u.protocol === 'http:') ? url : null; }catch(e){ return null; } }
+
+    function syncActiveKPIState(){
+      document.querySelectorAll('.kpi-card-btn').forEach(function(card,idx){
+        var isActive = idx===CHART_ACTIVE_INDEX;
+        card.classList.toggle('active',isActive);
+        card.setAttribute('aria-pressed',isActive ? 'true' : 'false');
+      });
+    }
+
+    function safeUrl(url){
+      try{
+        var u = new URL(url);
+        return (u.protocol === 'https:' || u.protocol === 'http:') ? url : null;
+      }catch(e){ return null; }
+    }
+
     function renderNoticias(sector){
-      var list = document.querySelector('.news-list'); if(!list) return;
+      var list = document.querySelector('.news-list');
+      if(!list) return;
+
       var nots = SECTOR_NOTICIAS[sector];
-      if(!Array.isArray(nots) || !nots.length){ nots = NEWS_LOAD_FAILED ? noticiaFallback('No fue posible cargar las noticias en este momento.', 'Noticias no disponibles') : noticiaFallback(); }
+      if(!Array.isArray(nots) || !nots.length){
+        nots = NEWS_LOAD_FAILED
+          ? noticiaFallback('No fue posible cargar las noticias en este momento.', 'Noticias no disponibles')
+          : noticiaFallback();
+      }
+
       var html = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'')+'</div></div>';
+        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'Sistema')+'</div></div>';
         var href = n.url ? safeUrl(n.url) : null;
-        if(href){ html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>'; }
-        else { html += '<div class="ni'+cls+'">'+inner+'</div>'; }
+        if(href){
+          html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>';
+        } else {
+          html += '<div class="ni'+cls+'">'+inner+'</div>';
+        }
       });
       list.innerHTML = html;
     }
+
     function setSector(sector){
       if(!SECTORES[sector]) sector='general';
       SECTOR_ACTUAL = sector;
       CHART_ACTIVE_INDEX = 0;
+
       var sectorText = SECTORES[sector].label;
       var sectorTitle = document.getElementById('sectorTitle');
       if(sectorTitle) sectorTitle.textContent = sectorText;
+
       document.querySelectorAll('.siwa-sector-btn').forEach(function(b){ b.classList.remove('active'); });
       var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
+
       renderKPIs(sector);
       renderNoticias(sector);
       renderCharts(sector,false);
       syncActiveKPIState();
     }
-    var baseOpts = { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}} };
+
+    var baseOpts = {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}}
+    };
+
     var SECTOR_CHARTS = {
       general:[
         {title:'USD/CLP observado',sub:'nivel y variación',color:'#3b82f6',base:913,drift:0.6,amp:1.6},
@@ -647,56 +684,6 @@
         {title:'Beneficiarios Fonasa',sub:'millones',color:'#3b82f6',base:16.4,drift:0.003,amp:0.01},
         {title:'Espera sistema público',sub:'millones de casos',color:'#3b82f6',base:2.35,drift:0.003,amp:0.02},
         {title:'Cumplimiento GES',sub:'porcentaje',color:'#3b82f6',base:92.1,drift:0.02,amp:0.08}
-      ],
-      mineria:[
-        {title:'USD/CLP observado',sub:'nivel y variación',color:'#3b82f6',base:913,drift:0.6,amp:1.6},
-        {title:'Cobre LME',sub:'precio internacional',color:'#3b82f6',base:4.08,drift:-0.002,amp:0.03},
-        {title:'Producción cobre',sub:'variación interanual',color:'#3b82f6',base:2.1,drift:0.02,amp:0.12},
-        {title:'Costo C1',sub:'US$/lb',color:'#3b82f6',base:2.12,drift:-0.01,amp:0.03},
-        {title:'Precio energía',sub:'costos operacionales',color:'#3b82f6',base:0.8,drift:0.01,amp:0.03},
-        {title:'Capex minero',sub:'inversión anual',color:'#3b82f6',base:14.2,drift:0.1,amp:0.4},
-        {title:'Empleo sectorial',sub:'dotación',color:'#3b82f6',base:271,drift:0.1,amp:0.4},
-        {title:'Margen operacional',sub:'EBITDA',color:'#3b82f6',base:34.5,drift:0.03,amp:0.2}
-      ],
-      inmobiliario:[
-        {title:'UF',sub:'valor diario',color:'#3b82f6',base:40850,drift:3.2,amp:6},
-        {title:'TPM',sub:'nivel y expectativa 12m',color:'#3b82f6',base:4.5,drift:-0.02,amp:0.06},
-        {title:'Crédito hipotecario',sub:'tasa promedio',color:'#3b82f6',base:4.9,drift:-0.02,amp:0.08},
-        {title:'Ventas vivienda',sub:'variación interanual',color:'#3b82f6',base:7.8,drift:0.03,amp:0.2},
-        {title:'Vacancia oficinas',sub:'porcentaje',color:'#3b82f6',base:10.6,drift:0.02,amp:0.1},
-        {title:'Permisos edificación',sub:'variación interanual',color:'#3b82f6',base:12.4,drift:-0.04,amp:0.12},
-        {title:'Stock disponible',sub:'meses',color:'#3b82f6',base:18.3,drift:0.01,amp:0.08},
-        {title:'Mora hipotecaria',sub:'porcentaje',color:'#3b82f6',base:2.1,drift:0.01,amp:0.03}
-      ],
-      financiero:[
-        {title:'TPM',sub:'nivel y expectativa 12m',color:'#3b82f6',base:4.5,drift:-0.02,amp:0.06},
-        {title:'EMBI Chile',sub:'riesgo país',color:'#3b82f6',base:89,drift:-0.4,amp:1.8},
-        {title:'USD/CLP observado',sub:'mercado FX',color:'#3b82f6',base:913,drift:0.6,amp:1.6},
-        {title:'Spread bancario',sub:'margen tasas',color:'#3b82f6',base:2.3,drift:-0.01,amp:0.03},
-        {title:'Morosidad',sub:'cartera total',color:'#3b82f6',base:2.4,drift:0.01,amp:0.03},
-        {title:'Colocaciones',sub:'crecimiento',color:'#3b82f6',base:4.2,drift:0.04,amp:0.08},
-        {title:'ROE sistema',sub:'rentabilidad',color:'#3b82f6',base:14.1,drift:0.03,amp:0.12},
-        {title:'Liquidez',sub:'ratio',color:'#3b82f6',base:19.8,drift:0,amp:0.04}
-      ],
-      retail:[
-        {title:'IPC',sub:'variación mensual/anual',color:'#3b82f6',base:3.8,drift:-0.03,amp:0.2},
-        {title:'Ventas comercio',sub:'variación interanual',color:'#3b82f6',base:1.7,drift:0.02,amp:0.08},
-        {title:'Desempleo nacional',sub:'trimestre móvil',color:'#3b82f6',base:8.6,drift:-0.02,amp:0.1},
-        {title:'Confianza consumidor',sub:'índice',color:'#3b82f6',base:18.2,drift:-0.04,amp:0.15},
-        {title:'Importaciones consumo',sub:'variación interanual',color:'#3b82f6',base:3.8,drift:0.03,amp:0.08},
-        {title:'Crédito consumo',sub:'crecimiento',color:'#3b82f6',base:5.1,drift:0.04,amp:0.08},
-        {title:'Inventarios',sub:'normalizados',color:'#3b82f6',base:12,drift:0,amp:0.05},
-        {title:'Márgenes',sub:'EBITDA',color:'#3b82f6',base:12.8,drift:-0.01,amp:0.08}
-      ],
-      energia:[
-        {title:'Petróleo Brent',sub:'US$/barril',color:'#3b82f6',base:82.6,drift:0.05,amp:0.7},
-        {title:'USD/CLP observado',sub:'mercado FX',color:'#3b82f6',base:913,drift:0.6,amp:1.6},
-        {title:'IPC',sub:'presión tarifas',color:'#3b82f6',base:3.8,drift:-0.03,amp:0.2},
-        {title:'Costo marginal',sub:'US$/MWh',color:'#3b82f6',base:67,drift:0.2,amp:0.6},
-        {title:'Demanda eléctrica',sub:'crecimiento',color:'#3b82f6',base:2.9,drift:0.02,amp:0.08},
-        {title:'Capacidad renovable',sub:'matriz',color:'#3b82f6',base:44.1,drift:0.03,amp:0.08},
-        {title:'Precio diésel',sub:'combustible',color:'#3b82f6',base:1.1,drift:0.01,amp:0.03},
-        {title:'Margen sectorial',sub:'EBITDA',color:'#3b82f6',base:9.6,drift:0,amp:0.06}
       ]
     };
 
@@ -705,56 +692,352 @@
         var mesesCortos=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
         var mLabels=[];
         var baseMes=new Date();
-        for(var i=11;i>=0;i--){ var md=new Date(baseMes); md.setDate(1); md.setMonth(baseMes.getMonth()-i); mLabels.push(mesesCortos[md.getMonth()]); }
+        for(var i=11;i>=0;i--){
+          var md=new Date(baseMes);
+          md.setDate(1);
+          md.setMonth(baseMes.getMonth()-i);
+          mLabels.push(mesesCortos[md.getMonth()]);
+        }
         return mLabels;
       }
       if(range==='5d'){
         var days=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
         var labels=[];
         var baseDia=new Date();
-        for(var j=4;j>=0;j--){ var d=new Date(baseDia); d.setDate(baseDia.getDate()-j); labels.push(days[d.getDay()]); }
+        for(var j=4;j>=0;j--){
+          var d=new Date(baseDia);
+          d.setDate(baseDia.getDate()-j);
+          labels.push(days[d.getDay()]);
+        }
         return labels;
       }
       var m=[];
       var baseMesDia=new Date();
-      for(var k=5;k>=0;k--){ var dm=new Date(baseMesDia); dm.setDate(baseMesDia.getDate()-(k*6)); m.push(dm.getDate()+'/'+(dm.getMonth()+1)); }
+      for(var k=5;k>=0;k--){
+        var dm=new Date(baseMesDia);
+        dm.setDate(baseMesDia.getDate()-(k*6));
+        m.push(dm.getDate()+'/'+(dm.getMonth()+1));
+      }
       return m;
     }
-    function buildSeries(base,drift,amp,points){ var out=[]; for(var i=0;i<points;i++){ var val=base + (drift*i) + (Math.sin(i*1.4)*amp); var digits=base>=100 ? 1 : base>=10 ? 2 : 3; out.push(Number(val.toFixed(digits))); } return out; }
-    function destroyCharts(){ CHART_INSTANCES.forEach(function(c){ if(c&&c.destroy) c.destroy(); }); CHART_INSTANCES=[]; }
-    function setChartRange(range){ CHART_RANGE=range; renderCharts(SECTOR_ACTUAL,true); }
-    function setActiveChart(index){ CHART_ACTIVE_INDEX=index; syncActiveKPIState(); renderCharts(SECTOR_ACTUAL,true); }
-    function prevChart(){ var defs = SECTOR_CHARTS[SECTOR_ACTUAL] || SECTOR_CHARTS.general; CHART_ACTIVE_INDEX = (CHART_ACTIVE_INDEX - 1 + defs.length) % defs.length; syncActiveKPIState(); renderCharts(SECTOR_ACTUAL,true); }
-    function nextChart(){ var defs = SECTOR_CHARTS[SECTOR_ACTUAL] || SECTOR_CHARTS.general; CHART_ACTIVE_INDEX = (CHART_ACTIVE_INDEX + 1) % defs.length; syncActiveKPIState(); renderCharts(SECTOR_ACTUAL,true); }
-    function escapeHtml(text){ return String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;').replace(/'/g,'&#39;'); }
-    function getSafeColor(color){ return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : DEFAULT_CHART_COLOR; }
-    function attachChartSwipe(el){ if(!el) return; var startX = 0, startY = 0, touching = false; el.addEventListener('touchstart', function(e){ if(!e.touches || !e.touches.length) return; touching = true; startX = e.touches[0].clientX; startY = e.touches[0].clientY; }, {passive:true}); el.addEventListener('touchend', function(e){ if(!touching || !e.changedTouches || !e.changedTouches.length) return; touching = false; var dx = e.changedTouches[0].clientX - startX; var dy = e.changedTouches[0].clientY - startY; if(Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)){ if(dx < 0) nextChart(); else prevChart(); } }, {passive:true}); }
-    function renderCharts(sector,preserveIndex){ var defs=SECTOR_CHARTS[sector] || SECTOR_CHARTS.general; if(!defs.length) defs=SECTOR_CHARTS.general; var track=document.getElementById('chartsTrack'); destroyCharts(); if(!preserveIndex || CHART_ACTIVE_INDEX>defs.length-1) CHART_ACTIVE_INDEX=0; var def=defs[CHART_ACTIVE_INDEX] || defs[0]; var safeColor=getSafeColor(def.color); var rangeBtns=['5d','1m','12m'].map(function(r){ var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn'; return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>'; }).join(''); track.innerHTML = '<div class="chart-head">' + '<div class="chart-title">' + '<div class="chart-accent" style="background:'+safeColor+'"></div>' + escapeHtml(def.title) + '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' + '</div>' + '</div>' + '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>' + '<div class="chart-nav-bottom">' + '<div class="chart-range-bottom">'+rangeBtns+'</div>' + '<div class="chart-nav-right">' + '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' + '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' + '</div>' + '</div>'; var labels=getRangeLabels(CHART_RANGE); var data=buildSeries(def.base,def.drift,def.amp,labels.length); var canvas=document.getElementById('chart-'+sector+'-'+CHART_ACTIVE_INDEX); CHART_INSTANCES.push(new Chart(canvas,{ type:'line', data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:safeColor+'33',tension:.35,fill:true,borderWidth:2,pointRadius:2}]}, options:baseOpts })); attachChartSwipe(document.getElementById('chartSwipeArea')); }
+
+    function buildSeries(base,drift,amp,points){
+      var out=[];
+      for(var i=0;i<points;i++){
+        var val=base + (drift*i) + (Math.sin(i*1.4)*amp);
+        var digits=base>=100 ? 1 : base>=10 ? 2 : 3;
+        out.push(Number(val.toFixed(digits)));
+      }
+      return out;
+    }
+
+    function destroyCharts(){
+      CHART_INSTANCES.forEach(function(c){ if(c&&c.destroy) c.destroy(); });
+      CHART_INSTANCES=[];
+    }
+
+    function setChartRange(range){
+      CHART_RANGE=range;
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function setActiveChart(index){
+      CHART_ACTIVE_INDEX=index;
+      syncActiveKPIState();
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function prevChart(){
+      var defs = SECTOR_CHARTS[SECTOR_ACTUAL] || SECTOR_CHARTS.general;
+      CHART_ACTIVE_INDEX = (CHART_ACTIVE_INDEX - 1 + defs.length) % defs.length;
+      syncActiveKPIState();
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function nextChart(){
+      var defs = SECTOR_CHARTS[SECTOR_ACTUAL] || SECTOR_CHARTS.general;
+      CHART_ACTIVE_INDEX = (CHART_ACTIVE_INDEX + 1) % defs.length;
+      syncActiveKPIState();
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function escapeHtml(text){
+      return String(text)
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;')
+        .replace(/'/g,'&#39;');
+    }
+
+    function getSafeColor(color){
+      return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : DEFAULT_CHART_COLOR;
+    }
+
+    function attachChartSwipe(el){
+      if(!el) return;
+      var startX = 0, startY = 0, touching = false;
+      el.addEventListener('touchstart', function(e){
+        if(!e.touches || !e.touches.length) return;
+        touching = true;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+      }, {passive:true});
+      el.addEventListener('touchend', function(e){
+        if(!touching || !e.changedTouches || !e.changedTouches.length) return;
+        touching = false;
+        var dx = e.changedTouches[0].clientX - startX;
+        var dy = e.changedTouches[0].clientY - startY;
+        if(Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)){
+          if(dx < 0) nextChart();
+          else prevChart();
+        }
+      }, {passive:true});
+    }
+
+    function renderCharts(sector,preserveIndex){
+      var defs=SECTOR_CHARTS[sector] || SECTOR_CHARTS.general;
+      if(!defs.length) defs=SECTOR_CHARTS.general;
+
+      var track=document.getElementById('chartsTrack');
+      destroyCharts();
+
+      if(!preserveIndex || CHART_ACTIVE_INDEX>defs.length-1) CHART_ACTIVE_INDEX=0;
+
+      var def=defs[CHART_ACTIVE_INDEX] || defs[0];
+      var safeColor=getSafeColor(def.color);
+
+      var rangeBtns=['5d','1m','12m'].map(function(r){
+        var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
+        return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
+      }).join('');
+
+      track.innerHTML =
+        '<div class="chart-head">' +
+          '<div class="chart-title">' +
+            '<div class="chart-accent" style="background:'+safeColor+'"></div>' +
+            escapeHtml(def.title) +
+            '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>' +
+        '<div class="chart-nav-bottom">' +
+          '<div class="chart-range-bottom">'+rangeBtns+'</div>' +
+          '<div class="chart-nav-right">' +
+            '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
+            '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
+          '</div>' +
+        '</div>';
+
+      var labels=getRangeLabels(CHART_RANGE);
+      var data=buildSeries(def.base,def.drift,def.amp,labels.length);
+      var canvas=document.getElementById('chart-'+sector+'-'+CHART_ACTIVE_INDEX);
+
+      CHART_INSTANCES.push(new Chart(canvas,{
+        type:'line',
+        data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:safeColor+'33',tension:.35,fill:true,borderWidth:2,pointRadius:2}]},
+        options:baseOpts
+      }));
+
+      attachChartSwipe(document.getElementById('chartSwipeArea'));
+    }
 
     var siwaOpen=false, siwaChatMode=false;
     var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
     var SIWA_USE_AGENT_FOR_OPEN=true;
-    function detectarIntencion(t){ t=t.toLowerCase(); if(t.match(/d[oó]lar|usd|clp/)) return 'dolar'; if(t.match(/cobre|lme/)) return 'cobre'; if(t.match(/embi|riesgo pa[ií]s/)) return 'embi'; if(t.match(/impacto|afecta|sector/)) return 'sector_impacto'; if(t.match(/perspectiva|proyecci[oó]n|futuro/)) return 'sector_perspectiva'; if(t.match(/riesgo|amenaza/)) return 'sector_riesgo'; return 'general'; }
-    function generarRespuesta(intencion,texto){ return 'Panorama general: inflación moderada, riesgo país bajo y sector externo estable.'; }
-    function isOpenQuestion(text){ var t=(text||'').toLowerCase().trim(); if(!t) return false; if(t.length>70) return true; if(t.match(/por qu[eé]|porque|explica|analiza|impacto|escenario|riesgo|proyecci[oó]n|expectativa|recomienda|estrategia|opini[oó]n|conviene/)) return true; if(t.includes('?')) return true; return false; }
-    function getSectorContextPayload(){ var sec=SECTOR_ACTUAL||'general'; var secObj=SECTORES[sec]||SECTORES.general; var kpis=(SECTOR_KPIS[sec]||SECTOR_KPIS.general).slice(0,8); return {sector:sec,sector_label:secObj.label||'General',sector_desc:secObj.desc||'',kpis:kpis}; }
-    async function preguntarAgenteCopilot(userText){ var ctx=getSectorContextPayload(); var payload={question:userText,sector:ctx.sector,sector_label:ctx.sector_label,sector_desc:ctx.sector_desc,kpis:ctx.kpis,ui_date:new Date().toLocaleDateString('es-CL')}; var res=await fetch(SIWA_AGENT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); if(!res.ok){ var e=await res.text().catch(function(){return 'agent_error';}); throw new Error(e); } var data=await res.json(); if(!data||!data.answer) throw new Error('invalid agent response'); return data.answer; }
+
+    function detectarIntencion(t){
+      t=t.toLowerCase();
+      if(t.match(/d[oó]lar|usd|clp/)) return 'dolar';
+      if(t.match(/cobre|lme/)) return 'cobre';
+      if(t.match(/embi|riesgo pa[ií]s/)) return 'embi';
+      if(t.match(/impacto|afecta|sector/)) return 'sector_impacto';
+      if(t.match(/perspectiva|proyecci[oó]n|futuro/)) return 'sector_perspectiva';
+      if(t.match(/riesgo|amenaza/)) return 'sector_riesgo';
+      return 'general';
+    }
+
+    function generarRespuesta(intencion,texto){
+      return 'Panorama general: inflación moderada, riesgo país bajo y sector externo estable.';
+    }
+
+    function isOpenQuestion(text){
+      var t=(text||'').toLowerCase().trim();
+      if(!t) return false;
+      if(t.length>70) return true;
+      if(t.match(/por qu[eé]|porque|explica|analiza|impacto|escenario|riesgo|proyecci[oó]n|expectativa|recomienda|estrategia|opini[oó]n|conviene/)) return true;
+      if(t.includes('?')) return true;
+      return false;
+    }
+
+    function getSectorContextPayload(){
+      var sec=SECTOR_ACTUAL||'general';
+      var secObj=SECTORES[sec]||SECTORES.general;
+      var kpis=(SECTOR_KPIS[sec]||SECTOR_KPIS.general).slice(0,8);
+      return {sector:sec,sector_label:secObj.label||'General',sector_desc:secObj.desc||'',kpis:kpis};
+    }
+
+    async function preguntarAgenteCopilot(userText){
+      var ctx=getSectorContextPayload();
+      var payload={question:userText,sector:ctx.sector,sector_label:ctx.sector_label,sector_desc:ctx.sector_desc,kpis:ctx.kpis,ui_date:new Date().toLocaleDateString('es-CL')};
+      var res=await fetch(SIWA_AGENT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      if(!res.ok){ var e=await res.text().catch(function(){return 'agent_error';}); throw new Error(e); }
+      var data=await res.json();
+      if(!data||!data.answer) throw new Error('invalid agent response');
+      return data.answer;
+    }
+
     function hora(){ return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'}); }
-    function siwaAddBot(html){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg bot'; d.innerHTML='<div><div class="sw-bubble">'+html+'</div><div class="sw-time">'+hora()+'</div></div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
-    function siwaAddUser(text){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg user'; d.innerHTML='<div><div class="sw-bubble">'+text+'</div><div class="sw-time">'+hora()+'</div></div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
-    function siwaAddSugs(sugs){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg bot'; d.innerHTML='<div class="sw-sugs">'+sugs.map(function(s){return '<button class="sw-sug" onclick="siwaEnviarTexto(\''+s.replace(/'/g,"\\'")+'\')">'+s+'</button>';}).join('')+'</div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
-    function siwaShowTyping(){ var msgs=document.getElementById('siwa-msgs'); var d=document.createElement('div'); d.className='sw-msg bot'; d.id='sw-typing'; d.innerHTML='<div class="sw-bubble">Escribiendo...</div>'; msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; }
-    function siwaHideTyping(){ var t=document.getElementById('sw-typing'); if(t) t.remove(); }
-    function siwaShowMenu(){ siwaChatMode=false; var panel=document.getElementById('siwa-panel'); panel.classList.remove('chat-mode'); panel.classList.add('menu-visible'); document.getElementById('siwa-msgs').innerHTML=''; }
-    function siwaToggle(){ siwaOpen=!siwaOpen; var p=document.getElementById('siwa-panel'); var fab=document.getElementById('siwa-fab'); if(siwaOpen){ p.classList.add('open'); fab.classList.add('expanded'); siwaShowMenu(); document.getElementById('siwa-notif').style.display='none'; } else { p.classList.remove('open'); fab.classList.remove('expanded'); } }
-    function siwaClose(){ siwaOpen=false; var p=document.getElementById('siwa-panel'); var fab=document.getElementById('siwa-fab'); p.classList.remove('open'); p.classList.remove('menu-visible'); p.classList.remove('chat-mode'); fab.classList.remove('expanded'); }
-    function siwaVolverMenu(){ siwaShowMenu(); }
-    function siwaModoPregunta(){ siwaChatMode=true; var panel=document.getElementById('siwa-panel'); panel.classList.add('chat-mode'); panel.classList.remove('menu-visible'); document.getElementById('siwa-sector-name').textContent=SECTORES[SECTOR_ACTUAL].label; document.getElementById('siwa-msgs').innerHTML=''; siwaAddBot('¡Hola! Soy <strong>Siwa</strong>. Mantengo el contexto del sector seleccionado y puedo consultar el agente Copilot para preguntas abiertas.'); }
-    function siwaSelSector(sector){ SECTOR_ACTUAL=sector; setSector(sector); siwaClose(); }
-    async function siwaEnviarTexto(texto){ if(!siwaChatMode){ siwaModoPregunta(); setTimeout(function(){ siwaEnviarTexto(texto); },250); return; } siwaAddUser(texto); siwaShowTyping(); try{ var intencion=detectarIntencion(texto); var respuesta = SIWA_USE_AGENT_FOR_OPEN && isOpenQuestion(texto) ? await preguntarAgenteCopilot(texto) : generarRespuesta(intencion,texto); siwaHideTyping(); siwaAddBot(respuesta); }catch(e){ siwaHideTyping(); siwaAddBot('No pude consultar el agente en este momento. Intenta nuevamente.'); } }
-    function siwaEnviar(){ var input=document.getElementById('siwa-input'); if(!input) return; var texto=(input.value||'').trim(); if(!texto) return; input.value=''; siwaEnviarTexto(texto); }
-    function init(){ setSector('general'); cargarNoticias(); }
-    init();
+
+    function siwaAddBot(html){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div><div class="sw-bubble">'+html+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaAddUser(text){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg user';
+      d.innerHTML='<div><div class="sw-bubble">'+text+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaAddSugs(sugs){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div class="sw-sugs">'+sugs.map(function(s){return '<button class="sw-sug" onclick="siwaEnviarTexto(\''+s.replace(/'/g,"\\'")+'\')">'+s+'</button>';}).join('')+'</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaShowTyping(){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.id='sw-typing';
+      d.innerHTML='<div class="sw-bubble">Escribiendo...</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaHideTyping(){
+      var t=document.getElementById('sw-typing');
+      if(t) t.remove();
+    }
+
+    function siwaShowMenu(){
+      siwaChatMode=false;
+      var panel=document.getElementById('siwa-panel');
+      panel.classList.remove('chat-mode');
+      panel.classList.add('menu-visible');
+      document.getElementById('siwa-msgs').innerHTML='';
+    }
+
+    function siwaToggle(){
+      siwaOpen=!siwaOpen;
+      var p=document.getElementById('siwa-panel');
+      var fab=document.getElementById('siwa-fab');
+      if(siwaOpen){
+        p.classList.add('open');
+        fab.classList.add('expanded');
+        siwaShowMenu();
+        document.getElementById('siwa-notif').style.display='none';
+      } else {
+        p.classList.remove('open');
+        fab.classList.remove('expanded');
+      }
+    }
+
+    function siwaClose(){
+      siwaOpen=false;
+      var p=document.getElementById('siwa-panel');
+      var fab=document.getElementById('siwa-fab');
+      p.classList.remove('open');
+      p.classList.remove('menu-visible');
+      fab.classList.remove('expanded');
+    }
+
+    function siwaVolverMenu(){
+      siwaShowMenu();
+    }
+
+    function siwaModoPregunta(){
+      siwaChatMode=true;
+      var panel=document.getElementById('siwa-panel');
+      panel.classList.add('chat-mode');
+      panel.classList.remove('menu-visible');
+      document.getElementById('siwa-sector-name').textContent=SECTORES[SECTOR_ACTUAL].label;
+      document.getElementById('siwa-msgs').innerHTML='';
+      siwaAddBot('¡Hola! Soy <strong>Siwa</strong>. Mantengo el contexto del sector seleccionado y puedo consultar el agente Copilot para preguntas abiertas.');
+      setTimeout(function(){
+        siwaAddSugs(['¿Cómo está el dólar?','¿Qué es el EMBI?','Analiza riesgos del sector actual','Perspectiva 6 meses']);
+      },300);
+    }
+
+    function siwaSelSector(sector){
+      SECTOR_ACTUAL=sector;
+      setSector(sector);
+
+      siwaChatMode=true;
+      var panel=document.getElementById('siwa-panel');
+      panel.classList.add('chat-mode');
+      panel.classList.remove('menu-visible');
+      document.getElementById('siwa-sector-name').textContent=SECTORES[sector].label;
+      document.getElementById('siwa-msgs').innerHTML='';
+
+      var s=SECTORES[sector];
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
+      setTimeout(function(){
+        siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
+      },350);
+    }
+
+    async function siwaEnviarTexto(texto){
+      if(!siwaChatMode){
+        siwaModoPregunta();
+        setTimeout(function(){ siwaEnviarTexto(texto); },250);
+        return;
+      }
+
+      siwaAddUser(texto);
+      siwaShowTyping();
+
+      try{
+        var intencion=detectarIntencion(texto);
+        var usarAgente=SIWA_USE_AGENT_FOR_OPEN && isOpenQuestion(texto);
+        var resp=usarAgente ? await preguntarAgenteCopilot(texto) : generarRespuesta(intencion,texto);
+
+        siwaHideTyping();
+        siwaAddBot(resp);
+
+        var sugs=['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras'];
+        setTimeout(function(){ siwaAddSugs(sugs); },300);
+      }catch(e){
+        siwaHideTyping();
+        siwaAddBot('No pude conectar con el agente. Respuesta en modo local.');
+      }
+    }
+
+    function siwaEnviar(){
+      var input=document.getElementById('siwa-input');
+      var text=input.value.trim();
+      if(!text) return;
+      input.value='';
+      siwaEnviarTexto(text);
+    }
+
+    setSector('general');
+    cargarNoticias();
+    setInterval(cargarNoticias, 5 * 60 * 1000);
+    setTimeout(function(){
+      if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex';
+    },2000);
   </script>
 </body>
 </html>
