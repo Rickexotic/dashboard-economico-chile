@@ -21,20 +21,73 @@
     .top-bar {
       background:rgba(15,23,42,.96);
       border-bottom:1px solid rgba(59,130,246,.25);
-      padding:0 20px;
-      min-height:44px;
+      padding:10px 20px;
+      min-height:60px;
       display:flex;
-      align-items:center;
+      align-items:flex-start;
       justify-content:space-between;
+      gap:14px;
       position:sticky;
       top:0;
       z-index:100;
     }
-    .top-bar-left { display:flex; align-items:center; gap:8px; }
-    .top-bar-bar { width:3px; height:18px; background:var(--blue); border-radius:999px; }
-    .top-bar-title { font-size:1rem; font-weight:700; color:var(--white); }
-    .top-bar-title span { color:var(--blue); }
-    .top-bar-date { font-size:.72rem; color:var(--muted); white-space:nowrap; }
+
+    .top-bar-left {
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      min-width:0;
+      flex:1;
+    }
+
+    .top-bar-bar {
+      width:3px;
+      height:34px;
+      background:var(--blue);
+      border-radius:999px;
+      margin-top:1px;
+      flex-shrink:0;
+    }
+
+    .top-bar-title-wrap{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+      gap:2px;
+    }
+
+    .top-bar-title {
+      font-size:1rem;
+      font-weight:800;
+      color:var(--white);
+      line-height:1.1;
+      white-space:nowrap;
+    }
+
+    .top-bar-subrow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      width:100%;
+      min-width:0;
+    }
+
+    .top-bar-sector{
+      font-size:.78rem;
+      font-weight:700;
+      color:var(--blue);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .top-bar-date {
+      font-size:.72rem;
+      color:var(--muted);
+      white-space:nowrap;
+      margin-left:auto;
+    }
 
     .main { padding:16px 24px 100px; }
     .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin-bottom:14px; }
@@ -99,17 +152,7 @@
     .chart-sub { font-size:.51rem; color:var(--muted); margin-left:auto; text-transform:none; }
 
     .chart-wrap { height:152px; position:relative; touch-action:pan-y; margin-top:10px; }
-
-    .chart-controls{
-      margin-top:10px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-
-    .chart-ranges { display:flex; gap:6px; }
+    .chart-ranges { display:flex; gap:6px; margin-bottom:10px; }
 
     .range-btn {
       font-size:.58rem; font-weight:700; padding:4px 9px; border-radius:999px;
@@ -120,6 +163,7 @@
     .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
 
     .chart-nav-bottom{
+      margin-top:10px;
       display:flex;
       justify-content:flex-end;
       gap:6px;
@@ -134,25 +178,13 @@
     .chart-nav-btn:hover{ background:rgba(59,130,246,.2); border-color:var(--blue); }
 
     .news-panel { background:rgba(59,130,246,.07); border:1px solid rgba(59,130,246,.2); border-radius:10px; padding:12px 16px; }
-    .news-title {
-      font-size:.65rem; font-weight:700; color:var(--blue); text-transform:uppercase;
-      letter-spacing:.07em; margin-bottom:10px; display:flex; align-items:center; gap:8px; justify-content:space-between;
-    }
-    .news-title-left { display:flex; align-items:center; gap:6px; }
-    .news-refresh { font-size:.58rem; color:var(--muted); font-weight:600; text-transform:none; letter-spacing:normal; }
+    .news-title { font-size:.65rem; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.07em; margin-bottom:10px; display:flex; align-items:center; gap:6px; }
     .news-list { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-
-    .ni {
-      display:flex; align-items:flex-start; gap:7px; padding:7px 9px; border-radius:7px;
-      background:rgba(255,255,255,.04); border-left:2px solid var(--blue);
-      text-decoration:none; color:inherit;
-    }
-    .ni:hover { background:rgba(255,255,255,.08); }
+    .ni { display:flex; align-items:flex-start; gap:7px; padding:7px 9px; border-radius:7px; background:rgba(255,255,255,.04); border-left:2px solid var(--blue); }
     .ni.o, .ni.g, .ni.p { border-left-color:var(--blue); }
     .ni-ico { font-size:.68rem; margin-top:2px; }
     .ni-txt { font-size:.7rem; line-height:1.4; }
-    .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
-    .ni-open { color:#93c5fd; text-decoration:underline; }
+    .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; }
 
     .dash-footer {
       background:rgba(255,255,255,.02);
@@ -160,7 +192,7 @@
       padding:8px 24px;
       display:flex;
       align-items:center;
-      justify-content:space-between;
+      justify-content:flex-end;
       gap:10px;
     }
     .footer-logo{
@@ -168,11 +200,6 @@
       width:auto;
       display:block;
       opacity:.95;
-    }
-    .footer-text{
-      font-size:.57rem;
-      color:var(--muted);
-      text-align:right;
     }
 
     #siwa-fab {
@@ -274,8 +301,14 @@
     }
 
     @media(max-width:640px) {
-      .top-bar { padding:10px 14px; min-height:auto; align-items:flex-start; gap:8px; flex-direction:column; }
-      .top-bar-date { font-size:.68rem; }
+      .top-bar {
+        padding:10px 14px;
+        min-height:auto;
+      }
+      .top-bar-title { font-size:.96rem; }
+      .top-bar-subrow { gap:8px; }
+      .top-bar-sector { font-size:.72rem; }
+      .top-bar-date { font-size:.66rem; }
 
       .kpi-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
       .kpi-card { padding:7px 7px; border-radius:8px; }
@@ -286,12 +319,15 @@
       .kpi-sub { font-size:.44rem; margin-left:0; width:100%; }
 
       .chart-wrap { height:136px; }
-      .chart-controls{ gap:8px; }
     }
 
     @media(max-width:480px) {
       #siwa-panel { width:calc(100vw - 32px); right:16px; bottom:90px; }
       #siwa-fab { bottom:16px; right:16px; }
+
+      .top-bar-title { font-size:.92rem; }
+      .top-bar-sector { font-size:.68rem; }
+      .top-bar-date { font-size:.62rem; }
 
       .kpi-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:5px; }
       .kpi-card { padding:6px 6px; }
@@ -301,7 +337,6 @@
       .chart-nav-btn{ width:24px; height:24px; }
 
       .footer-logo{ height:24px; }
-      .footer-text{ font-size:.52rem; }
     }
   </style>
 </head>
@@ -309,9 +344,14 @@
   <div class="top-bar">
     <div class="top-bar-left">
       <div class="top-bar-bar"></div>
-      <div class="top-bar-title" id="dashTitle">Dashboard Económico — <span>Chile</span></div>
+      <div class="top-bar-title-wrap">
+        <div class="top-bar-title" id="mainTitle">Informe Chile</div>
+        <div class="top-bar-subrow">
+          <div class="top-bar-sector" id="sectorTitle">General</div>
+          <div class="top-bar-date" id="fechaHoy"></div>
+        </div>
+      </div>
     </div>
-    <div class="top-bar-date" id="fechaHoy"></div>
   </div>
 
   <div class="main">
@@ -325,17 +365,13 @@
     </div>
 
     <div class="news-panel">
-      <div class="news-title">
-        <div class="news-title-left"><i class="fas fa-newspaper"></i>Noticias Económicas del Día</div>
-        <div class="news-refresh" id="newsUpdatedAt">Cargando noticias...</div>
-      </div>
+      <div class="news-title"><i class="fas fa-newspaper"></i>Noticias Económicas del Día</div>
       <div class="news-list"></div>
     </div>
   </div>
 
   <div class="dash-footer">
     <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
-    <div class="footer-text">Fuentes: Banco Central de Chile · mindicador.cl · prensa económica</div>
   </div>
 
   <div id="siwa-fab" onclick="siwaToggle()" title="Hablar con Siwa">
@@ -364,7 +400,6 @@
         <button id="btn-energia" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('energia')">⚡ Energía</button>
         <button id="btn-salud" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('salud')">🩺 Salud</button>
         <button id="btn-general" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('general')">🌐 General</button>
-        <button id="btn-internacional" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('internacional')">🌍 Internacional</button>
         <button class="siwa-menu-btn pregunta" onclick="siwaModoPregunta()"><i class="fas fa-comment-dots"></i> ¿Quieres hacer una pregunta?</button>
       </div>
     </div>
@@ -393,8 +428,7 @@
       financiero:{label:'Financiero',icon:'🏦',desc:'Sector financiero: TPM, EMBI, tipo de cambio y tasas.'},
       retail:{label:'Retail/Consumo',icon:'🛒',desc:'Retail: IPC, empleo, importaciones y confianza consumidor.'},
       energia:{label:'Energía',icon:'⚡',desc:'Energía: petróleo, dólar, IPC y costos marginales.'},
-      salud:{label:'Salud',icon:'🩺',desc:'Sector salud: presión regulatoria, siniestralidad y capacidad del sistema.'},
-      internacional:{label:'Internacional',icon:'🌍',desc:'Panorama macro global: tasas de EE.UU., inflación, dólar global, renta variable y actividad en China.'}
+      salud:{label:'Salud',icon:'🩺',desc:'Sector salud: presión regulatoria, siniestralidad y capacidad del sistema.'}
     };
     var SECTOR_ACTUAL = 'general';
 
@@ -418,37 +452,18 @@
         {label:'Beneficiarios Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,1% a/a',dp:'up',dpt:'mayor cobertura',sub:'beneficiarios'},
         {label:'Espera sistema público',val:'2,35 MM',dv:'up',dvt:'+2,7% a/a',dp:'dn',dpt:'presión red',sub:'listas de espera'},
         {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'mejora',sub:'garantías cumplidas'}
-      ],
-      internacional:[
-        {label:'Treasury USA 10 años 🇺🇸',val:'4,18%',dv:'up',dvt:'+4 pb',dp:'up',dpt:'YTD +31 pb',sub:'rendimiento soberano'},
-        {label:'Inflación de Estados Unidos (CPI) 🇺🇸',val:'+2,9% a/a',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'núcleo +3,2%',sub:'variación interanual'},
-        {label:'Fed Funds Rate 🇺🇸',val:'5,25% - 5,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'recortes esperados',sub:'rango objetivo FED'},
-        {label:'Crecimiento de China (PIB/actividad)',val:'+4,8% a/a',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'prod. ind. +5,1%',sub:'PIB y actividad industrial'},
-        {label:'Índice Dólar (DXY)',val:'103,4',dv:'up',dvt:'+0,5',dp:'up',dpt:'+0,7%',sub:'fortaleza global del USD'},
-        {label:'S&P 500 🇺🇸',val:'5.420',dv:'up',dvt:'+48',dp:'up',dpt:'+0,9%',sub:'índice accionario'},
-        {label:'Índice de Volatilidad (VIX)',val:'15,8',dv:'dn',dvt:'-0,9',dp:'up',dpt:'riesgo contenido',sub:'volatilidad implícita'},
-        {label:'PMI Manufacturero China',val:'50,6',dv:'up',dvt:'+0,4',dp:'up',dpt:'zona expansiva',sub:'>50 expansión'}
       ]
     };
 
     var SECTOR_NOTICIAS = {
       general:[
-        {cls:'o',ico:'globe',tit:'Panorama macro de Chile',desc:'Resumen local e internacional.',fte:'Local',url:'https://news.google.com/search?q=Chile%20econom%C3%ADa&hl=es-419&gl=CL&ceid=CL:es-419'},
-        {cls:'g',ico:'home',tit:'Mercado y hogares',desc:'Tasas, consumo y actividad.',fte:'Mercado',url:'https://news.google.com/search?q=Chile%20inflaci%C3%B3n%20tasas&hl=es-419&gl=CL&ceid=CL:es-419'}
+        {cls:'o',ico:'globe',tit:'EE.UU. incluye a Chile en lista comercial',desc:'Autoridades reaccionan al reporte.',fte:'Prensa - Hoy'},
+        {cls:'g',ico:'home',tit:'Fogaes reactiva hipotecarios',desc:'Mayor cobertura y cupos para vivienda.',fte:'Economía - Hoy'}
       ],
       salud:[
-        {cls:'g',ico:'heartbeat',tit:'Sector salud',desc:'Actualización del sistema.',fte:'Salud',url:'https://news.google.com/search?q=Chile%20salud%20isapres%20fonasa&hl=es-419&gl=CL&ceid=CL:es-419'},
-        {cls:'o',ico:'gavel',tit:'Regulación salud',desc:'Noticias regulatorias.',fte:'Regulación',url:'https://news.google.com/search?q=Chile%20regulaci%C3%B3n%20salud&hl=es-419&gl=CL&ceid=CL:es-419'}
-      ],
-      internacional:[
-        {cls:'o',ico:'landmark',tit:'Mercados globales',desc:'Fed, inflación y bonos.',fte:'Global',url:'https://news.google.com/search?q=Fed%20CPI%20Treasury%20Yahoo%20Finance&hl=en-US&gl=US&ceid=US:en'},
-        {cls:'g',ico:'industry',tit:'China y actividad',desc:'PMI y crecimiento.',fte:'Asia',url:'https://news.google.com/search?q=China%20PMI%20GDP&hl=en-US&gl=US&ceid=US:en'}
-      ],
-      mineria:[],
-      inmobiliario:[],
-      financiero:[],
-      retail:[],
-      energia:[]
+        {cls:'g',ico:'heartbeat',tit:'Aumentan licencias médicas en 12 meses',desc:'Autoridades anuncian nuevas medidas de control.',fte:'Salud - Hoy'},
+        {cls:'o',ico:'gavel',tit:'Mayor judicialización en aseguramiento',desc:'Se discuten ajustes regulatorios para el sector.',fte:'Regulación - Hoy'}
+      ]
     };
 
     var DEFAULT_CHART_COLOR = '#3b82f6';
@@ -456,173 +471,6 @@
     var CHART_ACTIVE_INDEX = 0;
     var CHART_INSTANCES = [];
     var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
-
-    var NEWS_REFRESH_MS = 5 * 60 * 1000;
-    var NEWS_TIMEOUT_MS = 6500;
-    var NEWS_CACHE = {};
-    var NEWS_PROXY_LIST = [
-      'https://api.allorigins.win/raw?url=',
-      'https://r.jina.ai/http://'
-    ];
-
-    var SECTOR_NEWS_QUERY = {
-      general: 'Chile economy inflation central bank peso IPC IMACEC',
-      mineria: 'Chile copper mining Codelco LME copper prices',
-      inmobiliario: 'Chile housing mortgage rates UF real estate',
-      financiero: 'Chile banking rates bond yields EMBI central bank',
-      retail: 'Chile retail consumer spending inflation employment',
-      energia: 'Chile energy oil prices electricity gas renewables',
-      salud: 'Chile healthcare Isapres Fonasa GES regulation',
-      internacional: 'US inflation CPI Fed rates Treasury yields DXY S&P 500 VIX China PMI GDP Yahoo Finance Reuters Bloomberg'
-    };
-
-    function withTimeout(promise, ms){
-      return Promise.race([
-        promise,
-        new Promise(function(_, reject){
-          setTimeout(function(){ reject(new Error('timeout')); }, ms);
-        })
-      ]);
-    }
-
-    function escapeAttr(s){
-      return String(s || '')
-        .replace(/&/g,'&amp;')
-        .replace(/"/g,'&quot;')
-        .replace(/</g,'&lt;')
-        .replace(/>/g,'&gt;');
-    }
-
-    function safeExternalUrl(url){
-      try{
-        var u = new URL(url, location.href);
-        if(u.protocol === 'http:' || u.protocol === 'https:') return u.href;
-        return '#';
-      }catch(e){
-        return '#';
-      }
-    }
-
-    function getDomain(url){
-      try { return new URL(url).hostname.replace('www.',''); }
-      catch(e){ return 'fuente'; }
-    }
-
-    function hoursAgo(pubDate){
-      var now = Date.now();
-      var t = new Date(pubDate).getTime();
-      if(!t || isNaN(t)) return '';
-      var h = Math.max(0, Math.round((now - t)/3600000));
-      if(h < 1) return 'hace <1h';
-      if(h < 24) return 'hace ' + h + 'h';
-      var d = Math.round(h/24);
-      return 'hace ' + d + 'd';
-    }
-
-    function mapIconBySector(sector){
-      var m = {
-        general:'globe',
-        mineria:'industry',
-        inmobiliario:'home',
-        financiero:'landmark',
-        retail:'shopping-cart',
-        energia:'bolt',
-        salud:'heartbeat',
-        internacional:'earth-americas'
-      };
-      return m[sector] || 'newspaper';
-    }
-
-    function pickClsByTitle(title){
-      var t = (title||'').toLowerCase();
-      if(/sube|alza|expansi|crece|mejora|rally|gain|up/.test(t)) return 'g';
-      if(/cae|baja|riesgo|crisis|down|fall|drop|volatil/.test(t)) return 'o';
-      return 'p';
-    }
-
-    function buildGoogleRssUrl(query){
-      var q = encodeURIComponent(query);
-      return 'https://news.google.com/rss/search?q=' + q + '&hl=es-419&gl=CL&ceid=CL:es-419';
-    }
-
-    function parseRssItems(xmlText, sector){
-      var parser = new DOMParser();
-      var xml = parser.parseFromString(xmlText, 'text/xml');
-      var items = Array.prototype.slice.call(xml.querySelectorAll('item'));
-      var out = [];
-      var seen = {};
-      items.forEach(function(item){
-        if(out.length >= 6) return;
-        var title = (item.querySelector('title') || {}).textContent || '';
-        var link = (item.querySelector('link') || {}).textContent || '';
-        var pubDate = (item.querySelector('pubDate') || {}).textContent || '';
-        if(!title || !link) return;
-        link = safeExternalUrl(link);
-        if(link === '#') return;
-
-        var key = title.trim().toLowerCase();
-        if(seen[key]) return;
-        seen[key] = true;
-
-        var sourceDomain = getDomain(link);
-        var relTime = hoursAgo(pubDate);
-        out.push({
-          cls: pickClsByTitle(title),
-          ico: mapIconBySector(sector),
-          tit: title.replace(/\s-\s[^-]+$/, ''),
-          desc: 'Abrir noticia original.',
-          fte: sourceDomain + (relTime ? ' · ' + relTime : ''),
-          url: link
-        });
-      });
-      return out;
-    }
-
-    async function fetchWithProxies(url){
-      var lastErr = null;
-
-      for(var i=0;i<NEWS_PROXY_LIST.length;i++){
-        try{
-          var proxy = NEWS_PROXY_LIST[i];
-          var finalUrl = proxy === 'https://r.jina.ai/http://'
-            ? (proxy + url.replace(/^https?:\/\//,''))
-            : (proxy + encodeURIComponent(url));
-
-          var res = await withTimeout(fetch(finalUrl, {cache:'no-store'}), NEWS_TIMEOUT_MS);
-          if(!res.ok) throw new Error('proxy_http_' + res.status);
-          var txt = await res.text();
-          if(!txt || txt.length < 100) throw new Error('empty_proxy_response');
-
-          if(proxy === 'https://r.jina.ai/http://'){
-            var xmlStart = txt.indexOf('<?xml');
-            if(xmlStart >= 0) txt = txt.slice(xmlStart);
-          }
-
-          return txt;
-        }catch(err){
-          lastErr = err;
-        }
-      }
-      throw lastErr || new Error('all_proxies_failed');
-    }
-
-    async function fetchSectorNews(sector){
-      var q = SECTOR_NEWS_QUERY[sector] || SECTOR_NEWS_QUERY.general;
-      var rssUrl = buildGoogleRssUrl(q);
-      var txt = await fetchWithProxies(rssUrl);
-      var parsed = parseRssItems(txt, sector);
-      if(!parsed.length) throw new Error('no rss items');
-      return parsed;
-    }
-
-    function updateNewsStamp(msg){
-      var el = document.getElementById('newsUpdatedAt');
-      if(el) el.textContent = msg;
-    }
-
-    function formatNowShort(){
-      return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'});
-    }
 
     function renderKPIs(sector){
       var kpis = SECTOR_KPIS[sector] || SECTOR_KPIS.general;
@@ -644,63 +492,26 @@
     }
 
     function renderNoticias(sector){
-      var nots = (NEWS_CACHE[sector] && NEWS_CACHE[sector].length) ? NEWS_CACHE[sector] : (SECTOR_NOTICIAS[sector] || SECTOR_NOTICIAS.general);
+      var nots = SECTOR_NOTICIAS[sector] || SECTOR_NOTICIAS.general;
       var list = document.querySelector('.news-list');
       list.innerHTML = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        var href = safeExternalUrl(n.url || '#');
-        var isExternal = href !== '#';
-        var anchorAttrs = isExternal
-          ? ' target="_blank" rel="noopener noreferrer" '
-          : '';
-
-        list.innerHTML +=
-          '<a class="ni'+cls+'" href="'+escapeAttr(href)+'"'+anchorAttrs+'>' +
-            '<i class="fas fa-'+escapeAttr(n.ico || 'newspaper')+' ni-ico"></i>' +
-            '<div class="ni-txt">' +
-              '<strong>'+escapeAttr(n.tit || 'Noticia')+'</strong> — '+escapeAttr(n.desc || '')+
-              '<div class="ni-src">' +
-                '<span>'+escapeAttr(n.fte || 'fuente')+'</span>' +
-                (isExternal ? '<span class="ni-open">Abrir fuente</span>' : '') +
-              '</div>' +
-            '</div>' +
-          '</a>';
+        list.innerHTML += '<div class="ni'+cls+'"><i class="fas fa-'+n.ico+' ni-ico"></i><div class="ni-txt"><strong>'+n.tit+'</strong> — '+n.desc+'<div class="ni-src">'+n.fte+'</div></div></div>';
       });
     }
 
     function setSector(sector){
       SECTOR_ACTUAL = sector;
       CHART_ACTIVE_INDEX = 0;
-      var nombres = {
-        general:'Chile',
-        salud:'Chile | Salud',
-        internacional:'Chile | Internacional'
-      };
-      var t = document.getElementById('dashTitle');
-      t.innerHTML = 'Dashboard Económico — <span>' + (nombres[sector]||('Chile | ' + (SECTORES[sector] ? SECTORES[sector].label : 'General'))) + '</span>';
+
+      var sectorText = (SECTORES[sector] ? SECTORES[sector].label : 'General');
+      var sectorTitle = document.getElementById('sectorTitle');
+      if(sectorTitle) sectorTitle.textContent = sectorText;
+
       document.querySelectorAll('.siwa-sector-btn').forEach(function(b){ b.classList.remove('active'); });
       var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
-      renderKPIs(sector);
-      renderNoticias(sector);
-      renderCharts(sector);
-    }
-
-    async function preloadAllSectorNews(){
-      updateNewsStamp('Actualizando noticias...');
-      var sectors = Object.keys(SECTORES);
-
-      await Promise.allSettled(sectors.map(async function(sec){
-        try{
-          var items = await fetchSectorNews(sec);
-          NEWS_CACHE[sec] = items;
-        }catch(e){
-          NEWS_CACHE[sec] = (SECTOR_NOTICIAS[sec] && SECTOR_NOTICIAS[sec].length) ? SECTOR_NOTICIAS[sec] : (SECTOR_NOTICIAS.general || []);
-        }
-      }));
-
-      renderNoticias(SECTOR_ACTUAL);
-      updateNewsStamp('Actualizado: ' + formatNowShort());
+      renderKPIs(sector); renderNoticias(sector); renderCharts(sector);
     }
 
     var baseOpts = {
@@ -729,16 +540,6 @@
         {title:'Beneficiarios Fonasa',sub:'millones',color:'#3b82f6',base:16.4,drift:0.003,amp:0.01},
         {title:'Espera sistema público',sub:'millones de casos',color:'#3b82f6',base:2.35,drift:0.003,amp:0.02},
         {title:'Cumplimiento GES',sub:'porcentaje',color:'#3b82f6',base:92.1,drift:0.02,amp:0.08}
-      ],
-      internacional:[
-        {title:'Treasury USA 10 años 🇺🇸',sub:'rendimiento benchmark',color:'#3b82f6',base:4.18,drift:0.01,amp:0.05},
-        {title:'Inflación de Estados Unidos (CPI) 🇺🇸',sub:'variación interanual',color:'#3b82f6',base:2.9,drift:-0.01,amp:0.04},
-        {title:'Fed Funds Rate 🇺🇸',sub:'rango objetivo',color:'#3b82f6',base:5.38,drift:0.00,amp:0.01},
-        {title:'Crecimiento de China (PIB/actividad)',sub:'PIB / producción industrial',color:'#3b82f6',base:4.8,drift:0.01,amp:0.06},
-        {title:'Índice Dólar (DXY)',sub:'fortaleza global del USD',color:'#3b82f6',base:103.4,drift:0.03,amp:0.25},
-        {title:'S&P 500 🇺🇸',sub:'índice accionario',color:'#3b82f6',base:5420,drift:6,amp:18},
-        {title:'Índice de Volatilidad (VIX)',sub:'volatilidad implícita',color:'#3b82f6',base:15.8,drift:-0.02,amp:0.35},
-        {title:'PMI Manufacturero China',sub:'umbral 50 expansión/contracción',color:'#3b82f6',base:50.6,drift:0.01,amp:0.12}
       ]
     };
 
@@ -875,13 +676,11 @@
             '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' +
           '</div>' +
         '</div>' +
+        '<div class="chart-ranges">'+btns+'</div>' +
         '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>' +
-        '<div class="chart-controls">' +
-          '<div class="chart-ranges">'+btns+'</div>' +
-          '<div class="chart-nav-bottom">' +
-            '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
-            '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
-          '</div>' +
+        '<div class="chart-nav-bottom">' +
+          '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
+          '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
         '</div>';
 
       var labels=getRangeLabels(CHART_RANGE);
@@ -1088,13 +887,6 @@
     }
 
     setSector('general');
-
-    preloadAllSectorNews();
-
-    setInterval(function(){
-      preloadAllSectorNews();
-    }, NEWS_REFRESH_MS);
-
     setTimeout(function(){
       if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex';
     },2000);
