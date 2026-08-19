@@ -54,6 +54,7 @@
       flex-direction:column;
       min-width:0;
       gap:2px;
+      width:100%;
     }
 
     .top-bar-title {
@@ -67,7 +68,7 @@
     .top-bar-subrow{
       display:flex;
       align-items:center;
-      justify-content:space-between;
+      justify-content:flex-start;
       gap:16px;
       width:100%;
       min-width:0;
@@ -87,6 +88,7 @@
       color:var(--muted);
       white-space:nowrap;
       margin-left:auto;
+      text-align:right;
     }
 
     .main { padding:16px 24px 100px; }
@@ -192,11 +194,11 @@
       padding:8px 24px;
       display:flex;
       align-items:center;
-      justify-content:flex-end;
+      justify-content:flex-start;
       gap:10px;
     }
     .footer-logo{
-      height:28px;
+      height:33.6px;
       width:auto;
       display:block;
       opacity:.95;
@@ -336,7 +338,7 @@
       .chart-wrap { height:128px; }
       .chart-nav-btn{ width:24px; height:24px; }
 
-      .footer-logo{ height:24px; }
+      .footer-logo{ height:28.8px; }
     }
   </style>
 </head>
@@ -399,6 +401,7 @@
         <button id="btn-retail" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('retail')">🛒 Retail</button>
         <button id="btn-energia" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('energia')">⚡ Energía</button>
         <button id="btn-salud" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('salud')">🩺 Salud</button>
+        <button id="btn-internacional" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('internacional')">🌎 Internacional</button>
         <button id="btn-general" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('general')">🌐 General</button>
         <button class="siwa-menu-btn pregunta" onclick="siwaModoPregunta()"><i class="fas fa-comment-dots"></i> ¿Quieres hacer una pregunta?</button>
       </div>
@@ -423,6 +426,7 @@
 
     var SECTORES = {
       general:{label:'General',icon:'🌐',desc:'Panorama macroeconómico general de Chile.'},
+      internacional:{label:'Internacional',icon:'🌎',desc:'Entorno global: Fed, China, commodities, geopolítica y mercados.'},
       mineria:{label:'Minería',icon:'⛏️',desc:'Sector minero: foco en cobre, dólar, costos e inversión.'},
       inmobiliario:{label:'Inmobiliario',icon:'🏠',desc:'Sector inmobiliario: UF, TPM, inflación y crédito.'},
       financiero:{label:'Financiero',icon:'🏦',desc:'Sector financiero: TPM, EMBI, tipo de cambio y tasas.'},
@@ -443,6 +447,16 @@
         {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'expectativa mercado'},
         {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'+1,9% a/a',sub:'crecimiento trimestral'}
       ],
+      internacional:[
+        {label:'DXY (Índice dólar)',val:'104,2',dv:'up',dvt:'+0,4',dp:'up',dpt:'+0,38%',sub:'sesión global'},
+        {label:'Cobre LME',val:'US$ 4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'-0,73%',sub:'demanda China'},
+        {label:'Petróleo Brent',val:'US$ 82,6',dv:'up',dvt:'+0,8',dp:'up',dpt:'+0,98%',sub:'riesgo geopolítico'},
+        {label:'Treasury 10Y',val:'4,18%',dv:'up',dvt:'+0,03 pp',dp:'dn',dpt:'condiciones más restrictivas',sub:'bonos EE.UU.'},
+        {label:'VIX',val:'14,9',dv:'up',dvt:'+0,7',dp:'dn',dpt:'mayor volatilidad',sub:'mercado accionario'},
+        {label:'MSCI Emergentes',val:'+0,4%',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'flujo positivo',sub:'sesión diaria'},
+        {label:'PMI manufactura global',val:'50,7',dv:'fl',dvt:'0,0',dp:'up',dpt:'expansión leve',sub:'lectura compuesta'},
+        {label:'Spread HY global',val:'365 pb',dv:'up',dvt:'+6 pb',dp:'dn',dpt:'más aversión al riesgo',sub:'crédito corporativo'}
+      ],
       salud:[
         {label:'Judicialización',val:'Índice 114,2',dv:'up',dvt:'+1,8% a/a',dp:'dn',dpt:'presión legal',sub:'causas y fallos'},
         {label:'Reclamos regulatorios',val:'42,3 mil',dv:'up',dvt:'+3,1% a/a',dp:'dn',dpt:'SERNAC/SIS',sub:'acumulado 12m'},
@@ -460,6 +474,10 @@
         {cls:'o',ico:'globe',tit:'EE.UU. incluye a Chile en lista comercial',desc:'Autoridades reaccionan al reporte.',fte:'Prensa - Hoy'},
         {cls:'g',ico:'home',tit:'Fogaes reactiva hipotecarios',desc:'Mayor cobertura y cupos para vivienda.',fte:'Economía - Hoy'}
       ],
+      internacional:[
+        {cls:'o',ico:'landmark',tit:'Fed mantiene tono cauteloso',desc:'Mercado ajusta expectativas de recortes de tasa.',fte:'Internacional - Hoy'},
+        {cls:'g',ico:'industry',tit:'China anuncia estímulos selectivos',desc:'Metales reaccionan con alta volatilidad.',fte:'Asia - Hoy'}
+      ],
       salud:[
         {cls:'g',ico:'heartbeat',tit:'Aumentan licencias médicas en 12 meses',desc:'Autoridades anuncian nuevas medidas de control.',fte:'Salud - Hoy'},
         {cls:'o',ico:'gavel',tit:'Mayor judicialización en aseguramiento',desc:'Se discuten ajustes regulatorios para el sector.',fte:'Regulación - Hoy'}
@@ -476,11 +494,23 @@
       var kpis = SECTOR_KPIS[sector] || SECTOR_KPIS.general;
       var grid = document.querySelector('.kpi-grid');
       grid.innerHTML = '';
+
       kpis.forEach(function(k,idx){
         var arrow = k.dv==='up' ? 'arrow-up' : k.dv==='dn' ? 'arrow-down' : 'minus';
         var activeCls = idx===CHART_ACTIVE_INDEX ? ' active' : '';
-        grid.innerHTML += '<button type="button" class="kpi-card kpi-card-btn'+activeCls+'" onclick="setActiveChart('+idx+')" aria-pressed="'+(idx===CHART_ACTIVE_INDEX?'true':'false')+'"><div class="kpi-label">'+k.label+'</div><div class="kpi-value">'+k.val+'</div><div class="kpi-diff"><span class="dv '+k.dv+'"><i class="fas fa-'+arrow+'"></i> '+k.dvt+'</span><span class="dp '+k.dp+'">'+k.dpt+'</span><span class="kpi-sub">'+k.sub+'</span></div></button>';
+        grid.innerHTML +=
+          '<button type="button" class="kpi-card kpi-card-btn'+activeCls+'" onclick="setActiveChart('+idx+')" aria-pressed="'+(idx===CHART_ACTIVE_INDEX?'true':'false')+'">' +
+            '<div class="kpi-label">'+escapeHtml(k.label||'Indicador')+'</div>' +
+            '<div class="kpi-value">'+escapeHtml(k.val||'—')+'</div>' +
+            '<div class="kpi-diff">' +
+              '<span class="dv '+(k.dv||'fl')+'"><i class="fas fa-'+arrow+'"></i> '+escapeHtml(k.dvt||'0')+'</span>' +
+              '<span class="dp '+(k.dp||'fl')+'">'+escapeHtml(k.dpt||'')+'</span>' +
+              '<span class="kpi-sub">'+escapeHtml(k.sub||'')+'</span>' +
+            '</div>' +
+          '</button>';
       });
+
+      syncActiveKPIState();
     }
 
     function syncActiveKPIState(){
@@ -492,7 +522,13 @@
     }
 
     function renderNoticias(sector){
-      var nots = SECTOR_NOTICIAS[sector] || SECTOR_NOTICIAS.general;
+      var nots = SECTOR_NOTICIAS[sector];
+      if(!Array.isArray(nots) || !nots.length){
+        nots = [
+          {cls:'o',ico:'circle-info',tit:'Sin novedades sectoriales',desc:'No hay noticias disponibles para este sector por ahora.',fte:'Sistema'}
+        ];
+      }
+
       var list = document.querySelector('.news-list');
       list.innerHTML = '';
       nots.forEach(function(n){
@@ -502,16 +538,21 @@
     }
 
     function setSector(sector){
+      if(!SECTORES[sector]) sector='general';
       SECTOR_ACTUAL = sector;
       CHART_ACTIVE_INDEX = 0;
 
-      var sectorText = (SECTORES[sector] ? SECTORES[sector].label : 'General');
+      var sectorText = SECTORES[sector].label;
       var sectorTitle = document.getElementById('sectorTitle');
       if(sectorTitle) sectorTitle.textContent = sectorText;
 
       document.querySelectorAll('.siwa-sector-btn').forEach(function(b){ b.classList.remove('active'); });
       var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
-      renderKPIs(sector); renderNoticias(sector); renderCharts(sector);
+
+      renderKPIs(sector);
+      renderNoticias(sector);
+      renderCharts(sector,false);
+      syncActiveKPIState();
     }
 
     var baseOpts = {
@@ -530,6 +571,16 @@
         {title:'Riesgo país Chile',sub:'EMBI / CDS 5Y',color:'#3b82f6',base:89,drift:-0.4,amp:1.8},
         {title:'TPM',sub:'nivel y expectativa 12m',color:'#3b82f6',base:4.5,drift:-0.02,amp:0.06},
         {title:'PIB real',sub:'trimestral e interanual',color:'#3b82f6',base:1.9,drift:0.02,amp:0.15}
+      ],
+      internacional:[
+        {title:'DXY (Índice dólar)',sub:'fortaleza global del USD',color:'#3b82f6',base:104.2,drift:0.04,amp:0.25},
+        {title:'Cobre LME',sub:'precio internacional',color:'#3b82f6',base:4.08,drift:-0.002,amp:0.03},
+        {title:'Petróleo Brent',sub:'US$/barril',color:'#3b82f6',base:82.6,drift:0.05,amp:0.7},
+        {title:'Treasury 10Y',sub:'rendimiento',color:'#3b82f6',base:4.18,drift:0.003,amp:0.02},
+        {title:'VIX',sub:'volatilidad implícita',color:'#3b82f6',base:14.9,drift:0.03,amp:0.5},
+        {title:'MSCI Emergentes',sub:'desempeño índice',color:'#3b82f6',base:1032,drift:1.2,amp:4.5},
+        {title:'PMI manufactura global',sub:'difusión',color:'#3b82f6',base:50.7,drift:0.01,amp:0.08},
+        {title:'Spread HY global',sub:'riesgo crédito',color:'#3b82f6',base:365,drift:0.4,amp:2.2}
       ],
       salud:[
         {title:'Judicialización',sub:'índice de causas/fallos',color:'#3b82f6',base:114.2,drift:0.4,amp:1.2},
@@ -846,7 +897,7 @@
       document.getElementById('siwa-msgs').innerHTML='';
 
       var s=SECTORES[sector];
-      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot cuando corresponda.</small>');
       setTimeout(function(){
         siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
       },350);
