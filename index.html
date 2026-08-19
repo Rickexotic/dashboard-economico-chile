@@ -470,19 +470,28 @@
     };
 
     var SECTOR_NOTICIAS = {
-      general:[
-        {cls:'o',ico:'globe',tit:'EE.UU. incluye a Chile en lista comercial',desc:'Autoridades reaccionan al reporte.',fte:'Prensa - Hoy'},
-        {cls:'g',ico:'home',tit:'Fogaes reactiva hipotecarios',desc:'Mayor cobertura y cupos para vivienda.',fte:'Economía - Hoy'}
-      ],
-      internacional:[
-        {cls:'o',ico:'landmark',tit:'Fed mantiene tono cauteloso',desc:'Mercado ajusta expectativas de recortes de tasa.',fte:'Internacional - Hoy'},
-        {cls:'g',ico:'industry',tit:'China anuncia estímulos selectivos',desc:'Metales reaccionan con alta volatilidad.',fte:'Asia - Hoy'}
-      ],
-      salud:[
-        {cls:'g',ico:'heartbeat',tit:'Aumentan licencias médicas en 12 meses',desc:'Autoridades anuncian nuevas medidas de control.',fte:'Salud - Hoy'},
-        {cls:'o',ico:'gavel',tit:'Mayor judicialización en aseguramiento',desc:'Se discuten ajustes regulatorios para el sector.',fte:'Regulación - Hoy'}
-      ]
+      general: [],
+      internacional: [],
+      salud: []
     };
+
+    async function cargarNoticias(){
+      try{
+        var res = await fetch('./data/news.json', { cache: 'no-store' });
+        if(!res.ok) throw new Error('news.json HTTP ' + res.status);
+        var data = await res.json();
+        SECTOR_NOTICIAS.general = Array.isArray(data.general) ? data.general : [];
+        SECTOR_NOTICIAS.internacional = Array.isArray(data.internacional) ? data.internacional : [];
+        SECTOR_NOTICIAS.salud = Array.isArray(data.salud) ? data.salud : [];
+        renderNoticias(SECTOR_ACTUAL);
+      }catch(e){
+        console.warn('No se pudieron cargar noticias dinámicas:', e);
+        var list = document.querySelector('.news-list');
+        if(list && !list.innerHTML.trim()){
+          list.innerHTML = '<div class="ni o"><i class="fas fa-circle-info ni-ico"></i><div class="ni-txt"><strong>Noticias no disponibles</strong> — No fue posible cargar las noticias en este momento.<div class="ni-src">Sistema</div></div></div>';
+        }
+      }
+    }
 
     var DEFAULT_CHART_COLOR = '#3b82f6';
     var CHART_RANGE = '1m';
@@ -521,6 +530,13 @@
       });
     }
 
+    function safeUrl(url){
+      try{
+        var u = new URL(url);
+        return (u.protocol === 'https:' || u.protocol === 'http:') ? url : null;
+      }catch(e){ return null; }
+    }
+
     function renderNoticias(sector){
       var nots = SECTOR_NOTICIAS[sector];
       if(!Array.isArray(nots) || !nots.length){
@@ -530,11 +546,18 @@
       }
 
       var list = document.querySelector('.news-list');
-      list.innerHTML = '';
+      var html = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        list.innerHTML += '<div class="ni'+cls+'"><i class="fas fa-'+n.ico+' ni-ico"></i><div class="ni-txt"><strong>'+n.tit+'</strong> — '+n.desc+'<div class="ni-src">'+n.fte+'</div></div></div>';
+        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'')+'</div></div>';
+        var href = n.url ? safeUrl(n.url) : null;
+        if(href){
+          html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>';
+        } else {
+          html += '<div class="ni'+cls+'">'+inner+'</div>';
+        }
       });
+      list.innerHTML = html;
     }
 
     function setSector(sector){
@@ -938,6 +961,8 @@
     }
 
     setSector('general');
+    cargarNoticias();
+    setInterval(cargarNoticias, 5 * 60 * 1000);
     setTimeout(function(){
       if(!siwaOpen) document.getElementById('siwa-notif').style.display='flex';
     },2000);
