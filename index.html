@@ -99,7 +99,18 @@
     .chart-sub { font-size:.51rem; color:var(--muted); margin-left:auto; text-transform:none; }
 
     .chart-wrap { height:152px; position:relative; touch-action:pan-y; margin-top:10px; }
-    .chart-ranges { display:flex; gap:6px; margin-bottom:10px; }
+
+    /* moved down to align with carousel arrows row */
+    .chart-controls{
+      margin-top:10px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .chart-ranges { display:flex; gap:6px; }
 
     .range-btn {
       font-size:.58rem; font-weight:700; padding:4px 9px; border-radius:999px;
@@ -110,7 +121,6 @@
     .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
 
     .chart-nav-bottom{
-      margin-top:10px;
       display:flex;
       justify-content:flex-end;
       gap:6px;
@@ -265,6 +275,7 @@
       .kpi-sub { font-size:.44rem; margin-left:0; width:100%; }
 
       .chart-wrap { height:136px; }
+      .chart-controls{ gap:8px; }
     }
 
     @media(max-width:480px) {
@@ -643,11 +654,13 @@
             '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' +
           '</div>' +
         '</div>' +
-        '<div class="chart-ranges">'+btns+'</div>' +
         '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>' +
-        '<div class="chart-nav-bottom">' +
-          '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
-          '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
+        '<div class="chart-controls">' +
+          '<div class="chart-ranges">'+btns+'</div>' +
+          '<div class="chart-nav-bottom">' +
+            '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
+            '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
+          '</div>' +
         '</div>';
 
       var labels=getRangeLabels(CHART_RANGE);
