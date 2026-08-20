@@ -52,7 +52,7 @@
       background:var(--bg);
       position:relative;
       scrollbar-width:none;
-      padding-bottom:58px; /* room for dots */
+      padding-bottom:58px;
     }
     .page::-webkit-scrollbar{ display:none; }
 
@@ -165,7 +165,7 @@
     .main { padding:16px 24px 24px; }
 
     /* =========================
-       KPI - STOCK STYLE, 3 VISIBLE
+       KPI STRIP - STOCK STYLE
        ========================= */
     .kpi-grid{
       display:flex;
@@ -186,83 +186,92 @@
       max-width:calc((100% - 16px) / 3);
       scroll-snap-align:start;
 
-      background:transparent;
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:10px;
-      padding:8px 8px 9px;
+      background:#1f2430;
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:8px;
+      padding:8px 8px;
       text-align:left;
       display:flex;
       flex-direction:column;
-      min-height:96px;
-      transition:border-color .2s, background .2s, transform .2s;
+      justify-content:center;
+      min-height:74px;
+      transition:background .2s, border-color .2s;
     }
-    .kpi-card:hover{ transform:translateY(-1px); }
     .kpi-card-btn{ cursor:pointer; font:inherit; width:100%; }
+    .kpi-card:hover{ background:#232a37; transform:none; }
 
     .kpi-card.active{
-      background:rgba(255,255,255,.03);
-      border-color:rgba(148,163,184,.45);
+      background:#262f3d;
+      border-color:rgba(148,163,184,.35);
       box-shadow:none;
     }
 
     .kpi-label{
-      font-size:.56rem;
-      color:#94a3b8;
-      text-transform:uppercase;
-      letter-spacing:.03em;
-      font-weight:600;
-      line-height:1.15;
-      margin-bottom:5px;
-      min-height:2.3em;
-      display:flex;
-      align-items:flex-start;
+      font-size:.84rem;
+      font-weight:700;
+      color:#e5e7eb;
+      text-transform:none;
+      letter-spacing:0;
+      line-height:1.1;
+      margin:0;
+      min-height:auto;
+      display:block;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
     }
 
     .kpi-value{
-      font-size:.86rem;
+      font-size:.92rem;
       font-weight:700;
-      color:#e2e8f0;
-      line-height:1.15;
-      margin-bottom:5px;
-      min-height:1.2em;
-      display:flex;
-      align-items:flex-end;
+      color:#e5e7eb;
+      line-height:1.1;
+      margin-top:2px;
+      margin-bottom:4px;
+      min-height:auto;
+      display:block;
     }
 
     .kpi-diff{
-      margin-top:auto;
       display:flex;
       align-items:center;
       gap:4px;
-      flex-wrap:wrap;
-      min-height:1.2em;
+      flex-wrap:nowrap;
+      margin-top:0;
+      min-height:auto;
     }
 
-    .dv{ font-size:.56rem; font-weight:600; white-space:nowrap; }
-    .dv.up{ color:var(--green); }
-    .dv.dn{ color:var(--red); }
+    .dv{
+      font-size:.62rem;
+      font-weight:600;
+      white-space:nowrap;
+    }
+    .dv.up{ color:#10b981; }
+    .dv.dn{ color:#f43f5e; }
     .dv.fl{ color:#94a3b8; }
 
     .dp{
-      font-size:.52rem;
+      font-size:.58rem;
       font-weight:600;
-      white-space:nowrap;
-      background:transparent;
       padding:0;
       border-radius:0;
+      background:transparent !important;
+      white-space:nowrap;
     }
-    .dp.up{ color:var(--green); }
-    .dp.dn{ color:var(--red); }
+    .dp.up{ color:#10b981; }
+    .dp.dn{ color:#f43f5e; }
     .dp.fl{ color:#94a3b8; }
 
     .kpi-sub{
-      font-size:.5rem;
-      color:#64748b;
+      font-size:.56rem;
+      color:#6b7280;
+      margin-left:0;
+      margin-top:2px;
+      text-align:left;
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
       max-width:100%;
-      margin-left:0;
     }
 
     .charts-panel-wrap { margin-bottom:14px; }
@@ -349,9 +358,7 @@
       opacity:.95;
     }
 
-    /* =========================
-       STOCKS PAGE
-       ========================= */
+    /* STOCK PAGE */
     .stocks-main{ padding:8px 10px 16px; }
     .stock-list{ display:flex; flex-direction:column; gap:6px; }
 
@@ -509,14 +516,14 @@
 
     @media(max-width:640px){
       .kpi-card{
-        min-height:92px;
-        padding:7px 7px 8px;
+        min-height:70px;
+        padding:7px 7px;
       }
-      .kpi-label{ font-size:.5rem; min-height:2.2em; }
-      .kpi-value{ font-size:.74rem; }
-      .dv{ font-size:.5rem; }
-      .dp{ font-size:.48rem; }
-      .kpi-sub{ font-size:.44rem; }
+      .kpi-label{ font-size:.76rem; }
+      .kpi-value{ font-size:.82rem; }
+      .dv{ font-size:.58rem; }
+      .dp{ font-size:.54rem; }
+      .kpi-sub{ font-size:.5rem; }
 
       .stock-name{ max-width:150px; }
       .main{ padding:12px 12px 18px; }
@@ -528,7 +535,7 @@
     }
 
     @media(max-width:480px){
-      .kpi-value{ font-size:.68rem; }
+      .kpi-value{ font-size:.76rem; }
       .stock-symbol{ font-size:.95rem; }
       .stock-price{ font-size:.95rem; }
     }
@@ -602,13 +609,11 @@
     </section>
   </div>
 
-  <!-- subtle dots -->
   <div class="page-dots" aria-label="Indicador de página">
     <button class="page-dot active" data-page="0" aria-label="Ir a página 1"></button>
     <button class="page-dot" data-page="1" aria-label="Ir a página 2"></button>
   </div>
 
-  <!-- SIWA -->
   <div id="siwa-fab" onclick="siwaToggle()" title="Hablar con Siwa">
     <img src="Siwa.png" alt="Siwa" id="siwa-avatar-fab" />
     <div id="siwa-notif">1</div>
@@ -659,9 +664,6 @@
     document.getElementById('fechaHoy').textContent = fechaTxt;
     document.getElementById('fechaHoyStocks').textContent = fechaTxt;
 
-    /* =========================
-       PAGER LOGIC
-       ========================= */
     var pager = document.getElementById('pager');
     var pageDots = Array.from(document.querySelectorAll('.page-dot'));
     var activePage = 0;
@@ -713,34 +715,34 @@
 
     var SECTOR_KPIS = {
       general:[
-        {label:'USD/CLP observado',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'YTD +3,2% · 12m +5,6%'},
-        {label:'IPC',val:'-0,2% m/m',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Acum +2,1%',sub:'12m +3,8%'},
-        {label:'UF',val:'$40.851,38',dv:'up',dvt:'+$1,32',dp:'up',dpt:'+0,38%',sub:'variación mensual'},
-        {label:'IMACEC',val:'+1,8% a/a',dv:'up',dvt:'+0,3 pp',dp:'up',dpt:'Desest. +0,2%',sub:'serie desestacionalizada'},
-        {label:'Desempleo nacional',val:'8,6%',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'Mejora',sub:'trimestre móvil'},
-        {label:'Riesgo país Chile',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'EMBI',sub:'CDS 5Y: 63 pb'},
-        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'expectativa mercado'},
-        {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'+1,9% a/a',sub:'crecimiento trimestral'}
+        {label:'USD/CLP',val:'913,20',dv:'dn',dvt:'-1,43',dp:'dn',dpt:'(-0,16%)',sub:'Observado'},
+        {label:'IPC',val:'-0,2% m/m',dv:'up',dvt:'+0,10',dp:'up',dpt:'(+0,08%)',sub:'12m +3,8%'},
+        {label:'UF',val:'40.851,38',dv:'up',dvt:'+1,32',dp:'up',dpt:'(+0,38%)',sub:'Variación mensual'},
+        {label:'IMACEC',val:'+1,8% a/a',dv:'up',dvt:'+0,30',dp:'up',dpt:'(+0,14%)',sub:'Serie desestacionalizada'},
+        {label:'Desempleo',val:'8,6%',dv:'dn',dvt:'-0,10',dp:'up',dpt:'(+0,05%)',sub:'Trimestre móvil'},
+        {label:'Riesgo país',val:'89 pb',dv:'fl',dvt:'0,00',dp:'fl',dpt:'(0,00%)',sub:'CDS 5Y: 63 pb'},
+        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0,00',dp:'fl',dpt:'(0,00%)',sub:'Expectativa 12m: 4,25%'},
+        {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,20',dp:'up',dpt:'(+0,09%)',sub:'Crecimiento trimestral'}
       ],
       internacional:[
-        {label:'DXY (Índice dólar)',val:'104,2',dv:'up',dvt:'+0,4',dp:'up',dpt:'+0,38%',sub:'sesión global'},
-        {label:'Cobre LME',val:'US$ 4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'-0,73%',sub:'demanda China'},
-        {label:'Petróleo Brent',val:'US$ 82,6',dv:'up',dvt:'+0,8',dp:'up',dpt:'+0,98%',sub:'riesgo geopolítico'},
-        {label:'Treasury 10Y',val:'4,18%',dv:'up',dvt:'+0,03 pp',dp:'dn',dpt:'condiciones más restrictivas',sub:'bonos EE.UU.'},
-        {label:'VIX',val:'14,9',dv:'up',dvt:'+0,7',dp:'dn',dpt:'mayor volatilidad',sub:'mercado accionario'},
-        {label:'MSCI Emergentes',val:'+0,4%',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'flujo positivo',sub:'sesión diaria'},
-        {label:'PMI manufactura global',val:'50,7',dv:'fl',dvt:'0,0',dp:'up',dpt:'expansión leve',sub:'lectura compuesta'},
-        {label:'Spread HY global',val:'365 pb',dv:'up',dvt:'+6 pb',dp:'dn',dpt:'más aversión al riesgo',sub:'crédito corporativo'}
+        {label:'DXY',val:'104,2',dv:'up',dvt:'+0,40',dp:'up',dpt:'(+0,38%)',sub:'Índice dólar'},
+        {label:'Cobre LME',val:'4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'(-0,73%)',sub:'Demanda China'},
+        {label:'Brent',val:'82,6',dv:'up',dvt:'+0,80',dp:'up',dpt:'(+0,98%)',sub:'Riesgo geopolítico'},
+        {label:'Treasury 10Y',val:'4,18%',dv:'up',dvt:'+0,03',dp:'dn',dpt:'(-0,11%)',sub:'Bonos EE.UU.'},
+        {label:'VIX',val:'14,9',dv:'up',dvt:'+0,70',dp:'dn',dpt:'(-0,24%)',sub:'Volatilidad'},
+        {label:'MSCI EM',val:'+0,4%',dv:'up',dvt:'+0,20',dp:'up',dpt:'(+0,08%)',sub:'Sesión diaria'},
+        {label:'PMI global',val:'50,7',dv:'fl',dvt:'0,00',dp:'up',dpt:'(+0,03%)',sub:'Lectura compuesta'},
+        {label:'Spread HY',val:'365 pb',dv:'up',dvt:'+6,00',dp:'dn',dpt:'(-0,19%)',sub:'Crédito corporativo'}
       ],
       salud:[
-        {label:'Judicialización',val:'Índice 114,2',dv:'up',dvt:'+1,8% a/a',dp:'dn',dpt:'presión legal',sub:'causas y fallos'},
-        {label:'Reclamos regulatorios',val:'42,3 mil',dv:'up',dvt:'+3,1% a/a',dp:'dn',dpt:'SERNAC/SIS',sub:'acumulado 12m'},
-        {label:'Siniestralidad',val:'86,4%',dv:'up',dvt:'+0,9 pp',dp:'dn',dpt:'costos al alza',sub:'prestaciones/ingresos'},
-        {label:'Licencias médicas',val:'7,2 MM',dv:'up',dvt:'+2,4% a/a',dp:'dn',dpt:'fiscalización',sub:'emitidas 12m'},
-        {label:'Beneficiarios Isapre',val:'3,18 MM',dv:'dn',dvt:'-1,2% a/a',dp:'dn',dpt:'menor base',sub:'afiliados vigentes'},
-        {label:'Beneficiarios Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,1% a/a',dp:'up',dpt:'mayor cobertura',sub:'beneficiarios'},
-        {label:'Espera sistema público',val:'2,35 MM',dv:'up',dvt:'+2,7% a/a',dp:'dn',dpt:'presión red',sub:'listas de espera'},
-        {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'mejora',sub:'garantías cumplidas'}
+        {label:'Judicialización',val:'114,2',dv:'up',dvt:'+1,80',dp:'dn',dpt:'(-0,12%)',sub:'Causas y fallos'},
+        {label:'Reclamos',val:'42,3 mil',dv:'up',dvt:'+3,10',dp:'dn',dpt:'(-0,08%)',sub:'SERNAC/SIS'},
+        {label:'Siniestralidad',val:'86,4%',dv:'up',dvt:'+0,90',dp:'dn',dpt:'(-0,06%)',sub:'Costos al alza'},
+        {label:'Licencias',val:'7,2 MM',dv:'up',dvt:'+2,40',dp:'dn',dpt:'(-0,10%)',sub:'Emitidas 12m'},
+        {label:'Isapre',val:'3,18 MM',dv:'dn',dvt:'-1,20',dp:'dn',dpt:'(-0,04%)',sub:'Afiliados vigentes'},
+        {label:'Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,10',dp:'up',dpt:'(+0,02%)',sub:'Beneficiarios'},
+        {label:'Listas espera',val:'2,35 MM',dv:'up',dvt:'+2,70',dp:'dn',dpt:'(-0,07%)',sub:'Presión red'},
+        {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,60',dp:'up',dpt:'(+0,05%)',sub:'Garantías cumplidas'}
       ]
     };
 
@@ -801,8 +803,8 @@
             '<div class="kpi-diff">' +
               '<span class="dv '+(k.dv||'fl')+'"><i class="fas fa-'+arrow+'"></i> '+escapeHtml(k.dvt||'0')+'</span>' +
               '<span class="dp '+(k.dp||'fl')+'">'+escapeHtml(k.dpt||'')+'</span>' +
-              '<span class="kpi-sub">'+escapeHtml(k.sub||'')+'</span>' +
             '</div>' +
+            '<div class="kpi-sub">'+escapeHtml(k.sub||'')+'</div>' +
           '</button>';
       });
 
@@ -1061,9 +1063,6 @@
       attachChartSwipe(document.getElementById('chartSwipeArea'));
     }
 
-    /* =========================
-       STOCKS DATA + RENDER
-       ========================= */
     var STOCKS = [
       {symbol:'AAPL', name:'Apple, Inc.', price:148.12, chg:-4.30, pct:-2.91},
       {symbol:'MSFT', name:'Microsoft Corp.', price:299.79, chg:+2.80, pct:+0.94},
@@ -1118,9 +1117,6 @@
       list.innerHTML = html;
     }
 
-    /* =========================
-       SIWA
-       ========================= */
     var siwaOpen=false, siwaChatMode=false;
     var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
     var SIWA_USE_AGENT_FOR_OPEN=true;
@@ -1275,6 +1271,11 @@
       setTimeout(function(){
         siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
       },350);
+
+      /* auto-close panel after sector selected */
+      setTimeout(function(){
+        siwaClose();
+      },180);
     }
 
     function siwaEnviarTexto(texto){
