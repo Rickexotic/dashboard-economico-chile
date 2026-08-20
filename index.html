@@ -5,6 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Dashboard Económico Chile</title>
   <meta name="description" content="Dashboard ejecutivo con indicadores económicos de Chile en tiempo real: Dólar, Cobre, UF, EMBI, IPC, TPM y más. Con asistente virtual Siwa.">
+  <meta name="build-version" content="2026-08-20-cache-bump-1">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -15,79 +16,8 @@
       --bg:#0f172a; --bg2:#1e293b; --bg3:#16213e;
       --blue:#3b82f6; --green:#22c55e; --orange:#f97316;
       --red:#ef4444; --purple:#a78bfa; --white:#fff; --muted:#94a3b8;
-      --dot:#64748b;
     }
-
-    body{
-      font-family:'Segoe UI',sans-serif;
-      background:var(--bg);
-      color:var(--white);
-      min-height:100vh;
-      overflow:hidden;
-    }
-
-    /* =========================
-       HORIZONTAL PAGER
-       ========================= */
-    .pager{
-      width:100vw;
-      height:100vh;
-      display:flex;
-      overflow-x:auto;
-      overflow-y:hidden;
-      scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;
-      scroll-behavior:smooth;
-      scrollbar-width:none;
-    }
-    .pager::-webkit-scrollbar{ display:none; }
-
-    .page{
-      flex:0 0 100vw;
-      width:100vw;
-      height:100vh;
-      scroll-snap-align:start;
-      overflow-y:auto;
-      overflow-x:hidden;
-      background:var(--bg);
-      position:relative;
-      scrollbar-width:none;
-      padding-bottom:58px;
-    }
-    .page::-webkit-scrollbar{ display:none; }
-
-    /* Subtle dots */
-    .page-dots{
-      position:fixed;
-      left:50%;
-      bottom:8px;
-      transform:translateX(-50%);
-      z-index:10001;
-      display:flex;
-      align-items:center;
-      gap:7px;
-      padding:4px 8px;
-      border-radius:999px;
-      background:rgba(15,23,42,.35);
-      border:1px solid rgba(255,255,255,.08);
-      backdrop-filter: blur(4px);
-    }
-    .page-dot{
-      width:7px;
-      height:7px;
-      border-radius:50%;
-      border:none;
-      background:rgba(148,163,184,.55);
-      opacity:.65;
-      cursor:pointer;
-      transition:all .2s ease;
-    }
-    .page-dot.active{
-      opacity:.9;
-      background:rgba(148,163,184,.95);
-      transform:scale(1.05);
-      box-shadow:none;
-    }
+    body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--white); min-height:100vh; }
 
     .top-bar {
       background:rgba(15,23,42,.96);
@@ -162,118 +92,105 @@
       text-align:right;
     }
 
-    .main { padding:16px 24px 24px; }
+    .main { padding:16px 24px 100px; }
 
-    /* =========================
-       KPI STRIP - STOCK STYLE
-       ========================= */
-    .kpi-grid{
-      display:flex;
-      gap:8px;
-      overflow-x:auto;
-      overflow-y:hidden;
-      scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;
-      padding-bottom:4px;
-      margin-bottom:14px;
-      scrollbar-width:none;
-    }
-    .kpi-grid::-webkit-scrollbar{ display:none; }
+/* KPI GRID */
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+  margin-bottom:14px;
+  align-items:stretch;
+}
 
-    .kpi-card{
-      flex:0 0 calc((100% - 16px) / 3);
-      min-width:calc((100% - 16px) / 3);
-      max-width:calc((100% - 16px) / 3);
-      scroll-snap-align:start;
+/* KPI CARD */
+.kpi-card{
+  background:var(--bg2);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:10px;
+  padding:10px;
+  border-left:none;
+  transition:transform .2s,border-color .2s,box-shadow .2s;
+  text-align:left;
 
-      background:#1f2430;
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:8px;
-      padding:8px 8px;
-      text-align:left;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      min-height:74px;
-      transition:background .2s, border-color .2s;
-    }
-    .kpi-card-btn{ cursor:pointer; font:inherit; width:100%; }
-    .kpi-card:hover{ background:#232a37; transform:none; }
+  height:100%;
+  min-height:118px;
+  display:flex;
+  flex-direction:column;
+}
+.kpi-card:hover{ transform:translateY(-2px); }
+.kpi-card-btn{ cursor:pointer; font:inherit; width:100%; }
 
-    .kpi-card.active{
-      background:#262f3d;
-      border-color:rgba(148,163,184,.35);
-      box-shadow:none;
-    }
+.kpi-card.active{
+  background:rgba(59,130,246,.10);
+  border-color:rgba(59,130,246,.40);
+  box-shadow:0 0 0 1px rgba(59,130,246,.14);
+}
 
-    .kpi-label{
-      font-size:.84rem;
-      font-weight:700;
-      color:#e5e7eb;
-      text-transform:none;
-      letter-spacing:0;
-      line-height:1.1;
-      margin:0;
-      min-height:auto;
-      display:block;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-    }
+/* LABEL */
+.kpi-label{
+  font-size:.52rem;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  font-weight:600;
+  line-height:1.2;
+  margin-bottom:6px;
 
-    .kpi-value{
-      font-size:.92rem;
-      font-weight:700;
-      color:#e5e7eb;
-      line-height:1.1;
-      margin-top:2px;
-      margin-bottom:4px;
-      min-height:auto;
-      display:block;
-    }
+  min-height:2.4em;               /* same title block height */
+  display:flex;
+  align-items:flex-start;
+}
 
-    .kpi-diff{
-      display:flex;
-      align-items:center;
-      gap:4px;
-      flex-wrap:nowrap;
-      margin-top:0;
-      min-height:auto;
-    }
+/* VALUE */
+.kpi-value{
+  font-size:.98rem;
+  font-weight:700;
+  color:var(--white);
+  line-height:1.2;
+  margin-bottom:6px;
 
-    .dv{
-      font-size:.62rem;
-      font-weight:600;
-      white-space:nowrap;
-    }
-    .dv.up{ color:#10b981; }
-    .dv.dn{ color:#f43f5e; }
-    .dv.fl{ color:#94a3b8; }
+  min-height:1.25em;              /* align value baseline across cards */
+  display:flex;
+  align-items:flex-end;
+}
 
-    .dp{
-      font-size:.58rem;
-      font-weight:600;
-      padding:0;
-      border-radius:0;
-      background:transparent !important;
-      white-space:nowrap;
-    }
-    .dp.up{ color:#10b981; }
-    .dp.dn{ color:#f43f5e; }
-    .dp.fl{ color:#94a3b8; }
+/* DIFF ROW */
+.kpi-diff{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  flex-wrap:nowrap;
+  margin-top:auto;                /* pins row to bottom */
+  min-height:1.2em;
+}
 
-    .kpi-sub{
-      font-size:.56rem;
-      color:#6b7280;
-      margin-left:0;
-      margin-top:2px;
-      text-align:left;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      max-width:100%;
-    }
+.dv{ font-size:.56rem; font-weight:600; white-space:nowrap; }
+.dv.up{ color:var(--green); }
+.dv.dn{ color:var(--red); }
+.dv.fl{ color:var(--muted); }
 
+.dp{
+  font-size:.52rem;
+  font-weight:600;
+  padding:1px 4px;
+  border-radius:7px;
+  white-space:nowrap;
+}
+.dp.up{ background:rgba(34,197,94,.15); color:var(--green); }
+.dp.dn{ background:rgba(239,68,68,.15); color:var(--red); }
+.dp.fl{ background:rgba(176,184,200,.12); color:var(--muted); }
+
+.kpi-sub{
+  font-size:.5rem;
+  color:var(--muted);
+  margin-left:auto;
+  text-align:right;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  max-width:55%;
+}
     .charts-panel-wrap { margin-bottom:14px; }
     .chart-panel {
       background:var(--bg2);
@@ -349,7 +266,6 @@
       align-items:center;
       justify-content:flex-start;
       gap:10px;
-      margin-top:8px;
     }
     .footer-logo{
       height:33.6px;
@@ -358,66 +274,8 @@
       opacity:.95;
     }
 
-    /* STOCK PAGE */
-    .stocks-main{ padding:8px 10px 16px; }
-    .stock-list{ display:flex; flex-direction:column; gap:6px; }
-
-    .stock-item{
-      background:transparent;
-      border-radius:10px;
-      padding:10px 8px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      border-bottom:1px solid rgba(255,255,255,.06);
-    }
-    .stock-left{
-      min-width:0;
-      display:flex;
-      flex-direction:column;
-    }
-    .stock-symbol{
-      font-size:1rem;
-      font-weight:700;
-      color:#e2e8f0;
-      line-height:1.1;
-      letter-spacing:.01em;
-    }
-    .stock-name{
-      font-size:.62rem;
-      color:#64748b;
-      margin-top:3px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      max-width:180px;
-    }
-    .stock-right{
-      text-align:right;
-      display:flex;
-      flex-direction:column;
-      align-items:flex-end;
-      gap:2px;
-    }
-    .stock-price{
-      font-size:1rem;
-      font-weight:700;
-      color:#e2e8f0;
-      line-height:1.1;
-    }
-    .stock-change{
-      font-size:.66rem;
-      font-weight:600;
-      display:flex;
-      align-items:center;
-      gap:4px;
-    }
-    .stock-change.up{ color:var(--green); }
-    .stock-change.down{ color:var(--red); }
-
     #siwa-fab {
-      position:fixed; bottom:34px; right:24px; z-index:9999;
+      position:fixed; bottom:24px; right:24px; z-index:9999;
       width:66px; height:66px; border-radius:50%; cursor:pointer;
       border:3px solid rgba(59,130,246,.6);
       box-shadow:0 4px 20px rgba(59,130,246,.4);
@@ -442,7 +300,7 @@
     }
 
     #siwa-panel {
-      position:fixed; bottom:108px; right:24px; z-index:9998;
+      position:fixed; bottom:100px; right:24px; z-index:9998;
       width:340px; background:var(--bg2); border:1px solid rgba(59,130,246,.25);
       border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,.6);
       display:none; flex-direction:column; overflow:hidden;
@@ -511,107 +369,64 @@
 
     @media(max-width:900px) {
       .news-list { grid-template-columns:1fr; }
-      .main { padding:12px 14px 18px; }
+      .main { padding:12px 14px 100px; }
     }
 
-    @media(max-width:640px){
-      .kpi-card{
-        min-height:70px;
-        padding:7px 7px;
-      }
-      .kpi-label{ font-size:.76rem; }
-      .kpi-value{ font-size:.82rem; }
-      .dv{ font-size:.58rem; }
-      .dp{ font-size:.54rem; }
-      .kpi-sub{ font-size:.5rem; }
+ @media(max-width:640px){
+  .kpi-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
+  .kpi-card{ padding:7px; border-radius:8px; min-height:100px; }
+  .kpi-label{ font-size:.46rem; line-height:1.15; min-height:2.3em; margin-bottom:4px; }
+  .kpi-value{ font-size:.72rem; margin-bottom:4px; min-height:1.2em; }
+  .dv{ font-size:.5rem; }
+  .dp{ font-size:.46rem; padding:1px 3px; }
+  .kpi-sub{ font-size:.44rem; max-width:100%; margin-left:0; }
+  .kpi-diff{ flex-wrap:wrap; gap:4px; }
+}
 
-      .stock-name{ max-width:150px; }
-      .main{ padding:12px 12px 18px; }
-      .stocks-main{ padding:8px 8px 14px; }
-      .dash-footer{ padding:8px 12px; }
+@media(max-width:480px){
+  .kpi-card{ min-height:94px; padding:6px; }
+  .kpi-value{ font-size:.68rem; }
+}
 
-      #siwa-panel{ width:calc(100vw - 24px); right:12px; }
-      #siwa-fab{ right:16px; bottom:34px; }
-    }
+  .chart-wrap { height:128px; }
+  .chart-nav-btn{ width:24px; height:24px; }
 
-    @media(max-width:480px){
-      .kpi-value{ font-size:.76rem; }
-      .stock-symbol{ font-size:.95rem; }
-      .stock-price{ font-size:.95rem; }
-    }
-
-    .chart-wrap { height:128px; }
-    .chart-nav-btn{ width:24px; height:24px; }
-    .footer-logo{ height:28.8px; }
+  .footer-logo{ height:28.8px; }
+}
   </style>
 </head>
 <body>
-  <div id="pager" class="pager">
-
-    <!-- PAGE 1: DASHBOARD -->
-    <section class="page" id="page-dashboard">
-      <div class="top-bar">
-        <div class="top-bar-left">
-          <div class="top-bar-bar"></div>
-          <div class="top-bar-title-wrap">
-            <div class="top-bar-title" id="mainTitle">Informe Chile</div>
-            <div class="top-bar-subrow">
-              <div class="top-bar-sector" id="sectorTitle">General</div>
-              <div class="top-bar-date" id="fechaHoy"></div>
-            </div>
-          </div>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <div class="top-bar-bar"></div>
+      <div class="top-bar-title-wrap">
+        <div class="top-bar-title" id="mainTitle">Informe Chile</div>
+        <div class="top-bar-subrow">
+          <div class="top-bar-sector" id="sectorTitle">General</div>
+          <div class="top-bar-date" id="fechaHoy"></div>
         </div>
       </div>
-
-      <div class="main">
-        <div class="kpi-grid"></div>
-
-        <div class="charts-panel-wrap">
-          <div class="chart-panel">
-            <div class="chart-overline">Indicador seleccionado</div>
-            <div id="chartsTrack"></div>
-          </div>
-        </div>
-
-        <div class="news-panel">
-          <div class="news-title"><i class="fas fa-newspaper"></i>Noticias Económicas del Día</div>
-          <div class="news-list"></div>
-        </div>
-      </div>
-
-      <div class="dash-footer">
-        <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
-      </div>
-    </section>
-
-    <!-- PAGE 2: STOCK MARKET -->
-    <section class="page" id="page-stocks">
-      <div class="top-bar">
-        <div class="top-bar-left">
-          <div class="top-bar-bar"></div>
-          <div class="top-bar-title-wrap">
-            <div class="top-bar-title">Informe Chile</div>
-            <div class="top-bar-subrow">
-              <div class="top-bar-sector">Market</div>
-              <div class="top-bar-date" id="fechaHoyStocks"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="stocks-main">
-        <div id="stockList" class="stock-list"></div>
-      </div>
-
-      <div class="dash-footer">
-        <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
-      </div>
-    </section>
+    </div>
   </div>
 
-  <div class="page-dots" aria-label="Indicador de página">
-    <button class="page-dot active" data-page="0" aria-label="Ir a página 1"></button>
-    <button class="page-dot" data-page="1" aria-label="Ir a página 2"></button>
+  <div class="main">
+    <div class="kpi-grid"></div>
+
+    <div class="charts-panel-wrap">
+      <div class="chart-panel">
+        <div class="chart-overline">Indicador seleccionado</div>
+        <div id="chartsTrack"></div>
+      </div>
+    </div>
+
+    <div class="news-panel">
+      <div class="news-title"><i class="fas fa-newspaper"></i>Noticias Económicas del Día</div>
+      <div class="news-list"></div>
+    </div>
+  </div>
+
+  <div class="dash-footer">
+    <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
   </div>
 
   <div id="siwa-fab" onclick="siwaToggle()" title="Hablar con Siwa">
@@ -660,46 +475,7 @@
   <script>
     var meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
     var hoy = new Date();
-    var fechaTxt = hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear();
-    document.getElementById('fechaHoy').textContent = fechaTxt;
-    document.getElementById('fechaHoyStocks').textContent = fechaTxt;
-
-    var pager = document.getElementById('pager');
-    var pageDots = Array.from(document.querySelectorAll('.page-dot'));
-    var activePage = 0;
-
-    function setActivePage(index){
-      activePage = index;
-      pageDots.forEach(function(dot, i){
-        dot.classList.toggle('active', i === index);
-      });
-    }
-
-    function goToPage(index){
-      var left = index * pager.clientWidth;
-      pager.scrollTo({ left:left, behavior:'smooth' });
-      setActivePage(index);
-    }
-
-    pageDots.forEach(function(dot){
-      dot.addEventListener('click', function(){
-        var idx = Number(dot.getAttribute('data-page') || 0);
-        goToPage(idx);
-      });
-    });
-
-    var pagerTick = null;
-    pager.addEventListener('scroll', function(){
-      if(pagerTick) cancelAnimationFrame(pagerTick);
-      pagerTick = requestAnimationFrame(function(){
-        var idx = Math.round(pager.scrollLeft / pager.clientWidth);
-        if(idx !== activePage) setActivePage(idx);
-      });
-    }, {passive:true});
-
-    window.addEventListener('resize', function(){
-      goToPage(activePage);
-    });
+    document.getElementById('fechaHoy').textContent = hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear();
 
     var SECTORES = {
       general:{label:'General',icon:'🌐',desc:'Panorama macroeconómico general de Chile.'},
@@ -715,38 +491,42 @@
 
     var SECTOR_KPIS = {
       general:[
-        {label:'USD/CLP',val:'913,20',dv:'dn',dvt:'-1,43',dp:'dn',dpt:'(-0,16%)',sub:'Observado'},
-        {label:'IPC',val:'-0,2% m/m',dv:'up',dvt:'+0,10',dp:'up',dpt:'(+0,08%)',sub:'12m +3,8%'},
-        {label:'UF',val:'40.851,38',dv:'up',dvt:'+1,32',dp:'up',dpt:'(+0,38%)',sub:'Variación mensual'},
-        {label:'IMACEC',val:'+1,8% a/a',dv:'up',dvt:'+0,30',dp:'up',dpt:'(+0,14%)',sub:'Serie desestacionalizada'},
-        {label:'Desempleo',val:'8,6%',dv:'dn',dvt:'-0,10',dp:'up',dpt:'(+0,05%)',sub:'Trimestre móvil'},
-        {label:'Riesgo país',val:'89 pb',dv:'fl',dvt:'0,00',dp:'fl',dpt:'(0,00%)',sub:'CDS 5Y: 63 pb'},
-        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0,00',dp:'fl',dpt:'(0,00%)',sub:'Expectativa 12m: 4,25%'},
-        {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,20',dp:'up',dpt:'(+0,09%)',sub:'Crecimiento trimestral'}
+        {label:'USD/CLP observado',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'YTD +3,2% · 12m +5,6%'},
+        {label:'IPC',val:'-0,2% m/m',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Acum +2,1%',sub:'12m +3,8%'},
+        {label:'UF',val:'$40.851,38',dv:'up',dvt:'+$1,32',dp:'up',dpt:'+0,38%',sub:'variación mensual'},
+        {label:'IMACEC',val:'+1,8% a/a',dv:'up',dvt:'+0,3 pp',dp:'up',dpt:'Desest. +0,2%',sub:'serie desestacionalizada'},
+        {label:'Desempleo nacional',val:'8,6%',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'Mejora',sub:'trimestre móvil'},
+        {label:'Riesgo país Chile',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'EMBI',sub:'CDS 5Y: 63 pb'},
+        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'expectativa mercado'},
+        {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'+1,9% a/a',sub:'crecimiento trimestral'}
       ],
       internacional:[
-        {label:'DXY',val:'104,2',dv:'up',dvt:'+0,40',dp:'up',dpt:'(+0,38%)',sub:'Índice dólar'},
-        {label:'Cobre LME',val:'4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'(-0,73%)',sub:'Demanda China'},
-        {label:'Brent',val:'82,6',dv:'up',dvt:'+0,80',dp:'up',dpt:'(+0,98%)',sub:'Riesgo geopolítico'},
-        {label:'Treasury 10Y',val:'4,18%',dv:'up',dvt:'+0,03',dp:'dn',dpt:'(-0,11%)',sub:'Bonos EE.UU.'},
-        {label:'VIX',val:'14,9',dv:'up',dvt:'+0,70',dp:'dn',dpt:'(-0,24%)',sub:'Volatilidad'},
-        {label:'MSCI EM',val:'+0,4%',dv:'up',dvt:'+0,20',dp:'up',dpt:'(+0,08%)',sub:'Sesión diaria'},
-        {label:'PMI global',val:'50,7',dv:'fl',dvt:'0,00',dp:'up',dpt:'(+0,03%)',sub:'Lectura compuesta'},
-        {label:'Spread HY',val:'365 pb',dv:'up',dvt:'+6,00',dp:'dn',dpt:'(-0,19%)',sub:'Crédito corporativo'}
+        {label:'DXY (Índice dólar)',val:'104,2',dv:'up',dvt:'+0,4',dp:'up',dpt:'+0,38%',sub:'sesión global'},
+        {label:'Cobre LME',val:'US$ 4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'-0,73%',sub:'demanda China'},
+        {label:'Petróleo Brent',val:'US$ 82,6',dv:'up',dvt:'+0,8',dp:'up',dpt:'+0,98%',sub:'riesgo geopolítico'},
+        {label:'Treasury 10Y',val:'4,18%',dv:'up',dvt:'+0,03 pp',dp:'dn',dpt:'condiciones más restrictivas',sub:'bonos EE.UU.'},
+        {label:'VIX',val:'14,9',dv:'up',dvt:'+0,7',dp:'dn',dpt:'mayor volatilidad',sub:'mercado accionario'},
+        {label:'MSCI Emergentes',val:'+0,4%',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'flujo positivo',sub:'sesión diaria'},
+        {label:'PMI manufactura global',val:'50,7',dv:'fl',dvt:'0,0',dp:'up',dpt:'expansión leve',sub:'lectura compuesta'},
+        {label:'Spread HY global',val:'365 pb',dv:'up',dvt:'+6 pb',dp:'dn',dpt:'más aversión al riesgo',sub:'crédito corporativo'}
       ],
       salud:[
-        {label:'Judicialización',val:'114,2',dv:'up',dvt:'+1,80',dp:'dn',dpt:'(-0,12%)',sub:'Causas y fallos'},
-        {label:'Reclamos',val:'42,3 mil',dv:'up',dvt:'+3,10',dp:'dn',dpt:'(-0,08%)',sub:'SERNAC/SIS'},
-        {label:'Siniestralidad',val:'86,4%',dv:'up',dvt:'+0,90',dp:'dn',dpt:'(-0,06%)',sub:'Costos al alza'},
-        {label:'Licencias',val:'7,2 MM',dv:'up',dvt:'+2,40',dp:'dn',dpt:'(-0,10%)',sub:'Emitidas 12m'},
-        {label:'Isapre',val:'3,18 MM',dv:'dn',dvt:'-1,20',dp:'dn',dpt:'(-0,04%)',sub:'Afiliados vigentes'},
-        {label:'Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,10',dp:'up',dpt:'(+0,02%)',sub:'Beneficiarios'},
-        {label:'Listas espera',val:'2,35 MM',dv:'up',dvt:'+2,70',dp:'dn',dpt:'(-0,07%)',sub:'Presión red'},
-        {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,60',dp:'up',dpt:'(+0,05%)',sub:'Garantías cumplidas'}
+        {label:'Judicialización',val:'Índice 114,2',dv:'up',dvt:'+1,8% a/a',dp:'dn',dpt:'presión legal',sub:'causas y fallos'},
+        {label:'Reclamos regulatorios',val:'42,3 mil',dv:'up',dvt:'+3,1% a/a',dp:'dn',dpt:'SERNAC/SIS',sub:'acumulado 12m'},
+        {label:'Siniestralidad',val:'86,4%',dv:'up',dvt:'+0,9 pp',dp:'dn',dpt:'costos al alza',sub:'prestaciones/ingresos'},
+        {label:'Licencias médicas',val:'7,2 MM',dv:'up',dvt:'+2,4% a/a',dp:'dn',dpt:'fiscalización',sub:'emitidas 12m'},
+        {label:'Beneficiarios Isapre',val:'3,18 MM',dv:'dn',dvt:'-1,2% a/a',dp:'dn',dpt:'menor base',sub:'afiliados vigentes'},
+        {label:'Beneficiarios Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,1% a/a',dp:'up',dpt:'mayor cobertura',sub:'beneficiarios'},
+        {label:'Espera sistema público',val:'2,35 MM',dv:'up',dvt:'+2,7% a/a',dp:'dn',dpt:'presión red',sub:'listas de espera'},
+        {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'mejora',sub:'garantías cumplidas'}
       ]
     };
 
-    var SECTOR_NOTICIAS = { general: [], internacional: [], salud: [] };
+    var SECTOR_NOTICIAS = {
+      general: [],
+      internacional: [],
+      salud: []
+    };
     var NEWS_LOAD_FAILED = false;
 
     function noticiaFallback(mensaje, titulo){
@@ -803,8 +583,8 @@
             '<div class="kpi-diff">' +
               '<span class="dv '+(k.dv||'fl')+'"><i class="fas fa-'+arrow+'"></i> '+escapeHtml(k.dvt||'0')+'</span>' +
               '<span class="dp '+(k.dp||'fl')+'">'+escapeHtml(k.dpt||'')+'</span>' +
+              '<span class="kpi-sub">'+escapeHtml(k.sub||'')+'</span>' +
             '</div>' +
-            '<div class="kpi-sub">'+escapeHtml(k.sub||'')+'</div>' +
           '</button>';
       });
 
@@ -840,7 +620,7 @@
       var html = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'Fuente')+'</div></div>';
+        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+[...]
         var href = n.url ? safeUrl(n.url) : null;
         if(href){
           html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>';
@@ -1063,60 +843,6 @@
       attachChartSwipe(document.getElementById('chartSwipeArea'));
     }
 
-    var STOCKS = [
-      {symbol:'AAPL', name:'Apple, Inc.', price:148.12, chg:-4.30, pct:-2.91},
-      {symbol:'MSFT', name:'Microsoft Corp.', price:299.79, chg:+2.80, pct:+0.94},
-      {symbol:'AMZN', name:'Amazon.com, Inc.', price:3450.00, chg:-17.00, pct:-2.31},
-      {symbol:'GOOG', name:'Alphabet, Inc.', price:2868.12, chg:-18.10, pct:-0.63},
-      {symbol:'FB', name:'Facebook, Inc.', price:376.53, chg:+0.92, pct:+0.24},
-      {symbol:'BRK-A', name:'Berkshire Hathaway, Inc.', price:416996.01, chg:-3804.99, pct:-0.90},
-      {symbol:'V', name:'Visa, Inc.', price:223.03, chg:-1.60, pct:-0.71},
-      {symbol:'JPM', name:'JPMorgan Chase & Co.', price:157.07, chg:-2.79, pct:-1.75},
-      {symbol:'JNJ', name:'Johnson & Johnson', price:164.80, chg:-1.00, pct:-0.60}
-    ];
-
-    function formatPrice(v){
-      return Number(v).toLocaleString('en-US', {maximumFractionDigits:2, minimumFractionDigits:(Number(v)%1===0?0:2)});
-    }
-    function formatSigned(v){
-      var n = Number(v);
-      var sign = n > 0 ? '+' : '';
-      return sign + n.toFixed(2);
-    }
-    function formatPct(v){
-      var n = Number(v);
-      var sign = n > 0 ? '+' : '';
-      return '(' + sign + n.toFixed(2) + '%)';
-    }
-
-    function renderStocks(){
-      var list = document.getElementById('stockList');
-      if(!list) return;
-
-      var html = '';
-      STOCKS.forEach(function(s){
-        var down = s.chg < 0;
-        var cls = down ? 'down' : 'up';
-        var ico = down ? 'fa-arrow-down' : 'fa-arrow-up';
-
-        html +=
-          '<div class="stock-item">' +
-            '<div class="stock-left">' +
-              '<div class="stock-symbol">'+escapeHtml(s.symbol)+'</div>' +
-              '<div class="stock-name">'+escapeHtml(s.name)+'</div>' +
-            '</div>' +
-            '<div class="stock-right">' +
-              '<div class="stock-price">'+escapeHtml(formatPrice(s.price))+'</div>' +
-              '<div class="stock-change '+cls+'">' +
-                '<i class="fas '+ico+'"></i> '+escapeHtml(formatSigned(s.chg))+' '+escapeHtml(formatPct(s.pct)) +
-              '</div>' +
-            '</div>' +
-          '</div>';
-      });
-
-      list.innerHTML = html;
-    }
-
     var siwaOpen=false, siwaChatMode=false;
     var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
     var SIWA_USE_AGENT_FOR_OPEN=true;
@@ -1267,56 +993,10 @@
       document.getElementById('siwa-msgs').innerHTML='';
 
       var s=SECTORES[sector];
-      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Cop[...]
       setTimeout(function(){
         siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
       },350);
-
-      /* auto-close panel after sector selected */
-      setTimeout(function(){
-        siwaClose();
-      },180);
     }
 
-    function siwaEnviarTexto(texto){
-      var input=document.getElementById('siwa-input');
-      if(input) input.value=texto;
-      siwaEnviar();
-    }
-
-    async function siwaEnviar(){
-      var input=document.getElementById('siwa-input');
-      if(!input) return;
-      var text=(input.value||'').trim();
-      if(!text) return;
-      input.value='';
-      siwaAddUser(escapeHtml(text));
-
-      var openQ = isOpenQuestion(text);
-      if(!openQ || !SIWA_USE_AGENT_FOR_OPEN){
-        var intent = detectarIntencion(text);
-        var resp = generarRespuesta(intent,text);
-        siwaAddBot(escapeHtml(resp));
-        return;
-      }
-
-      siwaShowTyping();
-      try{
-        var answer = await preguntarAgenteCopilot(text);
-        siwaHideTyping();
-        siwaAddBot(answer);
-      }catch(e){
-        siwaHideTyping();
-        console.warn('Error consultando agente:', e);
-        siwaAddBot('No pude consultar al agente en este momento. Te dejo una lectura rápida: <strong>riesgo país contenido, inflación moderándose y actividad mixta.</strong>');
-      }
-    }
-
-    // Init
-    setSector('general');
-    cargarNoticias();
-    renderStocks();
-    setActivePage(0);
-  </script>
-</body>
-</html>
+[...]
