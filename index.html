@@ -620,7 +620,7 @@
       var html = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+[...]
+        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'')+'</div></div>';
         var href = n.url ? safeUrl(n.url) : null;
         if(href){
           html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>';
@@ -993,10 +993,74 @@
       document.getElementById('siwa-msgs').innerHTML='';
 
       var s=SECTORES[sector];
-      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Cop[...]
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
       setTimeout(function(){
         siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
       },350);
     }
 
-[...]
+    async function siwaEnviar(){
+      var input=document.getElementById('siwa-input');
+      if(!input) return;
+      var text=(input.value||'').trim();
+      if(!text) return;
+      siwaAddUser(escapeHtml(text));
+      input.value='';
+      siwaShowTyping();
+      try{
+        var resp;
+        if(SIWA_USE_AGENT_FOR_OPEN && isOpenQuestion(text)){
+          resp=await preguntarAgenteCopilot(text);
+        } else {
+          resp=generarRespuesta(detectarIntencion(text),text);
+        }
+        siwaHideTyping();
+        siwaAddBot(resp);
+      } catch(e){
+        siwaHideTyping();
+        siwaAddBot('Lo siento, hubo un error al procesar tu consulta. Intenta nuevamente.');
+      }
+    }
+
+    function siwaEnviarTexto(texto){
+      var input=document.getElementById('siwa-input');
+      if(input){
+        input.value=texto;
+        siwaEnviar();
+      }
+    }
+
+    /* STOCK_DATA: static demo values — replace with API fetch for live data */
+    var STOCK_DATA=[
+      {sym:'IPSA',val:'6.842',chg:'+1.2%',up:true},
+      {sym:'ECL',val:'1.245',chg:'-0.4%',up:false},
+      {sym:'FALABELLA',val:'892',chg:'+0.8%',up:true},
+      {sym:'COPEC',val:'7.210',chg:'+2.1%',up:true},
+      {sym:'BCI',val:'34.500',chg:'-0.2%',up:false},
+      {sym:'CMPC',val:'1.890',chg:'+0.5%',up:true}
+    ];
+
+    function renderStockList(){
+      var container=document.getElementById('stock-list');
+      if(!container) return;
+      container.innerHTML=STOCK_DATA.map(function(s){
+        var color=s.up ? 'var(--green)' : 'var(--red)';
+        return '<div class="stock-row"><span class="stock-sym">'+escapeHtml(s.sym)+'</span><span class="stock-val">'+escapeHtml(s.val)+'</span><span class="stock-chg" style="color:'+color+'">'+escapeHtml(s.chg)+'</span></div>';
+      }).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      setSector('general');
+      cargarNoticias();
+      renderStockList();
+      var input=document.getElementById('siwa-input');
+      if(input){
+        input.addEventListener('keydown',function(e){
+          if(e.key==='Enter'){ e.preventDefault(); siwaEnviar(); }
+        });
+      }
+    });
+
+    </script>
+  </body>
+</html>
