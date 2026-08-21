@@ -400,6 +400,58 @@ scroll-behavior:smooth;
   text-overflow:ellipsis;
   max-width:55%;
 }
+
+.scroll-hint{
+
+  position:absolute;
+
+  left:50%;
+  bottom:6px;
+
+  transform:translateX(-50%);
+
+  z-index:20;
+
+  color:rgba(255,255,255,.55);
+
+  font-size:.7rem;
+
+  pointer-events:none;
+
+  animation:floatHint 1.8s ease-in-out infinite;
+
+opacity:1;
+transition:
+opacity .25s ease,
+transform .25s ease;
+}
+
+.scroll-hint.hidden{
+opacity:0;
+transform:
+translateX(-50%)
+translateY(6px);
+}
+
+@keyframes floatHint{
+
+  0%,100%{
+    transform:translateX(-50%) translateY(0);
+  }
+
+  50%{
+    transform:translateX(-50%) translateY(4px);
+  }
+}
+
+.kpi-grid-wrap,
+.stock-list-wrap{
+
+  position:relative;
+
+  overflow:visible;
+}
+
     .charts-panel-wrap { margin-bottom:14px; }
     .chart-panel {
       background:var(--bg2);
@@ -1006,7 +1058,15 @@ scroll-behavior:smooth;
 
   <div id="economia-page">
 
-    <div class="kpi-grid"></div>
+<div class="kpi-grid-wrap">
+
+  <div class="kpi-grid"></div>
+
+  <div class="scroll-hint" id="kpiScrollHint">
+    ⌄⌄
+  </div>
+
+</div>
 
     <div class="charts-panel-wrap">
       <div class="chart-panel">
@@ -1603,7 +1663,9 @@ function renderAccionesPage(){
 'value="' + STOCK_FILTER + '" ' +
 'onkeyup="filterStocks(this.value)">' +
 
-    '<div class="stock-list">';
+    '<div class="stock-list-wrap">' +
+
+  '<div class="stock-list">';
 
 ACCIONES.forEach(function(a,idx){
 
@@ -1656,7 +1718,15 @@ ACCIONES.forEach(function(a,idx){
 
   });
 
-  html += '</div>';
+html +=
+
+  '</div>' +
+
+  '<div class="scroll-hint" id="stockScrollHint">' +
+    '⌄⌄' +
+  '</div>' +
+
+'</div>';
 
 html +=
 
@@ -1708,6 +1778,17 @@ html +=
   document.getElementById(
     'acciones-page'
   ).innerHTML = html;
+
+bindScrollHint(
+  '.stock-list',
+  '#stockScrollHint'
+);
+
+bindScrollHint(
+'.kpi-grid',
+'#kpiScrollHint'
+);
+
 renderStockChart(stock);
 }
 
@@ -1857,6 +1938,30 @@ function filterStocks(value){
       }
       return out;
     }
+
+function setupScrollHint(container){
+
+  var hint =
+    container.parentNode.querySelector('.scroll-hint');
+
+  if(!hint) return;
+
+  function update(){
+
+    var hasMore =
+      container.scrollTop +
+      container.clientHeight <
+      container.scrollHeight - 10;
+
+    hint.style.opacity =
+      hasMore ? '1' : '0';
+  }
+
+  container.addEventListener('scroll', update);
+
+  update();
+}
+
 
     function destroyCharts(){
       CHART_INSTANCES.forEach(function(c){ if(c&&c.destroy) c.destroy(); });
@@ -2035,6 +2140,47 @@ function renderStockChart(stock){
   );
 }
 
+
+function bindScrollHint(
+  containerSelector,
+  hintSelector
+){
+
+  var container =
+    document.querySelector(
+      containerSelector
+    );
+
+  var hint =
+    document.querySelector(
+      hintSelector
+    );
+
+  if(!container || !hint) return;
+
+  function updateHint(){
+
+    var atBottom =
+
+      container.scrollTop +
+      container.clientHeight >=
+      container.scrollHeight - 5;
+
+    hint.classList.toggle(
+      'hidden',
+      atBottom
+    );
+
+  }
+
+  container.addEventListener(
+    'scroll',
+    updateHint
+  );
+
+  updateHint();
+
+}
     function getSafeColor(color){
       return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : DEFAULT_CHART_COLOR;
     }
