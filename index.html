@@ -22,8 +22,8 @@
     .top-bar {
       background:rgba(15,23,42,.96);
       border-bottom:1px solid rgba(59,130,246,.25);
-      padding:10px 20px;
-      min-height:60px;
+      padding:4px 16px;
+      min-height:44px;
       display:flex;
       align-items:flex-start;
       justify-content:space-between;
@@ -43,7 +43,7 @@
 
     .top-bar-bar {
       width:3px;
-      height:34px;
+      height:26px;
       background:var(--blue);
       border-radius:999px;
       margin-top:1px;
@@ -54,7 +54,7 @@
       display:flex;
       flex-direction:column;
       min-width:0;
-      gap:2px;
+      gap:0;
       width:100%;
     }
 
@@ -92,16 +92,225 @@
       text-align:right;
     }
 
+
+.section-title{
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+
+  color:var(--blue);
+
+  margin-bottom:10px;
+}
+
+
+
     .main { padding:16px 24px 100px; }
 
-/* KPI GRID */
-.kpi-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:10px;
-  margin-bottom:14px;
-  align-items:stretch;
+.stock-list{
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:12px;
+
+  height:250px;   /* about 4 rows visible */
+
+  overflow-y:auto;
+  overflow-x:hidden;
+
+  scroll-behavior:smooth;
 }
+
+.stock-list::-webkit-scrollbar{
+  width:6px;
+}
+
+.stock-list::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,.15);
+  border-radius:999px;
+}
+
+.stock-row{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:10px 12px;
+
+  min-height:60px;
+
+  border-bottom:1px solid rgba(255,255,255,.05);
+
+  transition:.2s ease;
+
+  flex-shrink:0;
+}
+
+.stock-row:hover{
+  background:rgba(59,130,246,.05);
+}
+
+.stock-row:hover{
+  background:rgba(59,130,246,.05);
+}
+
+.stock-symbol{
+  font-size:.78rem;
+  font-weight:700;
+}
+
+.stock-company{
+  font-size:.52rem;
+  color:var(--muted);
+
+  margin-top:2px;
+}
+
+.stock-price{
+  font-size:.78rem;
+  text-align:right;
+}
+
+.stock-change{
+  font-size:.52rem;
+  margin-top:2px;
+}
+
+.stock-change.up{
+  color:var(--green);
+}
+
+.stock-change.dn{
+  color:var(--red);
+}
+
+
+/* KPI MARKET LIST */
+
+.kpi-grid{
+  background:var(--bg2);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:12px;
+scroll-behavior:smooth;
+  height:195px;
+  overflow-y:auto;
+  overflow-x:hidden;
+
+  display:flex;
+  flex-direction:column;
+
+  margin-bottom:14px;
+}
+
+.kpi-grid::-webkit-scrollbar{
+  width:6px;
+}
+
+.kpi-grid::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,.15);
+  border-radius:999px;
+}
+
+.market-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:8px 12px;
+
+  border-bottom:1px solid rgba(255,255,255,.05);
+
+  cursor:pointer;
+
+  transition:.2s ease;
+
+  min-height:60px;
+
+  flex-shrink:0;
+}
+
+.market-row:hover{
+  background:rgba(59,130,246,.05);
+}
+
+.market-row.active{
+  background:rgba(59,130,246,.12);
+  border-left:3px solid var(--blue);
+}
+
+.market-row.active .market-name{
+  color:#60a5fa;
+}
+
+.market-left{
+  flex:1;
+  min-width:0;
+}
+
+.market-name{
+  font-size:.68rem;
+  font-weight:700;
+  color:#fff;
+  line-height:1.2;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  margin-bottom:2px;
+}
+
+.market-sub{
+  font-size:.50rem;
+  color:var(--muted);
+  line-height:1.2;
+}
+
+.market-right{
+  text-align:right;
+  flex-shrink:0;
+  margin-left:10px;
+}
+
+.market-value{
+  font-size:.76rem;
+  font-weight:700;
+  color:#fff;
+}
+
+.market-change{
+  margin-top:2px;
+
+  font-size:.50rem;
+  font-weight:600;
+}
+
+.market-change.up{
+  color:var(--green);
+}
+
+.market-change.dn{
+  color:var(--red);
+}
+
+.market-change.fl{
+  color:var(--muted);
+}
+
+.market-value,
+.market-change{
+  font-variant-numeric:tabular-nums;
+}
+
+.stock-variation{
+  font-size:.48rem;
+  color:var(--muted);
+  margin-top:2px;
+  text-align:right;
+}
+
 
 /* KPI CARD */
 .kpi-card{
@@ -258,6 +467,351 @@
     .ni-txt { font-size:.7rem; line-height:1.4; }
     .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; }
 
+#economia-page,
+#acciones-page{
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
+
+}
+
+.metric-value.up{
+  color:var(--green);
+}
+
+.metric-value.dn{
+  color:var(--red);
+}
+
+.stock-detail{
+
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:12px;
+
+  padding:12px;
+
+  margin-top:12px;
+
+}
+
+.stock-detail{
+
+  background:linear-gradient(
+    180deg,
+    rgba(30,41,59,.95),
+    rgba(15,23,42,.95)
+  );
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:14px;
+
+  padding:14px;
+}
+
+.mover-ticker{
+
+  font-size:.75rem;
+
+  font-weight:700;
+}
+
+.mover-change{
+
+  margin-top:4px;
+
+  font-size:.8rem;
+
+  font-weight:700;
+}
+
+
+.market-summary{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:8px;
+
+  margin-bottom:12px;
+}
+
+
+.stock-detail-title{
+  font-size:1.3rem;
+  font-weight:800;
+
+  color:var(--white);
+
+  margin-bottom:2px;
+}
+
+.stock-detail-sub{
+  color:var(--muted);
+  font-size:.72rem;
+
+  margin-bottom:16px;
+}
+
+.stock-range{
+  display:flex;
+  gap:6px;
+  margin:10px 0;
+}
+
+.stock-row.active{
+  background:rgba(59,130,246,.08);
+}
+
+.stock-row.active{
+
+  background:rgba(59,130,246,.10);
+
+  border-left:3px solid var(--blue);
+
+  box-shadow:inset 0 0 0 1px rgba(59,130,246,.18);
+}
+
+.stock-metrics{
+
+  display:grid;
+
+  grid-template-columns:1fr auto;
+
+  gap:8px;
+
+  margin-top:12px;
+}
+
+.metric-label{
+
+  color:var(--muted);
+
+  font-size:.58rem;
+}
+
+.metric-value{
+
+  font-size:.72rem;
+
+  font-weight:700;
+}
+
+.stock-chart-wrap{
+  height:180px;
+  margin-top:16px;
+}
+
+.stock-metrics{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px;
+  margin-top:10px;
+}
+
+.metric-label{
+  color:var(--muted);
+  font-size:.58rem;
+}
+
+.metric-value{
+  font-size:.72rem;
+  font-weight:700;
+}
+
+
+.market-stat{
+
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:10px;
+
+  padding:10px;
+}
+
+.market-stat-label{
+
+  font-size:.52rem;
+
+  color:var(--muted);
+
+  text-transform:uppercase;
+}
+
+.market-stat-value{
+
+  font-size:.9rem;
+
+  font-weight:700;
+
+  margin-top:4px;
+}
+
+.market-movers{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:8px;
+
+  margin-bottom:12px;
+}
+
+.mover-card{
+
+  border-radius:8px;
+
+  padding:8px;
+}
+
+.mover-up{
+
+  background:rgba(34,197,94,.08);
+
+  border:1px solid rgba(34,197,94,.20);
+}
+
+.mover-down{
+
+  background:rgba(239,68,68,.08);
+
+  border:1px solid rgba(239,68,68,.20);
+}
+
+.mover-title{
+
+  font-size:.52rem;
+
+  text-transform:uppercase;
+
+  color:var(--muted);
+}
+
+.stock-search{
+
+  width:100%;
+
+  margin-bottom:10px;
+
+  padding:10px 12px;
+
+  border-radius:10px;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  background:var(--bg2);
+
+  color:var(--white);
+
+  outline:none;
+}
+
+.stock-search::placeholder{
+  color:var(--muted);
+}
+
+.mover-ticker{
+
+  margin-top:4px;
+
+  font-weight:700;
+}
+
+.mover-change{
+
+  margin-top:2px;
+
+  font-size:.65rem;
+}
+
+.stock-row.active{
+
+  background:rgba(59,130,246,.08);
+
+  border-left:3px solid var(--blue);
+}
+
+.page-enter{
+
+  opacity:0;
+  transform:translateX(20px);
+
+}
+
+.page-show{
+
+  opacity:1;
+  transform:translateX(0);
+
+}
+
+
+.page-indicator{
+
+  position:fixed;
+
+  left:50%;
+  bottom:16px;
+
+  transform:translateX(-50%);
+
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  z-index:999;
+
+  padding:6px 12px;
+
+  border-radius:999px;
+
+  background:rgba(15,23,42,.55);
+
+  backdrop-filter:blur(10px);
+}
+
+#economia-page,
+#acciones-page{
+  opacity:1;
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
+}
+
+.page-show{
+  opacity:1;
+  transform:translateX(0);
+}
+
+
+.page-dot{
+
+  width:8px;
+  height:8px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,.25);
+
+  transition:all .25s ease;
+}
+
+.page-dot.active{
+width:20px;
+
+  background:rgba(255,255,255,.90);
+box-shadow:0 0 8px rgba(255,255,255,.15);
+
+  transform:scale(1.25);
+}
     .dash-footer {
       background:rgba(255,255,255,.02);
       border-top:1px solid rgba(255,255,255,.05);
@@ -275,7 +829,7 @@
     }
 
     #siwa-fab {
-      position:fixed; bottom:24px; right:24px; z-index:9999;
+      position:fixed; bottom:16px; right:24px; z-index:9999;
       width:66px; height:66px; border-radius:50%; cursor:pointer;
       border:3px solid rgba(59,130,246,.6);
       box-shadow:0 4px 20px rgba(59,130,246,.4);
@@ -285,7 +839,7 @@
       overflow:hidden;
       transform:scale(.70);
       transform-origin:bottom right;
-      transition:transform .2s ease, box-shadow .2s ease;
+      transition:transform .4s ease, box-shadow .4s ease;
     }
     #siwa-fab.expanded{
       transform:scale(1);
@@ -364,28 +918,65 @@
     #siwa-panel:not(.chat-mode) #siwa-msgs,
     #siwa-panel:not(.chat-mode) #siwa-input-area { display:none; }
 
-    #siwa-panel.chat-mode #siwa-back { display:inline-flex; align-items:center; gap:6px; }
+    #siwa-panel.chat-mode #siwa-back { display:inline-flex; align-items:right; gap:3px; }
     #siwa-panel:not(.chat-mode) #siwa-back { display:none; }
 
-    @media(max-width:900px) {
+    @media(max-width:640px) {
       .news-list { grid-template-columns:1fr; }
       .main { padding:12px 14px 100px; }
     }
 
- @media(max-width:640px){
-  .kpi-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
-  .kpi-card{ padding:7px; border-radius:8px; min-height:100px; }
-  .kpi-label{ font-size:.46rem; line-height:1.15; min-height:2.3em; margin-bottom:4px; }
-  .kpi-value{ font-size:.72rem; margin-bottom:4px; min-height:1.2em; }
-  .dv{ font-size:.5rem; }
-  .dp{ font-size:.46rem; padding:1px 3px; }
-  .kpi-sub{ font-size:.44rem; max-width:100%; margin-left:0; }
-  .kpi-diff{ flex-wrap:wrap; gap:4px; }
+@media (max-width:640px){
+
+  .kpi-grid{
+    height:190px;
+scroll-behavior:smooth;
+  }
+
+
+
+  .market-row{
+    min-height:56px;
+    padding:8px 12px;
+  }
+
+  .market-name{
+    font-size:.66rem;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  }
+
+  .market-sub{
+    font-size:.48rem;
+  }
+
+  .market-value{
+    font-size:.74rem;
+  }
+
+  .market-change{
+    font-size:.48rem;
+  }
+
 }
 
 @media(max-width:480px){
   .kpi-card{ min-height:94px; padding:6px; }
   .kpi-value{ font-size:.68rem; }
+}
+
+@media(max-width:640px){
+
+  .stock-list{
+    height:240px;
+  }
+
+  .stock-row{
+    min-height:58px;
+    padding:8px 12px;
+  }
+
 }
 
   .chart-wrap { height:128px; }
@@ -397,6 +988,7 @@
 </head>
 <body>
   <div class="top-bar">
+
     <div class="top-bar-left">
       <div class="top-bar-bar"></div>
       <div class="top-bar-title-wrap">
@@ -409,14 +1001,42 @@
     </div>
   </div>
 
-  <div class="main">
+
+ <div class="main">
+
+  <div id="economia-page">
+
     <div class="kpi-grid"></div>
 
     <div class="charts-panel-wrap">
       <div class="chart-panel">
-        <div class="chart-overline">Indicador seleccionado</div>
+        <div class="chart-overline">
+          Indicador seleccionado
+        </div>
+
         <div id="chartsTrack"></div>
       </div>
+    </div>
+
+    <div class="news-panel">
+      <div class="news-title">
+        <i class="fas fa-newspaper"></i>
+        Noticias Económicas del Día
+      </div>
+
+      <div class="news-list"></div>
+    </div>
+
+  </div>
+
+  <div
+    id="acciones-page"
+    style="display:none">
+
+
+  </div>
+
+</div>
     </div>
 
     <div class="news-panel">
@@ -424,6 +1044,20 @@
       <div class="news-list"></div>
     </div>
   </div>
+
+<div class="page-indicator">
+
+  <span
+    class="page-dot active"
+    id="dot-economia">
+  </span>
+
+  <span
+    class="page-dot"
+    id="dot-acciones">
+  </span>
+
+</div>
 
   <div class="dash-footer">
     <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
@@ -442,7 +1076,7 @@
         <p>En línea · Chile</p>
       </div>
       <button id="siwa-back" onclick="siwaVolverMenu()"><i class="fas fa-arrow-left"></i> Menú</button>
-      <button id="siwa-close" onclick="siwaClose()"><i class="fas fa-times"></i></button>
+    
     </div>
 
     <div id="siwa-menu">
@@ -461,7 +1095,7 @@
     </div>
 
     <div id="siwa-sector-label">
-      <i class="fas fa-chart-bar"></i> Sector activo: <span id="siwa-sector-name">General</span>
+      <i class="fas fa-chart-bar"></i> Sector activo: <span id=" siwa-sector-name">General</span>
     </div>
 
     <div id="siwa-msgs"></div>
@@ -522,6 +1156,191 @@
       ]
     };
 
+
+var ACCIONES = [
+
+  {
+    ticker:'SQM-B',
+    empresa:'Sociedad Química y Minera',
+    precio:'49.820',
+    cambio:'-1,8%',
+    variacionPrecio:'-$910',
+    up:false
+  },
+
+  {
+    ticker:'COPEC',
+    empresa:'Empresas Copec',
+    precio:'7.245',
+    cambio:'+2,4%',
+    variacionPrecio:'+$170',
+    up:true
+  },
+
+  {
+    ticker:'CMPC',
+    empresa:'Empresas CMPC',
+    precio:'1.912',
+    cambio:'+1,1%',
+    variacionPrecio:'+$21',
+    up:true
+  },
+
+  {
+    ticker:'BCI',
+    empresa:'Banco BCI',
+    precio:'34.510',
+    cambio:'+0,7%',
+    variacionPrecio:'+$240',
+    up:true
+  },
+
+  {
+    ticker:'BSANTANDER',
+    empresa:'Banco Santander Chile',
+    precio:'52,1',
+    cambio:'-0,5%',
+    variacionPrecio:'-$0,3',
+    up:false
+  },
+
+  {
+    ticker:'FALABELLA',
+    empresa:'Falabella S.A.',
+    precio:'3.215',
+    cambio:'-0,9%',
+    variacionPrecio:'-$29',
+    up:false
+  },
+
+  {
+    ticker:'CENCOSUD',
+    empresa:'Cencosud S.A.',
+    precio:'1.885',
+    cambio:'+1,5%',
+    variacionPrecio:'+$28',
+    up:true
+  },
+
+  {
+    ticker:'RIPLEY',
+    empresa:'Ripley Corp',
+    precio:'241',
+    cambio:'+0,4%',
+    variacionPrecio:'+$1',
+    up:true
+  },
+
+  {
+    ticker:'ENELAM',
+    empresa:'Enel Américas',
+    precio:'96,1',
+    cambio:'-0,3%',
+    variacionPrecio:'-$0,3',
+    up:false
+  },
+
+  {
+    ticker:'ENELCHILE',
+    empresa:'Enel Chile',
+    precio:'61,5',
+    cambio:'+0,8%',
+    variacionPrecio:'+$0,5',
+    up:true
+  },
+
+  {
+    ticker:'ANDINA-B',
+    empresa:'Embotelladora Andina',
+    precio:'2.985',
+    cambio:'+0,4%',
+    variacionPrecio:'+$12',
+    up:true
+  },
+
+  {
+    ticker:'IAM',
+    empresa:'Inversiones Aguas Metropolitanas',
+    precio:'781',
+    cambio:'+0,6%',
+    variacionPrecio:'+$5',
+    up:true
+  },
+
+  {
+    ticker:'AGUAS-A',
+    empresa:'Aguas Andinas',
+    precio:'276',
+    cambio:'-0,2%',
+    variacionPrecio:'-$1',
+    up:false
+  },
+
+  {
+    ticker:'CAP',
+    empresa:'CAP S.A.',
+    precio:'6.480',
+    cambio:'+2,8%',
+    variacionPrecio:'+$176',
+    up:true
+  },
+
+  {
+    ticker:'SONDA',
+    empresa:'Sonda S.A.',
+    precio:'482',
+    cambio:'+1,3%',
+    variacionPrecio:'+$6',
+    up:true
+  },
+
+  {
+    ticker:'PARAUCO',
+    empresa:'Parque Arauco',
+    precio:'1.045',
+    cambio:'+0,5%',
+    variacionPrecio:'+$5',
+    up:true
+  },
+
+  {
+    ticker:'MALLPLAZA',
+    empresa:'Mallplaza',
+    precio:'1.886',
+    cambio:'+0,9%',
+    variacionPrecio:'+$17',
+    up:true
+  },
+
+  {
+    ticker:'VAPORES',
+    empresa:'Compañía Sud Americana de Vapores',
+    precio:'57,8',
+    cambio:'-1,1%',
+    variacionPrecio:'-$0,6',
+    up:false
+  },
+
+  {
+    ticker:'CCU',
+    empresa:'Compañía Cervecerías Unidas',
+    precio:'7.850',
+    cambio:'+0,3%',
+    variacionPrecio:'+$24',
+    up:true
+  },
+
+  {
+    ticker:'CONCHATORO',
+    empresa:'Viña Concha y Toro',
+    precio:'1.295',
+    cambio:'-0,4%',
+    variacionPrecio:'-$5',
+    up:false
+  }
+
+];
+
     var SECTOR_NOTICIAS = {
       general: [],
       internacional: [],
@@ -568,36 +1387,90 @@
     var CHART_INSTANCES = [];
     var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
 
-    function renderKPIs(sector){
-      var kpis = SECTOR_KPIS[sector] || SECTOR_KPIS.general;
-      var grid = document.querySelector('.kpi-grid');
-      grid.innerHTML = '';
+function renderKPIs(sector){
 
-      kpis.forEach(function(k,idx){
-        var arrow = k.dv==='up' ? 'arrow-up' : k.dv==='dn' ? 'arrow-down' : 'minus';
-        var activeCls = idx===CHART_ACTIVE_INDEX ? ' active' : '';
-        grid.innerHTML +=
-          '<button type="button" class="kpi-card kpi-card-btn'+activeCls+'" onclick="setActiveChart('+idx+')" aria-pressed="'+(idx===CHART_ACTIVE_INDEX?'true':'false')+'">' +
-            '<div class="kpi-label">'+escapeHtml(k.label||'Indicador')+'</div>' +
-            '<div class="kpi-value">'+escapeHtml(k.val||'—')+'</div>' +
-            '<div class="kpi-diff">' +
-              '<span class="dv '+(k.dv||'fl')+'"><i class="fas fa-'+arrow+'"></i> '+escapeHtml(k.dvt||'0')+'</span>' +
-              '<span class="dp '+(k.dp||'fl')+'">'+escapeHtml(k.dpt||'')+'</span>' +
-              '<span class="kpi-sub">'+escapeHtml(k.sub||'')+'</span>' +
-            '</div>' +
-          '</button>';
-      });
+  var kpis =
+    SECTOR_KPIS[sector] ||
+    SECTOR_KPIS.general;
 
-      syncActiveKPIState();
-    }
+  var grid =
+    document.querySelector('.kpi-grid');
 
-    function syncActiveKPIState(){
-      document.querySelectorAll('.kpi-card-btn').forEach(function(card,idx){
-        var isActive = idx===CHART_ACTIVE_INDEX;
-        card.classList.toggle('active',isActive);
-        card.setAttribute('aria-pressed',isActive ? 'true' : 'false');
-      });
-    }
+  grid.innerHTML = '';
+
+  kpis.forEach(function(k,idx){
+
+    var arrow =
+      k.dv === 'up'
+        ? '↑'
+        : k.dv === 'dn'
+          ? '↓'
+          : '•';
+
+    var activeCls =
+      idx === CHART_ACTIVE_INDEX
+        ? ' active'
+        : '';
+
+    grid.innerHTML +=
+
+      '<div class="market-row'+activeCls+'" '+
+      'onclick="setActiveChart('+idx+')">'+
+
+        '<div class="market-left">'+
+
+          '<div class="market-name">'+
+            escapeHtml(k.label || '')+
+          '</div>'+
+
+          '<div class="market-sub">'+
+            escapeHtml(k.sub || '')+
+          '</div>'+
+
+        '</div>'+
+
+        '<div class="market-right">'+
+
+          '<div class="market-value">'+
+            escapeHtml(k.val || '—')+
+          '</div>'+
+
+          '<div class="market-change '+
+            (k.dv || 'fl')+
+          '">'+
+
+            arrow+' '+
+            escapeHtml(k.dvt || '')+
+
+            (k.dpt
+            ? ' ('+escapeHtml(k.dpt)+')'
+            : '')+
+
+          '</div>'+
+
+        '</div>'+
+
+      '</div>';
+
+  });
+
+  syncActiveKPIState();
+}
+
+   function syncActiveKPIState(){
+
+  document
+    .querySelectorAll('.market-row')
+    .forEach(function(row,idx){
+
+      row.classList.toggle(
+        'active',
+        idx === CHART_ACTIVE_INDEX
+      );
+
+    });
+
+}
 
     function safeUrl(url){
       try{
@@ -688,6 +1561,259 @@
       ]
     };
 
+function renderAccionesPage(){
+
+  var stock = ACCIONES[ACTIVE_STOCK];
+
+  var html =
+
+   
+
+    '<div class="market-summary">' +
+
+      '<div class="market-stat">' +
+        '<div class="market-stat-label">IPSA</div>' +
+        '<div class="market-stat-value">6.842</div>' +
+      '</div>' +
+
+      '<div class="market-stat">' +
+        '<div class="market-stat-label">Variación</div>' +
+        '<div class="market-stat-value">+1,2%</div>' +
+      '</div>' +
+
+    '</div>' +
+'<div class="market-movers">' +
+
+  '<div class="mover-card mover-up">' +
+    '<div class="mover-ticker">▲ CAP</div>' +
+    '<div class="mover-change">+2,8%</div>' +
+  '</div>' +
+
+  '<div class="mover-card mover-down">' +
+    '<div class="mover-ticker">▼ SQM-B</div>' +
+    '<div class="mover-change">-1,8%</div>' +
+  '</div>' +
+
+'</div>' +
+ 
+'<input ' +
+'class="stock-search" ' +
+'type="text" ' +
+'placeholder="Buscar acción..." ' +
+'value="' + STOCK_FILTER + '" ' +
+'onkeyup="filterStocks(this.value)">' +
+
+    '<div class="stock-list">';
+
+ACCIONES.forEach(function(a,idx){
+
+  if(
+    STOCK_FILTER &&
+    !a.ticker.toLowerCase().includes(STOCK_FILTER) &&
+    !a.empresa.toLowerCase().includes(STOCK_FILTER)
+  ){
+    return;
+  }
+
+  html +=
+
+    '<div class="stock-row' +
+      (idx === ACTIVE_STOCK ? ' active' : '') +
+    '" onclick="selectStock(' + idx + ')">' +
+
+        '<div>' +
+
+          '<div class="stock-symbol">' +
+            a.ticker +
+          '</div>' +
+
+          '<div class="stock-company">' +
+            a.empresa +
+          '</div>' +
+
+        '</div>' +
+
+        '<div>' +
+
+          '<div class="stock-price">' +
+            a.precio +
+          '</div>' +
+
+        '<div class="stock-change ' +
+  (a.up ? 'up' : 'dn') +
+'">' +
+  (a.up ? '▲ ' : '▼ ') +
+  a.cambio +
+'</div>' +
+
+'<div class="stock-variation">' +
+  a.variacionPrecio +
+'</div>' +
+
+        '</div>' +
+
+      '</div>';
+
+  });
+
+  html += '</div>';
+
+html +=
+
+  '<div class="stock-detail">' +
+'<div class="section-title">' +
+  'Detalle de Acción' +
+'</div>' +
+
+
+
+    '<div class="stock-detail-title">' +
+      stock.ticker +
+    '</div>' +
+
+    '<div class="stock-detail-sub">' +
+      stock.empresa +
+    '</div>' +
+
+    '<div class="stock-metrics">' +
+
+      '<div class="metric-label">Precio</div>' +
+      '<div class="metric-value">$' +
+        stock.precio +
+      '</div>' +
+
+      '<div class="metric-label">Variación</div>' +
+     '<div class="metric-value ' +
+  (stock.up ? 'up' : 'dn') +
+'">' +
+  stock.cambio +
+'</div>' +
+
+      '<div class="metric-label">Cambio CLP</div>' +
+      '<div class="metric-value">' +
+        stock.variacionPrecio +
+      '</div>' +
+
+    '</div>' +
+'<div class="stock-chart-wrap">' +
+  '<canvas id="stockChart"></canvas>' +
+'</div>' +
+
+
+
+  '</div>';
+
+  
+
+  document.getElementById(
+    'acciones-page'
+  ).innerHTML = html;
+renderStockChart(stock);
+}
+
+var ACTIVE_STOCK = 0;
+
+var STOCK_FILTER = '';
+
+function setDashboardPage(page){
+
+document
+  .getElementById('dot-economia')
+  .classList.remove('active');
+
+document
+  .getElementById('dot-acciones')
+  .classList.remove('active');
+
+CURRENT_PAGE = page;
+  var eco =
+    document.getElementById(
+      'economia-page'
+    );
+
+  var acc =
+    document.getElementById(
+      'acciones-page'
+    );
+
+ 
+
+ if(page === 'economia'){
+
+document
+  .getElementById('dot-economia')
+  .classList.add('active');
+
+    eco.style.display='block';
+    acc.style.display='none';
+
+
+eco.classList.remove('page-show');
+requestAnimationFrame(function(){
+eco.classList.add('page-show');
+});
+
+    document
+      .getElementById('mainTitle')
+      .textContent = 'Informe Chile';
+
+    document
+      .getElementById('sectorTitle')
+      .textContent =
+      SECTORES[SECTOR_ACTUAL].label;
+
+}else{
+
+document
+  .getElementById('dot-acciones')
+  .classList.add('active');
+
+    eco.style.display='none';
+    acc.style.display='block';
+
+  acc.classList.remove('page-show');
+requestAnimationFrame(function(){
+acc.classList.add('page-show');
+});
+
+    document
+      .getElementById('mainTitle')
+      .textContent =
+      'Mercado Acciones';
+
+    document
+      .getElementById('sectorTitle')
+      .textContent =
+      'Bolsa de Santiago';
+
+}
+
+}
+
+function filterStocks(value){
+
+  STOCK_FILTER = value.toLowerCase();
+
+  renderAccionesPage();
+
+  var input =
+    document.querySelector('.stock-search');
+
+  if(input){
+
+    input.focus();
+
+    input.value = value;
+
+    input.setSelectionRange(
+      value.length,
+      value.length
+    );
+
+  }
+
+}
+
     function getRangeLabels(range){
       if(range==='12m'){
         var mesesCortos=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
@@ -762,6 +1888,46 @@
       renderCharts(SECTOR_ACTUAL,true);
     }
 
+function selectStock(idx){
+
+  var stockList =
+    document.querySelector('.stock-list');
+
+  var scrollPos =
+    stockList
+      ? stockList.scrollTop
+      : 0;
+
+  ACTIVE_STOCK = idx;
+
+  renderAccionesPage();
+
+  stockList =
+    document.querySelector('.stock-list');
+
+  if(stockList){
+    stockList.scrollTop = scrollPos;
+  }
+
+}
+
+setTimeout(function(){
+
+  var activeRow =
+    document.querySelector(
+      '.stock-row.active'
+    );
+
+  if(activeRow){
+
+    activeRow.scrollIntoView({
+      block:'nearest'
+    });
+
+  }
+
+},0);
+
     function escapeHtml(text){
       return String(text)
         .replace(/&/g,'&amp;')
@@ -770,6 +1936,104 @@
         .replace(/"/g,'&quot;')
         .replace(/'/g,'&#39;');
     }
+
+var STOCK_CHART = null;
+
+function renderStockChart(stock){
+
+  var canvas =
+    document.getElementById('stockChart');
+
+  if(!canvas) return;
+
+  if(STOCK_CHART){
+    STOCK_CHART.destroy();
+  }
+
+  var labels = [
+    'Lun',
+    'Mar',
+    'Mié',
+    'Jue',
+    'Vie',
+    'Hoy'
+  ];
+
+  var base =
+    parseFloat(
+      stock.precio
+        .replace(/\./g,'')
+        .replace(',','.')
+    );
+
+  var data = [
+    base * 0.96,
+    base * 0.97,
+    base * 0.985,
+    base * 0.98,
+    base * 1.01,
+    base
+  ];
+
+  STOCK_CHART = new Chart(
+    canvas,
+    {
+      type:'line',
+
+      data:{
+        labels:labels,
+
+        datasets:[{
+          data:data,
+
+          borderColor:
+            stock.up
+              ? '#22c55e'
+              : '#ef4444',
+
+          backgroundColor:
+            stock.up
+              ? 'rgba(34,197,94,.12)'
+              : 'rgba(239,68,68,.12)',
+
+          fill:true,
+
+          tension:.35,
+
+          borderWidth:2,
+
+          pointRadius:0
+        }]
+      },
+
+      options:{
+
+        responsive:true,
+
+        maintainAspectRatio:false,
+
+        plugins:{
+          legend:{
+            display:false
+          }
+        },
+
+        scales:{
+          x:{
+            ticks:{
+              color:'#94a3b8'
+            }
+          },
+          y:{
+            ticks:{
+              color:'#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  );
+}
 
     function getSafeColor(color){
       return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : DEFAULT_CHART_COLOR;
@@ -842,6 +2106,8 @@
 
       attachChartSwipe(document.getElementById('chartSwipeArea'));
     }
+
+var CURRENT_PAGE = 'economia';
 
     var siwaOpen=false, siwaChatMode=false;
     var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
@@ -1049,10 +2315,68 @@
       }).join('');
     }
 
+let pageSwipeStartX = 0;
+let pageSwipeStartY = 0;
+
     document.addEventListener('DOMContentLoaded', function(){
       setSector('general');
       cargarNoticias();
-      renderStockList();
+renderAccionesPage();
+var mainArea =
+  document.querySelector('.main');
+
+if(mainArea){
+
+  mainArea.addEventListener(
+    'touchstart',
+    function(e){
+
+      pageSwipeStartX =
+        e.touches[0].clientX;
+
+      pageSwipeStartY =
+        e.touches[0].clientY;
+
+    },
+    { passive:true }
+  );
+
+  mainArea.addEventListener(
+    'touchend',
+    function(e){
+
+      const dx =
+        e.changedTouches[0].clientX -
+        pageSwipeStartX;
+
+      const dy =
+        e.changedTouches[0].clientY -
+        pageSwipeStartY;
+
+     if(Math.abs(dx) < 40) return;
+
+if(Math.abs(dx) < Math.abs(dy) * 1.2) return;
+
+      if(
+        dx < 0 &&
+        CURRENT_PAGE === 'economia'
+      ){
+        setDashboardPage('acciones');
+      }
+
+      if(
+        dx > 0 &&
+        CURRENT_PAGE === 'acciones'
+      ){
+        setDashboardPage('economia');
+      }
+
+    },
+    { passive:true }
+  );
+
+}
+
       var input=document.getElementById('siwa-input');
       if(input){
         input.addEventListener('keydown',function(e){
