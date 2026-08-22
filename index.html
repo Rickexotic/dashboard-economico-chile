@@ -1,62 +1,2598 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exploraciones del Mundo - 5° Básico</title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Dashboard Económico Chile</title>
+  <meta name="description" content="Dashboard ejecutivo con indicadores económicos de Chile en tiempo real: Dólar, Cobre, UF, EMBI, IPC, TPM y más. Con asistente virtual Siwa.">
+  <meta name="build-version" content="2026-08-20-cache-bump-1">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    :root {
+      --bg:#0f172a; --bg2:#1e293b; --bg3:#16213e;
+      --blue:#3b82f6; --green:#22c55e; --orange:#f97316;
+      --red:#ef4444; --purple:#a78bfa; --white:#fff; --muted:#94a3b8;
+    }
+    body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--white); min-height:100vh; }
 
-<style>
-body{
-    font-family: Arial, sans-serif;
-    background:#eef6ff;
-    margin:0;
-    padding:20px;
+    .top-bar {
+      background:rgba(15,23,42,.96);
+      border-bottom:1px solid rgba(59,130,246,.25);
+      padding:4px 16px;
+      min-height:44px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    .top-bar-left {
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      min-width:0;
+      flex:1;
+    }
+
+    .top-bar-bar {
+      width:3px;
+      height:26px;
+      background:var(--blue);
+      border-radius:999px;
+      margin-top:1px;
+      flex-shrink:0;
+    }
+
+    .top-bar-title-wrap{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+      gap:0;
+      width:100%;
+    }
+
+    .top-bar-title {
+      font-size:1rem;
+      font-weight:800;
+      color:var(--white);
+      line-height:1.1;
+      white-space:nowrap;
+    }
+
+    .top-bar-subrow{
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      gap:16px;
+      width:100%;
+      min-width:0;
+    }
+
+    .top-bar-sector{
+      font-size:1rem;
+      font-weight:800;
+      color:var(--blue);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .top-bar-date {
+      font-size:.72rem;
+      color:var(--muted);
+      white-space:nowrap;
+      margin-left:auto;
+      text-align:right;
+    }
+
+
+.section-title{
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+
+  color:var(--blue);
+
+  margin-bottom:10px;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 0 10px rgba(0,0,0,0.15);
+
+
+    .main { padding:16px 24px 100px; }
+
+.stock-list{
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:12px;
+
+  height:250px;   /* about 4 rows visible */
+
+  overflow-y:auto;
+  overflow-x:hidden;
+
+  scroll-behavior:smooth;
 }
 
-h1{
-    text-align:center;
-    color:#1e4e8c;
+.stock-list::-webkit-scrollbar{
+  width:6px;
 }
 
-.nombre{
-    margin:20px 0;
-    font-size:18px;
+.stock-list::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,.15);
+  border-radius:999px;
 }
 
-input[type=text]{
-    padding:8px;
-    width:300px;
-    font-size:16px;
+.stock-row{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:10px 12px;
+
+  min-height:60px;
+
+  border-bottom:1px solid rgba(255,255,255,.05);
+
+  transition:.2s ease;
+
+  flex-shrink:0;
 }
 
-.question{
-    margin-top:25px;
-    padding:15px;
-    border:1px solid #ddd;
-    border-radius:8px;
-    background:#fafafa;
+.stock-row:hover{
+  background:rgba(59,130,246,.05);
 }
 
-.question h3{
-    margin-top:0;
+.stock-row:hover{
+  background:rgba(59,130,246,.05);
 }
 
-label{
-    display:block;
-    margin:8px 0;
+.stock-symbol{
+  font-size:.78rem;
+  font-weight:700;
 }
 
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    background:#1e88e5;
-    color:white
+.stock-company{
+  font-size:.52rem;
+  color:var(--muted);
+
+  margin-top:2px;
+}
+
+.stock-price{
+  font-size:.78rem;
+  text-align:right;
+}
+
+.stock-change{
+  font-size:.52rem;
+  margin-top:2px;
+}
+
+.stock-change.up{
+  color:var(--green);
+}
+
+.stock-change.dn{
+  color:var(--red);
+}
+
+
+/* KPI MARKET LIST */
+
+.kpi-grid{
+  background:var(--bg2);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:12px;
+scroll-behavior:smooth;
+  height:195px;
+  overflow-y:auto;
+  overflow-x:hidden;
+
+  display:flex;
+  flex-direction:column;
+
+  margin-bottom:14px;
+}
+
+.kpi-grid::-webkit-scrollbar{
+  width:6px;
+}
+
+.kpi-grid::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,.15);
+  border-radius:999px;
+}
+
+.market-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:8px 12px;
+
+  border-bottom:1px solid rgba(255,255,255,.05);
+
+  cursor:pointer;
+
+  transition:.2s ease;
+
+  min-height:60px;
+
+  flex-shrink:0;
+}
+
+.market-row:hover{
+  background:rgba(59,130,246,.05);
+}
+
+.market-row.active{
+  background:rgba(59,130,246,.12);
+  border-left:3px solid var(--blue);
+}
+
+.market-row.active .market-name{
+  color:#60a5fa;
+}
+
+.market-left{
+  flex:1;
+  min-width:0;
+}
+
+.market-name{
+  font-size:.68rem;
+  font-weight:700;
+  color:#fff;
+  line-height:1.2;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  margin-bottom:2px;
+}
+
+.market-sub{
+  font-size:.50rem;
+  color:var(--muted);
+  line-height:1.2;
+}
+
+.market-right{
+  text-align:right;
+  flex-shrink:0;
+  margin-left:10px;
+}
+
+.market-value{
+  font-size:.76rem;
+  font-weight:700;
+  color:#fff;
+}
+
+.market-change{
+  margin-top:2px;
+
+  font-size:.50rem;
+  font-weight:600;
+}
+
+.market-change.up{
+  color:var(--green);
+}
+
+.market-change.dn{
+  color:var(--red);
+}
+
+.market-change.fl{
+  color:var(--muted);
+}
+
+.market-value,
+.market-change{
+  font-variant-numeric:tabular-nums;
+}
+
+.stock-variation{
+  font-size:.48rem;
+  color:var(--muted);
+  margin-top:2px;
+  text-align:right;
+}
+
+
+/* KPI CARD */
+.kpi-card{
+  background:var(--bg2);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:10px;
+  padding:10px;
+  border-left:none;
+  transition:transform .2s,border-color .2s,box-shadow .2s;
+  text-align:left;
+
+  height:100%;
+  min-height:118px;
+  display:flex;
+  flex-direction:column;
+}
+.kpi-card:hover{ transform:translateY(-2px); }
+.kpi-card-btn{ cursor:pointer; font:inherit; width:100%; }
+
+.kpi-card.active{
+  background:rgba(59,130,246,.10);
+  border-color:rgba(59,130,246,.40);
+  box-shadow:0 0 0 1px rgba(59,130,246,.14);
+}
+
+/* LABEL */
+.kpi-label{
+  font-size:.52rem;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  font-weight:600;
+  line-height:1.2;
+  margin-bottom:6px;
+
+  min-height:2.4em;               /* same title block height */
+  display:flex;
+  align-items:flex-start;
+}
+
+/* VALUE */
+.kpi-value{
+  font-size:.98rem;
+  font-weight:700;
+  color:var(--white);
+  line-height:1.2;
+  margin-bottom:6px;
+
+  min-height:1.25em;              /* align value baseline across cards */
+  display:flex;
+  align-items:flex-end;
+}
+
+/* DIFF ROW */
+.kpi-diff{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  flex-wrap:nowrap;
+  margin-top:auto;                /* pins row to bottom */
+  min-height:1.2em;
+}
+
+.dv{ font-size:.56rem; font-weight:600; white-space:nowrap; }
+.dv.up{ color:var(--green); }
+.dv.dn{ color:var(--red); }
+.dv.fl{ color:var(--muted); }
+
+.dp{
+  font-size:.52rem;
+  font-weight:600;
+  padding:1px 4px;
+  border-radius:7px;
+  white-space:nowrap;
+}
+.dp.up{ background:rgba(34,197,94,.15); color:var(--green); }
+.dp.dn{ background:rgba(239,68,68,.15); color:var(--red); }
+.dp.fl{ background:rgba(176,184,200,.12); color:var(--muted); }
+
+.kpi-sub{
+  font-size:.5rem;
+  color:var(--muted);
+  margin-left:auto;
+  text-align:right;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  max-width:55%;
+}
+
+.scroll-hint{
+
+  position:absolute;
+
+  left:50%;
+  bottom:6px;
+
+  transform:translateX(-50%);
+
+  z-index:20;
+
+  color:rgba(255,255,255,.55);
+
+  font-size:.7rem;
+
+  pointer-events:none;
+
+  animation:floatHint 1.8s ease-in-out infinite;
+
+opacity:1;
+transition:
+opacity .25s ease,
+transform .25s ease;
+}
+
+.scroll-hint.hidden{
+opacity:0;
+transform:
+translateX(-50%)
+translateY(6px);
+}
+
+@keyframes floatHint{
+
+  0%,100%{
+    transform:translateX(-50%) translateY(0);
+  }
+
+  50%{
+    transform:translateX(-50%) translateY(4px);
+  }
+}
+
+.kpi-grid-wrap,
+.stock-list-wrap{
+
+  position:relative;
+
+  overflow:visible;
+}
+
+    .charts-panel-wrap { margin-bottom:14px; }
+    .chart-panel {
+      background:var(--bg2);
+      border:1px solid rgba(255,255,255,.07);
+      border-radius:10px;
+      padding:10px 12px 10px;
+    }
+    .chart-overline { display:none; }
+
+    .chart-head { display:flex; align-items:center; justify-content:flex-start; gap:8px; margin-bottom:12px; }
+    .chart-title {
+      font-size:.62rem; font-weight:700; text-transform:uppercase;
+      letter-spacing:.07em; display:flex; align-items:center; gap:6px; flex-wrap:wrap;
+    }
+    .chart-accent { width:10px; height:3px; border-radius:2px; background:var(--blue); }
+    .chart-sub { font-size:.51rem; color:var(--muted); margin-left:auto; text-transform:none; }
+
+    .chart-wrap { height:152px; position:relative; touch-action:pan-y; margin-top:10px; }
+
+    .range-btn {
+      font-size:.58rem; font-weight:700; padding:4px 9px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.05); color:var(--muted); cursor:pointer;
+      transition:all .2s;
+    }
+    .range-btn.active { background:rgba(59,130,246,.2); border-color:var(--blue); color:var(--white); }
+
+    .chart-nav-bottom{
+      margin-top:10px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+    }
+
+    .chart-range-bottom{
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+      justify-content:flex-start;
+    }
+
+    .chart-nav-right{
+      display:flex;
+      gap:6px;
+      justify-content:flex-end;
+      flex-shrink:0;
+    }
+
+    .chart-nav-btn{
+      width:26px; height:26px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.05);
+      color:var(--white); cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .chart-nav-btn:hover{ background:rgba(59,130,246,.2); border-color:var(--blue); }
+
+    .news-panel { background:rgba(59,130,246,.07); border:1px solid rgba(59,130,246,.2); border-radius:10px; padding:12px 16px; }
+    .news-title { font-size:.65rem; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.07em; margin-bottom:10px; display:flex; align-items:center; gap:6px; }
+    .news-list { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .ni { display:flex; align-items:flex-start; gap:7px; padding:7px 9px; border-radius:7px; background:rgba(255,255,255,.04); border-left:2px solid var(--blue); }
+    .ni.o, .ni.g, .ni.p { border-left-color:var(--blue); }
+    .ni-ico { font-size:.68rem; margin-top:2px; }
+    .ni-txt { font-size:.7rem; line-height:1.4; }
+    .ni-src { color:var(--muted); font-size:.6rem; margin-top:2px; }
+
+#economia-page,
+#acciones-page{
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
+
+}
+
+.metric-value.up{
+  color:var(--green);
+}
+
+.metric-value.dn{
+  color:var(--red);
+}
+
+.stock-detail{
+
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:12px;
+
+  padding:12px;
+
+  margin-top:12px;
+
+}
+
+.stock-detail{
+
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:10px;
+
+  padding:10px 12px;
+}
+
+.mover-ticker{
+
+  font-size:.75rem;
+
+  font-weight:700;
+}
+
+.mover-change{
+
+  margin-top:4px;
+
+  font-size:.8rem;
+
+  font-weight:700;
+}
+
+
+.market-summary{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:8px;
+
+  margin-bottom:12px;
+}
+
+
+.stock-detail-title{
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:var(--white);
+  margin-bottom:2px;
+}
+
+.stock-detail-sub{
+  color:var(--muted);
+  font-size:.72rem;
+
+  margin-bottom:16px;
+}
+
+.stock-main-value{
+  font-size:.98rem;
+  font-weight:700;
+  color:var(--white);
+}
+
+.stock-range{
+  display:flex;
+  gap:6px;
+  margin:10px 0;
+}
+
+.stock-row.active{
+  background:rgba(59,130,246,.08);
+}
+
+.stock-row.active{
+
+  background:rgba(59,130,246,.10);
+
+  border-left:3px solid var(--blue);
+
+  box-shadow:inset 0 0 0 1px rgba(59,130,246,.18);
+}
+
+.stock-metrics{
+
+  display:grid;
+
+  grid-template-columns:1fr auto;
+
+  gap:8px;
+
+  margin-top:12px;
+}
+
+.metric-label{
+
+  color:var(--muted);
+
+  font-size:.58rem;
+}
+
+.metric-value{
+
+  font-size:.72rem;
+
+  font-weight:700;
+}
+
+.stock-chart-wrap{
+  height:152px;
+  margin-top:16px;
+margin-bottom:18px;
+}
+
+.stock-metrics{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px;
+  margin-top:10px;
+}
+
+.metric-label{
+  color:var(--muted);
+  font-size:.58rem;
+}
+
+.metric-value{
+  font-size:.72rem;
+  font-weight:700;
+}
+
+
+.market-stat{
+
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:10px;
+
+  padding:10px;
+}
+
+.market-stat-label{
+
+  font-size:.52rem;
+
+  color:var(--muted);
+
+  text-transform:uppercase;
+}
+
+.market-stat-value{
+
+  font-size:.9rem;
+
+  font-weight:700;
+
+  margin-top:4px;
+}
+
+.market-movers{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:8px;
+
+  margin-bottom:12px;
+}
+
+.mover-card{
+
+  border-radius:8px;
+
+  padding:8px;
+}
+
+.mover-up{
+
+  background:rgba(34,197,94,.08);
+
+  border:1px solid rgba(34,197,94,.20);
+}
+
+.mover-down{
+
+  background:rgba(239,68,68,.08);
+
+  border:1px solid rgba(239,68,68,.20);
+}
+
+.mover-title{
+
+  font-size:.52rem;
+
+  text-transform:uppercase;
+
+  color:var(--muted);
+}
+
+.stock-search{
+
+  width:100%;
+
+  margin-bottom:10px;
+
+  padding:10px 12px;
+
+  border-radius:10px;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  background:var(--bg2);
+
+  color:var(--white);
+
+  outline:none;
+}
+
+.stock-search::placeholder{
+  color:var(--muted);
+}
+
+.mover-ticker{
+
+  margin-top:4px;
+
+  font-weight:700;
+}
+
+.mover-change{
+
+  margin-top:2px;
+
+  font-size:.65rem;
+}
+
+.stock-row.active{
+
+  background:rgba(59,130,246,.08);
+
+  border-left:3px solid var(--blue);
+}
+
+.page-enter{
+
+  opacity:0;
+  transform:translateX(20px);
+
+}
+
+.page-show{
+
+  opacity:1;
+  transform:translateX(0);
+
+}
+
+
+.page-indicator{
+
+  position:fixed;
+
+  left:50%;
+  bottom:16px;
+
+  transform:translateX(-50%);
+
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  z-index:999;
+
+  padding:6px 12px;
+
+  border-radius:999px;
+
+  background:rgba(15,23,42,.55);
+
+  backdrop-filter:blur(10px);
+}
+
+#economia-page,
+#acciones-page{
+  opacity:1;
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
+}
+
+.page-show{
+  opacity:1;
+  transform:translateX(0);
+}
+
+
+.page-dot{
+
+  width:8px;
+  height:8px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,.25);
+
+  transition:all .25s ease;
+}
+
+.page-dot.active{
+width:20px;
+
+  background:rgba(255,255,255,.90);
+box-shadow:0 0 8px rgba(255,255,255,.15);
+
+  transform:scale(1.25);
+}
+    .dash-footer {
+      background:rgba(255,255,255,.02);
+      border-top:1px solid rgba(255,255,255,.05);
+      padding:8px 24px;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      gap:10px;
+    }
+    .footer-logo{
+      height:33.6px;
+      width:auto;
+      display:block;
+      opacity:.95;
+    }
+
+    #siwa-fab {
+      position:fixed; bottom:16px; right:24px; z-index:9999;
+      width:66px; height:66px; border-radius:50%; cursor:pointer;
+      border:3px solid rgba(59,130,246,.6);
+      box-shadow:0 4px 20px rgba(59,130,246,.4);
+      display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(135deg,#1d4ed8,#3b82f6);
+      font-size:2rem;
+      overflow:hidden;
+      transform:scale(.70);
+      transform-origin:bottom right;
+      transition:transform .4s ease, box-shadow .4s ease;
+    }
+    #siwa-fab.expanded{
+      transform:scale(1);
+      box-shadow:0 6px 24px rgba(59,130,246,.55);
+    }
+
+    #siwa-avatar-fab{ width:100%; height:100%; object-fit:cover; border-radius:50%; display:block; }
+    #siwa-notif {
+      position:absolute; top:-3px; right:-3px; width:18px; height:18px; border-radius:50%;
+      background:#ef4444; border:2px solid var(--bg); display:none; align-items:center; justify-content:center;
+      font-size:.58rem; font-weight:700; color:#fff;
+    }
+
+    #siwa-panel {
+      position:fixed; bottom:100px; right:24px; z-index:9998;
+      width:340px; background:var(--bg2); border:1px solid rgba(59,130,246,.25);
+      border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,.6);
+      display:none; flex-direction:column; overflow:hidden;
+    }
+    #siwa-panel.open { display:flex; }
+
+    #siwa-panel.menu-visible {
+      box-shadow:0 0 0 1px rgba(59,130,246,.2), 0 0 36px rgba(59,130,246,.25), 0 20px 60px rgba(0,0,0,.6);
+      border-color:rgba(59,130,246,.45);
+    }
+    #siwa-panel:not(.menu-visible){
+      box-shadow:0 20px 60px rgba(0,0,0,.6);
+      border-color:rgba(59,130,246,.25);
+    }
+
+    #siwa-header {
+      background:linear-gradient(135deg,#1a1a2e,#16213e);
+      border-bottom:2px solid var(--blue);
+      padding:12px 16px; display:flex; align-items:center; gap:10px;
+    }
+    #siwa-header-avatar{
+      width:38px; height:38px; border-radius:50%; object-fit:cover;
+      border:2px solid rgba(59,130,246,.6); flex-shrink:0;
+    }
+    #siwa-header-info h4 { font-size:.88rem; font-weight:700; margin:0; }
+    #siwa-header-info p { font-size:.65rem; color:var(--green); margin:0; }
+    #siwa-close,#siwa-back { background:none; border:none; color:var(--muted); cursor:pointer; }
+
+    #siwa-menu { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.06); }
+    #siwa-menu-title { font-size:.65rem; color:var(--muted); font-weight:600; text-transform:uppercase; margin-bottom:10px; }
+    .siwa-menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+    .siwa-menu-btn {
+      background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+      color:var(--white); padding:9px 12px; border-radius:10px;
+      font-size:.75rem; font-weight:600; cursor:pointer;
+    }
+    .siwa-menu-btn:hover { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.35); }
+    .siwa-menu-btn.active { background:rgba(59,130,246,.2); border-color:rgba(59,130,246,.45); box-shadow:0 0 0 1px rgba(59,130,246,.16); }
+    .siwa-menu-btn.pregunta { grid-column:1/-1; background:rgba(167,139,250,.1); border-color:rgba(167,139,250,.3); color:var(--purple); }
+
+    #siwa-sector-label { padding:6px 16px; background:rgba(59,130,246,.08); border-bottom:1px solid rgba(255,255,255,.05); font-size:.63rem; display:none; }
+    #siwa-sector-label span { color:var(--blue); font-weight:700; }
+
+    #siwa-msgs { flex:1; padding:12px 14px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; min-height:180px; max-height:260px; }
+    .sw-msg { display:flex; gap:8px; }
+    .sw-msg.user { flex-direction:row-reverse; }
+    .sw-bubble { max-width:84%; padding:8px 12px; border-radius:14px; font-size:.78rem; line-height:1.5; }
+    .sw-msg.bot .sw-bubble { background:var(--bg3); border:1px solid rgba(255,255,255,.07); }
+    .sw-msg.user .sw-bubble { background:linear-gradient(135deg,#1d4ed8,var(--blue)); }
+    .sw-time { font-size:.57rem; color:#475569; margin-top:2px; }
+    .sw-sugs { display:flex; flex-wrap:wrap; gap:5px; }
+    .sw-sug { background:rgba(59,130,246,.1); border:1px solid rgba(59,130,246,.25); color:var(--blue); padding:4px 9px; border-radius:14px; font-size:.68rem; cursor:pointer; }
+
+    #siwa-input-area { padding:10px 14px; border-top:1px solid rgba(255,255,255,.06); display:flex; gap:8px; }
+    #siwa-input { flex:1; background:var(--bg3); border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:8px 12px; color:var(--white); }
+    #siwa-send { width:34px; height:34px; border-radius:10px; background:var(--blue); border:none; color:var(--white); cursor:pointer; }
+
+    #siwa-panel.chat-mode #siwa-menu { display:none; }
+    #siwa-panel.chat-mode #siwa-sector-label { display:flex; }
+    #siwa-panel:not(.chat-mode) #siwa-sector-label,
+    #siwa-panel:not(.chat-mode) #siwa-msgs,
+    #siwa-panel:not(.chat-mode) #siwa-input-area { display:none; }
+
+    #siwa-panel.chat-mode #siwa-back { display:inline-flex; align-items:right; gap:3px; }
+    #siwa-panel:not(.chat-mode) #siwa-back { display:none; }
+
+    @media(max-width:640px) {
+      .news-list { grid-template-columns:1fr; }
+      .main { padding:12px 14px 100px; }
+    }
+
+@media (max-width:640px){
+
+  .kpi-grid{
+    height:190px;
+scroll-behavior:smooth;
+  }
+
+
+
+  .market-row{
+    min-height:56px;
+    padding:8px 12px;
+  }
+
+  .market-name{
+    font-size:.66rem;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  }
+
+  .market-sub{
+    font-size:.48rem;
+  }
+
+  .market-value{
+    font-size:.74rem;
+  }
+
+  .market-change{
+    font-size:.48rem;
+  }
+
+}
+
+@media(max-width:480px){
+  .kpi-card{ min-height:94px; padding:6px; }
+  .kpi-value{ font-size:.68rem; }
+}
+
+@media(max-width:640px){
+
+  .stock-list{
+    height:240px;
+  }
+
+  .stock-row{
+    min-height:58px;
+    padding:8px 12px;
+  }
+
+}
+
+  .chart-wrap { height:128px; }
+  .chart-nav-btn{ width:24px; height:24px; }
+
+  .footer-logo{ height:28.8px; }
+}
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+
+    <div class="top-bar-left">
+      <div class="top-bar-bar"></div>
+      <div class="top-bar-title-wrap">
+        <div class="top-bar-title" id="mainTitle">Informe Chile</div>
+        <div class="top-bar-subrow">
+          <div class="top-bar-sector" id="sectorTitle">General</div>
+          <div class="top-bar-date" id="fechaHoy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="main">
+
+  <div id="economia-page">
+
+<div class="kpi-grid-wrap">
+
+  <div class="kpi-grid"></div>
+
+  <div class="scroll-hint" id="kpiScrollHint">
+    ⌄⌄
+  </div>
+
+</div>
+
+    <div class="charts-panel-wrap">
+      <div class="chart-panel">
+        <div class="chart-overline">
+          Indicador seleccionado
+        </div>
+
+        <div id="chartsTrack"></div>
+      </div>
+    </div>
+
+    <div class="news-panel">
+      <div class="news-title">
+        <i class="fas fa-newspaper"></i>
+        Noticias Económicas del Día
+      </div>
+
+      <div class="news-list"></div>
+    </div>
+
+  </div>
+
+  <div
+    id="acciones-page"
+    style="display:none">
+
+
+  </div>
+
+
+<div class="page-indicator">
+
+  <span
+    class="page-dot active"
+    id="dot-economia">
+  </span>
+
+  <span
+    class="page-dot"
+    id="dot-acciones">
+  </span>
+
+</div>
+
+  <div class="dash-footer">
+    <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
+  </div>
+
+  <div id="siwa-fab" onclick="siwaToggle()" title="Hablar con Siwa">
+    <img src="Siwa.png" alt="Siwa" id="siwa-avatar-fab" />
+    <div id="siwa-notif">1</div>
+  </div>
+
+  <div id="siwa-panel">
+    <div id="siwa-header">
+      <img src="Siwa.png" alt="Siwa" id="siwa-header-avatar" />
+      <div id="siwa-header-info">
+        <h4>Siwa — Analista Económica</h4>
+        <p>En línea · Chile</p>
+      </div>
+      <button id="siwa-back" onclick="siwaVolverMenu()"><i class="fas fa-arrow-left"></i> Menú</button>
+    
+    </div>
+
+    <div id="siwa-menu">
+      <div id="siwa-menu-title">¿Qué necesitas?</div>
+      <div class="siwa-menu-grid">
+        <button id="btn-mineria" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('mineria')">⛏️ Minería</button>
+        <button id="btn-inmobiliario" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('inmobiliario')">🏠 Inmobiliario</button>
+        <button id="btn-financiero" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('financiero')">🏦 Financiero</button>
+        <button id="btn-retail" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('retail')">🛒 Retail</button>
+        <button id="btn-energia" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('energia')">⚡ Energía</button>
+        <button id="btn-salud" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('salud')">🩺 Salud</button>
+        <button id="btn-internacional" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('internacional')">🌎 Internacional</button>
+        <button id="btn-general" class="siwa-menu-btn siwa-sector-btn" onclick="siwaSelSector('general')">🌐 General</button>
+        <button class="siwa-menu-btn pregunta" onclick="siwaModoPregunta()"><i class="fas fa-comment-dots"></i> ¿Quieres hacer una pregunta?</button>
+      </div>
+    </div>
+
+    <div id="siwa-sector-label">
+      <i class="fas fa-chart-bar"></i> Sector activo: <span id=" siwa-sector-name">General</span>
+    </div>
+
+    <div id="siwa-msgs"></div>
+
+    <div id="siwa-input-area">
+      <input id="siwa-input" placeholder="Escribe tu pregunta..." type="text" onkeypress="if(event.key==='Enter') siwaEnviar()"/>
+      <button id="siwa-send" onclick="siwaEnviar()"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script>
+    var meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    var hoy = new Date();
+    document.getElementById('fechaHoy').textContent = hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear();
+
+    var SECTORES = {
+      general:{label:'General',icon:'🌐',desc:'Panorama macroeconómico general de Chile.'},
+      internacional:{label:'Internacional',icon:'🌎',desc:'Entorno global: Fed, China, commodities, geopolítica y mercados.'},
+      mineria:{label:'Minería',icon:'⛏️',desc:'Sector minero: foco en cobre, dólar, costos e inversión.'},
+      inmobiliario:{label:'Inmobiliario',icon:'🏠',desc:'Sector inmobiliario: UF, TPM, inflación y crédito.'},
+      financiero:{label:'Financiero',icon:'🏦',desc:'Sector financiero: TPM, EMBI, tipo de cambio y tasas.'},
+      retail:{label:'Retail/Consumo',icon:'🛒',desc:'Retail: IPC, empleo, importaciones y confianza consumidor.'},
+      energia:{label:'Energía',icon:'⚡',desc:'Energía: petróleo, dólar, IPC y costos marginales.'},
+      salud:{label:'Salud',icon:'🩺',desc:'Sector salud: presión regulatoria, siniestralidad y capacidad del sistema.'}
+    };
+    var SECTOR_ACTUAL = 'general';
+
+    var SECTOR_KPIS = {
+      general:[
+        {label:'USD/CLP observado',val:'$913,20',dv:'up',dvt:'+$1,20',dp:'up',dpt:'+0,13%',sub:'YTD +3,2% · 12m +5,6%'},
+        {label:'IPC',val:'-0,2% m/m',dv:'dn',dvt:'-0,2 pp',dp:'up',dpt:'Acum +2,1%',sub:'12m +3,8%'},
+        {label:'UF',val:'$40.851,38',dv:'up',dvt:'+$1,32',dp:'up',dpt:'+0,38%',sub:'variación mensual'},
+        {label:'IMACEC',val:'+1,8% a/a',dv:'up',dvt:'+0,3 pp',dp:'up',dpt:'Desest. +0,2%',sub:'serie desestacionalizada'},
+        {label:'Desempleo nacional',val:'8,6%',dv:'dn',dvt:'-0,1 pp',dp:'up',dpt:'Mejora',sub:'trimestre móvil'},
+        {label:'Riesgo país Chile',val:'89 pb',dv:'fl',dvt:'0 pb',dp:'fl',dpt:'EMBI',sub:'CDS 5Y: 63 pb'},
+        {label:'TPM',val:'4,50%',dv:'fl',dvt:'0 pb',dp:'dn',dpt:'12m: 4,25%',sub:'expectativa mercado'},
+        {label:'PIB real',val:'+0,7% t/t',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'+1,9% a/a',sub:'crecimiento trimestral'}
+      ],
+      internacional:[
+        {label:'DXY (Índice dólar)',val:'104,2',dv:'up',dvt:'+0,4',dp:'up',dpt:'+0,38%',sub:'sesión global'},
+        {label:'Cobre LME',val:'US$ 4,08/lb',dv:'dn',dvt:'-0,03',dp:'dn',dpt:'-0,73%',sub:'demanda China'},
+        {label:'Petróleo Brent',val:'US$ 82,6',dv:'up',dvt:'+0,8',dp:'up',dpt:'+0,98%',sub:'riesgo geopolítico'},
+        {label:'Treasury 10Y',val:'4,18%',dv:'up',dvt:'+0,03 pp',dp:'dn',dpt:'condiciones más restrictivas',sub:'bonos EE.UU.'},
+        {label:'VIX',val:'14,9',dv:'up',dvt:'+0,7',dp:'dn',dpt:'mayor volatilidad',sub:'mercado accionario'},
+        {label:'MSCI Emergentes',val:'+0,4%',dv:'up',dvt:'+0,2 pp',dp:'up',dpt:'flujo positivo',sub:'sesión diaria'},
+        {label:'PMI manufactura global',val:'50,7',dv:'fl',dvt:'0,0',dp:'up',dpt:'expansión leve',sub:'lectura compuesta'},
+        {label:'Spread HY global',val:'365 pb',dv:'up',dvt:'+6 pb',dp:'dn',dpt:'más aversión al riesgo',sub:'crédito corporativo'}
+      ],
+      salud:[
+        {label:'Judicialización',val:'Índice 114,2',dv:'up',dvt:'+1,8% a/a',dp:'dn',dpt:'presión legal',sub:'causas y fallos'},
+        {label:'Reclamos regulatorios',val:'42,3 mil',dv:'up',dvt:'+3,1% a/a',dp:'dn',dpt:'SERNAC/SIS',sub:'acumulado 12m'},
+        {label:'Siniestralidad',val:'86,4%',dv:'up',dvt:'+0,9 pp',dp:'dn',dpt:'costos al alza',sub:'prestaciones/ingresos'},
+        {label:'Licencias médicas',val:'7,2 MM',dv:'up',dvt:'+2,4% a/a',dp:'dn',dpt:'fiscalización',sub:'emitidas 12m'},
+        {label:'Beneficiarios Isapre',val:'3,18 MM',dv:'dn',dvt:'-1,2% a/a',dp:'dn',dpt:'menor base',sub:'afiliados vigentes'},
+        {label:'Beneficiarios Fonasa',val:'16,4 MM',dv:'up',dvt:'+1,1% a/a',dp:'up',dpt:'mayor cobertura',sub:'beneficiarios'},
+        {label:'Espera sistema público',val:'2,35 MM',dv:'up',dvt:'+2,7% a/a',dp:'dn',dpt:'presión red',sub:'listas de espera'},
+        {label:'Cumplimiento GES',val:'92,1%',dv:'up',dvt:'+0,6 pp',dp:'up',dpt:'mejora',sub:'garantías cumplidas'}
+      ]
+    };
+
+
+var ACCIONES = [
+
+ {
+  ticker:'SQM-B',
+
+  empresa:'Sociedad Química y Minera',
+
+  sector:'Minería',
+
+  precio:49820,
+
+  cambioPct:-1.8,
+
+  cambioClp:-910,
+
+  volumen:12500000,
+
+  moneda:'CLP',
+
+  up:false,
+
+  historico:{
+    '5d':[],
+    '1m':[],
+    '12m':[]
+  }
+},
+
+  {
+  ticker:'COPEC',
+  empresa:'Empresas Copec',
+  sector:'Energía',
+  precio:7245,
+  cambioPct:2.4,
+  cambioClp:170,
+  up:true,
+  historico:{
+    '5d':[],
+    '1m':[],
+    '12m':[]
+  }
+
+  },
+
+  {
+    ticker:'CMPC',
+    empresa:'Empresas CMPC',
+    precio:'1.912',
+    cambio:'+1,1%',
+    variacionPrecio:'+$21',
+    up:true
+  },
+
+  {
+    ticker:'BCI',
+    empresa:'Banco BCI',
+    precio:'34.510',
+    cambio:'+0,7%',
+    variacionPrecio:'+$240',
+    up:true
+  },
+
+  {
+    ticker:'BSANTANDER',
+    empresa:'Banco Santander Chile',
+    precio:'52,1',
+    cambio:'-0,5%',
+    variacionPrecio:'-$0,3',
+    up:false
+  },
+
+  {
+    ticker:'FALABELLA',
+    empresa:'Falabella S.A.',
+    precio:'3.215',
+    cambio:'-0,9%',
+    variacionPrecio:'-$29',
+    up:false
+  },
+
+  {
+    ticker:'CENCOSUD',
+    empresa:'Cencosud S.A.',
+    precio:'1.885',
+    cambio:'+1,5%',
+    variacionPrecio:'+$28',
+    up:true
+  },
+
+  {
+    ticker:'RIPLEY',
+    empresa:'Ripley Corp',
+    precio:'241',
+    cambio:'+0,4%',
+    variacionPrecio:'+$1',
+    up:true
+  },
+
+  {
+    ticker:'ENELAM',
+    empresa:'Enel Américas',
+    precio:'96,1',
+    cambio:'-0,3%',
+    variacionPrecio:'-$0,3',
+    up:false
+  },
+
+  {
+    ticker:'ENELCHILE',
+    empresa:'Enel Chile',
+    precio:'61,5',
+    cambio:'+0,8%',
+    variacionPrecio:'+$0,5',
+    up:true
+  },
+
+  {
+    ticker:'ANDINA-B',
+    empresa:'Embotelladora Andina',
+    precio:'2.985',
+    cambio:'+0,4%',
+    variacionPrecio:'+$12',
+    up:true
+  },
+
+  {
+    ticker:'IAM',
+    empresa:'Inversiones Aguas Metropolitanas',
+    precio:'781',
+    cambio:'+0,6%',
+    variacionPrecio:'+$5',
+    up:true
+  },
+
+  {
+    ticker:'AGUAS-A',
+    empresa:'Aguas Andinas',
+    precio:'276',
+    cambio:'-0,2%',
+    variacionPrecio:'-$1',
+    up:false
+  },
+
+  {
+    ticker:'CAP',
+    empresa:'CAP S.A.',
+    precio:'6.480',
+    cambio:'+2,8%',
+    variacionPrecio:'+$176',
+    up:true
+  },
+
+  {
+    ticker:'SONDA',
+    empresa:'Sonda S.A.',
+    precio:'482',
+    cambio:'+1,3%',
+    variacionPrecio:'+$6',
+    up:true
+  },
+
+  {
+    ticker:'PARAUCO',
+    empresa:'Parque Arauco',
+    precio:'1.045',
+    cambio:'+0,5%',
+    variacionPrecio:'+$5',
+    up:true
+  },
+
+  {
+    ticker:'MALLPLAZA',
+    empresa:'Mallplaza',
+    precio:'1.886',
+    cambio:'+0,9%',
+    variacionPrecio:'+$17',
+    up:true
+  },
+
+  {
+    ticker:'VAPORES',
+    empresa:'Compañía Sud Americana de Vapores',
+    precio:'57,8',
+    cambio:'-1,1%',
+    variacionPrecio:'-$0,6',
+    up:false
+  },
+
+  {
+    ticker:'CCU',
+    empresa:'Compañía Cervecerías Unidas',
+    precio:'7.850',
+    cambio:'+0,3%',
+    variacionPrecio:'+$24',
+    up:true
+  },
+
+  {
+    ticker:'CONCHATORO',
+    empresa:'Viña Concha y Toro',
+    precio:'1.295',
+    cambio:'-0,4%',
+    variacionPrecio:'-$5',
+    up:false
+  }
+
+];
+
+    var SECTOR_NOTICIAS = {
+      general: [],
+      internacional: [],
+      salud: []
+    };
+    var NEWS_LOAD_FAILED = false;
+
+    function noticiaFallback(mensaje, titulo){
+      return [{
+        cls:'o',
+        ico:'circle-info',
+        tit: titulo || 'Sin novedades sectoriales',
+        desc: mensaje || 'No hay noticias disponibles para este sector por ahora.',
+        fte:'Sistema'
+      }];
+    }
+
+    async function cargarNoticias(){
+      try{
+        var res = await fetch('./data/news.json', { cache: 'no-store' });
+        if(!res.ok) throw new Error('news.json HTTP ' + res.status);
+        var data = await res.json();
+        if(!data || typeof data!=='object' || Array.isArray(data)){
+          throw new Error('Formato inválido de news.json');
+        }
+        SECTOR_NOTICIAS.general = Array.isArray(data.general) ? data.general : [];
+        SECTOR_NOTICIAS.internacional = Array.isArray(data.internacional) ? data.internacional : [];
+        SECTOR_NOTICIAS.salud = Array.isArray(data.salud) ? data.salud : [];
+        NEWS_LOAD_FAILED = false;
+        renderNoticias(SECTOR_ACTUAL);
+      }catch(e){
+        console.warn('No se pudieron cargar noticias dinámicas:', e);
+        NEWS_LOAD_FAILED = true;
+        SECTOR_NOTICIAS.general = [];
+        SECTOR_NOTICIAS.internacional = [];
+        SECTOR_NOTICIAS.salud = [];
+        renderNoticias(SECTOR_ACTUAL);
+      }
+    }
+
+    var DEFAULT_CHART_COLOR = '#3b82f6';
+    var CHART_RANGE = '1m';
+    var CHART_ACTIVE_INDEX = 0;
+    var CHART_INSTANCES = [];
+    var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
+
+function renderKPIs(sector){
+
+  var kpis =
+    SECTOR_KPIS[sector] ||
+    SECTOR_KPIS.general;
+
+  var grid =
+    document.querySelector('.kpi-grid');
+
+  grid.innerHTML = '';
+
+  kpis.forEach(function(k,idx){
+
+    var arrow =
+      k.dv === 'up'
+        ? '↑'
+        : k.dv === 'dn'
+          ? '↓'
+          : '•';
+
+    var activeCls =
+      idx === CHART_ACTIVE_INDEX
+        ? ' active'
+        : '';
+
+    grid.innerHTML +=
+
+      '<div class="market-row'+activeCls+'" '+
+      'onclick="setActiveChart('+idx+')">'+
+
+        '<div class="market-left">'+
+
+          '<div class="market-name">'+
+            escapeHtml(k.label || '')+
+          '</div>'+
+
+          '<div class="market-sub">'+
+            escapeHtml(k.sub || '')+
+          '</div>'+
+
+        '</div>'+
+
+        '<div class="market-right">'+
+
+          '<div class="market-value">'+
+            escapeHtml(k.val || '—')+
+          '</div>'+
+
+          '<div class="market-change '+
+            (k.dv || 'fl')+
+          '">'+
+
+            arrow+' '+
+            escapeHtml(k.dvt || '')+
+
+            (k.dpt
+            ? ' ('+escapeHtml(k.dpt)+')'
+            : '')+
+
+          '</div>'+
+
+        '</div>'+
+
+      '</div>';
+
+  });
+
+  syncActiveKPIState();
+}
+
+   function syncActiveKPIState(){
+
+  document
+    .querySelectorAll('.market-row')
+    .forEach(function(row,idx){
+
+      row.classList.toggle(
+        'active',
+        idx === CHART_ACTIVE_INDEX
+      );
+
+    });
+
+}
+
+    function safeUrl(url){
+      try{
+        var u = new URL(url);
+        return (u.protocol === 'https:' || u.protocol === 'http:') ? url : null;
+      }catch(e){ return null; }
+    }
+
+    function renderNoticias(sector){
+      var list = document.querySelector('.news-list');
+      if(!list) return;
+
+      var nots = SECTOR_NOTICIAS[sector];
+      if(!Array.isArray(nots) || !nots.length){
+        nots = NEWS_LOAD_FAILED
+          ? noticiaFallback('No fue posible cargar las noticias en este momento.', 'Noticias no disponibles')
+          : noticiaFallback();
+      }
+
+      var html = '';
+      nots.forEach(function(n){
+        var cls = n.cls ? ' '+n.cls : '';
+        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'')+'</div></div>';
+        var href = n.url ? safeUrl(n.url) : null;
+        if(href){
+          html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>';
+        } else {
+          html += '<div class="ni'+cls+'">'+inner+'</div>';
+        }
+      });
+      list.innerHTML = html;
+    }
+
+    function setSector(sector){
+      if(!SECTORES[sector]) sector='general';
+      SECTOR_ACTUAL = sector;
+      CHART_ACTIVE_INDEX = 0;
+
+      var sectorText = SECTORES[sector].label;
+      var sectorTitle = document.getElementById('sectorTitle');
+      if(sectorTitle) sectorTitle.textContent = sectorText;
+
+      document.querySelectorAll('.siwa-sector-btn').forEach(function(b){ b.classList.remove('active'); });
+      var btn = document.getElementById('btn-'+sector); if(btn) btn.classList.add('active');
+
+      renderKPIs(sector);
+      renderNoticias(sector);
+      renderCharts(sector,false);
+      syncActiveKPIState();
+    }
+
+    var baseOpts = {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}}
+    };
+
+    var SECTOR_CHARTS = {
+      general:[
+        {title:'USD/CLP observado',sub:'nivel y variación',color:'#3b82f6',base:913,drift:0.6,amp:1.6},
+        {title:'IPC',sub:'variación mensual/anual',color:'#3b82f6',base:3.8,drift:-0.03,amp:0.2},
+        {title:'UF',sub:'valor diario',color:'#3b82f6',base:40850,drift:3.2,amp:6},
+        {title:'IMACEC',sub:'variación interanual',color:'#3b82f6',base:1.8,drift:0.05,amp:0.18},
+        {title:'Desempleo nacional',sub:'trimestre móvil',color:'#3b82f6',base:8.6,drift:-0.02,amp:0.1},
+        {title:'Riesgo país Chile',sub:'EMBI / CDS 5Y',color:'#3b82f6',base:89,drift:-0.4,amp:1.8},
+        {title:'TPM',sub:'nivel y expectativa 12m',color:'#3b82f6',base:4.5,drift:-0.02,amp:0.06},
+        {title:'PIB real',sub:'trimestral e interanual',color:'#3b82f6',base:1.9,drift:0.02,amp:0.15}
+      ],
+      internacional:[
+        {title:'DXY (Índice dólar)',sub:'fortaleza global del USD',color:'#3b82f6',base:104.2,drift:0.04,amp:0.25},
+        {title:'Cobre LME',sub:'precio internacional',color:'#3b82f6',base:4.08,drift:-0.002,amp:0.03},
+        {title:'Petróleo Brent',sub:'US$/barril',color:'#3b82f6',base:82.6,drift:0.05,amp:0.7},
+        {title:'Treasury 10Y',sub:'rendimiento',color:'#3b82f6',base:4.18,drift:0.003,amp:0.02},
+        {title:'VIX',sub:'volatilidad implícita',color:'#3b82f6',base:14.9,drift:0.03,amp:0.5},
+        {title:'MSCI Emergentes',sub:'desempeño índice',color:'#3b82f6',base:1032,drift:1.2,amp:4.5},
+        {title:'PMI manufactura global',sub:'difusión',color:'#3b82f6',base:50.7,drift:0.01,amp:0.08},
+        {title:'Spread HY global',sub:'riesgo crédito',color:'#3b82f6',base:365,drift:0.4,amp:2.2}
+      ],
+      salud:[
+        {title:'Judicialización',sub:'índice de causas/fallos',color:'#3b82f6',base:114.2,drift:0.4,amp:1.2},
+        {title:'Reclamos regulatorios',sub:'miles de casos',color:'#3b82f6',base:42.3,drift:0.08,amp:0.5},
+        {title:'Siniestralidad',sub:'porcentaje',color:'#3b82f6',base:86.4,drift:0.05,amp:0.3},
+        {title:'Licencias médicas',sub:'millones',color:'#3b82f6',base:7.2,drift:0.01,amp:0.04},
+        {title:'Beneficiarios Isapre',sub:'millones',color:'#3b82f6',base:3.18,drift:-0.002,amp:0.01},
+        {title:'Beneficiarios Fonasa',sub:'millones',color:'#3b82f6',base:16.4,drift:0.003,amp:0.01},
+        {title:'Espera sistema público',sub:'millones de casos',color:'#3b82f6',base:2.35,drift:0.003,amp:0.02},
+        {title:'Cumplimiento GES',sub:'porcentaje',color:'#3b82f6',base:92.1,drift:0.02,amp:0.08}
+      ]
+    };
+
+function renderAccionesPage(){
+
+  var stock = ACCIONES[ACTIVE_STOCK];
+
+  var html =
+
+   
+
+    '<div class="market-summary">' +
+
+      '<div class="market-stat">' +
+        '<div class="market-stat-label">IPSA</div>' +
+        '<div class="market-stat-value">6.842</div>' +
+      '</div>' +
+
+      '<div class="market-stat">' +
+        '<div class="market-stat-label">Variación</div>' +
+        '<div class="market-stat-value">+1,2%</div>' +
+      '</div>' +
+
+    '</div>' +
+'<div class="market-movers">' +
+
+  '<div class="mover-card mover-up">' +
+    '<div class="mover-ticker">▲ CAP</div>' +
+    '<div class="mover-change">+2,8%</div>' +
+  '</div>' +
+
+  '<div class="mover-card mover-down">' +
+    '<div class="mover-ticker">▼ SQM-B</div>' +
+    '<div class="mover-change">-1,8%</div>' +
+  '</div>' +
+
+'</div>' +
+ 
+'<input ' +
+'class="stock-search" ' +
+'type="text" ' +
+'placeholder="Buscar acción..." ' +
+'value="' + STOCK_FILTER + '" ' +
+'onkeyup="filterStocks(this.value)">' +
+
+    '<div class="stock-list-wrap">' +
+
+  '<div class="stock-list">';
+
+ACCIONES.forEach(function(a,idx){
+
+  if(
+    STOCK_FILTER &&
+    !a.ticker.toLowerCase().includes(STOCK_FILTER) &&
+    !a.empresa.toLowerCase().includes(STOCK_FILTER)
+  ){
+    return;
+  }
+
+  html +=
+
+    '<div class="stock-row' +
+      (idx === ACTIVE_STOCK ? ' active' : '') +
+    '" onclick="selectStock(' + idx + ')">' +
+
+        '<div>' +
+
+          '<div class="stock-symbol">' +
+            a.ticker +
+          '</div>' +
+
+          '<div class="stock-company">' +
+            a.empresa +
+          '</div>' +
+
+        '</div>' +
+
+        '<div>' +
+
+          '<div class="stock-price">' +
+          fmtPrice(getPrice(a)) +
+          '</div>' +
+
+        '<div class="stock-change ' +
+  (a.up ? 'up' : 'dn') +
+'">' +
+  (a.up ? '▲ ' : '▼ ') +
+  fmtPct(getPct(a)) +
+'</div>' +
+
+'<div class="stock-variation">' +
+  fmtClp(getClp(a)) +
+'</div>' +
+
+        '</div>' +
+
+      '</div>';
+
+  });
+
+html +=
+
+  '</div>' +
+
+  '<div class="scroll-hint" id="stockScrollHint">' +
+    '⌄⌄' +
+  '</div>' +
+
+'</div>';
+
+html +=
+
+  '<div class="stock-detail">' +
+'<div class="section-title">' +
+  'Detalle de Acción' +
+'</div>' +
+
+
+
+    '<div class="stock-detail-title">' +
+      stock.ticker +
+    '</div>' +
+
+    '<div class="stock-detail-sub">' +
+      stock.empresa +
+    '</div>' +
+
+    '<div class="stock-metrics">' +
+
+      '<div class="metric-label">Precio</div>' +
+      '<div class="metric-value">$' +
+        fmtPrice(getPrice(stock)) +
+      '</div>' +
+
+      '<div class="metric-label">Variación</div>' +
+     '<div class="metric-value ' +
+  (stock.up ? 'up' : 'dn') +
+'">' +
+  fmtPct(getPct(stock)) +
+'</div>' +
+
+      '<div class="metric-label">Cambio CLP</div>' +
+      '<div class="metric-value">' +
+        fmtClp(getClp(stock))
+      '</div>' +
+
+    '</div>' +
+'<div class="stock-chart-wrap">' +
+  '<canvas id="stockChart"></canvas>' +
+'</div>' +
+'<div class="chart-range-bottom">' +
+  '<button class="range-btn active">5 días</button>' +
+  '<button class="range-btn">1 mes</button>' +
+  '<button class="range-btn">12 meses</button>' +
+
+'</div>' +
+
+
+  '</div>';
+
+  
+
+  document.getElementById(
+    'acciones-page'
+  ).innerHTML = html;
+
+bindScrollHint(
+  '.stock-list',
+  '#stockScrollHint'
+);
+
+bindScrollHint(
+'.kpi-grid',
+'#kpiScrollHint'
+);
+
+renderStockChart(stock);
+}
+
+var ACTIVE_STOCK = 0;
+
+var STOCK_FILTER = '';
+
+function setDashboardPage(page){
+
+document
+  .getElementById('dot-economia')
+  .classList.remove('active');
+
+document
+  .getElementById('dot-acciones')
+  .classList.remove('active');
+
+CURRENT_PAGE = page;
+  var eco =
+    document.getElementById(
+      'economia-page'
+    );
+
+  var acc =
+    document.getElementById(
+      'acciones-page'
+    );
+
+ 
+
+ if(page === 'economia'){
+
+document
+  .getElementById('dot-economia')
+  .classList.add('active');
+
+    eco.style.display='block';
+    acc.style.display='none';
+
+
+eco.classList.remove('page-show');
+requestAnimationFrame(function(){
+eco.classList.add('page-show');
+});
+
+    document
+      .getElementById('mainTitle')
+      .textContent = 'Informe Chile';
+
+    document
+      .getElementById('sectorTitle')
+      .textContent =
+      SECTORES[SECTOR_ACTUAL].label;
+
+}else{
+
+document
+  .getElementById('dot-acciones')
+  .classList.add('active');
+
+    eco.style.display='none';
+    acc.style.display='block';
+
+  acc.classList.remove('page-show');
+requestAnimationFrame(function(){
+acc.classList.add('page-show');
+});
+
+    document
+      .getElementById('mainTitle')
+      .textContent =
+      'Mercado Acciones';
+
+    document
+      .getElementById('sectorTitle')
+      .textContent =
+      'Bolsa de Santiago';
+
+}
+
+}
+
+function filterStocks(value){
+
+  STOCK_FILTER = value.toLowerCase();
+
+  renderAccionesPage();
+
+  var input =
+    document.querySelector('.stock-search');
+
+  if(input){
+
+    input.focus();
+
+    input.value = value;
+
+    input.setSelectionRange(
+      value.length,
+      value.length
+    );
+
+  }
+
+}
+
+    function getRangeLabels(range){
+      if(range==='12m'){
+        var mesesCortos=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+        var mLabels=[];
+        var baseMes=new Date();
+        for(var i=11;i>=0;i--){
+          var md=new Date(baseMes);
+          md.setDate(1);
+          md.setMonth(baseMes.getMonth()-i);
+          mLabels.push(mesesCortos[md.getMonth()]);
+        }
+        return mLabels;
+      }
+      if(range==='5d'){
+        var days=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
+        var labels=[];
+        var baseDia=new Date();
+        for(var j=4;j>=0;j--){
+          var d=new Date(baseDia);
+          d.setDate(baseDia.getDate()-j);
+          labels.push(days[d.getDay()]);
+        }
+        return labels;
+      }
+      var m=[];
+      var baseMesDia=new Date();
+      for(var k=5;k>=0;k--){
+        var dm=new Date(baseMesDia);
+        dm.setDate(baseMesDia.getDate()-(k*6));
+        m.push(dm.getDate()+'/'+(dm.getMonth()+1));
+      }
+      return m;
+    }
+
+    function buildSeries(base,drift,amp,points){
+      var out=[];
+      for(var i=0;i<points;i++){
+        var val=base + (drift*i) + (Math.sin(i*1.4)*amp);
+        var digits=base>=100 ? 1 : base>=10 ? 2 : 3;
+        out.push(Number(val.toFixed(digits)));
+      }
+      return out;
+    }
+
+function fmtPrice(n){
+
+  return n.toLocaleString(
+    'es-CL'
+  );
+
+}
+function fmtPct(n){
+
+  return (
+    n>0 ? '+' : ''
+  ) +
+  n.toFixed(1)
+  .replace('.',',') +
+  '%';
+
+}
+function fmtClp(n){
+
+  return (
+    n>0 ? '+' : ''
+  ) +
+  '$' +
+  Math.abs(n)
+  .toLocaleString('es-CL');
+
+}
+
+function setupScrollHint(container){
+
+  var hint =
+    container.parentNode.querySelector('.scroll-hint');
+
+  if(!hint) return;
+
+  function update(){
+
+    var hasMore =
+      container.scrollTop +
+      container.clientHeight <
+      container.scrollHeight - 10;
+
+    hint.style.opacity =
+      hasMore ? '1' : '0';
+  }
+
+  container.addEventListener('scroll', update);
+
+  update();
+}
+
+
+    function destroyCharts(){
+      CHART_INSTANCES.forEach(function(c){ if(c&&c.destroy) c.destroy(); });
+      CHART_INSTANCES=[];
+    }
+
+    function setChartRange(range){
+      CHART_RANGE=range;
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function setActiveChart(index){
+      CHART_ACTIVE_INDEX=index;
+      syncActiveKPIState();
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function prevChart(){
+      var defs = SECTOR_CHARTS[SECTOR_ACTUAL] || SECTOR_CHARTS.general;
+      CHART_ACTIVE_INDEX = (CHART_ACTIVE_INDEX - 1 + defs.length) % defs.length;
+      syncActiveKPIState();
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+    function nextChart(){
+      var defs = SECTOR_CHARTS[SECTOR_ACTUAL] || SECTOR_CHARTS.general;
+      CHART_ACTIVE_INDEX = (CHART_ACTIVE_INDEX + 1) % defs.length;
+      syncActiveKPIState();
+      renderCharts(SECTOR_ACTUAL,true);
+    }
+
+function selectStock(idx){
+
+  var stockList =
+    document.querySelector('.stock-list');
+
+  var scrollPos =
+    stockList
+      ? stockList.scrollTop
+      : 0;
+
+  ACTIVE_STOCK = idx;
+
+  renderAccionesPage();
+
+  stockList =
+    document.querySelector('.stock-list');
+
+  if(stockList){
+    stockList.scrollTop = scrollPos;
+  }
+
+}
+
+setTimeout(function(){
+
+  var activeRow =
+    document.querySelector(
+      '.stock-row.active'
+    );
+
+  if(activeRow){
+
+    activeRow.scrollIntoView({
+      block:'nearest'
+    });
+
+  }
+
+},0);
+
+    function escapeHtml(text){
+      return String(text)
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;')
+        .replace(/'/g,'&#39;');
+    }
+
+var STOCK_CHART = null;
+
+function renderStockChart(stock){
+console.log('rendering stock chart', stock.ticker);
+  var canvas =
+    document.getElementById('stockChart');
+console.log('canvas:', canvas);
+console.log('Chart:', typeof Chart);
+
+  if(!canvas) return;
+
+  if(STOCK_CHART){
+    STOCK_CHART.destroy();
+  }
+
+  var labels = [
+    'Lun',
+    'Mar',
+    'Mié',
+    'Jue',
+    'Vie',
+    'Hoy'
+  ];
+
+ var base = getPrice(stock);
+
+  var data = [
+    base * 0.96,
+    base * 0.97,
+    base * 0.985,
+    base * 0.98,
+    base * 1.01,
+    base
+  ];
+
+console.log(canvas);
+console.log(data);
+try {
+console.log('before new Chart');
+``
+  STOCK_CHART = new Chart(canvas,  {
+      type:'line',
+      data:{
+        labels:labels,
+        datasets:[{
+          data:data,
+          borderColor:
+            stock.up ? '#22c55e' : '#ef4444',
+          backgroundColor:
+            stock.up
+              ? 'rgba(34,197,94,.12)'
+              : 'rgba(239,68,68,.12)',
+          fill:true,
+          tension:.35,
+          borderWidth:2,
+          pointRadius:0
+        }]
+      },
+      options:{
+        responsive:true,
+        maintainAspectRatio:false
+      }
+    });
+
+} catch(err) {
+
+  console.error(
+    'STOCK CHART ERROR:',
+    err
+  );
+
+}
+}     
+
+
+
+
+function bindScrollHint(
+  containerSelector,
+  hintSelector
+){
+
+  var container =
+    document.querySelector(
+      containerSelector
+    );
+
+  var hint =
+    document.querySelector(
+      hintSelector
+    );
+
+  if(!container || !hint) return;
+
+  function updateHint(){
+
+    var atBottom =
+
+      container.scrollTop +
+      container.clientHeight >=
+      container.scrollHeight - 5;
+
+    hint.classList.toggle(
+      'hidden',
+      atBottom
+    );
+
+  }
+
+  container.addEventListener(
+    'scroll',
+    updateHint
+  );
+
+  updateHint();
+
+}
+    function getSafeColor(color){
+      return /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color||'') ? color : DEFAULT_CHART_COLOR;
+    }
+
+    function attachChartSwipe(el){
+      if(!el) return;
+      var startX = 0, startY = 0, touching = false;
+      el.addEventListener('touchstart', function(e){
+        if(!e.touches || !e.touches.length) return;
+        touching = true;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+      }, {passive:true});
+      el.addEventListener('touchend', function(e){
+        if(!touching || !e.changedTouches || !e.changedTouches.length) return;
+        touching = false;
+        var dx = e.changedTouches[0].clientX - startX;
+        var dy = e.changedTouches[0].clientY - startY;
+        if(Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)){
+          if(dx < 0) nextChart();
+          else prevChart();
+        }
+      }, {passive:true});
+    }
+
+    function renderCharts(sector,preserveIndex){
+      var defs=SECTOR_CHARTS[sector] || SECTOR_CHARTS.general;
+      if(!defs.length) defs=SECTOR_CHARTS.general;
+
+      var track=document.getElementById('chartsTrack');
+      destroyCharts();
+
+      if(!preserveIndex || CHART_ACTIVE_INDEX>defs.length-1) CHART_ACTIVE_INDEX=0;
+
+      var def=defs[CHART_ACTIVE_INDEX] || defs[0];
+      var safeColor=getSafeColor(def.color);
+
+      var rangeBtns=['5d','1m','12m'].map(function(r){
+        var cls=r===CHART_RANGE ? 'range-btn active' : 'range-btn';
+        return '<button class="'+cls+'" onclick="setChartRange(\''+r+'\')">'+RANGE_LABELS[r]+'</button>';
+      }).join('');
+
+      track.innerHTML =
+        '<div class="chart-head">' +
+          '<div class="chart-title">' +
+            '<div class="chart-accent" style="background:'+safeColor+'"></div>' +
+            escapeHtml(def.title) +
+            '<span class="chart-sub">'+escapeHtml(def.sub)+'</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="chart-wrap" id="chartSwipeArea"><canvas id="chart-'+sector+'-'+CHART_ACTIVE_INDEX+'"></canvas></div>' +
+        '<div class="chart-nav-bottom">' +
+          '<div class="chart-range-bottom">'+rangeBtns+'</div>' +
+          '<div class="chart-nav-right">' +
+            '<button class="chart-nav-btn" onclick="prevChart()" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>' +
+            '<button class="chart-nav-btn" onclick="nextChart()" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>' +
+          '</div>' +
+        '</div>';
+
+      var labels=getRangeLabels(CHART_RANGE);
+      var data=buildSeries(def.base,def.drift,def.amp,labels.length);
+      var canvas=document.getElementById('chart-'+sector+'-'+CHART_ACTIVE_INDEX);
+
+      CHART_INSTANCES.push(new Chart(canvas,{
+        type:'line',
+        data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:safeColor+'33',tension:.35,fill:true,borderWidth:2,pointRadius:2}]},
+        options:baseOpts
+      }));
+
+      attachChartSwipe(document.getElementById('chartSwipeArea'));
+    }
+
+var CURRENT_PAGE = 'economia';
+
+    var siwaOpen=false, siwaChatMode=false;
+    var SIWA_AGENT_ENDPOINT='/api/siwa-ask';
+    var SIWA_USE_AGENT_FOR_OPEN=true;
+
+    function detectarIntencion(t){
+      t=t.toLowerCase();
+      if(t.match(/d[oó]lar|usd|clp/)) return 'dolar';
+      if(t.match(/cobre|lme/)) return 'cobre';
+      if(t.match(/embi|riesgo pa[ií]s/)) return 'embi';
+      if(t.match(/impacto|afecta|sector/)) return 'sector_impacto';
+      if(t.match(/perspectiva|proyecci[oó]n|futuro/)) return 'sector_perspectiva';
+      if(t.match(/riesgo|amenaza/)) return 'sector_riesgo';
+      return 'general';
+    }
+
+    function generarRespuesta(intencion,texto){
+      return 'Panorama general: inflación moderada, riesgo país bajo y sector externo estable.';
+    }
+
+    function isOpenQuestion(text){
+      var t=(text||'').toLowerCase().trim();
+      if(!t) return false;
+      if(t.length>70) return true;
+      if(t.match(/por qu[eé]|porque|explica|analiza|impacto|escenario|riesgo|proyecci[oó]n|expectativa|recomienda|estrategia|opini[oó]n|conviene/)) return true;
+      if(t.includes('?')) return true;
+      return false;
+    }
+
+    function getSectorContextPayload(){
+      var sec=SECTOR_ACTUAL||'general';
+      var secObj=SECTORES[sec]||SECTORES.general;
+      var kpis=(SECTOR_KPIS[sec]||SECTOR_KPIS.general).slice(0,8);
+      return {sector:sec,sector_label:secObj.label||'General',sector_desc:secObj.desc||'',kpis:kpis};
+    }
+
+    async function preguntarAgenteCopilot(userText){
+      var ctx=getSectorContextPayload();
+      var payload={question:userText,sector:ctx.sector,sector_label:ctx.sector_label,sector_desc:ctx.sector_desc,kpis:ctx.kpis,ui_date:new Date().toLocaleDateString('es-CL')};
+      var res=await fetch(SIWA_AGENT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      if(!res.ok){ var e=await res.text().catch(function(){return 'agent_error';}); throw new Error(e); }
+      var data=await res.json();
+      if(!data||!data.answer) throw new Error('invalid agent response');
+      return data.answer;
+    }
+
+function getPrice(stock){
+
+  if(typeof stock.precio === 'number'){
+    return stock.precio;
+  }
+
+  return Number(
+    String(stock.precio)
+      .replace(/\./g,'')
+      .replace(',','.')
+  );
+
+}
+
+function getPct(stock){
+
+  return stock.cambioPct ??
+         parseFloat(
+           stock.cambio
+             .replace('%','')
+             .replace(',','.')
+         );
+
+}
+
+function getClp(stock){
+
+  return stock.cambioClp ??
+         stock.variacionPrecio;
+
+}
+
+    function hora(){ return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'}); }
+
+    function siwaAddBot(html){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div><div class="sw-bubble">'+html+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaAddUser(text){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg user';
+      d.innerHTML='<div><div class="sw-bubble">'+text+'</div><div class="sw-time">'+hora()+'</div></div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaAddSugs(sugs){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.innerHTML='<div class="sw-sugs">'+sugs.map(function(s){return '<button class="sw-sug" onclick="siwaEnviarTexto(\''+s.replace(/'/g,"\\'")+'\')">'+s+'</button>';}).join('')+'</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaShowTyping(){
+      var msgs=document.getElementById('siwa-msgs');
+      var d=document.createElement('div');
+      d.className='sw-msg bot';
+      d.id='sw-typing';
+      d.innerHTML='<div class="sw-bubble">Escribiendo...</div>';
+      msgs.appendChild(d);
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+
+    function siwaHideTyping(){
+      var t=document.getElementById('sw-typing');
+      if(t) t.remove();
+    }
+
+    function siwaShowMenu(){
+      siwaChatMode=false;
+      var panel=document.getElementById('siwa-panel');
+      panel.classList.remove('chat-mode');
+      panel.classList.add('menu-visible');
+      document.getElementById('siwa-msgs').innerHTML='';
+    }
+
+    function siwaToggle(){
+      siwaOpen=!siwaOpen;
+      var p=document.getElementById('siwa-panel');
+      var fab=document.getElementById('siwa-fab');
+      if(siwaOpen){
+        p.classList.add('open');
+        fab.classList.add('expanded');
+        siwaShowMenu();
+        document.getElementById('siwa-notif').style.display='none';
+      } else {
+        p.classList.remove('open');
+        fab.classList.remove('expanded');
+      }
+    }
+
+    function siwaClose(){
+      siwaOpen=false;
+      var p=document.getElementById('siwa-panel');
+      var fab=document.getElementById('siwa-fab');
+      p.classList.remove('open');
+      p.classList.remove('menu-visible');
+      fab.classList.remove('expanded');
+    }
+
+    function siwaVolverMenu(){
+      siwaShowMenu();
+    }
+
+    function siwaModoPregunta(){
+      siwaChatMode=true;
+      var panel=document.getElementById('siwa-panel');
+      panel.classList.add('chat-mode');
+      panel.classList.remove('menu-visible');
+      document.getElementById('siwa-sector-name').textContent=SECTORES[SECTOR_ACTUAL].label;
+      document.getElementById('siwa-msgs').innerHTML='';
+      siwaAddBot('¡Hola! Soy <strong>Siwa</strong>. Mantengo el contexto del sector seleccionado y puedo consultar el agente Copilot para preguntas abiertas.');
+      setTimeout(function(){
+        siwaAddSugs(['¿Cómo está el dólar?','¿Qué es el EMBI?','Analiza riesgos del sector actual','Perspectiva 6 meses']);
+      },300);
+    }
+
+    function siwaSelSector(sector){
+      SECTOR_ACTUAL=sector;
+      setSector(sector);
+
+      siwaChatMode=true;
+      var panel=document.getElementById('siwa-panel');
+      panel.classList.add('chat-mode');
+      panel.classList.remove('menu-visible');
+      document.getElementById('siwa-sector-name').textContent=SECTORES[sector].label;
+      document.getElementById('siwa-msgs').innerHTML='';
+
+      var s=SECTORES[sector];
+      siwaAddBot('Sector <strong>'+s.icon+' '+s.label+'</strong> seleccionado.<br><br>'+s.desc+'<br><br><small style="color:#94a3b8">Las preguntas abiertas se responderán con análisis del agente Copilot.</small>');
+      setTimeout(function(){
+        siwaAddSugs(['¿Cómo afecta al sector?','¿Cuáles son los riesgos?','Perspectivas futuras','¿Qué estrategia recomiendas?']);
+      },350);
+    }
+
+    async function siwaEnviar(){
+      var input=document.getElementById('siwa-input');
+      if(!input) return;
+      var text=(input.value||'').trim();
+      if(!text) return;
+      siwaAddUser(escapeHtml(text));
+      input.value='';
+      siwaShowTyping();
+      try{
+        var resp;
+        if(SIWA_USE_AGENT_FOR_OPEN && isOpenQuestion(text)){
+          resp=await preguntarAgenteCopilot(text);
+        } else {
+          resp=generarRespuesta(detectarIntencion(text),text);
+        }
+        siwaHideTyping();
+        siwaAddBot(resp);
+      } catch(e){
+        siwaHideTyping();
+        siwaAddBot('Lo siento, hubo un error al procesar tu consulta. Intenta nuevamente.');
+      }
+    }
+
+    function siwaEnviarTexto(texto){
+      var input=document.getElementById('siwa-input');
+      if(input){
+        input.value=texto;
+        siwaEnviar();
+      }
+    }
+
+    /* STOCK_DATA: static demo values — replace with API fetch for live data */
+    var STOCK_DATA=[
+      {sym:'IPSA',val:'6.842',chg:'+1.2%',up:true},
+      {sym:'ECL',val:'1.245',chg:'-0.4%',up:false},
+      {sym:'FALABELLA',val:'892',chg:'+0.8%',up:true},
+      {sym:'COPEC',val:'7.210',chg:'+2.1%',up:true},
+      {sym:'BCI',val:'34.500',chg:'-0.2%',up:false},
+      {sym:'CMPC',val:'1.890',chg:'+0.5%',up:true}
+    ];
+
+    function renderStockList(){
+      var container=document.getElementById('stock-list');
+      if(!container) return;
+      container.innerHTML=STOCK_DATA.map(function(s){
+        var color=s.up ? 'var(--green)' : 'var(--red)';
+        return '<div class="stock-row"><span class="stock-sym">'+escapeHtml(s.sym)+'</span><span class="stock-val">'+escapeHtml(s.val)+'</span><span class="stock-chg" style="color:'+color+'">'+escapeHtml(s.chg)+'</span></div>';
+      }).join('');
+    }
+
+let pageSwipeStartX = 0;
+let pageSwipeStartY = 0;
+
+    document.addEventListener('DOMContentLoaded', function(){
+      setSector('general');
+      cargarNoticias();
+renderAccionesPage();
+var mainArea =
+  document.querySelector('.main');
+
+if(mainArea){
+
+  mainArea.addEventListener(
+    'touchstart',
+    function(e){
+
+      pageSwipeStartX =
+        e.touches[0].clientX;
+
+      pageSwipeStartY =
+        e.touches[0].clientY;
+
+    },
+    { passive:true }
+  );
+
+  mainArea.addEventListener(
+    'touchend',
+    function(e){
+
+      const dx =
+        e.changedTouches[0].clientX -
+        pageSwipeStartX;
+
+      const dy =
+        e.changedTouches[0].clientY -
+        pageSwipeStartY;
+
+     if(Math.abs(dx) < 40) return;
+
+if(Math.abs(dx) < Math.abs(dy) * 1.2) return;
+
+      if(
+        dx < 0 &&
+        CURRENT_PAGE === 'economia'
+      ){
+        setDashboardPage('acciones');
+      }
+
+      if(
+        dx > 0 &&
+        CURRENT_PAGE === 'acciones'
+      ){
+        setDashboardPage('economia');
+      }
+
+    },
+    { passive:true }
+  );
+
+}
+
+      var input=document.getElementById('siwa-input');
+      if(input){
+        input.addEventListener('keydown',function(e){
+          if(e.key==='Enter'){ e.preventDefault(); siwaEnviar(); }
+        });
+      }
+    });
+
+    </script>
+  </body>
+</html>
