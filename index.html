@@ -1137,7 +1137,20 @@ box-shadow:0 0 8px rgba(255,255,255,.15);
 scroll-behavior:smooth;
   }
 
+@media (max-width:400px){
 
+  .stock-header,
+  .stock-row{
+
+    grid-template-columns:
+      minmax(90px,1.5fr)
+      55px
+      55px
+      55px;
+
+  }
+
+}
 
   .market-row{
     min-height:56px;
