@@ -109,11 +109,14 @@
     .main { padding:16px 24px 100px; }
 
 .stock-list{
-  background:var(--bg2);
 
-  border:1px solid rgba(255,255,255,.07);
+border-top-left-radius:0;
+border-top-right-radius:0;
+  background:none;
 
-  border-radius:12px;
+  border:none;
+
+  border-radius:0;
 
   height:250px;   /* about 4 rows visible */
 
@@ -310,6 +313,58 @@ scroll-behavior:smooth;
   margin-top:2px;
   text-align:right;
 }
+
+
+.stock-header{
+
+  display:grid;
+
+  grid-template-columns:2fr 1fr 1fr 1fr;
+
+  align-items:center;
+
+  padding:10px 12px;
+
+  background:rgba(59,130,246,.08);
+
+  border-bottom:1px solid rgba(59,130,246,.15);
+
+  font-size:.58rem;
+
+  font-weight:700;
+
+  color:#60a5fa;
+
+  text-transform:uppercase;
+
+  letter-spacing:.05em;
+}
+
+.stock-header div{
+
+  cursor:pointer;
+
+  user-select:none;
+
+  transition:.2s;
+}
+
+.stock-header div:hover{
+
+  color:#93c5fd;
+}
+
+.stock-list-wrap{
+
+  background:var(--bg2);
+
+  border:1px solid rgba(255,255,255,.07);
+
+  border-radius:12px;
+
+  overflow:hidden;
+}
+
 
 
 /* KPI CARD */
@@ -1643,6 +1698,38 @@ function renderKPIs(sector){
 function renderAccionesPage(){
 
   var stock = ACCIONES[ACTIVE_STOCK];
+var stocks = [...ACCIONES];
+
+stocks.sort(function(a,b){
+
+  var dir =
+    STOCK_SORT_DIR === 'asc'
+      ? 1
+      : -1;
+
+  if(STOCK_SORT === 'ticker'){
+    return dir *
+      a.ticker.localeCompare(b.ticker);
+  }
+
+  if(STOCK_SORT === 'price'){
+    return dir *
+      (getPrice(a) - getPrice(b));
+  }
+
+  if(STOCK_SORT === 'pct'){
+    return dir *
+      (getPct(a) - getPct(b));
+  }
+
+  if(STOCK_SORT === 'clp'){
+    return dir *
+      (getClp(a) - getClp(b));
+  }
+
+  return 0;
+
+});
 
   var html =
 
@@ -1682,11 +1769,26 @@ function renderAccionesPage(){
 'value="' + STOCK_FILTER + '" ' +
 'onkeyup="filterStocks(this.value)">' +
 
-    '<div class="stock-list-wrap">' +
 
-  '<div class="stock-list">';
+ 
+'<div class="stock-list-wrap">' +
 
-ACCIONES.forEach(function(a,idx){
+'<div class="stock-header">' +
+
+'<div onclick="sortStocks(\'ticker\')">Nombre ↕</div>' +
+'<div onclick="sortStocks(\'price\')">Precio ↕</div>' +
+'<div onclick="sortStocks(\'pct\')">Var % ↕</div>' +
+'<div onclick="sortStocks(\'clp\')">Δ CLP ↕</div>' +
+'</div>' +
+
+'<div class="stock-list">';
+
+
+
+
+
+
+stocks.forEach(function(a,idx){
 
   if(
     STOCK_FILTER &&
@@ -1742,10 +1844,13 @@ html +=
   '</div>' +
 
   '<div class="scroll-hint" id="stockScrollHint">' +
+
+
     '⌄⌄' +
   '</div>' +
 
 '</div>';
+
 
 html +=
 
@@ -1819,6 +1924,29 @@ renderStockChart(stock);
 var ACTIVE_STOCK = 0;
 
 var STOCK_FILTER = '';
+
+var STOCK_SORT = 'ticker';
+var STOCK_SORT_DIR = 'asc';
+
+function sortStocks(field){
+
+  if(STOCK_SORT === field){
+
+    STOCK_SORT_DIR =
+      STOCK_SORT_DIR === 'asc'
+        ? 'desc'
+        : 'asc';
+
+  } else {
+
+    STOCK_SORT = field;
+    STOCK_SORT_DIR = 'asc';
+
+  }
+
+  renderAccionesPage();
+
+}
 
 function setDashboardPage(page){
 
