@@ -106,7 +106,7 @@
 
 
 
-    .main { padding:16px 24px 100px; }
+    .main { padding:16px 24px 80px; }
 
 .stock-list{
 
@@ -137,9 +137,6 @@ border-top-right-radius:0;
 
 .stock-row{
 
-  display:grid;
-
-  grid-template-columns:2fr 1fr 1fr 1fr;
 
   align-items:center;
 
@@ -151,7 +148,7 @@ border-top-right-radius:0;
 
   min-height:54px;
 }
-``
+
 .stock-col-name{
   display:flex;
   flex-direction:column;
@@ -161,7 +158,7 @@ border-top-right-radius:0;
 .stock-col-pct,
 .stock-col-clp{
 
-  text-align:right;
+  text-align:center;
 
   font-size:.72rem;
 
@@ -339,20 +336,47 @@ scroll-behavior:smooth;
   text-align:right;
 }
 
+.stock-header,
+.stock-row{
+
+  display:grid;
+
+  grid-template-columns:
+    minmax(120px,2fr)
+    90px
+    90px
+    90px;
+
+  align-items:center;
+
+}
+.stock-header div:first-child{
+  text-align:left;
+}
+
+.stock-header div:nth-child(2),
+.stock-header div:nth-child(3),
+.stock-header div:nth-child(4){
+  text-align:center;
+}
 
 .stock-header{
 
   display:grid;
 
-  grid-template-columns:2fr 1fr 1fr 1fr;
+  grid-template-columns:
+    minmax(120px,2fr)
+    90px
+    90px
+    90px;
 
   align-items:center;
 
   padding:10px 12px;
 
-  background:rgba(59,130,246,.08);
+  background:rgba(59,130,246,.10);
 
-  border-bottom:1px solid rgba(59,130,246,.15);
+  border-bottom:1px solid rgba(59,130,246,.25);
 
   font-size:.58rem;
 
@@ -362,9 +386,25 @@ scroll-behavior:smooth;
 
   text-transform:uppercase;
 
-  letter-spacing:.05em;
+  letter-spacing:.06em;
 }
 
+.stock-header div{
+
+  padding:2px 0;
+
+  cursor:pointer;
+
+  user-select:none;
+}
+
+.stock-header div:first-child{
+  text-align:left;
+}
+
+.stock-header div:not(:first-child){
+  text-align:center;
+}
 .stock-header div{
 
   cursor:pointer;
@@ -389,6 +429,7 @@ scroll-behavior:smooth;
 
   overflow:hidden;
 }
+
 
 
 
@@ -890,27 +931,15 @@ margin-bottom:18px;
 
 
 .page-indicator{
-
-  position:fixed;
-
-  left:50%;
-  bottom:16px;
-
-  transform:translateX(-50%);
+  flex:1;
 
   display:flex;
+  justify-content:center;
   align-items:center;
   gap:8px;
 
-  z-index:999;
-
-  padding:6px 12px;
-
-  border-radius:999px;
-
-  background:rgba(15,23,42,.55);
-
-  backdrop-filter:blur(10px);
+  position:static;
+  transform:none;
 }
 
 #economia-page,
@@ -947,16 +976,28 @@ box-shadow:0 0 8px rgba(255,255,255,.15);
 
   transform:scale(1.25);
 }
-    .dash-footer {
-      background:rgba(255,255,255,.02);
-      border-top:1px solid rgba(255,255,255,.05);
-      padding:8px 24px;
-      display:flex;
-      align-items:center;
-      justify-content:flex-start;
-      gap:10px;
-    }
+  
+.dash-footer{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+
+  height:64px;
+
+  display:flex;
+  align-items:center;
+
+  padding:0 16px;
+
+  background:#0f172a;
+  border-top:1px solid rgba(255,255,255,.08);
+
+  z-index:999;
+}
+
     .footer-logo{
+flex-shrink:0;
       height:33.6px;
       width:auto;
       display:block;
@@ -1180,6 +1221,10 @@ scroll-behavior:smooth;
   </div>
 
 
+
+  <div class="dash-footer">
+    <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
+
 <div class="page-indicator">
 
   <span
@@ -1194,8 +1239,6 @@ scroll-behavior:smooth;
 
 </div>
 
-  <div class="dash-footer">
-    <img src="Logo Blanco Alternativo.png" alt="Logo" class="footer-logo">
   </div>
 
   <div id="siwa-fab" onclick="siwaToggle()" title="Hablar con Siwa">
@@ -2290,7 +2333,8 @@ console.log(canvas);
 console.log(data);
 try {
 console.log('before new Chart');
-``
+
+
   STOCK_CHART = new Chart(canvas,  {
       type:'line',
       data:{
