@@ -24,6 +24,6 @@ jobs:
 
           git add data/*.json
 
-          git commit -m "Update market data" || exit 0
+          git commit -m "U*date market data" || exit 0
 
-          git push
+     *    git push
