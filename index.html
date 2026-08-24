@@ -2056,6 +2056,29 @@ var STOCK_FILTER = '';
 
 var STOCK_SORT = 'ticker';
 var STOCK_SORT_DIR = 'asc';
+var STOCK_HISTORY = {};
+
+async function loadStockHistory(){
+
+  try{
+
+    const res =
+      await fetch('./data/stock-history.json');
+
+    STOCK_HISTORY =
+      await res.json();
+
+  }catch(err){
+
+    console.error(
+      'Error loading stock history',
+      err
+    );
+
+  }
+
+}
+
 
 function sortStocks(field){
 
@@ -2422,7 +2445,14 @@ console.log('Chart:', typeof Chart);
 
  var base = getPrice(stock);
 
-  var data = [
+ var data =
+  STOCK_HISTORY[
+    stock.ticker
+  ]?.['5d'];
+
+if(!data){
+
+  data = [
     base * 0.96,
     base * 0.97,
     base * 0.985,
@@ -2430,6 +2460,9 @@ console.log('Chart:', typeof Chart);
     base * 1.01,
     base
   ];
+
+}
+
 
 console.log(canvas);
 console.log(data);
@@ -2845,6 +2878,7 @@ let pageSwipeStartY = 0;
     document.addEventListener('DOMContentLoaded', function(){
       setSector('general');
       cargarNoticias();
+loadStockHistory();
 renderAccionesPage();
 var mainArea =
   document.querySelector('.main');
