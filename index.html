@@ -1926,8 +1926,13 @@ stocks.forEach(function(a,idx){
 html +=
 
 '<div class="stock-row' +
-  (idx === ACTIVE_STOCK ? ' active' : '') +
-'" onclick="selectStock(' + idx + ')">' +
+  (a.ticker === ACCIONES[ACTIVE_STOCK].ticker
+  ? ' active'
+  : '') +
+'" onclick="selectStockByTicker(\'' +
+a.ticker +
+'\')">' +
+
 
   '<div class="stock-col-name">' +
 
@@ -1955,14 +1960,19 @@ html +=
     '%' +
   '</div>' +
 
-  '<div class="stock-col-clp ' +
-    (a.up ? 'up' : 'dn') +
-  '">' +
-    (a.up ? '▲ ' : '▼ ') +
-    '$' +
-    Math.abs(getClp(a))
-      .toLocaleString('es-CL') +
-  '</div>' +
+ '<div class="stock-col-clp ' +
+  (a.up ? 'up' : 'dn') +
+'">' +
+  (a.up ? '▲ ' : '▼ ') +
+  '$' +
+  Math.abs(getClp(a)).toLocaleString(
+    'es-CL',
+    {
+      minimumFractionDigits:2,
+      maximumFractionDigits:2
+    }
+  ) +
+'</div>' +
 
 '</div>';
 
@@ -2014,7 +2024,7 @@ html +=
 
       '<div class="metric-label">Cambio CLP</div>' +
       '<div class="metric-value">' +
-        fmtClp(getClp(stock))
+        fmtClp(getClp(stock)) +
       '</div>' +
 
     '</div>' +
@@ -2037,6 +2047,11 @@ html +=
     'acciones-page'
   ).innerHTML = html;
 
+console.log(
+  'HAS CANVAS:',
+  html.includes('stockChart')
+);
+
 bindScrollHint(
   '.stock-list',
   '#stockScrollHint'
@@ -2045,6 +2060,10 @@ bindScrollHint(
 bindScrollHint(
 '.kpi-grid',
 '#kpiScrollHint'
+);
+
+console.log(
+  document.getElementById('acciones-page').innerHTML
 );
 
 renderStockChart(stock);
@@ -2230,12 +2249,15 @@ function clearStockFilter(){
     }
 
 function fmtPrice(n){
-
-  return n.toLocaleString(
-    'es-CL'
+  return Number(n).toLocaleString(
+    'es-CL',
+    {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }
   );
-
 }
+
 function fmtPct(n){
 
   return (
@@ -2246,14 +2268,21 @@ function fmtPct(n){
   '%';
 
 }
+
 function fmtClp(n){
 
   return (
-    n>0 ? '+' : ''
+    n > 0 ? '+' : ''
   ) +
   '$' +
   Math.abs(n)
-  .toLocaleString('es-CL');
+    .toLocaleString(
+      'es-CL',
+      {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      }
+    );
 
 }
 
@@ -2310,6 +2339,32 @@ function setupScrollHint(container){
       syncActiveKPIState();
       renderCharts(SECTOR_ACTUAL,true);
     }
+
+function selectStockByTicker(ticker){
+
+  var stockList =
+    document.querySelector('.stock-list');
+
+  var scrollPos =
+    stockList
+      ? stockList.scrollTop
+      : 0;
+
+  ACTIVE_STOCK =
+    ACCIONES.findIndex(function(s){
+      return s.ticker === ticker;
+    });
+
+  renderAccionesPage();
+
+  stockList =
+    document.querySelector('.stock-list');
+
+  if(stockList){
+    stockList.scrollTop = scrollPos;
+  }
+
+}
 
 function selectStock(idx){
 
@@ -2420,9 +2475,15 @@ console.log('before new Chart');
         }]
       },
       options:{
-        responsive:true,
-        maintainAspectRatio:false
-      }
+  responsive:true,
+  maintainAspectRatio:false,
+
+  plugins:{
+    legend:{
+      display:false
+    }
+  }
+}
     });
 
 } catch(err) {
@@ -2624,11 +2685,18 @@ function getPct(stock){
 
 function getClp(stock){
 
-  return stock.cambioClp ??
-         stock.variacionPrecio;
+  if(typeof stock.cambioClp === 'number'){
+    return stock.cambioClp;
+  }
+
+  return parseFloat(
+    String(stock.variacionPrecio)
+      .replace('$','')
+      .replace(/\./g,'')
+      .replace(',','.')
+  );
 
 }
-
     function hora(){ return new Date().toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'}); }
 
     function siwaAddBot(html){
