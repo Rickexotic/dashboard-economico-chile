@@ -737,6 +737,12 @@ translateY(6px);
   color:var(--red);
 }
 
+    .stock-update{
+  color:var(--muted);
+  font-size:.55rem;
+  margin-bottom:10px;
+}
+
 .stock-detail{
 
   background:var(--bg2);
@@ -2023,10 +2029,17 @@ html +=
       stock.ticker +
     '</div>' +
 
+  
+
     '<div class="stock-detail-sub">' +
       stock.empresa +
     '</div>' +
 
+'<div class="stock-update">' +
+'Actualizado: ' +
+(STOCK_LAST_UPDATE || 'N/D') +
+'</div>' +
+  
   '<div class="stock-range-stats">' +
 
   '<div class="range-stat">' +
@@ -2130,6 +2143,7 @@ var STOCK_FILTER = '';
 var STOCK_SORT = 'ticker';
 var STOCK_SORT_DIR = 'asc';
 var STOCK_HISTORY = {};
+var STOCK_LAST_UPDATE = '';
 var STOCK_RANGE = '1M';
 
 async function loadStockHistory(){
@@ -2139,8 +2153,16 @@ async function loadStockHistory(){
     const res =
       await fetch('./data/stock-history.json');
 
-    STOCK_HISTORY =
-      await res.json();
+   const historyData =
+  await res.json();
+
+STOCK_LAST_UPDATE =
+  historyData.meta?.lastUpdate || '';
+
+delete historyData.meta;
+
+STOCK_HISTORY =
+  historyData;
 
   }catch(err){
 
