@@ -1,1 +1,21 @@
-
+{
+  "updated": "2026-08-25",
+  "stocks": [
+    {
+      "ticker": "SQM-B",
+      "empresa": "Sociedad Química y Minera",
+      "precio": 49820,
+      "cambioPct": -1.8,
+      "cambioClp": -910,
+      "up": false
+    },
+    {
+      "ticker": "COPEC",
+      "empresa": "Empresas Copec",
+      "precio": 7245,
+      "cambioPct": 2.4,
+      "cambioClp": 170,
+      "up": true
+    }
+  ]
+}
