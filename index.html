@@ -1797,6 +1797,9 @@ function renderKPIs(sector){
 function renderAccionesPage(){
 
   var stock = ACCIONES[ACTIVE_STOCK];
+
+var stats =
+getRangeStats(stock);
 var stocks = [...ACCIONES];
 
 stocks.sort(function(a,b){
@@ -2014,18 +2017,29 @@ html +=
 '</div>' +
 '<div class="chart-range-bottom">' +
 
-  '<button class="range-btn ' +
-    (STOCK_RANGE === '5d' ? 'active' : '') +
-  '" onclick="setStockRange(\'5d\')">5 días</button>' +
+'<button class="range-btn ' +
+  (STOCK_RANGE === '5D' ? 'active' : '') +
+'" onclick="setStockRange(\'5D\')">5D</button>' +
 
-  '<button class="range-btn ' +
-    (STOCK_RANGE === '1m' ? 'active' : '') +
-  '" onclick="setStockRange(\'1m\')">1 mes</button>' +
+'<button class="range-btn ' +
+  (STOCK_RANGE === '1M' ? 'active' : '') +
+'" onclick="setStockRange(\'1M\')">1M</button>' +
 
-  '<button class="range-btn ' +
-    (STOCK_RANGE === '12m' ? 'active' : '') +
-  '" onclick="setStockRange(\'12m\')">12 meses</button>' +
+'<button class="range-btn ' +
+  (STOCK_RANGE === '6M' ? 'active' : '') +
+'" onclick="setStockRange(\'6M\')">6M</button>' +
 
+'<button class="range-btn ' +
+  (STOCK_RANGE === 'YTD' ? 'active' : '') +
+'" onclick="setStockRange(\'YTD\')">YTD</button>' +
+
+'<button class="range-btn ' +
+  (STOCK_RANGE === '1A' ? 'active' : '') +
+'" onclick="setStockRange(\'1A\')">1A</button>' +
+
+'<button class="range-btn ' +
+  (STOCK_RANGE === '5A' ? 'active' : '') +
+'" onclick="setStockRange(\'5A\')">5A</button>' +
 '</div>' +
 
   '</div>';
@@ -2065,7 +2079,7 @@ var STOCK_FILTER = '';
 var STOCK_SORT = 'ticker';
 var STOCK_SORT_DIR = 'asc';
 var STOCK_HISTORY = {};
-var STOCK_RANGE = '5d';
+var STOCK_RANGE = '1M';
 
 async function loadStockHistory(){
 
@@ -2189,6 +2203,37 @@ acc.classList.add('page-show');
       'Bolsa de Santiago';
 
 }
+
+}
+
+function getRangeStats(stock){
+
+  var data =
+    STOCK_HISTORY[
+      stock.ticker
+    ]?.[STOCK_RANGE];
+
+  if(!data || data.length < 2){
+
+    return {
+      pct:0,
+      clp:0
+    };
+
+  }
+
+  var first = data[0];
+  var last  = data[data.length-1];
+
+  return {
+
+    pct:
+      ((last-first)/first)*100,
+
+    clp:
+      last-first
+
+  };
 
 }
 
