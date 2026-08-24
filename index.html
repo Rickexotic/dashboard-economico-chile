@@ -213,6 +213,38 @@ border-top-right-radius:0;
   color:var(--red);
 }
 
+.stock-search-wrap{
+  position:relative;
+  margin-bottom:10px;
+}
+
+.stock-search{
+  width:100%;
+  padding:10px 40px 10px 12px;
+}
+
+.stock-search-clear{
+
+  position:absolute;
+
+  top:50%;
+  right:10px;
+
+  transform:translateY(-50%);
+
+  border:none;
+  background:none;
+
+  color:var(--muted);
+
+  cursor:pointer;
+
+  font-size:.9rem;
+}
+
+.stock-search-clear:hover{
+  color:white;
+}
 
 /* KPI MARKET LIST */
 
@@ -450,6 +482,10 @@ max-width:100%;
 .stock-col-clp,
 .stock-header div:last-child{
   padding-right:10px;
+}
+
+.stock-search-clear.hidden{
+  display:none;
 }
 
 
@@ -1832,13 +1868,20 @@ function sortArrow(field){
 
 '</div>' +
  
-'<input ' +
-'class="stock-search" ' +
-'type="text" ' +
-'placeholder="Buscar acción..." ' +
-'value="' + STOCK_FILTER + '" ' +
-'onkeyup="filterStocks(this.value)">' +
+'<div class="stock-search-wrap">' +
 
+  '<input ' +
+    'class="stock-search" ' +
+    'type="text" ' +
+    'placeholder="Buscar acción..." ' +
+    'value="' + STOCK_FILTER + '" ' +
+    'onkeyup="filterStocks(this.value)">' +
+
+'<button class="stock-search-clear ' +
+   (STOCK_FILTER ? '' : 'hidden') +
+'" onclick="clearStockFilter()">✕</button>' +
+
+'</div>' +
 
  
 '<div class="stock-list-wrap">' +
@@ -2132,6 +2175,15 @@ function filterStocks(value){
   }
 
 }
+
+function clearStockFilter(){
+
+  STOCK_FILTER = '';
+
+  renderAccionesPage();
+
+}
+
 
     function getRangeLabels(range){
       if(range==='12m'){
