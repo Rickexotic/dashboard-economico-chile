@@ -1,24 +1,19 @@
 import json
 from datetime import datetime
 
-output = {
-    "meta": {
-        "lastUpdate": datetime.now().strftime(
-            "%Y-%m-%d %H:%M UTC"
-        )
-    }
-}
-
 with open(
-    "data/stock-history.json",
+    "data/update-status.json",
     "w",
     encoding="utf-8"
 ) as f:
     json.dump(
-        output,
+        {
+            "lastUpdate": datetime.utcnow().strftime(
+                "%Y-%m-%d %H:%M UTC"
+            )
+        },
         f,
-        indent=2,
-        ensure_ascii=False
+        indent=2
     )
 
-print("stock-history.json updated")
+print("update-status.json updated")
