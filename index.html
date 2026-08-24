@@ -2013,12 +2013,20 @@ html +=
   '<canvas id="stockChart"></canvas>' +
 '</div>' +
 '<div class="chart-range-bottom">' +
-  '<button class="range-btn active">5 días</button>' +
-  '<button class="range-btn">1 mes</button>' +
-  '<button class="range-btn">12 meses</button>' +
+
+  '<button class="range-btn ' +
+    (STOCK_RANGE === '5d' ? 'active' : '') +
+  '" onclick="setStockRange(\'5d\')">5 días</button>' +
+
+  '<button class="range-btn ' +
+    (STOCK_RANGE === '1m' ? 'active' : '') +
+  '" onclick="setStockRange(\'1m\')">1 mes</button>' +
+
+  '<button class="range-btn ' +
+    (STOCK_RANGE === '12m' ? 'active' : '') +
+  '" onclick="setStockRange(\'12m\')">12 meses</button>' +
 
 '</div>' +
-
 
   '</div>';
 
@@ -2057,6 +2065,7 @@ var STOCK_FILTER = '';
 var STOCK_SORT = 'ticker';
 var STOCK_SORT_DIR = 'asc';
 var STOCK_HISTORY = {};
+var STOCK_RANGE = '5d';
 
 async function loadStockHistory(){
 
@@ -2095,6 +2104,14 @@ function sortStocks(field){
     STOCK_SORT_DIR = 'asc';
 
   }
+
+  renderAccionesPage();
+
+}
+
+function setStockRange(range){
+
+  STOCK_RANGE = range;
 
   renderAccionesPage();
 
@@ -2434,7 +2451,11 @@ console.log('Chart:', typeof Chart);
     STOCK_CHART.destroy();
   }
 
-  var labels = [
+ var labels;
+
+if(STOCK_RANGE === '5d'){
+
+  labels = [
     'Lun',
     'Mar',
     'Mié',
@@ -2443,12 +2464,42 @@ console.log('Chart:', typeof Chart);
     'Hoy'
   ];
 
+}else if(STOCK_RANGE === '1m'){
+
+  labels = [
+    'S1',
+    'S2',
+    'S3',
+    'S4',
+    'Hoy'
+  ];
+
+}else{
+
+  labels = [
+    'Ene',
+    'Feb',
+    'Mar',
+    'Abr',
+    'May',
+    'Jun',
+    'Jul',
+    'Ago',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Hoy'
+  ];
+
+}
+
+
  var base = getPrice(stock);
 
- var data =
+var data =
   STOCK_HISTORY[
     stock.ticker
-  ]?.['5d'];
+  ]?.[STOCK_RANGE];
 
 if(!data){
 
