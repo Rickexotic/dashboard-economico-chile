@@ -1393,39 +1393,203 @@ scroll-behavior:smooth;
 
 
 var ACCIONES = [
+
   {
-    ticker:'TEST',
-    empresa:'Test',
-    precio:'100',
-    cambio:'+1%',
+    ticker:'SQM-B',
+    empresa:'Sociedad Química y Minera',
+    sector:'Minería',
+    precio:49820,
+    cambioPct:-1.8,
+    cambioClp:-910,
+    volumen:12500000,
+    moneda:'CLP',
+    up:false,
+    historico:{
+      '5d':[],
+      '1m':[],
+      '12m':[]
+    }
+  },
+
+  {
+    ticker:'COPEC',
+    empresa:'Empresas Copec',
+    sector:'Energía',
+    precio:7245,
+    cambioPct:2.4,
+    cambioClp:170,
+    up:true,
+    historico:{
+      '5d':[],
+      '1m':[],
+      '12m':[]
+    }
+  },
+
+  {
+    ticker:'CMPC',
+    empresa:'Empresas CMPC',
+    precio:'1.912',
+    cambio:'+1,1%',
+    variacionPrecio:'+$21',
+    up:true
+  },
+
+  {
+    ticker:'BCI',
+    empresa:'Banco BCI',
+    precio:'34.510',
+    cambio:'+0,7%',
+    variacionPrecio:'+$240',
+    up:true
+  },
+
+  {
+    ticker:'BSANTANDER',
+    empresa:'Banco Santander Chile',
+    precio:'52,1',
+    cambio:'-0,5%',
+    variacionPrecio:'-$0,3',
+    up:false
+  },
+
+  {
+    ticker:'FALABELLA',
+    empresa:'Falabella S.A.',
+    precio:'3.215',
+    cambio:'-0,9%',
+    variacionPrecio:'-$29',
+    up:false
+  },
+
+  {
+    ticker:'CENCOSUD',
+    empresa:'Cencosud S.A.',
+    precio:'1.885',
+    cambio:'+1,5%',
+    variacionPrecio:'+$28',
+    up:true
+  },
+
+  {
+    ticker:'RIPLEY',
+    empresa:'Ripley Corp',
+    precio:'241',
+    cambio:'+0,4%',
     variacionPrecio:'+$1',
     up:true
+  },
+
+  {
+    ticker:'ENELAM',
+    empresa:'Enel Américas',
+    precio:'96,1',
+    cambio:'-0,3%',
+    variacionPrecio:'-$0,3',
+    up:false
+  },
+
+  {
+    ticker:'ENELCHILE',
+    empresa:'Enel Chile',
+    precio:'61,5',
+    cambio:'+0,8%',
+    variacionPrecio:'+$0,5',
+    up:true
+  },
+
+  {
+    ticker:'ANDINA-B',
+    empresa:'Embotelladora Andina',
+    precio:'2.985',
+    cambio:'+0,4%',
+    variacionPrecio:'+$12',
+    up:true
+  },
+
+  {
+    ticker:'IAM',
+    empresa:'Inversiones Aguas Metropolitanas',
+    precio:'781',
+    cambio:'+0,6%',
+    variacionPrecio:'+$5',
+    up:true
+  },
+
+  {
+    ticker:'AGUAS-A',
+    empresa:'Aguas Andinas',
+    precio:'276',
+    cambio:'-0,2%',
+    variacionPrecio:'-$1',
+    up:false
+  },
+
+  {
+    ticker:'CAP',
+    empresa:'CAP S.A.',
+    precio:'6.480',
+    cambio:'+2,8%',
+    variacionPrecio:'+$176',
+    up:true
+  },
+
+  {
+    ticker:'SONDA',
+    empresa:'Sonda S.A.',
+    precio:'482',
+    cambio:'+1,3%',
+    variacionPrecio:'+$6',
+    up:true
+  },
+
+  {
+    ticker:'PARAUCO',
+    empresa:'Parque Arauco',
+    precio:'1.045',
+    cambio:'+0,5%',
+    variacionPrecio:'+$5',
+    up:true
+  },
+
+  {
+    ticker:'MALLPLAZA',
+    empresa:'Mallplaza',
+    precio:'1.886',
+    cambio:'+0,9%',
+    variacionPrecio:'+$17',
+    up:true
+  },
+
+  {
+    ticker:'VAPORES',
+    empresa:'Compañía Sud Americana de Vapores',
+    precio:'57,8',
+    cambio:'-1,1%',
+    variacionPrecio:'-$0,6',
+    up:false
+  },
+
+  {
+    ticker:'CCU',
+    empresa:'Compañía Cervecerías Unidas',
+    precio:'7.850',
+    cambio:'+0,3%',
+    variacionPrecio:'+$24',
+    up:true
+  },
+
+  {
+    ticker:'CONCHATORO',
+    empresa:'Viña Concha y Toro',
+    precio:'1.295',
+    cambio:'-0,4%',
+    variacionPrecio:'-$5',
+    up:false
   }
+
 ];
-    async function loadStocks(){
-
-  try{
-
-    const response =
-      await fetch('./data/stocks.json');
-
-    const data =
-      await response.json();
-
-    ACCIONES =
-      data.stocks;
-
-    renderAccionesPage();
-
-  }catch(err){
-
-    console.error(
-      'Error loading stocks',
-      err
-    );
-
-  }
-
+ 
 }
     
     var SECTOR_NOTICIAS = {
@@ -2901,7 +3065,7 @@ let pageSwipeStartY = 0;
       setSector('general');
       cargarNoticias();
 loadStockHistory();
-loadStocks();
+renderAccionesPage();
 var mainArea =
   document.querySelector('.main');
 
