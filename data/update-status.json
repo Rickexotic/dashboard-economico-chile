@@ -1,3 +1,23 @@
 {
-  "lastUpdate": "2026-08-24 22:27 UTC"
+  "lastUpdate": "2026-08-24 22:39 UTC",
+  "tickers": {
+    "SQM-B.SN": {
+      "rows": 5
+    },
+    "COPEC.SN": {
+      "rows": 5
+    },
+    "CMPC.SN": {
+      "rows": 5
+    },
+    "BCI.SN": {
+      "rows": 5
+    },
+    "BSANTANDER.SN": {
+      "rows": 5
+    },
+    "FALABELLA.SN": {
+      "rows": 5
+    }
+  }
 }
