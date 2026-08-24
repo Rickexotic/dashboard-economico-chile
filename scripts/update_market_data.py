@@ -126,20 +126,22 @@ TICKERS = {
     }
 
 }
+
 stocks = []
 
-for ticker_name, yahoo_ticker in TICKERS.items():
+for ticker_name, info in TICKERS.items():
 
     try:
 
-        ticker = yf.Ticker(yahoo_ticker)
+        ticker = yf.Ticker(info["yf"])
 
         hist = ticker.history(period="5d")
+
         print(ticker_name, len(hist))
 
-       if len(hist) < 2:
-           print(f"Skipping {ticker_name}")
-           continue
+        if len(hist) < 2:
+            print(f"Skipping {ticker_name}")
+            continue
 
         last = float(hist["Close"].iloc[-1])
         prev = float(hist["Close"].iloc[-2])
@@ -149,6 +151,8 @@ for ticker_name, yahoo_ticker in TICKERS.items():
 
         stocks.append({
             "ticker": ticker_name,
+            "empresa": info["empresa"],
+            "sector": info["sector"],
             "precio": round(last, 2),
             "cambioPct": round(pct, 2),
             "cambioClp": round(clp, 2),
@@ -157,7 +161,9 @@ for ticker_name, yahoo_ticker in TICKERS.items():
 
     except Exception as e:
 
-        print(f"Error processing {ticker_name}: {e}")
+        print(
+            f"Error processing {ticker_name}: {e}"
+        )
 
 output = {
     "meta": {
