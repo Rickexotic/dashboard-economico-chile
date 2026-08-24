@@ -136,21 +136,46 @@ border-top-right-radius:0;
 }
 
 .stock-row{
-  display:flex;
 
-  justify-content:space-between;
+  display:grid;
+
+  grid-template-columns:2fr 1fr 1fr 1fr;
 
   align-items:center;
 
   padding:10px 12px;
 
-  min-height:60px;
-
   border-bottom:1px solid rgba(255,255,255,.05);
 
   transition:.2s ease;
 
-  flex-shrink:0;
+  min-height:54px;
+}
+``
+.stock-col-name{
+  display:flex;
+  flex-direction:column;
+}
+
+.stock-col-price,
+.stock-col-pct,
+.stock-col-clp{
+
+  text-align:right;
+
+  font-size:.72rem;
+
+  font-weight:600;
+}
+
+.stock-col-pct.up,
+.stock-col-clp.up{
+  color:var(--green);
+}
+
+.stock-col-pct.dn,
+.stock-col-clp.dn{
+  color:var(--red);
 }
 
 .stock-row:hover{
@@ -1798,44 +1823,48 @@ stocks.forEach(function(a,idx){
     return;
   }
 
-  html +=
+html +=
 
-    '<div class="stock-row' +
-      (idx === ACTIVE_STOCK ? ' active' : '') +
-    '" onclick="selectStock(' + idx + ')">' +
+'<div class="stock-row' +
+  (idx === ACTIVE_STOCK ? ' active' : '') +
+'" onclick="selectStock(' + idx + ')">' +
 
-        '<div>' +
+  '<div class="stock-col-name">' +
 
-          '<div class="stock-symbol">' +
-            a.ticker +
-          '</div>' +
+    '<div class="stock-symbol">' +
+      a.ticker +
+    '</div>' +
 
-          '<div class="stock-company">' +
-            a.empresa +
-          '</div>' +
+    '<div class="stock-company">' +
+      a.empresa +
+    '</div>' +
 
-        '</div>' +
+  '</div>' +
 
-        '<div>' +
+  '<div class="stock-col-price">' +
+    fmtPrice(getPrice(a)) +
+  '</div>' +
 
-          '<div class="stock-price">' +
-          fmtPrice(getPrice(a)) +
-          '</div>' +
+  '<div class="stock-col-pct ' +
+    (a.up ? 'up' : 'dn') +
+  '">' +
+    (a.up ? '▲ ' : '▼ ') +
+    Math.abs(getPct(a))
+      .toFixed(1)
+      .replace('.',',') +
+    '%' +
+  '</div>' +
 
-        '<div class="stock-change ' +
-  (a.up ? 'up' : 'dn') +
-'">' +
-  (a.up ? '▲ ' : '▼ ') +
-  fmtPct(getPct(a)) +
-'</div>' +
+  '<div class="stock-col-clp ' +
+    (a.up ? 'up' : 'dn') +
+  '">' +
+    (a.up ? '▲ ' : '▼ ') +
+    '$' +
+    Math.abs(getClp(a))
+      .toLocaleString('es-CL') +
+  '</div>' +
 
-'<div class="stock-variation">' +
-  fmtClp(getClp(a)) +
-'</div>' +
-
-        '</div>' +
-
-      '</div>';
+'</div>';
 
   });
 
