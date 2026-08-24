@@ -138,8 +138,8 @@ for ticker_name, yahoo_ticker in TICKERS.items():
         print(ticker_name, len(hist))
 
        if len(hist) < 2:
-    print(f"Skipping {ticker_name}")
-    continue
+           print(f"Skipping {ticker_name}")
+           continue
 
         last = float(hist["Close"].iloc[-1])
         prev = float(hist["Close"].iloc[-2])
