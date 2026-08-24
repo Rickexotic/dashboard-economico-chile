@@ -2008,26 +2008,7 @@ html +=
       stock.empresa +
     '</div>' +
 
-    '<div class="stock-metrics">' +
-
-      '<div class="metric-label">Precio</div>' +
-      '<div class="metric-value">$' +
-        fmtPrice(getPrice(stock)) +
-      '</div>' +
-
-      '<div class="metric-label">Variación</div>' +
-     '<div class="metric-value ' +
-  (stock.up ? 'up' : 'dn') +
-'">' +
-  fmtPct(getPct(stock)) +
-'</div>' +
-
-      '<div class="metric-label">Cambio CLP</div>' +
-      '<div class="metric-value">' +
-        fmtClp(getClp(stock)) +
-      '</div>' +
-
-    '</div>' +
+  
 '<div class="stock-chart-wrap">' +
   '<canvas id="stockChart"></canvas>' +
 '</div>' +
