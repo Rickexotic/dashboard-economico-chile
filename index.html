@@ -2288,6 +2288,10 @@ function getRangeStats(stock){
 
 }
 
+    var data =*  STOCK_HISTORY[
+    stock.ticker
+* ]?.[STOCK_RANGE];
+
 function filterStocks(value){
 
   STOCK_FILTER = value.toLowerCase();
@@ -3059,14 +3063,18 @@ function getClp(stock){
 let pageSwipeStartX = 0;
 let pageSwipeStartY = 0;
 
-    document.addEventListener('DOMContentLoaded', function(){
-      setSector('general');
-      cargarNoticias();
-loadStockHistory();
-renderAccionesPage();
-var mainArea =
-  document.querySelector('.main');
+document.addEventListener('DOMContentLoaded', async function(){
 
+  setSector('general');
+  cargarNoticias();
+
+  await loadStockHistory();
+
+  renderAccionesPage();
+
+  var mainArea =
+    document.querySelector('.main');
+  
 if(mainArea){
 
   mainArea.addEventListener(
