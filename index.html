@@ -1840,6 +1840,19 @@ stocks.sort(function(a,b){
 
 });
 
+function sortArrow(field){
+
+  if(STOCK_SORT !== field){
+    return '';
+  }
+
+  return STOCK_SORT_DIR === 'asc'
+    ? ' ▲'
+    : ' ▼';
+
+}
+
+
   var html =
 
    
@@ -1884,10 +1897,22 @@ stocks.sort(function(a,b){
 
 '<div class="stock-header">' +
 
-'<div onclick="sortStocks(\'ticker\')">Nombre ↕</div>' +
-'<div onclick="sortStocks(\'price\')">Precio ↕</div>' +
-'<div onclick="sortStocks(\'pct\')">Var % ↕</div>' +
-'<div onclick="sortStocks(\'clp\')">Δ CLP ↕</div>' +
+'<div onclick="sortStocks(\'ticker\')">' +
+  'Nombre' + sortArrow('ticker') +
+'</div>' +
+
+'<div onclick="sortStocks(\'price\')">' +
+  'Precio' + sortArrow('price') +
+'</div>' +
+
+'<div onclick="sortStocks(\'pct\')">' +
+  'Var %' + sortArrow('pct') +
+'</div>' +
+
+'<div onclick="sortStocks(\'clp\')">' +
+  'Δ CLP' + sortArrow('clp') +
+'</div>' +
+
 '</div>' +
 
 '<div class="stock-list">';
