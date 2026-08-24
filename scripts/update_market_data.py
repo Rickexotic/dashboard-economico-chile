@@ -135,9 +135,11 @@ for ticker_name, yahoo_ticker in TICKERS.items():
         ticker = yf.Ticker(yahoo_ticker)
 
         hist = ticker.history(period="5d")
+        print(ticker_name, len(hist))
 
-        if len(hist) < 2:
-            continue
+       if len(hist) < 2:
+    print(f"Skipping {ticker_name}")
+    continue
 
         last = float(hist["Close"].iloc[-1])
         prev = float(hist["Close"].iloc[-2])
