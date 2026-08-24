@@ -1,49 +1,84 @@
 import json
 from datetime import datetime
+
 import yfinance as yf
 
-TICKERS = [
-    "SQM-B.SN",
-    "COPEC.SN",
-    "CMPC.SN",
-    "BCI.SN",
-    "BSANTANDER.SN",
-    "FALABELLA.SN"
-]
+TICKERS = {
+    "SQM-B": "SQM-B.SN",
+    "COPEC": "COPEC.SN",
+    "CMPC": "CMPC.SN",
+    "BCI": "BCI.SN",
+    "BSANTANDER": "BSANTANDER.SN",
+    "FALABELLA": "FALABELLA.SN",
+    "CENCOSUD": "CENCOSUD.SN",
+    "RIPLEY": "RIPLEY.SN",
+    "ENELAM": "ENELAM.SN",
+    "ENELCHILE": "ENELCHILE.SN",
+    "ANDINA-B": "ANDINA-B.SN",
+    "IAM": "IAM.SN",
+    "AGUAS-A": "AGUAS-A.SN",
+    "CAP": "CAP.SN",
+    "SONDA": "SONDA.SN",
+    "PARAUCO": "PARAUCO.SN",
+    "MALLPLAZA": "MALLPLAZA.SN",
+    "VAPORES": "VAPORES.SN",
+    "CCU": "CCU.SN",
+    "CONCHATORO": "CONCHATORO.SN"
+}
 
-results = {}
+stocks = []
 
-for ticker in TICKERS:
+for ticker_name, yahoo_ticker in TICKERS.items():
+
     try:
-        stock = yf.Ticker(ticker)
-        hist = stock.history(period="5d")
 
-        results[ticker] = {
-            "rows": len(hist)
-        }
+        ticker = yf.Ticker(yahoo_ticker)
+
+        hist = ticker.history(period="5d")
+
+        if len(hist) < 2:
+            continue
+
+        last = float(hist["Close"].iloc[-1])
+        prev = float(hist["Close"].iloc[-2])
+
+        pct = ((last - prev) / prev) * 100
+        clp = last - prev
+
+        stocks.append({
+            "ticker": ticker_name,
+            "precio": round(last, 2),
+            "cambioPct": round(pct, 2),
+            "cambioClp": round(clp, 2),
+            "up": clp >= 0
+        })
 
     except Exception as e:
-        results[ticker] = {
-            "error": str(e)
-        }
+
+        print(f"Error processing {ticker_name}: {e}")
+
+output = {
+    "meta": {
+        "lastUpdate": datetime.utcnow().strftime(
+            "%Y-%m-%d %H:%M UTC"
+        )
+    },
+    "stocks": stocks
+}
 
 with open(
-    "data/update-status.json",
+    "data/stocks.json",
     "w",
     encoding="utf-8"
 ) as f:
 
     json.dump(
-        {
-            "lastUpdate":
-                datetime.utcnow().strftime(
-                    "%Y-%m-%d %H:%M UTC"
-                ),
-            "tickers": results
-        },
+        output,
         f,
         indent=2,
         ensure_ascii=False
     )
 
-print("Update completed")
+print(
+    f"stocks.json updated with {len(stocks)} stocks"
+)
