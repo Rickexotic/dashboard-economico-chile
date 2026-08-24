@@ -4,28 +4,128 @@ from datetime import datetime
 import yfinance as yf
 
 TICKERS = {
-    "SQM-B": "SQM-B.SN",
-    "COPEC": "COPEC.SN",
-    "CMPC": "CMPC.SN",
-    "BCI": "BCI.SN",
-    "BSANTANDER": "BSANTANDER.SN",
-    "FALABELLA": "FALABELLA.SN",
-    "CENCOSUD": "CENCOSUD.SN",
-    "RIPLEY": "RIPLEY.SN",
-    "ENELAM": "ENELAM.SN",
-    "ENELCHILE": "ENELCHILE.SN",
-    "ANDINA-B": "ANDINA-B.SN",
-    "IAM": "IAM.SN",
-    "AGUAS-A": "AGUAS-A.SN",
-    "CAP": "CAP.SN",
-    "SONDA": "SONDA.SN",
-    "PARAUCO": "PARAUCO.SN",
-    "MALLPLAZA": "MALLPLAZA.SN",
-    "VAPORES": "VAPORES.SN",
-    "CCU": "CCU.SN",
-    "CONCHATORO": "CONCHATORO.SN"
-}
 
+    "SQM-B": {
+        "yf": "SQM-B.SN",
+        "empresa": "Sociedad Química y Minera",
+        "sector": "Minería"
+    },
+
+    "COPEC": {
+        "yf": "COPEC.SN",
+        "empresa": "Empresas Copec",
+        "sector": "Energía"
+    },
+
+    "CMPC": {
+        "yf": "CMPC.SN",
+        "empresa": "CMPC",
+        "sector": "Forestal"
+    },
+
+    "BCI": {
+        "yf": "BCI.SN",
+        "empresa": "Banco BCI",
+        "sector": "Bancos"
+    },
+
+    "BSANTANDER": {
+        "yf": "BSANTANDER.SN",
+        "empresa": "Banco Santander Chile",
+        "sector": "Bancos"
+    },
+
+    "FALABELLA": {
+        "yf": "FALABELLA.SN",
+        "empresa": "Falabella",
+        "sector": "Retail"
+    },
+
+    "CENCOSUD": {
+        "yf": "CENCOSUD.SN",
+        "empresa": "Cencosud",
+        "sector": "Retail"
+    },
+
+    "RIPLEY": {
+        "yf": "RIPLEY.SN",
+        "empresa": "Ripley",
+        "sector": "Retail"
+    },
+
+    "ENELAM": {
+        "yf": "ENELAM.SN",
+        "empresa": "Enel Américas",
+        "sector": "Utilities"
+    },
+
+    "ENELCHILE": {
+        "yf": "ENELCHILE.SN",
+        "empresa": "Enel Chile",
+        "sector": "Utilities"
+    },
+
+    "ANDINA-B": {
+        "yf": "ANDINA-B.SN",
+        "empresa": "Embotelladora Andina",
+        "sector": "Consumo"
+    },
+
+    "IAM": {
+        "yf": "IAM.SN",
+        "empresa": "Inversiones Aguas Metropolitanas",
+        "sector": "Utilities"
+    },
+
+    "AGUAS-A": {
+        "yf": "AGUAS-A.SN",
+        "empresa": "Aguas Andinas",
+        "sector": "Utilities"
+    },
+
+    "CAP": {
+        "yf": "CAP.SN",
+        "empresa": "CAP",
+        "sector": "Minería"
+    },
+
+    "SONDA": {
+        "yf": "SONDA.SN",
+        "empresa": "SONDA",
+        "sector": "Tecnología"
+    },
+
+    "PARAUCO": {
+        "yf": "PARAUCO.SN",
+        "empresa": "Parque Arauco",
+        "sector": "Inmobiliario"
+    },
+
+    "MALLPLAZA": {
+        "yf": "MALLPLAZA.SN",
+        "empresa": "Mallplaza",
+        "sector": "Inmobiliario"
+    },
+
+    "VAPORES": {
+        "yf": "VAPORES.SN",
+        "empresa": "Compañía Sud Americana de Vapores",
+        "sector": "Transporte"
+    },
+
+    "CCU": {
+        "yf": "CCU.SN",
+        "empresa": "Compañía Cervecerías Unidas",
+        "sector": "Consumo"
+    },
+
+    "CONCHATORO": {
+        "yf": "CONCHATORO.SN",
+        "empresa": "Viña Concha y Toro",
+        "sector": "Consumo"
+    }
+
+}
 stocks = []
 
 for ticker_name, yahoo_ticker in TICKERS.items():
