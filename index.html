@@ -1398,7 +1398,7 @@ scroll-behavior:smooth;
     };
 
 
-var ACCIONES = [
+var ACCIONES = [];
 
   {
     ticker:'SQM-B',
@@ -2146,6 +2146,35 @@ var STOCK_HISTORY = {};
 var STOCK_LAST_UPDATE = '';
 var STOCK_RANGE = '1M';
 
+async function loadStocks(){
+
+  try{
+
+    const res =
+      await fetch('./data/stocks.json');
+
+    const data =
+      await res.json();
+
+    ACCIONES =
+      data.stocks || [];
+
+    console.log(
+      'Stocks loaded',
+      ACCIONES.length
+    );
+
+  }catch(err){
+
+    console.error(
+      'Error loading stocks',
+      err
+    );
+
+  }
+
+}
+
 async function loadStockHistory(){
 
   try{
@@ -2153,16 +2182,16 @@ async function loadStockHistory(){
     const res =
       await fetch('./data/stock-history.json');
 
-   const historyData =
-  await res.json();
+    const historyData =
+      await res.json();
 
-STOCK_LAST_UPDATE =
-  historyData.meta?.lastUpdate || '';
+    STOCK_LAST_UPDATE =
+      historyData.meta?.lastUpdate || '';
 
-delete historyData.meta;
+    delete historyData.meta;
 
-STOCK_HISTORY =
-  historyData;
+    STOCK_HISTORY =
+      historyData;
 
   }catch(err){
 
@@ -2174,7 +2203,6 @@ STOCK_HISTORY =
   }
 
 }
-
 
 function sortStocks(field){
 
@@ -3085,9 +3113,11 @@ document.addEventListener('DOMContentLoaded', async function(){
   setSector('general');
   cargarNoticias();
 
-  await loadStockHistory();
+ await loadStockHistory();
 
-  renderAccionesPage();
+await loadStocks();
+
+renderAccionesPage();
 
   var mainArea =
     document.querySelector('.main');
