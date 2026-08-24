@@ -338,18 +338,36 @@ scroll-behavior:smooth;
 
 .stock-header,
 .stock-row{
-
   display:grid;
 
   grid-template-columns:
-    minmax(120px,2fr)
-    90px
-    90px
-    90px;
+    minmax(110px,1fr)
+    60px
+    60px
+    60px;
 
   align-items:center;
-
 }
+``
+
+.stock-list-wrap{
+  overflow:hidden;
+  width:100%;
+}
+
+#acciones-page{
+  overflow-x:hidden;
+}
+
+.stock-detail,
+.stock-list-wrap,
+.market-summary,
+.market-movers{
+  width:100%;
+  max-width:100%;
+}
+`
+
 .stock-header div:first-child{
   text-align:left;
 }
