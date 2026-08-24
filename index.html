@@ -1392,7 +1392,7 @@ scroll-behavior:smooth;
     };
 
 
-var ACCIONES = [
+var ACCIONES = [];
 
  {
   ticker:'SQM-B',
@@ -1600,6 +1600,32 @@ var ACCIONES = [
 
 ];
 
+    async function loadStocks(){
+
+  try{
+
+    const response =
+      await fetch('./data/stocks.json');
+
+    const data =
+      await response.json();
+
+    ACCIONES =
+      data.stocks;
+
+    renderAccionesPage();
+
+  }catch(err){
+
+    console.error(
+      'Error loading stocks',
+      err
+    );
+
+  }
+
+}
+    
     var SECTOR_NOTICIAS = {
       general: [],
       internacional: [],
@@ -3073,7 +3099,7 @@ let pageSwipeStartY = 0;
       setSector('general');
       cargarNoticias();
 loadStockHistory();
-renderAccionesPage();
+loadStocks();
 var mainArea =
   document.querySelector('.main');
 
