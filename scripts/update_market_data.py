@@ -46,9 +46,19 @@ for ticker_name, info in TICKERS.items():
         if len(hist_5d) < 2:
             print(f"Skipping {ticker_name}")
             continue
-
+import math
         last = float(hist_5d["Close"].iloc[-1])
         prev = float(hist_5d["Close"].iloc[-2])
+
+if (
+    math.isnan(last)
+    or math.isnan(prev)
+):
+    print(f"Skipping {ticker_name}: NaN data")
+    continue
+
+        if prev == 0:
+    continue
 
         pct = ((last - prev) / prev) * 100
         clp = last - prev
