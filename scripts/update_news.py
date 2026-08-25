@@ -4,14 +4,45 @@ from datetime import datetime
 import feedparser
 
 FEEDS = [
+
     {
         "source": "Diario Financiero",
         "url": "https://www.df.cl/noticias/site/list/port/rss____1.xml"
+    },
+
+    {
+        "source": "The Clinic",
+        "url": "https://www.theclinic.cl/feed/"
+    },
+
+    {
+        "source": "Cambio21",
+        "url": "https://cambio21.cl/rss"
+    },
+
+    {
+        "source": "La Nación",
+        "url": "https://lanacion.cl/feed/"
+    },
+
+    {
+        "source": "El Mostrador",
+        "url": "https://www.elmostrador.cl/feed/"
+    },
+
+    {
+        "source": "La Discusión",
+        "url": "https://ladiscusion.cl/feed/"
     }
+
 ]
 
 items = []
 seen_titles = set()
+
+print("")
+print("===== RSS VALIDATION =====")
+print("")
 
 for feed in FEEDS:
 
@@ -21,7 +52,7 @@ for feed in FEEDS:
             feed["url"]
         )
 
-        print("================================")
+        print("--------------------------------")
         print("Source:", feed["source"])
         print("URL:", feed["url"])
         print(
@@ -43,43 +74,50 @@ for feed in FEEDS:
                 rss.bozo_exception
             )
 
-        for entry in rss.entries[:3]:
+        if len(rss.entries) > 0:
 
-            print(
-                "TITLE:",
-                entry.title
-            )
+            print("First article:")
 
-        for entry in rss.entries[:10]:
+            try:
+                print(
+                    rss.entries[0].title
+                )
+            except Exception:
+                pass
 
-            title = (
-                entry.title.strip()
-            )
+        for entry in rss.entries[:5]:
 
-            if title in seen_titles:
-                continue
+            try:
 
-            seen_titles.add(
-                title
-            )
+                title = entry.title.strip()
 
-            items.append({
+                if title in seen_titles:
+                    continue
 
-                "title": title,
+                seen_titles.add(title)
 
-                "source":
-                    feed["source"],
+                items.append({
 
-                "url":
-                    entry.link
+                    "title": title,
 
-            })
+                    "source":
+                        feed["source"],
+
+                    "url":
+                        entry.link
+
+                })
+
+            except Exception:
+                pass
 
     except Exception as e:
 
         print(
-            f"Error with {feed['source']}: {e}"
+            f"ERROR: {feed['source']}"
         )
+
+        print(str(e))
 
 output = {
 
@@ -106,6 +144,8 @@ with open(
         ensure_ascii=False
     )
 
+print("")
+print("===== SUMMARY =====")
 print(
-    f"News updated: {len(items)} articles"
+    f"News collected: {len(items)}"
 )
