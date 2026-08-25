@@ -4,17 +4,10 @@ from datetime import datetime
 import feedparser
 
 FEEDS = [
-
     {
-        "source": "Reuters Business",
-        "url": "https://feeds.reuters.com/reuters/businessNews"
-    },
-
-    {
-        "source": "Reuters World",
-        "url": "https://feeds.reuters.com/Reuters/worldNews"
+        "source": "Diario Financiero",
+        "url": "https://www.df.cl/noticias/site/list/port/rss____1.xml"
     }
-
 ]
 
 items = []
@@ -24,51 +17,20 @@ for feed in FEEDS:
 
     try:
 
-        rss = feedparser.parse(
-            feed["url"]
-        )
+        rss = feedparser.parse(feed["url"])
 
-        print(
-            "Source:",
-            feed["source"]
-        )
+print("================================")
+print("Source:", feed["source"])
+print("URL:", feed["url"])
+print("Feed title:", rss.feed.get("title", "N/A"))
+print("Entries:", len(rss.entries))
+print("Bozo:", rss.bozo)
 
-        print(
-            "Entries:",
-            len(rss.entries)
-        )
+if rss.bozo:
+    print("Error:", rss.bozo_exception)
 
-        for entry in rss.entries[:10]:
-
-            title = (
-                entry.title.strip()
-            )
-
-            if title in seen_titles:
-                continue
-
-            seen_titles.add(
-                title
-            )
-
-            items.append({
-
-                "title": title,
-
-                "source":
-                    feed["source"],
-
-                "url":
-                    entry.link
-
-            })
-
-    except Exception as e:
-
-        print(
-            f"Error with {feed['source']}: {e}"
-        )
-
+for entry in rss.entries[:3]:
+    print("TITLE:", entry.title)
 output = {
 
     "lastUpdate":
