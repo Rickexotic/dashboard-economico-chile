@@ -31,6 +31,53 @@ FEEDS = [
 
 ]
 
+ECONOMIA_KEYWORDS = [
+    "economía",
+    "economico",
+    "económico",
+    "inflación",
+    "inflacion",
+    "ipc",
+    "imacec",
+    "banco central",
+    "tpm",
+    "empleo",
+    "desempleo",
+    "pib",
+    "uf",
+    "crecimiento",
+    "recesión",
+    "recesion",
+    "actividad económica",
+    "actividad economica",
+    "hacienda",
+    "presupuesto"
+]
+
+MERCADOS_KEYWORDS = [
+    "ipsa",
+    "acciones",
+    "bolsa",
+    "mercado",
+    "mercados",
+    "wall street",
+    "dólar",
+    "dolar",
+    "tipo de cambio",
+    "peso chileno",
+    "inversión",
+    "inversion",
+    "trading",
+    "bonos",
+    "commodities",
+    "acciones chilenas",
+    "sqm",
+    "copec",
+    "falabella",
+    "cmpc",
+    "bci"
+]
+
 items = []
 seen_titles = set()
 
@@ -58,7 +105,25 @@ for feed in FEEDS:
                 if title in seen_titles:
                     continue
 
-                seen_titles.add(title)
+                seen_titles.add(
+                    title
+                )
+
+                text = title.lower()
+
+                category = feed["category"]
+
+                if any(
+                    keyword in text
+                    for keyword in ECONOMIA_KEYWORDS
+                ):
+                    category = "economia"
+
+                elif any(
+                    keyword in text
+                    for keyword in MERCADOS_KEYWORDS
+                ):
+                    category = "mercados"
 
                 items.append({
 
@@ -68,7 +133,7 @@ for feed in FEEDS:
                         feed["source"],
 
                     "category":
-                        feed["category"],
+                        category,
 
                     "published":
                         entry.get(
@@ -94,7 +159,7 @@ for feed in FEEDS:
             f"{feed['source']}: {e}"
         )
 
-# Limit articles
+# keep latest 30 articles
 items = items[:30]
 
 output = {
@@ -126,5 +191,6 @@ with open(
     )
 
 print(
-    f"News updated: {len(items)} articles"
+    f"News updated: "
+    f"{len(items)} articles"
 )
