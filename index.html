@@ -281,12 +281,9 @@ border-top-right-radius:0;
 }
 
 .news-filters button.active{
-  background:#2e7df6;
-  border-color:#2e7df6;
-  color:#fff;
-
-  box-shadow:
-    0 0 8px rgba(46,125,246,.35);
+  background:#2e7df6 !important;
+  color:#fff !important;
+  border-color:#2e7df6 !important;
 }
 
 
@@ -1325,46 +1322,29 @@ scroll-behavior:smooth;
 
   <div class="news-filters">
 
-    <button
-      onclick="setNewsFilter('all')"
-      class="
-      ${NEWS_FILTER === 'all'
-        ? 'active'
-        : ''}
-      ">
-      Todas
-    </button>
+  '<button onclick="setNewsFilter(\'all\')" ' +
+(NEWS_FILTER === 'all'
+  ? 'class="active"'
+  : '') +
+'>Todas</button>' +
 
-    <button
-      onclick="setNewsFilter('economia')"
-      class="
-      ${NEWS_FILTER === 'economia'
-        ? 'active'
-        : ''}
-      ">
-      Economía
-    </button>
+'<button onclick="setNewsFilter(\'economia\')" ' +
+(NEWS_FILTER === 'economia'
+  ? 'class="active"'
+  : '') +
+'>Economía</button>' +
 
-    <button
-      onclick="setNewsFilter('mercados')"
-      class="
-      ${NEWS_FILTER === 'mercados'
-        ? 'active'
-        : ''}
-      ">
-      Mercados
-    </button>
+'<button onclick="setNewsFilter(\'mercados\')" ' +
+(NEWS_FILTER === 'mercados'
+  ? 'class="active"'
+  : '') +
+'>Mercados</button>' +
 
-  <button
-      onclick="setNewsFilter('politica')"
-      class="
-      ${NEWS_FILTER === 'politica'
-        ? 'active'
-        : ''}
-      ">
-      Política
-    </button>
-    
+'<button onclick="setNewsFilter(\'politica\')" ' +
+(NEWS_FILTER === 'politica'
+  ? 'class="active"'
+  : '') +
+'>Política</button>'    
   </div>
 
   <div class="news-list"></div>
@@ -2335,13 +2315,7 @@ function getRangeStats(stock){
 
 }
 
-function setNewsFilter(filter){
 
-  NEWS_FILTER = filter;
-  renderNoticias(SECTOR_ACTUAL);
-  cargarNoticias();
-
-}    
 function filterStocks(value){
 
   STOCK_FILTER = value.toLowerCase();
