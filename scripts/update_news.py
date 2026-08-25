@@ -4,13 +4,22 @@ from datetime import datetime
 import feedparser
 
 FEEDS = [
+
     {
-        "source": "Emol Economía",
-        "url": "https://www.emol.com/rss/economia.xml"
+        "source": "Reuters Business",
+        "url": "https://feeds.reuters.com/reuters/businessNews"
+    },
+
+    {
+        "source": "Reuters World",
+        "url": "https://feeds.reuters.com/Reuters/worldNews"
     }
+
 ]
 
 items = []
+seen_titles = set()
+
 for feed in FEEDS:
 
     try:
@@ -19,22 +28,46 @@ for feed in FEEDS:
             feed["url"]
         )
 
-        print("Source:", feed["source"])
-        print("Entries:", len(rss.entries))
-        print("Status:", getattr(rss, "status", "N/A"))
-        print("Bozo:", rss.bozo)
+        print(
+            "Source:",
+            feed["source"]
+        )
+
+        print(
+            "Entries:",
+            len(rss.entries)
+        )
 
         for entry in rss.entries[:10]:
 
+            title = (
+                entry.title.strip()
+            )
+
+            if title in seen_titles:
+                continue
+
+            seen_titles.add(
+                title
+            )
+
             items.append({
-                "title": entry.title,
-                "source": feed["source"],
-                "url": entry.link
+
+                "title": title,
+
+                "source":
+                    feed["source"],
+
+                "url":
+                    entry.link
+
             })
 
     except Exception as e:
 
-        print(e)
+        print(
+            f"Error with {feed['source']}: {e}"
+        )
 
 output = {
 
@@ -44,7 +77,7 @@ output = {
         ),
 
     "news":
-        items
+        items[:20]
 
 }
 
