@@ -512,6 +512,24 @@ max-width:100%;
   display:none;
 }
 
+    .stock-update{
+  font-size:11px;
+  color:#8fa4c7;
+  margin-top:4px;
+  margin-bottom:12px;
+}
+
+    .chart-update{
+  position:absolute;
+  right:10px;
+  bottom:8px;
+
+  font-size:10px;
+  color:#8190ad;
+
+  pointer-events:none;
+  z-index:2;
+}
 
 /* KPI CARD */
 .kpi-card{
@@ -864,6 +882,7 @@ translateY(6px);
 }
 
 .stock-chart-wrap{
+  position:relative;
   height:152px;
   margin-top:16px;
 margin-bottom:18px;
@@ -1834,6 +1853,10 @@ html +=
       stock.ticker +
     '</div>' +
 
+  '<div class="stock-update">' +
+'Actualizado: ' +
+(STOCK_LAST_UPDATE || 'N/D') +
+'</div>' +
   
 
     '<div class="stock-detail-sub">' +
@@ -1883,7 +1906,14 @@ html +=
   
 '<div class="stock-chart-wrap">' +
   '<canvas id="stockChart"></canvas>' +
+
+  '<div class="chart-update">' +
+    'Actualizado: ' +
+    (STOCK_LAST_UPDATE || 'N/D') +
+  '</div>' +
+
 '</div>' +
+
 '<div class="chart-range-bottom">' +
 
 '<button class="range-btn ' +
