@@ -1768,10 +1768,41 @@ function renderKPIs(sector){
     }
 
     var baseOpts = {
-      responsive:true, maintainAspectRatio:false,
-      plugins:{legend:{display:false}},
-      scales:{x:{ticks:{color:'#94a3b8',font:{size:8}}},y:{ticks:{color:'#94a3b8',font:{size:8}}}}
-    };
+  responsive:true,
+  maintainAspectRatio:false,
+
+  plugins:{
+    legend:{display:false}
+  },
+
+  scales:{
+    x:{
+      ticks:{
+        color:'#8fa4c7',
+        font:{
+          size:10,
+          weight:'500'
+        }
+      },
+      grid:{
+        display:false
+      }
+    },
+
+    y:{
+      ticks:{
+        color:'#8fa4c7',
+        font:{
+          size:10,
+          weight:'500'
+        }
+      },
+      grid:{
+        color:'rgba(143,164,199,.08)'
+      }
+    }
+  }
+};
 
     var SECTOR_CHARTS = {
       general:[
@@ -2713,7 +2744,8 @@ console.log('before new Chart');
           pointRadius:0
         }]
       },
-      options:{
+     options:{
+
   responsive:true,
   maintainAspectRatio:false,
 
@@ -2721,7 +2753,49 @@ console.log('before new Chart');
     legend:{
       display:false
     }
+  },
+
+  interaction:{
+    intersect:false,
+    mode:'index'
+  },
+
+  scales:{
+
+    x:{
+
+      ticks:{
+        color:'#8fa4c7',
+        font:{
+          size:10,
+          weight:'500'
+        }
+      },
+
+      grid:{
+        display:false
+      }
+
+    },
+
+    y:{
+
+      ticks:{
+        color:'#8fa4c7',
+        font:{
+          size:10,
+          weight:'500'
+        }
+      },
+
+      grid:{
+        color:'rgba(143,164,199,.08)'
+      }
+
+    }
+
   }
+
 }
     });
 
@@ -2843,7 +2917,7 @@ function bindScrollHint(
 
       CHART_INSTANCES.push(new Chart(canvas,{
         type:'line',
-        data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:safeColor+'33',tension:.35,fill:true,borderWidth:2,pointRadius:2}]},
+        data:{labels:labels,datasets:[{data:data,borderColor:safeColor,backgroundColor:safeColor+'33',tension:.35,fill:true,borderWidth:2,pointRadius:0}]},
         options:baseOpts
       }));
 
