@@ -17,20 +17,70 @@ for feed in FEEDS:
 
     try:
 
-        rss = feedparser.parse(feed["url"])
+        rss = feedparser.parse(
+            feed["url"]
+        )
 
-print("================================")
-print("Source:", feed["source"])
-print("URL:", feed["url"])
-print("Feed title:", rss.feed.get("title", "N/A"))
-print("Entries:", len(rss.entries))
-print("Bozo:", rss.bozo)
+        print("================================")
+        print("Source:", feed["source"])
+        print("URL:", feed["url"])
+        print(
+            "Feed title:",
+            rss.feed.get("title", "N/A")
+        )
+        print(
+            "Entries:",
+            len(rss.entries)
+        )
+        print(
+            "Bozo:",
+            rss.bozo
+        )
 
-if rss.bozo:
-    print("Error:", rss.bozo_exception)
+        if rss.bozo:
+            print(
+                "Error:",
+                rss.bozo_exception
+            )
 
-for entry in rss.entries[:3]:
-    print("TITLE:", entry.title)
+        for entry in rss.entries[:3]:
+
+            print(
+                "TITLE:",
+                entry.title
+            )
+
+        for entry in rss.entries[:10]:
+
+            title = (
+                entry.title.strip()
+            )
+
+            if title in seen_titles:
+                continue
+
+            seen_titles.add(
+                title
+            )
+
+            items.append({
+
+                "title": title,
+
+                "source":
+                    feed["source"],
+
+                "url":
+                    entry.link
+
+            })
+
+    except Exception as e:
+
+        print(
+            f"Error with {feed['source']}: {e}"
+        )
+
 output = {
 
     "lastUpdate":
@@ -39,7 +89,7 @@ output = {
         ),
 
     "news":
-        items[:20]
+        items
 
 }
 
