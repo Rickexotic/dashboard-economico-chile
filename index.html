@@ -583,6 +583,53 @@ max-width:100%;
   box-shadow:0 0 0 1px rgba(59,130,246,.14);
 }
 
+ .kpi-table-header{
+
+  display:grid;
+
+  grid-template-columns:
+    1.8fr
+    1fr
+    .8fr
+    .8fr;
+
+  padding:8px 12px;
+
+  font-size:11px;
+
+  color:#8fa4c7;
+
+  font-weight:600;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+  margin-bottom:4px;
+
+}
+
+    .market-row{
+
+  display:grid !important;
+
+  grid-template-columns:
+    1.8fr
+    1fr
+    .8fr
+    .8fr;
+
+  align-items:center;
+
+}
+
+.market-col-value,
+.market-col-pct,
+.market-col-diff{
+
+  text-align:right;
+
+}
+
 /* LABEL */
 .kpi-label{
   font-size:.52rem;
@@ -1620,6 +1667,19 @@ function renderKPIs(sector){
     document.querySelector('.kpi-grid');
 
   grid.innerHTML = '';
+  grid.innerHTML +=
+
+  '<div class="kpi-table-header">' +
+
+    '<div>Nombre</div>' +
+
+    '<div>Valor</div>' +
+
+    '<div>Var %</div>' +
+
+    '<div>Δ</div>' +
+
+  '</div>';
 
   kpis.forEach(function(k,idx){
 
@@ -1638,42 +1698,25 @@ function renderKPIs(sector){
     grid.innerHTML +=
 
       '<div class="market-row'+activeCls+'" '+
-      'onclick="setActiveChart('+idx+')">'+
+'onclick="setActiveChart('+idx+')" >'+
 
-        '<div class="market-left">'+
+  '<div class="market-col-name">'+
+    escapeHtml(k.label || '')+
+  '</div>' +
 
-          '<div class="market-name">'+
-            escapeHtml(k.label || '')+
-          '</div>'+
+  '<div class="market-col-value">'+
+    escapeHtml(k.val || '—')+
+  '</div>' +
 
-          '<div class="market-sub">'+
-            escapeHtml(k.sub || '')+
-          '</div>'+
+  '<div class="market-col-pct '+(k.dv || 'fl')+'">'+
+    escapeHtml(k.dpt || '—')+
+  '</div>' +
 
-        '</div>'+
+  '<div class="market-col-diff '+(k.dv || 'fl')+'">'+
+    escapeHtml(k.dvt || '—')+
+  '</div>' +
 
-        '<div class="market-right">'+
-
-          '<div class="market-value">'+
-            escapeHtml(k.val || '—')+
-          '</div>'+
-
-          '<div class="market-change '+
-            (k.dv || 'fl')+
-          '">'+
-
-            arrow+' '+
-            escapeHtml(k.dvt || '')+
-
-            (k.dpt
-            ? ' ('+escapeHtml(k.dpt)+')'
-            : '')+
-
-          '</div>'+
-
-        '</div>'+
-
-      '</div>';
+'</div>';
 
   });
 
