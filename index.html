@@ -19,6 +19,99 @@
     }
     body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--white); min-height:100vh; }
 
+#intro-screen{
+
+  position:fixed;
+  inset:0;
+
+  background:#0f172a;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:999999;
+
+  transition:
+    opacity .8s ease,
+    visibility .8s ease;
+
+}
+
+#intro-screen.hide{
+
+  opacity:0;
+  visibility:hidden;
+
+}
+
+.intro-ring{
+
+  position:relative;
+
+  width:320px;
+  height:320px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.intro-gif{
+
+  position:absolute;
+
+  width:100%;
+  height:100%;
+
+  object-fit:contain;
+
+}
+
+.intro-logo{
+
+  width:180px;
+
+  opacity:0;
+
+  animation:
+    logoFadeIn 1s ease forwards;
+
+  animation-delay:.8s;
+
+}
+
+    @keyframes logoFadeIn{
+
+  from{
+
+    opacity:0;
+    transform:scale(.9);
+
+  }
+
+  to{
+
+    opacity:1;
+    transform:scale(1);
+
+  }
+
+}
+
+    .intro-logo{
+
+  width:180px;
+
+  filter:
+    drop-shadow(
+      0 0 18px
+      rgba(59,130,246,.35)
+    );
+
+}
+    
     .top-bar {
       background:rgba(15,23,42,.96);
       border-bottom:1px solid rgba(59,130,246,.25);
@@ -1268,6 +1361,23 @@ scroll-behavior:smooth;
   </style>
 </head>
 <body>
+
+  <div id="intro-screen">
+
+  <div class="intro-ring">
+
+    <img
+      src="opening.gif"
+      class="intro-gif"
+      alt="Loading">
+
+intro-logo"
+      alt="Logo">
+
+  </div>
+
+</div>
+
   <div class="top-bar">
 
     <div class="top-bar-left">
@@ -3168,6 +3278,14 @@ let pageSwipeStartY = 0;
 
 document.addEventListener('DOMContentLoaded', async function(){
 
+setTimeout(function(){
+
+  document
+    .getElementById('intro-screen')
+    .classList.add('hide');
+
+},2200);
+  
   setSector('general');
   cargarNoticias();
 
