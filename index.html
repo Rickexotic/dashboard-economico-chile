@@ -2119,6 +2119,13 @@ function getRangeStats(stock){
       stock.ticker
     ]?.[STOCK_RANGE];
 
+  console.log(
+    'RANGE STATS',
+    stock.ticker,
+    STOCK_RANGE,
+    data
+  );
+
   if(!data || data.length < 2){
 
     return {
@@ -2140,8 +2147,9 @@ function getRangeStats(stock){
       last-first
 
   };
-}
 
+}
+    
 function filterStocks(value){
 
   STOCK_FILTER = value.toLowerCase();
