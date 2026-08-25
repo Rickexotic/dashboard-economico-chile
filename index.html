@@ -284,7 +284,9 @@ border-top-right-radius:0;
   background:#2e7df6 !important;
   color:#fff !important;
   border-color:#2e7df6 !important;
+  box-shadow:0 0 8px rgba(46,125,246,.35);
 }
+
 
 
 .range-stat{
@@ -1320,33 +1322,30 @@ scroll-behavior:smooth;
     Noticias Económicas del Día
   </div>
 
-  <div class="news-filters">
+<div class="news-filters">
 
-  '<button onclick="setNewsFilter(\'all\')" ' +
-(NEWS_FILTER === 'all'
-  ? 'class="active"'
-  : '') +
-'>Todas</button>' +
+  <button data-filter="all"
+          onclick="setNewsFilter('all')">
+    Todas
+  </button>
 
-'<button onclick="setNewsFilter(\'economia\')" ' +
-(NEWS_FILTER === 'economia'
-  ? 'class="active"'
-  : '') +
-'>Economía</button>' +
+  <button data-filter="economia"
+          onclick="setNewsFilter('economia')">
+    Economía
+  </button>
 
-'<button onclick="setNewsFilter(\'mercados\')" ' +
-(NEWS_FILTER === 'mercados'
-  ? 'class="active"'
-  : '') +
-'>Mercados</button>' +
+  <button data-filter="mercados"
+          onclick="setNewsFilter('mercados')">
+    Mercados
+  </button>
 
-'<button onclick="setNewsFilter(\'politica\')" ' +
-(NEWS_FILTER === 'politica'
-  ? 'class="active"'
-  : '') +
-'>Política</button>'    
-  </div>
+  <button data-filter="politica"
+          onclick="setNewsFilter('politica')">
+    Política
+  </button>
 
+</div>
+    
   <div class="news-list"></div>
 
 </div>
@@ -1578,11 +1577,30 @@ async function cargarNoticias(){
 
 }
 
-    function setNewsFilter(filter){
+ function setNewsFilter(filter){
 
   NEWS_FILTER = filter;
 
-  renderNoticias(SECTOR_ACTUAL);
+  document
+    .querySelectorAll(
+      '.news-filters button'
+    )
+    .forEach(function(btn){
+
+      btn.classList.remove(
+        'active'
+      );
+
+      if(
+        btn.dataset.filter === filter
+      ){
+        btn.classList.add(
+          'active'
+        );
+      }
+
+    });
+
   cargarNoticias();
 
 }
