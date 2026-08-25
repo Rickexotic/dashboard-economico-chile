@@ -11,7 +11,6 @@ FEEDS = [
 ]
 
 items = []
-
 for feed in FEEDS:
 
     try:
@@ -20,18 +19,17 @@ for feed in FEEDS:
             feed["url"]
         )
 
+        print("Source:", feed["source"])
+        print("Entries:", len(rss.entries))
+        print("Status:", getattr(rss, "status", "N/A"))
+        print("Bozo:", rss.bozo)
+
         for entry in rss.entries[:10]:
 
             items.append({
-
                 "title": entry.title,
-
-                "source":
-                    feed["source"],
-
-                "url":
-                    entry.link
-
+                "source": feed["source"],
+                "url": entry.link
             })
 
     except Exception as e:
