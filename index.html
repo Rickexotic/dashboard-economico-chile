@@ -434,6 +434,25 @@ scroll-behavior:smooth;
 .market-col-diff.fl{
   color:var(--muted);
 }
+    .market-col-name{
+  text-align:left;
+
+  font-size:.78rem;
+  font-weight:700;
+  color:#fff;
+}
+
+.market-col-value,
+.market-col-pct,
+.market-col-diff{
+
+  text-align:right;
+
+  font-size:.66rem;
+  font-weight:600;
+
+  font-variant-numeric:tabular-nums;
+}
 
     .market-col-name{
 
@@ -484,7 +503,7 @@ scroll-behavior:smooth;
 
   align-items:center;
 }
-``
+
 
 .stock-list-wrap{
   overflow:hidden;
@@ -638,9 +657,7 @@ max-width:100%;
 .kpi-table-header{
 
   position:sticky;
-
   top:0;
-
   z-index:20;
 
   background:#172334;
@@ -655,84 +672,19 @@ max-width:100%;
 
   padding:8px 12px;
 
-  font-size:10px;
+  font-size:.58rem;
+  font-weight:700;
+
+  color:#60a5fa;
+
   text-transform:uppercase;
-  letter-spacing:.4px;
 
-  color:#8fa4c7;
-
-  font-weight:600;
+  letter-spacing:.06em;
 
   border-bottom:
-    1px solid rgba(255,255,255,.08);
-
-}
-    .market-row{
-
-  display:grid !important;
-
-  grid-template-columns:
-    1.8fr
-    1fr
-    .8fr
-    .8fr;
-
-  align-items:center;
-
-}
-
-    .market-col-name{
-  text-align:left;
-}
-
-.market-col-value,
-.market-col-pct,
-.market-col-diff{
-  text-align:right;
-}
-
-
-.market-col-value,
-.market-col-pct,
-.market-col-diff{
-
-  text-align:right;
-
-}
-
-    .market-col-name{
-
-  text-align:left;
-
-  font-size:14px;
-  font-weight:600;
-  color:#ffffff;
-
-}
-
-.market-col-value{
-
-  text-align:right;
-
-  font-size:14px;
-  font-weight:700;
-  color:#ffffff;
-
-  font-variant-numeric:tabular-nums;
-}
-
-.market-col-pct,
-.market-col-diff{
-
-  text-align:right;
-
-  font-size:13px;
-  font-weight:700;
-
-  font-variant-numeric:tabular-nums;
-
-}
-
+    1px solid rgba(59,130,246,.25);
+}  
+  
     .market-col-pct.up,
 .market-col-diff.up{
   color:#67d86f !important;
@@ -1037,9 +989,7 @@ translateY(6px);
   margin:10px 0;
 }
 
-.stock-row.active{
-  background:rgba(59,130,246,.08);
-}
+
 
 .stock-row.active{
 
@@ -1166,12 +1116,6 @@ margin-bottom:18px;
 }
 
 
-.stock-row.active{
-
-  background:rgba(59,130,246,.08);
-
-  border-left:3px solid var(--blue);
-}
 
 .page-enter{
 
@@ -1826,7 +1770,7 @@ function renderKPIs(sector){
     escapeHtml(k.val || '—')+
   '</div>' +
 
- '<div class="market-col-pct test '+(k.dv || 'fl')+'">'+
+ '<div class="market-col-pct '+(k.dv || 'fl')+'">'+
     escapeHtml(k.dpt || '—')+
   '</div>' +
 
