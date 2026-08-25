@@ -1344,6 +1344,16 @@ scroll-behavior:smooth;
       Mercados
     </button>
 
+  <button
+      onclick="setNewsFilter('politica')"
+      class="
+      ${NEWS_FILTER === 'politica'
+        ? 'active'
+        : ''}
+      ">
+      Política
+    </button>
+    
   </div>
 
   <div class="news-list"></div>
