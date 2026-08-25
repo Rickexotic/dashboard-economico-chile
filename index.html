@@ -1602,7 +1602,7 @@ async function cargarNoticias(){
 
   NEWS_FILTER = filter;
 
-  renderDashboard();
+  renderNoticias(SECTOR_ACTUAL);
   cargarNoticias();
 
 }
@@ -2338,7 +2338,7 @@ function getRangeStats(stock){
 function setNewsFilter(filter){
 
   NEWS_FILTER = filter;
-
+  renderNoticias(SECTOR_ACTUAL);
   cargarNoticias();
 
 }    
