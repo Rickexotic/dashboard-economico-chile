@@ -1701,7 +1701,29 @@ function renderKPIs(sector){
       var html = '';
       nots.forEach(function(n){
         var cls = n.cls ? ' '+n.cls : '';
-        var inner = '<i class="fas fa-'+escapeHtml(n.ico||'newspaper')+' ni-ico"></i><div class="ni-txt"><strong>'+escapeHtml(n.tit||'')+'</strong> — '+escapeHtml(n.desc||'')+'<div class="ni-src">'+escapeHtml(n.fte||'')+'</div></div>';
+        var inner =
+
+  '<i class="fas fa-newspaper ni-ico"></i>' +
+
+  '<div class="ni-txt">' +
+
+    '<strong>' +
+      escapeHtml(n.title || '') +
+    '</strong>' +
+
+    '<div class="ni-src">' +
+
+      escapeHtml(
+        n.source || ''
+      ) +
+
+      (n.published
+        ? ' · ' + escapeHtml(n.published)
+        : '') +
+
+    '</div>' +
+
+  '</div>';
         var href = n.url ? safeUrl(n.url) : null;
         if(href){
           html += '<a class="ni'+cls+'" href="'+escapeHtml(href)+'" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">'+inner+'</a>';
