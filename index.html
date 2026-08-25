@@ -325,30 +325,37 @@ scroll-behavior:smooth;
 }
 
 .market-row{
-  display:flex;
-  justify-content:space-between;
+
+  display:grid;
+
+  grid-template-columns:
+    1.8fr
+    1fr
+    .8fr
+    .8fr;
+
   align-items:center;
 
-  padding:8px 12px;
+  padding:10px 12px;
 
-  border-bottom:1px solid rgba(255,255,255,.05);
+  border-bottom:
+    1px solid rgba(255,255,255,.05);
 
   cursor:pointer;
 
-  transition:.2s ease;
+  transition:.2s;
 
-  min-height:60px;
-
-  flex-shrink:0;
 }
 
+
+    
 .market-row:hover{
-  background:rgba(59,130,246,.05);
+  background:rgba(255,255,255,.03);
 }
 
 .market-row.active{
-  background:rgba(59,130,246,.12);
-  border-left:3px solid var(--blue);
+  background:rgba(46,125,246,.12);
+  border-left:2px solid #2e7df6;
 }
 
 .market-row.active .market-name{
@@ -583,7 +590,15 @@ max-width:100%;
   box-shadow:0 0 0 1px rgba(59,130,246,.14);
 }
 
- .kpi-table-header{
+.kpi-table-header{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:5;
+
+  background:#172334;
 
   display:grid;
 
@@ -604,10 +619,7 @@ max-width:100%;
   border-bottom:
     1px solid rgba(255,255,255,.08);
 
-  margin-bottom:4px;
-
 }
-
     .market-row{
 
   display:grid !important;
@@ -621,6 +633,17 @@ max-width:100%;
   align-items:center;
 
 }
+
+    .market-col-name{
+  text-align:left;
+}
+
+.market-col-value,
+.market-col-pct,
+.market-col-diff{
+  text-align:right;
+}
+
 
 .market-col-value,
 .market-col-pct,
@@ -1677,7 +1700,7 @@ function renderKPIs(sector){
 
     '<div>Var %</div>' +
 
-    '<div>Δ</div>' +
+    <div style="text-align:right;">Δ</div> +
 
   '</div>';
 
