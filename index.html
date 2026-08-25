@@ -256,6 +256,29 @@ border-top-right-radius:0;
   margin:12px 0 8px;
 }
 
+    .news-filters{
+  display:flex;
+  gap:8px;
+  margin:10px 0 14px;
+}
+
+.news-filters button{
+  background:#172334;
+  border:1px solid #29364a;
+  color:#8fa4c7;
+  border-radius:8px;
+  padding:6px 10px;
+  font-size:11px;
+  cursor:pointer;
+}
+
+.news-filters button.active{
+  background:#2e7df6;
+  border-color:#2e7df6;
+  color:#fff;
+}
+
+
 .range-stat{
   text-align:center;
 }
@@ -1282,14 +1305,50 @@ scroll-behavior:smooth;
       </div>
     </div>
 
-    <div class="news-panel">
-      <div class="news-title">
-        <i class="fas fa-newspaper"></i>
-        Noticias Económicas del Día
-      </div>
+  <div class="news-panel">
 
-      <div class="news-list"></div>
-    </div>
+  <div class="news-title">
+    <i class="fas fa-newspaper"></i>
+    Noticias Económicas del Día
+  </div>
+
+  <div class="news-filters">
+
+    <button
+      onclick="setNewsFilter('all')"
+      class="
+      ${NEWS_FILTER === 'all'
+        ? 'active'
+        : ''}
+      ">
+      Todas
+    </button>
+
+    <button
+      onclick="setNewsFilter('economia')"
+      class="
+      ${NEWS_FILTER === 'economia'
+        ? 'active'
+        : ''}
+      ">
+      Economía
+    </button>
+
+    <button
+      onclick="setNewsFilter('mercados')"
+      class="
+      ${NEWS_FILTER === 'mercados'
+        ? 'active'
+        : ''}
+      ">
+      Mercados
+    </button>
+
+  </div>
+
+  <div class="news-list"></div>
+
+</div>
 
   </div>
 
@@ -1437,35 +1496,105 @@ var ACCIONES = [];
       }];
     }
 
-    async function cargarNoticias(){
-      try{
-        var res = await fetch('./data/news.json', { cache: 'no-store' });
-        if(!res.ok) throw new Error('news.json HTTP ' + res.status);
-        var data = await res.json();
-        if(!data || typeof data!=='object' || Array.isArray(data)){
-          throw new Error('Formato inválido de news.json');
-        }
-        SECTOR_NOTICIAS.general = Array.isArray(data.general) ? data.general : [];
-        SECTOR_NOTICIAS.internacional = Array.isArray(data.internacional) ? data.internacional : [];
-        SECTOR_NOTICIAS.salud = Array.isArray(data.salud) ? data.salud : [];
-        NEWS_LOAD_FAILED = false;
-        renderNoticias(SECTOR_ACTUAL);
-      }catch(e){
-        console.warn('No se pudieron cargar noticias dinámicas:', e);
-        NEWS_LOAD_FAILED = true;
-        SECTOR_NOTICIAS.general = [];
-        SECTOR_NOTICIAS.internacional = [];
-        SECTOR_NOTICIAS.salud = [];
-        renderNoticias(SECTOR_ACTUAL);
-      }
+async function cargarNoticias(){
+
+  try{
+
+    var res =
+      await fetch(
+        './data/news.json',
+        { cache:'no-store' }
+      );
+
+    if(!res.ok){
+      throw new Error(
+        'news.json HTTP ' +
+        res.status
+      );
     }
 
+    var data =
+      await res.json();
+
+    if(
+      !data ||
+      !Array.isArray(data.news)
+    ){
+      throw new Error(
+        'Formato inválido de news.json'
+      );
+    }
+
+    var noticias =
+      data.news;
+
+    if(
+      NEWS_FILTER !== 'all'
+    ){
+
+      noticias =
+        noticias.filter(
+          function(n){
+
+            return (
+              n.category ===
+              NEWS_FILTER
+            );
+
+          }
+        );
+
+    }
+
+    SECTOR_NOTICIAS.general =
+      noticias;
+
+    NEWS_LOAD_FAILED =
+      false;
+
+    renderNoticias(
+      SECTOR_ACTUAL
+    );
+
+  }catch(e){
+
+    console.warn(
+      'No se pudieron cargar noticias dinámicas:',
+      e
+    );
+
+    NEWS_LOAD_FAILED =
+      true;
+
+    SECTOR_NOTICIAS.general =
+      [];
+
+    renderNoticias(
+      SECTOR_ACTUAL
+    );
+
+  }
+
+}
+
+    function setNewsFilter(filter){
+
+  NEWS_FILTER = filter;
+
+  cargarNoticias();
+
+}
+
+
+    
     var DEFAULT_CHART_COLOR = '#3b82f6';
     var CHART_RANGE = '1m';
     var CHART_ACTIVE_INDEX = 0;
     var CHART_INSTANCES = [];
     var RANGE_LABELS = {'5d':'5 días','1m':'1 mes','12m':'12 meses'};
+   
 
+    
 function renderKPIs(sector){
 
   var kpis =
@@ -1961,6 +2090,7 @@ var STOCK_SORT_DIR = 'asc';
 var STOCK_HISTORY = {};
 var STOCK_LAST_UPDATE = '';
 var STOCK_RANGE = '1M';
+var NEWS_FILTER = 'all';
 
 async function loadStocks(){
 
@@ -2160,7 +2290,14 @@ function getRangeStats(stock){
   };
 
 }
-    
+
+function setNewsFilter(filter){
+
+  NEWS_FILTER = filter;
+
+  cargarNoticias();
+
+}    
 function filterStocks(value){
 
   STOCK_FILTER = value.toLowerCase();
