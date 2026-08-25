@@ -6,32 +6,26 @@ import feedparser
 FEEDS = [
 
     {
-        "source": "Diario Financiero",
-        "url": "https://www.df.cl/noticias/site/list/port/rss____1.xml"
-    },
-
-    {
         "source": "The Clinic",
+        "category": "general",
         "url": "https://www.theclinic.cl/feed/"
     },
 
     {
         "source": "Cambio21",
+        "category": "politica",
         "url": "https://cambio21.cl/rss"
     },
 
     {
         "source": "La Nación",
+        "category": "general",
         "url": "https://lanacion.cl/feed/"
     },
 
     {
-        "source": "El Mostrador",
-        "url": "https://www.elmostrador.cl/feed/"
-    },
-
-    {
         "source": "La Discusión",
+        "category": "regional",
         "url": "https://ladiscusion.cl/feed/"
     }
 
@@ -39,10 +33,6 @@ FEEDS = [
 
 items = []
 seen_titles = set()
-
-print("")
-print("===== RSS VALIDATION =====")
-print("")
 
 for feed in FEEDS:
 
@@ -52,44 +42,18 @@ for feed in FEEDS:
             feed["url"]
         )
 
-        print("--------------------------------")
-        print("Source:", feed["source"])
-        print("URL:", feed["url"])
         print(
-            "Feed title:",
-            rss.feed.get("title", "N/A")
-        )
-        print(
-            "Entries:",
-            len(rss.entries)
-        )
-        print(
-            "Bozo:",
-            rss.bozo
+            f"{feed['source']}: "
+            f"{len(rss.entries)} entries"
         )
 
-        if rss.bozo:
-            print(
-                "Error:",
-                rss.bozo_exception
-            )
-
-        if len(rss.entries) > 0:
-
-            print("First article:")
+        for entry in rss.entries:
 
             try:
-                print(
-                    rss.entries[0].title
+
+                title = (
+                    entry.title.strip()
                 )
-            except Exception:
-                pass
-
-        for entry in rss.entries[:5]:
-
-            try:
-
-                title = entry.title.strip()
 
                 if title in seen_titles:
                     continue
@@ -103,8 +67,20 @@ for feed in FEEDS:
                     "source":
                         feed["source"],
 
+                    "category":
+                        feed["category"],
+
+                    "published":
+                        entry.get(
+                            "published",
+                            ""
+                        ),
+
                     "url":
-                        entry.link
+                        entry.get(
+                            "link",
+                            ""
+                        )
 
                 })
 
@@ -114,10 +90,12 @@ for feed in FEEDS:
     except Exception as e:
 
         print(
-            f"ERROR: {feed['source']}"
+            f"Error with "
+            f"{feed['source']}: {e}"
         )
 
-        print(str(e))
+# Limit articles
+items = items[:30]
 
 output = {
 
@@ -125,6 +103,9 @@ output = {
         datetime.utcnow().strftime(
             "%Y-%m-%d %H:%M UTC"
         ),
+
+    "totalArticles":
+        len(items),
 
     "news":
         items
@@ -144,8 +125,6 @@ with open(
         ensure_ascii=False
     )
 
-print("")
-print("===== SUMMARY =====")
 print(
-    f"News collected: {len(items)}"
+    f"News updated: {len(items)} articles"
 )
