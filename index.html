@@ -256,26 +256,37 @@ border-top-right-radius:0;
   margin:12px 0 8px;
 }
 
-    .news-filters{
+ .news-filters{
   display:flex;
-  gap:8px;
-  margin:10px 0 14px;
+  justify-content:center;
+  gap:6px;
+  margin:8px 0 12px;
 }
 
 .news-filters button{
   background:#172334;
   border:1px solid #29364a;
   color:#8fa4c7;
+
   border-radius:8px;
-  padding:6px 10px;
-  font-size:11px;
+
+  padding:4px 8px;
+
+  font-size:10px;
+  font-weight:500;
+
   cursor:pointer;
+
+  min-width:62px;
 }
 
 .news-filters button.active{
   background:#2e7df6;
   border-color:#2e7df6;
   color:#fff;
+
+  box-shadow:
+    0 0 8px rgba(46,125,246,.35);
 }
 
 
@@ -1591,6 +1602,7 @@ async function cargarNoticias(){
 
   NEWS_FILTER = filter;
 
+  renderDashboard();
   cargarNoticias();
 
 }
