@@ -3333,7 +3333,7 @@ document.addEventListener(
 
   }
 );
-}
+
   
   setSector('general');
   cargarNoticias();
@@ -3344,6 +3344,21 @@ await loadStocks();
 
 renderAccionesPage();
 
+        setTimeout(function(){
+
+  var splash =
+    document.getElementById(
+      'startup-screen'
+    );
+
+  if(splash){
+    splash.classList.add(
+      'hide'
+    );
+  }
+
+},3000);
+    
   var mainArea =
     document.querySelector('.main');
   
@@ -3362,20 +3377,7 @@ if(mainArea){
     },
     { passive:true }
 
-    setTimeout(function(){
 
-  var splash =
-    document.getElementById(
-      'startup-screen'
-    );
-
-  if(splash){
-    splash.classList.add(
-      'hide'
-    );
-  }
-
-},3000);
   );
 
   mainArea.addEventListener(
