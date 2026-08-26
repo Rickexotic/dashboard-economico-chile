@@ -1395,7 +1395,8 @@ scroll-behavior:smooth;
     muted
     playsinline
     preload="auto"
-    src="Intro.mp4">
+    src="Intro.mp4"
+    type="video/mp4">
   </video>
 
 </div>
@@ -3298,30 +3299,40 @@ function getClp(stock){
 let pageSwipeStartX = 0;
 let pageSwipeStartY = 0;
 
-document.addEventListener('DOMContentLoaded', async function(){
+document.addEventListener(
+  'DOMContentLoaded',
+  async function(){
 
-var startupVideo =
-  document.querySelector(
-    '.startup-video'
-  );
+    var startupVideo =
+      document.querySelector(
+        '.startup-video'
+      );
 
-if(startupVideo){
+    if(startupVideo){
 
-  startupVideo.addEventListener(
-    'ended',
-    function(){
+      startupVideo.addEventListener(
+        'ended',
+        function(){
 
-      document
-        .getElementById(
-          'startup-screen'
-        )
-        .classList.add(
-          'hide'
-        );
+          document
+            .getElementById('startup-screen')
+            .classList.add('hide');
+
+        }
+      );
 
     }
-  );
 
+    setSector('general');
+    cargarNoticias();
+
+    await loadStockHistory();
+    await loadStocks();
+
+    renderAccionesPage();
+
+  }
+);
 }
   
   setSector('general');
@@ -3350,6 +3361,21 @@ if(mainArea){
 
     },
     { passive:true }
+
+    setTimeout(function(){
+
+  var splash =
+    document.getElementById(
+      'startup-screen'
+    );
+
+  if(splash){
+    splash.classList.add(
+      'hide'
+    );
+  }
+
+},3000);
   );
 
   mainArea.addEventListener(
