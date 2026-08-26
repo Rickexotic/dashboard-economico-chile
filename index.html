@@ -1387,17 +1387,16 @@ scroll-behavior:smooth;
 
 <div id="startup-screen">
 
+<div id="startup-screen">
+
   <video
     class="startup-video"
     autoplay
     muted
     playsinline
-    preload="auto">
-
-    <source
-      src="Intro.mp4"
-      type
-
+    preload="auto"
+    src="Intro.mp4">
+  </video>
 
 </div>
 
@@ -3301,15 +3300,29 @@ let pageSwipeStartY = 0;
 
 document.addEventListener('DOMContentLoaded', async function(){
 
-document
-  .querySelector('.startup-video')
-  .addEventListener('ended', function(){
+var startupVideo =
+  document.querySelector(
+    '.startup-video'
+  );
 
-    document
-      .getElementById('startup-screen')
-      .classList.add('hide');
+if(startupVideo){
 
-  });
+  startupVideo.addEventListener(
+    'ended',
+    function(){
+
+      document
+        .getElementById(
+          'startup-screen'
+        )
+        .classList.add(
+          'hide'
+        );
+
+    }
+  );
+
+}
   
   setSector('general');
   cargarNoticias();
