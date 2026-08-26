@@ -32,32 +32,34 @@
   background:#0f172a;
 
   display:flex;
-
   align-items:center;
-
   justify-content:center;
 
-  pointer-events:none;
-
   transition:
-    opacity .35s ease,
-    visibility .35s ease;
+
+    opacity .45s ease,
+
+    transform .45s ease,
+
+    visibility .45s ease;
 
 }
-
+    
 #startup-screen.hide{
 
   opacity:0;
 
   visibility:hidden;
 
+  transform:scale(1.08);
+
 }
 
 .startup-gif{
 
-  width:180vh;
+  width:170vh;
 
-  height:180vh;
+  height:170vh;
 
   object-fit:contain;
 
@@ -153,16 +155,42 @@
 
 
 
- .main {
-
-  padding:16px 24px 80px;
+.main{
 
   opacity:0;
 
+  filter:blur(16px);
+
+  transform:scale(1.02);
+
   animation:
-    dashboardAppear .5s ease forwards;
+    dashboardFocus .9s ease forwards;
 
   animation-delay:.35s;
+
+}
+
+    @keyframes dashboardFocus{
+
+  0%{
+
+    opacity:0;
+
+    filter:blur(16px);
+
+    transform:scale(1.02);
+
+  }
+
+  100%{
+
+    opacity:1;
+
+    filter:blur(0);
+
+    transform:scale(1);
+
+  }
 
 }
 
