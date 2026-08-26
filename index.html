@@ -54,6 +54,7 @@
   to{
     opacity:1;
   }
+    }
 
 #startup-screen.hide{
 
@@ -165,19 +166,25 @@
 
 .main{
 
-  opacity:0;
+  opacity:1;
 
-  filter:blur(12px);
-
-  transform:scale(1.02);
-
-  animation:
-    dashboardFocus .8s ease forwards;
-
-  animation-delay:1.8s;
+  transition:
+    opacity .6s ease,
+    filter .6s ease,
+    transform .6s ease;
 
 }
 
+    .main.intro-hidden{
+
+  opacity:0;
+
+  filter:blur(8px);
+
+  transform:scale(1.01);
+
+}
+    
  @keyframes dashboardFocus{
 
   from{
@@ -1382,9 +1389,8 @@ scroll-behavior:smooth;
   </style>
 </head>
 <body>
-
-<div id="startup-screen">
-
+  
+<div class="main intro-hidden">
 <div id="startup-screen">
 
   <video
@@ -3309,16 +3315,19 @@ document.addEventListener(
     if(startupVideo){
 
       startupVideo.addEventListener(
-        'ended',
-        function(){
+  'ended',
+  function(){
 
-          document
-            .getElementById('startup-screen')
-            .classList.add('hide');
+    document
+      .getElementById('startup-screen')
+      .classList.add('hide');
 
-        }
-      );
+    document
+      .querySelector('.main')
+      .classList.remove('intro-hidden');
 
+  }
+);
     }
 
     setSector('general');
@@ -3331,32 +3340,7 @@ document.addEventListener(
 
   }
 );
-
   
-  setSector('general');
-  cargarNoticias();
-
- await loadStockHistory();
-
-await loadStocks();
-
-renderAccionesPage();
-
-        setTimeout(function(){
-
-  var splash =
-    document.getElementById(
-      'startup-screen'
-    );
-
-  if(splash){
-    splash.classList.add(
-      'hide'
-    );
-  }
-
-},3000);
-    
   var mainArea =
     document.querySelector('.main');
   
