@@ -64,29 +64,17 @@
 
 }
 
-.startup-gif{
+.startup-video{
 
-  width:100vh;
-  height:100vh;
+  width:160vh;
+
+  height:160vh;
 
   object-fit:contain;
 
-  opacity:.45;
+  opacity:.70;
 
 }
-
-    @media (max-width:640px){
-
-  .startup-gif{
-
-    width:92vw;
-
-    max-width:none;
-
-    opacity:.80;
-
-  }
-
 }
     .top-bar {
       background:rgba(15,23,42,.96);
@@ -1397,15 +1385,18 @@ scroll-behavior:smooth;
 </head>
 <body>
 
-  <div id="startup-screen">
+<div id="startup-screen">
 
-  <img
-    src="opcion.gif"
-    alt=""
-    class="startup-gif">
+  <video
+    class="startup-video"
+    autoplay
+    muted
+    playsinline
+    preload="auto">
 
-</div>
-
+    <source
+      src="Intro.mp4"
+      type
 
 
 </div>
@@ -3310,20 +3301,15 @@ let pageSwipeStartY = 0;
 
 document.addEventListener('DOMContentLoaded', async function(){
 
-setTimeout(function(){
+document
+  .querySelector('.startup-video')
+  .addEventListener('ended', function(){
 
-  var splash =
-    document.getElementById(
-      'startup-screen'
-    );
+    document
+      .getElementById('startup-screen')
+      .classList.add('hide');
 
-  if(splash){
-    splash.classList.add(
-      'hide'
-    );
-  }
-
-},1600);
+  });
   
   setSector('general');
   cargarNoticias();
