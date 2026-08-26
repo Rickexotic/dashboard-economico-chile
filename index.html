@@ -3398,10 +3398,12 @@ if(Math.abs(dx) < Math.abs(dy) * 1.2) return;
       var input=document.getElementById('siwa-input');
       if(input){
         input.addEventListener('keydown',function(e){
-          if(e.key==='Enter'){ e.preventDefault(); siwaEnviar(); }
+          if(e.key==='Enter'){ e.preventDefault(); siwaEnviar(); 
+        }
         });
       }
-        
+     });
+    
   </script>
   </body>
 </html>
