@@ -1,76 +1,174 @@
 {
-  "lastUpdate": "2026-08-28 03:31 UTC",
+  "lastUpdate": "2026-08-28 21:18 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Arrau insiste en una ley Naín Retamal 2.0 para los funcionarios de franco tras muerte de carabinero en Renca",
+      "title": "Eventual conducción con alcohol y no prestó ayuda: en prisión preventiva quedó hombre que atropelló a Paz Ramírez",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 28 Aug 2026 02:48:17 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/arrau-insiste-en-una-ley-nain-retamal-2-0-para-los-funcionarios-de-franco-tras-muerte-de-carabinero-en-renca/"
+      "published": "Fri, 28 Aug 2026 21:06:41 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/eventual-conduccion-con-alcohol-y-no-presto-ayuda-en-prision-preventiva-quedo-hombre-que-atropello-a-paz-ramirez/"
     },
     {
-      "title": "Un carabinero de franco falleció en Renca tras ser baleado durante un intento de asalto",
+      "title": "El gris que todos eligen: la paradoja detrás de los colores de autos en Chile",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 28 Aug 2026 01:30:44 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/un-carabinero-de-franco-fallecio-en-renca-tras-ser-baleado-durante-un-intento-de-asalto/"
+      "published": "Fri, 28 Aug 2026 20:49:09 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/colores-autos-chile-tendencias/"
     },
     {
-      "title": "Hermanas Prieto llegaron a la formalización del detenido por el fatal atropello a Paz Ramírez: “Queremos que su muerte no sea en vano”",
+      "title": "Pérdidas por compra de dólares, viáticos sin respaldos y pagos en exceso: revelan detalles de la denuncia del Mindep por posibles delitos financieros en Santiago 2023",
       "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 28 Aug 2026 00:19:43 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/hermanas-prieto-llegaron-a-la-formalizacion-del-detenido-por-el-fatal-atropello-a-paz-ramirez-queremos-que-su-muerte-no-sea-en-vano/"
+      "category": "mercados",
+      "published": "Fri, 28 Aug 2026 20:46:31 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/perdidas-por-compra-de-dolares-viaticos-sin-respaldos-y-pagos-en-exceso-revelan-detalles-de-la-denuncia-del-mindep-por-posibles-delitos-financieros-en-santiago-2023/"
     },
     {
-      "title": "El curso intensivo de salud en Harvard que reencontró a Enrique Paris y Karla Rubilar",
+      "title": "La pelea por un paño de casi tres hectáreas en Lo Barnechea que enfrenta al Grupo Hiller con Enaco",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 27 Aug 2026 22:27:49 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/el-curso-intensivo-de-salud-en-harvard-que-reencontro-a-enrique-paris-y-karla-rubilar/"
+      "published": "Fri, 28 Aug 2026 20:39:25 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/la-pelea-por-un-pano-de-casi-tres-hectareas-en-la-dehesa-que-enfrenta-al-grupo-hiller-con-enaco/"
     },
     {
-      "title": "Chile y Argentina destraban la operación de tres megaproyectos mineros en la frontera cordillerana",
+      "title": "Desempleo sube a 9,5%: Chile se acerca al millón de desocupados y se duplica el número de personas que buscan empleo por 12 meses",
       "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 27 Aug 2026 22:12:31 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/chile-y-argentina-destraban-la-operacion-de-tres-megaproyectos-mineros-en-la-frontera-cordillerana/"
+      "category": "economia",
+      "published": "Fri, 28 Aug 2026 20:37:18 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/desempleo-sube-a-95-chile-se-acerca-al-millon-de-desocupados-y-se-duplica-el-numero-de-personas-que-buscan-empleo-por-12-meses/"
     },
     {
-      "title": "“Telefónicamente, la puesta en escena es muy convincente”: Cómo el RUT se convierte en la puerta de entrada a una estafa bancaria que se masifica en Chile",
+      "title": "¿Puede pasar en Chile? Experto explica cómo el mortal aluvión que afectó a Nepal podría replicarse en la alta montaña chilena",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 27 Aug 2026 21:46:56 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/telefonicamente-la-puesta-en-escena-es-muy-convincente-como-el-rut-se-convierte-en-la-puerta-de-entrada-a-una-estafa-bancaria-que-se-masifica-en-chile/"
+      "published": "Fri, 28 Aug 2026 20:33:57 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/puede-pasar-en-chile-experto-explica-como-el-mortal-aluvion-que-afecto-a-nepal-podria-ocurrir-en-la-alta-montana-chilena/"
     },
     {
-      "title": "“Comienza una etapa de estabilidad, diálogo, transparencia y trabajo serio”: Federación de Tenis recompone su directorio con Juan Bugueño como presidente",
+      "title": "Directora del Demre aborda los desafíos de la educación superior y plantea cambios al NEM: “Queremos que sea un aporte y no que incentive a la inflación de notas”",
       "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 27 Aug 2026 21:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/comienza-una-etapa-de-estabilidad-dialogo-transparencia-y-trabajo-serio-federacion-de-tenis-recompone-su-directorio-con-juan-bugueno-como-presidente/"
+      "category": "economia",
+      "published": "Fri, 28 Aug 2026 20:18:19 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/directora-del-demre-aborda-los-desafios-de-la-educacion-superior-y-plantea-cambios-al-nem-queremos-que-sea-un-aporte-y-no-que-incentive-a-la-inflacion-de-notas/"
     },
     {
-      "title": "Entre La Moneda y la oposición: el rol clave que asume Paulina Vodanovic (PS) ante la reforma constitucional de seguridad",
+      "title": "El control de daños de la derecha para marcar distancia de Fernando Cerimedo, el “rey de los trolls”",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 27 Aug 2026 21:22:15 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/entre-la-moneda-y-la-oposicion-el-rol-clave-que-asume-paulina-vodanovic-ps-ante-la-reforma-constitucional-de-seguridad/"
+      "published": "Fri, 28 Aug 2026 19:15:00 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/el-control-de-danos-de-la-derecha-para-marcar-distancia-de-fernando-cerimedo-el-rey-de-los-trolls/"
     },
     {
-      "title": "El ranking de los medicamentos más usados en Chile: molécula de Ozempic fue en la que más gastaron los chilenos durante 2025",
+      "title": "“Me gustaría haberte visto desnuda”: Las denuncias por Ley Karin contra excarabinero cuando era jefe de patrulla de la Central de Seguridad de Huechuraba",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 27 Aug 2026 21:11:42 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/el-ranking-de-los-medicamentos-mas-usados-en-chile-molecula-de-ozempic-fue-en-la-que-mas-gastaron-los-chilenos-durante-2025/"
+      "published": "Fri, 28 Aug 2026 18:46:35 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/me-gustaria-haberte-visto-desnuda-las-denuncias-por-ley-karin-contra-excarabinero-cuando-era-jefe-de-central-de-seguridad-de-huechuraba/"
     },
     {
-      "title": "Cochilco advierte escasez de proyectos nuevos pese a cartera minera récord de más de US$100 mil millones",
+      "title": "Jetsmart responde al embargo del Servico Nacional de Migraciones  y niega transporte ilegal de pasajeros",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 27 Aug 2026 21:09:07 +0000",
-      "url": "https://www.theclinic.cl/2026/08/27/cochilco-advierte-escasez-de-proyectos-nuevos-pese-a-cartera-minera-record-de-mas-de-us100-mil-millones/"
+      "published": "Fri, 28 Aug 2026 18:37:01 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/jetsmart-responde-al-embargo-del-servico-nacional-de-migraciones-y-niega-transporte-ilegal-de-pasajeros/"
+    },
+    {
+      "title": "Senador Pedro Araya le tira la cadena al ministro de Seguridad: \"La exministra Steinert tenía más claro el tema de seguridad que (el ministro) Arrau\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 13:58:53 -0400",
+      "url": "https://cambio21.cl/pais/senador-pedro-araya-le-tira-la-cadena-al-ministro-de-seguridad-la-exministra-steinert-tenia-mas-claro-el-tema-de-seguridad-que-el-ministro-arrau-6a91cb4f14e9863c5263a564"
+    },
+    {
+      "title": "Escritora Cynthia Rimsky gana con el Premio Nacional de Literatura 2026: Es la séptima mujer en obtenerlo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 13:46:28 -0400",
+      "url": "https://cambio21.cl/tendencias/escritora-cynthia-rimsky-gana-con-el-premio-nacional-de-literatura-2026-es-la-septima-mujer-en-obtenerlo-6a91c8fc0ac97e528b462cab"
+    },
+    {
+      "title": "Embajador de China en Chile y una verdad: \"Algunos en EE.UU. se creen el emperador de América Latina\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 13:35:21 -0400",
+      "url": "https://cambio21.cl/politica/embajador-de-china-en-chile-y-una-verdad-algunos-en-ee-uu-se-creen-el-emperador-de-america-latina-6a91c5d13ec8503dcc627223"
+    },
+    {
+      "title": "Exministra y vocera de Gobierno, Mara Sedini asegura que nunca conoció a Cerimedo y defiende a Kast: “No ganó por una campaña de bots”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 12:37:48 -0400",
+      "url": "https://cambio21.cl/politica/exministra-y-vocera-de-gobierno-mara-sedini-asegura-que-nunca-conocio-a-cerimedo-y-defiende-a-kast-no-gano-por-una-campana-de-bots-6a91b807230783594616f045"
+    },
+    {
+      "title": "Trump ordena cambiar el nombre del lago Ontario a lago \"América\": la dura respuesta del primer ministro de Canadá al mandatario de EEUU",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 12:28:51 -0400",
+      "url": "https://cambio21.cl/el-mundo/trump-ordena-cambiar-el-nombre-del-lago-ontario-a-lago-america-la-dura-respuesta-del-primer-ministro-de-canada-al-mandatario-de-eeuu-6a91b66e958f033022090003"
+    },
+    {
+      "title": "Delincuentes del tren de Aragua ya están en Chile: \"El Turko\" y \"El Gocho\" fueron traídos en avión Fach desde EEUU y Colombia y enfrentarán a la justicia por crimen de Ronald Ojeda",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 11:16:00 -0400",
+      "url": "https://cambio21.cl/pais/delincuentes-del-tren-de-aragua-ya-estan-en-chile-el-turko-y-el-gocho-fueron-traidos-en-avion-fach-desde-eeuu-y-colombia-y-enfrentaran-a-la-justicia-por-crimen-de-ronald-ojeda-6a91a1f19af0235ea7397923"
+    },
+    {
+      "title": "Efecto Vozinha: El notable rating que dejó el debut del portero mundialista con la camiseta de Colo Colo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 10:49:49 -0400",
+      "url": "https://cambio21.cl/deportes/efecto-vozinha-el-notable-rating-que-dejo-el-debut-del-portero-mundialista-con-la-camiseta-de-colo-colo-6a919f638b57087d3e253da4"
+    },
+    {
+      "title": "Tres detenidos por instalación de artefacto explosivo en casa del escritor Fernando Villegas en Ñuñoa",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 10:34:38 -0400",
+      "url": "https://cambio21.cl/tendencias/tres-detenidos-por-instalacion-de-artefacto-explosivo-en-casa-del-escritor-fernando-villegas-en-nunoa-6a919bc64e0d144d0c6edae7"
+    },
+    {
+      "title": "Dos carabineros fueron detenidos y serán imputados por matar a artista rapero en control vehicular",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 10:12:30 -0400",
+      "url": "https://cambio21.cl/pais/dos-carabineros-fueron-detenidos-y-seran-imputados-por-matar-a-artista-rapero-en-control-vehicular-6a919676dc8aeb648438a763"
+    },
+    {
+      "title": "Compleja y desesperante búsqueda de trabajo: El desempleo en Chile sigue subiendo y llega a 9,5%. El el más alto en cinco años",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Fri, 28 Aug 2026 09:57:49 -0400",
+      "url": "https://cambio21.cl/politica/compleja-y-desesperante-busqueda-de-trabajo-el-desempleo-en-chile-sigue-subiendo-y-llega-a-9-5-el-el-mas-alto-en-cinco-anos-6a9192d988f783424a55c1d3"
+    },
+    {
+      "title": "Murió Harald V, rey de Noruega y tres veces deportista olímpico",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 09:41:25 -0400",
+      "url": "https://cambio21.cl/tendencias/murio-harald-v-rey-de-noruega-y-tres-veces-deportista-olimpico-6a918f99c297471536407065"
+    },
+    {
+      "title": "Seguro de salud para trabajadores dependientes: qué puede ofrecer una pyme",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 03:56:28 -0400",
+      "url": "https://cambio21.cl/tendencias/seguro-de-salud-para-trabajadores-dependientes-que-puede-ofrecer-una-pyme-6a906ee13e9fbe608e1c6624"
+    },
+    {
+      "title": "Operadora peruana de Casinos asegura que evaluarán llegar a tribunales internacionales para activar mecanismos de protección de sus inversiones",
+      "source": "Cambio21",
+      "category": "mercados",
+      "published": "Fri, 28 Aug 2026 03:36:22 -0400",
+      "url": "https://cambio21.cl/pais/operadora-peruana-de-casinos-asegura-que-evaluaran-llegar-a-tribunales-internacionales-para-activar-mecanismos-de-proteccion-de-sus-inversiones-6a90c004f977bb3f7b3d6713"
+    },
+    {
+      "title": "Acciones ante Fiscalía, oficios y acusaciones: Arremetida por bots y cuentas falsas apunta directamente a operaciones de desinformación y nexos con importantes asesores del gobierno de Kast: 38% de los ataques fueron contra Matthei y también hubo \"agresión digital\" contra Kaiser",
+      "source": "Cambio21",
+      "category": "mercados",
+      "published": "Fri, 28 Aug 2026 03:07:43 -0400",
+      "url": "https://cambio21.cl/politica/acciones-ante-fiscalia-oficios-y-acusaciones-arremetida-por-bots-y-cuentas-falsas-apunta-directamente-a-operaciones-de-desinformacion-y-nexos-con-importantes-asesores-del-gobierno-de-kast-38-de-los-ataques-fueron-contra-matthei-y-tambien-hubo-agresion-digital-contra-kaiser-6a90f60d5a59011cb06ecb23"
     },
     {
       "title": "Muere Ratko Mladic, el “carnicero de Bosnia”, condenado por genocidio y crímenes de guerra",
@@ -105,7 +203,7 @@
       "source": "Cambio21",
       "category": "politica",
       "published": "Thu, 27 Aug 2026 17:05:25 -0400",
-      "url": "https://cambio21.cl/pais/diputada-macarena-santelices-republicana-matthei-llora-por-la-herida-si-tiene-criticas-que-las-converse-a-puertas-cerradas-6a90a607384d8b2958159633"
+      "url": "https://cambio21.cl/politica/diputada-macarena-santelices-republicana-matthei-llora-por-la-herida-si-tiene-criticas-que-las-converse-a-puertas-cerradas-6a90a607384d8b2958159633"
     },
     {
       "title": "Malos números para Kast y el Gobierno: Rechazo al mandatario llega a 61%. Y desaprobación del gabinete alcanza el 62%",
@@ -113,104 +211,6 @@
       "category": "politica",
       "published": "Thu, 27 Aug 2026 11:30:18 -0400",
       "url": "https://cambio21.cl/politica/malos-numeros-para-kast-y-el-gobierno-rechazo-al-mandatario-llega-a-61-y-desaprobacion-del-gabinete-alcanza-el-62-6a90566a8154114e27477033"
-    },
-    {
-      "title": "Diputado denunciará eventuales delitos informáticos vinculados al \"rey de los bots y noticias falsas\" Fernando Cerimedo en Chile. Consultor de gobiernos de extrema derecha está preso en Bolivia",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 11:18:02 -0400",
-      "url": "https://cambio21.cl/politica/diputado-denunciara-eventuales-delitos-informaticos-vinculados-al-rey-de-los-bots-y-noticias-falsas-fernando-cerimedo-en-chile-consultor-de-gobiernos-de-extrema-derecha-esta-preso-en-bolivia-6a9054dd2f9480587130c943"
-    },
-    {
-      "title": "Muere Yayoi Kusama a los 97 años: La artista contemporánea más famosa y vendida del mundo. Hizo de los lunares una forma de arte",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 10:30:18 -0400",
-      "url": "https://cambio21.cl/tendencias/muere-yayoi-kusama-a-los-97-anos-la-artista-contemporanea-mas-famosa-y-vendida-del-mundo-hizo-de-los-lunares-una-forma-de-arte-6a90496e75232a5c3c0b2413"
-    },
-    {
-      "title": "Kast reinstaura formalmente gabinete de la primera dama eliminado durante administración de Boric",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 10:15:18 -0400",
-      "url": "https://cambio21.cl/politica/kast-reinstaura-formalmente-gabinete-de-la-primera-dama-eliminado-durante-administracion-de-boric-6a9045f3041e9c582f18960a"
-    },
-    {
-      "title": "\"Quiero matar a la Rectora\". Detienen a exalumna de 17 años del Instituto Nacional por amenazas de muerte",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 10:01:57 -0400",
-      "url": "https://cambio21.cl/tendencias/quiero-matar-a-la-rectora-detienen-a-exalumna-de-17-anos-del-instituto-nacional-por-amenazas-de-muerte-6a9042297612ad248b1a2c2f"
-    },
-    {
-      "title": "VIDEOS con imágenes sensibles. Terrible cifra de muertos y desaparecidos entre Nepal y Tíbet: 450 muertos y 1.600 desaparecidos por monstruosa riada y el deslizamiento masivo de tierra. 800 son extranjeros",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 09:39:41 -0400",
-      "url": "https://cambio21.cl/el-mundo/videos-con-imagenes-sensibles-terrible-cifra-de-muertos-y-desaparecidos-entre-nepal-y-tibet-450-muertos-y-1-600-desaparecidos-por-monstruosa-riada-y-el-deslizamiento-masivo-de-tierra-800-son-extranjeros-6a903bc9041e9c582f189603"
-    },
-    {
-      "title": "El villano equivocado. Por Eduardo Saffirio Suárez. Abogado",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 09:22:14 -0400",
-      "url": "https://cambio21.cl/pais/el-villano-equivocado-por-eduardo-saffirio-suarez-abogado-6a903986773bbe27834fd225"
-    },
-    {
-      "title": "VIDEO de los goles y jugadas. Por fin debutó Vozinha al arco de Colo Colo. Ganó 3-0",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 01:51:59 -0400",
-      "url": "https://cambio21.cl/deportes/video-de-los-goles-y-jugadas-por-fin-debuto-vozinha-al-arco-de-colo-colo-gano-3-0-6a8fcf5f6221ed4fb23dc5f3"
-    },
-    {
-      "title": "Gobierno da por “superado el incidente”: Ministros de Defensa de Chile y Argentina zanjan polémica por Estrecho de Magallanes",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 01:21:12 -0400",
-      "url": "https://cambio21.cl/pais/gobierno-da-por-superado-el-incidente-ministros-de-defensa-de-chile-y-argentina-zanjan-polemica-por-estrecho-de-magallanes-6a8fc6e6c85aa85975410cf3"
-    },
-    {
-      "title": "Canal Mega confirmó al relator Claudio Palma y a Iván Zamorano como comentarista camino al Mundial 2030",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 26 Aug 2026 23:56:31 -0400",
-      "url": "https://cambio21.cl/deportes/canal-mega-confirmo-al-relator-claudio-palma-y-a-ivan-zamorano-como-comentarista-camino-al-mundial-2030-6a8fb50510f85222d76ece43"
-    },
-    {
-      "title": "Guitarrista Luis Orlandini recibe el Premio Nacional de Artes Musicales 2026",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 26 Aug 2026 20:15:13 -0400",
-      "url": "https://cambio21.cl/tendencias/guitarrista-luis-orlandini-recibe-el-premio-nacional-de-artes-musicales-2026-6a8f8133e97be924a6598f43"
-    },
-    {
-      "title": "Kast designa a María Paz Ríos como nueva subsecretaria de Deportes. Es abogada y récord de Chile en el atletismo:",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 26 Aug 2026 20:08:33 -0400",
-      "url": "https://cambio21.cl/politica/kast-designa-a-maria-paz-rios-como-nueva-subsecretaria-de-deportes-es-abogada-y-record-de-chile-en-el-atletismo-6a8f7f661dc2a77edb261013"
-    },
-    {
-      "title": "Nace un nuevo estilo: Resaltar y publicitar fallos de primera instancia. Por Alfredo Ugarte S.  Abogado Profesor U. de Chile",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 26 Aug 2026 20:01:46 -0400",
-      "url": "https://cambio21.cl/pais/nace-un-nuevo-estilo-resaltar-y-publicitar-fallos-de-primera-instancia-por-alfredo-ugarte-s-abogado-profesor-u-de-chile-6a8f0ddc04671414173d6e36"
-    },
-    {
-      "title": "Detienen al conductor que atropelló y provocó muerte de cineasta Paz Ramírez, hermana de actrices María José y Ángela Prieto: Es chileno y tiene antecedentes de conducir ebrio",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 26 Aug 2026 18:57:35 -0400",
-      "url": "https://cambio21.cl/pais/detienen-al-conductor-que-atropello-y-provoco-muerte-de-cineasta-paz-ramirez-hermana-de-actrices-maria-jose-y-angela-prieto-es-chileno-y-tiene-antecedentes-de-conducir-ebrio-6a8f6dd621409d683f488716"
-    },
-    {
-      "title": "Matthei se va con todo contra Kast por su relación con \"rey de los bots, trolls y cuentas falsas\" que la acusaron de tener alzheimer: Dice que enfrentó al mandatario: \"No le creí nada y sigo no creyéndole nada\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 26 Aug 2026 18:07:56 -0400",
-      "url": "https://cambio21.cl/politica/matthei-se-va-con-todo-contra-kast-por-su-relacion-con-rey-de-los-bots-trolls-y-cuentas-falsas-que-la-acusaron-de-tener-alzheimer-dice-que-enfrento-al-mandatario-no-le-crei-nada-y-sigo-no-creyendole-nada-6a8f6106e77f033fa0779f84"
     }
   ]
 }
