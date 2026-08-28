@@ -1,76 +1,97 @@
 {
-  "lastUpdate": "2026-08-28 21:18 UTC",
+  "lastUpdate": "2026-08-28 23:44 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Eventual conducción con alcohol y no prestó ayuda: en prisión preventiva quedó hombre que atropelló a Paz Ramírez",
+      "title": "¿Agua, café, jugo o alcohol? La bebida con la que tomas tus medicamentos podría estar alterando sus efectos",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 28 Aug 2026 21:06:41 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/eventual-conduccion-con-alcohol-y-no-presto-ayuda-en-prision-preventiva-quedo-hombre-que-atropello-a-paz-ramirez/"
+      "published": "Fri, 28 Aug 2026 23:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/agua-cafe-jugo-o-alcohol-la-bebida-con-la-que-tomas-tus-medicamentos-podria-estar-alterando-sus-efectos/"
     },
     {
-      "title": "El gris que todos eligen: la paradoja detrás de los colores de autos en Chile",
+      "title": "Caso Joyvio-Australis: el Cuarto Juzgado de Garantía de Santiago cierra la investigación y fija audiencia para revisar diligencias pendientes",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 28 Aug 2026 20:49:09 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/colores-autos-chile-tendencias/"
+      "published": "Fri, 28 Aug 2026 23:07:59 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/caso-joyvio-australis-el-cuarto-juzgado-de-garantia-de-santiago-cierra-la-investigacion-y-fija-audiencia-para-revisar-diligencias-pendientes/"
     },
     {
-      "title": "Pérdidas por compra de dólares, viáticos sin respaldos y pagos en exceso: revelan detalles de la denuncia del Mindep por posibles delitos financieros en Santiago 2023",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Fri, 28 Aug 2026 20:46:31 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/perdidas-por-compra-de-dolares-viaticos-sin-respaldos-y-pagos-en-exceso-revelan-detalles-de-la-denuncia-del-mindep-por-posibles-delitos-financieros-en-santiago-2023/"
-    },
-    {
-      "title": "La pelea por un paño de casi tres hectáreas en Lo Barnechea que enfrenta al Grupo Hiller con Enaco",
+      "title": "“Una solución permanente que entrega estabilidad jurídica”: El cambio legal que facilitará el ingreso al país de vehículos de competición deportiva",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 28 Aug 2026 20:39:25 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/la-pelea-por-un-pano-de-casi-tres-hectareas-en-la-dehesa-que-enfrenta-al-grupo-hiller-con-enaco/"
+      "published": "Fri, 28 Aug 2026 22:32:00 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/una-solucion-permanente-que-entrega-estabilidad-juridica-el-cambio-legal-que-facilitara-el-ingreso-al-pais-de-vehiculos-de-competicion-deportiva/"
     },
     {
-      "title": "Desempleo sube a 9,5%: Chile se acerca al millón de desocupados y se duplica el número de personas que buscan empleo por 12 meses",
+      "title": "Encuesta Qualiz-U.Central revela brechas entre ciudadanía y mundo político",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 28 Aug 2026 22:26:12 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/encuesta-qualiz-u-central-brechas/"
+    },
+    {
+      "title": "¿Quién se hace cargo?: Corte rechaza recurso interpuesto por ganaderos para frenar las miles de muertes que generan perros asilvestrados en Tierra del Fuego",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 28 Aug 2026 22:19:52 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/quien-se-hace-cargo-corte-rechaza-recurso-interpuesto-por-ganaderos-para-frenar-las-miles-de-muertes-que-generan-perros-asilvestrados-en-tierra-del-fuego/"
+    },
+    {
+      "title": "MoviPet 2026: Movicenter invita a encontrar a tu nuevo copiloto en una nueva jornada de adopción responsable",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 28 Aug 2026 22:10:27 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/movipet-2026-movicenter-jornada-adopcion/"
+    },
+    {
+      "title": "Cuatro autos nuevos por día: la fábrica de modelos que China ya no puede sostener",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 28 Aug 2026 22:00:00 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/cuatro-autos-nuevos-por-dia-la-fabrica-de-modelos-que-china-ya-no-puede-sostener/"
+    },
+    {
+      "title": "Del siete colores a las totoras: la sorprendente riqueza que convierte a los humedales en el tesoro biológico de Chile",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 28 Aug 2026 21:58:24 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/del-siete-colores-a-las-totoras-la-sorprendente-riqueza-que-convierte-a-los-humedales-en-el-tesoro-biologico-de-chile/"
+    },
+    {
+      "title": "El exponencial crecimiento de Sokobox: los pioneros del skincare coreano en Chile proyectan llegar a 25 puntos de venta en 2027",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Fri, 28 Aug 2026 20:37:18 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/desempleo-sube-a-95-chile-se-acerca-al-millon-de-desocupados-y-se-duplica-el-numero-de-personas-que-buscan-empleo-por-12-meses/"
+      "published": "Fri, 28 Aug 2026 21:46:31 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/el-exponencial-crecimiento-de-sokobox-los-pioneros-del-skincare-coreano-en-chile-proyectan-llegar-a-25-puntos-de-venta-en-2027/"
     },
     {
-      "title": "¿Puede pasar en Chile? Experto explica cómo el mortal aluvión que afectó a Nepal podría replicarse en la alta montaña chilena",
+      "title": "El Niño golpea de nuevo: advierten de un verano con temperaturas extremas tras una primavera cálida y lluviosa",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 28 Aug 2026 20:33:57 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/puede-pasar-en-chile-experto-explica-como-el-mortal-aluvion-que-afecto-a-nepal-podria-ocurrir-en-la-alta-montana-chilena/"
+      "published": "Fri, 28 Aug 2026 21:31:11 +0000",
+      "url": "https://www.theclinic.cl/2026/08/28/el-nino-golpea-de-nuevo-advierten-de-un-verano-con-temperaturas-extremas-tras-una-primavera-calida-y-lluviosa/"
     },
     {
-      "title": "Directora del Demre aborda los desafíos de la educación superior y plantea cambios al NEM: “Queremos que sea un aporte y no que incentive a la inflación de notas”",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Fri, 28 Aug 2026 20:18:19 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/directora-del-demre-aborda-los-desafios-de-la-educacion-superior-y-plantea-cambios-al-nem-queremos-que-sea-un-aporte-y-no-que-incentive-a-la-inflacion-de-notas/"
+      "title": "Pareja del rey de \"bots, cuentas falsas y trolls\" sobreviente de atentado desclasifica lo que se intuía, Vinculó campaña de Kast con Cerimedo: \"Decía que había hecho un nuevo presidente\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 19:34:30 -0400",
+      "url": "https://cambio21.cl/politica/pareja-del-rey-de-bots-cuentas-falsas-y-trolls-sobreviente-de-atentado-desclasifica-lo-que-se-intuia-vinculo-campana-de-kast-con-cerimedo-decia-que-habia-hecho-un-nuevo-presidente-6a921738ef91cb587561d013"
     },
     {
-      "title": "El control de daños de la derecha para marcar distancia de Fernando Cerimedo, el “rey de los trolls”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 28 Aug 2026 19:15:00 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/el-control-de-danos-de-la-derecha-para-marcar-distancia-de-fernando-cerimedo-el-rey-de-los-trolls/"
+      "title": "Decretan prisión preventiva para conductor que atropelló a cineasta Paz Ramírez: Informe detectó que bebió seis copas de sangría",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 18:44:24 -0400",
+      "url": "https://cambio21.cl/tendencias/decretan-prision-preventiva-para-conductor-que-atropello-a-cineasta-paz-ramirez-informe-detecto-que-bebio-seis-copas-de-sangria-6a9209b8f8dcfa4eb24125d3"
     },
     {
-      "title": "“Me gustaría haberte visto desnuda”: Las denuncias por Ley Karin contra excarabinero cuando era jefe de patrulla de la Central de Seguridad de Huechuraba",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 28 Aug 2026 18:46:35 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/me-gustaria-haberte-visto-desnuda-las-denuncias-por-ley-karin-contra-excarabinero-cuando-era-jefe-de-central-de-seguridad-de-huechuraba/"
-    },
-    {
-      "title": "Jetsmart responde al embargo del Servico Nacional de Migraciones  y niega transporte ilegal de pasajeros",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 28 Aug 2026 18:37:01 +0000",
-      "url": "https://www.theclinic.cl/2026/08/28/jetsmart-responde-al-embargo-del-servico-nacional-de-migraciones-y-niega-transporte-ilegal-de-pasajeros/"
+      "title": "Fiscal del caso del crimen del teniente venezolano Ronald Ojeda: \"El que se encargó de hacer la negociación y el pago fue Diosdado Cabello\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 28 Aug 2026 17:11:34 -0400",
+      "url": "https://cambio21.cl/pais/fiscal-del-caso-del-crimen-del-teniente-venezolano-ronald-ojeda-el-que-se-encargo-de-hacer-la-negociacion-y-el-pago-fue-diosdado-cabello-6a91f8155062fe1feb38dba4"
     },
     {
       "title": "Senador Pedro Araya le tira la cadena al ministro de Seguridad: \"La exministra Steinert tenía más claro el tema de seguridad que (el ministro) Arrau\"",
@@ -190,27 +211,6 @@
       "category": "politica",
       "published": "Thu, 27 Aug 2026 17:30:35 -0400",
       "url": "https://cambio21.cl/tendencias/la-inteligencia-artificial-comenzara-a-dejar-una-firma-invisible-en-sus-textos-que-cambia-para-las-empresas-6a9074263bc34105915bc6a4"
-    },
-    {
-      "title": "Clan Chen: Presidente Kast critica recursos judiciales que retrotraen traslado de reos que estaban en nueva cárcel de Talca",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 17:22:03 -0400",
-      "url": "https://cambio21.cl/politica/clan-chen-presidente-kast-critica-recursos-judiciales-que-retrotraen-traslado-de-reos-que-estaban-en-nueva-carcel-de-talca-6a90a9305778ec10d07e7a2b"
-    },
-    {
-      "title": "Diputada Macarena Santelices (Republicana): “Matthei llora por la herida. Si tiene críticas, que las converse a puertas cerradas”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 17:05:25 -0400",
-      "url": "https://cambio21.cl/politica/diputada-macarena-santelices-republicana-matthei-llora-por-la-herida-si-tiene-criticas-que-las-converse-a-puertas-cerradas-6a90a607384d8b2958159633"
-    },
-    {
-      "title": "Malos números para Kast y el Gobierno: Rechazo al mandatario llega a 61%. Y desaprobación del gabinete alcanza el 62%",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 27 Aug 2026 11:30:18 -0400",
-      "url": "https://cambio21.cl/politica/malos-numeros-para-kast-y-el-gobierno-rechazo-al-mandatario-llega-a-61-y-desaprobacion-del-gabinete-alcanza-el-62-6a90566a8154114e27477033"
     }
   ]
 }
