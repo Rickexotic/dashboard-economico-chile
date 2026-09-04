@@ -1,132 +1,132 @@
 {
   "meta": {
-    "lastUpdate": "2026-09-03 15:54 UTC"
+    "lastUpdate": "2026-09-04 15:52 UTC"
   },
   "stocks": [
     {
       "ticker": "SQM-B",
       "empresa": "Sociedad Química y Minera",
       "sector": "Minería",
-      "precio": 76285.0,
-      "cambioPct": 16.55,
-      "cambioClp": 10835.0,
+      "precio": 72162.0,
+      "cambioPct": 10.26,
+      "cambioClp": 6712.0,
       "up": true
     },
     {
       "ticker": "COPEC",
       "empresa": "Empresas Copec",
       "sector": "Energía",
-      "precio": 6840.4,
-      "cambioPct": 9.45,
-      "cambioClp": 590.8,
+      "precio": 6732.7,
+      "cambioPct": 7.73,
+      "cambioClp": 483.1,
       "up": true
     },
     {
       "ticker": "CMPC",
       "empresa": "CMPC",
       "sector": "Forestal",
-      "precio": 1060.0,
-      "cambioPct": -0.93,
-      "cambioClp": -10.0,
+      "precio": 1033.0,
+      "cambioPct": -3.46,
+      "cambioClp": -37.0,
       "up": false
     },
     {
       "ticker": "BCI",
       "empresa": "Banco BCI",
       "sector": "Bancos",
-      "precio": 67724.0,
-      "cambioPct": 8.35,
-      "cambioClp": 5222.0,
+      "precio": 67500.0,
+      "cambioPct": 8.0,
+      "cambioClp": 4998.0,
       "up": true
     },
     {
       "ticker": "BSANTANDER",
       "empresa": "Banco Santander Chile",
       "sector": "Bancos",
-      "precio": 83.0,
-      "cambioPct": 7.79,
-      "cambioClp": 6.0,
+      "precio": 83.7,
+      "cambioPct": 8.7,
+      "cambioClp": 6.7,
       "up": true
     },
     {
       "ticker": "FALABELLA",
       "empresa": "Falabella",
       "sector": "Retail",
-      "precio": 6430.0,
-      "cambioPct": 10.2,
-      "cambioClp": 595.0,
+      "precio": 6302.6,
+      "cambioPct": 8.01,
+      "cambioClp": 467.6,
       "up": true
     },
     {
       "ticker": "CENCOSUD",
       "empresa": "Cencosud",
       "sector": "Retail",
-      "precio": 2022.9,
-      "cambioPct": 1.4,
-      "cambioClp": 27.9,
+      "precio": 2020.2,
+      "cambioPct": 1.26,
+      "cambioClp": 25.2,
       "up": true
     },
     {
       "ticker": "RIPLEY",
       "empresa": "Ripley",
       "sector": "Retail",
-      "precio": 419.0,
-      "cambioPct": 9.41,
-      "cambioClp": 36.04,
+      "precio": 412.45,
+      "cambioPct": 7.7,
+      "cambioClp": 29.49,
       "up": true
     },
     {
       "ticker": "ENELAM",
       "empresa": "Enel Américas",
       "sector": "Utilities",
-      "precio": 85.1,
-      "cambioPct": 1.26,
-      "cambioClp": 1.06,
+      "precio": 84.91,
+      "cambioPct": 1.04,
+      "cambioClp": 0.87,
       "up": true
     },
     {
       "ticker": "ENELCHILE",
       "empresa": "Enel Chile",
       "sector": "Utilities",
-      "precio": 81.47,
-      "cambioPct": 0.57,
-      "cambioClp": 0.46,
+      "precio": 81.29,
+      "cambioPct": 0.35,
+      "cambioClp": 0.28,
       "up": true
     },
     {
       "ticker": "ANDINA-B",
       "empresa": "Embotelladora Andina",
       "sector": "Consumo",
-      "precio": 4677.2,
-      "cambioPct": -0.48,
-      "cambioClp": -22.7,
+      "precio": 4616.7,
+      "cambioPct": -1.77,
+      "cambioClp": -83.2,
       "up": false
     },
     {
       "ticker": "IAM",
       "empresa": "Inversiones Aguas Metropolitanas",
       "sector": "Utilities",
-      "precio": 921.89,
-      "cambioPct": 0.0,
-      "cambioClp": 0.0,
-      "up": true
+      "precio": 905.2,
+      "cambioPct": -1.81,
+      "cambioClp": -16.69,
+      "up": false
     },
     {
       "ticker": "AGUAS-A",
       "empresa": "Aguas Andinas",
       "sector": "Utilities",
-      "precio": 327.98,
-      "cambioPct": -1.33,
-      "cambioClp": -4.42,
+      "precio": 328.5,
+      "cambioPct": -1.17,
+      "cambioClp": -3.9,
       "up": false
     },
     {
       "ticker": "CAP",
       "empresa": "CAP",
       "sector": "Minería",
-      "precio": 5661.9,
-      "cambioPct": -10.32,
-      "cambioClp": -651.4,
+      "precio": 5600.0,
+      "cambioPct": -11.3,
+      "cambioClp": -713.3,
       "up": false
     },
     {
@@ -142,45 +142,45 @@
       "ticker": "PARAUCO",
       "empresa": "Parque Arauco",
       "sector": "Inmobiliario",
-      "precio": 3932.5,
-      "cambioPct": -2.66,
-      "cambioClp": -107.4,
+      "precio": 3925.6,
+      "cambioPct": -2.83,
+      "cambioClp": -114.3,
       "up": false
     },
     {
       "ticker": "MALLPLAZA",
       "empresa": "Mallplaza",
       "sector": "Inmobiliario",
-      "precio": 3967.5,
-      "cambioPct": 0.44,
-      "cambioClp": 17.5,
+      "precio": 3973.8,
+      "cambioPct": 0.6,
+      "cambioClp": 23.8,
       "up": true
     },
     {
       "ticker": "VAPORES",
       "empresa": "Compañía Sud Americana de Vapores",
       "sector": "Transporte",
-      "precio": 49.31,
-      "cambioPct": 6.02,
-      "cambioClp": 2.8,
+      "precio": 49.05,
+      "cambioPct": 5.46,
+      "cambioClp": 2.54,
       "up": true
     },
     {
       "ticker": "CCU",
       "empresa": "Compañía Cervecerías Unidas",
       "sector": "Consumo",
-      "precio": 5509.0,
-      "cambioPct": 5.58,
-      "cambioClp": 291.0,
+      "precio": 5530.0,
+      "cambioPct": 5.98,
+      "cambioClp": 312.0,
       "up": true
     },
     {
       "ticker": "CONCHATORO",
       "empresa": "Viña Concha y Toro",
       "sector": "Consumo",
-      "precio": 900.0,
-      "cambioPct": 5.59,
-      "cambioClp": 47.67,
+      "precio": 898.95,
+      "cambioPct": 5.47,
+      "cambioClp": 46.62,
       "up": true
     }
   ]
