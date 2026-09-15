@@ -1,90 +1,195 @@
 {
-  "lastUpdate": "2026-09-14 22:22 UTC",
+  "lastUpdate": "2026-09-15 15:26 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "La renovación de la Plaza Pucará y el Parque Botánico en Ñuñoa: incluye un bosque Miyawaki y nuevas terrazas, pero locatarios acusan que no fueron consultados",
+      "title": "La Región Metropolitana se prepara para el 18: estas son las fondas gratuitas que tendrá la capital estas Fiestas Patrias",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 14 Sep 2026 22:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/la-renovacion-de-la-plaza-pucara-y-el-parque-botanico-en-nunoa-incluye-un-bosque-miyawaki-y-nuevas-terrazas-pero-locatarios-acusan-que-no-fueron-consultados/"
+      "published": "Tue, 15 Sep 2026 14:55:43 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/la-region-metropolitana-se-prepara-para-el-18-estas-son-las-fondas-gratuitas-que-tendra-la-capital-estas-fiestas-patrias/"
     },
     {
-      "title": "Con Louis de Grange, Daniel Mas, Jorge Quiroz y Ximena Rincón: el despliegue del gabinete económico en el Chile Day en Madrid",
+      "title": "La soterrada disputa que se armó en el PS por el cupo vacante que dejó Camilo Escalona en la secretaría general",
       "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 14:30:40 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/la-soterrada-disputa-que-se-armo-en-el-ps-por-el-cupo-vacante-que-dejo-camilo-escalona-en-la-secretaria-general/"
+    },
+    {
+      "title": "Hasta 28°C: vuelve el calor esta semana en la Región Metropolitana de cara a las Fiestas Patrias pero lluvias podrían reaparecer el 19",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 14:21:33 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/hasta-28c-vuelve-el-calor-esta-semana-en-la-region-metropolitana-de-cara-a-las-fiestas-patrias-pero-lluvias-podrian-reaparecer-el-19/"
+    },
+    {
+      "title": "Trump interrumpe a CEO de Nvidia y tilda de “farsa” los temores por el avance de la IA",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 14:04:05 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/trump-irrumpe-a-ceo-de-nvidia-y-tilda-de-farsa-los-temores-por-el-avance-de-la-ia/"
+    },
+    {
+      "title": "Ya son 46 salidas de autoridades de Gobierno en seis meses: los motivos tras la renuncia del seremi de Vivienda de Antofagasta",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 13:56:33 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/ya-son-46-salidas-de-autoridades-de-gobierno-en-seis-meses-los-motivos-tras-la-renuncia-del-seremi-de-vivienda-de-antofagasta/"
+    },
+    {
+      "title": "La triste paradoja del bienestar juvenil: Chile está entre los mejores países para ser joven, pero ellos no lo sienten así",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 13:53:25 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/la-triste-paradoja-del-bienestar-juvenil-chile-esta-entre-los-mejores-paises-para-ser-joven-pero-ellos-no-lo-sienten-asi/"
+    },
+    {
+      "title": "“Son puras moscas muertas”: Influencer Otakin denuncia a restaurante por malas condiciones de higiene",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 13:45:25 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/son-puras-moscas-muertas-influencer-otakin-denuncia-a-restaurante-por-malas-condiciones-de-higiene/"
+    },
+    {
+      "title": "“Esa desigualdad no la vamos a aceptar”: Alcalde Castro se opone a proyecto de torres de alta tensión en Cerros de Renca y acusa riesgos en el Parque Metropolitano",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 13:26:55 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/esa-desigualdad-no-la-vamos-a-aceptar-alcalde-castro-se-opone-a-proyecto-de-torres-de-alta-tension-en-cerros-de-renca-y-acusa-riesgos-en-el-parque-metropolitano/"
+    },
+    {
+      "title": "El arte de la velocidad: El legado indeleble de Ettore Bugatti a 145 años de su nacimiento",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 12:37:06 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/legado-de-ettore-bugatti-historia-e-innovaciones/"
+    },
+    {
+      "title": "Lesiones estomacales y falta de nutrientes: El impacto de abusar del omeprazol durante varios días seguidos",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 15 Sep 2026 12:36:21 +0000",
+      "url": "https://www.theclinic.cl/2026/09/15/lesiones-estomacales-y-falta-de-nutrientes-el-impacto-de-abusar-del-omeprazol-durante-varios-dias-seguidos/"
+    },
+    {
+      "title": "Gabriel Boric entró al prestigioso Club de Madrid, -que no es Foro de Madrid de la ultra derecha- sumándose a Bachelet, Lagos y Frei. Son 70 expresidentes del principal foro mundial demócratico",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 12:18:48 -0300",
+      "url": "https://cambio21.cl/pais/gabriel-boric-entro-al-prestigioso-club-de-madrid-que-no-es-foro-de-madrid-de-la-ultra-derecha-sumandose-a-bachelet-lagos-y-frei-son-70-expresidentes-del-principal-foro-mundial-democratico-6aa95f66c44c8f351072a353"
+    },
+    {
+      "title": "Ministro de Hacienda sigue porfiadamente con su idea de plan económico que no ha dado resultados: \"Ajustaremos la táctica, pero no la estrategia\"",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Mon, 14 Sep 2026 21:30:26 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/con-louis-de-grange-daniel-mas-jorge-quiroz-y-ximena-rincon-el-despliegue-del-gabinete-economico-en-el-chile-day-en-madrid/"
+      "published": "Tue, 15 Sep 2026 11:19:19 -0300",
+      "url": "https://cambio21.cl/politica/ministro-de-hacienda-sigue-porfiadamente-con-su-idea-de-plan-economico-que-no-ha-dado-resultados-ajustaremos-la-tactica-pero-no-la-estrategia-6aa95362b466ef3b80158023"
     },
     {
-      "title": "El salto definitivo hacia la electrificación pesada: todo lo que dejó el Salón IAA Transportation de Hannover",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 14 Sep 2026 21:27:15 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/novedades-salon-iaa-transportation-hannover/"
+      "title": "Actor Michael J. Fox es reconocido en los Emmy por su contribución a la lucha contra el párkinson",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 10:30:06 -0300",
+      "url": "https://cambio21.cl/tendencias/actor-michael-j-fox-es-reconocido-en-los-emmy-por-su-contribucion-a-la-lucha-contra-el-parkinson-6aa947ba34875f1a24123ec5"
     },
     {
-      "title": "Ministro Barros cancela viaje en clase business a Australia que costó más de $14 millones",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 14 Sep 2026 21:18:57 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/ministro-barros-cancela-viaje-en-clase-business-a-australia-que-costo-mas-de-14-millones/"
+      "title": "“Pasamos susto”: Gabriel Boric revela que su hija Violeta estuvo en la UTI por neumonía una semana",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 10:19:18 -0300",
+      "url": "https://cambio21.cl/pais/pasamos-susto-gabriel-boric-revela-que-su-hija-violeta-estuvo-en-la-uti-por-neumonia-una-semana-6aa944d622cb7c1d8b36f6f3"
     },
     {
-      "title": "Por qué la primera dama entregó su vehículo en comodato a Presidencia y cómo será utilizado",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 14 Sep 2026 21:16:49 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/por-que-la-primera-dama-entrego-su-vehiculo-en-comodato-a-presidencia-y-como-sera-utilizado/"
+      "title": "Presidenta de México acusa a sectores de EE.UU. de alentar \"sin sustento\" una intervención en su país",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 02:42:35 -0300",
+      "url": "https://cambio21.cl/el-mundo/presidenta-de-mexico-acusa-a-sectores-de-ee-uu-de-alentar-sin-sustento-una-intervencion-en-su-pais-6aa8da4fc563261e5a557acc"
     },
     {
-      "title": "Santander anuncia inversiones por US$ 800 millones en Chile: rentas vitalicias y nueva sede corporativa entre sus proyectos",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Mon, 14 Sep 2026 21:10:25 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/santander-anuncia-inversiones-por-us-800-millones-en-chile-rentas-vitalicias-y-nueva-sede-corporativa-entre-sus-proyectos/"
+      "title": "Tenista Aryna Sabalenka pierde casi la mitad de los $2.8 millones del premio tras su derrota en el US Open",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 02:37:28 -0300",
+      "url": "https://cambio21.cl/deportes/tenista-aryna-sabalenka-pierde-casi-la-mitad-de-los-2-8-millones-del-premio-tras-su-derrota-en-el-us-open-6aa8d8a5ac05b83fbc6c2f84"
     },
     {
-      "title": "¿Cómo volver de las fondas este 18? Revisa los recorridos de buses que operarán hasta la madrugada en Santiago",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 14 Sep 2026 21:03:31 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/como-volver-de-las-fondas-este-18-revisa-los-recorridos-de-buses-que-operaran-hasta-las-229-de-la-madrugada/"
+      "title": "EE.UU. reconoce escasez de municiones por la guerra con Irán",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 02:25:47 -0300",
+      "url": "https://cambio21.cl/el-mundo/ee-uu-reconoce-escasez-de-municiones-por-la-guerra-con-iran-6aa8d631af69f76eb558cb23"
     },
     {
-      "title": "Hotel Alto Nevados a dos semanas del incendio: “No hay plazo, ni tentativo ni definitivo” para la reconstrucción",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 14 Sep 2026 20:45:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/hotel-alto-nevados-a-dos-semanas-del-incendio-no-hay-plazo-ni-tentativo-ni-definitivo-para-la-reconstruccion/"
+      "title": "Entrevista Cambio21. Senadora Paulina Vodanovic y los delitos de lesa humanidad: \"Me provoca dolor cuando el senador (Cristián) Vial (general R) relativiza la dictadura, las violaciones a DDHH y no respeta la memoria, a los familiares\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 02:18:47 -0300",
+      "url": "https://cambio21.cl/politica/entrevista-cambio21-senadora-paulina-vodanovic-y-los-delitos-de-lesa-humanidad-me-provoca-dolor-cuando-el-senador-cristian-vial-general-r-relativiza-la-dictadura-las-violaciones-a-ddhh-y-no-respeta-la-memoria-a-los-familiares-6aa8ce3521572556c7463d33"
     },
     {
-      "title": "Ninis entre 25 y 34 años en nivel más alto desde 2023: uno de cada cinco jóvenes no estudia ni trabaja",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 14 Sep 2026 20:28:23 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/ninis-entre-25-y-34-anos-en-nivel-mas-alto-desde-2023-uno-de-cada-cinco-jovenes-no-estudia-ni-trabaja/"
+      "title": "Ya parece chiste y es un record: renuncia seremi de Vivienda de Antofagasta y es la salida 36 de autoridades regionales. Ya van 46 renuncias o despidos entre ellas 3 ministras",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 01:43:53 -0300",
+      "url": "https://cambio21.cl/pais/ya-parece-chiste-y-es-un-record-renuncia-seremi-de-vivienda-de-antofagasta-y-es-la-salida-36-de-autoridades-regionales-ya-van-46-renuncias-o-despidos-entre-ellas-3-ministras-6aa8c93ddc530e04651e4083"
     },
     {
-      "title": "La ofensiva industrial de los camiones BYD en Europa: del barco a la fábrica local",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 14 Sep 2026 20:23:41 +0000",
-      "url": "https://www.theclinic.cl/2026/09/14/camiones-byd-en-europa-produccion-local/"
+      "title": "Líderes de Escocia, Irlanda del Norte y Gales se unen para reclamar su derecho de independencia de Reino Unido",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 01:22:56 -0300",
+      "url": "https://cambio21.cl/el-mundo/lideres-de-escocia-irlanda-del-norte-y-gales-se-unen-para-reclamar-su-derecho-de-independencia-de-reino-unido-6aa8c732aa63c8710a180253"
     },
     {
-      "title": "Campaña publicitaria \"hipersexualizada\" de famosa actriz Sydney Sweeney desnuda desata ola de críticas de atletas",
+      "title": "Kast en inédita cadena digital de acercamiento con un público lejano: \"Estas Fiestas Patrias también deben ser una celebración de la esperanza\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 01:05:47 -0300",
+      "url": "https://cambio21.cl/politica/kast-en-inedita-cadena-digital-de-acercamiento-con-un-publico-lejano-estas-fiestas-patrias-tambien-deben-ser-una-celebracion-de-la-esperanza-6aa8bd093ff55d4dc46d99c8"
+    },
+    {
+      "title": "Jorge Quiroz ante crítica de exministro Mario Marcel sobre el Mepco: \"No le tengo mucha confianza en sus cálculos\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 00:31:09 -0300",
+      "url": "https://cambio21.cl/pais/jorge-quiroz-ante-critica-de-exministro-mario-marcel-sobre-el-mepco-no-le-tengo-mucha-confianza-en-sus-calculos-6aa8bb5f3ff55d4dc46d99c3"
+    },
+    {
+      "title": "Respuesta a la prensa inmobiliaria y al gobierno. Por Patricio Herman, Fundación Defendamos la Ciudad",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 15 Sep 2026 00:25:29 -0300",
+      "url": "https://cambio21.cl/tendencias/respuesta-a-la-prensa-inmobiliaria-y-al-gobierno-por-patricio-herman-fundacion-defendamos-la-ciudad-6aa8b9d8e8d6fd67b312fc73"
+    },
+    {
+      "title": "VIDEO de los goles. El Betis de Manuel Pellegrini sigue ganando: vence a Villarreal y trepa al tercer lugar de La Liga de España",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 14 Sep 2026 19:23:51 -0300",
+      "url": "https://cambio21.cl/deportes/video-de-los-goles-el-betis-de-manuel-pellegrini-sigue-ganando-vence-a-villarreal-y-trepa-al-tercer-lugar-de-la-liga-de-espana-6aa873ae8e0b3823844ee045"
+    },
+    {
+      "title": "Biministro Alvarado y cifras de empleo: \"Hay que buscar mecanismos, opciones, alternativas\"",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Mon, 14 Sep 2026 19:20:33 -0300",
+      "url": "https://cambio21.cl/pais/biministro-alvarado-y-cifras-de-empleo-hay-que-buscar-mecanismos-opciones-alternativas-6aa8730334c1d767956cff65"
+    },
+    {
+      "title": "Campaña publicitaria \"hipersexualizada\" de famosa actriz Sydney Sweeney desnuda, desata ola de críticas de atletas. Fotos al interior de la crónica",
       "source": "Cambio21",
       "category": "politica",
       "published": "Mon, 14 Sep 2026 19:18:05 -0300",
-      "url": "https://cambio21.cl/deportes/campana-publicitaria-hipersexualizada-de-famosa-actriz-sydney-sweeney-desnuda-desata-ola-de-criticas-de-atletas-6aa8700653eb9c039b5432f3"
+      "url": "https://cambio21.cl/tendencias/campana-publicitaria-hipersexualizada-de-famosa-actriz-sydney-sweeney-desnuda-desata-ola-de-criticas-de-atletas-fotos-al-interior-de-la-cronica-6aa8700653eb9c039b5432f3"
     },
     {
       "title": "Senador Flores (DC) y los indultos que quiere dar Kast: A los que \"persiguieron, torturaron y asesinaron con delitos de lesa humanidad, por ningún motivo\"",
       "source": "Cambio21",
       "category": "politica",
       "published": "Mon, 14 Sep 2026 15:46:59 -0300",
-      "url": "https://cambio21.cl/pais/senador-flores-dc-y-los-indultos-que-quiere-dar-kast-a-los-que-persiguieron-torturaron-y-asesinaron-con-delitos-de-lesa-humanidad-por-ningun-motivo-6aa82c4fc983db710437c253"
+      "url": "https://cambio21.cl/politica/senador-flores-dc-y-los-indultos-que-quiere-dar-kast-a-los-que-persiguieron-torturaron-y-asesinaron-con-delitos-de-lesa-humanidad-por-ningun-motivo-6aa82c4fc983db710437c253"
     },
     {
       "title": "Exministro Cordero advierte al oficialismo por presos por violaciones a derechos humanos de Punta Peuco: “Los crímenes de lesa humanidad no son indultables”",
@@ -106,111 +211,6 @@
       "category": "politica",
       "published": "Mon, 14 Sep 2026 12:25:27 -0300",
       "url": "https://cambio21.cl/pais/en-zona-peruana-un-muerto-tras-explosion-de-mina-antitanque-en-frontera-chilena-con-peru-6aa80eed9869d43e2c6512b4"
-    },
-    {
-      "title": "Kast tras el 62% de rechazo en las encuestas: \"Siempre he señalado que hay que hablar con la verdad, y la verdad duele\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 14 Sep 2026 11:44:57 -0300",
-      "url": "https://cambio21.cl/pais/kast-tras-el-62-de-rechazo-en-las-encuestas-siempre-he-senalado-que-hay-que-hablar-con-la-verdad-y-la-verdad-duele-6aa8067861d5700ac57cd755"
-    },
-    {
-      "title": "Editorial Cambio21: Además de fome y triste, \"¡qué desastre hueón!\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 14 Sep 2026 01:58:17 -0300",
-      "url": "https://cambio21.cl/pais/editorial-cambio21-ademas-de-fome-y-triste-que-desastre-hueon-6aa775a84f0fd25e5725f923"
-    },
-    {
-      "title": "VIDEOS de los dos partidos. Mientras Colo Colo salva el papelón con milagroso empate ante Deportes Concepción, la U golea a La Serena y los albos quedan a 12 puntos",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 21:55:19 -0300",
-      "url": "https://cambio21.cl/deportes/videos-de-los-dos-partidos-mientras-colo-colo-salva-el-papelon-con-milagroso-empate-ante-deportes-concepcion-la-u-golea-a-la-serena-y-los-albos-quedan-a-12-puntos-6aa743ef9036f950b73b69b3"
-    },
-    {
-      "title": "Encuesta lapidaria: 62% piensa que el gobierno de Kast ha sido peor de lo que esperaban. Mandatario reprobó en sus seis meses de Gobierno: Sacó un 3.4",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 21:42:07 -0300",
-      "url": "https://cambio21.cl/politica/encuesta-lapidaria-62-piensa-que-el-gobierno-de-kast-ha-sido-peor-de-lo-que-esperaban-mandatario-reprobo-en-sus-seis-meses-de-gobierno-saco-un-3-4-6aa73ebc7de5681f555c4543"
-    },
-    {
-      "title": "Especial DW: Rey de los trolls de la ultra derecha Fernando Cerimedo: bots, desinformación y poder en América Latina",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 15:36:44 -0300",
-      "url": "https://cambio21.cl/el-mundo/especial-dw-rey-de-los-trolls-de-la-ultra-derecha-fernando-cerimedo-bots-desinformacion-y-poder-en-america-latina-6aa6ecacd8a91134b90e0d6f"
-    },
-    {
-      "title": "Martina Weil logró un histórico quinto lugar mundial en el World Athletics Ultimate Championship de Budapest",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 15:30:34 -0300",
-      "url": "https://cambio21.cl/deportes/martina-weil-logro-un-historico-quinto-lugar-mundial-en-el-world-athletics-ultimate-championship-de-budapest-6aa6eb47e360b3127d246303"
-    },
-    {
-      "title": "Senadora Camila Flores (RN) arremete contra ministro de Defensa: \"Barros no entiende cuál es el funcionamiento del Estado\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 15:26:54 -0300",
-      "url": "https://cambio21.cl/tendencias/senadora-camila-flores-rn-arremete-contra-ministro-de-defensa-barros-no-entiende-cual-es-el-funcionamiento-del-estado-6aa6ea76d8a91134b90e0d64"
-    },
-    {
-      "title": "Exministro de Hacienda Mario Marcel: “Vamos a tener que esperar para ver el anunciado boom de inversiones”",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Sun, 13 Sep 2026 15:20:34 -0300",
-      "url": "https://cambio21.cl/politica/exministro-de-hacienda-mario-marcel-vamos-a-tener-que-esperar-para-ver-el-anunciado-boom-de-inversiones-6aa6e839340d5f759e54d387"
-    },
-    {
-      "title": "Kast tras participar en su primer Te Deum evangélico: \"Pasamos por un momento duro\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 14:58:41 -0300",
-      "url": "https://cambio21.cl/pais/kast-tras-participar-en-su-primer-te-deum-evangelico-pasamos-por-un-momento-duro-6aa6e367340d5f759e54d384"
-    },
-    {
-      "title": "Gobernador Claudio Orrego en picada contra Republicanos: \"Todas las acusaciones estaban fundadas en hechos falsos y tenían un fin político”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 14:46:11 -0300",
-      "url": "https://cambio21.cl/politica/gobernador-claudio-orrego-en-picada-contra-republicanos-todas-las-acusaciones-estaban-fundadas-en-hechos-falsos-y-tenian-un-fin-politico-6aa6e090cd24cb06d2556bb9"
-    },
-    {
-      "title": "Estudio ubicó a Arturo Vidal como el mejor defensor central de Sudamérica",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 14:38:37 -0300",
-      "url": "https://cambio21.cl/deportes/estudio-ubico-a-arturo-vidal-como-el-mejor-defensor-central-de-sudamerica-6aa6df4987767a10bb21ef03"
-    },
-    {
-      "title": "Chile se aleja de la OCDE en confianza institucional: estas son las instituciones que menos confianza generan; Los políticos encabezan el ranking",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 09:44:38 -0300",
-      "url": "https://cambio21.cl/politica/chile-se-aleja-de-la-ocde-en-confianza-institucional-estas-son-las-instituciones-que-menos-confianza-generan-los-politicos-encabezan-el-ranking-6aa69a5459c3aa420944bcd4"
-    },
-    {
-      "title": "Trump dice que un conflicto entre Reino Unido y Argentina por Malvinas sería un \"desastre potencial\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 09:40:22 -0300",
-      "url": "https://cambio21.cl/el-mundo/trump-dice-que-un-conflicto-entre-reino-unido-y-argentina-por-malvinas-seria-un-desastre-potencial-6aa69973c8886906283ab9f3"
-    },
-    {
-      "title": "Excandidato presidencial Franco Parisi se querella contra economista Gino Lorenzini por delito de injurias y calumnias",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 09:26:28 -0300",
-      "url": "https://cambio21.cl/pais/excandidato-presidencial-franco-parisi-se-querella-contra-economista-gino-lorenzini-por-delito-de-injurias-y-calumnias-6aa695f5128f021838695343"
-    },
-    {
-      "title": "Embajador de EE.UU sigue involucrándose en asuntos internos de los chilenos: \"Si se molestan por mis respuestas, es su problema\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 13 Sep 2026 09:20:42 -0300",
-      "url": "https://cambio21.cl/politica/embajador-de-ee-uu-sigue-involucrandose-en-asuntos-internos-de-los-chilenos-si-se-molestan-por-mis-respuestas-es-su-problema-6aa6941f16e2fe5a011326e3"
     }
   ]
 }
