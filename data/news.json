@@ -1,7 +1,70 @@
 {
-  "lastUpdate": "2026-09-16 15:19 UTC",
+  "lastUpdate": "2026-09-16 18:30 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Motor a hidrógeno H2 Starfire: la promesa sin auditar que mira de reojo a Chile",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 18:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/motor-hidrogeno-h2-starfire-chile/"
+    },
+    {
+      "title": "Corte Suprema condena a siete años a funcionario de la Armada que colaboró en el robo de material de guerra",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 17:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/corte-suprema-condena-a-siete-anos-a-marinero-de-la-armada-que-colaboro-en-el-robo-de-material-de-guerra/"
+    },
+    {
+      "title": "Entre ellas, una persona con discapacidad: los otros casos de “despidos injustificados” del Gobierno de Kast que la Justicia ordenó rectificar",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 17:11:16 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/entre-ellas-una-persona-con-discapacidad-los-otros-casos-de-despidos-injustificados-del-gobierno-de-kast-que-la-justicia-ordeno-rectificar/"
+    },
+    {
+      "title": "Con campeones del Club de Huasos de Arica y junto a la primera dama: la preparación de Kast para sus primeras Fiestas Patrias como Presidente",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 17:07:56 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/con-campeones-del-club-de-huasos-de-arica-y-junto-a-la-primera-dama-la-preparacion-de-kast-para-sus-primeras-fiestas-patrias-como-presidente/"
+    },
+    {
+      "title": "“Queremos ir recuperando estos edificios emblemáticos”: Anuncian restauración en la fachada del Palacio de La Alhambra de Santiago",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 16:46:55 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/queremos-ir-recuperando-estos-edificios-emblematicos-anuncian-restauracion-en-la-fachada-del-palacio-de-la-alhambra-de-santiago/"
+    },
+    {
+      "title": "¿Por qué le decimos once a la once? ¿El puente Cal y Canto se hizo con huevos? Las verdaderas historias detrás de cinco mitos y creencias chilenas",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 16:29:07 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/por-que-le-decimos-once-a-la-once-el-puente-cal-y-canto-se-hizo-con-huevos-las-verdaderas-historias-detras-de-cinco-mitos-y-creencias-chilenas/"
+    },
+    {
+      "title": "“Andate de aquí”: Joven denuncia haber sido expulsado de la Plaza de Armas por un grupo de extranjeros",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 16:28:05 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/andate-de-aqui-joven-denuncia-haber-sido-expulsado-de-la-plaza-de-armas-por-un-grupo-de-extranjeros/"
+    },
+    {
+      "title": "José Manuel Mena, presidente de la ABIF, ante nuevo Fondo para la Vivienda:  “¿Necesitábamos que esto operara? No, no necesariamente”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 15:51:28 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/jose-manuel-mena-presidente-de-la-abif-ante-nuevo-fondo-para-la-vivienda-necesitabamos-que-esto-operara-no-no-necesariamente/"
+    },
+    {
+      "title": "Minsal emite alerta por presencia de listeria en queso mantecoso de la marca Matthei",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 16 Sep 2026 15:20:31 +0000",
+      "url": "https://www.theclinic.cl/2026/09/16/minsal-emite-alerta-por-presencia-de-listeria-en-queso-matencoso-de-la-marca-matthei/"
+    },
     {
       "title": "“Nuestra crítica histórica a la puerta giratoria se presta para que seamos juzgados”: Reinvención de exautoridades de Boric como lobistas agudiza debate en el Frente Amplio",
       "source": "The Clinic",
@@ -10,67 +73,39 @@
       "url": "https://www.theclinic.cl/2026/09/16/nuestra-critica-historica-a-la-puerta-giratoria-se-presta-para-que-seamos-juzgados-reinvencion-de-exautoridades-de-boric-como-lobistas-agudiza-debate-en-el-frente-amplio/"
     },
     {
-      "title": "El regreso del lobo: Land Rover apuesta por el Defender Wolf Series II para reconquistar al Ejército británico",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 15:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/el-regreso-del-lobo-land-rover-apuesta-por-el-defender-wolf-series-ii-para-reconquistar-al-ejercito-britanico/"
+      "title": "Ministro Alvarado responde ideas de Evelyn Matthei que \"no lo inflan\" y afirma que mientras ella opina, él trabaja. Ambos son UDIs",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 16 Sep 2026 13:17:17 -0300",
+      "url": "https://cambio21.cl/politica/ministro-alvarado-responde-ideas-de-evelyn-matthei-que-no-lo-inflan-y-afirma-que-mientras-ella-opina-el-trabaja-ambos-son-udis-6aaac0938ca3eb3a9e7adef3"
     },
     {
-      "title": "Carta a la directora: Michelle Bachelet, la mejor candidata para prevenir los peligros de la IA",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 14:19:31 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/carta-a-la-directora-michelle-bachelet-la-mejor-candidata-para-prevenir-los-peligros-de-la-ia/"
+      "title": "“El 18 más caro de la historia”: Senadora Cicardini y diputado Manouchehri (PS) arremeten contra ministro de Hacienda y Kast",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Wed, 16 Sep 2026 13:11:45 -0300",
+      "url": "https://cambio21.cl/politica/el-18-mas-caro-de-la-historia-senadora-cicardini-y-diputado-manouchehri-ps-arremeten-contra-ministro-de-hacienda-y-kast-6aaabee294cc9b7ba2389c93"
     },
     {
-      "title": "Ministro Alvarado responde a Matthei tras asegurar que en el Gabinete “no lo inflan”: “Ella tiene tiempo para opinar, yo tengo tiempo para trabajar”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 14:12:11 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/ministro-alvarado-responde-a-matthei-tras-asegurar-que-en-el-gabinete-no-lo-inflan-ella-tiene-tiempo-para-opinar-yo-tengo-tiempo-para-trabajar/"
+      "title": "Contraloría pide antecedentes por contratación en el Gobierno de activista venezolana como “experta” en el Servicio Civil: Gana hasta $5,6 millones mensuales y trabajó en campaña de Kast",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 16 Sep 2026 12:35:13 -0300",
+      "url": "https://cambio21.cl/pais/contraloria-pide-antecedentes-por-contratacion-en-el-gobierno-de-activista-venezolana-como-experta-en-el-servicio-civil-gana-hasta-5-6-millones-mensuales-y-trabajo-en-campana-de-kast-6aaab6ca8d4e2708dc00e87b"
     },
     {
-      "title": "Los Lizana: la historia detrás de una de las familias más antiguas de organilleros y chinchineros que lucha por mantener vivo el oficio",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 13:42:42 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/los-lizana-la-historia-detras-de-una-de-las-familias-mas-antiguas-de-organilleros-y-chinchineros-que-lucha-por-mantener-vivo-el-oficio/"
+      "title": "Minsal emite alerta alimentaria por presencia de listeria en queso mantecoso Matthei: Recomendó a personas no consumir lote afectado",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 16 Sep 2026 12:30:42 -0300",
+      "url": "https://cambio21.cl/tendencias/minsal-emite-alerta-alimentaria-por-presencia-de-listeria-en-queso-mantecoso-matthei-recomendo-a-personas-no-consumir-lote-afectado-6aaab5cc721dc8091b2df1cd"
     },
     {
-      "title": "La eventual coincidencia entre Bachelet y Kast en Nueva York en medio de actividades de la ONU y nueva medición de candidatos a la secretaría general",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 13:40:39 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/la-eventual-coincidencia-entre-bachelet-y-kast-en-nueva-york-en-medio-de-actividades-de-la-onu-y-nueva-medicion-de-candidatos-a-la-secretaria-general/"
-    },
-    {
-      "title": "La polémica por política de seguridad de las aerolíneas: pasajeros no pudieron volar por no contar con la tarjeta con que compraron el pasaje",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 13:28:36 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/la-polemica-por-politica-de-seguridad-de-las-aerolineas-pasajeros-no-pudieron-volar-por-no-contar-con-la-tarjeta-con-que-compraron-el-pasaje/"
-    },
-    {
-      "title": "El dramático registro previo al fatal impacto del helicóptero de noticias en Los Ángeles",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 13:22:05 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/el-dramatico-registro-previo-al-fatal-impacto-del-helicoptero-de-noticias-en-los-angeles/"
-    },
-    {
-      "title": "Gustavo Alessandri, presidente de la Asociación de Municipalidades, por reglamento de Seguridad Municipal: “Estoy convencido que alguien se pasó varios pueblos”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 12:32:05 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/gustavo-alessandri-presidente-de-la-asociacion-de-municipalidades-por-reglamento-de-seguridad-municipal-estoy-convencido-que-alguien-se-paso-varios-pueblos/"
-    },
-    {
-      "title": "Otorrinolaringóloga explica por qué cada vez hay más personas alérgicas y asegura que “no es un mito urbano”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 16 Sep 2026 11:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/16/otorrinolaringologa-explica-por-que-cada-vez-hay-mas-personas-alergicas-y-asegura-que-no-es-un-mito-urbano/"
+      "title": "Corte de Apelaciones rechaza recurso de amparo del senador Miguel Ángel Calisto, imputado por fraude al fisco",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 16 Sep 2026 12:26:24 -0300",
+      "url": "https://cambio21.cl/pais/corte-de-apelaciones-rechaza-recurso-de-amparo-del-senador-miguel-angel-calisto-imputado-por-fraude-al-fisco-6aaab4e2eef7170361616ac3"
     },
     {
       "title": "Nueva derrota para el Gobierno: Retiran reglamento de Seguridad Municipal tras polémica por posibilidad de destituir a alcaldes y alcaldesas",
@@ -176,41 +211,6 @@
       "category": "politica",
       "published": "Tue, 15 Sep 2026 12:18:48 -0300",
       "url": "https://cambio21.cl/politica/gabriel-boric-entro-al-prestigioso-club-de-madrid-que-no-es-foro-de-madrid-de-la-ultra-derecha-sumandose-a-bachelet-lagos-y-frei-son-70-expresidentes-del-principal-foro-mundial-democratico-6aa95f66c44c8f351072a353"
-    },
-    {
-      "title": "Ministro de Hacienda sigue porfiadamente con su idea de plan económico que no ha dado resultados: \"Ajustaremos la táctica, pero no la estrategia\"",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Tue, 15 Sep 2026 11:19:19 -0300",
-      "url": "https://cambio21.cl/politica/ministro-de-hacienda-sigue-porfiadamente-con-su-idea-de-plan-economico-que-no-ha-dado-resultados-ajustaremos-la-tactica-pero-no-la-estrategia-6aa95362b466ef3b80158023"
-    },
-    {
-      "title": "Actor Michael J. Fox es reconocido en los Emmy por su contribución a la lucha contra el párkinson",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 15 Sep 2026 10:30:06 -0300",
-      "url": "https://cambio21.cl/tendencias/actor-michael-j-fox-es-reconocido-en-los-emmy-por-su-contribucion-a-la-lucha-contra-el-parkinson-6aa947ba34875f1a24123ec5"
-    },
-    {
-      "title": "“Pasamos susto”: Gabriel Boric revela que su hija Violeta estuvo en la UTI por neumonía una semana",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 15 Sep 2026 10:19:18 -0300",
-      "url": "https://cambio21.cl/pais/pasamos-susto-gabriel-boric-revela-que-su-hija-violeta-estuvo-en-la-uti-por-neumonia-una-semana-6aa944d622cb7c1d8b36f6f3"
-    },
-    {
-      "title": "Presidenta de México acusa a sectores de EE.UU. de alentar \"sin sustento\" una intervención en su país",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 15 Sep 2026 02:42:35 -0300",
-      "url": "https://cambio21.cl/el-mundo/presidenta-de-mexico-acusa-a-sectores-de-ee-uu-de-alentar-sin-sustento-una-intervencion-en-su-pais-6aa8da4fc563261e5a557acc"
-    },
-    {
-      "title": "Tenista Aryna Sabalenka pierde casi la mitad de los $2.8 millones del premio tras su derrota en el US Open",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 15 Sep 2026 02:37:28 -0300",
-      "url": "https://cambio21.cl/deportes/tenista-aryna-sabalenka-pierde-casi-la-mitad-de-los-2-8-millones-del-premio-tras-su-derrota-en-el-us-open-6aa8d8a5ac05b83fbc6c2f84"
     }
   ]
 }
