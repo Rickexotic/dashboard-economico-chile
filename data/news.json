@@ -1,7 +1,21 @@
 {
-  "lastUpdate": "2026-09-18 17:55 UTC",
+  "lastUpdate": "2026-09-18 21:32 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Kast debutará ante la Asamblea General de la ONU el martes en la mañana: Delcy Rodríguez figura en la lista de oradores por Venezuela",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 18 Sep 2026 21:19:52 +0000",
+      "url": "https://www.theclinic.cl/2026/09/18/kast-debutara-ante-la-asamblea-general-de-la-onu-el-martes-hablara-en-la-manana/"
+    },
+    {
+      "title": "Brad Pitt volverá para una secuela de Guerra Mundial Z, 13 años después del estreno de la película original",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 18 Sep 2026 20:17:04 +0000",
+      "url": "https://www.theclinic.cl/2026/09/18/brad-pitt-volvera-para-una-secuela-de-guerra-mundial-z-13-anos-despues-del-estreno-de-la-pelicula-original/"
+    },
     {
       "title": "Canciller y duro resultado de Bachelet en carrera por la Secretaría General de la ONU: “Veíamos una candidatura con poca probabilidad de éxito”",
       "source": "The Clinic",
@@ -59,18 +73,11 @@
       "url": "https://www.theclinic.cl/2026/09/18/el-primer-18-de-kast-en-la-moneda-las-fotos-con-su-gabinete-y-el-te-deum-que-encabezara-el-hermano-de-su-ministra-de-salud/"
     },
     {
-      "title": "Extinción sobre ruedas: Las marcas de automóviles que sucumbieron en el Siglo XXI y los emblemas en peligro de muerte",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 17 Sep 2026 21:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/17/marcas-de-autos-desaparecidas-siglo-xxi/"
-    },
-    {
-      "title": "Se acaban los vuelos de Santiago sin escala a Londres: desde el próximo año se añadirá una parada  por Buenos Aires",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 17 Sep 2026 20:47:19 +0000",
-      "url": "https://www.theclinic.cl/2026/09/17/se-acaban-los-vuelos-sin-escala-a-londres-desde-el-proximo-ano-se-anadira-una-parada-por-buenos-aires/"
+      "title": "Michelle Bachelet sufre nuevo revés en carrera por la ONU y obtiene solo un voto de apoyo en su lucha por la Secretaria General",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Fri, 18 Sep 2026 18:22:43 -0300",
+      "url": "https://cambio21.cl/politica/michelle-bachelet-sufre-nuevo-reves-en-carrera-por-la-onu-y-obtiene-solo-un-voto-de-apoyo-en-su-lucha-por-la-secretaria-general-6aadaa69a80b2e6bcd720883"
     },
     {
       "title": "Fuerte temblor dieciochero. 4.8 grados Richter y su epicentro fue en Farellones a 96 kilómetros de profundidad",
@@ -204,13 +211,6 @@
       "category": "politica",
       "published": "Thu, 17 Sep 2026 02:33:36 -0300",
       "url": "https://cambio21.cl/cambio21/impactante-declaracion-del-ministro-de-seguridad-de-kast-por-velorio-narco-si-hubieramos-sabido-le-pongo-un-dos-por-m-margarita-indo-profesora-exconcejala-quilicura-pdta-dc-rm-6aab778a6996bb45856130e3"
-    },
-    {
-      "title": "Kast inauguró las fondas con una paya contingente: \"Dicen que somos fomes\", \"me dijeron que otras cosa es con guitarra y pucha que tenían razón\". Y bailó cueca con su esposa",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 17 Sep 2026 01:25:10 -0300",
-      "url": "https://cambio21.cl/politica/kast-inauguro-las-fondas-con-una-paya-contingente-dicen-que-somos-fomes-me-dijeron-que-otras-cosa-es-con-guitarra-y-pucha-que-tenian-razon-y-bailo-cueca-con-su-esposa-6aab6aeec5042e78e56c57a4"
     }
   ]
 }
