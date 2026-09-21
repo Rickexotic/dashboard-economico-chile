@@ -1,6 +1,187 @@
 {
   "meta": {
-    "lastUpdate": "2026-09-18 15:57 UTC"
+    "lastUpdate": "2026-09-21 17:56 UTC"
   },
-  "stocks": []
+  "stocks": [
+    {
+      "ticker": "SQM-B",
+      "empresa": "Sociedad Química y Minera",
+      "sector": "Minería",
+      "precio": 65874.0,
+      "cambioPct": 0.65,
+      "cambioClp": 424.0,
+      "up": true
+    },
+    {
+      "ticker": "COPEC",
+      "empresa": "Empresas Copec",
+      "sector": "Energía",
+      "precio": 6565.0,
+      "cambioPct": 5.05,
+      "cambioClp": 315.4,
+      "up": true
+    },
+    {
+      "ticker": "CMPC",
+      "empresa": "CMPC",
+      "sector": "Forestal",
+      "precio": 980.0,
+      "cambioPct": -8.41,
+      "cambioClp": -90.0,
+      "up": false
+    },
+    {
+      "ticker": "BCI",
+      "empresa": "Banco BCI",
+      "sector": "Bancos",
+      "precio": 66846.0,
+      "cambioPct": 6.95,
+      "cambioClp": 4344.0,
+      "up": true
+    },
+    {
+      "ticker": "BSANTANDER",
+      "empresa": "Banco Santander Chile",
+      "sector": "Bancos",
+      "precio": 82.15,
+      "cambioPct": 6.69,
+      "cambioClp": 5.15,
+      "up": true
+    },
+    {
+      "ticker": "FALABELLA",
+      "empresa": "Falabella",
+      "sector": "Retail",
+      "precio": 6542.1,
+      "cambioPct": 12.12,
+      "cambioClp": 707.1,
+      "up": true
+    },
+    {
+      "ticker": "CENCOSUD",
+      "empresa": "Cencosud",
+      "sector": "Retail",
+      "precio": 2047.6,
+      "cambioPct": 2.64,
+      "cambioClp": 52.6,
+      "up": true
+    },
+    {
+      "ticker": "RIPLEY",
+      "empresa": "Ripley",
+      "sector": "Retail",
+      "precio": 445.1,
+      "cambioPct": 16.23,
+      "cambioClp": 62.14,
+      "up": true
+    },
+    {
+      "ticker": "ENELAM",
+      "empresa": "Enel Américas",
+      "sector": "Utilities",
+      "precio": 87.87,
+      "cambioPct": 4.56,
+      "cambioClp": 3.83,
+      "up": true
+    },
+    {
+      "ticker": "ENELCHILE",
+      "empresa": "Enel Chile",
+      "sector": "Utilities",
+      "precio": 81.53,
+      "cambioPct": 0.64,
+      "cambioClp": 0.52,
+      "up": true
+    },
+    {
+      "ticker": "ANDINA-B",
+      "empresa": "Embotelladora Andina",
+      "sector": "Consumo",
+      "precio": 4890.0,
+      "cambioPct": 4.04,
+      "cambioClp": 190.1,
+      "up": true
+    },
+    {
+      "ticker": "IAM",
+      "empresa": "Inversiones Aguas Metropolitanas",
+      "sector": "Utilities",
+      "precio": 945.0,
+      "cambioPct": 2.51,
+      "cambioClp": 23.11,
+      "up": true
+    },
+    {
+      "ticker": "AGUAS-A",
+      "empresa": "Aguas Andinas",
+      "sector": "Utilities",
+      "precio": 330.78,
+      "cambioPct": -0.49,
+      "cambioClp": -1.62,
+      "up": false
+    },
+    {
+      "ticker": "CAP",
+      "empresa": "CAP",
+      "sector": "Minería",
+      "precio": 5300.0,
+      "cambioPct": -16.05,
+      "cambioClp": -1013.3,
+      "up": false
+    },
+    {
+      "ticker": "SONDA",
+      "empresa": "SONDA",
+      "sector": "Tecnología",
+      "precio": 288.0,
+      "cambioPct": -4.58,
+      "cambioClp": -13.81,
+      "up": false
+    },
+    {
+      "ticker": "PARAUCO",
+      "empresa": "Parque Arauco",
+      "sector": "Inmobiliario",
+      "precio": 3872.2,
+      "cambioPct": -4.15,
+      "cambioClp": -167.7,
+      "up": false
+    },
+    {
+      "ticker": "MALLPLAZA",
+      "empresa": "Mallplaza",
+      "sector": "Inmobiliario",
+      "precio": 3856.2,
+      "cambioPct": -2.37,
+      "cambioClp": -93.8,
+      "up": false
+    },
+    {
+      "ticker": "VAPORES",
+      "empresa": "Compañía Sud Americana de Vapores",
+      "sector": "Transporte",
+      "precio": 49.64,
+      "cambioPct": 6.73,
+      "cambioClp": 3.13,
+      "up": true
+    },
+    {
+      "ticker": "CCU",
+      "empresa": "Compañía Cervecerías Unidas",
+      "sector": "Consumo",
+      "precio": 5307.5,
+      "cambioPct": 1.72,
+      "cambioClp": 89.5,
+      "up": true
+    },
+    {
+      "ticker": "CONCHATORO",
+      "empresa": "Viña Concha y Toro",
+      "sector": "Consumo",
+      "precio": 909.94,
+      "cambioPct": 6.76,
+      "cambioClp": 57.61,
+      "up": true
+    }
+  ]
 }
