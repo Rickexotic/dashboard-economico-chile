@@ -1,76 +1,146 @@
 {
-  "lastUpdate": "2026-09-21 22:31 UTC",
+  "lastUpdate": "2026-09-22 15:25 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "En mayores de 50 años, aumentan las personas con empleo en jornadas parciales involuntarias",
+      "title": "Piezas faltantes, una tumba por reconstruir y placas que restaurar: los trabajos pendientes para completar el regreso de Baquedano a la Plaza Italia",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 22 Sep 2026 15:11:41 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/piezas-faltantes-una-tumba-por-reconstruir-y-placas-que-restaurar-los-trabajos-pendientes-para-completar-el-regreso-de-baquedano-a-la-plaza-italia/"
+    },
+    {
+      "title": "Doble renovación tricilíndrica: Triumph presenta en Chile Tiger Sport 660 y Daytona 660",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 22 Sep 2026 14:51:39 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/motos-triumph-en-chile-tiger-daytona-660/"
+    },
+    {
+      "title": "Ximena Lincolao: “En forma transversal hemos visto la oportunidad que nos ofrece la IA para el desarrollo económico”",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Mon, 21 Sep 2026 22:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/en-mayores-de-50-anos-aumentan-las-personas-con-empleo-en-jornadas-parciales-involuntarias/"
+      "published": "Tue, 22 Sep 2026 14:48:00 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/ximena-lincolao-en-forma-transversal-hemos-visto-la-oportunidad-que-nos-ofrece-la-ia-para-el-desarrollo-economico/"
     },
     {
-      "title": "Quiénes son los 18 condenados que acumulan más de mil años de cárcel por el atentado al Molino Grollmus",
+      "title": "Columna de Nelson Vásquez, rector de la Pontificia Universidad Católica de Valparaíso/ El trabajo del futuro: aprender durante toda la vida",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 21 Sep 2026 21:40:55 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/quienes-son-los-18-condenados-que-acumulan-mas-de-mil-anos-de-carcel-por-el-atentado-al-molino-grollmus/"
+      "published": "Tue, 22 Sep 2026 13:52:48 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/columna-de-nelson-vasquez-rector-de-la-pontificia-universidad-catolica-de-valparaiso-el-trabajo-del-futuro-aprender-durante-toda-la-vida/"
     },
     {
-      "title": "El balance de la batalla de las fondas en televisión: música, pifias y humor en una nueva disputa por conquistar al público durante las Fiestas Patrias",
+      "title": "El auge de las senior suites en Chile: oferta creció más de 60% en una década y sector oriente de Santiago concentra gran parte del negocio",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 21 Sep 2026 21:29:22 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/el-balance-de-la-batalla-de-las-fondas-en-television-musica-pifias-y-humor-en-una-nueva-disputa-por-conquistar-al-publico-durante-fiestas-patrias/"
+      "published": "Tue, 22 Sep 2026 13:52:09 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/el-auge-de-las-senior-suites-en-chile-oferta-crecio-mas-de-60-en-una-decada-y-sector-oriente-de-santiago-concentra-gran-parte-del-negocio/"
     },
     {
-      "title": "Al volante del Lynk & Co 01: vanguardia cosmopolita con aduana digital",
+      "title": "El “excéntrico proyecto personal” de George Lucas abre en Los Ángeles: un gigantesco museo con 40 mil obras y una galería de Star Wars",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 21 Sep 2026 21:26:34 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/prueba-de-manejo-lynk-and-co-01-phev-chile/"
+      "published": "Tue, 22 Sep 2026 13:33:00 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/el-excentrico-proyecto-personal-de-george-lucas-abre-en-los-angeles-un-gigantesco-museo-con-40-mil-obras-y-una-galeria-de-star-wars/"
     },
     {
-      "title": "La trama detrás de la fallida censura en contra de presidente de la comisión investigadora contra Steinert y le propinó una derrota a republicanos",
+      "title": "Ximena Ossandón advierte posible protagonismo de Bachelet en la oposición: “Hubiera sido mejor tenerla trabajando en la ONU que tenerla instalada en Chile”",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 21 Sep 2026 21:26:25 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/la-trama-detras-de-la-fallida-censura-en-contra-de-presidente-de-la-comision-investigadora-contra-steinert-y-le-propino-una-derrota-a-republicanos/"
+      "published": "Tue, 22 Sep 2026 13:31:27 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/ximena-ossandon-advierte-posible-protagonismo-de-bachelet-en-la-oposicion-hubiera-sido-mejor-trabajando-en-la-onu-que-tenerla-instalada-en-chile/"
     },
     {
-      "title": "Partidos arremeten con sus propuestas ante crisis de desempleo: RN recuerda a Piñera, PDG y FA ponen foco en más inversión pública",
+      "title": "Los más de $12 millones que AWTO deberá restituir a 748 usuarios tras su cese: revisa cómo obtener el beneficio",
       "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 22 Sep 2026 13:13:49 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/los-mas-de-12-millones-que-awto-debera-restituir-a-748-usuarios-tras-su-cese-revisa-como-obtener-el-beneficio/"
+    },
+    {
+      "title": "El retorno de la era atómica al campo de batalla: el megaproyecto del tanque nuclear chino y la carrera por la energía ilimitada",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 22 Sep 2026 13:01:07 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/tanque-nuclear-en-china-proyecto-canon-electromagnetico/"
+    },
+    {
+      "title": "De jurado de TV a director de una escuela de danza de más de 100 años: muere Sergio Valero, histórico maestro del baile en Chile",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 22 Sep 2026 12:07:44 +0000",
+      "url": "https://www.theclinic.cl/2026/09/22/de-jurado-de-tv-a-director-de-una-escuela-de-danza-de-mas-de-100-anos-muere-sergio-valero-historico-maestro-del-baile-en-chile/"
+    },
+    {
+      "title": "Hermano del ministro de Hacienda figura en antecedentes de nueva denuncia ante Contraloría por proyecto en Concón. Está publicada en columna de Patricio Herman en Cambio21",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Mon, 21 Sep 2026 21:04:26 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/partidos-arremeten-con-sus-propuestas-ante-crisis-de-desempleo-rn-recuerda-a-pinera-pdg-y-fa-ponen-foco-en-mas-inversion-publica/"
+      "published": "Tue, 22 Sep 2026 10:55:00 -0300",
+      "url": "https://cambio21.cl/politica/hermano-del-ministro-de-hacienda-figura-en-antecedentes-de-nueva-denuncia-ante-contraloria-por-proyecto-en-concon-esta-publicada-en-columna-de-patricio-herman-en-cambio21-6ab2883b47bf2e67be57d263"
     },
     {
-      "title": "WhatsApp cambia sus requisitos y varios celulares dejarán de ser compatibles: revisa qué modelos serán los afectados",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 21 Sep 2026 21:02:16 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/whatsapp-cambia-sus-requisitos-y-varios-celulares-dejaran-de-ser-compatibles-revisa-si-el-tuyo-esta-entre-los-afectados/"
+      "title": "Muere Sergio Valero, emblemático profesor de danza y recordado jurado de \"El Baile en TVN\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 10:29:47 -0300",
+      "url": "https://cambio21.cl/tendencias/muere-sergio-valero-emblematico-profesor-de-danza-y-recordado-jurado-de-el-baile-en-tvn-6ab28237a99a24642d49d775"
     },
     {
-      "title": "La arremetida del Gobierno para evitar el regreso de exjefa de repostería presidencial: CDE lleva el caso a la Suprema",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 21 Sep 2026 21:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/gobierno-apela-restitucion-de-repostera-presidencial-a-la-moneda-y-acude-al-cde-para-revocar-fallo/"
+      "title": "VIDEO. Periodista Fernando Solabarrieta reapareció en programa de streaming, dio disculpas y asumió consumo de alcohol: Enfermedad “altamente traicionera”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 10:05:48 -0300",
+      "url": "https://cambio21.cl/tendencias/video-periodista-fernando-solabarrieta-reaparecio-en-programa-de-streaming-dio-disculpas-y-asumio-consumo-de-alcohol-enfermedad-altamente-traicionera-6ab27a5e83a43640d72c8f04"
     },
     {
-      "title": "El regreso de los empaquetadores: diputados UDI piden al Gobierno evaluar que estudiantes puedan volver a trabajar en supermercados",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Mon, 21 Sep 2026 20:35:38 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/el-regreso-de-los-empaquetadores-diputados-udi-piden-al-gobierno-evaluar-que-estudiantes-puedan-volver-a-trabajar-en-supermercados/"
+      "title": "Team Chile hace historia y gana todos los oros de la natación artística en los Juegos Suramericanos",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 02:04:52 -0300",
+      "url": "https://cambio21.cl/deportes/team-chile-hace-historia-y-gana-todos-los-oros-de-la-natacion-artistica-en-los-juegos-suramericanos-6ab20c15691f37778555b3a3"
     },
     {
-      "title": "Veolia, a través de Aguas Andinas y Google, anuncian un proyecto conjunto para revestir un importante canal de riego y reforzar la seguridad hídrica en el sureste de Santiago",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 21 Sep 2026 20:22:03 +0000",
-      "url": "https://www.theclinic.cl/2026/09/21/veolia-google-aguas-andinas-seguridad-hidrica-santiago/"
+      "title": "Expulsan de la Policía Federal de Brasil a hijo del expresidente Bolsonaro por abandono de funciones",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 01:57:00 -0300",
+      "url": "https://cambio21.cl/el-mundo/expulsan-de-la-policia-federal-de-brasil-a-hijo-del-expresidente-bolsonaro-por-abandono-de-funciones-6ab20a131c2614271b064fe3"
+    },
+    {
+      "title": "Kast afirmó que mantiene \"respeto\" por Bachelet y que espera reunirse con la expresidenta",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 01:34:26 -0300",
+      "url": "https://cambio21.cl/pais/kast-afirmo-que-mantiene-respeto-por-bachelet-y-que-espera-reunirse-con-la-expresidenta-6ab204da767cac3623715e94"
+    },
+    {
+      "title": "ExCancilleres Insulza y Valdés culpan a Kast del retiro de Bachelet y son duros: \"Que canten victoria, que digan 'logramos bajarla'\" y \"el Presidente le dijo a EEUU, usted vete nomás, le voy a retirar la postulación\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 01:20:38 -0300",
+      "url": "https://cambio21.cl/politica/excancilleres-insulza-y-valdes-culpan-a-kast-del-retiro-de-bachelet-y-son-duros-que-canten-victoria-que-digan-logramos-bajarla-y-el-presidente-le-dijo-a-eeuu-usted-vete-nomas-le-voy-a-retirar-la-postulacion-6ab1fdb28f6a2f75ec26e273"
+    },
+    {
+      "title": "Errores o delitos en Concón, Valparaíso donde está acusado hermano de ministro de Hacienda. Por Patricio Herman, Fundación Defendamos la Ciudad",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Mon, 21 Sep 2026 23:59:13 -0300",
+      "url": "https://cambio21.cl/pais/errores-o-delitos-en-concon-valparaiso-donde-esta-acusado-hermano-de-ministro-de-hacienda-por-patricio-herman-fundacion-defendamos-la-ciudad-6ab1eeac83e82a5244735144"
+    },
+    {
+      "title": "VIDEO del tenso momento. Minuto de silencio por aniversario del asesinato de Orlando Letelier tensiona a diputados: Parlamentarios del gobierno no aceptaron y oposición lo realizó de todas maneras",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 21 Sep 2026 22:21:09 -0300",
+      "url": "https://cambio21.cl/politica/video-del-tenso-momento-minuto-de-silencio-por-aniversario-del-asesinato-de-orlando-letelier-tensiona-a-diputados-parlamentarios-del-gobierno-no-aceptaron-y-oposicion-lo-realizo-de-todas-maneras-6ab1d5fb5d25d21e0c153083"
+    },
+    {
+      "title": "Subsecretario Pávez descarta responsabilidad del Gobierno en fracaso de candidatura de Bachelet en la ONU",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 21 Sep 2026 19:38:19 -0300",
+      "url": "https://cambio21.cl/politica/subsecretario-pavez-descarta-responsabilidad-del-gobierno-en-fracaso-de-candidatura-de-bachelet-en-la-onu-6ab1b1557e8c895d9f5dc636"
     },
     {
       "title": "Dictan condenas para 18 miembros de la Resistencia Mapuche Lafkenche por ataque al Molino Grollmus. Deberán cumplir más de mil años de cárcel y su líder 80 años de presidio",
@@ -141,76 +211,6 @@
       "category": "politica",
       "published": "Mon, 21 Sep 2026 01:27:22 -0300",
       "url": "https://cambio21.cl/pais/editorial-cambio21-ante-el-pesimismo-y-la-frustracion-por-las-promesas-incumplidas-se-requiere-mas-unidad-6ab083d70f57b7004437f3d3"
-    },
-    {
-      "title": "Alemania: Izquierda en Berlín y ultraderecha en el noreste se impusieron ante la CDU de Merz",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 21 Sep 2026 01:02:45 -0300",
-      "url": "https://cambio21.cl/el-mundo/alemania-izquierda-en-berlin-y-ultraderecha-en-el-noreste-se-impusieron-ante-la-cdu-de-merz-6ab0a9e12f4c6e69cb32f693"
-    },
-    {
-      "title": "Servel denunciará a más de 3,7 millones de electores por no votar en comicios de 2025",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 21 Sep 2026 00:27:36 -0300",
-      "url": "https://cambio21.cl/pais/servel-denunciara-a-mas-de-3-7-millones-de-electores-por-no-votar-en-comicios-de-2025-6ab0a37ba3c0040e7b78db63"
-    },
-    {
-      "title": "Un tropezón deportivo transformado en beneficio: la iniciativa de Pin-Up para la fanaticada del Sevilla FC en Latam",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 21:26:40 -0300",
-      "url": "https://cambio21.cl/tendencias/un-tropezon-deportivo-transformado-en-beneficio-la-iniciativa-de-pin-up-para-la-fanaticada-del-sevilla-fc-en-latam-6ab03e8dfc701a54346eab03"
-    },
-    {
-      "title": "El costarricense José Flores busca ser reconocido como el hombre más longevo de la historia a sus 119 años",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 21:24:33 -0300",
-      "url": "https://cambio21.cl/tendencias/el-costarricense-jose-flores-busca-ser-reconocido-como-el-hombre-mas-longevo-de-la-historia-a-sus-119-anos-6ab078d55440ef1a033b6c24"
-    },
-    {
-      "title": "Presidenta del Frente Amplio Gael Yeomans critica al Gobierno luego del retiro de Bachelet a la ONU: \"La peor Cancillería en 30 años\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 20:55:29 -0300",
-      "url": "https://cambio21.cl/pais/presidenta-del-frente-amplio-gael-yeomans-critica-al-gobierno-luego-del-retiro-de-bachelet-a-la-onu-la-peor-cancilleria-en-30-anos-6ab070ec3999ae2a377a28c3"
-    },
-    {
-      "title": "España le da una verdadera paliza a Chile en dobles y clasifica a la fase final de la Copa Davis",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 20:41:47 -0300",
-      "url": "https://cambio21.cl/deportes/espana-le-da-una-verdadera-paliza-a-chile-en-dobles-y-clasifica-a-la-fase-final-de-la-copa-davis-6ab06ebc5d14ea5c3076a973"
-    },
-    {
-      "title": "IMAGENES SENSIBLES. VIDEO del momento del crimen. Perú: matan a periodista y candidata a elecciones regionales mientras ofrecía un discurso",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 15:09:05 -0300",
-      "url": "https://cambio21.cl/el-mundo/imagenes-sensibles-video-del-momento-del-crimen-peru-matan-a-periodista-y-candidata-a-elecciones-regionales-mientras-ofrecia-un-discurso-6ab0205074629e3fd0307c04"
-    },
-    {
-      "title": "Balance de Fiestas Patrias 2026: Carabineros reporta 18 fallecidos y más de 200 detenidos",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 14:58:11 -0300",
-      "url": "https://cambio21.cl/tendencias/balance-de-fiestas-patrias-2026-carabineros-reporta-18-fallecidos-y-mas-de-200-detenidos-6ab01e36825f454b6d73fe23"
-    },
-    {
-      "title": "Presidenta de México defiende la trayectoria de Michelle Bachelet tras su retiro de la carrera por la ONU",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 13:18:12 -0300",
-      "url": "https://cambio21.cl/tendencias/presidenta-de-mexico-defiende-la-trayectoria-de-michelle-bachelet-tras-su-retiro-de-la-carrera-por-la-onu-6ab006575e75031d4d278d65"
-    },
-    {
-      "title": "Otra encuesta ratifica el mal momento de Kast. Criteria asegura que aprobación del presidente cayó a su nivel más bajo desde que asumió 29%. Rechazo llega al 59%",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 20 Sep 2026 12:59:11 -0300",
-      "url": "https://cambio21.cl/politica/otra-encuesta-ratifica-el-mal-momento-de-kast-criteria-asegura-que-aprobacion-del-presidente-cayo-a-su-nivel-mas-bajo-desde-que-asumio-29-rechazo-llega-al-59-6ab001f7e5214a70d33c030d"
     }
   ]
 }
