@@ -1,76 +1,153 @@
 {
-  "lastUpdate": "2026-09-22 21:54 UTC",
+  "lastUpdate": "2026-09-23 15:17 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Proyecto que busca impedir el embargo por deudas del CAE a personas con sueldos inferiores a $2,3 millones enfrenta votación clave en la Cámara",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 22 Sep 2026 21:49:16 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/proyecto-que-busca-impedir-el-embargo-por-deudas-del-cae-a-personas-con-sueldos-inferiores-a-23-millones-enfrenta-votacion-clave-en-la-camara/"
-    },
-    {
-      "title": "Proteger tus datos como escritor independiente: los riesgos de investigar demasiado a fondo",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 22 Sep 2026 21:35:20 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/como-proteger-datos-escritor/"
-    },
-    {
-      "title": "El fin de los abdominales y el peligro de la maleta: los hábitos que podrían estar destrozando tu columna según especialistas",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 22 Sep 2026 21:17:07 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/el-fin-de-los-abdominales-y-el-peligro-de-la-maleta-los-habitos-que-podrian-estar-destrozando-tu-columna-segun-especialistas/"
-    },
-    {
-      "title": "Chile se suma al Escudo de las Américas tras cita con Donald Trump e identifica a 25 bandas de crimen organizado en la región",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 22 Sep 2026 21:09:21 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/chile-se-suma-al-escudo-de-las-americas-convocado-por-donald-trump-e-identifica-a-26-bandas-de-crimen-organizado-en-la-region/"
-    },
-    {
-      "title": "La batalla de dos padres por esclarecer los últimos meses de su hija: denunciaron acoso y cuestionan la falta de apoyo de su colegio",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 22 Sep 2026 21:06:06 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/la-batalla-de-dos-padres-por-esclarecer-los-ultimos-meses-de-su-hija-denunciaron-acoso-y-cuestionan-la-falta-de-apoyo-de-su-colegio/"
-    },
-    {
-      "title": "Nuevo revés para García Ruminot: desde la oposición a republicanos responsabilizan al ministro por rechazo de reforma de seguridad",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 22 Sep 2026 20:58:29 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/nuevo-reves-para-garcia-ruminot-desde-la-oposicion-a-republicanos-responsabilizan-al-ministro-por-rechazo-de-reforma-de-seguridad/"
-    },
-    {
-      "title": "Claro empresas Day reunirá a pymes para impulsar su digitalización y fortalecer sus negocios",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 22 Sep 2026 20:48:24 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/claro-empresas-day-pymes/"
-    },
-    {
-      "title": "“¿Por qué no hacemos dos turnos en obras públicas? Esto lo venimos pensando hace tiempo”: La fórmula que el Gobierno evalúa para acelerar proyectos y generar más empleo",
+      "title": "Congreso fija calendario de tramitación del primer proyecto de ley de Presupuestos del Gobierno: partirá el 5 de octubre",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Tue, 22 Sep 2026 20:34:28 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/por-que-no-hacemos-dos-turnos-en-obras-publicas-esto-lo-venimos-pensando-hace-tiempo-admitio-el-ministro-de-economia/"
+      "published": "Wed, 23 Sep 2026 15:11:12 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/congreso-fija-calendario-de-tramitacion-del-primer-proyecto-de-ley-de-presupuestos-del-gobierno-partira-el-5-de-octubre/"
     },
     {
-      "title": "La tapa que esconde el motor: por qué tu auto la trae y qué gana (o pierde) tu taller si la sacas",
+      "title": "Qué se sabe de “El Poroto”, líder narco que ofreció millones por “la cabeza” de la alcaldesa de Lo Espejo y que fue asesinado en un ajuste de cuentas",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 22 Sep 2026 20:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/tapa-plastica-del-motor-para-que-sirve/"
+      "published": "Wed, 23 Sep 2026 14:46:31 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/que-se-sabe-de-el-poroto-lider-narco-que-ofrecio-millones-por-la-cabeza-de-la-alcaldesa-de-lo-espejo-y-que-fue-asesinado-en-un-ajuste-de-cuentas/"
     },
     {
-      "title": "“Esa mezcla es súper compleja”: de la barra al congelador, la innovadora propuesta de Boozy Ice Cream que mezcla alcohol con helado",
+      "title": "Con bonos millonarios y nuevos beneficios: la última oferta de Minera Escondida a su sindicato de supervisores",
+      "source": "The Clinic",
+      "category": "mercados",
+      "published": "Wed, 23 Sep 2026 14:43:48 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/con-bonos-millonarios-y-nuevos-beneficios-la-ultima-oferta-de-minera-escondida-a-su-sindicato-de-supervisores/"
+    },
+    {
+      "title": "“Por mí, no iría al Congreso, porque la gestión es más importante”: Arrau se sincera sobre el trabajo parlamentario y sus intransables en reforma de seguridad",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 22 Sep 2026 19:43:33 +0000",
-      "url": "https://www.theclinic.cl/2026/09/22/en-el-mundo-no-existen-los-helados-con-alcohol-de-la-barra-al-congelador-la-innovadora-propuesta-de-boozy-ice-cream/"
+      "published": "Wed, 23 Sep 2026 14:32:33 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/por-mi-no-iria-al-congreso-arrau-se-sincera-sobre-el-trabajo-parlamentario-e-identifica-sus-intransables-en-la-reforma-constitucional-de-seguridad/"
+    },
+    {
+      "title": "Piden seguir ejemplo de TVN: Diputados UDI solicitan a Anatel prohibir publicidad de casas de apuestas en televisión",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 23 Sep 2026 14:30:50 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/piden-seguir-ejemplo-de-tvn-diputados-udi-solicitan-a-anatel-prohibir-publicidad-de-casas-de-apuestas-en-television/"
+    },
+    {
+      "title": "Carta a la directora: Chile necesita un lugar para estar en desacuerdo y encontrar acuerdos",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 23 Sep 2026 14:19:45 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/carta-a-la-directora-chile-necesita-un-lugar-para-estar-en-desacuerdo-y-encontrar-acuerdos/"
+    },
+    {
+      "title": "Cargar un auto eléctrico en 4 minutos: Geely desafía el imperio de BYD con IA y megavatios",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 23 Sep 2026 14:14:23 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/cargar-auto-electrico-4-minutos-geely-byd/"
+    },
+    {
+      "title": "“Festival oficial del Desierto Florido”: Fiesta de electrónica genera indignación en redes sociales y no cuenta con autorización del Gore ni la Delegación",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 23 Sep 2026 12:59:18 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/festival-oficial-del-desierto-florido-fiesta-de-electronica-genera-indignacion-en-redes-sociales-y-no-cuenta-con-autorizacion-del-gore-ni-la-delegacion/"
+    },
+    {
+      "title": "Yamaha R9 en Chile: la propuesta que desafía el paradigma Supersport",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 23 Sep 2026 12:48:32 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/yamaha-r9-en-chile-la-propuesta-que-desafia-el-paradigma-supersport/"
+    },
+    {
+      "title": "Arqueología al alcance de las manos: universitarios fabricaron réplicas en 3D de las momias de Chinchorro para uso escolar",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 23 Sep 2026 12:16:00 +0000",
+      "url": "https://www.theclinic.cl/2026/09/23/arqueologia-al-alcance-de-las-manos-universitarios-fabricaron-replicas-en-3d-de-las-momias-de-chinchorro-para-uso-escolar/"
+    },
+    {
+      "title": "\"La cuota Flores\". “Viejo de mierda para lo único que sirve”: el chat de la senadora Camila Flores por rendiciones de campaña donde acusó estar “perdiendo $80 millones”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 23 Sep 2026 12:05:15 -0300",
+      "url": "https://cambio21.cl/politica/la-cuota-flores-viejo-de-mierda-para-lo-unico-que-sirve-el-chat-de-la-senadora-camila-flores-por-rendiciones-de-campana-donde-acuso-estar-perdiendo-80-millones-6ab3e87dff93ef25ed25ca83"
+    },
+    {
+      "title": "Gran vuelco en juicio por muerte de Diego Maradona: Habría fallecido por covid",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 23 Sep 2026 11:38:30 -0300",
+      "url": "https://cambio21.cl/deportes/gran-vuelco-en-juicio-por-muerte-de-diego-maradona-habria-fallecido-por-covid-6ab3e2a444ae9f294a31dde3"
+    },
+    {
+      "title": "Denuncian que impidieron nuevamente el regreso de María Corina Machado a Venezuela desde Panamá",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 23 Sep 2026 11:25:05 -0300",
+      "url": "https://cambio21.cl/el-mundo/denuncian-que-impidieron-nuevamente-el-regreso-de-maria-corina-machado-a-venezuela-desde-panama-6ab3e0a68e36a617d51aab84"
+    },
+    {
+      "title": "Los peores números desde que Kast gobierna: Encuesta muestra desplome del mandatario que llega al 25%, lo mismo que obtuvo en primera vuelta. 62% lo rechaza o desaprueba",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 23 Sep 2026 09:49:33 -0300",
+      "url": "https://cambio21.cl/politica/los-peores-numeros-desde-que-kast-gobierna-encuesta-muestra-desplome-del-mandatario-que-llega-al-25-lo-mismo-que-obtuvo-en-primera-vuelta-62-lo-rechaza-o-desaprueba-6ab3c68c598e905a6b03c553"
+    },
+    {
+      "title": "Asesinan a delincuente investigado por amenazas contra la alcaldesa Javiera Reyes en Lo Espejo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 23:53:08 -0300",
+      "url": "https://cambio21.cl/tendencias/asesinan-a-delincuente-investigado-por-amenazas-contra-la-alcaldesa-javiera-reyes-en-lo-espejo-6ab33eafa160e9342a3c5d35"
+    },
+    {
+      "title": "Camila Vallejo arremete duramente contra el jefe de Estado y su participación en la ONU:\"Kast nuevamente avergonzando a Chile ante el mundo\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 23:47:34 -0300",
+      "url": "https://cambio21.cl/politica/camila-vallejo-arremete-duramente-contra-el-jefe-de-estado-y-su-participacion-en-la-onu-kast-nuevamente-avergonzando-a-chile-ante-el-mundo-6ab33cb1b472cb10c950fc83"
+    },
+    {
+      "title": "Chartwell International School Chile abrirá sus puertas al público para feria universitaria con representantes de universidades de todo el mundo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 22:23:26 -0300",
+      "url": "https://cambio21.cl/tendencias/chartwell-international-school-chile-abrira-sus-puertas-al-publico-para-feria-universitaria-con-representantes-de-universidades-de-todo-el-mundo-6ab326b3fc0f454a967736c3"
+    },
+    {
+      "title": "Kast explica porqué ingresó al Escudo de las Américas alianza policial-militar creada por Trump: “Que nadie crea que estamos pasando a llevar la soberanía de Chile”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 19:22:58 -0300",
+      "url": "https://cambio21.cl/pais/kast-explica-porque-ingreso-al-escudo-de-las-americas-alianza-policial-militar-creada-por-trump-que-nadie-crea-que-estamos-pasando-a-llevar-la-soberania-de-chile-6ab2ff8393881e594265ae2c"
+    },
+    {
+      "title": "Exdiputado Gabriel Silber queda con arresto domiciliario total tras ser formalizado por trama bielorrusa",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 19:15:51 -0300",
+      "url": "https://cambio21.cl/pais/exdiputado-gabriel-silber-queda-con-arresto-domiciliario-total-tras-ser-formalizado-por-trama-bielorrusa-6ab2fdc6017b8f28ef0ae1d4"
+    },
+    {
+      "title": "Suma y sigue: nueva condena contra torturador y violador de DDHH Miguel Krassnoff por crimen de lesa humanidad. Está condenado a mil 50 años de presidio",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 19:08:23 -0300",
+      "url": "https://cambio21.cl/pais/suma-y-sigue-nueva-condena-contra-torturador-y-violador-de-ddhh-miguel-krassnoff-por-crimen-de-lesa-humanidad-esta-condenado-a-mil-50-anos-de-presidio-6ab2fb9fc1f9c42ffe7927f5"
+    },
+    {
+      "title": "Chile no será observador y Gobierno anuncia el ingreso al Escudo de las Américas, iniciativa política-militar-policial impulsada por Trump",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 22 Sep 2026 18:55:40 -0300",
+      "url": "https://cambio21.cl/politica/chile-no-sera-observador-y-gobierno-anuncia-el-ingreso-al-escudo-de-las-americas-iniciativa-politica-militar-policial-impulsada-por-trump-6ab2f71eaa616c38d520f0b5"
     },
     {
       "title": "Kast debutó en las Naciones Unidas: Asegura que \"Chile está de vuelta\" y admite \"la economía aún no despega y el desempleo se mantiene alto\"",
@@ -134,83 +211,6 @@
       "category": "politica",
       "published": "Tue, 22 Sep 2026 10:29:47 -0300",
       "url": "https://cambio21.cl/tendencias/muere-sergio-valero-emblematico-profesor-de-danza-y-recordado-jurado-de-el-baile-en-tvn-6ab28237a99a24642d49d775"
-    },
-    {
-      "title": "VIDEO. Periodista Fernando Solabarrieta reapareció en programa de streaming, dio disculpas y asumió consumo de alcohol: Enfermedad “altamente traicionera”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 22 Sep 2026 10:05:48 -0300",
-      "url": "https://cambio21.cl/tendencias/video-periodista-fernando-solabarrieta-reaparecio-en-programa-de-streaming-dio-disculpas-y-asumio-consumo-de-alcohol-enfermedad-altamente-traicionera-6ab27a5e83a43640d72c8f04"
-    },
-    {
-      "title": "Team Chile hace historia y gana todos los oros de la natación artística en los Juegos Suramericanos",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 22 Sep 2026 02:04:52 -0300",
-      "url": "https://cambio21.cl/deportes/team-chile-hace-historia-y-gana-todos-los-oros-de-la-natacion-artistica-en-los-juegos-suramericanos-6ab20c15691f37778555b3a3"
-    },
-    {
-      "title": "Expulsan de la Policía Federal de Brasil a hijo del expresidente Bolsonaro por abandono de funciones",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 22 Sep 2026 01:57:00 -0300",
-      "url": "https://cambio21.cl/el-mundo/expulsan-de-la-policia-federal-de-brasil-a-hijo-del-expresidente-bolsonaro-por-abandono-de-funciones-6ab20a131c2614271b064fe3"
-    },
-    {
-      "title": "Kast afirmó que mantiene \"respeto\" por Bachelet y que espera reunirse con la expresidenta",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 22 Sep 2026 01:34:26 -0300",
-      "url": "https://cambio21.cl/pais/kast-afirmo-que-mantiene-respeto-por-bachelet-y-que-espera-reunirse-con-la-expresidenta-6ab204da767cac3623715e94"
-    },
-    {
-      "title": "ExCancilleres Insulza y Valdés culpan a Kast del retiro de Bachelet y son duros: \"Que canten victoria, que digan 'logramos bajarla'\" y \"el Presidente le dijo a EEUU, usted vete nomás, le voy a retirar la postulación\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 22 Sep 2026 01:20:38 -0300",
-      "url": "https://cambio21.cl/politica/excancilleres-insulza-y-valdes-culpan-a-kast-del-retiro-de-bachelet-y-son-duros-que-canten-victoria-que-digan-logramos-bajarla-y-el-presidente-le-dijo-a-eeuu-usted-vete-nomas-le-voy-a-retirar-la-postulacion-6ab1fdb28f6a2f75ec26e273"
-    },
-    {
-      "title": "Errores o delitos en Concón, Valparaíso donde está acusado hermano de ministro de Hacienda. Por Patricio Herman, Fundación Defendamos la Ciudad",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Mon, 21 Sep 2026 23:59:13 -0300",
-      "url": "https://cambio21.cl/pais/errores-o-delitos-en-concon-valparaiso-donde-esta-acusado-hermano-de-ministro-de-hacienda-por-patricio-herman-fundacion-defendamos-la-ciudad-6ab1eeac83e82a5244735144"
-    },
-    {
-      "title": "VIDEO del tenso momento. Minuto de silencio por aniversario del asesinato de Orlando Letelier tensiona a diputados: Parlamentarios del gobierno no aceptaron y oposición lo realizó de todas maneras",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 21 Sep 2026 22:21:09 -0300",
-      "url": "https://cambio21.cl/politica/video-del-tenso-momento-minuto-de-silencio-por-aniversario-del-asesinato-de-orlando-letelier-tensiona-a-diputados-parlamentarios-del-gobierno-no-aceptaron-y-oposicion-lo-realizo-de-todas-maneras-6ab1d5fb5d25d21e0c153083"
-    },
-    {
-      "title": "Subsecretario Pávez descarta responsabilidad del Gobierno en fracaso de candidatura de Bachelet en la ONU",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 21 Sep 2026 19:38:19 -0300",
-      "url": "https://cambio21.cl/politica/subsecretario-pavez-descarta-responsabilidad-del-gobierno-en-fracaso-de-candidatura-de-bachelet-en-la-onu-6ab1b1557e8c895d9f5dc636"
-    },
-    {
-      "title": "Dictan condenas para 18 miembros de la Resistencia Mapuche Lafkenche por ataque al Molino Grollmus. Deberán cumplir más de mil años de cárcel y su líder 80 años de presidio",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 21 Sep 2026 19:16:34 -0300",
-      "url": "https://cambio21.cl/pais/dictan-condenas-para-18-miembros-de-la-resistencia-mapuche-lafkenche-por-ataque-al-molino-grollmus-deberan-cumplir-mas-de-mil-anos-de-carcel-y-su-lider-80-anos-de-presidio-6ab1a97d8c97ef0ee546eb23"
-    },
-    {
-      "title": "Agrupación de Plataformas de Apuestas en Línea cuestiona a Subtel por bloqueo de 37 nuevos sitios: “Se excede del fallo” de la justicia",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 21 Sep 2026 18:43:29 -0300",
-      "url": "https://cambio21.cl/tendencias/agrupacion-de-plataformas-de-apuestas-en-linea-cuestiona-a-subtel-por-bloqueo-de-37-nuevos-sitios-se-excede-del-fallo-de-la-justicia-6ab1a3757ccaba1a162f5ba3"
-    },
-    {
-      "title": "Entrevista Cambio21. El más destacado abogado de DDHH, Nelson Caucoto y los indultos para militares que le exigen a Kast: \"Que nos gobierne una autoridad que simpatiza con Pinochet y la dictadura genera temores para la democracia\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 21 Sep 2026 15:51:10 -0300",
-      "url": "https://cambio21.cl/politica/entrevista-cambio21-el-mas-destacado-abogado-de-ddhh-nelson-caucoto-y-los-indultos-para-militares-que-le-exigen-a-kast-que-nos-gobierne-una-autoridad-que-simpatiza-con-pinochet-y-la-dictadura-genera-temores-para-la-democracia-6ab0b81441731e14a648a804"
     }
   ]
 }
