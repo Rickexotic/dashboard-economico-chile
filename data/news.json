@@ -1,76 +1,132 @@
 {
-  "lastUpdate": "2026-09-29 22:53 UTC",
+  "lastUpdate": "2026-09-30 16:39 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "“Uno sacó una pistola y empezó a disparar”: El crudo relato de una de las víctimas del fatal ataque a bus con hinchas de Colo Colo en San Antonio",
+      "title": "Plaza de Armas estrena puesto de mando con cámaras y vigilancia 24/7: la estructura fue donada desde China",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 29 Sep 2026 22:01:39 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/uno-saco-una-pistola-y-empezo-a-disparar-el-crudo-relato-de-una-de-las-victimas-del-fatal-ataque-a-bus-con-hinchas-de-colo-colo-en-san-antonio/"
+      "published": "Wed, 30 Sep 2026 16:29:37 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/plaza-de-armas-estrena-puesto-de-mando-con-camaras-y-vigilancia-24-7-la-estructura-fue-donada-desde-china/"
     },
     {
-      "title": "Presidenta del Banco Central advierte de “posibles conflictos de interés” de BancoEstado al gestionar nuevo Fondo para la Vivienda",
+      "title": "El nuevo BMW i3 frente a su propio mito: ¿alcanzan 912 km de autonomía para jubilar al motor térmico?",
       "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 16:22:04 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/nuevo-bmw-i3-neue-klasse-analisis/"
+    },
+    {
+      "title": "La disputa judicial entre acreedores de Enjoy: acusan deuda de $2.319 millones por arriendo impago del Casino de la Bahía",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 15:56:10 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/la-disputa-judicial-entre-acreedores-de-enjoy-acusan-deuda-de-2-319-millones-por-arriendo-impago-del-casino-de-la-bahia/"
+    },
+    {
+      "title": "Quién es el seremi de Vivienda de la RM al que el ministro Poduje le pidió la renuncia por pérdida de confianza y no cumplir con las metas",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 15:48:04 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/quien-es-el-seremi-de-vivienda-de-la-rm-al-que-el-ministro-poduje-le-pidio-la-renuncia-por-perdida-de-confianza-y-no-cumplir-con-las-metas/"
+    },
+    {
+      "title": "Ketamina, chats de Snapchat y sanciones simbólicas: lo que se sabe del caso de violación grupal en la Universidad de Cornell",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 15:45:30 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/ketamina-chats-de-snapchat-y-sanciones-simbolicas-lo-que-se-sabe-del-caso-de-violacion-grupal-en-la-universidad-de-cornell/"
+    },
+    {
+      "title": "Senador Núñez (PC) tras quedar fuera de comitiva a Nueva York por rechazo a su visa: “Es algo que debe aclararlo la embajada de EE.UU.”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 15:39:05 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/senador-nunez-pc-tras-quedar-fuera-de-comitiva-a-nueva-york-por-rechazo-a-su-visa-es-algo-que-debe-aclararlo-la-embajada-de-ee-uu/"
+    },
+    {
+      "title": "En el Sheraton y previo pago de $43 mil: los detalles de la cena de desagravio para el exsubsecretario que dio positivo a test de drogas",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 14:57:47 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/en-el-hotel-sheraton-y-previo-pago-de-43-mil-los-detalles-de-la-cena-de-desagravio-para-juan-pablo-rodriguez-que-organiza-pensa/"
+    },
+    {
+      "title": "Cómo conseguir el pin exclusivo de BTS en Santiago",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 14:53:21 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/como-conseguir-pin-bts-santiago/"
+    },
+    {
+      "title": "“Esto es una desigualdad total”: Alcaldes de Renca y Quilicura insisten en sostener encuentro con Rincón por proyecto de torre de alta tensión",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 14:41:12 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/esto-es-una-desigualdad-total-alcaldes-de-renca-y-quilicura-insisten-en-sostener-encuentro-con-rincon-por-proyectos-de-torre-de-alta-tension/"
+    },
+    {
+      "title": "CHV apuesta por la continuidad de “Fiebre” tras el paso del baile al canto: “Ganamos una marca que podemos proyectar”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 30 Sep 2026 14:13:12 +0000",
+      "url": "https://www.theclinic.cl/2026/09/30/chv-apuesta-por-la-continuidad-de-fiebre-tras-el-paso-del-baile-al-canto-ganamos-una-marca-que-podemos-proyectar/"
+    },
+    {
+      "title": "Entrevista: ONG medio ambiental de Talca presentó querella por construcción de casino de juegos a metros del único humedal urbano de esa ciudad. Abogado señala que acción judicial involucra también a funcionarios públicos \"porque entregaron información falsa\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 30 Sep 2026 12:36:15 -0300",
+      "url": "https://cambio21.cl/pais/entrevista-ong-medio-ambiental-de-talca-presento-querella-por-construccion-de-casino-de-juegos-a-metros-del-unico-humedal-urbano-de-esa-ciudad-abogado-senala-que-accion-judicial-involucra-tambien-a-funcionarios-publicos-porque-entregaron-informacion-falsa-6abc24a01987310934747ab3"
+    },
+    {
+      "title": "\"Ahora somos dueños de nuestro destino\": Luego de 23 años, iraquíes celebran la salida de tropas de EE.UU. de su país",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 30 Sep 2026 11:51:57 -0300",
+      "url": "https://cambio21.cl/el-mundo/ahora-somos-duenos-de-nuestro-destino-luego-de-23-anos-iraquies-celebran-la-salida-de-tropas-de-ee-uu-de-su-pais-6abd217bd9ccca203d088e44"
+    },
+    {
+      "title": "Ya parece normal pero no lo es: Dos seremis más salen del Gobierno y van 51 altos funcionarios que son desvinculados: 3 ministras, 6 subsecretarios, 41 seremis y 1 delegado provincial",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 30 Sep 2026 11:42:13 -0300",
+      "url": "https://cambio21.cl/politica/ya-parece-normal-pero-no-lo-es-dos-seremis-mas-salen-del-gobierno-y-van-51-altos-funcionarios-que-son-desvinculados-3-ministras-6-subsecretarios-41-seremis-y-1-delegado-provincial-6abd1e00f4103f0882175673"
+    },
+    {
+      "title": "VIDEO. Piloto apuñala a su colega en vuelo hacia Israel: Acusan presunto ataque terrorista y que quería estrellar el avión",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 30 Sep 2026 11:02:38 -0300",
+      "url": "https://cambio21.cl/tendencias/video-piloto-apunala-a-su-colega-en-vuelo-hacia-israel-acusan-presunto-ataque-terrorista-y-que-queria-estrellar-el-avion-6abd15e89f241853e42f2063"
+    },
+    {
+      "title": "VIDEO con 6 goles. Es como escribir una letanía: Chile (con su feisíma camiseta, que no representa a nuestro país) comete graves errores en la defensa y sufre una goleada ante EE.UU. 4-2",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Tue, 29 Sep 2026 21:45:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/presidenta-del-banco-central-advierte-de-posibles-conflictos-de-interes-de-bancoestado-al-gestionar-nuevo-fondo-para-la-vivienda/"
+      "published": "Wed, 30 Sep 2026 10:49:02 -0300",
+      "url": "https://cambio21.cl/deportes/video-con-6-goles-es-como-escribir-una-letania-chile-con-su-feisima-camiseta-que-no-representa-a-nuestro-pais-comete-graves-errores-en-la-defensa-y-sufre-una-goleada-ante-ee-uu-4-2-6abd0fe1b75f7f4c654729f3"
     },
     {
-      "title": "De llamar “wuachita patética” a exministra a eliminar a Simone de Beauvoir de lista de autoras destacadas: el historial de polémicas de la directora de Prodemu",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 29 Sep 2026 21:38:09 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/de-llamar-wuachita-patetica-a-exministra-a-eliminar-a-simone-de-beauvoir-de-lista-de-autoras-destacadas-el-historial-de-polemicas-de-la-directora-de-prodemu/"
+      "title": "Siguen las malas noticias para el Gobierno y para los chilenos/as: Desempleo llegó a su punto más alto en más de cinco años al subir a 9,6% y desde Piñera 2 que no existía esta cifra. En mujeres la desocupación alcanzó 10,3%",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Wed, 30 Sep 2026 10:11:02 -0300",
+      "url": "https://cambio21.cl/politica/siguen-las-malas-noticias-para-el-gobierno-y-para-los-chilenos-as-desempleo-llego-a-su-punto-mas-alto-en-mas-de-cinco-anos-al-subir-a-9-6-y-desde-pinera-2-que-no-existia-esta-cifra-en-mujeres-la-desocupacion-alcanzo-10-3-6abd06ab58d56159240de655"
     },
     {
-      "title": "“El Presidente me pidió buscar una solución”: Poduje confirma que el Gobierno trabaja para financiar y permitir apertura del Parque Cerro Chena de San Bernardo",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 29 Sep 2026 21:21:20 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/el-presidente-me-pidio-buscar-una-solucion-poduje-confirma-que-el-gobierno-trabaja-para-financiar-y-permitir-apertura-del-parque-cerro-chena-de-san-bernardo/"
+      "title": "El duro y feo cruce entre el polémico ministro Poduje y senador y exatleta Sebastián Keitel por medidas para ciclistas en Parque Metropolitano: “Ministro, no me intimida con sus faltas de respeto, ironía y agresividad”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 30 Sep 2026 02:48:22 -0300",
+      "url": "https://cambio21.cl/pais/el-duro-y-feo-cruce-entre-el-polemico-ministro-poduje-y-senador-y-exatleta-sebastian-keitel-por-medidas-para-ciclistas-en-parque-metropolitano-ministro-no-me-intimida-con-sus-faltas-de-respeto-ironia-y-agresividad-6abca10f7b7c956e0100d8a4"
     },
     {
-      "title": "Kast da señales al Congreso por agenda de seguridad y cita a actores clave a reunión en Cerro Castillo",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 29 Sep 2026 21:14:41 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/kast-da-senales-al-congreso-por-agenda-de-seguridad-y-cita-a-actores-clave-a-reunion-en-cerro-castillo/"
-    },
-    {
-      "title": "AMD acelera su ofensiva contra Nvidia y compra la empresa de una pionera en IA por US$8.200 millones",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 29 Sep 2026 21:01:59 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/amd-compra-world-labs-fei-fei-li-nvidia/"
-    },
-    {
-      "title": "Exsuperintendente Macías demanda más proactividad del Estado y las AFP ante cambios en fondos de pensiones: “Hay que explicarle a la gente. No está completamente internalizado”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 29 Sep 2026 20:45:44 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/exsuperintendente-macias-demanda-mas-proactividad-del-estado-y-las-afp-ante-cambios-en-fondos-de-pensiones-hay-que-explicarle-a-la-gente-no-esta-completamente-internalizado/"
-    },
-    {
-      "title": "Los intentos del Frente Amplio por capitalizar la agenda de trabajo y el nuevo protagonismo del exministro Giorgio Boccardo",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 29 Sep 2026 20:27:36 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/los-intentos-del-frente-amplio-por-capitalizar-la-agenda-de-trabajo-y-el-nuevo-protagonismo-del-exministro-giorgio-boccardo/"
-    },
-    {
-      "title": "Los creadores de Claude: Anthropic advierte “riesgo existencial para la humanidad” en su prospecto de salida a la bolsa",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Tue, 29 Sep 2026 20:16:49 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/los-creadores-de-claude-anthropic-advierte-riesgo-existencial-para-la-humanidad-en-su-prospecto-de-salida-a-la-bolsa/"
-    },
-    {
-      "title": "Decathlon abre su primera tienda en Valdivia y amplía su expansión en el sur de Chile",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 29 Sep 2026 20:10:29 +0000",
-      "url": "https://www.theclinic.cl/2026/09/29/decathlon-abre-su-primera-tienda-en-valdivia-y-amplia-su-expansion-en-el-sur-de-chile/"
+      "title": "Diputados de oposición piden renuncia del embajador designado por Kast en Israel, Gabriel Zaliasnik tras declaración de abogado Luis Hermosilla",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 30 Sep 2026 02:24:26 -0300",
+      "url": "https://cambio21.cl/politica/diputados-de-oposicion-piden-renuncia-del-embajador-designado-por-kast-en-israel-gabriel-zaliasnik-tras-declaracion-de-abogado-luis-hermosilla-6abc9af6b717cf20384b5173"
     },
     {
       "title": "Luis Hermosilla sigue \"cantando\" y colaborando ante fiscales: Chats complican e involucran a embajador de Chile en Israel designado por Kast, Gabriel Zaliasnik que está imputado",
@@ -80,11 +136,11 @@
       "url": "https://cambio21.cl/pais/luis-hermosilla-sigue-cantando-y-colaborando-ante-fiscales-chats-complican-e-involucran-a-embajador-de-chile-en-israel-designado-por-kast-gabriel-zaliasnik-que-esta-imputado-6abc042ced9ac15941714513"
     },
     {
-      "title": "Particular VIDEO. Futbolista seleccionado que tiene la cabellera más larga del mundo provoca dos expulsiones del campo de juego",
+      "title": "Particular VIDEO. Futbolista seleccionado que tiene la cabellera más larga del mundo provoca dos expulsiones del campo de juego por \"tirarle el pelo\"",
       "source": "Cambio21",
       "category": "politica",
       "published": "Tue, 29 Sep 2026 15:21:30 -0300",
-      "url": "https://cambio21.cl/deportes/particular-video-futbolista-seleccionado-que-tiene-la-cabellera-mas-larga-del-mundo-provoca-dos-expulsiones-del-campo-de-juego-6abbfdc7516cb31ed960e193"
+      "url": "https://cambio21.cl/deportes/particular-video-futbolista-seleccionado-que-tiene-la-cabellera-mas-larga-del-mundo-provoca-dos-expulsiones-del-campo-de-juego-por-tirarle-el-pelo-6abbfdc7516cb31ed960e193"
     },
     {
       "title": "Diputados UDI quieren acelerar cierre del Instituto Nacional de Derechos Humanos. Quieren rebajarle el presupuesto y dejarlo solo en mil pesos",
@@ -155,62 +211,6 @@
       "category": "politica",
       "published": "Tue, 29 Sep 2026 00:17:32 -0300",
       "url": "https://cambio21.cl/el-mundo/polonia-movilizo-aviones-de-combate-tras-impacto-de-dron-ruso-a-solo-dos-kilometros-de-su-frontera-6abb2934324a7029f3015743"
-    },
-    {
-      "title": "Hay que derogar el DL 3.516 que origina las \"parcelas de agrado\". Por Patricio Herman, Fundación Defendamos la Ciudad",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 23:51:30 -0300",
-      "url": "https://cambio21.cl/tendencias/hay-que-derogar-el-dl-3-516-que-origina-las-parcelas-de-agrado-por-patricio-herman-fundacion-defendamos-la-ciudad-6abb252bff96347740537964"
-    },
-    {
-      "title": "Los F-5 y la próxima generación del poder aéreo chileno. Por Ricardo Rincón, abogado, extitular Comisión Defensa Cámara de Diputados",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 23:27:17 -0300",
-      "url": "https://cambio21.cl/pais/los-f-5-y-la-proxima-generacion-del-poder-aereo-chileno-por-ricardo-rincon-abogado-extitular-comision-defensa-camara-de-diputados-6abb2055b0c98d5ad35505b8"
-    },
-    {
-      "title": "Argentina denunció vuelos ilegales de empresa británica entre Malvinas y Punta Arenas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 23:11:05 -0300",
-      "url": "https://cambio21.cl/tendencias/argentina-denuncio-vuelos-ilegales-de-empresa-britanica-entre-malvinas-y-punta-arenas-6abb1df5b0c98d5ad35505b4"
-    },
-    {
-      "title": "Cámara de Diputados aprueba solicitud para que el presidente Kast explique la adhesión del gobierno al Escudo de las Américas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 23:00:50 -0300",
-      "url": "https://cambio21.cl/politica/camara-de-diputados-aprueba-solicitud-para-que-el-presidente-kast-explique-la-adhesion-del-gobierno-al-escudo-de-las-americas-6abb1aff5bf32e092a2d3084"
-    },
-    {
-      "title": "Guías prácticas para la vida moderna: Contenido informativo sobre trucos caseros, deporte, recreación y turismo",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 21:34:27 -0300",
-      "url": "https://cambio21.cl/tendencias/guias-practicas-para-la-vida-moderna-contenido-informativo-sobre-trucos-caseros-deporte-recreacion-y-turismo-6abae6ed02188858bc39d0c5"
-    },
-    {
-      "title": "La apuesta del entrenador Nicolás Córdova para liderar el recambio en Chile",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 21:32:59 -0300",
-      "url": "https://cambio21.cl/deportes/la-apuesta-del-entrenador-nicolas-cordova-para-liderar-el-recambio-en-chile-6aba9d88ad5e0902a829fc24"
-    },
-    {
-      "title": "Cancillería entrega nota de protesta a embajador de Israel por “intromisión en asuntos internos”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 21:28:07 -0300",
-      "url": "https://cambio21.cl/pais/cancilleria-entrega-nota-de-protesta-a-embajador-de-israel-por-intromision-en-asuntos-internos-6abb04ee88eae5664e751f13"
-    },
-    {
-      "title": "VIDEO del interrogatorio. \"Canciller, por qué no renuncia?\" preguntó diputado Nelson Venegas al ministro Francisco Pérez en su interpelación. \"Porque usted no es el Presidente de la República\" respondió canciller",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 28 Sep 2026 18:27:13 -0300",
-      "url": "https://cambio21.cl/politica/video-del-interrogatorio-canciller-por-que-no-renuncia-pregunto-diputado-nelson-venegas-al-ministro-francisco-perez-en-su-interpelacion-porque-usted-no-es-el-presidente-de-la-republica-respondio-canciller-6abacad3439439325d1b07d3"
     }
   ]
 }
