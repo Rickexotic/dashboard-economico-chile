@@ -1,76 +1,153 @@
 {
-  "lastUpdate": "2026-09-30 22:53 UTC",
+  "lastUpdate": "2026-10-01 17:16 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "La caída de Alex Vega: el líder gremial de Gendarmería que utilizó su rol para cubrir una red de corrupción en Santiago I",
+      "title": "Accidente en mina Radomiro Tomic de Codelco deja un trabajador fallecido: la cuprífera suspende actividades en la división e iniciará investigación",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 30 Sep 2026 22:53:21 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/la-caida-de-alex-vega-el-lider-gremial-de-gendarmeria-que-utilizo-su-rol-para-cubrir-una-red-de-corrupcion-en-santiago-i/"
+      "published": "Thu, 01 Oct 2026 17:02:59 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/accidente-en-mina-radomiro-tomic-de-codelco-deja-un-trabajador-fallecido-la-cuprifera-suspende-actividades-en-la-division-e-iniciara-investigacion/"
     },
     {
-      "title": "El tercero en un día: Renuncia el seremi de Economía de la Región de O’Higgins y el Gobierno acumula más de 40 salidas en seis meses",
+      "title": "CFA advierte riesgos fiscales del Fonavi y plantea mejorar gobernanza de BancoEstado",
       "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 16:55:20 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/cfa-advierte-riesgos-fiscales-del-fonavi-y-plantea-mejorar-gobernanza-de-bancoestado/"
+    },
+    {
+      "title": "Diputada Rodríguez (REP) por golpizas a estudiantes UC en paro Confech: “Eso demuestra que las marchas están dominadas por grupos ideológicos”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 16:16:42 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/diputada-rodriguez-rep-por-golpizas-en-paro-confech-eso-demuestra-que-las-marchas-estan-dominadas-por-grupos-ideologicos/"
+    },
+    {
+      "title": "En su camino a los Oscar, Mariana Di Girolamo es elegida por Variety dentro de su lista de los “10 actores a seguir” en 2026",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 16:14:29 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/en-su-camino-a-los-oscar-mariana-di-girolamo-es-elegida-por-variety-dentro-de-su-lista-de-los-10-actores-a-seguir-en-2026/"
+    },
+    {
+      "title": "Las imágenes de la violenta agresión a estudiantes de derecha de la UC en marcha convocada por la Confech: les lanzaron piedras, botellas y pintura",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 15:38:20 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/la-violenta-agresion-a-estudiantes-de-derecha-de-la-uc-durante-marcha-convocada-por-la-confech-les-lanzaron-piedras-botellas-y-pintura/"
+    },
+    {
+      "title": "Javiera Sandoval, única chilena seleccionada para el programa de crisis de Vital Voices: “Las amenazas no se pueden evitar, pero sí podemos prepararnos y anticiparnos”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 15:21:04 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/javiera-sandoval-unica-chilena-seleccionada-para-el-programa-de-crisis-de-vital-voices-las-amenazas-no-se-pueden-evitar-pero-si-podemos-prepararnos-y-anticiparnos/"
+    },
+    {
+      "title": "El caso de Christa Pike: la reclusa que sobrevivió a inyecciones letales y que provocó que Tennessee suspendiera penas de muerte",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 15:12:10 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/el-caso-de-christa-pike-la-reclusa-que-sobrevivio-a-inyecciones-letales-y-que-provoco-que-tennessee-suspendiera-penas-de-muerte/"
+    },
+    {
+      "title": "Ranking QS 2027: revisa cuáles son las diez universidades chilenas que destacan entre las mejores de Latinoamérica",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 15:11:50 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/ranking-qs-2027-revisa-cuales-son-diez-universidades-chilenas-que-destacan-entre-las-mejores-de-latinoamerica/"
+    },
+    {
+      "title": "Correos, pañuelos verdes y banderas LGBT: la intensa contracampaña que afectó la candidatura de Bachelet a la Secretaría General de la ONU",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 15:10:28 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/correos-panuelos-verdes-y-banderas-lgbt-la-intensa-contracampana-que-afecto-la-candidatura-de-bachelet-a-la-secretaria-general-de-la-onu/"
+    },
+    {
+      "title": "Estudiantes se manifiestan en la Alameda contra medidas del Gobierno: enfrentamientos con Carabineros marcan la jornada",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 01 Oct 2026 15:08:16 +0000",
+      "url": "https://www.theclinic.cl/2026/10/01/estudiantes-se-manifiestan-en-la-alameda-contra-medidas-del-gobierno-enfrentamientos-con-carabineros-marcan-la-jornada/"
+    },
+    {
+      "title": "Trabajador muere tras accidente fatal en división Radomiro Tomic de Codelco en Calama",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 12:45:49 -0300",
+      "url": "https://cambio21.cl/tendencias/trabajador-muere-tras-accidente-fatal-en-division-radomiro-tomic-de-codelco-en-calama-6abe7fbc89ad8e2a636d0d94"
+    },
+    {
+      "title": "Vuelco: Senado descarta haber realizado gestiones para tramitar visa del senador Daniel Núñez (PC) para ingresar a EEUU",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 11:59:38 -0300",
+      "url": "https://cambio21.cl/politica/vuelco-senado-descarta-haber-realizado-gestiones-para-tramitar-visa-del-senador-daniel-nunez-pc-para-ingresar-a-eeuu-6abe73d6a08f5f5f64054123"
+    },
+    {
+      "title": "Biministro Claudio Alvarado responde a discurso de Michelle Bachelet: \"Que sigan aplaudiéndose entre ellos\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 11:16:32 -0300",
+      "url": "https://cambio21.cl/politica/biministro-claudio-alvarado-responde-a-discurso-de-michelle-bachelet-que-sigan-aplaudiendose-entre-ellos-6abe6ab5c23f2e6a7251d5b4"
+    },
+    {
+      "title": "Ministerio de Justicia firma decretos para el cese de 35 notarios y conservadores mayores de 75 años",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 10:58:12 -0300",
+      "url": "https://cambio21.cl/pais/ministerio-de-justicia-firma-decretos-para-el-cese-de-35-notarios-y-conservadores-mayores-de-75-anos-6abe65b02823ae50e67479e4"
+    },
+    {
+      "title": "Insólita, macabra y torpe ejecución fallida en EE.UU: Mujer condenada a muerte sobrevive tras recibir dos dosis de inyección letal en Tenesse. Está hospitalizada",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 10:47:07 -0300",
+      "url": "https://cambio21.cl/el-mundo/insolita-macabra-y-torpe-ejecucion-fallida-en-ee-uu-mujer-condenada-a-muerte-sobrevive-tras-recibir-dos-dosis-de-inyeccion-letal-en-tenesse-esta-hospitalizada-6abe6195d05ed77ec678b4f3"
+    },
+    {
+      "title": "Carabineros desvincula a 4 funcionarios por falsificación de documentos vinculada a autos robados",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 10:29:45 -0300",
+      "url": "https://cambio21.cl/pais/carabineros-desvincula-a-4-funcionarios-por-falsificacion-de-documentos-vinculada-a-autos-robados-6abe5fb53f195564926b79a4"
+    },
+    {
+      "title": "Kast, Quiroz y los chilenos seguirán sufriendo: La economía no despega, profundiza complejo momento y el Imacec anota nueva caída en agosto debido al derrumbe de la minería",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Wed, 30 Sep 2026 22:15:48 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/el-tercero-en-un-dia-renuncia-el-seremi-de-economia-de-la-region-de-ohiggins-y-el-gobierno-acumula-mas-de-40-salidas-en-seis-meses/"
+      "published": "Thu, 01 Oct 2026 09:38:39 -0300",
+      "url": "https://cambio21.cl/pais/kast-quiroz-y-los-chilenos-seguiran-sufriendo-la-economia-no-despega-profundiza-complejo-momento-y-el-imacec-anota-nueva-caida-en-agosto-debido-al-derrumbe-de-la-mineria-6abe52b2557a7912c21f67d4"
     },
     {
-      "title": "Quién es quién en el Presupuesto 2027 y el estilo que imprimió Quiroz en su diseño",
-      "source": "The Clinic",
+      "title": "Embajador de EE.UU. desmiente tajantemente al senador Daniel Núñez (PC) por caso de visa rechazada",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 01:50:14 -0300",
+      "url": "https://cambio21.cl/politica/embajador-de-ee-uu-desmiente-tajantemente-al-senador-daniel-nunez-pc-por-caso-de-visa-rechazada-6abde5dc95395c0e7362ff63"
+    },
+    {
+      "title": "Se requiere un Presupuesto fiscal con más inversión pública e intensivo en generar empleos. Por Yasna Provoste, Senadora",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Wed, 30 Sep 2026 22:04:39 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/quien-es-quien-en-el-presupuesto-2027-y-el-estilo-que-imprimio-quiroz-en-su-diseno/"
+      "published": "Thu, 01 Oct 2026 01:27:40 -0300",
+      "url": "https://cambio21.cl/pais/se-requiere-un-presupuesto-fiscal-con-mas-inversion-publica-e-intensivo-en-generar-empleos-por-yasna-provoste-senadora-6abde06c522bbf034a050db3"
     },
     {
-      "title": "“Es insoportable, huele a alcantarilla”: El desagradable olor que lleva semanas en estación Tobalaba y que molesta a pasajeros y trabajadores de Metro",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 30 Sep 2026 21:30:08 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/es-insoportable-huele-a-alcantarilla-el-desagradable-olor-que-lleva-semanas-en-estacion-tobalaba-y-que-molesta-a-pasajeros-y-trabajadores-de-metro/"
+      "title": "Kast presenta ejes del Presupuesto 2027 con foco en empleo, seguridad, salud y protección de beneficios sociales",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Thu, 01 Oct 2026 01:06:44 -0300",
+      "url": "https://cambio21.cl/pais/kast-presenta-ejes-del-presupuesto-2027-con-foco-en-empleo-seguridad-salud-y-proteccion-de-beneficios-sociales-6abdda773bbffe24533a6925"
     },
     {
-      "title": "“Ocho millones el metro es una locura”: El millonario costo de soterrar cables que preocupa a municipios",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 30 Sep 2026 21:13:18 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/ocho-millones-el-metro-es-una-locura-el-millonario-costo-de-soterrar-cables-que-preocupa-a-municipios/"
-    },
-    {
-      "title": "En medio de ambicioso plan de expansión: Parque Arauco concreta compra de Mall Paseo Quilín de Peñalolén",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 30 Sep 2026 21:12:14 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/en-medio-de-ambicioso-plan-de-expansion-parque-arauco-concreta-compra-de-mall-paseo-quilin-de-penalolen/"
-    },
-    {
-      "title": "De la probeta hasta el campo de polo: “Capacidad 01”, la historia de la primera yegua clonada en Chile",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 30 Sep 2026 21:04:26 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/de-la-probeta-hasta-el-campo-de-polo-capacidad-01-la-historia-de-la-primera-yegua-clonada-en-chile/"
-    },
-    {
-      "title": "El puente que busca construir el Frente Amplio con el PDG y que ya comienza a tomar forma en el Congreso",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 30 Sep 2026 20:39:00 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/el-puente-que-busca-construir-el-frente-amplio-con-el-pdg-y-que-ya-comienza-a-tomar-forma-en-el-congreso/"
-    },
-    {
-      "title": "ENAP reporta fuerte incremento en los combustibles: gasolinas suben $39,4 por litro y kerosene suma mayor alza",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 30 Sep 2026 20:32:37 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/enap-reporta-fuerte-incremento-en-los-combustibles-gasolinas-suben-394-por-litro-y-kerosene-suma-mayor-alza/"
-    },
-    {
-      "title": "14 carabineros asesinados desde 2022: las cifras tras el inédito aumento de homicidios y una delincuencia que perdió el miedo a disparar",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 30 Sep 2026 20:28:19 +0000",
-      "url": "https://www.theclinic.cl/2026/09/30/14-carabineros-asesinados-desde-2022-las-cifras-tras-el-inedito-aumento-de-homicidios-y-una-delincuencia-que-perdio-el-miedo-a-disparar/"
+      "title": "VIDEO de su discurso. Bachelet aclamada: “Quienes pensaban que después de esto me iba a ir para la casa, les tengo una mala noticia: eso no va a pasar”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 01 Oct 2026 00:31:40 -0300",
+      "url": "https://cambio21.cl/politica/video-de-su-discurso-bachelet-aclamada-quienes-pensaban-que-despues-de-esto-me-iba-a-ir-para-la-casa-les-tengo-una-mala-noticia-eso-no-va-a-pasar-6abdd30294436e7431434de3"
     },
     {
       "title": "Ministro de Hacienda ingresó proyecto de ley de Presupuesto 2027 con un aumento del gasto de 1,5%",
@@ -134,83 +211,6 @@
       "category": "politica",
       "published": "Wed, 30 Sep 2026 12:36:15 -0300",
       "url": "https://cambio21.cl/pais/entrevista-ong-medio-ambiental-de-talca-presento-querella-por-construccion-de-casino-de-juegos-a-metros-del-unico-humedal-urbano-de-esa-ciudad-abogado-senala-que-accion-judicial-involucra-tambien-a-funcionarios-publicos-porque-entregaron-informacion-falsa-6abc24a01987310934747ab3"
-    },
-    {
-      "title": "\"Ahora somos dueños de nuestro destino\": Luego de 23 años, iraquíes celebran la salida de tropas de EE.UU. de su país",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 30 Sep 2026 11:51:57 -0300",
-      "url": "https://cambio21.cl/el-mundo/ahora-somos-duenos-de-nuestro-destino-luego-de-23-anos-iraquies-celebran-la-salida-de-tropas-de-ee-uu-de-su-pais-6abd217bd9ccca203d088e44"
-    },
-    {
-      "title": "Ya parece normal pero no lo es: Dos seremis más salen del Gobierno y van 51 altos funcionarios que son desvinculados: 3 ministras, 6 subsecretarios, 41 seremis y 1 delegado provincial",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 30 Sep 2026 11:42:13 -0300",
-      "url": "https://cambio21.cl/politica/ya-parece-normal-pero-no-lo-es-dos-seremis-mas-salen-del-gobierno-y-van-51-altos-funcionarios-que-son-desvinculados-3-ministras-6-subsecretarios-41-seremis-y-1-delegado-provincial-6abd1e00f4103f0882175673"
-    },
-    {
-      "title": "VIDEO. Piloto apuñala a su colega en vuelo hacia Israel: Acusan presunto ataque terrorista y que quería estrellar el avión",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 30 Sep 2026 11:02:38 -0300",
-      "url": "https://cambio21.cl/tendencias/video-piloto-apunala-a-su-colega-en-vuelo-hacia-israel-acusan-presunto-ataque-terrorista-y-que-queria-estrellar-el-avion-6abd15e89f241853e42f2063"
-    },
-    {
-      "title": "VIDEO con 6 goles. Es como escribir una letanía: Chile (con su feisíma camiseta, que no representa a nuestro país) comete graves errores en la defensa y sufre una goleada ante EE.UU. 4-2",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Wed, 30 Sep 2026 10:49:02 -0300",
-      "url": "https://cambio21.cl/deportes/video-con-6-goles-es-como-escribir-una-letania-chile-con-su-feisima-camiseta-que-no-representa-a-nuestro-pais-comete-graves-errores-en-la-defensa-y-sufre-una-goleada-ante-ee-uu-4-2-6abd0fe1b75f7f4c654729f3"
-    },
-    {
-      "title": "Siguen las malas noticias para el Gobierno y para los chilenos/as: Desempleo llegó a su punto más alto en más de cinco años al subir a 9,6% y desde Piñera 2 que no existía esta cifra. En mujeres la desocupación alcanzó 10,3%",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Wed, 30 Sep 2026 10:11:02 -0300",
-      "url": "https://cambio21.cl/politica/siguen-las-malas-noticias-para-el-gobierno-y-para-los-chilenos-as-desempleo-llego-a-su-punto-mas-alto-en-mas-de-cinco-anos-al-subir-a-9-6-y-desde-pinera-2-que-no-existia-esta-cifra-en-mujeres-la-desocupacion-alcanzo-10-3-6abd06ab58d56159240de655"
-    },
-    {
-      "title": "El duro y feo cruce entre el polémico ministro Poduje y senador y exatleta Sebastián Keitel por medidas para ciclistas en Parque Metropolitano: “Ministro, no me intimida con sus faltas de respeto, ironía y agresividad”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 30 Sep 2026 02:48:22 -0300",
-      "url": "https://cambio21.cl/pais/el-duro-y-feo-cruce-entre-el-polemico-ministro-poduje-y-senador-y-exatleta-sebastian-keitel-por-medidas-para-ciclistas-en-parque-metropolitano-ministro-no-me-intimida-con-sus-faltas-de-respeto-ironia-y-agresividad-6abca10f7b7c956e0100d8a4"
-    },
-    {
-      "title": "Diputados de oposición piden renuncia del embajador designado por Kast en Israel, Gabriel Zaliasnik tras declaración de abogado Luis Hermosilla",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 30 Sep 2026 02:24:26 -0300",
-      "url": "https://cambio21.cl/politica/diputados-de-oposicion-piden-renuncia-del-embajador-designado-por-kast-en-israel-gabriel-zaliasnik-tras-declaracion-de-abogado-luis-hermosilla-6abc9af6b717cf20384b5173"
-    },
-    {
-      "title": "Luis Hermosilla sigue \"cantando\" y colaborando ante fiscales: Chats complican e involucran a embajador de Chile en Israel designado por Kast, Gabriel Zaliasnik que está imputado",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 29 Sep 2026 15:38:35 -0300",
-      "url": "https://cambio21.cl/tendencias/luis-hermosilla-sigue-cantando-y-colaborando-ante-fiscales-chats-complican-e-involucran-a-embajador-de-chile-en-israel-designado-por-kast-gabriel-zaliasnik-que-esta-imputado-6abc042ced9ac15941714513"
-    },
-    {
-      "title": "Particular VIDEO. Futbolista seleccionado que tiene la cabellera más larga del mundo provoca dos expulsiones del campo de juego por \"tirarle el pelo\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 29 Sep 2026 15:21:30 -0300",
-      "url": "https://cambio21.cl/deportes/particular-video-futbolista-seleccionado-que-tiene-la-cabellera-mas-larga-del-mundo-provoca-dos-expulsiones-del-campo-de-juego-por-tirarle-el-pelo-6abbfdc7516cb31ed960e193"
-    },
-    {
-      "title": "Diputados UDI quieren acelerar cierre del Instituto Nacional de Derechos Humanos. Quieren rebajarle el presupuesto y dejarlo solo en mil pesos",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Tue, 29 Sep 2026 14:38:51 -0300",
-      "url": "https://cambio21.cl/politica/diputados-udi-quieren-acelerar-cierre-del-instituto-nacional-de-derechos-humanos-quieren-rebajarle-el-presupuesto-y-dejarlo-solo-en-mil-pesos-6abbf636985ca67d207bd4b3"
-    },
-    {
-      "title": "\"No es una derrota\": Ministro Arrau confirma que están evaluando retirar la reforma de seguridad que presentó hace un mes",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 29 Sep 2026 13:17:21 -0300",
-      "url": "https://cambio21.cl/politica/no-es-una-derrota-ministro-arrau-confirma-que-estan-evaluando-retirar-la-reforma-de-seguridad-que-presento-hace-un-mes-6abbe40de05d6308e24bed74"
     }
   ]
 }
