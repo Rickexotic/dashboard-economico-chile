@@ -1,76 +1,104 @@
 {
-  "lastUpdate": "2026-10-01 23:02 UTC",
+  "lastUpdate": "2026-10-02 16:29 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Minera Sierra Gorda SCM parte con cuarta Línea de Molienda: proyecto contempla una inversión de US$725 millones y la creación de 900 empleos",
+      "title": "Empresa retiró seis robots haciéndolos lanzarse a un horno al estilo Terminator 2",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 02 Oct 2026 16:25:51 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/empresa-retiro-seis-robots-haciendolos-lanzarse-a-un-horno-al-estilo-terminator-2/"
+    },
+    {
+      "title": "Cultura sufre fuerte recorte en Presupuesto 2027: fondos del libro, artes escénicas y fomento audiovisual anotan las mayores caídas",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Thu, 01 Oct 2026 22:37:35 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/minera-sierra-gorda-scm-parte-con-cuarta-linea-de-molienda-proyecto-contempla-una-inversion-de-us725-millones-y-la-creacion-de-900-empleos/"
+      "published": "Fri, 02 Oct 2026 16:19:32 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/cultura-sufre-fuerte-recorte-en-presupuesto-2027-fondos-del-libro-artes-escenicas-y-fomento-audiovisual-anotan-las-mayores-caidas/"
     },
     {
-      "title": "Percibió sueldo cercano a los $2 millones: Gendarme acusado de corrupción trabajó en la Municipalidad de Cerrillos en 2022 mientras era funcionario activo",
+      "title": "“Me abrió las puertas del mundo”: las historias de los niños a los que “Yo Elijo Mi PC” les cambió la vida y sus opiniones sobre el fin del beneficio",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 22:31:27 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/percibio-sueldo-cercano-a-los-2-millones-gendarme-acusado-de-corrupcion-trabajo-en-la-municipalidad-de-cerrillos-en-2022-mientras-era-funcionario-activo/"
+      "published": "Fri, 02 Oct 2026 15:47:13 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/me-abrio-las-puertas-del-mundo-las-historias-de-los-ninos-a-los-que-yo-elijo-mi-pc-les-cambio-la-vida-y-sus-opiniones-sobre-el-fin-del-beneficio/"
     },
     {
-      "title": "Adiós a “Yo elijo mi PC”: Gobierno descontinúa emblemático programa de Bachelet que entregó miles de computadores a estudiantes de 7° básico",
+      "title": "Quiroz en el Encuentro Anual de Comercio: “Hicimos que Chile fuera poco atractivo…nos tapamos de impuestos, regulaciones, perdimos la seguridad”",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 21:53:24 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/adios-a-yo-elijo-mi-pc-gobierno-discontinua-emblematico-programa-de-bachelet-que-entrego-miles-de-computadores-a-estudiantes-de-7-basico/"
+      "published": "Fri, 02 Oct 2026 15:26:37 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/quiroz-en-el-encuentro-anual-de-comercio-hicimos-que-chile-fuera-poco-atractivo-nos-tapamos-de-impuestos-regulaciones-perdimos-la-seguridad/"
     },
     {
-      "title": "El perfil de insolvencia en Chile: 70% son profesionales y la deuda mediana de quienes renegocian llega a $58,8 millones",
+      "title": "Crítica a la película “Digger”: La arrogancia que precede a la caída",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 21:39:49 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/el-perfil-de-insolvencia-en-chile-70-son-profesionales-y-la-deuda-mediana-de-quienes-renegocian-llega-a-588-millones/"
+      "published": "Fri, 02 Oct 2026 15:22:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/critica-a-la-pelicula-digger-la-arrogancia-que-precede-a-la-caida/"
     },
     {
-      "title": "Conoce a los diez finalistas del concurso para encontrar la mejor torta de milhojas de Chile",
+      "title": "La ruta del berlín: para darse un gusto con los mejores rellenos de mermelada, pastelera o incluso nutella",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 21:39:32 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/conoce-a-los-diez-finalistas-del-concurso-para-encontrar-la-mejor-torta-de-milhojas-de-chile/"
+      "published": "Fri, 02 Oct 2026 15:20:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/la-ruta-del-berlin-para-darse-un-gusto-con-los-mejores-rellenos-de-mermelada-pastelera-o-incluso-nutella/"
     },
     {
-      "title": "Corte confirma multa a CHV por cobertura de “Contigo en la Mañana”: exhibieron imagen de carabinero por el delito que cometieron otros funcionarios",
+      "title": "Alyson Richman, la bestseller de “Los amantes de Praga”, de visita en Chile: “En cada libro la experiencia humana vence a lo histórico”",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 21:31:36 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/corte-confirma-multa-a-chv-por-cobertura-de-contigo-en-la-manana-exhibieron-imagen-de-carabinero-por-el-delito-que-cometieron-otros-funcionarios/"
+      "published": "Fri, 02 Oct 2026 15:10:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/alyson-richman-la-bestseller-de-los-amantes-de-praga-de-visita-en-chile-en-cada-libro-la-experiencia-humana-vence-a-lo-historico/"
     },
     {
-      "title": "Rodrigo Mundaca, gobernador de Valparaíso y el rol de Bachelet y Boric en la izquierda: “No creo en liderazgos políticos disciplinadores”",
+      "title": "Carmen Gloria Bresky y la carrera de actriz: “No es garantía haber tenido un buen personaje o un premio para seguir siempre vigente”",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 21:30:29 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/rodrigo-mundaca-gobernador-de-valparaiso-y-el-rol-de-bachelet-y-boric-en-la-izquierda-no-creo-en-liderazgos-politicos-disciplinadores/"
+      "published": "Fri, 02 Oct 2026 15:05:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/carmen-gloria-bresky-y-la-carrera-de-actriz-no-es-garantia-haber-tenido-un-buen-personaje-o-un-premio-para-seguir-siempre-vigente/"
     },
     {
-      "title": "Ford Territory Platinum Híbrido en Chile: más de 1.000 km de autonomía en el tope de la gama",
+      "title": "Coquimbo enciende las alertas por posible ataque de tiburón: Buzo lleva una semana desaparecido y se han encontrado elementos con marcas atribuibles a un ataque",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 20:52:21 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/ford-territory-platinum-hibrido-chile/"
+      "published": "Fri, 02 Oct 2026 14:37:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/coquimbo-enciende-las-alertas-por-posible-ataque-de-tiburon-buzo-lleva-una-semana-desaparecido-y-se-han-encontrado-elementos-con-marcas-atribuibles-a-un-ataque/"
     },
     {
-      "title": "Imacec de -1% en agosto derrumba las proyecciones: economistas no descartan tercer trimestre y crecimiento negativo para el año",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Thu, 01 Oct 2026 20:38:33 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/imacec-de-1-en-agosto-derrumba-las-proyecciones-economistas-no-descartan-tercer-trimestre-y-crecimiento-negativo-para-el-ano/"
-    },
-    {
-      "title": "Estudiantes de Solidaridad por agresiones en el frontis de la UC: “Nos atacaron con palos, vidrios, piedras, pintura e incluso nos rociaron con bencina”",
+      "title": "Cartas anónimas contra el suicidio: la apuesta de la Finis Terrae para frenar la crisis de salud mental en los campus",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 01 Oct 2026 20:32:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/01/estudiantes-de-solidaridad-por-agresiones-en-el-frontis-de-la-uc-nos-atacaron-con-palos-vidrios-piedras-pintura-e-incluso-nos-rociaron-con-bencina/"
+      "published": "Fri, 02 Oct 2026 14:34:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/02/cartas-anonimas-contra-el-suicidio-la-apuesta-de-la-finis-terrae-para-frenar-la-crisis-de-salud-mental-en-los-campus/"
+    },
+    {
+      "title": "Contraloría denuncia que más de 7 mil funcionarios públicos viajaron al extranjero con licencia médica en 2025",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 02 Oct 2026 12:10:35 -0300",
+      "url": "https://cambio21.cl/pais/contraloria-denuncia-que-mas-de-7-mil-funcionarios-publicos-viajaron-al-extranjero-con-licencia-medica-en-2025-6abfc7b38f7dd31623511f94"
+    },
+    {
+      "title": "VIDEO y SINOPSIS. Película chilena 'Hangar rojo' gana el Festival Biarritz, en Francia. Ambientada en el golpe de Estado cuenta la historia de capitán de la Fach que ayudó a prisioneros políticos",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 02 Oct 2026 11:39:55 -0300",
+      "url": "https://cambio21.cl/tendencias/video-y-sinopsis-pelicula-chilena-hangar-rojo-gana-el-festival-biarritz-en-francia-ambientada-en-el-golpe-de-estado-cuenta-la-historia-de-capitan-de-la-fach-que-ayudo-a-prisioneros-politicos-6abfb898a5f4a23ed56de543"
+    },
+    {
+      "title": "Ministerio de Salud prohíbe temporalmente funcionamiento de planta procesadora de lácteos Matthei en Los Angeles tras reiteradas muestras positivas con listeria",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 02 Oct 2026 10:39:28 -0300",
+      "url": "https://cambio21.cl/tendencias/ministerio-de-salud-prohibe-temporalmente-funcionamiento-de-planta-procesadora-de-lacteos-matthei-en-los-angeles-tras-reiteradas-muestras-positivas-con-listeria-6abfb365eb8d8e43bd1846f3"
+    },
+    {
+      "title": "Grave daño a estudiantes más pobres y vulnerables: Ministro Quiroz ratifica que Gobierno cortará programa “Yo Elijo Mi PC”: 90 mil escolares quedan fuera del acceso digital y alcaldes Vodanovic y Sichel critican duramente decisión",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 02 Oct 2026 09:55:11 -0300",
+      "url": "https://cambio21.cl/politica/grave-dano-a-estudiantes-mas-pobres-y-vulnerables-ministro-quiroz-ratifica-que-gobierno-cortara-programa-yo-elijo-mi-pc-90-mil-escolares-quedan-fuera-del-acceso-digital-y-alcaldes-vodanovic-y-sichel-critican-duramente-decision-6abfa22e13e56a08a2372273"
     },
     {
       "title": "“Hoy día nadie consume parafina”. La criticada frase del ministro de Hacienda que fue respondida por parlamentarios y fue tendencia nacional: \"Le falta calle y así comenzó el estallido\". \"Compren flores, están baratas\", le dijo Pamela Jiles",
@@ -183,34 +211,6 @@
       "category": "economia",
       "published": "Thu, 01 Oct 2026 01:27:40 -0300",
       "url": "https://cambio21.cl/pais/se-requiere-un-presupuesto-fiscal-con-mas-inversion-publica-e-intensivo-en-generar-empleos-por-yasna-provoste-senadora-6abde06c522bbf034a050db3"
-    },
-    {
-      "title": "Kast presenta ejes del Presupuesto 2027 con foco en empleo, seguridad, salud y protección de beneficios sociales",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Thu, 01 Oct 2026 01:06:44 -0300",
-      "url": "https://cambio21.cl/pais/kast-presenta-ejes-del-presupuesto-2027-con-foco-en-empleo-seguridad-salud-y-proteccion-de-beneficios-sociales-6abdda773bbffe24533a6925"
-    },
-    {
-      "title": "VIDEO de su discurso. Bachelet aclamada: “Quienes pensaban que después de esto me iba a ir para la casa, les tengo una mala noticia: eso no va a pasar”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 01 Oct 2026 00:31:40 -0300",
-      "url": "https://cambio21.cl/politica/video-de-su-discurso-bachelet-aclamada-quienes-pensaban-que-despues-de-esto-me-iba-a-ir-para-la-casa-les-tengo-una-mala-noticia-eso-no-va-a-pasar-6abdd30294436e7431434de3"
-    },
-    {
-      "title": "Ministro de Hacienda ingresó proyecto de ley de Presupuesto 2027 con un aumento del gasto de 1,5%",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Wed, 30 Sep 2026 19:28:57 -0300",
-      "url": "https://cambio21.cl/pais/ministro-de-hacienda-ingreso-proyecto-de-ley-de-presupuesto-2027-con-un-aumento-del-gasto-de-1-5-6abd8cb0c966706c436232a4"
-    },
-    {
-      "title": "Otro más: Tres al hilo en un solo día. Seremi de O Higgins renuncia o es desvinculado. Antes habían sido despedidos otros dos y completan 52 altas autoridades de Kast renunciadas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 30 Sep 2026 18:57:32 -0300",
-      "url": "https://cambio21.cl/politica/otro-mas-tres-al-hilo-en-un-solo-dia-seremi-de-o-higgins-renuncia-o-es-desvinculado-antes-habian-sido-despedidos-otros-dos-y-completan-52-altas-autoridades-de-kast-renunciadas-6abd84f3c9c6ab24a7295183"
     }
   ]
 }
