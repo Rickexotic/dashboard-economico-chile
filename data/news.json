@@ -1,76 +1,132 @@
 {
-  "lastUpdate": "2026-10-06 00:41 UTC",
+  "lastUpdate": "2026-10-06 17:02 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Fin a Calles sin Violencia: Gobierno reformula emblemática política del Presidente Boric y crea el Plan Foco",
+      "title": "“Va a haber un progreso muy grande en nuestro conocimiento de la galaxia”: La historia del científico UNAB que trabajó diez años en el Nancy Grace Roman, el telescopio espacial más moderno de la NASA",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 05 Oct 2026 23:15:40 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/fin-al-plan-calles-sin-violencia-presupuesto-2027-en-seguridad-no-considera-recursos-para-emblematica-politica-de-gabriel-boric/"
+      "published": "Tue, 06 Oct 2026 16:59:42 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/va-a-haber-un-progreso-muy-grande-en-nuestro-conocimiento-de-la-galaxia-la-historia-del-cientifico-unab-que-trabajo-diez-anos-en-el-nancy-grace-roman-el-telescopio-espacial-mas-mod/"
     },
     {
-      "title": "Gobierno recorta presupuesto para Ciencia: Becas Chile tendrá casi $2.000 millones menos en 2027",
+      "title": "“Se pueden revisar los estatutos antes de dar cuñas falsas”: Karamanos responde a acusaciones de la ministra Marín y descarta responsabilidad por fin de Prodemu",
       "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 16:28:41 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/se-pueden-revisar-los-estatutos-antes-de-dar-cunas-falsas-karamanos-responde-a-acusaciones-de-la-ministra-marin-y-descarta-responsabilidad-por-fin-de-prodemu/"
+    },
+    {
+      "title": "Fiscalía confirma que Zaliasnik se encuentra en calidad de imputado y caso del embajador de Chile en Israel complica a La Moneda",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 16:26:08 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/fiscalia-confirma-que-zaliasnik-se-encuentra-en-calidad-de-imputado-y-caso-del-embajador-de-chile-en-israel-complica-a-la-moneda/"
+    },
+    {
+      "title": "Centro de Extensión de la U. de Chile en alerta por propuesta de recorte del 100%: “Confiamos en que pueda ser corregida”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 16:15:46 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/centro-de-extension-de-la-u-de-chile-en-alerta-por-propuesta-de-recorte-del-100-confiamos-en-que-pueda-ser-corregida/"
+    },
+    {
+      "title": "Presidenta del sindicato de Prodemu ante su posible cierre: “Ahora es la fundación, luego vendrá Sernameg y luego vendrá el ministerio”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 16:11:14 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/presidenta-del-sindicato-de-prodemu-ante-su-posible-cierre-ahora-es-la-fundacion-luego-vendra-sernameg-y-luego-vendra-el-ministerio/"
+    },
+    {
+      "title": "Muerte de dos carabineros en una semana eleva presión contra el Gobierno y republicanos piden decretar estado de emergencia a nivel nacional",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 15:19:15 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/muerte-de-dos-carabineros-en-una-semana-eleva-presion-contra-el-gobierno-y-republicanos-pide-decretar-estado-de-emergencia-a-nivel-nacional/"
+    },
+    {
+      "title": "Estados Unidos aprueba ejecución por fusilamiento de Nidal Malik Hasan, expsiquiatra militar autor del tiroteo en Texas",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 15:17:16 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/estados-unidos-aprueba-ejecucion-por-fusilamiento-de-nidal-malik-hasan-expsiquiatra-militar-autor-del-tiroteo-en-texas/"
+    },
+    {
+      "title": "Presidente Kast y su guiño al programa “Yo elijo mi PC”: “Ahí nos jugamos el futuro (…) una infancia alejada de la tecnología”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 15:07:01 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/presidente-kast-y-su-guino-al-programa-yo-elijo-mi-pc-ahi-nos-jugamos-el-futuro-una-infancia-alejada-de-la-tecnologia/"
+    },
+    {
+      "title": "Ministra Marín apunta a Karamanos por crisis de Prodemu y defiende su eventual cierre: “Se destruyó esa institucionalidad”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 14:33:23 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/ministra-marin-apunta-a-karamanos-por-crisis-de-prodemu-y-defiende-su-eventual-cierre-se-destruyo-esa-institucionalidad/"
+    },
+    {
+      "title": "La nueva moneda de $50 entra hoy en circulación y reemplazará gradualmente a la actual",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 06 Oct 2026 14:31:57 +0000",
+      "url": "https://www.theclinic.cl/2026/10/06/la-nueva-moneda-de-50-entra-hoy-en-circulacion-y-reemplazara-gradualmente-a-la-actual/"
+    },
+    {
+      "title": "Comisión \"Cerimedo\" pide citar a Evelyn Matthei por campañas de desinformación y ataques de bots. La excandidata debería desclasificar como y quien ideó en Chile la campaña que la acusó de tener alzheimer",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 06 Oct 2026 12:59:53 -0300",
+      "url": "https://cambio21.cl/politica/comision-cerimedo-pide-citar-a-evelyn-matthei-por-campanas-de-desinformacion-y-ataques-de-bots-la-excandidata-deberia-desclasificar-como-y-quien-ideo-en-chile-la-campana-que-la-acuso-de-tener-alzheimer-6ac50b1fa3b4d165f651873f"
+    },
+    {
+      "title": "Kast promulgó ley que amplía plazo de flagrancia para las policías. Aumenta de 12 a 24 horas para Carabineros y la PDI",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 06 Oct 2026 11:32:31 -0300",
+      "url": "https://cambio21.cl/pais/kast-promulgo-ley-que-amplia-plazo-de-flagrancia-para-las-policias-aumenta-de-12-a-24-horas-para-carabineros-y-la-pdi-6ac5055c0830b31f9b05e443"
+    },
+    {
+      "title": "Otorgan el Premio Nobel de Física 2026 al astrofísico Francis Halzen por su trabajo en la detección de partículas cósmicas",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 06 Oct 2026 11:13:19 -0300",
+      "url": "https://cambio21.cl/tendencias/otorgan-el-premio-nobel-de-fisica-2026-al-astrofisico-francis-halzen-por-su-trabajo-en-la-deteccion-de-particulas-cosmicas-6ac5012ee0dd8876073a4594"
+    },
+    {
+      "title": "Kast tiene un deja vú cuando era parlamentario. Hace 9 años fue el único diputado -entre 102- que votó en contra de la Ley Cholito. Ahora recortó el 86% de su presupuesto. Gobernador Orrego lo critica",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Mon, 05 Oct 2026 22:32:37 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/gobierno-recorta-presupuesto-para-ciencia-becas-chile-tendra-casi-2-000-millones-menos-en-2027/"
+      "published": "Tue, 06 Oct 2026 10:20:12 -0300",
+      "url": "https://cambio21.cl/politica/kast-tiene-un-deja-vu-cuando-era-parlamentario-hace-9-anos-fue-el-unico-diputado-entre-102-que-voto-en-contra-de-la-ley-cholito-ahora-recorto-el-86-de-su-presupuesto-gobernador-orrego-lo-critica-6ac4f27e877bcd0eb8166c94"
     },
     {
-      "title": "Hallaron drogas en su habitación y fue enviado a un módulo común: Corte ordena devolver reo al Hospital Penitenciario",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 22:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/hallaron-drogas-en-su-habitacion-y-fue-enviado-a-un-modulo-comun-corte-ordena-devolver-reo-al-hospital-penitenciario/"
+      "title": "Exministra Trinidad Steinert no irá a Comisión Investigadora: responderá por correo las preguntas",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 06 Oct 2026 09:34:32 -0300",
+      "url": "https://cambio21.cl/tendencias/exministra-trinidad-steinert-no-ira-a-comision-investigadora-respondera-por-correo-las-preguntas-6ac4e9989d04376c7725b133"
     },
     {
-      "title": "Eliminando cuentas a menores de 13 años y con una guía parental: los lineamientos de TikTok en Chile para mantener un algoritmo sano",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 22:29:52 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/eliminando-cuentas-a-menores-de-13-anos-y-con-una-guia-parental-los-lineamientos-de-tiktok-en-chile-para-mantener-un-algoritmo-sano/"
+      "title": "Exministra Carolina Tohá realiza grave denuncia por fin de 'Yo elijo mi PC': \"Se puso ahí para concentrar el debate mientras por debajo hay 50 recortes más\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 06 Oct 2026 01:24:28 -0300",
+      "url": "https://cambio21.cl/politica/exministra-carolina-toha-realiza-grave-denuncia-por-fin-de-yo-elijo-mi-pc-se-puso-ahi-para-concentrar-el-debate-mientras-por-debajo-hay-50-recortes-mas-6ac476fc5227f6087c094ce3"
     },
     {
-      "title": "CyberMonday arranca con descuentos promedio de 19,4% y proyección de ventas online al alza",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 21:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/cybermonday-arranca-con-descuentos-promedio-de-194-y-proyeccion-de-ventas-online-al-alza/"
+      "title": "Presidente de Republicanos respalda fin del programa «Yo elijo mi PC» afirmando que no logra \"mejorar el aprendizaje\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 06 Oct 2026 00:21:42 -0300",
+      "url": "https://cambio21.cl/pais/presidente-de-republicanos-respalda-fin-del-programa-yo-elijo-mi-pc-afirmando-que-no-logra-mejorar-el-aprendizaje-6ac4678ce2685d0b55511ce3"
     },
     {
-      "title": "Presupuesto 2027: Gobierno solicita autorización para endeudarse hasta por US$25.600 millones",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Mon, 05 Oct 2026 21:18:16 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/presupuesto-2027-gobierno-solicita-autorizacion-para-endeudarse-hasta-por-us25-600-millones/"
-    },
-    {
-      "title": "La razones tras el fuerte recorte del Gobierno al presupuesto a la Ley Cholito: “En diez años nunca se ha evaluado y no hay un indicador de impacto real”",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Mon, 05 Oct 2026 21:05:06 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/en-diez-anos-nunca-se-ha-evaluado-y-no-hay-un-indicador-de-impacto-real-gobierno-recorta-en-un-86-el-presupuesto-a-la-ley-cholito/"
-    },
-    {
-      "title": "Cyber Monday 2026: qué productos ver para aprovechar mejor las ofertas",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 21:04:38 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/cyber-monday-2026-productos-mejores-ofertas/"
-    },
-    {
-      "title": "Universidades y empleabilidad: profesionales y mercado en transformación",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Mon, 05 Oct 2026 20:59:43 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/carreras-uvm-empleabilidad/"
-    },
-    {
-      "title": "El sillón que estabas esperando está en Easy con hasta 60% de descuento",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 20:55:08 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/cyber-easy-sillones/"
+      "title": "Exministra Natalia Duco llegó a La Moneda como asesora senior y su sueldo es de $17 millones brutos hasta fin de año",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 05 Oct 2026 23:35:01 -0300",
+      "url": "https://cambio21.cl/politica/exministra-natalia-duco-llego-a-la-moneda-como-asesora-senior-y-su-sueldo-es-de-17-millones-brutos-hasta-fin-de-ano-6ac45cc143e55c0bd9748853"
     },
     {
       "title": "Elías Figueroa confía en el repunte de la selección antes del amistoso ante México: ''Tenemos calidad''",
@@ -155,62 +211,6 @@
       "category": "economia",
       "published": "Mon, 05 Oct 2026 11:25:38 -0300",
       "url": "https://cambio21.cl/politica/ministro-de-economia-y-recortes-presupuestarios-del-gobierno-claro-que-tiene-que-haber-dolores-6ac3b31cc3f849755545efd5"
-    },
-    {
-      "title": "Pedro Sánchez anuncia disolución del Parlamento español y convoca a elecciones generales anticipadas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 05 Oct 2026 10:13:17 -0300",
-      "url": "https://cambio21.cl/el-mundo/pedro-sanchez-anuncia-disolucion-del-parlamento-espanol-y-convoca-a-elecciones-generales-anticipadas-6ac3a1e035723d46ef77d8a8"
-    },
-    {
-      "title": "Carabinero de franco fue baleado por delincuentes en Macul tras frustar un robo en un servicentro",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 05 Oct 2026 09:25:34 -0300",
-      "url": "https://cambio21.cl/tendencias/carabinero-de-franco-fue-baleado-por-delincuentes-en-macul-tras-frustar-un-robo-en-un-servicentro-6ac396ba2354d7229d2995b4"
-    },
-    {
-      "title": "Kast por crimen de carabinero en Quilleco: \"Que caiga todo el peso de la ley sobre el asesino\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 05 Oct 2026 09:13:07 -0300",
-      "url": "https://cambio21.cl/politica/kast-por-crimen-de-carabinero-en-quilleco-que-caiga-todo-el-peso-de-la-ley-sobre-el-asesino-6ac3932c4b6fda3ceb26fa84"
-    },
-    {
-      "title": "Exsubsecretario Manuel Monsalve previo a audiencia de juicio oral por caso de violación: “Me sigo declarando inocente”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 05 Oct 2026 08:56:45 -0300",
-      "url": "https://cambio21.cl/pais/exsubsecretario-manuel-monsalve-previo-a-audiencia-de-juicio-oral-por-caso-de-violacion-me-sigo-declarando-inocente-6ac38efc4547055e7a4fbf03"
-    },
-    {
-      "title": "Un carabinero murió tras ser baleado durante un procedimiento de violencia intrafamiliar en comuna de Quilleco, cerca de Los Angeles",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 05 Oct 2026 08:32:58 -0300",
-      "url": "https://cambio21.cl/pais/un-carabinero-murio-tras-ser-baleado-durante-un-procedimiento-de-violencia-intrafamiliar-en-comuna-de-quilleco-cerca-de-los-angeles-6ac389a8c35d050c541fef33"
-    },
-    {
-      "title": "Editorial Cambio21. Un nuevo 5 de Octubre, que significó la derrota de la dictadura y la paradoja que Chile es gobernado por el primer Presidente pinochetista luego de la vuelta a la democracia",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 05 Oct 2026 01:25:40 -0300",
-      "url": "https://cambio21.cl/pais/editorial-cambio21-un-nuevo-5-de-octubre-que-significo-la-derrota-de-la-dictadura-y-la-paradoja-que-chile-es-gobernado-por-el-primer-presidente-pinochetista-luego-de-la-vuelta-a-la-democracia-6ac31bdb5953816d1b4929f5"
-    },
-    {
-      "title": "Lula reconoce mal resultado en elección en Brasil: \"Estaba convencido de ganar en primera vuelta\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 05 Oct 2026 00:10:59 -0300",
-      "url": "https://cambio21.cl/el-mundo/lula-reconoce-mal-resultado-en-eleccion-en-brasil-estaba-convencido-de-ganar-en-primera-vuelta-6ac3143fec3b3416d8466c27"
-    },
-    {
-      "title": "Elección presidencial en Brasil: Flávio Bolsonaro y Lula da Silva pasan a segunda vuelta y se medirán el próximo 25 de octubre. Votaron más de 125 millones de brasileños",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 04 Oct 2026 23:46:57 -0300",
-      "url": "https://cambio21.cl/el-mundo/eleccion-presidencial-en-brasil-flavio-bolsonaro-y-lula-da-silva-pasan-a-segunda-vuelta-y-se-mediran-el-proximo-25-de-octubre-votaron-mas-de-125-millones-de-brasilenos-6ac30ca7b7ff0b737a14b445"
     }
   ]
 }
