@@ -1,7 +1,35 @@
 {
-  "lastUpdate": "2026-10-05 21:42 UTC",
+  "lastUpdate": "2026-10-06 00:41 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Fin a Calles sin Violencia: Gobierno reformula emblemática política del Presidente Boric y crea el Plan Foco",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Mon, 05 Oct 2026 23:15:40 +0000",
+      "url": "https://www.theclinic.cl/2026/10/05/fin-al-plan-calles-sin-violencia-presupuesto-2027-en-seguridad-no-considera-recursos-para-emblematica-politica-de-gabriel-boric/"
+    },
+    {
+      "title": "Gobierno recorta presupuesto para Ciencia: Becas Chile tendrá casi $2.000 millones menos en 2027",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Mon, 05 Oct 2026 22:32:37 +0000",
+      "url": "https://www.theclinic.cl/2026/10/05/gobierno-recorta-presupuesto-para-ciencia-becas-chile-tendra-casi-2-000-millones-menos-en-2027/"
+    },
+    {
+      "title": "Hallaron drogas en su habitación y fue enviado a un módulo común: Corte ordena devolver reo al Hospital Penitenciario",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Mon, 05 Oct 2026 22:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/05/hallaron-drogas-en-su-habitacion-y-fue-enviado-a-un-modulo-comun-corte-ordena-devolver-reo-al-hospital-penitenciario/"
+    },
+    {
+      "title": "Eliminando cuentas a menores de 13 años y con una guía parental: los lineamientos de TikTok en Chile para mantener un algoritmo sano",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Mon, 05 Oct 2026 22:29:52 +0000",
+      "url": "https://www.theclinic.cl/2026/10/05/eliminando-cuentas-a-menores-de-13-anos-y-con-una-guia-parental-los-lineamientos-de-tiktok-en-chile-para-mantener-un-algoritmo-sano/"
+    },
     {
       "title": "CyberMonday arranca con descuentos promedio de 19,4% y proyección de ventas online al alza",
       "source": "The Clinic",
@@ -17,7 +45,7 @@
       "url": "https://www.theclinic.cl/2026/10/05/presupuesto-2027-gobierno-solicita-autorizacion-para-endeudarse-hasta-por-us25-600-millones/"
     },
     {
-      "title": "“En diez años nunca se ha evaluado y no hay un indicador de impacto real”: Gobierno recorta en un 86% el presupuesto a la Ley Cholito",
+      "title": "La razones tras el fuerte recorte del Gobierno al presupuesto a la Ley Cholito: “En diez años nunca se ha evaluado y no hay un indicador de impacto real”",
       "source": "The Clinic",
       "category": "economia",
       "published": "Mon, 05 Oct 2026 21:05:06 +0000",
@@ -43,34 +71,6 @@
       "category": "general",
       "published": "Mon, 05 Oct 2026 20:55:08 +0000",
       "url": "https://www.theclinic.cl/2026/10/05/cyber-easy-sillones/"
-    },
-    {
-      "title": "El despliegue de Camila Vallejo en Brasil en medio de la decisiva elección entre Lula y Bolsonaro y su reflexión por las derrotas de la izquierda",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 20:38:23 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/el-despliegue-de-camila-vallejo-en-brasil-en-medio-de-la-decisiva-eleccion-entre-lula-y-bolsonaro-y-su-reflexion-por-las-derrotas-de-la-izquierda/"
-    },
-    {
-      "title": "RumboColectivo advierte que Salud registra deterioro en lista de espera este año y sugiere no ajustar recursos en esta cartera en 2027",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 20:37:37 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/rumbocolectivo-advierte-que-salud-registra-deterioro-en-lista-de-espera-este-ano-y-sugiere-no-ajustar-recursos-en-esta-cartera-en-2027/"
-    },
-    {
-      "title": "“Estamos a tres meses de no poder continuar”: El complejo escenario de libreros de Barrio Lastarria ante nueva ordenanza municipal",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 05 Oct 2026 20:12:12 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/estamos-a-tres-meses-de-no-poder-continuar-el-complejo-escenario-de-libreros-de-barrio-lastarria-ante-nueva-ordenanza-municipal/"
-    },
-    {
-      "title": "El salto de los autos chinos al mercado de usados en Chile: de la vitrina al segundo dueño",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Mon, 05 Oct 2026 20:04:41 +0000",
-      "url": "https://www.theclinic.cl/2026/10/05/marcas-chinas-autos-usados-chile-analisis-cavem/"
     },
     {
       "title": "Elías Figueroa confía en el repunte de la selección antes del amistoso ante México: ''Tenemos calidad''",
