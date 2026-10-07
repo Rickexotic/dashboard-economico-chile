@@ -1,7 +1,56 @@
 {
-  "lastUpdate": "2026-10-07 17:40 UTC",
+  "lastUpdate": "2026-10-07 20:15 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Huawei y Qualcomm sellan un nuevo acuerdo tecnológico: cómo es posible pese al veto de EE.UU. a la firma china",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 07 Oct 2026 20:02:47 +0000",
+      "url": "https://www.theclinic.cl/2026/10/07/huawei-qualcomm-acuerdo-tecnologico-veto-estados-unidos/"
+    },
+    {
+      "title": "Del “maletín de dólares” al crédito hipotecario: el argentino que se hizo viral defendiendo a Chile",
+      "source": "The Clinic",
+      "category": "mercados",
+      "published": "Wed, 07 Oct 2026 19:32:45 +0000",
+      "url": "https://www.theclinic.cl/2026/10/07/lucas-de-gregorio/"
+    },
+    {
+      "title": "El respaldo de Cancillería al abogado Jorge Barrera, exasesor clave de los republicanos en 2023, para integrar comité de expertos de la ONU",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 07 Oct 2026 19:31:19 +0000",
+      "url": "https://www.theclinic.cl/2026/10/07/el-respaldo-de-cancilleria-al-abogado-jorge-barrera-exasesor-clave-de-los-republicanos-en-2023-para-integrar-comite-de-expertos-de-la-onu/"
+    },
+    {
+      "title": "Las similitudes y diferencias entre el proyecto de reforma de seguridad presentado por senadores y el del Gobierno de Kast",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 07 Oct 2026 19:18:14 +0000",
+      "url": "https://www.theclinic.cl/2026/10/07/las-similitudes-y-diferencias-entre-el-proyecto-de-reforma-de-seguridad-presentado-por-senadores-y-el-del-gobierno-de-kast/"
+    },
+    {
+      "title": "El intento del Gobierno por desdramatizar la decisión de “no perseverar” con su reforma constitucional de seguridad",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 07 Oct 2026 18:33:28 +0000",
+      "url": "https://www.theclinic.cl/2026/10/07/el-intento-del-gobierno-por-desdramatizar-la-decision-de-no-perseverar-con-su-reforma-constitucional-de-seguridad/"
+    },
+    {
+      "title": "Los detalles del informe de “Futuro Común” que dice que el 72% de los chilenos siente que está a un problema serio de caer en la pobreza",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 07 Oct 2026 18:23:43 +0000",
+      "url": "https://www.theclinic.cl/2026/10/07/los-detalles-del-informe-de-futuro-comun-que-dice-que-el-72-de-los-chilenos-siente-que-esta-a-un-problema-serio-de-caer-en-la-pobreza/"
+    },
+    {
+      "title": "Sodimac amplía su presencia en Colombia: concreta adquisición de la cadena de suministros industriales Sumatec",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 07 Oct 2026 17:50:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/07/sodimac-amplia-su-presencia-en-colombia-concreta-adquisicion-de-la-cadena-de-suministros-industriales-sumatec/"
+    },
     {
       "title": "El cambio al NEM que evalúa el Ministerio de Educación: Demre propone limitarlo a un 5% en las ponderaciones de la PAES",
       "source": "The Clinic",
@@ -24,53 +73,25 @@
       "url": "https://www.theclinic.cl/2026/10/07/diez-meses-consecutivos-de-caida-registran-los-avisos-laborales-por-internet-retrocedieron-65-en-septiembre/"
     },
     {
-      "title": "Alvarado por eventual candidatura presidencial de Bachelet: “Cuando se inscriban conversaremos”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 16:37:40 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/alvarado-por-eventual-candidatura-presidencial-de-bachelet-cuando-se-inscriban-conversaremos/"
+      "title": "Canciller responde a embajador de EE.UU. por Estrecho de Magallanes: “No necesitamos el apoyo de nadie para defender nuestra soberanía”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 07 Oct 2026 17:03:24 -0300",
+      "url": "https://cambio21.cl/politica/canciller-responde-a-embajador-de-ee-uu-por-estrecho-de-magallanes-no-necesitamos-el-apoyo-de-nadie-para-defender-nuestra-soberania-6ac6a4f82566666934649bd6"
     },
     {
-      "title": "Bacheletazo: oposición agenda reunión con expresidenta luego de que abriera la puerta para un tercer período presidencial",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 16:31:16 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/bacheletazo-oposicion-agenda-reunion-con-expresidenta-luego-de-que-abriera-la-puerta-para-un-tercer-periodo-presidencial/"
+      "title": "VIDEO. Muere a los 81 años el afamado cantante argentino Piero, ícono de la canción protesta de los 80 e intérprete del histórico tema \"Mi Viejo\" y \"Para el pueblo lo que es del pueblo\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 07 Oct 2026 16:48:13 -0300",
+      "url": "https://cambio21.cl/tendencias/video-muere-a-los-81-anos-el-afamado-cantante-argentino-piero-icono-de-la-cancion-protesta-de-los-80-e-interprete-del-historico-tema-mi-viejo-y-para-el-pueblo-lo-que-es-del-pueblo-6ac6a0f114d71810eb77fa54"
     },
     {
-      "title": "Restaurante chileno Jerónimo gana los Oscar del diseño interiores",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 16:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/restaurante-chileno-jeronimo-gana-los-oscar-del-diseno-interiores/"
-    },
-    {
-      "title": "Educación defiende el fin de Yo Elijo mi PC a estudiantes: “Cuando uno tiene un presupuesto acotado, es muy importante centrarse en lo efectivo”",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Wed, 07 Oct 2026 16:26:55 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/educacion-defiende-el-fin-de-yo-elijo-mi-pc-a-estudiantes-cuando-uno-tiene-un-presupuesto-acotado-es-muy-importante-centrarse-en-lo-efectivo/"
-    },
-    {
-      "title": "Regreso del “Cañonazo de las 12” sigue en pausa: permisos con Carabineros, Bomberos y Defensa entrampan el regreso de la tradición al cerro Santa Lucía",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 16:12:09 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/regreso-del-canonazo-de-las-12-sigue-en-pausa-permisos-con-carabineros-bomberos-y-defensa-entrampan-el-regreso-de-la-tradicion-al-cerro-santa-lucia/"
-    },
-    {
-      "title": "Puerto Natales tendrá transporte público por primera vez en su historia: tres recorridos de buses Red comenzarán a circular desde el viernes",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 16:10:22 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/puerto-natales-tendra-transporte-publico-por-primera-vez-en-su-historia-tres-recorridos-de-buses-red-comenzaran-a-circular-desde-el-viernes/"
-    },
-    {
-      "title": "$3.410 millones destinados a beneficios sindicales en 5 años: los antecedentes que llevaron al Gobierno a dejar sin financiamiento a Prodemu",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 16:00:09 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/3-410-millones-destinados-a-beneficios-sindicales-en-5-anos-los-antecedentes-que-llevaron-al-gobierno-a-dejar-sin-financiamiento-a-prodemu/"
+      "title": "Muere Maricarmen, la adulta mayor cuyo desalojo desató protestas por la crisis de vivienda en España",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 07 Oct 2026 16:34:05 -0300",
+      "url": "https://cambio21.cl/el-mundo/muere-maricarmen-la-adulta-mayor-cuyo-desalojo-desato-protestas-por-la-crisis-de-vivienda-en-espana-6ac69e47b491fe3a9d71d113"
     },
     {
       "title": "“No voy a hablar por la derecha”: Ministra Ximena Rincón reacciona a la opción de una nueva candidatura presidencial de Bachelet. Fue también ministra de la expresidenta",
@@ -190,27 +211,6 @@
       "category": "politica",
       "published": "Tue, 06 Oct 2026 17:19:48 -0300",
       "url": "https://cambio21.cl/politica/senadora-cicardini-y-diputado-manouchehri-piden-formalizar-a-embajador-en-israel-gabriel-zaliasnik-y-advierten-riesgo-de-fuga-chile-no-se-merece-un-embajador-imputado-6ac5573c290e2410093d9273"
-    },
-    {
-      "title": "Chile baja su candidatura para ser sede de Juegos Olímpicos 2036",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 06 Oct 2026 16:56:56 -0300",
-      "url": "https://cambio21.cl/deportes/chile-baja-su-candidatura-para-ser-sede-de-juegos-olimpicos-2036-6ac5519016561778b13590c4"
-    },
-    {
-      "title": "Codelco investiga nuevos antecedentes de sobreproducción en las divisiones Ministro Hales y Salvador entre 2024 y 2025",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 06 Oct 2026 16:13:00 -0300",
-      "url": "https://cambio21.cl/tendencias/codelco-investiga-nuevos-antecedentes-de-sobreproduccion-en-las-divisiones-ministro-hales-y-salvador-entre-2024-y-2025-6ac547904cba8c592d3f2457"
-    },
-    {
-      "title": "Corte Suprema decidió remover a cuatro nuevos magistrados por mal uso de licencias médicas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 06 Oct 2026 16:03:23 -0300",
-      "url": "https://cambio21.cl/pais/corte-suprema-decidio-remover-a-cuatro-nuevos-magistrados-por-mal-uso-de-licencias-medicas-6ac545824cba8c592d3f2453"
     }
   ]
 }
