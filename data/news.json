@@ -1,76 +1,167 @@
 {
-  "lastUpdate": "2026-10-07 23:30 UTC",
+  "lastUpdate": "2026-10-08 17:43 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Se acaba el financiamiento: presupuesto del Gobierno deja sin recursos al Instituto Chileno de Campos de Hielo",
+      "title": "Fentanilo, metadona y clonazepam: Contraloría detecta 1.045 recetas emitidas por médicos sin vínculo acreditado con Hospital de Talagante",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 17:32:10 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/fentanilo-metadona-y-clonazepam-contraloria-detecta-1-045-recetas-emitidas-por-medicos-sin-vinculo-acreditado-con-hospital/"
+    },
+    {
+      "title": "Macarena Santelices: “El Partido Republicano tiene una manera hermética de trabajar, no era la forma en que yo quiero hacer política”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 17:31:41 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/macarena-santelices-el-partido-republicano-tiene-una-manera-hermetica-de-trabajar-no-era-la-forma-en-que-yo-quiero-hacer-politica/"
+    },
+    {
+      "title": "Carga inalámbrica en carreteras para autos eléctricos: La jugada de Honda para eliminar las paradas de recarga",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 17:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/carga-inalambrica-carreteras-autos-electricos-honda/"
+    },
+    {
+      "title": "Honda, Yamaha, Suzuki y Aprilia: Ñuñoa vuelve a rematar 170 motos abandonadas sin precio mínimo y al mejor postor",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 17:28:49 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/honda-yamaha-suzuki-y-aprilia-nunoa-vuelve-a-rematar-170-motos-abandonadas-sin-precio-minimo-y-al-mejor-postor/"
+    },
+    {
+      "title": "“Anne Carson nos enseña que la experimentación no es incompatible con el pasado”: Lee tres poemas para conocer a la ganadora del Nobel de Literatura",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 17:22:44 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/anne-carson-nos-ensena-que-la-experimentacion-no-es-incompatible-con-el-pasado-lee-tres-poemas-para-conocer-a-la-ganadora-del-nobel-de-literatura/"
+    },
+    {
+      "title": "Permite al Congreso suspender el estado de excepción decretado por el Presidente: qué contiene la nueva reforma de seguridad del Senado",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 17:13:24 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/permite-al-congreso-suspender-el-estado-de-excepcion-decretado-por-el-presidente-que-contiene-la-nueva-reforma-de-seguridad-del-senado/"
+    },
+    {
+      "title": "La nueva alerta que levanta el marketplace de Facebook: se venden pistolas y municiones a fogueo",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 16:12:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/la-nueva-alerta-que-levanta-el-marketplace-de-facebook-se-venden-pistolas-y-municiones-a-fogueo/"
+    },
+    {
+      "title": "La revancha de Fidel Espinoza: acercamiento a nueva reforma de seguridad del oficialismo desata tensiones en el PS",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 16:09:15 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/la-revancha-de-fidel-espinoza-acercamiento-a-nueva-reforma-de-seguridad-del-oficialismo-desata-tensiones-en-el-ps/"
+    },
+    {
+      "title": "“La inflación y el IPC son responsabilidad del Banco Central”: Los dardos del ministro Quiroz contra empresarios y las alertas económicas",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Wed, 07 Oct 2026 23:10:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/se-acaba-el-financiamiento-presupuesto-del-gobierno-deja-sin-recursos-al-instituto-chileno-de-campos-de-hielo/"
+      "published": "Thu, 08 Oct 2026 16:05:03 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/la-inflacion-y-el-ipc-son-responsabilidad-del-banco-central-los-dardos-del-ministro-quiroz-contra-empresarios-y-las-alertas-economicas/"
     },
     {
-      "title": "Broota, la fintech que inició la cruzada de lobby para corregir la reforma al mercado de capitales: “Es poco ambiciosa y está pensada desde la orilla tradicional”",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Wed, 07 Oct 2026 22:50:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/broota-la-fintech-que-inicio-la-cruzada-de-lobby-para-corregir-la-reforma-al-mercado-de-capitales-es-poco-ambiciosa-y-esta-pensada-desde-la-orilla-tradicional/"
-    },
-    {
-      "title": "Empresario inmobiliario ligado a Rangers y un directivo de dos décadas en Palestino: Quiénes son los candidatos a la presidencia de la ANFP",
+      "title": "Kast defiende reasignación presupuestaria: “Tenemos un problema serio en educación. ¿Y dónde pusimos nosotros el foco? En la primera infancia",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 07 Oct 2026 22:50:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/empresario-inmobiliario-ligado-a-rangers-y-un-directivo-de-dos-decadas-en-palestino-quienes-son-los-candidatos-a-la-presidencia-de-la-anfp/"
+      "published": "Thu, 08 Oct 2026 15:24:47 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/kast-defiende-reasignacion-presupuestaria-tenemos-un-problema-serio-en-educacion-y-donde-pusimos-nosotros-el-foco-en-la-primera-infancia/"
     },
     {
-      "title": "“Era el paraíso”: El declive del emblemático Mall Chino de San Diego que hoy tiene decenas de locales cerrados",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 22:16:27 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/era-el-paraiso-el-declive-del-emblematico-mall-chino-de-san-diego-que-hoy-tiene-decenas-de-locales-cerrados/"
+      "title": "Kast dándole \"consejos\" a Michelle Bachelet: \"Uno siempre tiene que hacer un análisis de lo que se hizo\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 13:38:20 -0300",
+      "url": "https://cambio21.cl/politica/kast-dandole-consejos-a-michelle-bachelet-uno-siempre-tiene-que-hacer-un-analisis-de-lo-que-se-hizo-6ac7c5ec496f106cdc032393"
     },
     {
-      "title": "“Llevo 21 libros y empecé en abril”: María Isidora, la pequeña booktoker que busca promover la literatura infantil",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 22:05:33 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/llevo-21-libros-y-empece-en-abril-maria-isidora-la-pequena-booktoker-que-busca-promover-la-literatura-infantil/"
+      "title": "EE.UU. acusó a Nicolás Maduro y su esposa de conspiración para cometer torturas",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 13:11:03 -0300",
+      "url": "https://cambio21.cl/el-mundo/ee-uu-acuso-a-nicolas-maduro-y-su-esposa-de-conspiracion-para-cometer-torturas-6ac7bdf0fb60d05e345d1ce4"
     },
     {
-      "title": "Cristóbal Gumucio, director de Matucana 100: “Hay disminución de los fondos y eso, indirecta o directamente, también nos aflige”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 22:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/cristobal-gumucio-director-de-matucana-100-hay-disminucion-de-los-fondos-y-eso-indirecta-o-directamente-tambien-nos-aflige/"
+      "title": "“Después de que salí de la subsecretaría no me llamaron ni para saber cómo estaba”: Exfuncionaria de gobierno de Kast, Daniela Castro explica su renuncia a RN",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 12:36:41 -0300",
+      "url": "https://cambio21.cl/politica/despues-de-que-sali-de-la-subsecretaria-no-me-llamaron-ni-para-saber-como-estaba-exfuncionaria-de-gobierno-de-kast-daniela-castro-explica-su-renuncia-a-rn-6ac7b3009730292d0925236c"
     },
     {
-      "title": "Último EtMtuesday del 2026 convocó a más de 500 asistentes con foco en crecimiento empresarial",
-      "source": "The Clinic",
+      "title": "Elecciones FEUC: dos listas de izquierda irán por la segunda vuelta y dejan fuera a las listas de derecha y ultra derecha, en reducto universitario donde nacieron grupos ultra conservadores",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 11:48:14 -0300",
+      "url": "https://cambio21.cl/politica/elecciones-feuc-dos-listas-de-izquierda-iran-por-la-segunda-vuelta-y-dejan-fuera-a-las-listas-de-derecha-y-ultra-derecha-en-reducto-universitario-donde-nacieron-grupos-ultra-conservadores-6ac7ac37ba5360532c6f5fc7"
+    },
+    {
+      "title": "Fiscal nacional calificó como “gravísimo” que el gobierno condicione recursos para 2027. Advirtió consecuencias en autonomía",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 11:42:34 -0300",
+      "url": "https://cambio21.cl/pais/fiscal-nacional-califico-como-gravisimo-que-el-gobierno-condicione-recursos-para-2027-advirtio-consecuencias-en-autonomia-6ac7ab53ba5360532c6f5fc3"
+    },
+    {
+      "title": "Poetisa canadiense gana el Nobel de Literatura: ¿Quién es la autora de 76 años que modernizó la antigüedad?",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 10:16:08 -0300",
+      "url": "https://cambio21.cl/tendencias/poetisa-canadiense-gana-el-nobel-de-literatura-quien-es-la-autora-de-76-anos-que-modernizo-la-antiguedad-6ac796487102124ff373eb93"
+    },
+    {
+      "title": "IPC: Precios subieron 0,4% en septiembre y alza acumula 4% en 2026",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Wed, 07 Oct 2026 21:55:21 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/etmtuesday-2026-ultimo-asistentes/"
+      "published": "Thu, 08 Oct 2026 09:03:34 -0300",
+      "url": "https://cambio21.cl/pais/ipc-precios-subieron-0-4-en-septiembre-y-alza-acumula-4-en-2026-6ac78617e3f8a1561f2b93d3"
     },
     {
-      "title": "Cómo se originó el primer quiebre de la bancada republicana en la Cámara de Diputados que terminó con la salida de Macarena Santelices del partido",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 21:37:51 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/como-se-origino-el-primer-quiebre-de-la-bancada-republicana-en-la-camara-de-diputados-que-termino-con-la-salida-de-macarena-santelices-del-partido/"
+      "title": "La U perdió con Antofagasta y se complicó en los cuartos de final de la Copa Chile",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 00:51:12 -0300",
+      "url": "https://cambio21.cl/deportes/la-u-perdio-con-antofagasta-y-se-complico-en-los-cuartos-de-final-de-la-copa-chile-6ac7126ee7db6f704778b618"
     },
     {
-      "title": "Bono de $100 mil para taxistas y transporte escolar se extiende hasta diciembre y suma a pescadores artesanales",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 21:36:47 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/bono-de-100-mil-para-taxistas-y-transporte-escolar-se-extiende-hasta-diciembre-y-suma-a-pescadores-artesanales/"
+      "title": "La boca es loca: Embajador de EEUU dice que fue sacado de contexto por Estrecho de Magallanes: \"En ningún momento condicioné la soberanía de Chile\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 00:44:18 -0300",
+      "url": "https://cambio21.cl/pais/la-boca-es-loca-embajador-de-eeuu-dice-que-fue-sacado-de-contexto-por-estrecho-de-magallanes-en-ningun-momento-condicione-la-soberania-de-chile-6ac7111d83f4576ed950620b"
     },
     {
-      "title": "El análisis puertas adentro del oficialismo a una posible tercera candidatura presidencial de Bachelet",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 07 Oct 2026 21:04:07 +0000",
-      "url": "https://www.theclinic.cl/2026/10/07/el-analisis-puertas-adentro-del-oficialismo-a-una-posible-tercera-candidatura-presidencial-de-bachelet/"
+      "title": "Encuesta \"amiga\" del gobierno Cadem muestra absoluto desfonde de Kast: Rechazo o desaprobación alcanza 65%, la más alta de su mandato",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 00:38:13 -0300",
+      "url": "https://cambio21.cl/politica/encuesta-amiga-del-gobierno-cadem-muestra-absoluto-desfonde-de-kast-rechazo-o-desaprobacion-alcanza-65-la-mas-alta-de-su-mandato-6ac70e66e7db6f704778b613"
+    },
+    {
+      "title": "El Estado que demora en regular y se apura en prohibir. Por Antonia Paz, Periodista",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 00:16:31 -0300",
+      "url": "https://cambio21.cl/tendencias/el-estado-que-demora-en-regular-y-se-apura-en-prohibir-por-antonia-paz-periodista-6ac7095c6d42a833ad58bee5"
+    },
+    {
+      "title": "Universidad Miguel de Cervantes entrega Premio Don Quijote de la Mancha 2026 a doctora Rosa Devés, exrectora de la U. de Chile",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 07 Oct 2026 22:18:04 -0300",
+      "url": "https://cambio21.cl/tendencias/universidad-miguel-de-cervantes-entrega-premio-don-quijote-de-la-mancha-2026-a-doctora-rosa-deves-exrectora-de-la-u-de-chile-6ac6e0919d913c22a00e32e3"
+    },
+    {
+      "title": "Senadora Paulina Vodanovic (PS) arremete contra administración Kast: \"Pato Cojo a seis meses de gobierno, yo no lo había visto nunca\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 07 Oct 2026 22:07:38 -0300",
+      "url": "https://cambio21.cl/pais/senadora-paulina-vodanovic-ps-arremete-contra-administracion-kast-pato-cojo-a-seis-meses-de-gobierno-yo-no-lo-habia-visto-nunca-6ac6e94b27671d1d407a416a"
     },
     {
       "title": "Diputada Macarena Santelices renuncia a al partido Republicano: Se va a la UDI, partido donde ya militó",
@@ -120,97 +211,6 @@
       "category": "politica",
       "published": "Wed, 07 Oct 2026 13:07:01 -0300",
       "url": "https://cambio21.cl/el-mundo/video-esta-desquiciado-y-es-peligroso-trump-sugiere-que-iran-podria-destruir-los-angeles-o-san-diego-y-recibe-fuertes-criticas-6ac66cf5973c644f6760d126"
-    },
-    {
-      "title": "VIDEO. Michelle Bachelet sorprende y ya piensa en un tercer mandato presidencial: \"Yo creo que sí\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 12:35:57 -0300",
-      "url": "https://cambio21.cl/politica/video-michelle-bachelet-sorprende-y-ya-piensa-en-un-tercer-mandato-presidencial-yo-creo-que-si-6ac6663288a9c40ada595667"
-    },
-    {
-      "title": "Ministro de Seguridad desmiente a exdirector de Carabineros por dichos sobre falta de equipamiento para la policía: \"Es gravísimo y falso\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 12:13:59 -0300",
-      "url": "https://cambio21.cl/pais/ministro-de-seguridad-desmiente-a-exdirector-de-carabineros-por-dichos-sobre-falta-de-equipamiento-para-la-policia-es-gravisimo-y-falso-6ac65ffc1edb07123b0db8c3"
-    },
-    {
-      "title": "“No tenemos pistolas para todos\", \"ni chalecos antibala”: Exdirector general de Carabineros Ricardo Yáñez alerta por falta de equipamiento para los policías",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 11:18:36 -0300",
-      "url": "https://cambio21.cl/pais/no-tenemos-pistolas-para-todos-ni-chalecos-antibala-exdirector-general-de-carabineros-ricardo-yanez-alerta-por-falta-de-equipamiento-para-los-policias-6ac653f22a1f76302307c8a4"
-    },
-    {
-      "title": "Un verdadero record desde la vuelta a la democracia. Renuncia otro Seremi del gobierno y suben a 53 las autoridades que son despedidas o renuncian a la administración Kast",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 10:47:13 -0300",
-      "url": "https://cambio21.cl/politica/un-verdadero-record-desde-la-vuelta-a-la-democracia-renuncia-otro-seremi-del-gobierno-y-suben-a-53-las-autoridades-que-son-despedidas-o-renuncian-a-la-administracion-kast-6ac64a8cd0e0a22bb97a6533"
-    },
-    {
-      "title": "VIDEO de goles y jugadas. Milagro en Los Angeles, California; La selección chilena jugando bien ganó a México 2-0",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 03:10:24 -0300",
-      "url": "https://cambio21.cl/deportes/video-de-goles-y-jugadas-milagro-en-los-angeles-california-la-seleccion-chilena-jugando-bien-gano-a-mexico-2-0-6ac5e022fd3cc74f6354cf45"
-    },
-    {
-      "title": "Entrevista Cambio21: Osvaldo Andrade, exministro y expresidente del PS y su mensaje a la oposición:\"La ciudadanía espera que retome su condición para volver a ser gobierno\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 02:50:45 -0300",
-      "url": "https://cambio21.cl/politica/entrevista-cambio21-osvaldo-andrade-exministro-y-expresidente-del-ps-y-su-mensaje-a-la-oposicion-la-ciudadania-espera-que-retome-su-condicion-para-volver-a-ser-gobierno-6ac5d6b7026bf222f046841a"
-    },
-    {
-      "title": "Dura derrota para ministro de la Vivienda: Peritaje judicial destruye totalmente la postura de Iván Poduje en El Olivar: no hay argumento técnico para demoler casas construidas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 02:15:47 -0300",
-      "url": "https://cambio21.cl/pais/dura-derrota-para-ministro-de-la-vivienda-peritaje-judicial-destruye-totalmente-la-postura-de-ivan-poduje-en-el-olivar-no-hay-argumento-tecnico-para-demoler-casas-construidas-6ac5d36ab1854148cc184bf7"
-    },
-    {
-      "title": "Declaran Alerta Amarilla para la región Metropolitana ante precipitaciones, probables tormentas eléctricas y viento",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 02:01:49 -0300",
-      "url": "https://cambio21.cl/pais/declaran-alerta-amarilla-para-la-region-metropolitana-ante-precipitaciones-probables-tormentas-electricas-y-viento-6ac5d1cbb1854148cc184bf3"
-    },
-    {
-      "title": "VIDEO del fútbol en una piscina. Cuando Colo Colo ganaba 1-0, se suspendió por las condiciones climáticas segundo tiempo contra Puerto Montt por Copa Chile",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 01:44:38 -0300",
-      "url": "https://cambio21.cl/deportes/video-del-futbol-en-una-piscina-cuando-colo-colo-ganaba-1-0-se-suspendio-por-las-condiciones-climaticas-segundo-tiempo-contra-puerto-montt-por-copa-chile-6ac5cd57026bf222f0468413"
-    },
-    {
-      "title": "VIDEO de sus palabras. Afamado actor Robert de Niro arremetió contra Trump y lo llamó \"cobarde\" y \"trozo de mierda\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 01:09:14 -0300",
-      "url": "https://cambio21.cl/tendencias/video-de-sus-palabras-afamado-actor-robert-de-niro-arremetio-contra-trump-y-lo-llamo-cobarde-y-trozo-de-mierda-6ac5c42b45be924b0d079025"
-    },
-    {
-      "title": "“Contra todo pronóstico”: Condenada a muerte Christa Pike recupera la conciencia y habla tras sobrevivir a dos inyecciones letales en EE.UU.",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 00:01:54 -0300",
-      "url": "https://cambio21.cl/el-mundo/contra-todo-pronostico-condenada-a-muerte-christa-pike-recupera-la-conciencia-y-habla-tras-sobrevivir-a-dos-inyecciones-letales-en-ee-uu-6ac5b57e77bfce7ded7bb583"
-    },
-    {
-      "title": "Milei pone precio a la ciudadanía argentina: 350 mil dólares \"cuesta\" ser trasandino",
-      "source": "Cambio21",
-      "category": "mercados",
-      "published": "Tue, 06 Oct 2026 17:29:44 -0300",
-      "url": "https://cambio21.cl/el-mundo/milei-pone-precio-a-la-ciudadania-argentina-350-mil-dolares-cuesta-ser-trasandino-6ac559cd40580933c42f0fc4"
-    },
-    {
-      "title": "Senador Miguel Ángel Calisto es desaforado por investigación de fraude al Fisco. Ya había perdido el desafuero como diputado",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 06 Oct 2026 17:23:59 -0300",
-      "url": "https://cambio21.cl/pais/senador-miguel-angel-calisto-es-desaforado-por-investigacion-de-fraude-al-fisco-ya-habia-perdido-el-desafuero-como-diputado-6ac55896d6f8de17534e6f23"
     }
   ]
 }
