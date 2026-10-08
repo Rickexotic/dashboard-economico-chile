@@ -1,13 +1,27 @@
 {
-  "lastUpdate": "2026-10-08 17:43 UTC",
+  "lastUpdate": "2026-10-08 20:18 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Fentanilo, metadona y clonazepam: Contraloría detecta 1.045 recetas emitidas por médicos sin vínculo acreditado con Hospital de Talagante",
+      "title": "“Los perros merecen tener una familia”: Fundación reclama que Morocho ya tenía un hogar, luego que la Municipalidad de Santiago anunciara su adopción",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 08 Oct 2026 17:32:10 +0000",
-      "url": "https://www.theclinic.cl/2026/10/08/fentanilo-metadona-y-clonazepam-contraloria-detecta-1-045-recetas-emitidas-por-medicos-sin-vinculo-acreditado-con-hospital/"
+      "published": "Thu, 08 Oct 2026 19:09:08 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/los-perros-merecen-tener-una-familia-fundacion-reclama-que-morocho-ya-tenia-un-hogar-luego-que-la-municipalidad-de-santiago-anunciara-su-adopcion/"
+    },
+    {
+      "title": "Stefan Kramer vuelve a la televisión tras 10 años y se suma a Vértigo en Canal 13",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 08 Oct 2026 19:01:51 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/stefan-kramer-vuelve-a-la-television-tras-10-anos-y-se-suma-a-vertigo-en-canal-13/"
+    },
+    {
+      "title": "Más compras, pero menos gasto: CyberMonday cierra con récord de 5,3 millones de transacciones y ticket promedio a la baja",
+      "source": "The Clinic",
+      "category": "mercados",
+      "published": "Thu, 08 Oct 2026 18:32:32 +0000",
+      "url": "https://www.theclinic.cl/2026/10/08/mas-compras-pero-menos-gasto-cybermonday-cierra-con-record-de-53-millones-de-transacciones-y-ticket-promedio-a-la-baja/"
     },
     {
       "title": "Macarena Santelices: “El Partido Republicano tiene una manera hermética de trabajar, no era la forma en que yo quiero hacer política”",
@@ -59,18 +73,11 @@
       "url": "https://www.theclinic.cl/2026/10/08/la-revancha-de-fidel-espinoza-acercamiento-a-nueva-reforma-de-seguridad-del-oficialismo-desata-tensiones-en-el-ps/"
     },
     {
-      "title": "“La inflación y el IPC son responsabilidad del Banco Central”: Los dardos del ministro Quiroz contra empresarios y las alertas económicas",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Thu, 08 Oct 2026 16:05:03 +0000",
-      "url": "https://www.theclinic.cl/2026/10/08/la-inflacion-y-el-ipc-son-responsabilidad-del-banco-central-los-dardos-del-ministro-quiroz-contra-empresarios-y-las-alertas-economicas/"
-    },
-    {
-      "title": "Kast defiende reasignación presupuestaria: “Tenemos un problema serio en educación. ¿Y dónde pusimos nosotros el foco? En la primera infancia",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 08 Oct 2026 15:24:47 +0000",
-      "url": "https://www.theclinic.cl/2026/10/08/kast-defiende-reasignacion-presupuestaria-tenemos-un-problema-serio-en-educacion-y-donde-pusimos-nosotros-el-foco-en-la-primera-infancia/"
+      "title": "Carolina Tohá cuestionó las nuevas Reglas de Uso de la Fuerza: \"Si un policía va a fiscalizar a un comerciante ambulante y se arranca, le va a poder disparar\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 08 Oct 2026 16:55:06 -0300",
+      "url": "https://cambio21.cl/pais/carolina-toha-cuestiono-las-nuevas-reglas-de-uso-de-la-fuerza-si-un-policia-va-a-fiscalizar-a-un-comerciante-ambulante-y-se-arranca-le-va-a-poder-disparar-6ac7f2f42deff562cc0bcad3"
     },
     {
       "title": "Kast dándole \"consejos\" a Michelle Bachelet: \"Uno siempre tiene que hacer un análisis de lo que se hizo\"",
@@ -204,13 +211,6 @@
       "category": "politica",
       "published": "Wed, 07 Oct 2026 13:13:43 -0300",
       "url": "https://cambio21.cl/deportes/arbitro-chileno-le-regalo-sus-tarjetas-a-messi-en-su-despedida-astro-argentino-no-se-las-quedo-ni-se-mostro-agadecido-6ac66f4c619399286764363c"
-    },
-    {
-      "title": "VIDEO. \"Está desquiciado y es peligroso”: Trump sugiere que Irán podría “destruir” Los Ángeles o San Diego y recibe fuertes críticas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 07 Oct 2026 13:07:01 -0300",
-      "url": "https://cambio21.cl/el-mundo/video-esta-desquiciado-y-es-peligroso-trump-sugiere-que-iran-podria-destruir-los-angeles-o-san-diego-y-recibe-fuertes-criticas-6ac66cf5973c644f6760d126"
     }
   ]
 }
