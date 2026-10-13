@@ -1,76 +1,167 @@
 {
-  "lastUpdate": "2026-10-13 01:11 UTC",
+  "lastUpdate": "2026-10-13 17:56 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "“Toda pandemia inició con un solo caso”: las alertas ante caso de peste en Rusia tras accidente en laboratorio",
+      "title": "BTS llega a Santiago y el fenómeno K-Pop toma la pantalla de streaming: cómo y dónde verlo",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 12 Oct 2026 21:02:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/toda-pandemia-inicio-con-un-solo-caso-las-alertas-ante-caso-de-peste-en-rusia-tras-accidente-en-laboratorio/"
+      "published": "Tue, 13 Oct 2026 17:51:16 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/documentales-bts-kpop-dgo/"
+    },
+    {
+      "title": "La guerra de Ñuñoa por carteles publicitarios: municipio busca a autores de amenazas contra funcionarios y denuncia difusión de panfletos contra Sichel",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 13 Oct 2026 17:31:16 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/la-guerra-de-nunoa-por-carteles-publicitarios-municipio-busca-a-autores-de-amenazas-contra-funcionarios-y-denuncia-difusion-de-panfletos-contra-sichel/"
+    },
+    {
+      "title": "Alexis Zamora regresa a Canal 13 como productor ejecutivo a un año de su despido: se hará cargo de “Vértigo Extremo”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 13 Oct 2026 17:28:22 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/alexis-zamora-regresa-a-canal-13-como-productor-ejecutivo-a-un-ano-de-su-despido/"
+    },
+    {
+      "title": "¿Un nuevo retiro de fondos de las AFP? La alternativa que se puso sobre la mesa en el PDG ante la crisis de empleo y el portazo del Gobierno",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Tue, 13 Oct 2026 17:24:16 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/un-nuevo-retiro-de-fondos-de-las-afp-la-alternativa-que-se-puso-sobre-la-mesa-en-el-pdg-ante-la-crisis-de-empleo-y-el-portazo-del-gobierno/"
+    },
+    {
+      "title": "Solicitudes de indulto ahondan la división en la derecha previo al 18-O y el Gobierno descarta fijar plazos para conceder beneficio",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 13 Oct 2026 17:17:49 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/solicitudes-de-indulto-ahondan-la-division-en-la-derecha-previo-al-18-o-y-el-gobierno-descarta-fijar-plazos-para-conceder-beneficio/"
+    },
+    {
+      "title": "Expertos vuelven a ajustar expectativas de crecimiento para este año a un 0,2% y proyectan inflación de 4,6% a diciembre",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Tue, 13 Oct 2026 17:14:55 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/expertos-vuelven-a-ajustar-expectativas-de-crecimiento-para-este-ano-a-un-02-y-proyectan-inflacion-de-46-a-diciembre/"
+    },
+    {
+      "title": "Juan Carlos Muñoz critica recortes al transporte regional en Presupuesto 2027: “Termina dañando el espejo de recursos entre Santiago y regiones”",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Tue, 13 Oct 2026 17:11:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/juan-carlos-munoz-critica-recortes-al-transporte-regional-en-presupuesto-2027-termina-danando-el-espejo-de-recursos-entre-santiago-y-regiones/"
+    },
+    {
+      "title": "Ley de Presupuesto 2027 para el sector Salud",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Tue, 13 Oct 2026 17:06:02 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/ley-de-presupuesto-2027-para-el-sector-salud/"
+    },
+    {
+      "title": "Queens of the Stone Age: los embajadores del rock que llegarán con nuevo disco a Lollapalooza Chile 2027",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 13 Oct 2026 16:25:27 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/queens-of-the-stone-age-los-emabajadores-del-rock-que-llegaran-con-nuevo-disco-a-lollapalooza-chile-2027/"
+    },
+    {
+      "title": "Cómo es la escuela de formación de líderes latinoamericanos que dirigirá Camila Vallejo y por qué rechazó radicarse en México",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 13 Oct 2026 15:59:07 +0000",
+      "url": "https://www.theclinic.cl/2026/10/13/como-es-la-escuela-de-formacion-de-lideres-latinoamericanos-que-dirigira-camila-vallejo-y-por-que-rechazo-radicarse-en-mexico/"
+    },
+    {
+      "title": "Ministro Alvarado y permanente intromisión del embajador de EE.UU.: “Este tipo de declaraciones distraen, generan un ruido”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 14:17:53 -0300",
+      "url": "https://cambio21.cl/pais/ministro-alvarado-y-permanente-intromision-del-embajador-de-ee-uu-este-tipo-de-declaraciones-distraen-generan-un-ruido-6ace6742a5273a292a4e73f3"
+    },
+    {
+      "title": "“Si quiere polemizar conmigo, no lo va a lograr”: Gobernador Claudio Orrego responde a las críticas de alcaldesa de Las Condes Catalina San Martín",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 13:21:32 -0300",
+      "url": "https://cambio21.cl/pais/si-quiere-polemizar-conmigo-no-lo-va-a-lograr-gobernador-claudio-orrego-responde-a-las-criticas-de-alcaldesa-de-las-condes-catalina-san-martin-6ace490d466785053c49cf0d"
+    },
+    {
+      "title": "La llamada letra chica: Ministro del Interior y vocero confirma que rebaja del TAG extenderá concesión de Autopista Central por 20 meses",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 11:57:52 -0300",
+      "url": "https://cambio21.cl/pais/la-llamada-letra-chica-ministro-del-interior-y-vocero-confirma-que-rebaja-del-tag-extendera-concesion-de-autopista-central-por-20-meses-6ace46454004cc20514d43a6"
+    },
+    {
+      "title": "Senadora Provoste advierte al Gobierno: \"Este presupuesto para el 2027 no tiene foco en la generación de empleos\"",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Tue, 13 Oct 2026 11:48:43 -0300",
+      "url": "https://cambio21.cl/politica/senadora-provoste-advierte-al-gobierno-este-presupuesto-para-el-2027-no-tiene-foco-en-la-generacion-de-empleos-6ace43544004cc20514d43a3"
+    },
+    {
+      "title": "Malas noticias para Kast, Quiroz y todos los chilenos/as: Fondo Monetario Internacional recorta a 0,6% el crecimiento de Chile en 2026: Solo superamos a Bolivia en Sudamérica",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Tue, 13 Oct 2026 10:09:51 -0300",
+      "url": "https://cambio21.cl/politica/malas-noticias-para-kast-quiroz-y-todos-los-chilenos-as-fondo-monetario-internacional-recorta-a-0-6-el-crecimiento-de-chile-en-2026-solo-superamos-a-bolivia-en-sudamerica-6ace2cea19c2ea1fe27bf3c3"
+    },
+    {
+      "title": "\"Trump está hundiendo al partido\": los republicanos luchan por frenar fuertes pérdidas en las elecciones intermedias",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 01:32:59 -0300",
+      "url": "https://cambio21.cl/el-mundo/trump-esta-hundiendo-al-partido-los-republicanos-luchan-por-frenar-fuertes-perdidas-en-las-elecciones-intermedias-6acdb28ccfdc6365d6741d73"
+    },
+    {
+      "title": "Excandidato presidencial Franco Parisi critica rebaja del TAG anunciada por Kast: \"Muy mal negocio para Chile\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 01:19:04 -0300",
+      "url": "https://cambio21.cl/pais/excandidato-presidencial-franco-parisi-critica-rebaja-del-tag-anunciada-por-kast-muy-mal-negocio-para-chile-6acdb068e247fb401119ea84"
+    },
+    {
+      "title": "Detienen a conductor que circulaba a 184 km/h en vehículo del diputado Jorge Brito (FA)",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 00:56:40 -0300",
+      "url": "https://cambio21.cl/tendencias/detienen-a-conductor-que-circulaba-a-184-km-h-en-vehiculo-del-diputado-jorge-brito-fa-6acdab36c304bf32721e5763"
+    },
+    {
+      "title": "El presupuesto fiscal también tiene rostro. Por Teresa Velastín, Especialista en Participación Ciudadana y Social",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Tue, 13 Oct 2026 00:23:38 -0300",
+      "url": "https://cambio21.cl/tendencias/el-presupuesto-fiscal-tambien-tiene-rostro-por-teresa-velastin-especialista-en-participacion-ciudadana-y-social-6accf4f3beab8b05233b3ea4"
     },
     {
       "title": "A los 34 años falleció el actor RJ Mitte, conocido por su papel en la aclamada serie Breaking Bad",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 12 Oct 2026 20:37:21 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/a-los-34-anos-fallecio-el-actor-rj-mitte-conocido-por-su-papel-en-la-aclamada-serie-breaking-bad/"
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 00:13:50 -0300",
+      "url": "https://cambio21.cl/tendencias/a-los-34-anos-fallecio-el-actor-rj-mitte-conocido-por-su-papel-en-la-aclamada-serie-breaking-bad-6acda17e6ba64017cf5f6733"
     },
     {
-      "title": "Camilo Arancibia, el premiado actor chileno por Il Cileno: “No es una película sobre la dictadura, es una historia humana”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 12 Oct 2026 20:10:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/camilo-arancibia-el-premiado-actor-chileno-por-il-cileno-no-es-una-pelicula-sobre-la-dictadura-es-una-historia-humana/"
+      "title": "VIDEO de los 6 goles. Universidad de Chile aplastó a Ñublense con un contundente 6-0 y sigue dándole pelea a Colo-Colo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 13 Oct 2026 00:09:11 -0300",
+      "url": "https://cambio21.cl/deportes/video-de-los-6-goles-universidad-de-chile-aplasto-a-nublense-con-un-contundente-6-0-y-sigue-dandole-pelea-a-colo-colo-6acd9d61747b60652319ff33"
     },
     {
-      "title": "Temblor se percibió en la zona central del país",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 12 Oct 2026 18:22:48 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/temblor-se-percibio-en-la-zona-central-del-pais/"
+      "title": "Exministra vocera Cecilia Pérez (RN) se une a presión para evitar cierre de Prodemu: \"No se puede borrar de un plumazo”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 12 Oct 2026 23:38:56 -0300",
+      "url": "https://cambio21.cl/politica/exministra-vocera-cecilia-perez-rn-se-une-a-presion-para-evitar-cierre-de-prodemu-no-se-puede-borrar-de-un-plumazo-6acd993d6471ac13e15f0753"
     },
     {
-      "title": "Gobierno instruyó evacuación de casas de Las Condes que sufrieron pérdida total ante nuevas precipitaciones",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Mon, 12 Oct 2026 15:39:26 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/codina-instruyo-evacuacion-de-casas-de-las-condes-que-sufrieron-perdida-total-ante-nuevas-precipitaciones/"
-    },
-    {
-      "title": "Raúl Camargo, director de FICValdivia, en el inicio de la 33ª edición: “La gran novedad es la constancia de seguir haciendo lo mismo”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 12 Oct 2026 14:11:14 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/raul-camargo-director-de-ficvaldivia-en-el-inicio-de-la-33a-edicion-la-gran-novedad-es-la-constancia-de-seguir-haciendo-lo-mismo/"
-    },
-    {
-      "title": "Quién era Penelope Knuth, la profesora de la UC fallecida en el choque de la Orquesta de Cámara de Chile",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 12 Oct 2026 14:03:20 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/quien-era-penelope-knuth-la-profesora-de-la-uc-fallecida-en-el-choque-de-la-orquesta-de-camara-de-chile/"
-    },
-    {
-      "title": "Con más de 380 actividades en todo el país: Comienza este martes la Semana de la Pyme",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 12 Oct 2026 13:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/con-mas-de-380-actividades-en-todo-el-pais-comienza-este-martes-la-semana-de-la-pyme/"
-    },
-    {
-      "title": "“Maestro de muchas generaciones”: A los 65 años falleció el destacado actor Gabriel Prieto",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 12 Oct 2026 13:23:07 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/maestro-de-muchas-generaciones-a-los-65-anos-fallecio-el-destacado-actor-gabriel-prieto/"
-    },
-    {
-      "title": "Excoordinador del Ministerio de Hacienda : “La reforma más importante para recuperar el mercado de capitales ya se hizo, las medidas que se han anunciado son de bastante menor calado”",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Mon, 12 Oct 2026 13:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/12/excoordinador-del-ministerio-de-hacienda-la-reforma-mas-importante-para-recuperar-el-mercado-de-capitales-ya-se-hizo-las-medidas-que-se-han-anunciado-son-de-bastante-menor-calado/"
+      "title": "Gobierno anuncia rebaja de hasta 25% en tarifas del TAG solo en Autopista Central. Comenzará en 2027",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 12 Oct 2026 23:07:57 -0300",
+      "url": "https://cambio21.cl/pais/gobierno-anuncia-rebaja-de-hasta-25-en-tarifas-del-tag-solo-en-autopista-central-comenzara-en-2027-6acd9176afba7456307f78f3"
     },
     {
       "title": "No basta el título. Cesantía o desempleo entre personas con educación superior llega a 356 mil: Aumentaron 40.938 en un año",
@@ -120,97 +211,6 @@
       "category": "politica",
       "published": "Mon, 12 Oct 2026 11:17:38 -0300",
       "url": "https://cambio21.cl/politica/exministra-camila-vallejo-y-su-dura-critica-al-jefe-de-estado-el-candidato-kast-le-pediria-hoy-la-renuncia-al-presidente-kast-porque-no-ha-cumplido-nada-de-lo-que-prometio-6accea68530e2d2adc4b6294"
-    },
-    {
-      "title": "Encuesta: 51% cree que aluvión en Las Condes se pudo haber evitado si autoridades se hubieran anticipado",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 23:44:34 -0300",
-      "url": "https://cambio21.cl/politica/encuesta-51-cree-que-aluvion-en-las-condes-se-pudo-haber-evitado-si-autoridades-se-hubieran-anticipado-6acc48ef99f49469e2724a74"
-    },
-    {
-      "title": "Encuesta asegura que Bachelet es la candidata presidencial favorita de la izquierda y centro izquierda. Le siguen Gabriel Boric y Tomás Vodanovic",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 23:38:11 -0300",
-      "url": "https://cambio21.cl/politica/encuesta-asegura-que-bachelet-es-la-candidata-presidencial-favorita-de-la-izquierda-y-centro-izquierda-le-siguen-gabriel-boric-y-tomas-vodanovic-6acc453c4cdbab1aa54d6ca3"
-    },
-    {
-      "title": "Codelco confirmó la muerte de dos trabajadores tras alud en la mina El Teniente",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 21:25:39 -0300",
-      "url": "https://cambio21.cl/pais/codelco-confirmo-la-muerte-de-dos-trabajadores-tras-alud-en-la-mina-el-teniente-6acc2818f337571afc02c3bc"
-    },
-    {
-      "title": "Muere Gabriel Prieto, reconocido e icónico actor chileno. Tenía 65 años",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 21:17:55 -0300",
-      "url": "https://cambio21.cl/tendencias/muere-gabriel-prieto-reconocido-e-iconico-actor-chileno-tenia-65-anos-6acc26a40a982a78bc000bed"
-    },
-    {
-      "title": "VIDEOS DE LOS 7 GOLES. Colo Colo perdió su larga racha de triunfos en la Liga tras ser goleado por Coquimbo: 5-2",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 21:10:26 -0300",
-      "url": "https://cambio21.cl/deportes/videos-de-los-7-goles-colo-colo-perdio-su-larga-racha-de-triunfos-en-la-liga-tras-ser-goleado-por-coquimbo-5-2-6acc23c51cc2be047e429ae3"
-    },
-    {
-      "title": "En el presupuesto 2027 hay un abandono a las regiones del país. Por Loreto Carvajal, Senadora",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Sun, 11 Oct 2026 12:56:45 -0300",
-      "url": "https://cambio21.cl/pais/en-el-presupuesto-2027-hay-un-abandono-a-las-regiones-del-pais-por-loreto-carvajal-senadora-6acbb1113c3a7a413e586be0"
-    },
-    {
-      "title": "Donald Trump arremete contra Zelenski: \"Ha llegado el momento de que Ucrania tenga un nuevo presidente\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 12:51:08 -0300",
-      "url": "https://cambio21.cl/el-mundo/donald-trump-arremete-contra-zelenski-ha-llegado-el-momento-de-que-ucrania-tenga-un-nuevo-presidente-6acbb02f1713da1950047813"
-    },
-    {
-      "title": "¿Tocó fondo? Durisímos y desalentadores números para Kast: Encuesta determina que respaldo al jefe de Estado baja a casi lo que sacó en primera vuelta, 27%. 82% asegura que Gobierno está bajo sus expectativas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 12:35:59 -0300",
-      "url": "https://cambio21.cl/politica/toco-fondo-durisimos-y-desalentadores-numeros-para-kast-encuesta-determina-que-respaldo-al-jefe-de-estado-baja-a-casi-lo-que-saco-en-primera-vuelta-27-82-asegura-que-gobierno-esta-bajo-sus-expectativas-6acbab2d2a7a2d3f0c50d583"
-    },
-    {
-      "title": "Muere Juan Aliste, lautarista condenado por crimen del cabo Moyano y que pidió indulto humanitario a Kast. Los republicanos intentaban \"canjear\" su indulto por violadores de DDHH",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 12:14:41 -0300",
-      "url": "https://cambio21.cl/politica/muere-juan-aliste-lautarista-condenado-por-crimen-del-cabo-moyano-y-que-pidio-indulto-humanitario-a-kast-los-republicanos-intentaban-canjear-su-indulto-por-violadores-de-ddhh-6acba4965d95e560d85c9a53"
-    },
-    {
-      "title": "Muere Juan Pablo Cárdenas, referente del periodismo en dictadura, exdirector de revista Análisis y Premio Nacional de Periodismo. Fue perseguido y arrestado por agentes de la policía política de Pinochet",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 11:55:26 -0300",
-      "url": "https://cambio21.cl/pais/muere-juan-pablo-cardenas-referente-del-periodismo-en-dictadura-exdirector-de-revista-analisis-y-premio-nacional-de-periodismo-fue-perseguido-y-arrestado-por-agentes-de-la-policia-politica-de-pinochet-6acba2aa5cfdbf502a737f35"
-    },
-    {
-      "title": "Papa León XIV anuncia que será operado tras detectar un nódulo en uno de sus pulmones",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 09:36:53 -0300",
-      "url": "https://cambio21.cl/el-mundo/papa-leon-xiv-anuncia-que-sera-operado-tras-detectar-un-nodulo-en-uno-de-sus-pulmones-6acb8288623bee457b3aea4c"
-    },
-    {
-      "title": "VIDEO no apto para personas sensibles. Momento aterrador: Hombre entra a recinto de tigres en zoológico británico y fallece tras ataque",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 09:30:50 -0300",
-      "url": "https://cambio21.cl/tendencias/video-no-apto-para-personas-sensibles-momento-aterrador-hombre-entra-a-recinto-de-tigres-en-zoologico-britanico-y-fallece-tras-ataque-6acb805ba9397360f723fec3"
-    },
-    {
-      "title": "Christa Pike, quien sobrevivió a una ejecución fallida en Tennessee recibe el alta hospitalaria. ¿Ahora si la matarán? La singular justicia de EEUU tiene la palabra",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 11 Oct 2026 01:55:42 -0300",
-      "url": "https://cambio21.cl/el-mundo/christa-pike-quien-sobrevivio-a-una-ejecucion-fallida-en-tennessee-recibe-el-alta-hospitalaria-ahora-si-la-mataran-la-singular-justicia-de-eeuu-tiene-la-palabra-6acb1560fee1ff394771dcc3"
     }
   ]
 }
