@@ -1,76 +1,83 @@
 {
-  "lastUpdate": "2026-10-21 19:00 UTC",
+  "lastUpdate": "2026-10-21 22:12 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "El fin temporal de los realities en Canal 13: tras “Vecinos al límite”, volverán en 2027 de la mano de Nicolás Quesille",
+      "title": "“Chile parte desde una inversión en esta área que ya es insuficiente”: La carta del rector de la UC en que pide corregir el presupuesto del Ministerio de Ciencia",
       "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 21 Oct 2026 18:27:16 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/el-fin-temporal-de-los-realities-en-canal-13-tras-vecinos-al-limite-volveran-en-2027-de-la-mano-de-nicolas-quesille/"
+      "category": "economia",
+      "published": "Wed, 21 Oct 2026 22:05:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/chile-parte-desde-una-inversion-en-esta-area-que-ya-es-insuficiente-la-carta-del-rector-de-la-uc-en-que-pide-corregir-el-presupuesto-del-ministerio-de-ciencia/"
     },
     {
-      "title": "La inquietud de la oposición por que Araya se transforme el voto 27 del oficialismo en el Senado tras quiebre con el PS",
+      "title": "La jugada del Gobierno para aprobar los nombramientos de la CMF que terminó fracturando a toda la oposición en el Senado",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 21 Oct 2026 18:02:20 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/la-inquietud-de-la-oposicion-por-que-araya-se-transforme-el-voto-27-del-oficialismo-en-el-senado-tras-quiebre-con-el-ps/"
+      "published": "Wed, 21 Oct 2026 21:55:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/la-jugada-del-gobierno-para-aprobar-los-nombramientos-de-la-cmf-que-termino-fracturando-a-toda-la-oposicion-en-el-senado/"
     },
     {
-      "title": "Corte de Santiago confirma sobreseimiento para Sergio Jadue de los delitos tributarios y apropiación indebida en su paso en la ANFP",
+      "title": "Modificación relevante, pero insuficiente: el juicio de los analistas al rediseño de La Moneda con el aterrizaje de Arenas como vocero",
       "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 21 Oct 2026 17:58:11 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/corte-de-santiago-confirma-sobreseimiento-para-sergio-jadue-de-los-delitos-tributarios-y-apropiacion-indebida/"
+      "category": "economia",
+      "published": "Wed, 21 Oct 2026 21:40:55 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/modificacion-relevante-pero-insuficiente-el-juicio-de-los-analistas-al-rediseno-de-la-moneda-con-el-aterrizaje-de-arenas-como-vocero/"
     },
     {
-      "title": "Las querellas cruzadas entre el cofundador de Cornershop y su exesposa: conflictos incluyen agresión de un conserje al empresario",
+      "title": "Rodrigo Vergara, expresidente del Banco Central: “Estoy sorprendido por el enorme riesgo que se estaba tomando en los fondos D y E”",
       "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 21 Oct 2026 17:56:56 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/las-querellas-cruzadas-entre-el-cofundador-de-cornershop-y-su-exesposa-conflictos-incluyen-agresion-de-un-conserje-al-empresario/"
+      "category": "economia",
+      "published": "Wed, 21 Oct 2026 21:22:30 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/rodrigo-vergara-expresidente-del-banco-central-estoy-sorprendido-por-el-enorme-riesgo-que-se-estaba-tomando-en-los-fondos-d-y-e/"
     },
     {
-      "title": "“Para ser mayoría hay que lograr hablar con los distintos”: El llamado de Boric a la Fech en la conmemoración de sus 120 años",
+      "title": "El millonario acuerdo que cerró CMPC: acordó la venta de 60 mil hectáreas forestales en el Maule por más de US$ 365 millones",
       "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 21 Oct 2026 17:55:10 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/para-ser-mayoria-hay-que-lograr-hablar-con-los-distintos-el-llamado-de-boric-a-la-fech-en-la-conmemoracion-de-sus-120-anos/"
+      "category": "mercados",
+      "published": "Wed, 21 Oct 2026 21:11:24 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/el-millonario-acuerdo-que-cerro-cmpc-acordo-la-venta-de-60-mil-hectareas-forestales-en-el-maule-por-mas-de-us-365-millones/"
     },
     {
-      "title": "“No podemos controlar el clima, pero sí ayudar al cerebro”: cómo el fenómeno de El Niño prolongó la depresión estacional",
+      "title": "Corte de Valparaíso confirma condena de tres años de cárcel a hombre que estafó a damnificados del megaincendio",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 21 Oct 2026 16:59:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/no-podemos-controlar-el-clima-pero-si-ayudar-al-cerebro-como-el-fenomeno-de-el-nino-prolongo-la-depresion-estacional/"
+      "published": "Wed, 21 Oct 2026 21:02:07 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/corte-de-valparaiso-confirma-condena-de-tres-anos-de-carcel-a-hombre-que-estafo-a-damnificados-del-megaincendio/"
     },
     {
-      "title": "“Para volver a ser mayoría en Chile, tenemos que convencer a los que piensan distinto”: La sentida reflexión del expresidente Boric",
+      "title": "La silueta “meca” que desafía la noche: así es el Omoda X y lo que significa para Chile",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 21 Oct 2026 16:52:55 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/para-volver-a-ser-mayoria-en-chile-tenemos-que-convencer-a-los-que-piensan-distinto-la-sentida-reflexion-del-expresidente-boric/"
+      "published": "Wed, 21 Oct 2026 21:00:00 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/la-silueta-meca-que-desafia-la-noche-asi-es-el-omoda-x-y-lo-que-significa-para-chile/"
     },
     {
-      "title": "El aterrizaje de Gonzalo Arenas en La Moneda: será parte del comité político y alista citas con autoridades locales y parlamentarios",
+      "title": "El costo del vapeador: la confesión de Selena Gómez y la alerta médica por el daño que provoca en las cuerdas vocales",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 21 Oct 2026 16:45:52 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/el-aterrizaje-de-gonzalo-arenas-en-la-moneda-sera-parte-del-comite-politico-y-alista-citas-con-autoridades-locales-y-parlamentarios/"
+      "published": "Wed, 21 Oct 2026 20:56:23 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/el-costo-del-vapeador-la-confesion-de-selena-gomez-y-la-alerta-medica-por-el-dano-que-provoca-en-las-cuerdas-vocales/"
     },
     {
-      "title": "No sabían que estaban vendiendo a BTS: Catrón Huaso, el negocio que lleva 85 años en Av. Matta y vistió a la banda en su último concierto en Chile",
+      "title": "Enap estima alza de hasta $91,5 por litro en los combustibles: diésel lidera los incrementos",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 21 Oct 2026 16:37:14 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/no-sabian-que-estaban-vendiendo-a-bts-catron-huaso-el-negocio-que-lleva-85-anos-en-av-matta-y-vistio-a-la-banda-en-su-ultimo-concierto-en-chile/"
+      "published": "Wed, 21 Oct 2026 20:43:32 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/enap-estima-alza-de-hasta-915-por-litro-en-los-combustibles-diesel-lidera-los-incrementos/"
     },
     {
-      "title": "“En Chile estamos medio desactualizados”: Qué es la Estimulación Magnética Transcraneal y cuál es su impacto médico",
+      "title": "Lo acusan de recibir $36 millones en sobornos para favorecer a una empresa: Alcalde de Río Bueno queda en prisión tras ser formalizado por corrupción",
       "source": "The Clinic",
       "category": "general",
-      "published": "Wed, 21 Oct 2026 16:14:31 +0000",
-      "url": "https://www.theclinic.cl/2026/10/21/en-chile-estamos-medio-desactualizados-que-es-la-estimulacion-magnetica-transcraneal-y-cual-es-su-impacto-medico/"
+      "published": "Wed, 21 Oct 2026 20:37:36 +0000",
+      "url": "https://www.theclinic.cl/2026/10/21/lo-acusan-de-recibir-36-millones-en-sobornos-para-favorecer-a-una-empresa-alcalde-de-rio-bueno-queda-en-prision-tras-ser-formalizado-por-corrupcion/"
+    },
+    {
+      "title": "Corte de Apelaciones de Santiago confirmó el sobreseimiento definitivo del expresidente del fútbol Sergio Jadue en Chile",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 21 Oct 2026 16:33:45 -0300",
+      "url": "https://cambio21.cl/deportes/corte-de-apelaciones-de-santiago-confirmo-el-sobreseimiento-definitivo-del-expresidente-del-futbol-sergio-jadue-en-chile-6ad912bcf6fdb3412b3e7903"
     },
     {
       "title": "Grave: Diputados acusan que el Gobierno ha rebajado condenas a 56 abusadores sexuales y violadores de menores desde que asumió. Decreto se dicta \"por orden del Presidente de la República\"",
@@ -204,13 +211,6 @@
       "category": "politica",
       "published": "Tue, 20 Oct 2026 18:04:11 -0300",
       "url": "https://cambio21.cl/politica/socialismo-democratico-saco-de-la-presidencia-de-la-comision-de-constitucion-a-senador-pedro-araya-accion-avalada-por-su-propio-partido-el-ppd-asumira-vlado-mirosevic-pl-6ad7d675f3e6a96476247944"
-    },
-    {
-      "title": "Declaran Alerta Roja para toda la región Metropolitana debido a las intensas precipitaciones",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 20 Oct 2026 17:55:09 -0300",
-      "url": "https://cambio21.cl/pais/declaran-alerta-roja-para-toda-la-region-metropolitana-debido-a-las-intensas-precipitaciones-6ad7d4e0301df847f70aed73"
     }
   ]
 }
