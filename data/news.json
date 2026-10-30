@@ -1,76 +1,174 @@
 {
-  "lastUpdate": "2026-10-29 23:10 UTC",
+  "lastUpdate": "2026-10-30 16:56 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Ventas de disfraces para Halloween suben más de 35% y los dinosaurios lideran las preferencias en Chile",
+      "title": "Precio de las viviendas volvió a subir: Informe revela aumento de 3% durante el segundo trimestre de este año",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 29 Oct 2026 23:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/ventas-de-disfraces-para-halloween-suben-mas-de-35-y-los-dinosaurios-lideran-las-preferencias-en-chile/"
+      "published": "Fri, 30 Oct 2026 16:43:26 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/precio-de-las-viviendas-volvio-a-subir-informe-revela-aumento-de-3-durante-el-segundo-trimestre-de-este-ano/"
     },
     {
-      "title": "Guillermo Tagle y reforma al mercado de capitales: “Esperaría que en la discusión que queda se considere que los fondos de pensiones son la principal fuente de ahorro que tiene Chile”",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Thu, 29 Oct 2026 22:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/guillermo-tagle-y-reforma-al-mercado-de-capitales-esperaria-que-en-la-discusion-que-queda-se-considere-que-los-fondos-de-pensiones-son-la-principal-fuente-de-ahorro-que-tiene-chile/"
-    },
-    {
-      "title": "La juventud en punto de quiebre: menores de 30 años lideran el peor registro de depresión en cuatro años",
+      "title": "BancoEstado aclara situación de adulta mayor que denuncio robo de $1,6 millones de su cuenta",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 29 Oct 2026 21:47:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/la-juventud-en-punto-de-quiebre-menores-de-30-anos-lideran-el-peor-registro-de-depresion-en-cuatro-anos/"
+      "published": "Fri, 30 Oct 2026 16:28:04 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/bancoestado-aclara-situacion-de-adulta-mayor-que-denuncio-robo-de-16-millones-de-su-cuenta/"
     },
     {
-      "title": "Ñuble lidera el desempleo regional con 11,8% y cinco regiones superan el promedio nacional",
+      "title": "Menor que fue dada de alta en hospital de Magallanes y a los dos días falleció: padres piden indemnización de $400 millones",
       "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 16:15:14 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/menor-que-fue-dada-de-alta-en-hospital-de-magallanes-y-a-los-dos-dias-fallecio-padres-piden-indemnizacion-de-400-millones/"
+    },
+    {
+      "title": "“No lo convierte en un adulto inmaduro”: Psicóloga desmitifica los prejuicios sobre coleccionistas de cartas Pokémon",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 16:06:48 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/no-lo-convierte-en-un-adulto-inmaduro-psicologa-desmitifica-los-prejuicios-sobre-coleccionistas-de-cartas-pokemon/"
+    },
+    {
+      "title": "Sin previo aviso a Palacio y en medio de la crisis: la trastienda del video con que Luis Silva rompió su silencio y descolocó al Gobierno",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 16:02:28 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/sin-previo-aviso-a-palacio-y-en-medio-de-la-crisis-la-trastienda-del-video-con-que-luis-silva-rompio-su-silencio-y-descoloco-al-gobierno/"
+    },
+    {
+      "title": "DIRECTV será socio de difusión del Team Chile hasta Los Ángeles 2028",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 15:46:44 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/directv-sera-socio-de-difusion-del-team-chile-hasta-los-angeles-2028/"
+    },
+    {
+      "title": "Call of Duty tendrá torneo gratuito en Chile: habrá clasificatorias presenciales y una gran final en noviembre",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 15:44:43 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/torneo-call-of-duty-chile-2026/"
+    },
+    {
+      "title": "La apuesta de Indumotora con Forthing: el plan chino para desarmar la ansiedad por la autonomía en Chile",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 15:42:19 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/forthing-en-chile-modelos-precios-lanzamiento/"
+    },
+    {
+      "title": "Matthei pide salida de Rabat y asegura que de no concretarse, el costo sería “demasiado alto”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 15:39:19 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/matthei-pide-salida-de-rabat-y-asegura-que-de-no-concretarse-el-costo-seria-demasiado-alto/"
+    },
+    {
+      "title": "Matthei ingresa a disputa UDI-republicanos por Rabat y afirma que el ministro debiera dejar el gabinete antes de la acusación constitucional en su contra",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 30 Oct 2026 15:38:58 +0000",
+      "url": "https://www.theclinic.cl/2026/10/30/matthei-ingresa-a-disputa-udi-republicanos-por-rabat-y-afirma-que-el-ministro-debiera-dejar-el-gabinete-antes-de-la-acusacion-constitucional-en-su-contra/"
+    },
+    {
+      "title": "Justicia tardía: \"Teniente loco\" que llegó a ser coronel de Carabineros (R) es condenado a 20 años por asesinar a tres adolescentes en 1973. Antes ya había asesinado a otros tres jóvenes en Estación Central. Ninguno tenía militancia",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 13:45:44 -0300",
+      "url": "https://cambio21.cl/pais/justicia-tardia-teniente-loco-que-llego-a-ser-coronel-de-carabineros-r-es-condenado-a-20-anos-por-asesinar-a-tres-adolescentes-en-1973-antes-ya-habia-asesinado-a-otros-tres-jovenes-en-estacion-central-ninguno-tenia-militancia-6ae4c409ef453a7d010561d8"
+    },
+    {
+      "title": "Muere a los 79 años el icónico periodista y comunicador de Concepción Salvador Schwartzmann",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 12:35:23 -0300",
+      "url": "https://cambio21.cl/tendencias/muere-a-los-79-anos-el-iconico-periodista-y-comunicador-de-concepcion-salvador-schwartzmann-6ae4b6f1b85ba06dc7706a98"
+    },
+    {
+      "title": "Inédito: Fiscalía investiga a ministro de Justicia Fernando Rabat y subsecretario Luis Silva por prevaricación administrativa",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 11:58:24 -0300",
+      "url": "https://cambio21.cl/pais/inedito-fiscalia-investiga-a-ministro-de-justicia-fernando-rabat-y-subsecretario-luis-silva-por-prevaricacion-administrativa-6ae4afc561e20e34863ddd72"
+    },
+    {
+      "title": "Encuesta que se hace con El Mercurio muestra el mayor desplome de un Gobierno en democracia: Aprobación de Kast es igual a lo que obtuvo en primera vuelta: 24%. Rechazo al mandatario de jóvenes entre 18 y 34 años es un record: 80 por ciento",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 11:36:12 -0300",
+      "url": "https://cambio21.cl/politica/encuesta-que-se-hace-con-el-mercurio-muestra-el-mayor-desplome-de-un-gobierno-en-democracia-aprobacion-de-kast-es-igual-a-lo-que-obtuvo-en-primera-vuelta-24-rechazo-al-mandatario-de-jovenes-entre-18-y-34-anos-es-un-record-80-por-ciento-6ae4a40002329657b00ce094"
+    },
+    {
+      "title": "Ya van 58 autoridades en poco más de 7 meses. Renuncia delegado presidencial designado por Kast en el Biobío en medio de la denuncia de violencia contra su esposa",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 10:27:29 -0300",
+      "url": "https://cambio21.cl/politica/ya-van-58-autoridades-en-poco-mas-de-7-meses-renuncia-delegado-presidencial-designado-por-kast-en-el-biobio-en-medio-de-la-denuncia-de-violencia-contra-su-esposa-6ae49920658e6d65273761a3"
+    },
+    {
+      "title": "Técnico del Montreal arremetió contra Alexis Sánchez y sus compañeros por lo mal que juega el equipo: \"Fueron vergonzosos\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 01:41:37 -0300",
+      "url": "https://cambio21.cl/deportes/tecnico-del-montreal-arremetio-contra-alexis-sanchez-y-sus-companeros-por-lo-mal-que-juega-el-equipo-fueron-vergonzosos-6ae41f9c18488b5d096fc537"
+    },
+    {
+      "title": "Fuga de Flávio Bolsonaro hacia Estados Unidos estaba planeada \"semanas antes\" de las elecciones. Participaron Trump y Milei",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 01:14:55 -0300",
+      "url": "https://cambio21.cl/el-mundo/fuga-de-flavio-bolsonaro-hacia-estados-unidos-estaba-planeada-semanas-antes-de-las-elecciones-participaron-trump-y-milei-6ae41915e31c9945ce3a2ec5"
+    },
+    {
+      "title": "Senadora Yasna Provoste y la cifra de más de un millón de cesantes: \"Es clave reactivar la inversión pública y eso no se ve en presupuesto 2027 del Gobierno\"",
+      "source": "Cambio21",
       "category": "economia",
-      "published": "Thu, 29 Oct 2026 21:45:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/__trashed-29/"
+      "published": "Fri, 30 Oct 2026 01:05:15 -0300",
+      "url": "https://cambio21.cl/politica/senadora-yasna-provoste-y-la-cifra-de-mas-de-un-millon-de-cesantes-es-clave-reactivar-la-inversion-publica-y-eso-no-se-ve-en-presupuesto-2027-del-gobierno-6ae41673c806906f3c0260b4"
     },
     {
-      "title": "La alerta que preocupa a los “dog lovers” de Las Condes: municipio denuncia ante la PDI hallazgo de veneno para ratones en canil comunal",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 29 Oct 2026 21:38:49 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/la-alerta-que-preocupa-a-los-dog-lovers-de-las-condes-municipio-denuncia-ante-la-pdi-hallazgo-de-veneno-para-ratones-en-canil-comunal/"
+      "title": "Papa León XIV confirma que recibirá a Kast en el Vaticano. La cita será el próximo miércoles",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 00:55:02 -0300",
+      "url": "https://cambio21.cl/el-mundo/papa-leon-xiv-confirma-que-recibira-a-kast-en-el-vaticano-la-cita-sera-el-proximo-miercoles-6ae414916efba857bb278d68"
     },
     {
-      "title": "Julio Asensio, dirigente sindical de Mantos Blancos: “El trabajador tiene que reinventarse”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 29 Oct 2026 21:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/julio-asensio-tecnologia-reconversion-laboral-mineria/"
+      "title": "Premio al \"mejor funcionario y amigo\": Subsecretario Silva se defiende y culpa a Rabat por rebajas de penas a pedófilos y violadores de DDHH. Asegura que firmó \"aplicando el criterio fijado por el propio ministro\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 00:32:18 -0300",
+      "url": "https://cambio21.cl/pais/premio-al-mejor-funcionario-y-amigo-subsecretario-silva-se-defiende-y-culpa-a-rabat-por-rebajas-de-penas-a-pedofilos-y-violadores-de-ddhh-asegura-que-firmo-aplicando-el-criterio-fijado-por-el-propio-ministro-6ae40c9e1ec81436570a6f83"
     },
     {
-      "title": "De la Comisión Jaraquemada a la presidencia del CPLT: quién es la abogada que tendrá el desafío de impulsar una nueva Ley de Transparencia",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 29 Oct 2026 21:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/de-la-comision-jaraquemada-a-la-presidencia-del-cplt-quien-es-la-abogada-que-tendra-el-desafio-de-impulsar-una-nueva-ley-de-transparencia/"
+      "title": "Detienen a mujer de 22 años acusada de amenazar de muerte al Presidente Kast por redes sociales",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 30 Oct 2026 00:14:23 -0300",
+      "url": "https://cambio21.cl/pais/detienen-a-mujer-de-22-anos-acusada-de-amenazar-de-muerte-al-presidente-kast-por-redes-sociales-6ae40b112c1c0f07f65661b5"
     },
     {
-      "title": "III Congreso Internacional de Educación Superior Inclusiva llama a avanzar desde las políticas hacia resultados concretos para las personas",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 29 Oct 2026 21:25:49 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/congreso-internacional-educacion-superior-inclusiva/"
+      "title": "Sobrevivir no es conducir. Por Eduardo Saffirio Suárez, Abogado",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 29 Oct 2026 23:27:21 -0300",
+      "url": "https://cambio21.cl/pais/sobrevivir-no-es-conducir-por-eduardo-saffirio-suarez-abogado-6ae3fbde0464ea775e156a44"
     },
     {
-      "title": "Kaiser despliega agenda en Magallanes en plena tensión con Argentina y revela que intentó embarcarse rumbo a Malvinas",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 29 Oct 2026 21:14:27 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/kaiser-despliega-agenda-en-magallanes-en-plena-tension-con-argentina-y-revela-que-intento-embarcarse-rumbo-a-malvinas/"
+      "title": "Codelco despide a ocho ejecutivos y profesionales tras conocer nuevos antecedentes sobre reportes de producción",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 29 Oct 2026 23:03:03 -0300",
+      "url": "https://cambio21.cl/tendencias/codelco-despide-a-ocho-ejecutivos-y-profesionales-tras-conocer-nuevos-antecedentes-sobre-reportes-de-produccion-6ae3fa25b1b8744d51563473"
     },
     {
-      "title": "Antes de conceder beneficios a condenados por delitos sexuales: la reunión en que advirtieron a Rabat sobre las rebajas de penas",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 29 Oct 2026 21:06:40 +0000",
-      "url": "https://www.theclinic.cl/2026/10/29/antes-de-conceder-beneficios-a-condenados-por-delitos-sexuales-la-reunion-en-que-advirtieron-a-rabat-sobre-las-rebajas-de-penas/"
+      "title": "La pelea es pública y no da tregua, todo por Rabat y Silva: Diputados UDI arremeten contra republicanos en medio de tensión por pedófilos y pederastas. “Si quieren que abandonemos el gobierno que lo digan”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 29 Oct 2026 20:25:55 -0300",
+      "url": "https://cambio21.cl/politica/la-pelea-es-publica-y-no-da-tregua-todo-por-rabat-y-silva-diputados-udi-arremeten-contra-republicanos-en-medio-de-tension-por-pedofilos-y-pederastas-si-quieren-que-abandonemos-el-gobierno-que-lo-digan-6ae3d2ddd2e6bc5dc2748c53"
     },
     {
       "title": "Muere Patrick Stewart, legendario actor de \"Star Trek\" y \"X-Men\"",
@@ -98,7 +196,7 @@
       "source": "Cambio21",
       "category": "politica",
       "published": "Thu, 29 Oct 2026 13:44:50 -0300",
-      "url": "https://cambio21.cl/politica/delegado-presidencial-del-biobio-julio-anativia-rn-designado-por-kast-es-denunciado-por-violencia-intra-familiar-quedo-excluido-de-actividades-del-mandatario-en-su-gira-6ae37735de85d041e13665d5"
+      "url": "https://cambio21.cl/tendencias/delegado-presidencial-del-biobio-julio-anativia-rn-designado-por-kast-es-denunciado-por-violencia-intra-familiar-quedo-excluido-de-actividades-del-mandatario-en-su-gira-6ae37735de85d041e13665d5"
     },
     {
       "title": "Nueva Acción Universitaria (NAU), de estudiantes de centro izquierda, ganan las elecciones en la FEUC con 57,37% de los votos",
@@ -113,104 +211,6 @@
       "category": "politica",
       "published": "Thu, 29 Oct 2026 10:21:50 -0300",
       "url": "https://cambio21.cl/deportes/fallecio-luis-diaz-cid-premio-nacional-de-periodismo-deportivo-2025-y-reportero-de-radio-cooperativa-6ae3481f03b67662fa179d64"
-    },
-    {
-      "title": "Ministro de Justicia se querellará contra diputado Jaime Bassa por vincular rebaja de condenas a “red de pedofilia internacional”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 29 Oct 2026 10:09:12 -0300",
-      "url": "https://cambio21.cl/politica/ministro-de-justicia-se-querellara-contra-diputado-jaime-bassa-por-vincular-rebaja-de-condenas-a-red-de-pedofilia-internacional-6ae3442340319012254462f3"
-    },
-    {
-      "title": "Tremenda crisis: Chile supera el millón de personas sin trabajo o cesantes: desempleo se acerca al 10%, cifra que no se conocía desde 2020 en plena pandemia",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Thu, 29 Oct 2026 09:43:52 -0300",
-      "url": "https://cambio21.cl/pais/tremenda-crisis-chile-supera-el-millon-de-personas-sin-trabajo-o-cesantes-desempleo-se-acerca-al-10-cifra-que-no-se-conocia-desde-2020-en-plena-pandemia-6ae33cf7280e085c59110f74"
-    },
-    {
-      "title": "Excandidato presidencial Franco Parisi exige a Kast la salida de Rabat: “El presidente tiene que cuidar a los chilenos y no a sus amigos ministros que se equivocaron”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 29 Oct 2026 01:03:24 -0300",
-      "url": "https://cambio21.cl/politica/excandidato-presidencial-franco-parisi-exige-a-kast-la-salida-de-rabat-el-presidente-tiene-que-cuidar-a-los-chilenos-y-no-a-sus-amigos-ministros-que-se-equivocaron-6ae2c292abe4f9097f06b484"
-    },
-    {
-      "title": "Conocido abogado Luis Hermosilla volvió a la cárcel por soborno en caso de exfiscal Guerra",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 29 Oct 2026 00:12:07 -0300",
-      "url": "https://cambio21.cl/pais/conocido-abogado-luis-hermosilla-volvio-a-la-carcel-por-soborno-en-caso-de-exfiscal-guerra-6ae2b7c68b8bd631e05dc6e6"
-    },
-    {
-      "title": "Espacio de debate politico ‘Sin Filtros’ tendría sus días contados: anticipan fin del programa por no pago de sueldos",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 23:59:04 -0300",
-      "url": "https://cambio21.cl/tendencias/espacio-de-debate-politico-sin-filtros-tendria-sus-dias-contados-anticipan-fin-del-programa-por-no-pago-de-sueldos-6ae2b00c1e4cb57d21163303"
-    },
-    {
-      "title": "Después de 33 años y por primera vez, Gobierno de Chile se abstiene de votar contra el embargo de Estados Unidos a Cuba en la ONU",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 19:37:51 -0300",
-      "url": "https://cambio21.cl/politica/despues-de-33-anos-y-por-primera-vez-gobierno-de-chile-se-abstiene-de-votar-contra-el-embargo-de-estados-unidos-a-cuba-en-la-onu-6ae278ac9e1b605c2921c3d6"
-    },
-    {
-      "title": "Oposición anuncia acusación constitucional contra ministro de Justicia tras sesión especial en la Cámara de Diputados",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 19:09:32 -0300",
-      "url": "https://cambio21.cl/pais/oposicion-anuncia-acusacion-constitucional-contra-ministro-de-justicia-tras-sesion-especial-en-la-camara-de-diputados-6ae271a38dc44068c422a7a3"
-    },
-    {
-      "title": "Las principales cifras de las elecciones legislativas de mitad de mandato en EEUU del próximo martes. Demócratas ganarían por 11 puntos al partido republicano de Trump",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 16:42:26 -0300",
-      "url": "https://cambio21.cl/el-mundo/las-principales-cifras-de-las-elecciones-legislativas-de-mitad-de-mandato-en-eeuu-del-proximo-martes-democratas-ganarian-por-11-puntos-al-partido-republicano-de-trump-6ae24f3209bc2e487855517b"
-    },
-    {
-      "title": "Gravisímo: Desclasifican que subsecretario de Justicia Luis Silva firmó decreto de rebaja de pena de pederasta sin esperar pronunciamiento de la Corte de Apelaciones de Valparaíso",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 16:27:58 -0300",
-      "url": "https://cambio21.cl/politica/gravisimo-desclasifican-que-subsecretario-de-justicia-luis-silva-firmo-decreto-de-rebaja-de-pena-de-pederasta-sin-esperar-pronunciamiento-de-la-corte-de-apelaciones-de-valparaiso-6ae24c42a70c4823876338c3"
-    },
-    {
-      "title": "Corte Suprema expulsó al polémico juez Daniel Urrutia del Poder Judicial",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 16:16:26 -0300",
-      "url": "https://cambio21.cl/pais/corte-suprema-expulso-al-polemico-juez-daniel-urrutia-del-poder-judicial-6ae249693bf2c234a408df53"
-    },
-    {
-      "title": "Exministra de la Mujer, Laura Albornoz para Cambio21: Cuestiona interpretación de normativa aplicada por ministro de Justicia para pedófilos: \"Lo más importante es el interés superior de los niños, niñas y adolescentes\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 14:51:32 -0300",
-      "url": "https://cambio21.cl/politica/exministra-de-la-mujer-laura-albornoz-para-cambio21-cuestiona-interpretacion-de-normativa-aplicada-por-ministro-de-justicia-para-pedofilos-lo-mas-importante-es-el-interes-superior-de-los-ninos-ninas-y-adolescentes-6ae22f5d7479f77aa26db913"
-    },
-    {
-      "title": "Todos quieren que renuncie el ministro de Justicia Rabat y subsecretario Silva, menos Kast que lo sigue apoyando. Presidente de la Cámara (UDI) vaticina acusación constitucional",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 14:17:16 -0300",
-      "url": "https://cambio21.cl/politica/todos-quieren-que-renuncie-el-ministro-de-justicia-rabat-y-subsecretario-silva-menos-kast-que-lo-sigue-apoyando-presidente-de-la-camara-udi-vaticina-acusacion-constitucional-6ae225ffa5e0c00e22684123"
-    },
-    {
-      "title": "Municipalidad de Peñalolén clausuró la sede de la ANFP en Quilín. Tiene una deuda de 172 millones de pesos",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 12:41:43 -0300",
-      "url": "https://cambio21.cl/deportes/municipalidad-de-penalolen-clausuro-la-sede-de-la-anfp-en-quilin-tiene-una-deuda-de-172-millones-de-pesos-6ae215e10c8f8a4376036183"
-    },
-    {
-      "title": "VIDEO. Derrotado candidato ultra derechista Flávio Bolsonaro aterrizó en Miami tras huir de Brasil vía Argentina con detención en Ecuador",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 28 Oct 2026 11:11:51 -0300",
-      "url": "https://cambio21.cl/el-mundo/video-derrotado-candidato-ultra-derechista-flavio-bolsonaro-aterrizo-en-miami-tras-huir-de-brasil-via-argentina-con-detencion-en-ecuador-6ae201a9e0bc4d29fe6ebf43"
     }
   ]
 }
