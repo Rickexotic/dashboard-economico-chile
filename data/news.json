@@ -1,7 +1,35 @@
 {
-  "lastUpdate": "2026-11-06 20:38 UTC",
+  "lastUpdate": "2026-11-06 23:40 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Tras siete días de bloqueo, camioneros del puerto de San Antonio deponen paralización",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 06 Nov 2026 22:24:22 +0000",
+      "url": "https://www.theclinic.cl/2026/11/06/tras-siete-dias-de-bloqueo-camioneros-del-puerto-de-san-antonio-deponen-paralizacion/"
+    },
+    {
+      "title": "Alza del diésel podría moderarse pese a proyección de $80 por litro ante presión por situarse en su máximo histórico",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 06 Nov 2026 21:15:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/06/alza-del-diesel-podria-moderarse-pese-a-proyeccion-de-80-por-litro-ante-presion-por-situarse-en-su-maximo-historico/"
+    },
+    {
+      "title": "Tren San Fernando-Santiago suma nueva detención: EFE reactiva los viajes en la Estación Rosario",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 06 Nov 2026 21:04:46 +0000",
+      "url": "https://www.theclinic.cl/2026/11/06/tren-san-fernando-santiago-suma-nueva-detencion-efe-reactiva-los-viajes-en-la-estacion-rosario/"
+    },
+    {
+      "title": "Luto internacional por Sebastián Lelio: desde The Guardian a El País, así despidió la prensa extranjera al reconocido director chileno",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 06 Nov 2026 20:53:24 +0000",
+      "url": "https://www.theclinic.cl/2026/11/06/luto-internacional-por-sebastian-lelio-desde-the-guardian-a-el-pais-asi-despidio-la-prensa-extranjera-al-reconocido-director-chileno/"
+    },
     {
       "title": "Arremetida laboral: ministro Rau anunció un proyecto laboral con cambios en contratos, teletrabajo y jornadas durante noviembre",
       "source": "The Clinic",
@@ -45,32 +73,25 @@
       "url": "https://www.theclinic.cl/2026/11/06/nuevos-heroes-2026/"
     },
     {
-      "title": "El miedo a volver al trabajo después de un accidente: la historia de Bastián Berríos",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 06 Nov 2026 19:30:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/06/reinsercion-laboral-bastian-berrios-achs/"
+      "title": "La \"Puerta Giratoria\" a prueba en importantes cargos que tiene que llenar el Gobierno. Superintendencia de Casinos de Juegos y Aduanas en la mira",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 06 Nov 2026 20:09:40 -0300",
+      "url": "https://cambio21.cl/pais/la-puerta-giratoria-a-prueba-en-importantes-cargos-que-tiene-que-llenar-el-gobierno-superintendencia-de-casinos-de-juegos-y-aduanas-en-la-mira-6aed6639fe39025dee35ce15"
     },
     {
-      "title": "En plena crisis por Rabat: Tribunal de Valparaíso ordena liberar a condenado por violación pese a resistencia de Justicia a otorgar el beneficio",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 06 Nov 2026 19:22:11 +0000",
-      "url": "https://www.theclinic.cl/2026/11/06/en-plena-crisis-por-rabat-tribunal-de-valparaiso-ordena-liberar-a-condenado-por-violacion-pese-a-resistencia-de-justicia-a-otorgar-el-beneficio/"
+      "title": "Ministerio de Justicia confirma sumario interno tras filtración de decretos de rebaja de penas",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 06 Nov 2026 18:36:25 -0300",
+      "url": "https://cambio21.cl/pais/ministerio-de-justicia-confirma-sumario-interno-tras-filtracion-de-decretos-de-rebaja-de-penas-6aee47ea71b28b47ec35a3b5"
     },
     {
-      "title": "Motorola acaba de presentar su smartphone más ambicioso y su cámara ya es considerada la mejor de 2026",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 06 Nov 2026 19:21:32 +0000",
-      "url": "https://www.theclinic.cl/2026/11/06/motorola-signature-27-mejor-camara-2026-precio-caracteristicas/"
-    },
-    {
-      "title": "Miles de archivos y custodia federal: las claves tras el arresto del padre de Meghan Markle acusado de almacenar pornografía infantil",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Fri, 06 Nov 2026 19:18:14 +0000",
-      "url": "https://www.theclinic.cl/2026/11/06/miles-de-archivos-y-custodia-federal-las-claves-tras-el-arresto-del-padre-de-meghan-markle-acusado-de-almacenar-pornografia-infantil/"
+      "title": "Papa León XIV llega a Uruguay e inicia sur gira de 12 días por Sudamérica",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 06 Nov 2026 18:28:22 -0300",
+      "url": "https://cambio21.cl/el-mundo/papa-leon-xiv-llega-a-uruguay-e-inicia-sur-gira-de-12-dias-por-sudamerica-6aee4363129ba261601fd923"
     },
     {
       "title": "VIDEO-TRAILER de su obra cumbre. Murió a los 52 años el director de cine chileno Sebastián Lelio, ganador del Oscar por “Una mujer fantástica”",
@@ -190,27 +211,6 @@
       "category": "politica",
       "published": "Thu, 05 Nov 2026 09:46:20 -0300",
       "url": "https://cambio21.cl/tendencias/exfutbolista-francisco-huaiquipan-es-detenido-e-investigado-por-presunta-violacion-de-tres-menores-serian-del-circulo-familiar-6aec7a36b54a443920135c23"
-    },
-    {
-      "title": "Exministro de Piñera que aspira ser presidente de los empresarios se lanza una frase de \"grandes pensadores\". Asegura que las rebajas de penas a pedófilos y pederastas por el gobierno \"a la persona común y corriente no le importa\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 05 Nov 2026 00:21:43 -0300",
-      "url": "https://cambio21.cl/politica/exministro-de-pinera-que-aspira-ser-presidente-de-los-empresarios-se-lanza-una-frase-de-grandes-pensadores-asegura-que-las-rebajas-de-penas-a-pedofilos-y-pederastas-por-el-gobierno-a-la-persona-comun-y-corriente-no-le-importa-6aebf4cb6b6ba8198c189ba5"
-    },
-    {
-      "title": "Y ahora lo que creíamos absurdo nos golpea la puerta. Baltazar Lennon González Fundación Por la Democracia",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 04 Nov 2026 23:13:43 -0300",
-      "url": "https://cambio21.cl/tendencias/y-ahora-lo-que-creiamos-absurdo-nos-golpea-la-puerta-baltazar-lennon-gonzalez-fundacion-por-la-democracia-6aebe541f32dd616ea53b5f3"
-    },
-    {
-      "title": "Camila Vallejo arremete contra Kast por apoyo a Rabat: “Ponga tan solo una décima parte de la energía que usa para defender a sus amigos en proteger a los chilenos\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 04 Nov 2026 19:21:37 -0300",
-      "url": "https://cambio21.cl/politica/camila-vallejo-arremete-contra-kast-por-apoyo-a-rabat-ponga-tan-solo-una-decima-parte-de-la-energia-que-usa-para-defender-a-sus-amigos-en-proteger-a-los-chilenos-6aebaf7a002d5909151cd3be"
     }
   ]
 }
