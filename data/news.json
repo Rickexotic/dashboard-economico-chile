@@ -1,7 +1,56 @@
 {
-  "lastUpdate": "2026-11-09 21:17 UTC",
+  "lastUpdate": "2026-11-09 23:37 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Pese a tensa sesión: Cámara Baja aprueba en general Ley de Presupuesto 2027",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Mon, 09 Nov 2026 23:10:54 +0000",
+      "url": "https://www.theclinic.cl/2026/11/09/pese-a-tensa-sesion-camara-baja-aprueba-en-general-ley-de-presupuesto-2027/"
+    },
+    {
+      "title": "Adán Jodorowsky revela el proyecto que quedó pendiente con Sebastián Lelio",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Mon, 09 Nov 2026 23:00:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/09/adanowsky-sebastian-lelio-proyecto-inconcluso-estoy-mal/"
+    },
+    {
+      "title": "“Operación Capitanes”: La indagatoria judicial por tráfico de drogas que tiene a Carlos Palacios como imputado y a su suegro en prisión preventiva",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Mon, 09 Nov 2026 22:18:24 +0000",
+      "url": "https://www.theclinic.cl/2026/11/09/operacion-capitanes-la-indagatoria-judicial-por-trafico-de-drogas-que-tiene-a-carlos-palacios-como-imputado-y-a-su-suegro-en-prision-preventiva/"
+    },
+    {
+      "title": "Postulantes a empleos aspiran a sueldos hasta 29% más de lo que ofrecen las empresas en algunos sectores",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Mon, 09 Nov 2026 22:15:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/09/postulantes-a-empleos-aspiran-a-sueldos-hasta-29-mas-de-lo-que-ofrecen-las-empresas-en-algunos-sectores/"
+    },
+    {
+      "title": "El renting busca acelerar en Chile y las marcas se suben al cambio",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Mon, 09 Nov 2026 21:48:44 +0000",
+      "url": "https://www.theclinic.cl/2026/11/09/renting-en-chile-crecimiento/"
+    },
+    {
+      "title": "Fuerte caída de 29,3% en importaciones de bienes de capital en octubre refleja freno en inversión",
+      "source": "The Clinic",
+      "category": "mercados",
+      "published": "Mon, 09 Nov 2026 21:40:20 +0000",
+      "url": "https://www.theclinic.cl/2026/11/09/fuerte-caida-de-293-en-importaciones-de-bienes-de-capital-en-octubre-refleja-freno-en-inversion/"
+    },
+    {
+      "title": "Carta a la directora: Representar el sentido común para volver a conectar con las mayorías. Respuesta a Senador Ibáñez",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Mon, 09 Nov 2026 21:19:15 +0000",
+      "url": "https://www.theclinic.cl/2026/11/09/carta-a-la-directora-representar-el-sentido-comun-para-volver-a-conectar-con-las-mayorias-respuesta-a-senador-ibanez/"
+    },
     {
       "title": "¿Continuar con la batalla cultural? El debate que resurgió en la izquierda y que enfrenta a las dos almas de la oposición",
       "source": "The Clinic",
@@ -24,53 +73,18 @@
       "url": "https://www.theclinic.cl/2026/11/09/admision-2027-revisa-cuales-son-las-carreras-de-tecnicas-y-universitarias-con-mayor-y-peor-empleabilidad-al-primer-ano-de-egreso/"
     },
     {
-      "title": "La “gyoza sureña”: tradicional empanada de Chiloé se vuelve viral por su particular forma de preparación",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 09 Nov 2026 20:50:04 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/la-gyoza-surena-tradicional-empanada-de-chiloe-se-vuelve-viral-por-su-particular-forma-de-preparacion/"
+      "title": "Cobran \"antigua factura\": Oposición no permite ingreso del director de Presupuesto a la Cámara. Los parlamentarios de Gobierno no permitían ingreso de la funcionaria del Gobierno de Boric",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Mon, 09 Nov 2026 18:31:12 -0300",
+      "url": "https://cambio21.cl/politica/cobran-antigua-factura-oposicion-no-permite-ingreso-del-director-de-presupuesto-a-la-camara-los-parlamentarios-de-gobierno-no-permitian-ingreso-de-la-funcionaria-del-gobierno-de-boric-6af23845601d7762fa2e6aa3"
     },
     {
-      "title": "Fueron a mojarse los pies durante un paseo familiar y los arrastró la corriente: El fatal accidente de un padre y su hija que enluta a Cunco",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 09 Nov 2026 20:44:14 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/fueron-a-mojarse-los-pies-durante-un-paseo-familiar-y-los-arrastro-la-corriente-el-fatal-accidente-de-un-padre-y-su-hija-que-enluta-a-cunco/"
-    },
-    {
-      "title": "Actividades para emprendedores, talleres y mentorías: El impulso a las pymes que hará BCI en el Festival Ladera Sur",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Mon, 09 Nov 2026 20:43:50 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/actividades-para-emprendedores-talleres-y-mentorias-el-impulso-a-las-pymes-que-hara-bci-en-el-festival-ladera-sur/"
-    },
-    {
-      "title": "La historia de Sohyoun Yun Cárcamo, la chilota de padre coreano que a sus 28 años trabaja mano a mano con el Premio Nobel de Física: “Es muy cercano”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 09 Nov 2026 20:37:40 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/la-historia-de-sohyoun-yun-carcamo-la-chilota-de-padre-coreano-que-a-sus-28-anos-trabaja-mano-a-mano-con-el-premio-nobel-de-fisica-es-muy-cercano/"
-    },
-    {
-      "title": "Desde $4.500 mensuales: esto costará la membresía para acceder a PriceSmart, el club de compras estadounidense que llega a Chile",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 09 Nov 2026 20:35:20 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/desde-4-500-mensuales-esto-costara-la-membresia-para-acceder-a-pricesmart-el-club-de-compras-estadounidense-que-llega-a-chile/"
-    },
-    {
-      "title": "Los preparativos de Luis Gnecco para su arribo a la embajada de Chile en el Reino Unido como agregado cultural",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 09 Nov 2026 20:29:31 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/como-se-prepara-la-llegada-de-luis-gnecco-a-la-embajada-de-chile-en-el-reino-unido-como-agregado-cultural/"
-    },
-    {
-      "title": "Ante eventual paro de camioneros: Multigremial Nacional y SNA advierten impacto sobre la actividad productiva",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 09 Nov 2026 20:25:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/ante-eventual-paro-de-camioneros-multigremial-nacional-y-sna-advierten-impacto-sobre-la-actividad-productiva/"
+      "title": "Policía activo de la PDI se pasó en revoluciones: Es detenido por disparar al aire tras el título de Colo Colo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 09 Nov 2026 18:11:04 -0300",
+      "url": "https://cambio21.cl/tendencias/policia-activo-de-la-pdi-se-paso-en-revoluciones-es-detenido-por-disparar-al-aire-tras-el-titulo-de-colo-colo-6af2363039123b1af1123923"
     },
     {
       "title": "Ministro de Economía critica a los empresarios: “Hemos hipotecado capital político y hoy son los empresarios los que tienen que echar a andar sus grúas”",
@@ -197,20 +211,6 @@
       "category": "politica",
       "published": "Sun, 08 Nov 2026 09:09:26 -0300",
       "url": "https://cambio21.cl/tendencias/joven-jugador-de-colo-colo-es-detenido-por-conducir-ebrio-y-protagonizar-accidente-de-transito-en-providencia-no-jugaba-porque-esta-lesionado-6af065c6bcd8bd77321b53f4"
-    },
-    {
-      "title": "Cerca de la 1.40 horas de la madrugada, y tras 27 horas, Teletón 2026 consiguió superar la meta: $46.204.313.130",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 08 Nov 2026 02:03:20 -0300",
-      "url": "https://cambio21.cl/tendencias/cerca-de-la-1-40-horas-de-la-madrugada-y-tras-27-horas-teleton-2026-consiguio-superar-la-meta-46-204-313-130-6af001a3313619342d4ab477"
-    },
-    {
-      "title": "Colo Colo sale con Vozinha, Arturo Vidal y Correa a obtener el título 35 en Chillán. Juega a las 15 horas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 08 Nov 2026 01:37:28 -0300",
-      "url": "https://cambio21.cl/pais/deportes/colo-colo-sale-con-vozinha-arturo-vidal-y-correa-a-obtener-el-titulo-35-en-chillan-juega-a-las-15-horas-6aeffb03313619342d4ab474"
     }
   ]
 }
