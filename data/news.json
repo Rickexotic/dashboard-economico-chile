@@ -1,76 +1,153 @@
 {
-  "lastUpdate": "2026-11-10 01:56 UTC",
+  "lastUpdate": "2026-11-10 18:28 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Ingresó al predio de su vecina en Cauquenes y mató a sus dos perros: Hombre condenado de por vida a no tener animales tras grave caso de maltrato",
+      "title": "La vuelta de un clásico de las series juveniles españolas: “Física o Química: La nueva generación” estrena su segunda temporada",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 10 Nov 2026 01:17:54 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/ingreso-al-predio-de-su-vecina-en-cauquenes-y-mato-a-sus-dos-perros-hombre-condenado-de-por-vida-a-no-tener-mascotas-tras-grave-caso-de-maltrato-animal/"
+      "published": "Tue, 10 Nov 2026 18:27:28 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/la-vuelta-de-un-clasico-de-las-series-juveniles-espanolas-fisica-o-quimica-la-nueva-generacion-estrena-su-segunda-temporada/"
     },
     {
-      "title": "Pese a tensa sesión: Cámara Baja aprueba en general Ley de Presupuesto 2027",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Mon, 09 Nov 2026 23:10:54 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/pese-a-tensa-sesion-camara-baja-aprueba-en-general-ley-de-presupuesto-2027/"
-    },
-    {
-      "title": "Adán Jodorowsky revela el proyecto que quedó pendiente con Sebastián Lelio",
+      "title": "Los exfuncionarios del gobierno de Boric detrás de la redacción de la AC contra Rabat",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 09 Nov 2026 23:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/adanowsky-sebastian-lelio-proyecto-inconcluso-estoy-mal/"
+      "published": "Tue, 10 Nov 2026 16:43:44 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/los-exfuncionarios-del-gobierno-de-boric-detras-de-la-redaccion-de-la-ac-contra-rabat/"
     },
     {
-      "title": "“Operación Capitanes”: La indagatoria judicial por tráfico de drogas que tiene a Carlos Palacios como imputado y a su suegro en prisión preventiva",
+      "title": "Laura Pausini a un paso de Viña 2027 tras los rumores de su baja: la cantante y Lucho Miranda serían los primeros artistas en cerrar su participación",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 09 Nov 2026 22:18:24 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/operacion-capitanes-la-indagatoria-judicial-por-trafico-de-drogas-que-tiene-a-carlos-palacios-como-imputado-y-a-su-suegro-en-prision-preventiva/"
+      "published": "Tue, 10 Nov 2026 16:33:53 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/laura-pausini-a-un-paso-de-vina-2027-tras-los-rumores-de-su-baja-la-cantante-y-lucho-miranda-serian-los-primeros-artistas-en-cerrar-su-participacion/"
     },
     {
-      "title": "Postulantes a empleos aspiran a sueldos hasta 29% más de lo que ofrecen las empresas en algunos sectores",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Mon, 09 Nov 2026 22:15:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/postulantes-a-empleos-aspiran-a-sueldos-hasta-29-mas-de-lo-que-ofrecen-las-empresas-en-algunos-sectores/"
-    },
-    {
-      "title": "El renting busca acelerar en Chile y las marcas se suben al cambio",
+      "title": "La reinvención del ADN escandinavo: Polestar revela la Formula 2030 Concept",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 09 Nov 2026 21:48:44 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/renting-en-chile-crecimiento/"
+      "published": "Tue, 10 Nov 2026 16:31:53 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/polestar-formula-2030-concept-futuro-electrico/"
     },
     {
-      "title": "Fuerte caída de 29,3% en importaciones de bienes de capital en octubre refleja freno en inversión",
+      "title": "257 reclamos por atención de salud y falta de especialistas: las barreras que enfrentan las personas trans en el sistema público",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 10 Nov 2026 16:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/257-reclamos-por-atencion-de-salud-y-falta-de-especialistas-las-barreras-que-enfrentan-las-personas-trans-en-el-sistema-publico/"
+    },
+    {
+      "title": "“Premio de consuelo”: Designación de Trinidad Steinert como agregada de seguridad en Paraguay desata críticas transversales",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 10 Nov 2026 16:19:10 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/premio-de-consuelo-designacion-de-trinidad-steinert-como-agregada-de-seguridad-en-paraguay-desata-criticas-transversales/"
+    },
+    {
+      "title": "Estaba autorizado para tener armas y terminó montando un millonario comercio ilegal: El caso del “deportista” que fue detenido tras adquirir 20 mil municiones",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 10 Nov 2026 16:00:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/estaba-autorizado-para-tener-armas-y-termino-montando-un-millonario-comercio-ilegal-el-caso-del-deportista-que-fue-detenido-tras-adquirir-20-mil-municiones/"
+    },
+    {
+      "title": "Mercado de oficinas se estrecha en Las Condes: vacancia cae a mínimos prepandemia",
       "source": "The Clinic",
       "category": "mercados",
-      "published": "Mon, 09 Nov 2026 21:40:20 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/fuerte-caida-de-293-en-importaciones-de-bienes-de-capital-en-octubre-refleja-freno-en-inversion/"
+      "published": "Tue, 10 Nov 2026 15:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/mercado-de-oficinas-se-estrecha-en-las-condes-vacancia-cae-a-minimos-prepandemia/"
     },
     {
-      "title": "Carta a la directora: Representar el sentido común para volver a conectar con las mayorías. Respuesta a Senador Ibáñez",
+      "title": "Suprema deja sin herencia a tres hermanos que no auxiliaron a su madre con Alzheimer: su nieta se hacía cargo de todas sus necesidades",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 09 Nov 2026 21:19:15 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/carta-a-la-directora-representar-el-sentido-comun-para-volver-a-conectar-con-las-mayorias-respuesta-a-senador-ibanez/"
+      "published": "Tue, 10 Nov 2026 15:21:24 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/suprema-deja-sin-herencia-a-tres-hermanos-que-no-auxiliaron-a-su-madre-con-alzheimer-su-nieta-se-hacia-cargo-de-todas-sus-necesidades/"
     },
     {
-      "title": "¿Continuar con la batalla cultural? El debate que resurgió en la izquierda y que enfrenta a las dos almas de la oposición",
+      "title": "Geely Xingyao 6 EF: La apuesta china por el metanol para vencer al frío y romper récords de autonomía",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 09 Nov 2026 21:06:55 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/continuar-con-la-batalla-cultural-el-debate-que-resurgio-en-la-izquierda-y-que-enfrenta-a-las-dos-almas-de-la-oposicion/"
+      "published": "Tue, 10 Nov 2026 15:20:57 +0000",
+      "url": "https://www.theclinic.cl/2026/11/10/geely-xingyao-6-ef-la-apuesta-china-por-el-metanol-para-vencer-al-frio-y-romper-records-de-autonomia/"
     },
     {
-      "title": "Internas UDI: resurge lista de competencia ante intención de Longueira de mantener dupla con Alessandri",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 09 Nov 2026 21:03:04 +0000",
-      "url": "https://www.theclinic.cl/2026/11/09/internas-udi-resurge-lista-de-competencia-ante-intencion-de-longueira-de-mantener-dupla-con-alessandri/"
+      "title": "Respondiendo al vocero Arenas: Un proyecto conservador con pretensiones nacionales. Por Eduardo Saffirio, Abogado",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 14:23:06 -0300",
+      "url": "https://cambio21.cl/tendencias/respondiendo-al-vocero-arenas-un-proyecto-conservador-con-pretensiones-nacionales-por-eduardo-saffirio-abogado-6af35149737ffd54cf00c997"
+    },
+    {
+      "title": "En medio de paro de buses, taxis, camiones y otros, Kast hace un llamado a pensar \"en Chile\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 12:42:36 -0300",
+      "url": "https://cambio21.cl/pais/en-medio-de-paro-de-buses-taxis-camiones-y-otros-kast-hace-un-llamado-a-pensar-en-chile-6af33aa7a89cdf57f56fe405"
+    },
+    {
+      "title": "Criticó el paro: Presidente de camioneros que hizo campaña y votó por Kast, Sergio Pérez, tiene un tenso diálogo en Chilevisión: “No sé si parece vocero de las autopistas o ministro de gobierno”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 12:34:00 -0300",
+      "url": "https://cambio21.cl/politica/critico-el-paro-presidente-de-camioneros-que-hizo-campana-y-voto-por-kast-sergio-perez-tiene-un-tenso-dialogo-en-chilevision-no-se-si-parece-vocero-de-las-autopistas-o-ministro-de-gobierno-6af3373123cbf57b43138a6c"
+    },
+    {
+      "title": "Paro de camioneros descolgados de grandes empresarios, taxistas, buses y No+TAG provoca cortes y alta congestión en el país: Principales rutas están afectadas por manifestación por alza desmedida de combustibles",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 12:05:35 -0300",
+      "url": "https://cambio21.cl/pais/paro-de-camioneros-descolgados-de-grandes-empresarios-taxistas-buses-y-no-tag-provoca-cortes-y-alta-congestion-en-el-pais-principales-rutas-estan-afectadas-por-manifestacion-por-alza-desmedida-de-combustibles-6af32ddf5375c96458264124"
+    },
+    {
+      "title": "A solo meses de dejar el gobierno, Kast designó a exministra Trinidad Steinert como agregada de seguridad en Paraguay. Se suma a Luis Gnecco como agregado en Londres",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 11:35:00 -0300",
+      "url": "https://cambio21.cl/politica/a-solo-meses-de-dejar-el-gobierno-kast-designo-a-exministra-trinidad-steinert-como-agregada-de-seguridad-en-paraguay-se-suma-a-luis-gnecco-como-agregado-en-londres-6af32b48b1d7090c4d1fd4c6"
+    },
+    {
+      "title": "Delegado de Kast Germán Codina advierte eventual uso de la fuerza ante paro de camioneros en la ruta 68, pero insiste en el diálogo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 11:25:52 -0300",
+      "url": "https://cambio21.cl/pais/delegado-de-kast-german-codina-advierte-eventual-uso-de-la-fuerza-ante-paro-de-camioneros-en-la-ruta-68-pero-insiste-en-el-dialogo-6af3290ad994ed17426aafa4"
+    },
+    {
+      "title": "Camioneros se descuelgan de sus organizaciones e inician protestas en distintas zonas del país por el alza de los combustibles",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 02:01:03 -0300",
+      "url": "https://cambio21.cl/politica/camioneros-se-descuelgan-de-sus-organizaciones-e-inician-protestas-en-distintas-zonas-del-pais-por-el-alza-de-los-combustibles-6af2a43d5681f44fc256931b"
+    },
+    {
+      "title": "Confirman que ministro Rabat suspendió entrega de beneficios de rebajas de condena hasta definición de ley",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 01:40:37 -0300",
+      "url": "https://cambio21.cl/pais/confirman-que-ministro-rabat-suspendio-entrega-de-beneficios-de-rebajas-de-condena-hasta-definicion-de-ley-6af29fec0123ec7803184043"
+    },
+    {
+      "title": "La demagogia de prohibir lo que no se puede controlar",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 01:31:39 -0300",
+      "url": "https://cambio21.cl/tendencias/la-demagogia-de-prohibir-lo-que-no-se-puede-controlar-6af29c03915cfb46ec6d9846"
+    },
+    {
+      "title": "Editorial Cambio21. Del país triste, al gobierno fome y que Kast no es el líder que Chile necesita",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 01:04:06 -0300",
+      "url": "https://cambio21.cl/politica/editorial-cambio21-del-pais-triste-al-gobierno-fome-y-que-kast-no-es-el-lider-que-chile-necesita-6af286f7498ead24b0611d7c"
+    },
+    {
+      "title": "Paul McCartney se convierte en multimillonario y el tercer cantante más rico del mundo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Mon, 09 Nov 2026 23:34:53 -0300",
+      "url": "https://cambio21.cl/tendencias/paul-mccartney-se-convierte-en-multimillonario-y-el-tercer-cantante-mas-rico-del-mundo-6af281f96a9e236fea2b0d84"
     },
     {
       "title": "Cobran \"antigua factura\": Oposición no permite ingreso del director de Presupuesto a la Cámara. Los parlamentarios de Gobierno no permitían ingreso de la funcionaria del Gobierno de Boric",
@@ -134,83 +211,6 @@
       "category": "politica",
       "published": "Mon, 09 Nov 2026 10:44:25 -0300",
       "url": "https://cambio21.cl/tendencias/gigantesco-operativo-en-toma-en-comuna-de-cerrillos-mas-de-800-personas-fueron-desalojadas-fundamentalmente-haitianas-y-venezolanas-6af1cd66d3ba8c0adc02e393"
-    },
-    {
-      "title": "Trump reconoce que rechazo a la guerra en Irán y alza de combustibles influyeron en derrota de los republicanos: Y que política migratoria fue ''demasiado dura''",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 10:36:48 -0300",
-      "url": "https://cambio21.cl/el-mundo/trump-reconoce-que-rechazo-a-la-guerra-en-iran-y-alza-de-combustibles-influyeron-en-derrota-de-los-republicanos-y-que-politica-migratoria-fue-demasiado-dura-6af1cc0087c12f18812ce063"
-    },
-    {
-      "title": "Presidente de la DC aseguró que la acusación constitucional contra ministro Rabat se presentará esta semana",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 10:30:27 -0300",
-      "url": "https://cambio21.cl/politica/presidente-de-la-dc-aseguro-que-la-acusacion-constitucional-contra-ministro-rabat-se-presentara-esta-semana-6af1caa4e59f3a5ab738fac3"
-    },
-    {
-      "title": "Estudio revela el porque del rechazo y el desplome de Kast. Mandatario en caída libre entre sus propios votantes fieles y apoyo cae al 20 por ciento",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 01:14:21 -0300",
-      "url": "https://cambio21.cl/politica/estudio-revela-el-porque-del-rechazo-y-el-desplome-de-kast-mandatario-en-caida-libre-entre-sus-propios-votantes-fieles-y-apoyo-cae-al-20-por-ciento-6af147ec98d28507c05a73e3"
-    },
-    {
-      "title": "Fiscalía revela que camión cruzó eje de la calzada en choque que dejó 11 víctimas fatales en la Ruta de la Fruta",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 00:46:33 -0300",
-      "url": "https://cambio21.cl/pais/fiscalia-revela-que-camion-cruzo-eje-de-la-calzada-en-choque-que-dejo-11-victimas-fatales-en-la-ruta-de-la-fruta-6af14197848f2b42841d359b"
-    },
-    {
-      "title": "Partido Demócrata anuncia juicio político a ministro o secretario de Guerra de EE.UU. por conflicto en Irán",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 00:37:01 -0300",
-      "url": "https://cambio21.cl/el-mundo/partido-democrata-anuncia-juicio-politico-a-ministro-o-secretario-de-guerra-de-ee-uu-por-conflicto-en-iran-6af13ea8822020522d7f1b43"
-    },
-    {
-      "title": "Ubican en cárcel de Perú a delincuente “Carlitos Nike” que estuvo involucrado en crimen de carabinero Palma. Está preso con identidad falsa",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 00:19:40 -0300",
-      "url": "https://cambio21.cl/pais/ubican-en-carcel-de-peru-a-delincuente-carlitos-nike-que-estuvo-involucrado-en-crimen-de-carabinero-palma-esta-preso-con-identidad-falsa-6af13b1ccfaddd4472745ff6"
-    },
-    {
-      "title": "VIDEO con goles y celebración: La marraqueta está más crujiente: Colo Colo es campeón y logró la estrella 35 en su historia. Ganó a Ñublense en Chillán 2-1",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 08 Nov 2026 18:39:52 -0300",
-      "url": "https://cambio21.cl/deportes/video-con-goles-y-celebracion-la-marraqueta-esta-mas-crujiente-colo-colo-es-campeon-y-logro-la-estrella-35-en-su-historia-gano-a-nublense-en-chillan-2-1-6af0e6146c1b113d0820e733"
-    },
-    {
-      "title": "Va a tener que cambiar la fracesita: \"Todo va a estar bien\" de Kast provoca decepción y rabia entre todos los ciudadanos, según encuesta",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 08 Nov 2026 14:58:49 -0300",
-      "url": "https://cambio21.cl/pais/va-a-tener-que-cambiar-la-fracesita-todo-va-a-estar-bien-de-kast-provoca-decepcion-y-rabia-entre-todos-los-ciudadanos-segun-encuesta-6af0b6bf35114104734440e4"
-    },
-    {
-      "title": "Chile no necesita volver al pasado para salir de sus problemas. Por Enrique González, Cientista Político",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 08 Nov 2026 13:30:17 -0300",
-      "url": "https://cambio21.cl/tendencias/chile-no-necesita-volver-al-pasado-para-salir-de-sus-problemas-por-enrique-gonzalez-cientista-politico-6aeff88a9c14b10479591ce3"
-    },
-    {
-      "title": "Un Presidente en caída libre. Encuesta ratifica los malos numeros de Kast: Según Criteria tiene el registro más bajo desde que asumió. Y trae un dato muy complejo: 74% cree que no es el líder que Chile necesita",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 08 Nov 2026 12:26:41 -0300",
-      "url": "https://cambio21.cl/politica/un-presidente-en-caida-libre-encuesta-ratifica-los-malos-numeros-de-kast-segun-criteria-tiene-el-registro-mas-bajo-desde-que-asumio-y-trae-un-dato-muy-complejo-74-cree-que-no-es-el-lider-que-chile-necesita-6af0939612c57462200aa723"
-    },
-    {
-      "title": "Joven jugador de Colo Colo es detenido por conducir ebrio y protagonizar accidente de tránsito en Providencia. No jugaba porque está lesionado",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 08 Nov 2026 09:09:26 -0300",
-      "url": "https://cambio21.cl/tendencias/joven-jugador-de-colo-colo-es-detenido-por-conducir-ebrio-y-protagonizar-accidente-de-transito-en-providencia-no-jugaba-porque-esta-lesionado-6af065c6bcd8bd77321b53f4"
     }
   ]
 }
