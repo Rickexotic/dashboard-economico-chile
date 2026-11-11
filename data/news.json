@@ -1,76 +1,160 @@
 {
-  "lastUpdate": "2026-11-10 23:57 UTC",
+  "lastUpdate": "2026-11-11 18:23 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Pese a no estar terminado, nuevo Hospital del Salvador recibió visto bueno para marcha blanca solo días después de la salida de director que se negó a aprobarla",
+      "title": "La sombra de los data centers: la IA amenaza con desatar una nueva escasez de microchips en la industria automotriz",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 10 Nov 2026 23:56:41 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/pese-a-no-estar-terminado-nuevo-hospital-del-salvador-recibio-visto-bueno-para-marcha-blanca-solo-dias-despues-de-la-salida-de-director-que-se-nego-a-aprobarla/"
+      "published": "Wed, 11 Nov 2026 17:44:22 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/escasez-microchips-automotriz-inteligencia-artificial-2026/"
     },
     {
-      "title": "Festival de Viña del Mar confirma a Laura Pausini como su primer artista para la edición 2027",
+      "title": "Al Segundo Piso o a una embajada: los cuestionados “premios de consuelo” que Kast ha dado a sus excolaboradores",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 10 Nov 2026 23:30:52 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/festival-de-vina-del-mar-confirma-a-laura-pausini-como-su-primer-artista-para-la-edicion-2027/"
+      "published": "Wed, 11 Nov 2026 16:42:52 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/al-segundo-piso-o-a-una-embajada-los-cuestionados-premios-de-consuelo-que-kast-ha-dado-a-sus-excolaboradores/"
     },
     {
-      "title": "BancoEstado discrepa con el gremio bancario por duración del Fondo Nacional de Vivienda en debate por reforma al mercado de capitales",
+      "title": "Mensajes sobre abusos a compañeras en grupo de WhatsApp de estudiantes de Derecho desatan paro y movilizaciones feministas en la Usach",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 11 Nov 2026 16:37:16 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/mensajes-sobre-abusos-a-companeras-en-grupo-de-whatsapp-de-estudiantes-de-derecho-desatan-paro-y-movilizaciones-en-la-usach/"
+    },
+    {
+      "title": "La Moneda contra las cuerdas: Gobierno no logra deponer paro de camioneros y reconoce que retiró proyecto para no alterar negociaciones",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 11 Nov 2026 16:33:17 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/la-moneda-contra-las-cuerdas-gobierno-no-logra-deponer-paro-de-camioneros-y-reconoce-que-retiro-proyecto-para-no-alterar-negociaciones/"
+    },
+    {
+      "title": "Nuevo retraso de la AC contra Rabat agudiza las diferencias en la izquierda y enfrenta versiones entre partidos",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 11 Nov 2026 16:04:23 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/nuevo-retraso-de-la-ac-contra-rabat-agudiza-las-diferencias-en-la-izquierda-y-enfrenta-versiones-entre-partidos/"
+    },
+    {
+      "title": "Diputados UDI se suman a cruzada contra las apuestas en línea con indicación a Ley de Presupuestos 2027",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Wed, 11 Nov 2026 15:49:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/diputados-udi-se-suman-a-cruzada-contra-las-apuestas-en-linea-con-indicacion-a-ley-de-presupuestos-2027/"
+    },
+    {
+      "title": "Gobierno retira del Congreso el proyecto recién ingresado que limitaba el alza de los combustibles: Ejecutivo prepara “ajustes” al articulado",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 11 Nov 2026 15:16:09 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/gobierno-retira-del-congreso-el-proyecto-recien-ingresado-que-limitaba-el-alza-de-los-combustibles-ejecutivo-prepara-ajustes-al-articulado/"
+    },
+    {
+      "title": "Presidente Kast y su llamado a los camioneros: “Si alguien quiere que haya más inversión en Chile, tiene que permitir el libre tránsito”",
       "source": "The Clinic",
       "category": "mercados",
-      "published": "Tue, 10 Nov 2026 22:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/bancoestado-discrepa-con-el-gremio-bancario-por-duracion-del-fondo-nacional-de-vivienda-en-debate-por-reforma-al-mercado-de-capitales/"
+      "published": "Wed, 11 Nov 2026 14:33:42 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/presidente-kast-y-su-llamado-a-los-camioneros-si-alguien-quiere-que-haya-mas-inversion-en-chile-tiene-que-permitir-el-libre-transito/"
     },
     {
-      "title": "Senadores de oposición y RN rechazan propuesta del Gobierno y aprueban dos indicaciones que prohíben apuestas en línea en el país",
+      "title": "Amazon Web Services pone en marcha sus data center en Chile: proyectan US$ 7.500 de aporte al PIB y el respaldo de 4.100 empleos",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Wed, 11 Nov 2026 13:58:52 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/amazon-web-services-pone-en-marcha-sus-data-center-en-chile-proyectan-us-7-500-de-aporte-al-pib-y-el-respaldo-de-4-100-empleos/"
+    },
+    {
+      "title": "Roberto Musso, líder de “El Cuarteto de Nos”, a 20 años de “Raro”: “Asumir el riesgo fue realmente lo que nos cambió la vida”",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 10 Nov 2026 21:49:14 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/senadores-de-oposicion-y-rn-rechazan-propuesta-del-gobierno-y-aprueban-dos-indicaciones-que-prohiben-apuestas-en-linea-en-el-pais/"
+      "published": "Wed, 11 Nov 2026 13:55:23 +0000",
+      "url": "https://www.theclinic.cl/2026/11/11/roberto-musso-lider-de-el-cuarteto-de-nos-a-20-anos-de-raro-asumir-el-riesgo-fue-realmente-lo-que-nos-cambio-la-vida/"
     },
     {
-      "title": "Director de Pedagogía en Educación Física UNAB por ley que obliga a 60 minutos diarios de ejercicio: “En Chile se dejó toda la responsabilidad a la escuela”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 10 Nov 2026 21:43:46 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/director-de-pedagogia-en-educacion-fisica-unab-por-ley-que-obliga-a-60-minutos-diarios-de-ejercicio-en-chile-se-dejo-toda-la-responsabilidad-a-la-escuela/"
+      "title": "La Moneda en situación comprometida: Camiones de todo tipo, entre ellos los que retiran basura, taxis, grúas, autos, motos, buses urbanos e interurbanos, vehículos especiales: Paro de transportistas sigue aumentando y se pliegan otras organizaciones",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 14:20:19 -0300",
+      "url": "https://cambio21.cl/pais/la-moneda-en-situacion-comprometida-camiones-de-todo-tipo-entre-ellos-los-que-retiran-basura-taxis-gruas-autos-motos-buses-urbanos-e-interurbanos-vehiculos-especiales-paro-de-transportistas-sigue-aumentando-y-se-pliegan-otras-organizaciones-6af49ebafbe89f4532782ef4"
     },
     {
-      "title": "Grupo Falabella eleva sus ganancias 18% y sus clientes activos llegan a 8,8 millones en la región",
-      "source": "The Clinic",
-      "category": "mercados",
-      "published": "Tue, 10 Nov 2026 21:33:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/grupo-falabella-eleva-sus-ganancias-18-y-sus-clientes-activos-llegan-a-88-millones-en-la-region/"
+      "title": "Todo mal: Kast entre los tres mandatarios peor evaluados de América en ranking mensual de presidentes. La mejor es la presidenta de México, Claudia Sheinbaum",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 13:51:46 -0300",
+      "url": "https://cambio21.cl/politica/todo-mal-kast-entre-los-tres-mandatarios-peor-evaluados-de-america-en-ranking-mensual-de-presidentes-la-mejor-es-la-presidenta-de-mexico-claudia-sheinbaum-6af49b9e0f490d109504fd73"
     },
     {
-      "title": "¿Una estación de tren para Fantasilandia? La propuesta de San Bernardo a EFE para atender la alta demanda del nuevo parque de diversiones",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 10 Nov 2026 21:23:20 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/una-estacion-de-tren-para-fantasilandia-la-propuesta-de-san-bernardo-a-efe-para-atender-la-alta-demanda-del-nuevo-parque-de-diversiones/"
+      "title": "Una señal: Gobierno obligado por el paro de transportistas en todo el país retiró proyecto que fijaba tope de $20 en alzas del combustible",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 13:42:41 -0300",
+      "url": "https://cambio21.cl/pais/una-senal-gobierno-obligado-por-el-paro-de-transportistas-en-todo-el-pais-retiro-proyecto-que-fijaba-tope-de-20-en-alzas-del-combustible-6af49761a10f1e522d287873"
     },
     {
-      "title": "De Perú a Paraguay: el pasado de Trinidad Steinert como fiscal que frustró su desembarco en Lima",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 10 Nov 2026 21:00:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/de-peru-a-paraguay-el-pasado-de-trinidad-steinert-como-fiscal-que-frustro-su-desembarco-en-lima/"
+      "title": "Senadora Cicardini y diputado Manouchehri piden renuncia de ministro Quiroz tras reconocer recesión ecónomica y anunciar venta de parte de Codelco a privados: “Es un peligro público\"",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Wed, 11 Nov 2026 12:39:49 -0300",
+      "url": "https://cambio21.cl/politica/senadora-cicardini-y-diputado-manouchehri-piden-renuncia-de-ministro-quiroz-tras-reconocer-recesion-economica-y-anunciar-venta-de-parte-de-codelco-a-privados-es-un-peligro-publico-6af4885a92f683352a38b5f3"
     },
     {
-      "title": "Correos que suplantan la identidad del Poder Judicial y el SII: el fraude masivo que pone en alerta a los organismos",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 10 Nov 2026 20:55:58 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/correos-que-suplantan-la-identidad-del-poder-judicial-y-el-sii-el-fraude-masivo-que-pone-en-alerta-a-los-organismos/"
+      "title": "Senador Iván Flores: “La ciudadanía hoy día está en medio del bencinazo y el camionazo”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 12:00:36 -0300",
+      "url": "https://cambio21.cl/politica/senador-ivan-flores-la-ciudadania-hoy-dia-esta-en-medio-del-bencinazo-y-el-camionazo-6af4822b242d913c5207f2ce"
     },
     {
-      "title": "“El paro sigue en todo el país”: Camioneros y movimientos reunidos con el Gobierno no logran acuerdo y continuarán los cortes en carreteras",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 10 Nov 2026 20:41:59 +0000",
-      "url": "https://www.theclinic.cl/2026/11/10/el-paro-sigue-en-todo-el-pais-gremios-y-camioneros-reunidos-con-el-gobierno-no-logran-acuerdo-y-continuaran-con-movilizacion-en-carreteras/"
+      "title": "Ofician a La Moneda tras llamado de Primera Dama Pía Adriasola a aportar a fundación antiaborto: Esposa de Kast llamó a “meterse la mano al bolsillo”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 11:34:12 -0300",
+      "url": "https://cambio21.cl/pais/ofician-a-la-moneda-tras-llamado-de-primera-dama-pia-adriasola-a-aportar-a-fundacion-antiaborto-esposa-de-kast-llamo-a-meterse-la-mano-al-bolsillo-6af47c52fb7d9f0e2314d743"
+    },
+    {
+      "title": "Fiscalía pide 15 años de cárcel para carabineros involucrados en fatal atropello en Estadio Monumental",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 10:54:44 -0300",
+      "url": "https://cambio21.cl/deportes/fiscalia-pide-15-anos-de-carcel-para-carabineros-involucrados-en-fatal-atropello-en-estadio-monumental-6af472de7e42da55f052cce4"
+    },
+    {
+      "title": "En Córdoba, el Papa León XIV parafraseó al fallecido Papa Francisco: \"¡Sigan haciendo lío!\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 10:30:43 -0300",
+      "url": "https://cambio21.cl/el-mundo/en-cordoba-el-papa-leon-xiv-parafraseo-al-fallecido-papa-francisco-sigan-haciendo-lio-6af46c4ae7296f309443a754"
+    },
+    {
+      "title": "Nunca es triste la verdad: Ministro Quiroz reconoce por primera vez que Chile está en recesión económica. Asegura que será breve",
+      "source": "Cambio21",
+      "category": "economia",
+      "published": "Wed, 11 Nov 2026 10:17:22 -0300",
+      "url": "https://cambio21.cl/politica/nunca-es-triste-la-verdad-ministro-quiroz-reconoce-por-primera-vez-que-chile-esta-en-recesion-economica-asegura-que-sera-breve-6af46a318dc1d47286124f74"
+    },
+    {
+      "title": "Muere Leonardo Perucci, actor chileno recordado por protagonizar la primera teleserie chilena",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 01:17:39 -0300",
+      "url": "https://cambio21.cl/tendencias/muere-leonardo-perucci-actor-chileno-recordado-por-protagonizar-la-primera-teleserie-chilena-6af3ec15f5a6fa693b5dced6"
+    },
+    {
+      "title": "Diputado Manouchehri (PS) cuestiona recorte del 86% a Ley Cholito: “¿Qué le hicieron las mascotas a Kast?”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 11 Nov 2026 00:52:35 -0300",
+      "url": "https://cambio21.cl/pais/diputado-manouchehri-ps-cuestiona-recorte-del-86-a-ley-cholito-que-le-hicieron-las-mascotas-a-kast-6af3e4a8ed35a1411e0d8fe3"
+    },
+    {
+      "title": "VEA VIDEO denunciado. Chiste de Yerko Puchento lideró las denuncias ante el Consejo Nacional de TV: rutina del comediante sobre Kast recibió reclamos",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 10 Nov 2026 23:53:05 -0300",
+      "url": "https://cambio21.cl/tendencias/vea-video-denunciado-chiste-de-yerko-puchento-lidero-las-denuncias-ante-el-consejo-nacional-de-tv-rutina-del-comediante-sobre-kast-recibio-reclamos-6af3c94028cf72547a7c08c7"
     },
     {
       "title": "Fiscalía le pone fecha de 7 días de plazo al Gobierno y al ministro de Justicia para entregar decretos de rebaja de condenas a pedófilos y pederastas",
@@ -112,7 +196,7 @@
       "source": "Cambio21",
       "category": "politica",
       "published": "Tue, 10 Nov 2026 17:01:13 -0300",
-      "url": "https://cambio21.cl/pais/detienen-a-seis-carabineros-por-apremios-ilegitimos-en-san-bernardo-rociaron-gas-pimienta-a-dos-presos-en-calabozo-6af377a1d311627f6533dbc5"
+      "url": "https://cambio21.cl/tendencias/detienen-a-seis-carabineros-por-apremios-ilegitimos-en-san-bernardo-rociaron-gas-pimienta-a-dos-presos-en-calabozo-6af377a1d311627f6533dbc5"
     },
     {
       "title": "Indignidad para suceder: La figura legal que permitió excluir a tres hermanos de la herencia de su madre con alzheimer",
@@ -127,90 +211,6 @@
       "category": "politica",
       "published": "Tue, 10 Nov 2026 14:23:06 -0300",
       "url": "https://cambio21.cl/tendencias/respondiendo-al-vocero-arenas-un-proyecto-conservador-con-pretensiones-nacionales-por-eduardo-saffirio-abogado-6af35149737ffd54cf00c997"
-    },
-    {
-      "title": "En medio de paro de buses, taxis, camiones y otros, Kast hace un llamado a pensar \"en Chile\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 12:42:36 -0300",
-      "url": "https://cambio21.cl/pais/en-medio-de-paro-de-buses-taxis-camiones-y-otros-kast-hace-un-llamado-a-pensar-en-chile-6af33aa7a89cdf57f56fe405"
-    },
-    {
-      "title": "Criticó el paro: Presidente de camioneros que hizo campaña y votó por Kast, Sergio Pérez, tiene un tenso diálogo en Chilevisión: “No sé si parece vocero de las autopistas o ministro de gobierno”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 12:34:00 -0300",
-      "url": "https://cambio21.cl/politica/critico-el-paro-presidente-de-camioneros-que-hizo-campana-y-voto-por-kast-sergio-perez-tiene-un-tenso-dialogo-en-chilevision-no-se-si-parece-vocero-de-las-autopistas-o-ministro-de-gobierno-6af3373123cbf57b43138a6c"
-    },
-    {
-      "title": "Paro de camioneros descolgados de grandes empresarios, taxistas, buses y No+TAG provoca cortes y alta congestión en el país: Principales rutas están afectadas por manifestación por alza desmedida de combustibles",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 12:05:35 -0300",
-      "url": "https://cambio21.cl/pais/paro-de-camioneros-descolgados-de-grandes-empresarios-taxistas-buses-y-no-tag-provoca-cortes-y-alta-congestion-en-el-pais-principales-rutas-estan-afectadas-por-manifestacion-por-alza-desmedida-de-combustibles-6af32ddf5375c96458264124"
-    },
-    {
-      "title": "A solo meses de dejar el gobierno, Kast designó a exministra Trinidad Steinert como agregada de seguridad en Paraguay. Se suma a Luis Gnecco como agregado en Londres",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 11:35:00 -0300",
-      "url": "https://cambio21.cl/politica/a-solo-meses-de-dejar-el-gobierno-kast-designo-a-exministra-trinidad-steinert-como-agregada-de-seguridad-en-paraguay-se-suma-a-luis-gnecco-como-agregado-en-londres-6af32b48b1d7090c4d1fd4c6"
-    },
-    {
-      "title": "Delegado de Kast Germán Codina advierte eventual uso de la fuerza ante paro de camioneros en la ruta 68, pero insiste en el diálogo",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 11:25:52 -0300",
-      "url": "https://cambio21.cl/pais/delegado-de-kast-german-codina-advierte-eventual-uso-de-la-fuerza-ante-paro-de-camioneros-en-la-ruta-68-pero-insiste-en-el-dialogo-6af3290ad994ed17426aafa4"
-    },
-    {
-      "title": "Camioneros se descuelgan de sus organizaciones e inician protestas en distintas zonas del país por el alza de los combustibles",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 02:01:03 -0300",
-      "url": "https://cambio21.cl/politica/camioneros-se-descuelgan-de-sus-organizaciones-e-inician-protestas-en-distintas-zonas-del-pais-por-el-alza-de-los-combustibles-6af2a43d5681f44fc256931b"
-    },
-    {
-      "title": "Confirman que ministro Rabat suspendió entrega de beneficios de rebajas de condena hasta definición de ley",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 01:40:37 -0300",
-      "url": "https://cambio21.cl/tendencias/confirman-que-ministro-rabat-suspendio-entrega-de-beneficios-de-rebajas-de-condena-hasta-definicion-de-ley-6af29fec0123ec7803184043"
-    },
-    {
-      "title": "La demagogia de prohibir lo que no se puede controlar",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 01:31:39 -0300",
-      "url": "https://cambio21.cl/tendencias/la-demagogia-de-prohibir-lo-que-no-se-puede-controlar-6af29c03915cfb46ec6d9846"
-    },
-    {
-      "title": "Editorial Cambio21. Del país triste, al gobierno fome y que Kast no es el líder que Chile necesita",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 10 Nov 2026 01:04:06 -0300",
-      "url": "https://cambio21.cl/politica/editorial-cambio21-del-pais-triste-al-gobierno-fome-y-que-kast-no-es-el-lider-que-chile-necesita-6af286f7498ead24b0611d7c"
-    },
-    {
-      "title": "Paul McCartney se convierte en multimillonario y el tercer cantante más rico del mundo",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 23:34:53 -0300",
-      "url": "https://cambio21.cl/tendencias/paul-mccartney-se-convierte-en-multimillonario-y-el-tercer-cantante-mas-rico-del-mundo-6af281f96a9e236fea2b0d84"
-    },
-    {
-      "title": "Cobran \"antigua factura\": Oposición no permite ingreso del director de Presupuesto a la Cámara. Los parlamentarios de Gobierno no permitían ingreso de la funcionaria del Gobierno de Boric",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Mon, 09 Nov 2026 18:31:12 -0300",
-      "url": "https://cambio21.cl/politica/cobran-antigua-factura-oposicion-no-permite-ingreso-del-director-de-presupuesto-a-la-camara-los-parlamentarios-de-gobierno-no-permitian-ingreso-de-la-funcionaria-del-gobierno-de-boric-6af23845601d7762fa2e6aa3"
-    },
-    {
-      "title": "Policía activo de la PDI se pasó en revoluciones: Es detenido por disparar al aire tras el título de Colo Colo",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 09 Nov 2026 18:11:04 -0300",
-      "url": "https://cambio21.cl/tendencias/policia-activo-de-la-pdi-se-paso-en-revoluciones-es-detenido-por-disparar-al-aire-tras-el-titulo-de-colo-colo-6af2363039123b1af1123923"
     }
   ]
 }
