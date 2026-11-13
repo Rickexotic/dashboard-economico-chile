@@ -1,7 +1,56 @@
 {
-  "lastUpdate": "2026-11-12 21:37 UTC",
+  "lastUpdate": "2026-11-13 00:00 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Oposición ingresa acusación constitucional contra ministro Fernando Rabat",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 12 Nov 2026 23:32:37 +0000",
+      "url": "https://www.theclinic.cl/2026/11/12/oposicion-ingresa-acusacion-constitucional-contra-ministro-fernando-rabat/"
+    },
+    {
+      "title": "La negociación contrarreloj que llevó a La Moneda a ceder ante los camioneros y desactivar el paro que amenazaba con opacar la gira de Kast por Asia",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 12 Nov 2026 23:24:34 +0000",
+      "url": "https://www.theclinic.cl/2026/11/12/la-negociacion-contrarreloj-que-llevo-a-la-moneda-a-ceder-ante-los-camioneros-y-desactivar-el-paro-que-amenazaba-con-opacar-la-gira-de-kast-por-asia/"
+    },
+    {
+      "title": "Credicorp: baja a 36% la proporción de chilenos que han podido ahorrar durante 2026",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 12 Nov 2026 23:00:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/12/credicorp-baja-a-36-la-proporcion-de-chilenos-que-han-podido-ahorrar-durante-2026/"
+    },
+    {
+      "title": "Docente acusa al Colegio Juanita de los Andes de excluirla de un reemplazo tras revelar que está casada con una mujer",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 12 Nov 2026 22:55:51 +0000",
+      "url": "https://www.theclinic.cl/2026/11/12/docente-acusa-al-colegio-juanita-de-los-andes-de-excluirla-de-un-reemplazo-tras-revelar-que-esta-casada-con-una-mujer/"
+    },
+    {
+      "title": "Enap anuncia la renuncia de su gerente general Julio Friedmann: dejará el cargo en febrero de 2027",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 12 Nov 2026 22:52:56 +0000",
+      "url": "https://www.theclinic.cl/2026/11/12/enap-anuncia-la-renuncia-de-su-gerente-general-julio-friedmann-dejara-el-cargo-en-febrero-de-2027/"
+    },
+    {
+      "title": "Óscar Landerretche cuestiona falta de estrategia de desarrollo en últimos gobiernos: “No estamos haciendo nada”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 12 Nov 2026 22:35:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/12/oscar-landerretche-estrategia-desarrollo-pinera-boric/"
+    },
+    {
+      "title": "Gobierno bajará $142 el diésel y divide a los camioneros: principales gremios anuncian fin a la movilizaciones, pero otros rechazan la propuesta",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Thu, 12 Nov 2026 21:53:35 +0000",
+      "url": "https://www.theclinic.cl/2026/11/12/gobierno-ofrece-bajar-142-diesel-pero-camioneros-del-norte-y-no-tag-rechazan-propuesta/"
+    },
     {
       "title": "La inesperada invitación de comerciantes porteños a José Antonio Neme luego de que tratara de “urinario nacional” a Valparaíso",
       "source": "The Clinic",
@@ -24,53 +73,32 @@
       "url": "https://www.theclinic.cl/2026/11/12/contraloria-rechaza-interpretacion-de-hacienda-y-senala-que-primer-aporte-al-fapp-debe-realizarse-en-2027/"
     },
     {
-      "title": "Honda CR-V 2028 (Gen 7): Todo lo que se sabe de la séptima generación que será 100 % híbrida en 2027",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 12 Nov 2026 20:55:21 +0000",
-      "url": "https://www.theclinic.cl/2026/11/12/honda-cr-v-2028-septima-generacion-hibrido/"
+      "title": "Gobierno logra acuerdo con camioneros del norte y centro-sur: Bajará precio del diésel en $142 hasta el 31 de marzo de 2027",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 12 Nov 2026 20:01:43 -0300",
+      "url": "https://cambio21.cl/pais/gobierno-logra-acuerdo-con-camioneros-del-norte-y-centro-sur-bajara-precio-del-diesel-en-142-hasta-el-31-de-marzo-de-2027-6af644d8a23c28137068d885"
     },
     {
-      "title": "Gobierno se defiende ante críticas por manejo de negociación con camioneros: “Me gustaría saber si en gobiernos anteriores vieron tanta claridad”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 12 Nov 2026 20:46:10 +0000",
-      "url": "https://www.theclinic.cl/2026/11/12/gobierno-se-defiende-ante-criticas-por-manejo-de-negociacion-con-camioneros-me-gustaria-saber-si-en-gobiernos-anteriores-vieron-tanta-claridad/"
+      "title": "Grandes empresarios de camiones -que no estaban en paro- anuncian acuerdo con el Gobierno: rebaja en el precio del diésel de $142 por litro",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 12 Nov 2026 19:23:49 -0300",
+      "url": "https://cambio21.cl/pais/grandes-empresarios-de-camiones-que-no-estaban-en-paro-anuncian-acuerdo-con-el-gobierno-rebaja-en-el-precio-del-diesel-de-142-por-litro-6af63aca67c30466565d11ff"
     },
     {
-      "title": "Alejandro Barros de la Cruz y el rescate de la memoria en ‘Entre los archivos II’: “La información escrita sigue siendo aún la más fiable y la más útil”",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 12 Nov 2026 20:45:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/12/alejandro-barros-de-la-cruz-y-el-rescate-de-la-memoria-en-entre-los-archivos-ii-la-informacion-escrita-sigue-siendo-aun-la-mas-fiable-y-la-mas-util/"
+      "title": "Papa León XIV dice en Perú que la violencia contra las mujeres sigue hiriendo a la humanidad y condena el machismo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 12 Nov 2026 18:50:27 -0300",
+      "url": "https://cambio21.cl/el-mundo/papa-leon-xiv-dice-en-peru-que-la-violencia-contra-las-mujeres-sigue-hiriendo-a-la-humanidad-y-condena-el-machismo-6af6344123c46c44b12af5c4"
     },
     {
-      "title": "“No abren nuestros CV”: La angustiante búsqueda de trabajo de Nancy, reflejo de adultos mayores que acumulan meses de desempleo",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Thu, 12 Nov 2026 20:35:50 +0000",
-      "url": "https://www.theclinic.cl/2026/11/12/no-abren-nuestros-cv-la-angustiante-busqueda-de-trabajo-de-nancy-reflejo-de-adultos-mayores-que-acumulan-meses-de-desempleo/"
-    },
-    {
-      "title": "El fin de un sueño eléctrico: por qué ni los millonarios quieren comprar el hiperdeportivo más rápido del mundo",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 12 Nov 2026 20:21:04 +0000",
-      "url": "https://www.theclinic.cl/2026/11/12/el-fin-de-un-sueno-electrico-por-que-ni-los-millonarios-quieren-comprar-el-hiperdeportivo-mas-rapido-del-mundo/"
-    },
-    {
-      "title": "“No anduve a 166 km/h. No se de dónde sacaron ese número”: La defensa de ‘Tío Tito’ tras ser detenido por Carabineros",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 12 Nov 2026 20:11:28 +0000",
-      "url": "https://www.theclinic.cl/2026/11/12/no-anduve-a-166-km-h-no-se-de-donde-sacaron-ese-numero-la-defensa-de-tio-tito-tras-ser-detenido-por-carabineros/"
-    },
-    {
-      "title": "“Santiago va a seguir paralizado”: Negociaciones por alza del combustible todavía no llegan a acuerdo y No + TAG rechaza deponer paro",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 12 Nov 2026 19:59:57 +0000",
-      "url": "https://www.theclinic.cl/2026/11/12/santiago-va-a-seguir-paralizado-negociaciones-por-alza-del-combustible-todavia-no-llegan-a-acuerdo-y-transportistas-rechazan-deponer-paro/"
+      "title": "Tesorería demandó por $149 millones a agrícola fundada por el principal asesor de Kast y jefe del Segundo Piso, Alejandro Irarrázaval",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Thu, 12 Nov 2026 18:42:15 -0300",
+      "url": "https://cambio21.cl/pais/tesoreria-demando-por-149-millones-a-agricola-fundada-por-el-principal-asesor-de-kast-y-jefe-del-segundo-piso-alejandro-irarrazaval-6af631d3242a5a71c738e4e3"
     },
     {
       "title": "“Este gobierno es bruto, ciego y sordo frente a la realidad. Salgan a la calle, despierten”. El candidato Kast llamando a protestar contra Boric y su Gobierno hace solo 3 años. Lo mismo hizo contra Piñera. El Presidente Kast estaría indignado contra ese candidato. Lea los tuits",
@@ -183,34 +211,6 @@
       "category": "politica",
       "published": "Wed, 11 Nov 2026 18:37:42 -0300",
       "url": "https://cambio21.cl/politica/con-paro-de-transportes-y-las-rutas-y-caminos-cortados-gobierno-confirma-sexta-fuerte-alza-consecutiva-de-combustibles-diesel-subira-casi-42-este-jueves-6af4df667e80375b4466ac13"
-    },
-    {
-      "title": "Máximo Pacheco contraataca y acusa \"campaña de desprestigio\" del gobierno para vender Codelco \"a vil precio\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 11 Nov 2026 18:20:11 -0300",
-      "url": "https://cambio21.cl/tendencias/maximo-pacheco-contraataca-y-acusa-campana-de-desprestigio-del-gobierno-para-vender-codelco-a-vil-precio-6af4d9618069d0363e217b86"
-    },
-    {
-      "title": "Ministro Rabat entregó la primera partida de 309 decretos que él mismo firmó y que rebajaron las penas de pedófilos, pederastas y otros delincuentes",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 11 Nov 2026 18:01:08 -0300",
-      "url": "https://cambio21.cl/pais/ministro-rabat-entrego-la-primera-partida-de-309-decretos-que-el-mismo-firmo-y-que-rebajaron-las-penas-de-pedofilos-pederastas-y-otros-delincuentes-6af4d6ef8069d0363e217b83"
-    },
-    {
-      "title": "La Moneda en situación comprometida: Camiones de todo tipo, entre ellos los que retiran basura, taxis, grúas, autos, motos, buses urbanos e interurbanos, vehículos especiales: Paro de transportistas sigue aumentando y se pliegan otras organizaciones",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 11 Nov 2026 14:20:19 -0300",
-      "url": "https://cambio21.cl/pais/la-moneda-en-situacion-comprometida-camiones-de-todo-tipo-entre-ellos-los-que-retiran-basura-taxis-gruas-autos-motos-buses-urbanos-e-interurbanos-vehiculos-especiales-paro-de-transportistas-sigue-aumentando-y-se-pliegan-otras-organizaciones-6af49ebafbe89f4532782ef4"
-    },
-    {
-      "title": "Todo mal: Kast entre los tres mandatarios peor evaluados de América en ranking mensual de presidentes. La mejor es la presidenta de México, Claudia Sheinbaum",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 11 Nov 2026 13:51:46 -0300",
-      "url": "https://cambio21.cl/politica/todo-mal-kast-entre-los-tres-mandatarios-peor-evaluados-de-america-en-ranking-mensual-de-presidentes-la-mejor-es-la-presidenta-de-mexico-claudia-sheinbaum-6af49b9e0f490d109504fd73"
     }
   ]
 }
