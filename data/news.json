@@ -1,76 +1,111 @@
 {
-  "lastUpdate": "2026-11-18 19:14 UTC",
+  "lastUpdate": "2026-11-18 22:24 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "“Existe libre mercado, pero también hay límites”: Diputado denuncia alza de pasajes de avión de hasta $500 mil de Calama a Santiago por final de Cobreloa",
+      "title": "CMF denuncia ante el Ministerio Público a cuatro entidades que ofrecen créditos por presuntas estafas, extorsión y cobros usureros",
       "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 22:11:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/cmf-denuncia-ante-el-ministerio-publico-a-cuatro-entidades-que-ofrecen-creditos-por-presuntas-estafas-extorsion-y-cobros-usureros/"
+    },
+    {
+      "title": "“Un lugar único e intransferible por persona”: El nuevo sistema de Ticketplus para evitar filas virtuales desde varios dispositivos",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 21:50:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/un-lugar-unico-e-intransferible-por-persona-el-nuevo-sistema-de-ticketplus-para-evitar-filas-virtuales-desde-varios-dispositivos/"
+    },
+    {
+      "title": "Ola de renuncias en el cuarto trimestre: ya suman cuatro los ejecutivos top que han optado por dejar sus cargos en grandes empresas",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 21:40:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/ola-de-renuncias-en-el-cuarto-trimestre-ya-suman-cuatro-los-ejecutivos-top-que-han-optado-por-dejar-sus-cargos-en-grandes-empresas/"
+    },
+    {
+      "title": "Lo mató por atropellar un perro que ni siquiera era suyo: los nuevos antecedentes del crimen que remece a Toltén",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 21:35:11 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/lo-mato-por-atropellar-un-perro-que-ni-siquiera-era-suyo-los-nuevos-antecedentes-del-crimen-que-remece-a-tolten/"
+    },
+    {
+      "title": "Buinzoo prepara parque inmersivo de 15 hectáreas inspirada en Disney: una sabana africana, alojamiento con vista a jirafas y hasta un río navegable",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 21:30:59 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/buinzoo-prepara-parque-inmersivo-de-15-hectareas-inspirada-en-disney-tendra-safari-africano-alojamiento-con-vista-a-jirafas-y-un-rio-navegable/"
+    },
+    {
+      "title": "La receta contra el colapso: cómo los centros Áncora UC redujeron en 70% las urgencia en Puente Alto y La Pintana",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 21:16:58 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/la-receta-contra-el-colapso-como-los-centros-ancora-uc-redujeron-en-70-las-urgencia-en-puente-alto-y-la-pintana/"
+    },
+    {
+      "title": "Daniela Serrano (PC) sobre acusación contra Rabat: “Los parlamentarios tendrán que dar una explicación de cómo van a votar”",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 21:15:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/daniela-serrano-pc-sobre-acusacion-contra-rabat-los-parlamentarios-tendran-que-dar-una-explicacion-de-como-van-a-votar/"
+    },
+    {
+      "title": "De Marilyn Monroe a Timothée Chalamet: revisa el listado de “Las 100 mejores estrellas de cine de todos los tiempos” según Variety",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 21:04:11 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/de-marilyn-monroe-a-timothee-chalamet-revisa-el-listado-de-las-100-mejores-estrellas-de-cine-de-todos-los-tiempos-segun-variety/"
+    },
+    {
+      "title": "Metro tendrá consultas médicas gratuitas en dos estaciones hasta fin de año: quiénes pueden acceder y cómo agendar",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 20:50:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/metro-tendra-consultas-medicas-gratuitas-en-dos-estaciones-hasta-fin-de-ano-quienes-pueden-acceder-y-como-agendar/"
+    },
+    {
+      "title": "Solo el 24% de los chilenos declara confiar en el periodismo según estudio de la Asociación Mundial de Mujeres Periodistas",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 20:37:17 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/solo-el-24-de-los-chilenos-declara-confiar-en-el-periodismo-segun-estudio-de-la-asociacion-mundial-de-mujeres-periodistas/"
+    },
+    {
+      "title": "Región del Biobío cumple el objetivo y es elegida sede de los Juegos Suramericanos 2030",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 18 Nov 2026 17:58:24 -0300",
+      "url": "https://cambio21.cl/deportes/region-del-biobio-cumple-el-objetivo-y-es-elegida-sede-de-los-juegos-suramericanos-2030-6afe10fb7508ad049624b2cf"
+    },
+    {
+      "title": "Violación grupal a joven mujer en Rapa Nui: Arraigo nacional para seis funcionarios de la Armada por obstrucción a la justicia. Ya hay cuatro marinos presos",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 18 Nov 2026 17:42:06 -0300",
+      "url": "https://cambio21.cl/tendencias/violacion-grupal-a-joven-mujer-en-rapa-nui-arraigo-nacional-para-seis-funcionarios-de-la-armada-por-obstruccion-a-la-justicia-ya-hay-cuatro-marinos-presos-6afe0ccb7508ad049624b2cb"
+    },
+    {
+      "title": "De los más malos de América: Chile sale del top 50 del Ranking FIFA tras cerrar el año sin triunfos",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 18 Nov 2026 17:34:20 -0300",
+      "url": "https://cambio21.cl/deportes/de-los-mas-malos-de-america-chile-sale-del-top-50-del-ranking-fifa-tras-cerrar-el-ano-sin-triunfos-6afe0b0d41952136c86cb695"
+    },
+    {
+      "title": "Corte Suprema \"apura\" a ministro Rabat decidir \"a la brevedad\" si rebajará pena a pederasta condenado por violación de menor",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 18 Nov 2026 17:09:33 -0300",
+      "url": "https://cambio21.cl/pais/corte-suprema-apura-a-ministro-rabat-decidir-a-la-brevedad-si-rebajara-pena-a-pederasta-condenado-por-violacion-de-menor-6afe051a51c17b3118441be8"
+    },
+    {
+      "title": "Kast y Keiko Fujimori acuerdan gabinete binacional con Perú en 2027 para fortalecer comercio e inversión",
+      "source": "Cambio21",
       "category": "mercados",
-      "published": "Wed, 18 Nov 2026 18:50:23 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/existe-libre-mercado-pero-tambien-hay-limites-diputado-denuncia-alza-de-pasajes-de-avion-de-hasta-500-mil-de-calama-a-santiago-por-final-de-cobreloa/"
-    },
-    {
-      "title": "Director del Museo Nacional de Bellas Artes de Argentina aterriza en Chile con conversación sobre las contradicciones del arte actual",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 18:28:14 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/director-del-museo-nacional-de-bellas-artes-de-argentina-aterriza-en-chile-con-conversacion-sobre-las-contradicciones-del-arte-actual/"
-    },
-    {
-      "title": "Cámara de Diputados aprueba proyecto de Sala Cuna Universal y lo despacha al Senado",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 18:24:35 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/camara-de-diputados-aprueba-proyecto-de-sala-cuna-universal-y-lo-despacha-al-senado/"
-    },
-    {
-      "title": "Hombre acusado de matar a adolescente de 15 años en Toltén queda en prisión preventiva: Mascota atropellada previo al crimen sobrevivió",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 17:40:10 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/hombre-acusado-de-matar-a-adolescente-de-15-anos-en-tolten-queda-en-prision-preventiva-mascota-atropellada-previo-al-crimen-sobrevivio/"
-    },
-    {
-      "title": "La decisión de Elizalde que mantiene en suspenso la elección interna del PS y los nombres a la espera de su definición",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 17:19:26 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/la-decision-de-elizalde-que-mantiene-en-suspenso-la-eleccion-interna-del-ps-y-los-nombres-a-la-espera-de-su-definicion/"
-    },
-    {
-      "title": "Exportaciones récord y desplome bursátil: el dilema de los fabricantes de autos chinos que pierden US$ 270 mil millones",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 16:57:47 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/exportaciones-autos-chinos-pierden-valor-mercado/"
-    },
-    {
-      "title": "Acuerdo con OpenAI, críticas al vocero y despido de funcionarios: las polémicas que tienen a Lincolao nuevamente en el centro de los cuestionamientos",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 16:55:10 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/acuerdo-con-openai-criticas-al-vocero-y-despido-de-funcionarios-las-polemicas-que-tienen-a-lincolao-nuevamente-en-el-centro-de-los-cuestionamientos/"
-    },
-    {
-      "title": "El incómodo momento del Presidente Kast con un robot en China",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 16:41:33 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/el-incomodo-momento-del-presidente-kast-con-un-robot-en-china/"
-    },
-    {
-      "title": "Investigan muerte de paciente de 50 años mientras se realizaba un estudio del sueño en el Hospital de Puerto Montt",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 16:28:48 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/investigan-muerte-de-paciente-de-50-anos-mientras-se-realizaba-un-estudio-del-sueno-en-el-hospital-de-puerto-montt/"
-    },
-    {
-      "title": "El objetivo de los republicanos de ser el partido más “gobiernista” del oficialismo en el peor momento de Kast en encuestas",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 16:16:58 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/el-objetivo-de-los-republicanos-de-ser-el-partido-mas-gobiernista-del-oficialismo-en-el-peor-momento-de-kast-en-encuestas/"
+      "published": "Wed, 18 Nov 2026 16:53:35 -0300",
+      "url": "https://cambio21.cl/tendencias/kast-y-keiko-fujimori-acuerdan-gabinete-binacional-con-peru-en-2027-para-fortalecer-comercio-e-inversion-6afe017751c17b3118441be3"
     },
     {
       "title": "Ministro Quiroz retrocede ante amenaza de acusación constitucional: Asegura que el Fondo Autónomo de Protección Previsional tendrá asignación para el próximo año",
@@ -176,41 +211,6 @@
       "category": "politica",
       "published": "Tue, 17 Nov 2026 18:32:15 -0300",
       "url": "https://cambio21.cl/pais/vocero-arenas-se-disculpo-con-el-pdg-por-decir-que-no-son-partido-sino-un-cumulo-de-deseos-le-respondieron-de-inmediato-es-mejor-que-vuelva-mara-sedini-y-flor-de-vocero-6afcc51aa8b54844c525aa83"
-    },
-    {
-      "title": "Partido Socialista en la dura: Critica gestión del Gobierno y exige renuncias \"inmediatas\" de ministros Quiroz y Rabat. \"Este gobierno no gobierna\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 17 Nov 2026 18:05:23 -0300",
-      "url": "https://cambio21.cl/politica/partido-socialista-en-la-dura-critica-gestion-del-gobierno-y-exige-renuncias-inmediatas-de-ministros-quiroz-y-rabat-este-gobierno-no-gobierna-6afcc01b398022012a44ee53"
-    },
-    {
-      "title": "Las peleas entre ministros y subsecretarios de Kast no se detienen: al round entre Lincolao y Rossi se unen la de Jorge Quiroz contra Jaime Campos",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 17 Nov 2026 15:02:39 -0300",
-      "url": "https://cambio21.cl/politica/las-peleas-entre-ministros-y-subsecretarios-de-kast-no-se-detienen-al-round-entre-lincolao-y-rossi-se-unen-la-de-jorge-quiroz-contra-jaime-campos-6afc87b403c9ce5c4174e813"
-    },
-    {
-      "title": "Justicia después de 53 años: Condenan a presidio perpetuo a excoronel del Ejército por crímenes de 17 campesinos en matanza de Chihuío, Futrono. También fue procesado general (R) y senador designado Santiago Sinclair, pero quedó impune por fallecimiento",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 17 Nov 2026 12:34:21 -0300",
-      "url": "https://cambio21.cl/pais/justicia-despues-de-53-anos-condenan-a-presidio-perpetuo-a-excoronel-del-ejercito-por-crimenes-de-17-campesinos-en-matanza-de-chihuio-futrono-tambien-fue-procesado-general-r-y-senador-designado-santiago-sinclair-pero-quedo-impune-por-fallecimiento-6afc6f8c4b0bd07dc939d76f"
-    },
-    {
-      "title": "¿Por qué en el hurling está prohibido lanzar la pelota directamente con la mano?",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 17 Nov 2026 12:02:08 -0300",
-      "url": "https://cambio21.cl/deportes/por-que-en-el-hurling-esta-prohibido-lanzar-la-pelota-directamente-con-la-mano-6afc647e13d3df520f0587d5"
-    },
-    {
-      "title": "Excandidato presidencial Franco Parisi responde a criticas de vocero Arenas y acusa \"matonaje del poderoso transitorio\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 17 Nov 2026 11:25:17 -0300",
-      "url": "https://cambio21.cl/politica/excandidato-presidencial-franco-parisi-responde-a-criticas-de-vocero-arenas-y-acusa-matonaje-del-poderoso-transitorio-6afc618161529b360712e978"
     }
   ]
 }
