@@ -1,7 +1,14 @@
 {
-  "lastUpdate": "2026-11-18 22:24 UTC",
+  "lastUpdate": "2026-11-19 01:01 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Enap actualiza tarifa de los combustibles tras aprobarse proyecto de ley que frena sus precios: la de 93 bajará $38 y el diésel $141",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 18 Nov 2026 23:33:14 +0000",
+      "url": "https://www.theclinic.cl/2026/11/18/enap-actualiza-tarifa-de-los-combustibles-tras-aprobarse-proyecto-de-ley-que-frena-sus-precios-la-de-93-bajara-38-y-el-diesel-141/"
+    },
     {
       "title": "CMF denuncia ante el Ministerio Público a cuatro entidades que ofrecen créditos por presuntas estafas, extorsión y cobros usureros",
       "source": "The Clinic",
@@ -66,11 +73,18 @@
       "url": "https://www.theclinic.cl/2026/11/18/metro-tendra-consultas-medicas-gratuitas-en-dos-estaciones-hasta-fin-de-ano-quienes-pueden-acceder-y-como-agendar/"
     },
     {
-      "title": "Solo el 24% de los chilenos declara confiar en el periodismo según estudio de la Asociación Mundial de Mujeres Periodistas",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Wed, 18 Nov 2026 20:37:17 +0000",
-      "url": "https://www.theclinic.cl/2026/11/18/solo-el-24-de-los-chilenos-declara-confiar-en-el-periodismo-segun-estudio-de-la-asociacion-mundial-de-mujeres-periodistas/"
+      "title": "Diputadas de oposición abandonan Comisión de la Mujer en rechazo a ministro Rabat: Lo califican de “interlocutor no válido”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 18 Nov 2026 19:35:03 -0300",
+      "url": "https://cambio21.cl/politica/diputadas-de-oposicion-abandonan-comision-de-la-mujer-en-rechazo-a-ministro-rabat-lo-califican-de-interlocutor-no-valido-6afe27afa16d371b6c7e6df3"
+    },
+    {
+      "title": "ENAP confirma baja de $38 por litro de las bencinas y $141 para el diésel",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Wed, 18 Nov 2026 19:24:12 -0300",
+      "url": "https://cambio21.cl/pais/enap-confirma-baja-de-38-por-litro-de-las-bencinas-y-141-para-el-diesel-6afe2538c8d15c11994ca5d4"
     },
     {
       "title": "Región del Biobío cumple el objetivo y es elegida sede de los Juegos Suramericanos 2030",
@@ -197,20 +211,6 @@
       "category": "politica",
       "published": "Tue, 17 Nov 2026 18:56:09 -0300",
       "url": "https://cambio21.cl/pais/contraloria-detecta-a-mas-de-300-funcionarios-publicos-con-condenas-por-delitos-6afccd2b0532696f714c4c66"
-    },
-    {
-      "title": "Gobierno quiere prohibir bonos y publicidad de apuestas online",
-      "source": "Cambio21",
-      "category": "mercados",
-      "published": "Tue, 17 Nov 2026 18:39:19 -0300",
-      "url": "https://cambio21.cl/tendencias/gobierno-quiere-prohibir-bonos-y-publicidad-de-apuestas-online-6afad3fc40ccc74adb352f25"
-    },
-    {
-      "title": "Vocero Arenas se disculpó con el PDG por decir que no son partido sino \"un cúmulo de deseos\". Le respondieron de inmediato: \"Es mejor que vuelva Mara Sedini\" y \"flor de vocero\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Tue, 17 Nov 2026 18:32:15 -0300",
-      "url": "https://cambio21.cl/pais/vocero-arenas-se-disculpo-con-el-pdg-por-decir-que-no-son-partido-sino-un-cumulo-de-deseos-le-respondieron-de-inmediato-es-mejor-que-vuelva-mara-sedini-y-flor-de-vocero-6afcc51aa8b54844c525aa83"
     }
   ]
 }
