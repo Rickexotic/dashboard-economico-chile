@@ -1,76 +1,160 @@
 {
-  "lastUpdate": "2026-11-24 04:13 UTC",
+  "lastUpdate": "2026-11-24 20:59 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Diputados envían a Comisión Mixta el proyecto de Presupuesto para 2027",
+      "title": "Dirigente estudiantil quedó inconsciente tras ser golpeado con un palo por encapuchados: Usach extrema medidas de seguridad y endurece ingresos al campus",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 24 Nov 2026 20:44:27 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/dirigente-estudiantil-quedo-inconsciente-tras-ser-golpeado-con-un-palo-por-encapuchados-usach-extrema-medidas-de-seguridad-y-endurece-ingresos-al-campus/"
+    },
+    {
+      "title": "De los caballos de fuerza al poder de fuego: cómo Japón reconvierte a sus proveedores automotrices para fabricar drones militares",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 24 Nov 2026 20:31:26 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/drones-militares-en-japon-proveedores-autos/"
+    },
+    {
+      "title": "“El verdadero indicador de la recesión, EGLO apagado”: Cadena de lámparas explica la razón  detrás de la medida y anuncia cambios en su modelo de negocio",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Tue, 24 Nov 2026 02:05:34 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/diputados-envian-a-comision-mixta-el-proyecto-de-presupuesto-para-2027/"
+      "published": "Tue, 24 Nov 2026 20:20:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/el-verdadero-indicador-de-la-recesion-eglo-apagado-cadena-de-lamparas-explica-la-razon-detras-de-la-medida-y-anuncia-cambios-en-su-modelo-de-negocio/"
     },
     {
-      "title": "Vendía un caimán en $750 mil y lo habría arrojado al W.C. cuando llegó la PDI a su casa: Hombre detenido por contrabando de especies exóticas en Hualpén",
+      "title": "Proyecto Parque Cerros de Renca avanza: cierra la recepción de ofertas para la construcción de senderos y del mirador más alto de toda la RM",
       "source": "The Clinic",
       "category": "general",
-      "published": "Tue, 24 Nov 2026 01:40:06 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/vendia-un-caiman-en-750-mil-y-lo-habria-arrojado-al-w-c-cuando-llego-la-pdi-a-su-casa-hombre-detenido-por-contrabando-de-especies-exoticas-en-hualpen/"
+      "published": "Tue, 24 Nov 2026 20:20:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/proyecto-parque-cerros-de-renca-avanza-cierra-la-recepcion-de-ofertas-para-la-construccion-de-senderos-y-del-mirador-mas-alto-de-toda-la-rm/"
     },
     {
-      "title": "El caso de los colombianos que desaparecieron en Casablanca y cuyos cuerpos habrían sido encontrados con signos de desmembramiento",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 24 Nov 2026 00:19:48 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/el-caso-de-los-colombianos-que-desaparecieron-en-casablanca-y-cuyos-cuerpos-habrian-sido-encontrados-con-signos-de-desmembramiento/"
-    },
-    {
-      "title": "Quién es Christopher Espejo: el joven de 26 años diagnosticado con epilepsia cuya desaparición mantiene en vilo a Paihuano",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 23 Nov 2026 23:18:05 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/quien-es-christopher-espejo-el-joven-de-26-anos-diagnosticado-con-epilepsia-cuya-desaparicion-mantiene-en-vilo-a-paihuano/"
-    },
-    {
-      "title": "Lo que hay detrás del giro de Juan Luis Castro por el caso Firmas: cómo pasó de apuntar a Vodanovic a asumir la responsabilidad",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 23 Nov 2026 21:55:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/lo-que-hay-detras-del-giro-castro-por-el-caso-firmas-como-paso-apuntar-a-vodanovic-a-asumir-la-responsabilidad/"
-    },
-    {
-      "title": "Profesores salen a la calle este martes contra los recortes en Educación: a qué hora será la marcha y qué pasará en los colegios con el paro",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 23 Nov 2026 21:51:40 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/profesores-salen-a-la-calle-este-martes-contra-los-recortes-en-educacion-a-que-hora-sera-la-marcha-y-que-pasara-en-los-colegios-con-el-paro/"
-    },
-    {
-      "title": "Viña Concha y Toro amplía su foco de negocios y del vino pasa a los snacks de uva",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 23 Nov 2026 21:37:22 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/vina-concha-y-toro-amplia-su-foco-de-negocios-y-del-vino-pasa-a-los-snacks-de-uva/"
-    },
-    {
-      "title": "Estudio CEPI U. Central: Prioridades de los chilenos da giro, economía desplaza a migración y crece rechazo a alineamientos internacionales",
+      "title": "Los US$105 millones que contempla el Presupuesto 2027 para vehículos: qué se comprará y qué instituciones recibirán más recursos",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Mon, 23 Nov 2026 21:29:49 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/ucen-encuesta-economia-chilenos-prioridades/"
+      "published": "Tue, 24 Nov 2026 20:07:07 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/los-us105-millones-que-contempla-el-presupuesto-2027-para-vehiculos-que-se-comprara-y-que-instituciones-recibiran-mas-recursos/"
     },
     {
-      "title": "Corte de Santiago condena al fisco a pagar $53 millones a familiares de reo que falleció en Colina II tras una riña en 2018",
+      "title": "El repliegue de Arenas en la controversia por el buque Danstar y el traslado de las vocerías del caso a la Cancillería",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 23 Nov 2026 21:22:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/corte-de-santiago-condena-al-fisco-a-pagar-53-millones-a-familiares-de-reo-que-fallecio-en-colina-ii-tras-una-rina-en-2018/"
+      "published": "Tue, 24 Nov 2026 19:54:04 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/el-repliegue-de-arenas-en-la-controversia-por-el-buque-danstar-y-el-traslado-de-las-vocerias-del-caso-a-la-cancilleria/"
     },
     {
-      "title": "Claro VTR es la compañía que más reduce sus reclamos según informe Subtel al primer semestre 2026",
+      "title": "Contraloría descarta reparos a la licitación del Festival de la Patagonia y concejo de Coyhaique votará este jueves la única oferta",
       "source": "The Clinic",
       "category": "general",
-      "published": "Mon, 23 Nov 2026 21:16:22 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/claro-vtr-reclamos-2026/"
+      "published": "Tue, 24 Nov 2026 19:46:59 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/festival-de-la-patagonia-contraloria-licitacion-coyhaique-mega/"
+    },
+    {
+      "title": "El precio del PPD para superar el caso Firmas: disculpas públicas de Castro, revisar su continuidad como jefe del comité y una compensación del PS",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 24 Nov 2026 19:40:42 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/e-precio-del-ppd-para-superar-el-caso-firmas-disculpas-publicas-de-castro-revisar-su-continuidad-como-jefe-del-comite-y-una-compensacion-del-ps/"
+    },
+    {
+      "title": "Barricadas, bombas molotov y enfrentamientos con Carabineros: los incidentes que marcaron la marcha de profesores en Santiago",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 24 Nov 2026 19:34:52 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/barricadas-bombas-molotov-y-enfrentamientos-con-carabineros-los-incidentes-que-marcaron-la-marcha-de-profesores-en-santiago/"
+    },
+    {
+      "title": "El iPhone Duo tendrá un nuevo competidor en Chile: Huawei lanzará el Pura X Max",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Tue, 24 Nov 2026 19:19:26 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/huawei-pura-x-max-chile/"
+    },
+    {
+      "title": "Declaran culpables a siete acusados por provocar megaincendio en Viña del Mar y Quilpué que provocó 138 muertos y miles de casas carbonizadas: los otros dos quedaron absueltos. Los 9 nombres",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 17:41:05 -0300",
+      "url": "https://cambio21.cl/pais/declaran-culpables-a-siete-acusados-por-provocar-megaincendio-en-vina-del-mar-y-quilpue-que-provoco-138-muertos-y-miles-de-casas-carbonizadas-los-otros-dos-quedaron-absueltos-los-9-nombres-6b05f5eb62f6b122046e17f5"
+    },
+    {
+      "title": "Senador Fidel Espinoza (PS) arremete contra vocero de Kast, Gonzalo Arenas y acusa que “le hace daño al Gobierno”: “Es un torpe”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 16:17:36 -0300",
+      "url": "https://cambio21.cl/politica/senador-fidel-espinoza-ps-arremete-contra-vocero-de-kast-gonzalo-arenas-y-acusa-que-le-hace-dano-al-gobierno-es-un-torpe-6b05e241e66d6b40dc0b0533"
+    },
+    {
+      "title": "Positivo precedente para industria de casinos: Dirección del Trabajo garantiza continuidad laboral ante cambio de operador en Talca",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 15:19:21 -0300",
+      "url": "https://cambio21.cl/tendencias/positivo-precedente-para-industria-de-casinos-direccion-del-trabajo-garantiza-continuidad-laboral-ante-cambio-de-operador-en-talca-6b05d4623daa8b227208c713"
+    },
+    {
+      "title": "Expresidente brasileño Jair Bolsonaro es ingresado en la UCI. Cumple condena de 27 años por intento de golpe de Estado",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 13:59:02 -0300",
+      "url": "https://cambio21.cl/el-mundo/expresidente-brasileno-jair-bolsonaro-es-ingresado-en-la-uci-cumple-condena-de-27-anos-por-intento-de-golpe-de-estado-6b05c0e7eb96725cbf16cbd7"
+    },
+    {
+      "title": "Exministro Nicolás Eyzaguirre y la muerte de su madre Delfina Guzmán: “El país merece despedirla\". Decretan duelo oficial por su fallecimiento",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 12:57:44 -0300",
+      "url": "https://cambio21.cl/pais/exministro-nicolas-eyzaguirre-y-la-muerte-de-su-madre-delfina-guzman-el-pais-merece-despedirla-decretan-duelo-oficial-por-su-fallecimiento-6b05b18ed0027f4edf1d6bed"
+    },
+    {
+      "title": "Vocero de gobierno acusó “decadencia” del PS: “No sé si por temor a que el Frente Amplio, el PC, le sigan quitando votos o no”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 12:45:40 -0300",
+      "url": "https://cambio21.cl/politica/vocero-de-gobierno-acuso-decadencia-del-ps-no-se-si-por-temor-a-que-el-frente-amplio-el-pc-le-sigan-quitando-votos-o-no-6b05b0bc4b55630a911953f8"
+    },
+    {
+      "title": "VIDEO impresionante. En Argentina, el país del asado, ahora venden palomas. Grave crisis económica provoca que carnicerías comiencen a vender carne de \"pichón\". Antes vendían carne de burro",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 12:27:15 -0300",
+      "url": "https://cambio21.cl/tendencias/video-impresionante-en-argentina-el-pais-del-asado-ahora-venden-palomas-grave-crisis-economica-provoca-que-carnicerias-comiencen-a-vender-carne-de-pichon-antes-vendian-carne-de-burro-6b05a75c87e3e75a2a569f33"
+    },
+    {
+      "title": "Derechista Alberto Núñez Feijóo y su delgada línea: enfrentar al socialista Pedro Sánchez sin abrazar a la extrema derecha de Abascal",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 10:42:57 -0300",
+      "url": "https://cambio21.cl/el-mundo/derechista-alberto-nunez-feijoo-y-su-delgada-linea-enfrentar-al-socialista-pedro-sanchez-sin-abrazar-a-la-extrema-derecha-de-abascal-6b0593327cc3c06dff41dbfe"
+    },
+    {
+      "title": "Papa Francisco escribió que vio al diablo luego su viaje a nuestro país: \"No puedo olvidar sus ojos...\". \"Me costó asumir lo de Chile, (abusos sexuales de sacerdotes) no pensé que fuera tan grave”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 10:25:58 -0300",
+      "url": "https://cambio21.cl/pais/papa-francisco-escribio-que-vio-al-diablo-luego-su-viaje-a-nuestro-pais-no-puedo-olvidar-sus-ojos-me-costo-asumir-lo-de-chile-abusos-sexuales-de-sacerdotes-no-pense-que-fuera-tan-grave-6b058f9bb9746733181d4114"
+    },
+    {
+      "title": "VIDEO. Muere a los 98 años reconocida actriz Delfina Guzmán, ícono del teatro, cine y la TV. Una mujer con gran compromiso social y político que desafió a la dictadura desde la cultura",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 09:40:06 -0300",
+      "url": "https://cambio21.cl/pais/video-muere-a-los-98-anos-reconocida-actriz-delfina-guzman-icono-del-teatro-cine-y-la-tv-una-mujer-con-gran-compromiso-social-y-politico-que-desafio-a-la-dictadura-desde-la-cultura-6b05844fe62508615a541183"
+    },
+    {
+      "title": "Goleador de la U Eduardo Vargas será operado por una fractura: Estos son los partidos que se perderá",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 02:13:11 -0300",
+      "url": "https://cambio21.cl/deportes/goleador-de-la-u-eduardo-vargas-sera-operado-por-una-fractura-estos-son-los-partidos-que-se-perdera-6b051c32f035b17a3b74f814"
+    },
+    {
+      "title": "“El sexo vende”: Trump minimiza las aventuras amorosas de Jensen Huang tras su regreso al gigante tecnológico Nvidia",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 01:28:57 -0300",
+      "url": "https://cambio21.cl/el-mundo/el-sexo-vende-trump-minimiza-las-aventuras-amorosas-de-jensen-huang-tras-su-regreso-al-gigante-tecnologico-nvidia-6b050eab424a560c6058abb5"
     },
     {
       "title": "Irán propina 74 latigazos a la cantante Parastoo Ahmadi por dar un concierto en YouTube sin velo",
@@ -127,90 +211,6 @@
       "category": "politica",
       "published": "Mon, 23 Nov 2026 15:14:15 -0300",
       "url": "https://cambio21.cl/politica/kast-nuevamente-se-pone-plazos-se-fija-100-dias-para-mostrar-resultados-de-su-gobierno-vamos-a-rendir-cuentas-el-11-de-marzo-6b047c7e8be15f06902634b3"
-    },
-    {
-      "title": "Gigante tecnológica Nvidia restituye a Jensen Huang como director ejecutivo y presidente tras escándalo por infidelidad con supuesta espía china",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 23 Nov 2026 14:39:24 -0300",
-      "url": "https://cambio21.cl/tendencias/gigante-tecnologica-nvidia-restituye-a-jensen-huang-como-director-ejecutivo-y-presidente-tras-escandalo-por-infidelidad-con-supuesta-espia-china-6b04799c11eb6f2e956d4c06"
-    },
-    {
-      "title": "“Yo soy responsable”: Senador Juan Luis Castro (PS) reconoce error y descarta delito “como una falsificación de firmas”",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 23 Nov 2026 12:30:00 -0300",
-      "url": "https://cambio21.cl/politica/yo-soy-responsable-senador-juan-luis-castro-ps-reconoce-error-y-descarta-delito-como-una-falsificacion-de-firmas-6b0459f3fa80e8127077ec45"
-    },
-    {
-      "title": "Líderes de centroizquierda proponen un nuevo compromiso histórico para Chile",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 23 Nov 2026 10:58:32 -0300",
-      "url": "https://cambio21.cl/politica/lideres-de-centroizquierda-proponen-un-nuevo-compromiso-historico-para-chile-6b044597ef462d35505d4285"
-    },
-    {
-      "title": "Renuncias con elástico: seremi de Salud y directora del Senama del partido Cristiano retiran sus renuncias en Biobío",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 23 Nov 2026 10:08:21 -0300",
-      "url": "https://cambio21.cl/pais/renuncias-con-elastico-seremi-de-salud-y-directora-del-senama-del-partido-cristiano-retiran-sus-renuncias-en-biobio-6b043930c7f0006a6550fbf5"
-    },
-    {
-      "title": "Encuesta señala que Fernando Rabat es el ministro peor evaluado (24%) y ministra de Salud May Chomali encabeza la aprobación (55%)",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 23 Nov 2026 02:03:04 -0300",
-      "url": "https://cambio21.cl/politica/encuesta-senala-que-fernando-rabat-es-el-ministro-peor-evaluado-24-y-ministra-de-salud-may-chomali-encabeza-la-aprobacion-55-6b03c7d0a3d17b7afb392943"
-    },
-    {
-      "title": "VIDEO de los goles. Colo Colo goleó 3-0 a U. Católica con hat-trick de su delantero Romero, que reemplazó a Correa",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Mon, 23 Nov 2026 00:28:42 -0300",
-      "url": "https://cambio21.cl/deportes/video-de-los-goles-colo-colo-goleo-3-0-a-u-catolica-con-hat-trick-de-su-delantero-romero-que-reemplazo-a-correa-6b03ae79732403455c6fc113"
-    },
-    {
-      "title": "Senador Araya (PPD) niega venganza política por firma de senadora que andaba de gira con Kast. Pide que Fiscalía y senado investiguen a senadores Castro y Vodanovic, ambos socialistas",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 15:59:18 -0300",
-      "url": "https://cambio21.cl/politica/senador-araya-ppd-niega-venganza-politica-por-firma-de-senadora-que-andaba-de-gira-con-kast-pide-que-fiscalia-y-senado-investiguen-a-senadores-castro-y-vodanovic-ambos-socialistas-6b0339b578ee992f6a277523"
-    },
-    {
-      "title": "Todo viene de vuelta: Trump se revuelca en gigantesca derrota y es mensaje para la ultra derecha: Conteo final, Demócratas aseguran 258 escaños en Cámara de EEUU, la mayoría más amplia desde 1992",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 15:44:10 -0300",
-      "url": "https://cambio21.cl/el-mundo/todo-viene-de-vuelta-trump-se-revuelca-en-gigantesca-derrota-y-es-mensaje-para-la-ultra-derecha-conteo-final-democratas-aseguran-258-escanos-en-camara-de-eeuu-la-mayoria-mas-amplia-desde-1992-6b0336d836d70040a46f13d3"
-    },
-    {
-      "title": "Boric y su mandato: \"Decidimos no dejar que las personas más pobres enfrentaran solas el aumento de precios\". Y preguntó: \"¿Por qué el costo de la austeridad debe recaer sobre las familias trabajadoras\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 12:52:44 -0300",
-      "url": "https://cambio21.cl/politica/boric-y-su-mandato-decidimos-no-dejar-que-las-personas-mas-pobres-enfrentaran-solas-el-aumento-de-precios-y-pregunto-por-que-el-costo-de-la-austeridad-debe-recaer-sobre-las-familias-trabajadoras-6b030f3c6f99273b734f6ef4"
-    },
-    {
-      "title": "Grave tragedia en la Isla de Chiloé: violento choque deja seis fallecidos, cuatro de ellos menores de edad",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 12:45:14 -0300",
-      "url": "https://cambio21.cl/pais/grave-tragedia-en-la-isla-de-chiloe-violento-choque-deja-seis-fallecidos-cuatro-de-ellos-menores-de-edad-6b030da7010a7a0640308244"
-    },
-    {
-      "title": "Luto en el tenis chileno: A los 68 años murió Ricardo Acuña, destacado integrante del equipo de Copa Davis",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 12:32:47 -0300",
-      "url": "https://cambio21.cl/deportes/luto-en-el-tenis-chileno-a-los-68-anos-murio-ricardo-acuna-destacado-integrante-del-equipo-de-copa-davis-6b030a5e51568f2d04062a63"
-    },
-    {
-      "title": "El capitalismo que necesitamos discutir. Por Eduardo Saffirio Suárez, Abogado",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 01:16:42 -0300",
-      "url": "https://cambio21.cl/tendencias/el-capitalismo-que-necesitamos-discutir-por-eduardo-saffirio-suarez-abogado-6b026c71a08b1951b545a1c0"
     }
   ]
 }
