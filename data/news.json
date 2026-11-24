@@ -1,7 +1,14 @@
 {
-  "lastUpdate": "2026-11-24 01:56 UTC",
+  "lastUpdate": "2026-11-24 04:13 UTC",
   "totalArticles": 30,
   "news": [
+    {
+      "title": "Diputados envían a Comisión Mixta el proyecto de Presupuesto para 2027",
+      "source": "The Clinic",
+      "category": "economia",
+      "published": "Tue, 24 Nov 2026 02:05:34 +0000",
+      "url": "https://www.theclinic.cl/2026/11/23/diputados-envian-a-comision-mixta-el-proyecto-de-presupuesto-para-2027/"
+    },
     {
       "title": "Vendía un caimán en $750 mil y lo habría arrojado al W.C. cuando llegó la PDI a su casa: Hombre detenido por contrabando de especies exóticas en Hualpén",
       "source": "The Clinic",
@@ -66,11 +73,18 @@
       "url": "https://www.theclinic.cl/2026/11/23/claro-vtr-reclamos-2026/"
     },
     {
-      "title": "AC contra Rabat: Justicia ha otorgado más de 1.400 rebajas de penas durante actual mandato de Kast y 95 han sido por delitos sexuales",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Mon, 23 Nov 2026 21:12:01 +0000",
-      "url": "https://www.theclinic.cl/2026/11/23/rebaja-de-penas-rabat-kast-delitos-sexuales/"
+      "title": "Irán propina 74 latigazos a la cantante Parastoo Ahmadi por dar un concierto en YouTube sin velo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 01:08:15 -0300",
+      "url": "https://cambio21.cl/tendencias/iran-propina-74-latigazos-a-la-cantante-parastoo-ahmadi-por-dar-un-concierto-en-youtube-sin-velo-6b050d4e2051351d7b32acec"
+    },
+    {
+      "title": "Impresionante: firmó 11 decretos diarios. Desclasifican que ministro de Justicia firmó más de 1.800 decretos de rebajas de condenas en 8 meses. Incluyó violadores de niños, criminales de DDHH y otros delincuentes",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Tue, 24 Nov 2026 00:40:56 -0300",
+      "url": "https://cambio21.cl/pais/impresionante-firmo-11-decretos-diarios-desclasifican-que-ministro-de-justicia-firmo-mas-de-1-800-decretos-de-rebajas-de-condenas-en-8-meses-incluyo-violadores-de-ninos-criminales-de-ddhh-y-otros-delincuentes-6b050521ad26066127135fb3"
     },
     {
       "title": "Jeannette Jara arremete contra Kast: “Estuvo 12 años tratando de ser presidente, cuando era candidato le pedía la cabeza a todo el mundo, tenía soluciones para todo y hoy ni se pronuncia\". Y \"ha indultado pedófilos y violadores de niños”",
@@ -197,20 +211,6 @@
       "category": "politica",
       "published": "Sun, 22 Nov 2026 01:16:42 -0300",
       "url": "https://cambio21.cl/tendencias/el-capitalismo-que-necesitamos-discutir-por-eduardo-saffirio-suarez-abogado-6b026c71a08b1951b545a1c0"
-    },
-    {
-      "title": "Codelco: movilizar la riqueza minera sin hipotecar el patrimonio de Chile. Por Ricardo Rincón G, abogado y expresidente de la Comisión de Minería de la Cámara de Diputadas y Diputados",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 01:13:59 -0300",
-      "url": "https://cambio21.cl/pais/codelco-movilizar-la-riqueza-minera-sin-hipotecar-el-patrimonio-de-chile-por-ricardo-rincon-g-abogado-y-expresidente-de-la-comision-de-mineria-de-la-camara-de-diputadas-y-diputados-6b026bc99fcd5a19f31c2323"
-    },
-    {
-      "title": "Gobierno aún no entrega todos los decretos exigidos en la acusación constitucional en contra Rabat. No han entregado decretos de 56 condenados por delitos sexuales y crímenes de DDHH",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Sun, 22 Nov 2026 01:01:16 -0300",
-      "url": "https://cambio21.cl/politica/gobierno-aun-no-entrega-todos-los-decretos-exigidos-en-la-acusacion-constitucional-en-contra-rabat-no-han-entregado-decretos-de-56-condenados-por-delitos-sexuales-y-crimenes-de-ddhh-6b026557a08b1951b545a1bc"
     }
   ]
 }
