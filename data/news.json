@@ -1,9 +1,23 @@
 {
-  "lastUpdate": "2026-11-24 23:40 UTC",
+  "lastUpdate": "2026-11-25 02:58 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "Metro registra segunda interrupción en sus servicios en horario punta: cuatro estaciones de Línea 1 están cerradas por “emergencia médica”",
+      "title": "Periodista y oriunda de Viña del Mar: quién es Dominga López, representante de Chile en Miss Universo 2026",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 25 Nov 2026 01:42:58 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/periodista-y-oriunda-de-vina-del-mar-quien-es-dominga-lopez-representante-de-chile-en-miss-universo-2026/"
+    },
+    {
+      "title": "La nueva demanda que enfrenta Consuelo Ulloa, ex “Miau Astral”: Abogada presentó una querella criminal por delitos de injurias graves y calumnias",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Wed, 25 Nov 2026 00:28:08 +0000",
+      "url": "https://www.theclinic.cl/2026/11/24/la-nueva-demanda-que-enfrenta-consuelo-ulloa-ex-miau-astral-abogada-presento-una-querella-criminal-por-delitos-de-injurias-graves-y-calumnias/"
+    },
+    {
+      "title": "Metro registra segunda interrupción de sus servicios en horario punta: cuatro estaciones de Línea 1 están cerradas por “emergencia médica”",
       "source": "The Clinic",
       "category": "general",
       "published": "Tue, 24 Nov 2026 22:31:11 +0000",
@@ -57,20 +71,6 @@
       "category": "general",
       "published": "Tue, 24 Nov 2026 20:31:26 +0000",
       "url": "https://www.theclinic.cl/2026/11/24/drones-militares-en-japon-proveedores-autos/"
-    },
-    {
-      "title": "“El verdadero indicador de la recesión, EGLO apagado”: Cadena de lámparas explica la razón  detrás de la medida y anuncia cambios en su modelo de negocio",
-      "source": "The Clinic",
-      "category": "economia",
-      "published": "Tue, 24 Nov 2026 20:20:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/24/el-verdadero-indicador-de-la-recesion-eglo-apagado-cadena-de-lamparas-explica-la-razon-detras-de-la-medida-y-anuncia-cambios-en-su-modelo-de-negocio/"
-    },
-    {
-      "title": "Proyecto Parque Cerros de Renca avanza: cierra la recepción de ofertas para la construcción de senderos y del mirador más alto de toda la RM",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Tue, 24 Nov 2026 20:20:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/24/proyecto-parque-cerros-de-renca-avanza-cierra-la-recepcion-de-ofertas-para-la-construccion-de-senderos-y-del-mirador-mas-alto-de-toda-la-rm/"
     },
     {
       "title": "\"Grato ambiente laboral\". Diputados de derecha y extrema derecha protagonizan agresivo enfrentamiento por presupuesto del INDH y eventual coalición de derecha: “Madura, hombre”",
