@@ -1,76 +1,146 @@
 {
-  "lastUpdate": "2026-11-27 02:04 UTC",
+  "lastUpdate": "2026-11-27 19:47 UTC",
   "totalArticles": 30,
   "news": [
     {
-      "title": "“Una invitación a invertir, a contratar y a jugársela por Chile”: El mensaje del Presidente Kast a los empresarios en el Encuentro Anual de la Sofofa",
+      "title": "Neurología infantil en Chile: Boston Children’s Hospital y Fundación de Pilar Matte revisaron casos clínicos complejos",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 27 Nov 2026 01:47:49 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/una-invitacion-a-invertir-a-contratar-y-a-jugarsela-por-chile-el-mensaje-del-presidente-kast-a-los-empresarios-en-el-encuentro-anual-de-la-sofofa/"
+      "published": "Fri, 27 Nov 2026 19:44:31 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/neurologia-infantil-chile-boston-childrens-hospital-pilar-matte/"
     },
     {
-      "title": "Fiscalía Nacional Económica acusa a Apple Inc. de imponer restricciones en su sistema operativo, afectando la libre competencia",
+      "title": "Suzuki Motos renueva su catálogo en Chile con seis nuevos modelos para 2027",
       "source": "The Clinic",
       "category": "general",
-      "published": "Fri, 27 Nov 2026 00:48:44 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/fiscalia-nacional-economica-acusa-a-apple-inc-de-imponer-restricciones-en-su-sistema-operativo-afectando-la-libre-competencia/"
+      "published": "Fri, 27 Nov 2026 18:54:34 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/suzuki-motos-chile-2027-nuevos-modelos/"
     },
     {
-      "title": "Presidenta de Sofofa pide no normalizar la alta desocupación y convoca al presidente Kast a un acuerdo tripartito para reactivar el empleo",
+      "title": "A un año del lanzamiento junto a Starlink: Cobertura satelital directa al celular de Entel consolida conectividad marítima y suma más de 3 mil usuarios en Rapa Nui",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 27 Nov 2026 18:50:10 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/entel-starlink-3mil-usuarios/"
+    },
+    {
+      "title": "Videojuego chileno sobre el golpe de Estado de 1973 obtiene dos premios internacionales en Polonia",
+      "source": "The Clinic",
+      "category": "general",
+      "published": "Fri, 27 Nov 2026 18:19:21 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/videojuego-chileno-golpe-de-estado-premios-internacionales/"
+    },
+    {
+      "title": "Desempleo golpea fuerte a las regiones del centro sur con índices de dos dígitos: Ñuble lidera con 11,6%",
       "source": "The Clinic",
       "category": "economia",
-      "published": "Fri, 27 Nov 2026 00:28:12 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/presidenta-de-sofofa-pide-no-normalizar-la-alta-desocupacion-y-convoca-al-presidente-kast-a-un-acuerdo-tripartito-para-reactivar-el-empleo/"
+      "published": "Fri, 27 Nov 2026 17:30:00 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/desempleo-golpea-fuerte-a-las-regiones-del-centro-sur-con-indices-de-dos-digitos-nuble-lidera-con-116/"
     },
     {
-      "title": "¿Cómo hacer negocios sostenibles?: la discusión que sostuvo Entel en el EtM Day",
+      "title": "Colusión de los pollos: TDLC ordena a Cencosud y Walmart indemnizar a consumidores con casi $67 mil millones",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 26 Nov 2026 23:35:57 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/como-hacer-negocios-sostenibles-la-discusion-que-sostuvo-entel-en-el-etm-day/"
+      "published": "Fri, 27 Nov 2026 17:09:29 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/colusion-de-los-pollos-tdlc-ordena-a-cencosud-y-walmart-indemnizar-a-consumidores-con-casi-67-mil-millones/"
     },
     {
-      "title": "“Nuestro temor es que estén haciendo negocios con ellas”: Museo de Historia Natural de San Antonio denuncia el robo de 65 tortugas en tres meses",
+      "title": "Exrepostera presidencial de La Moneda escala disputa por despido injustificado y presenta respuesta ante la Corte Suprema",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 26 Nov 2026 23:12:45 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/nuestro-temor-es-esten-haciendo-negocios-con-ellas-museo-de-historia-natural-de-san-antonio-denuncia-el-robo-de-65-tortugas-en-tres-meses/"
+      "published": "Fri, 27 Nov 2026 17:06:28 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/exrepostera-presidencial-de-la-moneda-escala-disputa-por-despido-injustificado-y-presenta-respuesta-ante-la-corte-suprema/"
     },
     {
-      "title": "Del regreso de Espina a la reaparición de Hinzpeter: la apuesta de RN por recuperar a sus antiguos referentes",
+      "title": "“Ya no se pueden usar las mochilas virales”: SKY reduce en cinco centímetros la profundidad permitida para el equipaje personal en cabina",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 26 Nov 2026 22:43:00 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/del-regreso-de-espina-a-la-reaparicion-de-hinzpeter-la-apuesta-de-rn-por-recuperar-a-sus-antiguos-referentes/"
+      "published": "Fri, 27 Nov 2026 16:40:05 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/ya-no-se-pueden-usar-las-mochilas-virales-sky-reduce-en-cinco-centimetros-la-profundidad-permitida-para-el-equipaje-personal-en-cabina/"
     },
     {
-      "title": "Encuentran cuerpo de joven de 26 años desaparecido desde el 19 de noviembre en Paihuano: Fiscalía instruyó diligencias para esclarecer su fallecimiento",
+      "title": "Selfies con Feijóo, mensaje de Jackson y viajes frustrados: partidos se involucran desde Chile en las elecciones españolas de este domingo",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 26 Nov 2026 21:49:08 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/encuentran-un-cuerpo-en-el-rio-claro-en-paihuano-en-miedo-de-la-busqueda-de-christopher-espejo-joven-esta-desaparecido-desde-el-19-de-noviembre/"
+      "published": "Fri, 27 Nov 2026 16:36:31 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/selfies-con-feijoo-mensaje-de-jackson-y-viajes-frustrados-partidos-se-involucran-desde-chile-en-las-elecciones-espanolas-de-este-domingo/"
     },
     {
-      "title": "Como en el extinto Paseo Bandera: Estación Central realiza intervención con un mural de mil metros cuadrados en el pavimento de la Alameda",
+      "title": "Laura Pausini, Arcángel y el regreso de La Ley: Viña 2027 presenta su parrilla por día a la espera de los comediantes y el artista anglo",
       "source": "The Clinic",
       "category": "general",
-      "published": "Thu, 26 Nov 2026 21:32:28 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/como-en-el-extinto-paseo-bandera-estacion-central-realiza-intervencion-con-un-mural-de-mil-metros-cuadrados-en-el-pavimento-de-la-alameda/"
+      "published": "Fri, 27 Nov 2026 16:27:01 +0000",
+      "url": "https://www.theclinic.cl/2026/11/27/laura-pausini-arcangel-y-el-regreso-de-la-ley-vina-2027-presenta-su-parrilla-por-dia-a-la-espera-de-los-comediantes-y-el-artista-anglo/"
     },
     {
-      "title": "“Cuando se derrite, no cambia el sabor”: The Ice, el curioso emprendimiento de “hielos premium” que abastece a grandes restaurantes y hoteles",
-      "source": "The Clinic",
-      "category": "general",
-      "published": "Thu, 26 Nov 2026 21:25:07 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/si-se-derrite-no-cambia-el-sabor-the-ice-el-curioso-emprendimiento-de-hielos-premium-que-abastece-a-grandes-restaurantes-y-hoteles/"
+      "title": "Fiscalía Oriente abre causa por manipulación de certificado médico que presentó diputada Zandra Parisi",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 16:30:00 -0300",
+      "url": "https://cambio21.cl/tendencias/fiscalia-oriente-abre-causa-por-manipulacion-de-certificado-medico-que-presento-diputada-zandra-parisi-6b09d971a6616120cf12b3b3"
     },
     {
-      "title": "SLEP con un profesor cada 3 niños: el problema de sobredotación en servicios locales que el Mineduc busca enfrentar con bonos de incentivo al retiro",
-      "source": "The Clinic",
+      "title": "Colusión de los pollos: Tribunal de la Libre Competencia ordena a Cencosud y Walmart indemnizar a consumidores con $67 mil millones cerca de 70 millones de dólares. El rol del ministro Jorge Quiroz en este caso",
+      "source": "Cambio21",
       "category": "mercados",
-      "published": "Thu, 26 Nov 2026 21:17:25 +0000",
-      "url": "https://www.theclinic.cl/2026/11/26/slep-con-un-profesor-cada-3-ninos-el-problema-de-sobredotacion-en-servicios-locales-que-el-mineduc-busca-enfrentar-con-bonos-de-incentivo-al-retiro/"
+      "published": "Fri, 27 Nov 2026 15:41:19 -0300",
+      "url": "https://cambio21.cl/politica/colusion-de-los-pollos-tribunal-de-la-libre-competencia-ordena-a-cencosud-y-walmart-indemnizar-a-consumidores-con-67-mil-millones-cerca-de-70-millones-de-dolares-el-rol-del-ministro-jorge-quiroz-en-este-caso-6b09c95591755e435519dde9"
+    },
+    {
+      "title": "Excomandante en jefe del Ejército general (R) Óscar Izurieta es condenado a cinco años y un día de cárcel efectiva por lavado de activos",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 15:11:13 -0300",
+      "url": "https://cambio21.cl/pais/excomandante-en-jefe-del-ejercito-general-r-oscar-izurieta-es-condenado-a-cinco-anos-y-un-dia-de-carcel-efectiva-por-lavado-de-activos-6b09c6ae91755e435519dde6"
+    },
+    {
+      "title": "Ministro de la Vivienda anuncia el despido de cuatro seremis. Gobierno sumó 64 remociones o renuncias de altos funcionarios en 8 meses y medio",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 14:17:03 -0300",
+      "url": "https://cambio21.cl/politica/ministro-de-la-vivienda-anuncia-el-despido-de-cuatro-seremis-gobierno-sumo-64-remociones-o-renuncias-de-altos-funcionarios-en-8-meses-y-medio-6b09b5d35d2c620ca31a7f73"
+    },
+    {
+      "title": "\"Novedoso\": Minera de Tierras Raras en Penco contrata a exagente de la CIA y que también era funcionaria del gobierno de Trump. Asumirá cargo estratégico en la empresa",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 11:59:16 -0300",
+      "url": "https://cambio21.cl/pais/novedoso-minera-de-tierras-raras-en-penco-contrata-a-exagente-de-la-cia-y-que-tambien-era-funcionaria-del-gobierno-de-trump-asumira-cargo-estrategico-en-la-empresa-6b0999a11c1eb331962164e3"
+    },
+    {
+      "title": "Colegio Médico defiende tratamientos hormonales en menores y critica a Johannes Kaiser: “Aquí no hay ninguna experimentación, necesita informarse”",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 11:37:21 -0300",
+      "url": "https://cambio21.cl/tendencias/colegio-medico-defiende-tratamientos-hormonales-en-menores-y-critica-a-johannes-kaiser-aqui-no-hay-ninguna-experimentacion-necesita-informarse-6b0994142d130a74476aa9b5"
+    },
+    {
+      "title": "¿Irá a votar o no este lunes AC contra Rabat? Diputada Parisi asegura que certificado médico fue entregado por clínica dental. Evalúa acciones legales contra odontólogo que desconoció certificado",
+      "source": "Cambio21",
+      "category": "mercados",
+      "published": "Fri, 27 Nov 2026 10:59:49 -0300",
+      "url": "https://cambio21.cl/pais/ira-a-votar-o-no-este-lunes-ac-contra-rabat-diputada-parisi-asegura-que-certificado-medico-fue-entregado-por-clinica-dental-evalua-acciones-legales-contra-odontologo-que-desconocio-certificado-6b098b2d41ba1f475f5cd1c3"
+    },
+    {
+      "title": "Dramático y complejo para millones de chilenos. Cesantía llega al 10% en el Gobierno de Kast: la cifra más alta en cinco años. En 4 meses consecutivos se han destruído miles de puestos de trabajo",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 09:54:58 -0300",
+      "url": "https://cambio21.cl/politica/dramatico-y-complejo-para-millones-de-chilenos-cesantia-llega-al-10-en-el-gobierno-de-kast-la-cifra-mas-alta-en-cinco-anos-en-4-meses-consecutivos-se-han-destruido-miles-de-puestos-de-trabajo-6b097bd66dc0c8043b37a3c5"
+    },
+    {
+      "title": "Todo por la votación a favor o en contra de Rabat. Dentista denuncia falsificación de certificado de diputada Zandra Parisi del PDG: \"Mi firma fue incorporada sin mi conocimiento\"",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 00:35:32 -0300",
+      "url": "https://cambio21.cl/pais/todo-por-la-votacion-a-favor-o-en-contra-de-rabat-dentista-denuncia-falsificacion-de-certificado-de-diputada-zandra-parisi-del-pdg-mi-firma-fue-incorporada-sin-mi-conocimiento-6b08f91031ab9962326f7bf3"
+    },
+    {
+      "title": "Tesorería quiere obligar a hija de mayor de Pinochet, Lucía, a pagar impuestos por herencia de $5 mil millones del dictador",
+      "source": "Cambio21",
+      "category": "politica",
+      "published": "Fri, 27 Nov 2026 00:21:14 -0300",
+      "url": "https://cambio21.cl/pais/tesoreria-quiere-obligar-a-hija-de-mayor-de-pinochet-lucia-a-pagar-impuestos-por-herencia-de-5-mil-millones-del-dictador-6b08f64dcc9f60379e4d64f3"
     },
     {
       "title": "Partido Nacional Libertario que preside Kaiser acusa que gobierno de Kast parece “de continuidad” de Boric tras aprobarse Presupuesto 2027",
@@ -84,7 +154,7 @@
       "source": "Cambio21",
       "category": "politica",
       "published": "Thu, 26 Nov 2026 18:27:32 -0300",
-      "url": "https://cambio21.cl/pais/cambia-todo-cambia-diputado-teao-que-iba-a-favor-de-la-acusacion-contra-rabat-cambio-su-voto-hasta-el-dia-de-hoy-ahora-me-abstengo-6b08a3fb8fb0820b8a4f8173"
+      "url": "https://cambio21.cl/politica/cambia-todo-cambia-diputado-teao-que-iba-a-favor-de-la-acusacion-contra-rabat-cambio-su-voto-hasta-el-dia-de-hoy-ahora-me-abstengo-6b08a3fb8fb0820b8a4f8173"
     },
     {
       "title": "TC rechaza requerimiento de la oposición contra proyecto del Gobierno que posterga instalación de los SLEP",
@@ -141,76 +211,6 @@
       "category": "politica",
       "published": "Thu, 26 Nov 2026 10:19:56 -0300",
       "url": "https://cambio21.cl/politica/diputado-romero-descarta-coalicion-entre-republicanos-y-chile-vamos-claramente-no-hay-ninguna-posibilidad-y-no-puedes-mezclar-el-vinagre-con-el-aceite-6b08313f280811458b603d43"
-    },
-    {
-      "title": "Campeona mundial de apnea la neerlandesa Jeanine Grasmeijer muere a los 33 años",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 26 Nov 2026 09:54:01 -0300",
-      "url": "https://cambio21.cl/deportes/campeona-mundial-de-apnea-la-neerlandesa-jeanine-grasmeijer-muere-a-los-33-anos-6b082afc9ef7164ad3156cb3"
-    },
-    {
-      "title": "El capitalismo sin corrupción no funciona. Por Patricio Herman, Fundación Defendamos la Ciudad",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 26 Nov 2026 09:07:25 -0300",
-      "url": "https://cambio21.cl/tendencias/el-capitalismo-sin-corrupcion-no-funciona-por-patricio-herman-fundacion-defendamos-la-ciudad-6b082063bc366233b7090d63"
-    },
-    {
-      "title": "Kast celebra aprobación de Sala Cuna Universal y Presupuesto 2027 e instruye acelerar la agenda del Gobierno",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Thu, 26 Nov 2026 00:51:59 -0300",
-      "url": "https://cambio21.cl/pais/kast-celebra-aprobacion-de-sala-cuna-universal-y-presupuesto-2027-e-instruye-acelerar-la-agenda-del-gobierno-6b07ab86cb27f444b6731943"
-    },
-    {
-      "title": "Cuota Camila Flores: defensa de la senadora no logró limitar acceso de Fiscalía a dispositivos incautados",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Thu, 26 Nov 2026 00:41:27 -0300",
-      "url": "https://cambio21.cl/politica/cuota-camila-flores-defensa-de-la-senadora-no-logro-limitar-acceso-de-fiscalia-a-dispositivos-incautados-6b07a988526cbe504448e4f3"
-    },
-    {
-      "title": "Presupuesto para el año 2027 es aprobado en el Senado y queda despachado para ser ley",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Wed, 25 Nov 2026 19:20:10 -0300",
-      "url": "https://cambio21.cl/tendencias/presupuesto-para-el-ano-2027-es-aprobado-en-el-senado-y-queda-despachado-para-ser-ley-6b075eae024d116bfe1c9303"
-    },
-    {
-      "title": "Oposición llevará a Comisión de Ética a diputada Santelices (exrepublicana) tras saludar a “presidente Pinochet” por su cumpleaños",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 25 Nov 2026 18:59:27 -0300",
-      "url": "https://cambio21.cl/politica/oposicion-llevara-a-comision-de-etica-a-diputada-santelices-exrepublicana-tras-saludar-a-presidente-pinochet-por-su-cumpleanos-6b07594b7f789c7e702b9914"
-    },
-    {
-      "title": "El bien común: dos mil años de filosofía no pueden despacharse como un concepto difuso. Por Alfredo Ugarte. Abogado Profesor U. de Chile",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 25 Nov 2026 18:53:28 -0300",
-      "url": "https://cambio21.cl/tendencias/el-bien-comun-dos-mil-anos-de-filosofia-no-pueden-despacharse-como-un-concepto-difuso-por-alfredo-ugarte-abogado-profesor-u-de-chile-6b0754d248b8f17822475f57"
-    },
-    {
-      "title": "Gabriel Boric fue al velorio de Delfina Guzmán: \"Más que llorar su muerte, celebro su vida\"",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 25 Nov 2026 18:32:09 -0300",
-      "url": "https://cambio21.cl/tendencias/gabriel-boric-fue-al-velorio-de-delfina-guzman-mas-que-llorar-su-muerte-celebro-su-vida-6b075330b995440888020293"
-    },
-    {
-      "title": "Trump anuncia nuevos aranceles contra 14 economías: China y la Unión Europea entre las afectadas",
-      "source": "Cambio21",
-      "category": "economia",
-      "published": "Wed, 25 Nov 2026 15:19:08 -0300",
-      "url": "https://cambio21.cl/el-mundo/trump-anuncia-nuevos-aranceles-contra-14-economias-china-y-la-union-europea-entre-las-afectadas-6b0720da95187c5c3f66c973"
-    },
-    {
-      "title": "Caso firmas: Fiscalía informa que senadores socialistas Castro y Vodanovic tienen calidad de imputados",
-      "source": "Cambio21",
-      "category": "politica",
-      "published": "Wed, 25 Nov 2026 14:21:55 -0300",
-      "url": "https://cambio21.cl/pais/caso-firmas-fiscalia-informa-que-senadores-socialistas-castro-y-vodanovic-tienen-calidad-de-imputados-6b0718e6aa9f0e6a672435bd"
     }
   ]
 }
